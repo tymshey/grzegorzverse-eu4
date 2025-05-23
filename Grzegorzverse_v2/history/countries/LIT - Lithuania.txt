@@ -1,0 +1,45 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 2
+technology_group = eastern
+religion = baltic_pagan
+primary_culture = lithuanian
+capital = 4535
+1444.11.11= {
+	monarch = {
+		name = "Roze"
+		dynasty = "of Žemaiteje"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1393.10.5
+		female = yes
+		religion = baltic_pagan
+		culture = lithuanian
+	}
+	queen = {
+		name = "Vainius"
+		dynasty = "of Žemaiteje"
+		adm = 3
+		dip = 4
+		mil = 3
+		country_of_origin = LIT
+		birth_date = 1410.9.25
+		death_date = 1470.9.25
+		religion = baltic_pagan
+		culture = lithuanian
+	}
+	heir = {
+		name = "Butavas"
+		monarch_name = "Butavas"
+		dynasty = "of Žemaiteje"
+		adm = 4
+		dip = 3
+		mil = 5
+		birth_date = 1432.12.8
+		death_date = 1497.12.8
+		claim = 89
+		religion = baltic_pagan
+		culture = lithuanian
+	}
+}

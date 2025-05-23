@@ -1,0 +1,20 @@
+owner = PSS
+controller = PSS
+capital = "Passau"
+is_city = yes
+culture = bavarian
+religion = nestorian
+trade_goods = cloth
+base_tax = 3
+base_production = 3
+base_manpower = 1
+discovered_by = east_african
+discovered_by = eastern
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman
+discovered_by = sub_saharan
+discovered_by = western
+add_core = PSS
+1599.1.2 = { religion = converted_dynamic_faith_107 }

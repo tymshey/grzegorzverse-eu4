@@ -1,0 +1,14 @@
+dependency = {
+	subject_type = "t_satrapy_vassal"
+	first = "PER"
+	second = "ARD"
+	start_date = 1444.1.1
+	end_date = 1598.4.22
+}
+dependency = {
+	subject_type = "t_satrapy_vassal"
+	first = "PER"
+	second = "LRI"
+	start_date = 1444.1.1
+	end_date = 1598.4.22
+}

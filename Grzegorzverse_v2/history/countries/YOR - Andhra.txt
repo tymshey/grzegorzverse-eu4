@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 2
+technology_group = indian
+religion = jain
+primary_culture = kannada
+capital = 4419
+add_accepted_culture = telegu
+1444.11.11= {
+	monarch = {
+		name = "Chandaladevi"
+		dynasty = "Venkatadri"
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 1397.1.15
+		female = yes
+		religion = jain
+		culture = kannada
+	}
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Madhukara"
+		dynasty = "Narayan"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = YOR
+		birth_date = 1404.7.19
+		death_date = 1464.7.19
+		religion = jain
+		culture = dynamic-gondi-avadhi-culture-num1
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Vendakadri"
+		monarch_name = "Vendakadri"
+		dynasty = "Narayan"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 1425.11.16
+		death_date = 1490.11.16
+		claim = 89
+		religion = jain
+		culture = kannada
+	}
+	add_heir_personality = fierce_negotiator_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 81
+	add_treasury = 56
+}

@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 2
+technology_group = indian
+religion = jain
+primary_culture = kannada
+capital = 2035
+1444.11.11= {
+	monarch = {
+		name = "Srivikrama"
+		dynasty = "Srivikramid"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1388.1.27
+		religion = jain
+		culture = kannada
+	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = scholar_personality
+	queen = {
+		name = "Kundakadevi"
+		dynasty = "Gayaid"
+		adm = 4
+		dip = 5
+		mil = 4
+		country_of_origin = KRK
+		birth_date = 1416.7.2
+		death_date = 1476.7.2
+		female = yes
+		religion = jain
+		culture = kannada
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = fierce_negotiator_personality
+	heir = {
+		name = "Srivikrama"
+		monarch_name = "Srivikrama"
+		dynasty = "Neetimargid"
+		adm = 4
+		dip = 6
+		mil = 5
+		birth_date = 1423.11.12
+		death_date = 1488.11.12
+		claim = 89
+		religion = jain
+		culture = kannada
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = righteous_personality
+}
+1444.11.11= {
+	add_prestige = 75
+	add_treasury = 66
+}

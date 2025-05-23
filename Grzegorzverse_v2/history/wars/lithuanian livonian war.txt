@@ -1,0 +1,11 @@
+name = "Last Livonian War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 38 # Jerusalem
+}
+
+1443.12.12 = {
+	add_attacker = LIT
+	add_defender = LVA
+}

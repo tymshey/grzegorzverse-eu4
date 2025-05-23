@@ -1,0 +1,7 @@
+# Muscovy
+vassal = {
+	first = MOS
+	second = Z37
+	start_date = 1444.1.1
+	end_date = 1490.4.1
+}

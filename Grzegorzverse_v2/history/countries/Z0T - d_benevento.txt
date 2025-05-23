@@ -1,0 +1,43 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = orthodox
+primary_culture = lombard
+capital = 4733
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Cotani"
+		dynasty = "Radelchisidi"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1410.5.21
+		female = yes
+		religion = orthodox
+		culture = lombard
+	}
+	add_ruler_personality = careful_personality
+	add_ruler_personality = cruel_personality
+	heir = {
+		name = "Rumetruda"
+		monarch_name = "Rumetruda"
+		dynasty = "Radelchisidi"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1381.11.6
+		death_date = 1446.11.6
+		female = yes
+		claim = 89
+		religion = orthodox
+		culture = lombard
+	}
+	add_heir_personality = malevolent_personality
+	add_heir_personality = secretive_personality
+}
+1444.11.11= {
+	add_prestige = 68
+	add_treasury = 0
+}

@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = indian
+religion = sunni
+primary_culture = sindhi
+capital = 2078
+fixed_capital = 2078
+religious_school = hanbali_school
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Faeq"
+		dynasty = "Chawi"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1401.8.30
+		religion = sunni
+		culture = sindhi
+	}
+	add_ruler_personality = fierce_negotiator_personality
+	add_ruler_personality = infertile_personality
+	queen = {
+		name = "Parvaneh"
+		dynasty = "Rezaid"
+		adm = 3
+		dip = 4
+		mil = 3
+		country_of_origin = Z4G
+		birth_date = 1401.10.16
+		death_date = 1461.10.16
+		female = yes
+		religion = sunni
+		culture = persian
+	}
+	add_queen_personality = craven_personality
+	add_queen_personality = cruel_personality
+	heir = {
+		name = "Dhiya"
+		monarch_name = "Dhiya"
+		dynasty = "Chawi"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 1390.3.9
+		death_date = 1455.3.9
+		claim = 89
+		religion = sunni
+		culture = sindhi
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 64
+	add_treasury = 60
+}

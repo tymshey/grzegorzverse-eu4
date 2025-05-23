@@ -1,0 +1,71 @@
+government = tribal
+add_government_reform = great_mongol_state_reform
+government_rank = 1
+technology_group = nomad_group
+religion = tengri_pagan
+primary_culture = dynamic-czech-culture-num1
+capital = 266
+
+1206.1.1= {
+	monarch = {
+		name = "Temujin"
+		dynasty = "Borjigin"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+1229.1.1= {
+	monarch = {
+		name = "Tolui"
+		dynasty = "Borjigin"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+1229.1.1= {
+	monarch = {
+		name = "Ogodei"
+		dynasty = "Borjigin"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+1246.1.1= {
+	monarch = {
+		name = "Güyük"
+		dynasty = "Borjigin"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+1251.1.1= {
+	monarch = {
+		name = "Möngke"
+		dynasty = "Borjigin"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+1260.5.5= {
+	monarch = {
+		name = "Kublai"
+		dynasty = "Borjigin"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+1444.1.1 = {
+	monarch = {
+		name = "Tolui"
+		dynasty = "Gównogradus"
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}

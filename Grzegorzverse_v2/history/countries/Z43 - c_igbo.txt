@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = sub_saharan
+religion = ibadi
+primary_culture = nupe
+capital = 1152
+fixed_capital = 1152
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Tomo"
+		dynasty = "Wahabid"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1396.3.17
+		religion = ibadi
+		culture = nupe
+	}
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = scholar_personality
+	queen = {
+		name = "Tekhaye"
+		dynasty = "Sokoto"
+		adm = 3
+		dip = 5
+		mil = 2
+		country_of_origin = Z43
+		birth_date = 1398.3.13
+		death_date = 1458.3.13
+		female = yes
+		religion = ibadi
+		culture = nupe
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Mahmud"
+		monarch_name = "Mahmud"
+		dynasty = "Durbawa"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1387.6.30
+		death_date = 1452.6.30
+		claim = 89
+		religion = ibadi
+		culture = hausa
+	}
+	add_heir_personality = calm_personality
+	add_heir_personality = silver_tongue_personality
+}
+1444.11.11= {
+	add_prestige = 64
+	add_treasury = 54
+}

@@ -1,0 +1,58 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = sub_saharan
+religion = masmudi
+primary_culture = dynamic-german-yorumba-culture-num1
+capital = 1140
+fixed_capital = 1140
+religious_school = shafii_school
+add_accepted_culture = fon
+1444.11.11= {
+	monarch = {
+		name = "Larunnka"
+		dynasty = "Savalu"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1381.10.22
+		religion = masmudi
+		culture = dynamic-german-yorumba-culture-num1
+	}
+	add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Oyin"
+		dynasty = "Oduduwa"
+		adm = 4
+		dip = 3
+		mil = 4
+		country_of_origin = DAH
+		birth_date = 1386.4.22
+		death_date = 1446.4.22
+		female = yes
+		religion = masmudi
+		culture = dynamic-german-yorumba-culture-num1
+	}
+	add_queen_personality = calm_personality
+	add_queen_personality = careful_personality
+	heir = {
+		name = "Abayomi"
+		monarch_name = "Abayomi II"
+		dynasty = "Savalu"
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1416.9.26
+		death_date = 1481.9.26
+		claim = 89
+		religion = masmudi
+		culture = dynamic-german-yorumba-culture-num1
+	}
+	add_heir_personality = pious_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 35
+}

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = administrative_monarchy
+government_rank = 1
+technology_group = muslim
+religion = sunni
+primary_culture = moroccan
+add_accepted_culture = berber
+capital = 348
+fixed_capital = 348
+religious_school = jafari_school
+1444.1.1= {
+	monarch = {
+		name = "Muhammad al-Jazuli"
+		birth_date = 1399.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+

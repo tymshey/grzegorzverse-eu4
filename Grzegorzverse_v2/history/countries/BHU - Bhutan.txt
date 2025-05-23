@@ -1,0 +1,25 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = tibetan
+capital = 4481
+1444.11.11= {
+	monarch = {
+		name = "Phuntsho II"
+		dynasty = "Mlechchha"
+		adm = 4
+		dip = 3
+		mil = 5
+		birth_date = 1385.10.19
+		religion = hinduism
+		culture = tibetan
+	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = righteous_personality
+	add_country_modifier = {
+		name = corrupted_administration
+		duration = -1
+	}
+}

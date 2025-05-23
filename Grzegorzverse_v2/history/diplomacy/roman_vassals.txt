@@ -1,0 +1,29 @@
+vassal=
+{
+	first="BYZ"
+	second="FEO"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="BYZ"
+	second="CYP"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+vassal=
+{
+	first="BYZ"
+	second="TRE"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+dependency = {
+	subject_type = "patriarchate_vassal"
+	first = "BYZ"
+	second = "PTR"
+	start_date = 1444.1.1
+	end_date = 1602.4.22
+}

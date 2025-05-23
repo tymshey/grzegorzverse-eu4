@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = eastern
+religion = zurvanism
+primary_culture = dynamic-assyrian-avar-culture-num1
+capital = 153
+1444.11.11= {
+	monarch = {
+		name = "Babaeus"
+		dynasty = "Gównogradus"
+		adm = 5
+		dip = 4
+		mil = 3
+		birth_date = 1402.3.22
+		religion = zoroastrian
+		culture = dynamic-assyrian-avar-culture-num1
+	}
+	add_ruler_personality = righteous_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Ipekel"
+		dynasty = "Tetrid"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = HUN
+		birth_date = 1402.5.29
+		death_date = 1462.5.29
+		female = yes
+		religion = zoroastrian
+		culture = nogaybak
+	}
+	add_queen_personality = righteous_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Chadlai"
+		monarch_name = "Chadlai"
+		dynasty = "Gównogradus"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1423.8.28
+		death_date = 1488.8.28
+		claim = 89
+		religion = zoroastrian
+		culture = dynamic-assyrian-avar-culture-num1
+	}
+	add_heir_personality = midas_touched_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 83
+	add_treasury = 49
+}

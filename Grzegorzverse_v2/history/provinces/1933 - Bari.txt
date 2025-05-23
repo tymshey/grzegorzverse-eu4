@@ -1,0 +1,23 @@
+owner = Z0M
+controller = Z0M
+capital = "Bari"
+is_city = yes
+culture = neapolitan
+religion = orthodox
+trade_goods = wine
+base_tax = 6
+base_production = 5
+base_manpower = 3
+add_core = Z0M
+add_permanent_claim = BYZ
+discovered_by = east_african
+discovered_by = eastern
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman
+discovered_by = sub_saharan
+discovered_by = western
+latent_trade_goods = { coal }
+hre = yes
+1599.1.1 = { owner = Z0B controller = Z0B add_core = Z0B } 

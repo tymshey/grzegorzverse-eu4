@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = muslim
+religion = zurvanism
+primary_culture = bedouin_arabic
+capital = 392
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 70
+	add_treasury = 47
+}

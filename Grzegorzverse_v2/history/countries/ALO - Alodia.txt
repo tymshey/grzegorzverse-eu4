@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = english_monarchy
+government_rank = 1
+technology_group = east_african
+religion = kushitism_pagan
+primary_culture = nubian
+capital = 1230
+1444.11.11= {
+	add_prestige = 47
+	add_treasury = 0
+}

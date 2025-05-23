@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = nomad_group
+religion = nestorian
+primary_culture = kirgiz
+capital = 477
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Blush"
+		dynasty = "Betpid"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 1397.12.13
+		religion = nestorian
+		culture = kirgiz
+	}
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Gulay"
+		dynasty = "Ashadamdar"
+		adm = 4
+		dip = 3
+		mil = 3
+		country_of_origin = Z0U
+		birth_date = 1394.9.9
+		death_date = 1454.9.9
+		female = yes
+		religion = nestorian
+		culture = kirgiz
+	}
+	add_queen_personality = cruel_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Zeyhan"
+		monarch_name = "Zeyhan"
+		dynasty = "Betpid"
+		adm = 5
+		dip = 6
+		mil = 4
+		birth_date = 1423.6.14
+		death_date = 1488.6.14
+		claim = 89
+		religion = nestorian
+		culture = kirgiz
+	}
+	add_heir_personality = silver_tongue_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 68
+	add_treasury = 33
+}

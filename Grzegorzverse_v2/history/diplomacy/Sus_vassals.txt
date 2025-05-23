@@ -1,0 +1,72 @@
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = Z4O
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = TFL
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = Z30
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = MOR
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = Z2N
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = Z55
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = Z42
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = TLC
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = ALG
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+dependency =  {
+	subject_type = "sus_vassal"
+	first = SOS
+	second = Z1Y
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+
+

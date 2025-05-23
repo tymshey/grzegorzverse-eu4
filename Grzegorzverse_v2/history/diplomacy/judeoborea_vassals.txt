@@ -1,0 +1,14 @@
+vassal=
+{
+	first="Z1C"
+	second="Z38"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+vassal=
+{
+	first="Z1C"
+	second="Z18"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}

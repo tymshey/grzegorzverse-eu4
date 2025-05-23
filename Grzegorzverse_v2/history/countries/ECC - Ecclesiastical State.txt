@@ -1,0 +1,17 @@
+government = theocracy
+add_government_reform = gv_ecclesiastical_state_reform
+government_rank = 3
+technology_group = eastern
+religion = orthodox
+primary_culture = greek
+capital = 151
+1435.1.1= {
+	monarch = {
+		name = "Gregorius III"
+		dynasty = Palaiologos
+		birth_date = 1392.1.1	
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}

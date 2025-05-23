@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = mandala_reform
+government_rank = 1
+technology_group = chinese
+religion = mahayana
+primary_culture = xibei
+capital = 698
+add_accepted_culture = dynamic-chihan-oirats-culture-num1
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	add_prestige = 60
+	add_treasury = 70
+}

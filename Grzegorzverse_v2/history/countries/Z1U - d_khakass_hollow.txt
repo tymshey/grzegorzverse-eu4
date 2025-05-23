@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = nomad_group
+religion = nestorian
+primary_culture = dynamic-kirgiz-mongol-culture-num1
+capital = 1065
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Badai"
+		dynasty = "Badai"
+		adm = 2
+		dip = 3
+		mil = 3
+		birth_date = 1399.9.17
+		religion = nestorian
+		culture = dynamic-kirgiz-mongol-culture-num1
+	}
+	add_ruler_personality = pious_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Chagur"
+		dynasty = "Borjigin"
+		adm = 3
+		dip = 3
+		mil = 3
+		country_of_origin = Z1U
+		birth_date = 1401.10.2
+		death_date = 1461.10.2
+		female = yes
+		religion = nestorian
+		culture = khalkha
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = silver_tongue_personality
+	heir = {
+		name = "Borjigidai"
+		monarch_name = "Borjigidai"
+		dynasty = "Badai"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 1440.2.1
+		death_date = 1505.2.1
+		claim = 89
+		religion = nestorian
+		culture = dynamic-kirgiz-mongol-culture-num1
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 55
+}

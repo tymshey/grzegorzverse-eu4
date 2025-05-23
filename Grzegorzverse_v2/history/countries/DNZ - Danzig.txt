@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = converted_dynamic_faith_107
+primary_culture = pommeranian
+capital = 43
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 40
+}

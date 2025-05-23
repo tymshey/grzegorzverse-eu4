@@ -1,0 +1,60 @@
+government = monarchy
+add_government_reform = arabic_plutocracy_reform
+government_rank = 1
+technology_group = muslim
+religion = zoroastrian
+primary_culture = assyrian
+capital = 400
+add_accepted_culture = omani_culture
+1444.11.11= {
+	monarch = {
+		name = "Cephus"
+		dynasty = "Salamas"
+		adm = 2
+		dip = 4
+		mil = 3
+		birth_date = 1400.8.13
+		religion = zoroastrian
+		culture = assyrian
+	}
+	add_ruler_personality = sinner_personality
+	add_ruler_personality = strict_personality
+	queen = {
+		name = "Raz"
+		dynasty = "Arbilaya"
+		adm = 5
+		dip = 1
+		mil = 5
+		country_of_origin = OMA
+		birth_date = 1399.1.29
+		death_date = 1459.1.29
+		female = yes
+		religion = zoroastrian
+		culture = assyrian
+	}
+	add_queen_personality = intricate_web_weaver_personality
+	add_queen_personality = strict_personality
+	heir = {
+		name = "Bar-Abba"
+		monarch_name = "Bar-Abba"
+		dynasty = "Salamas"
+		adm = 6
+		dip = 3
+		mil = 6
+		birth_date = 1422.11.10
+		death_date = 1487.11.10
+		claim = 89
+		religion = zoroastrian
+		culture = assyrian
+	}
+	add_heir_personality = secretive_personality
+	add_heir_personality = silver_tongue_personality
+}
+1444.11.11= {
+	add_prestige = 67
+	add_treasury = 51
+	add_stability = 1
+	set_estate_privilege = estate_burghers_land_of_commerce
+	set_estate_privilege = estate_burghers_commercial_board_of_advice
+	set_estate_privilege = estate_burghers_land_trade_rights
+}

@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = t_roman_province_reform
+government_rank = 3
+technology_group = western
+religion = orthodox
+primary_culture = espanoi
+capital = 217
+add_accepted_culture = andalucian
+add_accepted_culture = portuguese
+add_accepted_culture = leonese
+add_accepted_culture = castillian
+add_accepted_culture = basque
+add_accepted_culture = dynamic-andalucian-culture-num2

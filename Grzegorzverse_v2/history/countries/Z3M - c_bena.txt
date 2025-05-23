@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = sub_saharan
+religion = ibadi
+primary_culture = mali
+capital = 2253
+fixed_capital = 2253
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Biranin II"
+		dynasty = "Niakhate-Bena"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1399.2.8
+		religion = ibadi
+		culture = mali
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Hawa"
+		dynasty = "Biun"
+		adm = 2
+		dip = 4
+		mil = 4
+		country_of_origin = Z3M
+		birth_date = 1399.9.30
+		death_date = 1459.9.30
+		female = yes
+		religion = ibadi
+		culture = dynamic-mali-bozo-culture-num1
+	}
+	add_queen_personality = entrepreneur_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Biranin"
+		monarch_name = "Biranin III"
+		dynasty = "Niakhate-Bena"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1441.5.4
+		death_date = 1506.5.4
+		claim = 89
+		religion = ibadi
+		culture = mali
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 77
+	add_treasury = 44
+}

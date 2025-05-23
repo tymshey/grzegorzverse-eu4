@@ -1,0 +1,22 @@
+owner = MCM
+controller = MCM
+capital = "Limerick"
+is_city = yes
+culture = irish
+religion = druidism
+trade_goods = fish
+base_tax = 3
+base_production = 1
+base_manpower = 3
+add_core = IRE
+add_core = MCM
+discovered_by = east_african
+discovered_by = eastern
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman
+discovered_by = sub_saharan
+discovered_by = western
+1599.1.1 = { owner = GBR controller = GBR add_core = GBR } 
+1599.1.2 = { religion = anglican }

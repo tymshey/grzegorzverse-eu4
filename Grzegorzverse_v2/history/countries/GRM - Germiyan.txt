@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = t_roman_province_reform
+government_rank = 1
+primary_culture = greek
+religion = orthodox
+technology_group = eastern
+capital = 4311 # Anatolikon
+
+1433.8.1 = {
+	monarch = {
+		name = "Andreas"
+		dynasty = Isauros
+		birth_date = 1401.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}

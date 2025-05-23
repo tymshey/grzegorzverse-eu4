@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = t_roman_province_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = greek
+capital = 323
+1424.1.1= {
+	monarch = {
+		name = "Konstantinos"
+		dynasty = Palaiologos
+		birth_date = 1409.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+	add_ruler_personality = kind_hearted_personality
+}
+1424.1.1= {
+	heir = {
+		name = "Ioannes"
+		monarch_name = "Ioannes"
+		dynasty = "Palaiologos"
+		birth_date = 1424.1.1
+		death_date = 1465.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

@@ -1,0 +1,24 @@
+owner = SYR
+controller = SYR
+capital = "Beroea"
+is_city = yes
+culture = seleucian
+religion = orthodox
+trade_goods = silk
+fort_15th = yes
+base_tax = 6
+base_production = 3
+base_manpower = 3
+extra_cost = 16
+add_core = SYR
+add_permanent_claim = BYZ
+discovered_by = east_african
+discovered_by = eastern
+discovered_by = indian
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = ottoman
+discovered_by = sub_saharan
+discovered_by = western
+hre = yes
+1599.1.1 = { owner = BYZ controller = BYZ add_core = BYZ } 
