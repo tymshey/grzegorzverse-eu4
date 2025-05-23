@@ -1,0 +1,42 @@
+Caucasus_formable_ideas = {
+	start = {
+		land_morale = 0.10
+		discipline = 0.05
+	}
+	trigger = {
+		was_tag = Z05
+		tag = RUS
+	}
+	free = yes
+
+	idea_11 = {
+		global_manpower_modifier = 0.25
+	}
+	idea_12 = {
+		trade_efficiency = 0.15
+		may_establish_frontier = yes
+	}
+	idea_13 = {
+		interest = -0.15
+		inflation_reduction = 0.05
+	}
+	idea_14 = {
+		caravan_power = 0.2
+		merchants = 1
+	}
+	idea_15 = {
+		technology_cost = -0.1
+		idea_cost = -0.05
+	}
+	idea_16 = {
+		tolerance_heathen = 2
+		culture_conversion_time = -0.4
+	}
+	idea_17 = {
+		stability_cost_modifier = -0.2
+		diplomats = 1
+	}
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+}

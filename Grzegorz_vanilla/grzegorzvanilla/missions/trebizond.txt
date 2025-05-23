@@ -1,0 +1,61 @@
+trebizond_missions_1 = {
+
+	slot = 1
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = TRE
+	}
+	
+	trebizond_gambit = {
+		icon = mission_empire
+		position = 1
+		
+		trigger = {
+			ai = no
+			army_size_percentage = 0.8
+			overlord = {
+				has_opinion = {
+					who = ROOT 
+					value = 150 
+				}
+			}
+			is_subject_of_type_with_overlord = {
+				who = BYZ
+				type = vassal
+			}
+		}
+		
+		effect = {
+			overlord = {
+				create_march = TRE
+			}
+		}
+	}
+	
+	trebizond_takeover = {
+		icon = mission_t_imperial_throne
+		position = 1
+		required_missions = { trebizond_gambit }
+		
+		trigger = {
+			ai = no
+			army_size_percentage = 1
+		}
+		
+		effect = {
+			inherit = BYZ
+			change_tag = BYZ
+			set_capital = 151
+			add_government_reform = t_roman_empire_reform
+			change_country_color = {
+				color = { 212 78 163 }
+			}
+			override_country_name = T_KOMNENOI_NAME
+			swap_non_generic_missions = yes
+		}
+	}
+}

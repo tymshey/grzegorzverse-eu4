@@ -1,0 +1,22 @@
+# PiS i KO :troll:
+
+pis_faction = {
+	monarch_power = ADM
+	always = yes
+
+	modifier = { # ***** ***
+		inflation_reduction = -0.1
+		yearly_corruption = 0.02
+		reform_progress_growth = 0.1
+	}
+}
+
+ko_faction = { # KOCHAM DONALDA TUSKA!!!!!!!!!
+	monarch_power = DIP
+	always = yes
+
+	modifier = {
+		global_trade_power = 0.05
+		land_morale = 0.025
+	}
+}

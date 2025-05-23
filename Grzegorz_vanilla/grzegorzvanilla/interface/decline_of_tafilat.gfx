@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_decline_of_tafilat"
+		texturefile = "gfx//interface//disasters//decline_of_tafilat.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

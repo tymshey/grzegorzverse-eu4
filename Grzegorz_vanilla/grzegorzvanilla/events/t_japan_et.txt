@@ -1,0 +1,268 @@
+# EXTENDED TIMELINE EXCLUSIVE EVENTS
+# scripted by tymshey
+
+namespace = t_japan_et
+normal_or_historical_nations = yes
+
+### EVENT PICTURES:
+# URBANISATION_INCIDENT_eventPicture
+# TRIBUTARY_FLEET_eventPicture
+# SENGOKU_eventPicture
+# NANBAN_INCIDENT_eventPicture
+# MERITOCRACT_eventPicture
+# IMPERIAL_SEAL_eventPicture
+# IMPERIAL_EXAMINATION_eventPicture
+# IKKO_IKKI_INCIDENT_eventPicture
+# GIFTS_TO_EMPEROR_eventPicture
+# FIREARMS_INCIDENT_eventPicture
+# CHINESE_GENERAL_eventPicture
+###
+
+country_event = { # Growth of urban centers (1250)
+	id = t_japan_et.1
+	title = t_japan_et.1.title
+	desc = t_japan_et.1.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1250
+		NOT = {
+			is_year = 1400
+		}
+		tag = JAP
+		owns = 1020 # Kyoto
+		owns = 1021 # Settsu/Osaka
+		owns = 1030 # Owari/Nagoya
+		owns = 4189 # Sagami/Kanagawa
+		owns = 1028 # Musashi/Edo/Tokyo
+		owns = 1027 # Hitachi
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = t_japan_et.1.a
+		1020 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_urban_centre
+				duration = -1
+			}
+		}
+		1021 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_urban_centre
+				duration = -1
+			}
+		}
+		1030 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_urban_centre
+				duration = -1
+			}
+		}
+		4189 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_urban_centre
+				duration = -1
+			}
+		}
+		1028 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_urban_centre
+				duration = -1
+			}
+		}
+		1027 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_urban_centre
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { # Greater Tokyo (1850)
+	id = t_japan_et.2
+	title = t_japan_et.2.title
+	desc = t_japan_et.2.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1850
+		tag = JAP
+		owns = 1028 # Musashi/Edo/Tokyo
+		owns = 4189 # Sagami/Kanagawa
+		owns = 4190 # Shimousa/Chiba
+		owns = 1027 # Hitachi
+		owns = 1843 # Kozuke
+		owns = 4191 # Shimotsuke
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = t_japan_et.2.a
+		1028 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = t_jap_greater_kanto
+				duration = -1
+			}
+		}
+		4189 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = t_jap_greater_kanto
+				duration = -1
+			}
+		}
+		4190 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = t_jap_greater_kanto
+				duration = -1
+			}
+		}
+		1027 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = t_jap_greater_kanto
+				duration = -1
+			}
+		}
+		1843 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = t_jap_greater_kanto
+				duration = -1
+			}
+		}
+		4191 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = t_jap_greater_kanto
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { # Bushido (<1440)
+	id = t_japan_et.3
+	title = t_japan_et.3.title
+	desc = t_japan_et.3.desc
+	picture = FIREARMS_INCIDENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			is_year = 1440
+		}
+		tag = JAP
+		mission_completed = jap_bushido_code
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = t_japan_et.3.a
+		add_country_modifier = {
+			name = t_jap_et_bushido
+			duration = -1
+		}
+	}
+}
+
+country_event = { # Trade Guilds (1350)
+	id = t_japan_et.4
+	title = t_japan_et.4.title
+	desc = t_japan_et.4.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1350
+		NOT = {
+			is_year = 1440
+		}
+		owns = 1825 # Aki
+		owns = 4360 # Mikawa
+		owns = 4182 # Hizen
+		tag = JAP
+		mission_completed = jap_bushido_code
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = t_japan_et.4.a
+		1825 = {
+			change_trade_goods = cloth
+			add_base_production = 1
+			add_province_modifier = {
+				name = t_jap_trade_guilds
+				duration = -1
+			}
+		}
+		4360 = {
+			change_trade_goods = cloth
+			add_base_production = 1
+			add_province_modifier = {
+				name = t_jap_trade_guilds
+				duration = -1
+			}
+		}
+		4182 = {
+			change_trade_goods = cloth
+			add_base_production = 2
+			add_province_modifier = {
+				name = t_jap_trade_guilds
+				duration = -1
+			}
+		}
+	}
+}

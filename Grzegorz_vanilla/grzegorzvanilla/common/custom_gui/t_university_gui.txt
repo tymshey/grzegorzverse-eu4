@@ -1,0 +1,402 @@
+## Education Interface
+
+custom_button = { # Open Education Interface
+    name = t_open_education_interface
+    potential = {
+		ai = no
+		NOT = {
+			has_country_flag = gv_education_interface_open
+		}
+    }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = t_education_interface_availability
+			GV_has_universities = yes
+		}
+	}
+    effect = {
+		hidden_effect = {
+			clr_country_flag = gv_education_interface_open
+			set_country_flag = gv_education_interface_open
+		}
+	}
+    tooltip = t_open_education_interface_tt
+}
+
+custom_button = { # Close Education Interface
+    name = t_close_education_interface
+    potential = {
+		ai = no
+		has_country_flag = gv_education_interface_open
+    }
+    trigger = {
+		
+	}
+    effect = {
+		hidden_effect = {
+			clr_country_flag = gv_education_interface_open
+		}
+	}
+    tooltip = t_close_education_interface_tt
+}
+
+custom_icon = { # Background
+    name = t_education_background
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+		}
+	}
+	# tooltip = "dont even look at this"
+}
+
+# Roman Universities and Symposiums
+
+custom_button = { # Theodosian University
+    name = t_edu_theodosian_university
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			151 = {
+				has_province_modifier = t_phanarion
+			}
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_edu_theodosian_university_tt
+}
+
+custom_button = { # Hold Theodosian Symposium
+    name = t_hold_theodosian_symposium
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			151 = {
+				has_province_modifier = t_phanarion
+			}
+		}
+    }
+    trigger = {
+		OR = {
+			NOT = {
+				has_country_flag = t_edu_symposium_held
+			}
+			had_country_flag = {
+				flag = t_edu_symposium_held
+				days = 7300
+			}
+		}
+	}
+    effect = {
+		country_event = { id = flavor_rom.34 }
+		set_country_flag = t_edu_symposium_held
+	}
+    tooltip = t_hold_symposium_tt
+}
+
+custom_button = { # University of Callistus
+    name = t_edu_university_of_callistus
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			151 = {
+				has_province_modifier = t_phanarion
+			}
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_edu_university_of_callistus_tt
+}
+
+custom_button = { # Hold Callistan Symposium
+    name = t_hold_callistus_symposium
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			151 = {
+				has_province_modifier = t_phanarion
+			}
+		}
+    }
+    trigger = {
+		OR = {
+			NOT = {
+				has_country_flag = t_edu_symposium_held
+			}
+			had_country_flag = {
+				flag = t_edu_symposium_held
+				days = 7300
+			}
+		}
+	}
+    effect = {
+		country_event = { id = flavor_rom.35 }
+		set_country_flag = t_edu_symposium_held
+	}
+    tooltip = t_hold_symposium_tt
+}
+
+custom_button = { # Studium Justinianae
+    name = t_edu_university_of_justinian
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			151 = {
+				has_province_modifier = t_phanarion
+			}
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_edu_university_of_justinian_tt
+}
+
+custom_button = { # Hold Justinianic Symposium
+    name = t_hold_justinian_symposium
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			151 = {
+				has_province_modifier = t_phanarion
+			}
+		}
+    }
+    trigger = {
+		OR = {
+			NOT = {
+				has_country_flag = t_edu_symposium_held
+			}
+			had_country_flag = {
+				flag = t_edu_symposium_held
+				days = 7300
+			}
+		}
+	}
+    effect = {
+		country_event = { id = flavor_rom.36 }
+		set_country_flag = t_edu_symposium_held
+	}
+    tooltip = t_hold_symposium_tt
+}
+
+# German Universities and Symposiums
+
+custom_button = { # Humboldt University
+    name = t_edu_humboldt_university
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = Z01
+				tag = NGC
+				tag = GER
+			}
+			50 = {
+				has_province_modifier = t_humboldt
+			}
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_edu_humboldt_university_tt
+}
+
+custom_button = { # Hold Humboldt Symposium
+    name = t_hold_humboldt_symposium
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = Z01
+				tag = NGC
+				tag = GER
+			}
+			50 = {
+				has_province_modifier = t_humboldt
+			}
+		}
+    }
+    trigger = {
+		OR = {
+			NOT = {
+				has_country_flag = t_edu_symposium_held
+			}
+			had_country_flag = {
+				flag = t_edu_symposium_held
+				days = 7300
+			}
+		}
+	}
+    effect = {
+		country_event = { id = flavor_theodland.5 }
+		set_country_flag = t_edu_symposium_held
+	}
+    tooltip = t_hold_symposium_tt
+}
+
+# English Universities and Symposiums
+
+custom_button = { # Oxford University
+    name = t_edu_oxford_university
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = ENG
+				tag = GBR
+				tag = GBE
+				tag = AVE
+			}
+			has_country_flag = gv_eng_universities_flag
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_edu_oxford_university_tt
+}
+
+custom_button = { # Hold Oxford Symposium
+    name = t_hold_oxford_symposium
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = ENG
+				tag = GBR
+				tag = GBE
+				tag = AVE
+			}
+			has_country_flag = gv_eng_universities_flag
+		}
+    }
+    trigger = {
+		OR = {
+			NOT = {
+				has_country_flag = t_edu_symposium_held
+			}
+			had_country_flag = {
+				flag = t_edu_symposium_held
+				days = 7300
+			}
+		}
+	}
+    effect = {
+		country_event = { id = flavor_england.5 }
+		set_country_flag = t_edu_symposium_held
+	}
+    tooltip = t_hold_symposium_tt
+}
+
+custom_button = { # Cambridge University
+    name = t_edu_cambridge_university
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = ENG
+				tag = GBR
+				tag = GBE
+				tag = AVE
+			}
+			has_country_flag = gv_eng_universities_flag
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_edu_cambridge_university_tt
+}
+
+custom_button = { # Hold Cambridge Symposium
+    name = t_hold_cambridge_symposium
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = gv_education_interface_open
+			OR = {
+				tag = ENG
+				tag = GBR
+				tag = GBE
+				tag = AVE
+			}
+			has_country_flag = gv_eng_universities_flag
+		}
+    }
+    trigger = {
+		OR = {
+			NOT = {
+				has_country_flag = t_edu_symposium_held
+			}
+			had_country_flag = {
+				flag = t_edu_symposium_held
+				days = 7300
+			}
+		}
+	}
+    effect = {
+		country_event = { id = flavor_england.6 }
+		set_country_flag = t_edu_symposium_held
+	}
+    tooltip = t_hold_symposium_tt
+}

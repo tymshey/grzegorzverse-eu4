@@ -1,0 +1,72 @@
+Egyptian_Improvements = {
+local_production_efficiency = 0.15
+}
+
+Egyptian_Improvements2 = {
+local_production_efficiency = 0.15
+}
+
+Jerusalem_Unrest_Modifier = {
+	local_unrest = -10
+}
+
+t_jerusalem_trade_modifier = {
+	trade_goods_size_modifier = 0.1
+	trade_value_modifier = 0.15
+}
+
+t_jerusalem_order_modifier = {
+	local_development_cost = -0.05
+	local_unrest = -5
+}
+
+t_crusaders_control_mecca = {
+	local_missionary_strength = 0.03
+	local_development_cost = 0.05
+	local_unrest = -1
+}
+
+t_rybnik = {
+	local_development_cost = -0.2
+	trade_goods_size = 2
+}
+
+t_jerusalem_colonial = {
+	global_colonial_growth = 10
+	range = 0.2
+}
+
+Gold_Rush = {
+trade_goods_size_modifier = 0.30
+}
+
+Granary_of_the_Mediterranean_2 = {
+trade_goods_size = 0.50
+}
+
+Sudan_trade_modifier = {
+province_trade_power_modifier = 0.10
+}
+
+Darfur_Hills = {
+local_defensiveness = 0.2
+}
+
+Alexandria_trade_modifier = {
+province_trade_power_modifier = 0.10
+}
+
+Slave_Market = {
+trade_goods_size_modifier = 0.10
+}
+
+Local_Tolarnce_in_Jerusalem = {
+local_tolerance_of_heathens = 20
+local_tolerance_of_heretics = 20
+add_cardinal = yes
+}
+
+Jerusalem_Stronghold = {
+local_defensiveness = 0.35
+}
+

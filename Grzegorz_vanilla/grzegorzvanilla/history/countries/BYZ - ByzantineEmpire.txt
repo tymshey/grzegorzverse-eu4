@@ -1,0 +1,144 @@
+government = monarchy
+add_government_reform = t_roman_empire_reform
+government_rank = 3
+technology_group = eastern # fuck you paradox
+religion = orthodox
+primary_culture = greek
+capital = 151
+add_accepted_culture = anatolian
+add_truce_with = GEN
+historical_rival = PER
+historical_rival = Z01
+
+867.1.1 = {
+	monarch = {
+		name = "Ioannes Paulus"
+		dynasty = "Wojtyla"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 842.10.23
+		death_date = 891.5.12
+		religion = orthodox
+		culture = greek
+	}
+}
+1031.1.1 = {
+	monarch = {
+		name = "Callistus the Great"
+		dynasty = "Wojtyla"
+		adm = 5
+		dip = 5
+		mil = 6
+		birth_date = 1007.9.22
+		death_date = 1082.3.11
+		religion = orthodox
+		culture = greek
+	}
+}
+1444.10.1 = {
+	set_estate_privilege = estate_roman_bureaucrats_themes
+	set_estate_privilege = estate_church_union_of_the_churches
+	add_country_modifier = {
+		name = t_rome_siege_of_time
+		duration = -1
+	}
+	change_estate_land_share = {
+		estate = estate_jews
+		share = -10
+	}
+}
+1444.11.11= {
+	monarch = {
+		name = "Callistus II"
+		dynasty = "Wojtyla"
+		adm = 3
+		dip = 5
+		mil = 4
+		birth_date = 1420.11.21
+		religion = orthodox
+		culture = greek
+	}
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = midas_touched_personality
+	queen = {
+		name = "Anne"
+		dynasty = "Karling"
+		adm = 3
+		dip = 5
+		mil = 4
+		country_of_origin = BYZ
+		birth_date = 1405.4.17
+		death_date = 1465.4.17
+		female = yes
+		religion = catholic
+		culture = cosmopolitan_french
+	}
+	add_queen_personality = free_thinker_personality
+	add_queen_personality = sinner_personality
+	heir = {
+		name = "Konstantinos"
+		monarch_name = "Konstantinos XII"
+		dynasty = "Wojtyla"
+		adm = 3
+		dip = 2
+		mil = 1
+		birth_date = 1444.1.27
+		death_date = 1509.1.27
+		claim = 89
+		religion = orthodox
+		culture = greek
+	}
+	add_heir_personality = free_thinker_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_treasury = 146
+ 	leader = {
+        	name = "Theodoros Palaiologos"
+        	type = general
+       	 	fire = 2
+        	shock = 1
+       	 	manuever = 1
+        	siege = 2
+    	}
+	leader = {
+        	name = "Konstantinos Makedon"
+        	type = general
+       	 	fire = 3
+        	shock = 2
+       	 	manuever = 2
+        	siege = 1
+    	}
+	leader = {
+        	name = "Anastasius Gratian Monomachos"
+        	type = general
+       	 	fire = 2
+        	shock = 3
+       	 	manuever = 1
+        	siege = 2
+    	}
+	leader = {
+        	name = "Probus Rhadinos Caudex"
+        	type = admiral
+       	 	fire = 2
+        	shock = 3
+       	 	manuever = 1
+        	siege = 2
+    	}
+}
+
+1599.1.1= {
+	monarch = {
+		name = "Constantinus XV"
+		dynasty = "Flavius"
+		adm = 3
+		dip = 5
+		mil = 4
+		birth_date = 1562.10.20
+		religion = orthodox
+		culture = greek
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = midas_touched_personality
+}

@@ -1,0 +1,23 @@
+# Russian decisions
+
+country_decisions = {
+	
+	t_rus_orthodox_decision = {
+		potential = {
+			OR = {
+				tag = KIE
+				tag = RUS
+			}
+			NOT = { religion = orthodox }
+			ai = no
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+		}
+		effect = {
+			change_religion = orthodox
+		}
+		ai_importance = 0
+	}
+}

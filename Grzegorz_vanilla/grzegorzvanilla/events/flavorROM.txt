@@ -1,0 +1,1933 @@
+###########################################
+# Flavor Events for The Roman Empire
+#
+# Scripted by tymshey
+###########################################
+
+namespace = flavor_rom
+normal_or_historical_nations = yes
+
+# The court strife starts
+country_event = {
+	id = flavor_rom.1
+	title = flavor_rom.1.title
+	desc = flavor_rom.1.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_rom.1.a
+		capital_scope = {
+			add_province_modifier = {
+				name = "t_rome_court_strife_capital"
+				duration = -1
+			}
+		}
+	}
+}
+
+# The court strife ends
+country_event = {
+	id = flavor_rom.2
+	title = flavor_rom.2.title
+	desc = flavor_rom.2.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_rom.2.a
+		capital_scope = {
+			remove_province_modifier = t_rome_court_strife_capital
+		}
+	}
+}
+
+# Roman Coffee imports
+country_event = {
+	id = flavor_rom.3
+	title = flavor_rom.3.title
+	desc = flavor_rom.3.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 151
+		NOT = { has_global_flag = roman_coffee_boom_happened }
+		is_year = 1520
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.3.a
+		change_price = {
+			trade_goods = coffee
+			key = ROMAN_COFFEE_BOOM
+			value = 0.25
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+		add_mercantilism = 2
+		set_global_flag = roman_coffee_boom_happened
+	}
+	
+	option = {
+		name = flavor_rom.3.b
+		change_price = {
+			trade_goods = coffee
+			key = ROMAN_COFFEE_BOOM
+			value = 0.25
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+		add_mercantilism = 2
+		6000 = {
+			change_trade_goods = coffee
+		}
+		set_global_flag = roman_coffee_boom_happened
+	}
+}
+
+# Scriptores Originum
+country_event = {
+	id = flavor_rom.4
+	title = flavor_rom.4.title
+	desc = flavor_rom.4.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 151
+		NOT = { has_global_flag = roman_scriptores_originum_happened }
+		is_year = 1500
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.4.a
+		change_price = {
+			trade_goods = paper
+			key = ROMAN_PAPER_BOOM
+			value = 0.25
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+		add_mercantilism = 2
+		set_global_flag = roman_scriptores_originum_happened
+	}
+	
+	option = {
+		name = flavor_rom.4.b
+		change_price = {
+			trade_goods = paper
+			key = ROMAN_PAPER_BOOM
+			value = 0.1
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+		add_mercantilism = 2
+		316 = {
+			change_trade_goods = paper
+		}
+		set_global_flag = roman_scriptores_originum_happened
+	}
+}
+
+# Theodosian University rises to prominence
+country_event = {
+	id = flavor_rom.5
+	title = flavor_rom.5.title
+	desc = flavor_rom.5.desc
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 151
+		NOT = {
+			has_country_flag = t_theodosian_university_flag
+		}
+		is_year = 1510
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.5.a
+		151 = {
+			add_permanent_province_modifier = {
+				name = t_theodosian_university_modifier
+				duration = -1
+			}
+		}
+		add_stability = 1
+		custom_tooltip = t_theodosian_university_tt_1
+		set_country_flag = t_theodosian_university_flag
+	}
+	
+	option = {
+		name = flavor_rom.5.b
+		add_treasury = -400
+		151 = {
+			add_permanent_province_modifier = {
+				name = t_theodosian_university_modifier_2
+				duration = -1
+			}
+		}
+		change_innovativeness = 2
+		custom_tooltip = t_theodosian_university_tt_2
+		set_country_flag = t_theodosian_university_flag
+	}
+	
+	option = {
+		name = flavor_rom.5.c
+		add_treasury = -1000
+		add_adm_power = -25
+		151 = {
+			add_permanent_province_modifier = {
+				name = t_theodosian_university_modifier_3
+				duration = -1
+			}
+		}
+		change_innovativeness = 2
+		custom_tooltip = t_theodosian_university_tt_3
+		set_country_flag = t_theodosian_university_flag
+	}
+}
+
+# Diplomatic success
+country_event = {
+	id = flavor_rom.6
+	title = flavor_rom.6.title
+	desc = flavor_rom.6.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = no
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 151
+		stability = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 144
+	}
+	
+	option = {
+		name = flavor_rom.6.a
+		add_dip_power = 75
+	}
+	
+	option = {
+		name = flavor_rom.6.b
+		add_years_of_income = 0.1
+		add_prestige = 5
+	}
+	
+	option = {
+		name = flavor_rom.6.c
+		add_treasury = -100
+		add_prestige = 20
+	}
+}
+
+# The Imperial Society
+country_event = {
+	id = flavor_rom.7
+	title = flavor_rom.7.title
+	desc = flavor_rom.7.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		NOT = {
+			has_country_flag = t_imperial_society_flag
+		}
+		is_year = 1550
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.7.a
+		capital_scope = {
+			add_permanent_province_modifier = {
+				name = t_the_imperial_society
+				duration = -1
+			}
+		}
+		change_innovativeness = 2
+		set_country_flag = t_imperial_society_flag
+	}
+}
+
+# Optica Maior
+country_event = {
+	id = flavor_rom.8
+	title = flavor_rom.8.title
+	desc = flavor_rom.8.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		151 = {
+			has_province_modifier = t_phanarion
+		}
+		NOT = {
+			has_country_flag = t_optica_maior_flag
+		}
+		is_year = 1480
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.8.a
+		change_price = {
+			trade_goods = glass
+			key = ROMAN_GLASS_PRICE
+			value = 0.1
+			duration = -1
+		}
+		change_innovativeness = 2
+		custom_tooltip = t_rome_optica_maior_tt
+		set_country_flag = t_optica_maior_flag
+		hidden_effect = {
+			change_variable = {
+				which = tRomeArtifacts
+				value = 1
+			}
+		}
+	}
+}
+
+# Startup event
+country_event = {
+	id = flavor_rom.9
+	title = flavor_rom.9.title
+	desc = flavor_rom.9.desc
+	picture = PAXROMANA
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = t_had_new_emperor_event
+			reset_argentarii = yes
+			set_variable = {
+				which = tRomeArtifacts
+				value = 0
+			}
+		}
+	}
+	
+	option = {
+		name = flavor_rom.9.a
+		add_country_modifier = {
+			name = t_reclaiming_provinces
+			duration = 3650
+		}
+		# country_event = { id = t_debug.19 } # HRE removal
+	}
+}
+
+# Arbiter elegantiarum
+country_event = {
+	id = flavor_rom.10
+	title = flavor_rom.10.title
+	desc = flavor_rom.10.desc
+	picture = PAXROMANA
+	
+	fire_only_once = no
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		stability = -1
+		NOT = {
+			has_ruler_modifier = t_rome_arbiter_modifier
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 256
+	}
+	
+	option = {
+		name = flavor_rom.10.a
+		add_ruler_modifier = {
+			name = "t_rome_arbiter_modifier"
+			duration = -1
+		}
+		add_years_of_income = -0.05
+	}
+}
+
+# Lost works of Ibrahim ibn Yaqub found in Kurdistan
+# Also for Persia
+country_event = {
+	id = flavor_rom.11
+	title = flavor_rom.11.title
+	desc = flavor_rom.11.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	fire_only_once = no
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+			tag = PER
+		}
+		NOT = {
+			has_global_flag = t_ibrahim_ibn_yaqub_flag
+		}
+		411 = {
+			owned_by = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.11.a
+		change_innovativeness = 2
+		add_country_modifier = {
+			name = t_ibrahim_ibn_yaqub_works
+			duration = -1
+		}
+		set_global_flag = t_ibrahim_ibn_yaqub_flag
+		if = {
+			limit = { tag = BYZ }
+			hidden_effect = {
+				change_variable = {
+					which = tRomeArtifacts
+					value = 1
+				}
+			}
+			custom_tooltip = t_rome_ibrahim_ibn_yaqub_cultural_work_tt
+		}
+		if = {
+			limit = { tag = ROM }
+			hidden_effect = {
+				change_variable = {
+					which = tRomeArtifacts
+					value = 1
+				}
+			}
+			custom_tooltip = t_rome_ibrahim_ibn_yaqub_cultural_work_tt
+		}
+	}
+}
+
+# New Emperor is Coronated
+
+country_event = {
+	id = flavor_rom.12
+	title = flavor_rom.12.title
+	desc = flavor_rom.12.desc
+	picture = PAXROMANA
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_reform = t_roman_empire_reform
+		months_of_ruling = 1
+		NOT = { has_ruler_flag = t_had_new_emperor_event }
+	}
+	
+	option = {
+		name = flavor_rom.12.a
+		set_ruler_flag = t_had_new_emperor_event
+		add_prestige = 5
+		add_years_of_income = -0.025
+		if = {
+			limit = {
+				has_reform = t_roman_empire_reform
+			}
+			151 = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 2
+				}
+			}
+		}
+	}
+}
+
+# Greek or Roman
+
+country_event = {
+	id = flavor_rom.13
+	title = flavor_rom.13.title
+	desc = flavor_rom.13.desc
+	picture = PAXROMANA
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_institution = renaissance
+		NOT = {
+			OR = {
+				has_country_flag = t_rome_chose_greek
+				has_country_flag = t_rome_chose_roman
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.13.a
+		set_country_flag = t_rome_chose_greek
+		custom_tooltip = t_rome_chooses_greek_tt
+		swap_non_generic_missions = yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = flavor_rom.13.b
+		set_country_flag = t_rome_chose_roman
+		custom_tooltip = t_rome_chooses_roman_tt
+		swap_non_generic_missions = yes
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	#option = {
+	#	name = flavor_rom.13.c
+	#	trigger = {
+	#		ai = no
+	#	}
+	#	enable_branching_mission_review_without_ai = { key = BYZ_GREEK_OR_ROMAN }
+	#}
+}
+
+# Council of Alexandria
+
+country_event = {
+	id = flavor_rom.14
+	title = flavor_rom.14.title
+	desc = flavor_rom.14.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		is_year = 1465
+		NOT = {
+			OR = {
+				has_country_flag = t_rome_tolerates_nestorians_flag
+				has_country_flag = t_rome_hates_nestorians_flag
+			}
+		}
+	}
+	
+	immediate = {
+		358 = {
+			add_province_modifier = {
+				name = t_holding_the_council
+				duration = 365
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.14.a
+		set_country_flag = t_rome_tolerates_nestorians_flag
+		add_country_modifier = {
+			name = t_rome_tolerates_nestorians
+		}
+		add_legitimacy = 20
+	}
+	
+	option = {
+		name = flavor_rom.14.b
+		set_country_flag = t_rome_hates_nestorians_flag
+		add_country_modifier = {
+			name = t_rome_hates_nestorians
+		}
+		add_years_of_income = 0.25
+		151 = {
+			remove_province_modifier = t_nestorian_quarter
+		}
+		327 = {
+			remove_province_modifier = t_nestorian_quarter
+		}
+		146 = {
+			remove_province_modifier = t_nestorian_quarter
+		}
+		330 = {
+			remove_province_modifier = t_nestorian_quarter
+		}
+		418 = {
+			remove_province_modifier = t_nestorian_quarter
+		}
+	}
+}
+
+# Constantinopolitan Silk
+
+country_event = {
+	id = flavor_rom.15
+	title = flavor_rom.15.title
+	desc = flavor_rom.15.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.15.a"
+		add_dip_power = 100
+		change_price = {
+			trade_goods = silk
+			key = ROMAN_SILK_PRICE
+			value = 0.15
+			duration = -1
+		}
+		set_global_flag = t_roman_silk_happened
+	}
+}
+
+# Constantinopolitan Illuminati
+
+country_event = {
+	id = flavor_rom.16
+	title = flavor_rom.16.title
+	desc = flavor_rom.16.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		is_year = 1652
+		NOT = {
+			has_country_flag = t_illuminati_flag
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = flavor_rom.16.a
+		set_country_flag = t_illuminati_flag
+		capital_scope = {
+			add_permanent_province_modifier = {
+				name = t_illuminati
+				duration = -1
+			}
+		}
+	}
+}
+
+# Sempronius Flavius Vindex
+
+country_event = {
+	id = flavor_rom.17
+	title = flavor_rom.17.title
+	desc = flavor_rom.17.desc
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		is_year = 1500
+		NOT = {
+			has_country_flag = t_sempronius_flavius_flag
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = flavor_rom.17.a
+		change_innovativeness = 2
+		set_country_flag = t_sempronius_flavius_flag
+		define_advisor = {
+			type = philosopher
+			name = "Sempronius Flavius Vindex"
+			skill = 3
+			cost_multiplier = 0.25
+			culture = greek
+			religion = orthodox
+		}
+		add_country_modifier = {
+			name = t_brilliant_advisor
+			duration = 9125
+		}
+	}
+}
+
+# Flavians Seize Power
+
+country_event = {
+	id = flavor_rom.18
+	title = flavor_rom.18.title
+	desc = flavor_rom.18.desc
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		is_year = 1550
+		NOT = {
+			has_country_flag = t_flavians_took_power
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = flavor_rom.18.a
+		set_country_flag = t_flavians_took_power
+		define_ruler = {
+			name = "Gaius"
+			dynasty = "Flavius"
+			adm = 4
+			dip = 5
+			mil = 5
+			age = 42
+			claim = 95
+		}
+		change_government = monarchy
+		add_government_reform = t_roman_enlightened_empire_reform
+		remove_heir = { }
+		add_country_modifier = {
+			name = t_political_turmoil
+			duration = 9125
+		}
+		restore_country_name = yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	#option = {
+	#	name = flavor_rom.18.b
+	#	set_country_flag = t_refused_flavians
+	#	add_country_modifier = {
+	#		name = t_old_dynasty_preserved
+	#		duration = 9125
+	#	}
+	#	151 = {
+	#		spawn_rebels = {
+	#			type = pretender_rebels
+	#			size = 5
+	#			leader = "Gaius Flavius"
+	#		}
+	#	}
+	#	ai_chance = {
+	#		factor = 0
+	#	}
+	#}
+}
+
+# Calling the Senate
+
+country_event = {
+	id = flavor_rom.19
+	title = flavor_rom.19.title
+	desc = flavor_rom.19.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_rom.19.a
+		add_government_power = {
+			mechanic_type = t_roman_senate_mechanic
+			power_type = imperial_grasp
+			value = 10
+		}
+	}
+	
+	option = {
+		name = flavor_rom.19.b
+		add_government_power = {
+			mechanic_type = t_roman_senate_mechanic
+			power_type = imperial_grasp
+			value = -10
+		}
+	}
+}
+
+# Calling the Council
+
+country_event = {
+	id = flavor_rom.20
+	title = flavor_rom.20.title
+	desc = flavor_rom.20.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_rom.20.a
+		add_country_modifier = {
+			name = royal_council_meeting_mod
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = council_of_the_chamber_mod
+			duration = 3650
+		}
+	}
+	
+	option = {
+		name = flavor_rom.20.b
+		add_country_modifier = {
+			name = state_council_meeting_mod
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = council_of_mediterranean_mod
+			duration = 3650
+		}
+	}
+	
+	option = {
+		name = flavor_rom.20.c
+		add_country_modifier = {
+			name = war_council_meeting_mod
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = council_of_the_crusade_mod
+			duration = 3650
+		}
+	}
+}
+
+# Growth of population in Constantinople
+
+country_event = {
+	id = flavor_rom.21
+	title = flavor_rom.21.title
+	desc = flavor_rom.21.desc
+	picture = URBANIZATION_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 151
+		NOT = { has_global_flag = roman_grain_boom_happened }
+		is_year = 1509
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = flavor_rom.21.a
+		change_price = {
+			trade_goods = grain
+			key = ROMAN_GRAIN_BOOM
+			value = 0.25
+			duration = -1
+		}
+		151 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		6000 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		add_mercantilism = 2
+		set_global_flag = roman_grain_boom_happened
+	}
+}
+
+ 
+country_event = {
+	id = flavor_rom.22
+	
+	title = "flavor_rom.22.t"
+	desc = "flavor_rom.22.d"
+	
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	trigger = {
+		always = no # ikr
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		OR = {
+			NOT = { has_country_flag = recent_BYZ_factions_2 }
+			had_country_flag = { flag = recent_BYZ_factions_2 days = 365 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_BYZ_factions_2 }
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_rom.22.a"
+		add_dip_power = 100
+	}
+}
+
+country_event = {
+	id = flavor_rom.23
+	
+	title = "flavor_rom.23.t"
+	desc = "flavor_rom.23.d"
+	
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	trigger = {
+		always = no # ikr
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		OR = {
+			NOT = { has_country_flag = recent_BYZ_factions_2 }
+			had_country_flag = { flag = recent_BYZ_factions_2 days = 365 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_BYZ_factions_2 }
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "flavor_rom.23.a"
+		add_mil_power = 100
+	}
+}
+
+# Factions
+country_event = {
+	id = flavor_rom.24
+	
+	title = "flavor_rom.24.t"
+	desc = "flavor_rom.24.d"
+	
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		OR = {
+			NOT = { has_country_flag = recent_BYZ_factions_3 }
+			had_country_flag = { flag = recent_BYZ_factions_3 days = 365 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_BYZ_factions_3 }
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = "flavor_rom.24.a"
+		capital_scope = {
+			add_random_development = 1
+		}
+	}
+	
+	option = {
+		name = "flavor_rom.24.b"
+		add_adm_power = 20
+		add_dip_power = 20
+		add_mil_power = 20
+	}
+}
+
+# The Revelation
+country_event = {
+	id = flavor_rom.25
+	
+	title = "flavor_rom.25.t"
+	desc = "flavor_rom.25.d"
+	
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.25.a"
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_stability = 1
+		set_country_flag = t_relevation_flag_1
+	}
+	
+	option = {
+		name = "flavor_rom.25.b"
+		add_adm_power = 100
+		override_country_name = T_EMPIRE_OF_SOL_INVICTUS
+		remove_country_modifier = t_byz_deus_sol_invictus
+		add_country_modifier = {
+			name = t_byz_deus_sol_invictus_2
+			duration = -1
+		}
+		change_government = theocracy
+		add_government_reform = t_roman_theocracy_reform
+		add_stability = -1
+		set_country_flag = t_relevation_flag_2
+	}
+	
+	option = {
+		name = "flavor_rom.25.c"
+		change_religion = zun_pagan_reformed
+		add_stability = -3
+		set_country_flag = t_relevation_flag_3
+	}
+}
+
+# Changing the primary deity
+country_event = {
+	id = flavor_rom.26
+	
+	title = "flavor_rom.26.title"
+	desc = "flavor_rom.26.desc"
+	
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.26.a"
+		change_personal_deity = jupiter
+	}
+	
+	option = {
+		name = "flavor_rom.26.b"
+		change_personal_deity = luno
+	}
+	
+	option = {
+		name = "flavor_rom.26.c"
+		change_personal_deity = neptunus
+	}
+	
+	option = {
+		name = "flavor_rom.26.d"
+		change_personal_deity = venus
+	}
+	
+	option = {
+		name = "flavor_rom.26.e"
+		change_personal_deity = mars
+	}
+	
+	option = {
+		name = "flavor_rom.26.f"
+		change_personal_deity = ceres
+	}
+	
+	option = {
+		name = "flavor_rom.26.g"
+		change_personal_deity = vulcan
+	}
+	
+	option = {
+		name = "flavor_rom.26.h"
+		change_personal_deity = minerva
+	}
+	
+	option = {
+		name = "flavor_rom.26.i"
+		change_personal_deity = diana
+	}
+	
+	option = {
+		name = "flavor_rom.26.j"
+		change_personal_deity = apollo
+	}
+	
+	option = {
+		name = "flavor_rom.26.k"
+		change_personal_deity = mercury
+	}
+	
+	option = {
+		name = "flavor_rom.26.m"
+		change_personal_deity = vesta
+	}
+
+	option = {
+		name = "flavor_rom.26.n"
+		if = {
+			limit = {
+				mission_completed = roman_empire_missions_4_task_2
+			}
+			change_personal_deity = sol_invictus_deity
+		}
+	}
+}
+
+country_event = {
+	id = flavor_rom.27
+	title = flavor_rom.27.title
+	desc = flavor_rom.27.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.27.a"
+		kill_ruler = yes
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = 50
+		custom_tooltip = t_the_heavens_beckon_tt
+	}
+}
+
+# Devs Adivta Romanis
+country_event = {
+	id = flavor_rom.28
+	title = flavor_rom.28.title
+	desc = flavor_rom.28.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		is_in_war = {
+			defenders = ROOT
+		}
+		NOT = {
+			war_score = -50
+		}
+		war_exhaustion = 10
+		OR = {
+			NOT = { has_country_flag = recent_BYZ_devs_adivta_romanis }
+			had_country_flag = { flag = recent_BYZ_devs_adivta_romanis days = 3650 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_BYZ_devs_adivta_romanis }
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "flavor_rom.28.a"
+		add_country_modifier = {
+			name = t_devs_adivta_romanis
+			duration = 3650
+		}
+	}
+}
+
+# Civis Romanus Sum
+country_event = {
+	id = flavor_rom.29
+	title = flavor_rom.29.title
+	desc = flavor_rom.29.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.29.a"
+		add_adm_power = 100
+	}
+}
+
+# Rise of a Caesar
+country_event = {
+	id = flavor_rom.30
+	title = flavor_rom.30.title
+	desc = flavor_rom.30.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	trigger = {
+		tag = ROM
+		has_reform = t_roman_republic_reform
+		NOT = {
+			republican_tradition = 40
+		}
+		NOT = { has_country_flag = t_rise_of_a_caesar_flag }
+	}
+	
+	immediate = { set_country_flag = t_rise_of_a_caesar_flag }
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { # Avt Caesar Avt Nihil...
+		name = "flavor_rom.30.a"
+		add_country_modifier = {
+			name = t_rise_of_a_caesar
+			duration = 3650
+		}
+		add_government_reform = t_roman_dictatorship_reform
+	}
+	
+	option = { # For The Republic!
+		name = "flavor_rom.30.b"
+		add_country_modifier = {
+			name = t_in_defense_of_the_republic
+			duration = 3650
+		}
+	}
+}
+
+# Of Purple and Gold
+
+country_event = {
+	id = flavor_rom.31
+	title = flavor_rom.31.title
+	desc = flavor_rom.31.desc
+	picture = ROMANCOA_EVENT_PICTURE
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		current_age = age_of_absolutism
+		absolutism = 80
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_rom.31.a
+		add_country_modifier = {
+			name = t_of_purple_and_gold
+			duration = -1
+		}
+	}
+}
+
+# Ferrum et Carbon
+
+country_event = {
+	id = flavor_rom.32
+	title = flavor_rom.32.title
+	desc = flavor_rom.32.desc
+	picture = URBANIZATION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		furnace = 4
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = flavor_rom.32.a
+		add_country_modifier = {
+			name = t_robust_coal_industry
+			duration = -1 # until the end of the game, because if france does not secure rhineland or germany does not secure belgium (rarely happens) lorewise rome becomes the largest coal producer in the world
+		}
+		add_country_modifier = {
+			name = t_growth_of_iron_industry
+			duration = 7300 # 20 years, because initial production boom but lorewise germany outscales and becomes by far the largest iron producer in the world (something something eisen und kohle)
+		}
+	}
+}
+
+# Founding of the Imperial Admiralty
+
+country_event = {
+	id = flavor_rom.33
+	title = flavor_rom.33.title
+	desc = flavor_rom.33.desc
+	picture = PAXROMANA
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.33.a"
+		add_dip_power = 50
+		add_prestige = 25
+	}
+}
+
+# Theodosian Symposium
+
+country_event = {
+	id = flavor_rom.34
+	title = flavor_rom.34.title
+	desc = flavor_rom.34.desc
+	picture = UNIVERSITY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.34.a"
+		add_country_modifier = {
+			name = t_edu_economy_studies
+			duration = 3650
+		}
+	}
+}
+
+# Callistan Symposium
+
+country_event = {
+	id = flavor_rom.35
+	title = flavor_rom.35.title
+	desc = flavor_rom.35.desc
+	picture = UNIVERSITY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.35.a"
+		add_country_modifier = {
+			name = t_edu_natural_studies
+			duration = 3650
+		}
+	}
+}
+
+# Justinianic Symposium
+
+country_event = {
+	id = flavor_rom.36
+	title = flavor_rom.36.title
+	desc = flavor_rom.36.desc
+	picture = UNIVERSITY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.36.a"
+		add_country_modifier = {
+			name = t_edu_law_studies
+			duration = 3650
+		}
+	}
+}
+
+# Revolt Against Imperial Rule in Ethiopia
+
+country_event = {
+	id = flavor_rom.37
+	title = flavor_rom.37.title
+	desc = flavor_rom.37.desc
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1600 # chances are low rome conquers ethiopia before that, but just to make sure the event does not fire in the 15th century
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			region = horn_of_africa_region
+			value = 50
+		}
+		owns = 1227
+		owns = 1224
+		owns = 1211
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	option = {
+		name = flavor_rom.37.a # Get back to work nigger.
+		1227 = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 20
+				leader = "Assef Solomonid"
+			}
+		}
+		1224 = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 15
+				leader = "Abdul al-Zegbid"
+			}
+		}
+		1211 = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 15
+				leader = "Dedem al-Qasimi"
+			}
+		}
+	}
+}
+
+# Founding of the CRC
+
+country_event = {
+	id = flavor_rom.38
+	title = flavor_rom.38.title
+	desc = flavor_rom.38.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1500
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			superregion = india_superregion
+			value = 1
+		}
+		owns = 6000
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = {
+		name = flavor_rom.38.a
+		add_years_of_income = 0.5
+		6000 = {
+			add_permanent_province_modifier = {
+				name = t_crc_headquarters
+				duration = -1
+			}
+		}
+		1340 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 20
+				key = COROMANDEL_PRESENCE
+			}
+		}
+	}
+}
+
+# Grand Ecumenical Council
+
+country_event = {
+	id = flavor_rom.39
+	title = flavor_rom.39.title
+	desc = flavor_rom.39.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		# is_religion_enabled = protestant
+		religion = orthodox
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		is_year = 1500
+		NOT = {
+			has_country_flag = GV_GRAND_ECUMENICAL_COUNCIL_FLAG
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = flavor_rom.39.a
+		set_country_flag = GV_GRAND_ECUMENICAL_COUNCIL_FLAG
+		add_stability = 1
+		custom_tooltip = GV_GRAND_ECUMENICAL_COUNCIL_EVENT_TT
+	}
+}
+
+# Ecumenical Patriarchate annexed (hellenic)
+
+country_event = {
+	id = flavor_rom.40
+	title = flavor_rom.40.title
+	desc = flavor_rom.40.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_rom.40.a
+		151 = {
+			add_permanent_province_modifier = {
+				name = gv_ecumenical_patriarchate_allowed
+				duration = -1
+			}
+		}
+		inherit = PTR
+	}
+	
+	option = {
+		name = flavor_rom.40.b
+		add_prestige = 20
+		inherit = PTR
+	}
+}
+
+# Ecumenical Patriarchate annexed (reformed)
+
+country_event = {
+	id = flavor_rom.41
+	title = flavor_rom.41.title
+	desc = flavor_rom.41.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_rom.41.a
+		151 = {
+			add_permanent_province_modifier = {
+				name = gv_ecumenical_patriarchate_allowed
+				duration = -1
+			}
+		}
+		inherit = PTR
+	}
+	
+	option = {
+		name = flavor_rom.41.b
+		add_prestige = 20
+		inherit = PTR
+	}
+}
+
+# Reformation in the Empire
+
+country_event = {
+	id = flavor_rom.42
+	title = flavor_rom.42.title
+	desc = flavor_rom.42.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		religion = reformed
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = flavor_rom.42.a
+		set_country_flag = gv_rome_chose_reformation
+		custom_tooltip = gv_rome_chooses_reformation_tt
+		swap_non_generic_missions = yes
+		custom_tooltip = flavor_rom_42_tt
+	}
+}
+
+# Exarchate of Crimea
+
+country_event = {
+	id = flavor_rom.43
+	title = flavor_rom.43.title
+	desc = flavor_rom.43.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		NOT = { exists = FEO }
+		284 = {
+			owned_by = ROOT
+		}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			region = crimea_region
+			value = 8
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { # do it
+		name = flavor_rom.43.a
+		hidden_effect = {
+			crimea_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				remove_core = ROOT
+				if = {
+					limit = { NOT = { is_core = FEO } }
+					add_core = FEO
+				}
+			}
+			ruthenia_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				remove_core = ROOT
+				if = {
+					limit = { NOT = { is_core = FEO } }
+					add_core = FEO
+				}
+			}
+			6009 = {
+				add_core = ROOT
+				remove_core = FEO
+			}
+		}
+		release = FEO
+		create_subject = {
+			subject_type = march
+			subject = FEO
+		}
+		hidden_effect = {
+			FEO = {
+				change_religion = orthodox
+				change_primary_culture = goths
+				set_ruler_religion = BYZ
+				set_ruler_culture = goths
+				
+				crimea_region = {
+					limit = {
+						NOT = { owned_by = FEO }
+					}
+					add_permanent_claim = FEO
+				}
+				ruthenia_region = {
+					limit = {
+						NOT = { owned_by = FEO }
+					}
+					add_permanent_claim = FEO
+				}
+			}
+		}
+		add_country_modifier = {
+			name = gv_exarchate_of_crimea
+			duration = -1
+		}
+		FEO = {
+			add_country_modifier = {
+				name = gv_loyal_exarch
+				duration = -1
+			}
+		}
+	}
+	
+	option = { # consolidate the peninsula instead
+		name = flavor_rom.43.b
+		284 = {
+			add_province_modifier = {
+				name = gv_roman_crimea
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Cradle, Sword and Shield of Jesus Christ
+
+country_event = {
+	id = flavor_rom.44
+	title = flavor_rom.44.title
+	desc = flavor_rom.44.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		always = no # not on vanilla orthodox...
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		OR = {
+			religion = orthodox
+			religion = reformed
+		}
+		government = monarchy
+		is_great_power = yes
+		is_year = 1600
+	}
+	
+	mean_time_to_happen = {
+		months = 250
+	}
+	
+	option = { # Audentes Fortuna Iuvat !
+		name = flavor_rom.44.a
+		add_country_modifier = {
+			name = gv_sword_and_shield_of_jesus
+			duration = -1
+		}
+	}
+}
+
+### Roman Court Strife events
+
+namespace = rcs_rom
+
+country_event = { # Loyalist Strategos
+	id = rcs_rom.1
+	title = rcs_rom.1.title
+	desc = rcs_rom.1.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	major = no
+	
+	trigger = {
+		151 = {
+			owned_by = ROOT
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = rcs_rom.1.a
+		add_yearly_manpower = 1
+	}
+}
+
+country_event = { # Loyalist City Governor
+	id = rcs_rom.2
+	title = rcs_rom.2.title
+	desc = rcs_rom.2.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	major = no
+	
+	trigger = {
+		151 = {
+			owned_by = ROOT
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = rcs_rom.2.a
+		add_yearly_manpower = 0.5
+	}
+}
+
+country_event = { # Pretender Rises
+	id = rcs_rom.3
+	title = rcs_rom.3.title
+	desc = rcs_rom.3.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	major = no
+
+	trigger = {
+		151 = {
+			owned_by = ROOT
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = rcs_rom.3.a
+		151 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+	}
+}

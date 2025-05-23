@@ -1,0 +1,603 @@
+byzantine = { # TRVE ROMAN (Rhomaion)
+	province = { local_has_tercio = yes }
+	alexandrine = { primary = BYZ }
+	prettanian = { primary = BYZ }
+	hyperborean_greek = { primary = BYZ }
+	gaulish_greek = { primary = BYZ }
+	spanish_greek = { primary = BYZ }
+	german_greek = { primary = BYZ }
+	mena_greek = { primary = BYZ }
+	
+	athenian = { primary = ATH }
+	spartan = { primary = SPR }
+	carthagoi = { primary = TUN }
+	espanoi = {
+		primary = HIS
+		male_names = {
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios 
+			Andreas Andronikos Anthemios Anthimos Antiokhos Antonios Apollonios 
+			Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Belisarios Boethios Bosporios 
+			Khristophoros Khrysanthos Khrysogonos Damianos Daniel David Demetrios 
+			Diogenes Dionysios Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios 
+			Gerasimos Germanos Gregoras Gregorios Hektorios Helias 
+			Herakleios Hierotheos Himerios
+			Konstantinos Pavlos Nikolaos Aineias Alexeios Ambrosios
+			Dionysos Elpidios Grzegorz 
+			Kastor Manouel Matthaios Nestor Nikomedes Orestes Palaimon Pelagios Petros Philemon Philippos 
+			Skantarios Stefanos Theodoros Thomas Prokopios Ioannes Iason
+		}
+		female_names = {
+			Alexandra Adriane Agathe Agne Agnes Aikaterine Alexeia Anastasia 
+			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania 
+			Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene 
+			Ioanna Ioulia Iouliana Ioustina Kale Konstantia 
+			Konstantine Kyra Kyriake Hypatia Zoe
+		}
+		dynasty_names = {
+			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
+			# CKII
+			"Kameniatis" "Chameas" "Demetrianos" "Laloudios" "Stamopatas" "Peloponnesites" "Klados" "Avastaktos" 
+			"Stopustymon" "Kyritzios" "Kolovos" "Podopagouros" "Touvakes" "Peteinakes" "Ooryphas" "Myxares" "Toxias" 
+			"Bardouchos" "Boilas" "Skepides" "Mamoulianos" "Katakylas" "Drakokephalos" "Rentakes" "Exarchos" "Skepastos" 
+			"Kyminas" "Krasas" "Konstantinakes" "Mouzelis" "Souanites" "Karteroukas" "Machairas" "Koutzodaktylos" 
+			"Kanakaris" "Vamvaloudes" "Leontares" "Klokas" "Axiotes" "Chrysouchos" "Pyrrogenes" "Kophinas" "Makroleon" 
+			"Kalopragmon" "Karphitzes" "Trichares" "Kokkalos" "Kritharatos" "Kretikos" "Tourkos" "Symvatikes" 
+			"Glykomachaires" "Chrysochoos" "Vonos" "Mystakon" "Pterotos" "Monotes" "Manginos" 
+			"Kalavros" "Sikelos" "Kilikos" "Macrodoukas" "Aineidas" 
+			"Pegonitissos" "Kastriotis" "Kamateros" "Skleros"
+			"Makrembolites" "Botaneiates" "Diogenes" "Stratiotikos" "Monomachos" "Kalaphates" 
+			"Paphlagon" "Argyros" "Kourkouas" "Lekapenos" "Karbonopsis" "Makedon" "Stryphnos" "Euforbenos" 
+			"Gabras" "Aaron" "Lampinos" "Tzimiskes" "Kurtikainos" "Murzuphlos" "Balatios" "Ouranos" "Amorios" "Armenios" 
+			"Rangabes" "Logothetes" "Isauros" "Polites" "Studites" "Skamandrenos" "Synkellos" "Kauleas" "Monocharzanios" 
+			"Kassymatas" "Nesteutes" "Scholastikos" "Chrisostomos" "Nazianzen" "Nikomedianos" "Protokletos" "Garidas" 
+			"Grammatikos" "Zeno" "Gavalas" "Axuchos" "Kamonas" "Asidenos" "Hephaistos" "Karatzas" 
+			"Amiroutzes" "Bessarion" "Callistus" "Chalkokondyles" "Gazis" "Kourtesios" "Kallistos" "Kladas" "de Patras" 
+			"Gemistus" "Allatios" "Chalcocondyles" "Korniaktos" "Damaskenos" "Eparchos" "Flanginis" "Fokás" "Heraclides" 
+			"Kallokratos" "Kottounios" "Leontaritis" "Loukanis" "Margunios" "Musurus" "Nafpliotis" "Hatzidákis" 
+			"Aprenos"  "Chortatzis" "Gabrielopoulos" "Gounaropoulos" "Belissariotis" "Konstantopoulos" "Kavallarios" 
+			"Maniakis" "Notaras" "Sgouromallis" "Epiphanis" "Logaras" "Eudaimon" "Sakellarios" "Maurozoumis" "Stylaios" 
+			"Maleinos" "Basilakios" "Mamonas" "Kekaumenos" "Metaxas" "Kanavos" "Koukouzelis" "Koresis" "Makrinos" 
+			"Lambardas" "Adrianos" "Agallon" "Akropolites" "Aoinos" "Apokaukos" "Aprenos" "Arbantenos" "Argyros" 
+			"Arianites" "Atrapes" "Balsamon" "Batatzes" "Botaneiates" "Boumbalis" "Bourtzes" "Branas" "Bryennios" 
+			"Chandrenos" "Choniates" "Choumnos" "Chrysaphes" "Chrysoloras" "Dalassenos" "Dermokaďtes" "Diasorenos" 
+			"Dokeianos" "Eirenikos" "Exazenos" "Gavras" "Glabas" "Iagaris" "Kabakes" "Kabasilas" "Kalamanos" "Kaloethes" 
+			"Kalothetos" "Kamateros" "Katrares" "Kaukadenos" "Kontostephanos" "Koresses" "Kourkouas" 
+			"Kourtikes" "Limpidares" "Machoneos" "Makrembolites" "Malakes" "Maliasenos" "Mamalis" 
+			"Mandromenos" "Manouelites" "Melachroinos" "Mourtzouphlos" "Mouzakios" "Mouzalon" "Neokaisareites" 
+			"Nestongos" "Pantechnes" "Paraspondylos" "Grzybskurwialy" "Petzikopoulos" "Philanthropenos" "Pleustes" 
+			"Prasomales" "Prinkips" "Psellos" "Radenos" "Rossatas" "Sarantapechos" "Sebastopoulos" "Segouropoulos" 
+			"Sgouros" "Spartenos" "Sphrantzes" "Strabomytes" "Synadenos" "Syraneres" "Syropoulos" "Tagares" 
+			"Tarchaneiotes" "Tornikes" "Trichas" "Tsaphas" "Tzamplakon" "Tzykandeles" "Zaridas" "Akunin" "Abalantes" 
+			"Aboudimos" "Adralestos" "Agallianos" "Agrites" "Akapnes" "Alopos" "Alousianos" "Alyattes" "Amaseianos" 
+			"Amiropoulos" "Anatolikos" "Andreiomenos" "Androsalites" "Anemas" "Angoures" "Anthemiotes" "Antiochites" 
+			"Antiochos" "Antipapas" "Arbintenos" "Areobindenos" "Areobindos" "Argyropoulos" "Aristenos" "Artoukomites" 
+			"Arvantenos" "Attaleiates" "Aulenos" "Aulepates" "Axinites" "Axiomatikos" "Balantes" "Barbaros" "Bardales" 
+			"Barenos" "Barsakes" "Barys" "Belissariotes" "Bempetziotes" "Beriboes" "Beriotes" "Blachernites" "Blangas" 
+			"Boďlas" "Bouches" "Boutzares" "Bouzenos" "Brachamios" "Bringas" "Chaldos" "Chalkites" "Chalkoutzes" 
+			"Chamaretos" "Charsianites" "Chasanes" "Chazanes" "Choinides" "Choirosphaktes" "Chomatenos" "Chordolibas" 
+			"Choriates" "Chrouselios" "Chrousos" "Chrysanthos" "Chryselios" "Chrysobalantites" "Chrysoberges" "Chytes" 
+			"Daimones" "Dalessenos" "Dalassenos Doukas" "Dekanos" "Diabatenos" "Dikaios" "Diogenes" "Domestikopouolos" 
+			"Doxapatres" "Drakontopoulos" "Drosinos" "Drosos" "Droulenos" 
+			"Elegmites" "Enochos" "Epanokomites" "Ergodotes" "Erotikos" "Eugenianos" "Eugenios" "Eulogios" "Exotrochos" 
+			"Gabalas" "Galaton" "Gelotes" "Gidos" "Glykys" "Goudeles" "Gourzoubathenos" "Granatos" "Gribas" "Grispos" 
+			"Gymnos" "Hagiochrisophorites" "Hagioprokopites" "Hagiotheodorites" "Hagiozacharites" "Hamartolos" 
+			"Haplorabdes" "Haploucheir" "Hexakionites" "Hexaklinites" "Hexamilites" "Hierakes" "Hikanatos" "Iasites" 
+			"Falusopolis" "Isakiotes" "Italikos" "Kaballarios" "Kabasilas" "Kaisar" "Kalameteros" "Kalamaras" 
+			"Kalampakes" "Kalognomos" "Kamytzes Komnenodoukas" "Kappadokes" "Kappadox Kalampakes" "Karabitenos" 
+			"Karabitziotes" "Karaďonatan" "Karamallos" "Karandenos" "Karantes" "Kardamopoulos" "Karenos" "Karianites" 
+			"Karkaronymos" "Karmalikes" "Karouzeiates" "Kaspax" "Kastamonites" "Katakalon" "Katakalos" "Kataphloros" 
+			"Katas" "Katharos" "Katotikos" "Katzamoundes" "Kegenes" "Kekaleimenos" "Keklymmenos" "Kemineianos" "Kenchres" 
+			"Kentenares" "Kephalas" "Keroularios" "Kibyrraiotes" "Kinnamos" "Kokkinos" "Komnenodoukas" "Konops" 
+			"Kopsenos" "Kostomyres" "Kotertzes" "Kouloukes" "Kouneres" "Krateros" "Krinites" 
+			"Kritharas" "Kritopolos" "Kyminianos" "Kynochorites" "Kyriotes" "Kyritzes" "Labouzenos" "Laktentitzes" 
+			"Lalakon" "Lampsiotes" "Lapardas" "Leichoudes" "Lependrenos" "Leukedonites" "Libadares" "Libadas" 
+			"Libellisios" "Limas" "Liparites" "Lithokastrites" "Logariastes" "Loules" "Louloukes" "Lykaon" "Machetarios" 
+			"Madrites" "Madytenos" "Makropoderes" "Skibidipenis" "Maleses" "Mamalos" "Manganes" "Marachas" "Marapas" 
+			"Marchapsabos" "Marianites" "Marzapoulos" "Matzaris" "Matzas" "Matzoukes" "Maurex" "Maurokatakalos" "Mauros" 
+			"Maurozomes" "Mechos" "Megalommates" "Megenos" "Meginos" "Melias" "Melissenos" "Mermentoulos" "Mesarites" 
+			"Meschos" "Mesopotamites" "Metochites" "Metropoulos" "Mitylenaios" "Monachites" "Monokarites" "Monomachatos" 
+			"Moroiannes" "Mosaraph" "Moschos" "Mosele" "Moungos" "Mourmoures" "Moustakes" "Mozaes" "Myralides" 
+			"Myredeďtes" "Myrelaetes" "Myron" "Nabatenos" "Narbiotes" "Narsites" "Neophytos" "Neustongios" "Nikerites" 
+			"Nikoulitzes" "Noe" "Oinaiotes" "Olyntenos" "Opos" "Pagomenos" "Pakourianos" "Paktiares" 
+			"Doukas Mourtzouphlos" "Palaiotes" "Palatinos" "Pamphilos" "Panaretos" "Pankalos" 
+			"Panokomites" "Parsakoutenos" "Parthenios" "Paxenos" "Pediasimos" "Peganites" "Pegonites" "Pekoules" 
+			"Pelamedes" "Pentarkles" "Pepagomenos" "Pepanos" "Perenos" "Peribleptenos" "Phalkon" "Phialites" "Philaretos" 
+			"Philinos" "Philokales" "Phrangopolos" "Pistophilos" "Pleures" "Politopolos" "Pothos" "Probatas" 
+			"Promountenos" "Proteuon" "Ptochos" "Rentakenos" "Rizenos" "Rodios" "Rogerios" "Romaios" "Rousopoulos" 
+			"Sagopoulos" "Sarakenopoulos" "Saronites" "Sauloioannes" "Semnos" "Serblias" "Sikoundenos" "Sinopites" 
+			"Skandales" "Skanranos" "Skeblenos" "Skoutariotes" "Skribas" "Smyrnaios" "Solomon" "Sortes" 
+			"Soumenos" "Spanogregores" "Spanopoulos""Stachytzes" "Stemnitziotes"
+			"Strephnes" "Stypeiotes" "Styppes" "Synacheris" "Syros" "Taronites" "Tatikes" "Tetragonites" "Theodorokanos" 
+			"Theodosiopolites" "Thrakesios" "Thylakas" "Tilapos" "Timonites" "Tourmarchopoulos" "Traphines" "Trellos" 
+			"Triakontaphyllos" "Triblattites" "Trichinopodes" "Triphyllios" "Tzanzes" "Tzefres" "Tzetas" "Tzipoureles" 
+			"Tzirithon" "Tzoulas" "Tzoumenes" "Tzouroulles" "Tzympenos" "Vatatzes" "Xanthos" "Xenos" "Xeros" "Xiphias" 
+			"Xiphilinos" "Xylinites" "Zabareiotes" "Zagarommates" "Zerbos" "Zomes" "Zonaras" "Kalomalas" "Kaloudes" 
+			"Kampanarios" "Kamytzes" "Kallierges" "Loukites" "Kometopoulos" "Basiliakos" 
+			"Pateranos" "von Winterthur" "Paleologo" "Gregoras" "Sanudo" "Komytzes" "Lascaris" "Kyrdiniatis" "Agapetos" 
+			"Attikos" "Anastasiotis" "Evergetidiotis" "Chliarinos" "Chysovergis" "Eugeniotis" "Vorradiotis" "Mountanis" 
+			"Theotokitis" "Viticlenou" "Autoreianos" "Akoimitos" "Charitopoulos" "Panemorphiotis" "Hyakinthiotis" 
+			"Galesiotis" "Bekkos" "Kyprios" "Gonitis" "Pammakaristiotis" "Perivleptiotis" "Manganiotis" "Kalekas" 
+			"Herakleidon" "Xylaloes" "Syrikos" "Tatikios" "Aspietes" "Kastenianos" "Leovachos" "Maniatis" "Vaklikas" 
+			"Maurikios" "Skrinarios" "Mesanaktis" "Lachanodrakon" "Kalokyris" "Lykodontis" "Skyllaris" "Ampelas" 
+			"Gerontas" "Apokapis" "Pallikarios" "Orphanotrophos" "Chlorokokis" "Hexavoulis" "Martinakios" "Agelastos" 
+			"Kotzes" "Toxaras" "Aplakes" "Gomostos" "Koupharas" "Tyropoulis" "Kontomytes" "Chenopoulos" "Sellokalas" 
+			"Kentrokoukouros" "Antigonos" "Pastillas" "Katakalitzes" "Manikophagos" "Kolokynthis" "Rachites" "Bua Spatas" 
+			"Apsimaros" "Artemios"
+		}
+	}
+	roman = {
+		primary = ROM
+		male_names = { Acilius Aebutius Aelius Aemilius Albius Amatius Annaeus Anneius Annius Antonius Arrius
+			Artorius Asinius Atilius Atius Aurelius Autronius Caecilius Caedicius Caelius Calidius Callistus
+			Calpurnius Cassius Claudius Cloelius Cocceius Cominius Cornelius Coruncanius Curiatius
+			Curius Curtius Decius Didius Domitius Duilius Durmius Equitius Fabius Fabricius Fannius
+			Flavius Fulvius Furius Gabinius Gaius Galerius Geganius Gellius Geminius Genucius Gnaeus Gratius
+			Herennius Hirtius Horatius Hortensius Hostilius Iulius Iunius Iustinus Iuventius Laelius Lartius
+			Licinius Livius Lucilius Lucius Lucretius Manlius Marcius Marius Memmius Menenius Minicius
+			Minius Minucius Modius Mucius Naevius Nautius Numerius Numicius Octavius Ovidius
+			Paulus Papirius Petronius Pinarius Pompeius Pompilius Pontius Popillius Porcius Postumius
+			Quinctilius Quinctius Rubellius Rufius Rutilius Sallustius Salonius Salvius Scribonius
+			Seius Sempronius Sentius Sergius Sertorius Servilius Sextius Sextus Sicinius Suetonius Sulpicius
+			Tarpeius Tarquitius Terentius Titinius Titurius Tuccius Tullius Ulpius Valerius Vedius
+			Velleius Vergilius Verginius Vibius Villius Vipsanius Vitellius Vitruvius Volumnius }
+		female_names = { Acilia Aebutia Aelia Aemilia Albia Amatia Annaea Anneia Annia Antonia Arria
+			Artoria Asinia Atilia Atia Aurelia Autronia Caecilia Caedicia Caelia Calidia
+			Calpurnia Cassia Claudia Cloelia Cocceia Cominia Cornelia Coruncania Curiatia
+			Curia Curtia Decia Didia Domitia Duilia Durmia Equitia Fabia Fabricia Fannia
+			Flavia Fulvia Furia Gabinia Galeria Gegania Gellia Geminia Genucia Gratia
+			Herennia Hirtia Horatia Hortensia Hostilia Iulia Iunia Iuventia Laelia Lartia
+			Licinia Livia Lucilia Lucretia Manlia Marcia Maria Memmia Menenia Minicia
+			Minia Minucia Modia Mucia Naevia Nautia Numeria Numicia Octavia Ovidia
+			Papiria Petronia Pinaria Pompeia Pompilia Pontia Popillia Porcia Postumia
+			Quinctilia Quinctia Rubellia Rufia Rutilia Sallustia Salonia Salvia Scribonia
+			Seia Sempronia Sentia Sergia Sertoria Servilia Sextia Sicinia Suetonia Sulpicia
+			Tarpeia Tarquitia Terentia Titinia Tituria Tuccia Tullia Ulpia Valeria Vedia
+			Velleia Vergilia Verginia Vibia Villia Vipsania Vitellia Vitruvia Volumnia }
+		dynasty_names = { Aculeo Agricola Agrippa Ahala Ahenobarbus Albinus Albus Ambustus Annalis Antoninus Aquila
+			Aquilinus Arvina Asellio Asina Atellus Avitus Balbus Barba Barbatus Bassus Bestia
+			Bibaculus Bibulus Blaesus Brocchus Brutus Bubulcus Bucco Bulbus Buteo Caecus Caepio
+			Caesar Calidus Calvinus Calvus Camillus Caninus Canus Capito Carbo Catilina Cato
+			Catulus Celer Celsus Cethegus Cicero Cicurinus Cilo Cincinnatus Cinna Cordus Cornicen
+			Cornutus Corvinus Corvus Cossus Costa Cotta Crassipes Crassus Crispinus Crispus Culleo
+			Curio Cursor Curvus Dentatus Denter Dento Dives Dolabella Dorsuo Drusus Figulus Fimbria
+			Flaccus Favus Florus Fronto Fullo Fusus Galeo Gemellus Geminus Glabrio Gracchus Gurges Habitus
+			Helva Imperiosus Iullus Labeo Lactuca Laenas Lanatus Laevinus Laterensis Lentulus Lepidus
+			Libo Licinus Longus Lucullus Lupus Lurco Macer Macula Malleolus Mamercus Mamilius Marcellus Maro
+			Merenda Mergus Merula Messalla Metellus Murena Mus Musca Narbo Nasica Naso Natta Nepos Nero
+			Nerva Niger Novellus Ocella Pacilus Paetus Pansa Papus Paterculus Paullus Pavo Pera Pictor
+			Piso Plancus Plautus Poplicola Postumus Potitus Praeconinus Praetextatus Priscus Proculus
+			Publicola Pulcher Pullus Pulvillus Purpureo Quadratus Ralla Regillus Regulus Rufus Ruga Rullus
+			Rutilus Salinator Saturninus Scaeva Scaevola Scapula Scaurus Scipio Scrofa Seneca Severus
+			Silanus Silo Silus Stolo Strabo Structus Sulla Sura Taurus Triarius Trigeminus Trio Tubero
+			Tubertus Tubulus Tuditanus Tullus Turdus Varro Varus Vatia Verres Verrucosus Vespillo Vetus Victor Vitulus Vindex
+			Volusus }
+	}
+}
+
+roman_group = {
+	graphical_culture = westerngfx
+	province = { local_has_tercio = yes }
+	# For the sake of simplicity, all the names are shared throughout the whole group
+	# roman = { primary = ROM } # moved to byzantine
+	hispanic = { primary = ROM }
+	gaulic = { primary = ROM }
+	theodisc = { primary = ROM }
+	pannonian = { primary = ROM }
+	wenedyk = { primary = ROM }
+	britannian = { primary = ROM }
+	hyperborean = { primary = ROM }
+	salinatorian = { primary = ROM }
+	bazramani = { primary = ROM }
+	euxinian = { primary = ROM }
+	xliponian = { primary = ROM }
+
+	sabellian = {
+		primary = NAP
+		dynasty_names = {
+			Aemilius Aurelius Calpurnius Calvisius Claudius Curtius Flavius Ligarius Marcius
+			Minatius Oppius Opsius Ostorius Pantuleius Petronius Pinarius Pompilius Pomponius
+			Poppaeus Quirinius Ranius Rubellius Sabinius Safinius Sallustius Saturius Sertorius
+			Sicinius Tarpeius Tineius Titius Valerius Asinius Vetius Cassius Decimius Egnatius
+			Gavius Gellius Herennius Obellius Ofilius Oppidius Opsidius Otacilius Paccius
+			Pacidius Papius Papinius Percennius Petreius Pontius Scutarius Vibius "Pontius Pilatus"
+		}
+	}
+	old_ligurian = {
+		primary = GEN
+		dynasty_names = {
+			Alpinus Apuanus Bagiennus Beretinus Bimbellus Brinias Boax Casuentillanus
+			Cavaturinus Celelas Cerdicias Decias Dectuminus Docilius Ectinus Eguiturus
+			Epanterius Euburias Frinias Garulus Genuas Hercas Iemerus Ingaunus Intemelius
+			Ilvas Irias Laevus Lapicinus Libicus Libuus Magellus Mucellus Maricus Nematurus
+			Nerusus Odias Oratellus Olivarus Oxybius Sabas Segusinus Sotus Statiellus Sueltrus
+			Tigullus Triullatus Turus Vediantius Veiturius Langas Mentovinus Sestrinus Utrinus
+			Veleias Vellaunus Venenus Venisanus Vesubianus Vibellus
+		}
+	}
+	venetic = {
+		primary = VEN
+		dynasty_names = {
+			Histrus Carnus Catarus Catalus Secussis Lopsus
+		}
+	}
+	siculian = {
+		primary = SIC
+		dynasty_names = {
+			Abacaenus Abolla Aetna Agathyrnus Acrillae Ameselus Apollonius Assorus Brucoli Capizzi
+			Caronia Casmenae Catania Cefalus Chersonesus Comicianus Daedalius Drepanus Enna Entella
+			Eryx Gela Halaesa Helorus Hippana "Hybla Gereatis" "Hybla Heraea" "Hybla Maior" Ichana
+			Ietas Imachara Inycus Licata Longaricus Mactorio "Megara Hyblaea" "Monte Bubbonia"
+			Motyo Mytistrato Naxus Netus Pirama Pitinianus Sciaccus Segestus Selinuns Soluntus
+			Taormina Tarantus "Termini Imerese" Tindari
+		}
+	}
+
+	male_names = { Acilius Aebutius Aelius Aemilius Albius Amatius Annaeus Anneius Annius Antonius Arrius
+		Artorius Asinius Atilius Atius Aurelius Autronius Caecilius Caedicius Caelius Calidius Callistus
+		Calpurnius Cassius Claudius Cloelius Cocceius Cominius Cornelius Coruncanius Curiatius
+		Curius Curtius Decius Didius Domitius Duilius Durmius Equitius Fabius Fabricius Fannius
+		Flavius Fulvius Furius Gabinius Gaius Galerius Geganius Gellius Geminius Genucius Gnaeus Gratius
+		Herennius Hirtius Horatius Hortensius Hostilius Iulius Iunius Iustinus Iuventius Laelius Lartius
+		Licinius Livius Lucilius Lucius Lucretius Manlius Marcius Marius Memmius Menenius Minicius
+		Minius Minucius Modius Mucius Naevius Nautius Numerius Numicius Octavius Ovidius
+		Paulus Papirius Petronius Pinarius Pompeius Pompilius Pontius Popillius Porcius Postumius
+		Quinctilius Quinctius Rubellius Rufius Rutilius Sallustius Salonius Salvius Scribonius
+		Seius Sempronius Sentius Sergius Sertorius Servilius Sextius Sextus Sicinius Suetonius Sulpicius
+		Tarpeius Tarquitius Terentius Titinius Titurius Tuccius Tullius Ulpius Valerius Vedius
+		Velleius Vergilius Verginius Vibius Villius Vipsanius Vitellius Vitruvius Volumnius }
+	female_names = { Acilia Aebutia Aelia Aemilia Albia Amatia Annaea Anneia Annia Antonia Arria
+		Artoria Asinia Atilia Atia Aurelia Autronia Caecilia Caedicia Caelia Calidia
+		Calpurnia Cassia Claudia Cloelia Cocceia Cominia Cornelia Coruncania Curiatia
+		Curia Curtia Decia Didia Domitia Duilia Durmia Equitia Fabia Fabricia Fannia
+		Flavia Fulvia Furia Gabinia Galeria Gegania Gellia Geminia Genucia Gratia
+		Herennia Hirtia Horatia Hortensia Hostilia Iulia Iunia Iuventia Laelia Lartia
+		Licinia Livia Lucilia Lucretia Manlia Marcia Maria Memmia Menenia Minicia
+		Minia Minucia Modia Mucia Naevia Nautia Numeria Numicia Octavia Ovidia
+		Papiria Petronia Pinaria Pompeia Pompilia Pontia Popillia Porcia Postumia
+		Quinctilia Quinctia Rubellia Rufia Rutilia Sallustia Salonia Salvia Scribonia
+		Seia Sempronia Sentia Sergia Sertoria Servilia Sextia Sicinia Suetonia Sulpicia
+		Tarpeia Tarquitia Terentia Titinia Tituria Tuccia Tullia Ulpia Valeria Vedia
+		Velleia Vergilia Verginia Vibia Villia Vipsania Vitellia Vitruvia Volumnia }
+	dynasty_names = { Aculeo Agricola Agrippa Ahala Ahenobarbus Albinus Albus Ambustus Annalis Antoninus Aquila
+		Aquilinus Arvina Asellio Asina Atellus Avitus Balbus Barba Barbatus Bassus Bestia
+		Bibaculus Bibulus Blaesus Brocchus Brutus Bubulcus Bucco Bulbus Buteo Caecus Caepio
+		Caesar Calidus Calvinus Calvus Camillus Caninus Canus Capito Carbo Catilina Cato
+		Catulus Celer Celsus Cethegus Cicero Cicurinus Cilo Cincinnatus Cinna Cordus Cornicen
+		Cornutus Corvinus Corvus Cossus Costa Cotta Crassipes Crassus Crispinus Crispus Culleo
+		Curio Cursor Curvus Dentatus Denter Dento Dives Dolabella Dorsuo Drusus Figulus Fimbria
+		Flaccus Favus Florus Fronto Fullo Fusus Galeo Gemellus Geminus Glabrio Gracchus Gurges Habitus
+		Helva Imperiosus Iullus Labeo Lactuca Laenas Lanatus Laevinus Laterensis Lentulus Lepidus
+		Libo Licinus Longus Lucullus Lupus Lurco Macer Macula Malleolus Mamercus Mamilius Marcellus Maro
+		Merenda Mergus Merula Messalla Metellus Murena Mus Musca Narbo Nasica Naso Natta Nepos Nero
+		Nerva Niger Novellus Ocella Pacilus Paetus Pansa Papus Paterculus Paullus Pavo Pera Pictor
+		Piso Plancus Plautus Poplicola Postumus Potitus Praeconinus Praetextatus Priscus Proculus
+		Publicola Pulcher Pullus Pulvillus Purpureo Quadratus Ralla Regillus Regulus Rufus Ruga Rullus
+		Rutilus Salinator Saturninus Scaeva Scaevola Scapula Scaurus Scipio Scrofa Seneca Severus
+		Silanus Silo Silus Stolo Strabo Structus Sulla Sura Taurus Triarius Trigeminus Trio Tubero
+		Tubertus Tubulus Tuditanus Tullus Turdus Varro Varus Vatia Verres Verrucosus Vespillo Vetus Victor Vitulus Vindex
+		Volusus }
+}
+
+
+iranian	= {
+	graphical_culture = muslimgfx
+	assyrian = {
+		primary = ASY
+		male_names = {
+			Naplanum Emisum Samium Zabaia Gungunum Abisare Sumuel "Nur-Adad" "Sin-Iddinam" "Sin-Eribam" "Sin-Iqisham" "Silli-Adad" "Warad-Sin" "Rim-Sin" Hammurabi "Samsu-iluna" "Su-abu" "Sumu-la-El" "Sabum" "Apil-Sin" "Sin-muballit" Abieshu "Ammi-ditana" "Samsu-Ditana" Ammisaduqa Gandas Agum Kastiliasu "Abi-Rattas" Hurbazum Ulamburiash Karaindash "Enlil-nadin-ahi" Gulkishar
+			Addai Betheil Bilgamish Daweska Dawis Diklat Febo Gewargis Jira Narsai Nona Rameel
+			Ukba Yohanan Yonan Yosip
+		}
+		female_names = {
+			Nana Allatu Belit Zirrabanit Tiamat
+			Ator Betheil Bredil Diklat "Il-Shvai" Imama Kasrin Nohara Nona Shamiram Tayara Yalda
+		}
+	}
+	persian = {
+		primary = PER
+		male_names = { 
+			Abbas Abolhassan Afshar Afshar Ahmad Ahmad Akbar Akbar Allahyar Amin Anushirvan Anushirvan 
+			Aram Ardahan Ardahan Ardavan Ardavan Ardeshir Ardeshir Assad Aurang Ayeshah Babak Babak Bahman 
+			Bahram Bahram Bakhtiar Bakhtiar Behrad Behrouz Bozorg Danush Danush Darab Dariush Darius Davud 
+			David Djamasp Ebrahim Abraham Ehsan Esfandiar Esfandiar Eskander Alexander Esma'il Ismail 
+			Faramarz Faramarz Faraz Faraz Fareed Farid Farhad Farhad Fariborz Fariborz Farroukh Farroukh 
+			Farrukhzad Farrukhzad Farzad Farzad Fath Ferdows Ferdows Fereedun Feridun Ghobad Gholam Godarz 
+			Goshtasb Goshtasb Hafez Hassan Hasan Hazarasp Hazarasp Hedayat Hooshyar Hooshyar Hormazd 
+			Hormazd Hormoz Hossein Hossein Humayun Jahandar Jahandar Jahangir Jahangir Jahanshah Jahanshah 
+			Jamshid Jamshid Javeed Javeed Kambiz Kamran Kavoos Kavoos Keyghobad Keykhosrau Keykhosrau 
+			Kharmandar Kharmandar Khashayar Khashayar Kavadh Khodadad Khodadad Khosrau Khosrau Khudayar 
+			Khudayar Khurshid Khurshid Kurush Cyrus Mahmud Manuchihr Manuchihr Manushihr Manushihr Marzuban 
+			Marzuban Mashad Mashad Maziar Mehrab Mehrzad Mohammed Muhammad Morad Morad Morteza Mozaffar 
+			Nard Naveed Nawid Nezam Parviz Pashang Pashang Peroz Peroz Pujman Reza Rostam Rostam Ruhollah 
+			Sadri Salman Shahab Shahab Shahbaz Shahbaz Shahin Shahin Shahram Shahram Shahrokh Sharokh 
+			Shahruz Shahruz Shahryar Shahryar Shapur Shapur Shayan Shayan Sina Tahmasb Tahmasb Vahhab 
+			Vahhab Vahid Vali Vandad Varshasb Varshasb Vishtasb Vishtasb Yazdegerd Yousef Joseph Zahak 
+			Zakaria Zand Zartosht Zartosht Zia Joneid Haidar Ismâ'îl Tamâshp Mohammad Kodabânda 'Abbâs Safi 
+			Hosayn Nâder Shâh 'Âdel Shâh Ebrâhim Shâh Rukh Nâder Mirza Karim Khân Abu'l Fath 
+			Sâdiq Morâd Ja'far Loft Ali Aga Muhammad Fath Alî Solaymân
+		}
+		female_names = { 
+			Afsaneh Ahu Arghavan Azarmidokht Asa Azadeh Bahar Banafsheh Behnaz Burandokht Darya Delaram 
+			Delbar Dinah Donya Elham Elnaz Farah Fareedeh Farnaz Farrin Farva Furuzan Ghamze Ghazal 
+			Ghoncheh Ghoncheh Golbahar Golbahar Golnaz Golnaz Golpari Golshan Hamdam Hurmat Irandokht 
+			Jamileh Javaneh Leila Mahdokht Mahtab Mariam Mariam Navvaba Nazgol Nazgol Nazilla Noor Parvaneh 
+			Parvaneh Parvin Pertevniyal Pourandokht Pourandokht Roshanora Roxana Salomeh Shahrzad Shahzadeh 
+			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya
+		}
+	}
+	luri = {
+		primary = LRI
+		dynasty_names = { 
+			Khorshidi Bakhtiari Jangardi "Banu Hussayn" Charlang Haftlang
+			Dorikan Babadi Baharvand Dinarini Meyvand
+		}
+		male_names = {
+			Bawa Helo Timur Ahmad Soleiman Sobhanverdi Khosrow Bozorg Hosayn Aman-Allah Faqi Ahmad Mohammad 
+			Khalid Nawaub Salim Abdolla Mahmoud Ibrahim Abdurrahman Kulos Isa Mir Saifeddin Saidi Budak
+			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
+			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir 
+			Cehanšah Jahanshah Cemšîd Jamshid Cevid Javeed Danűš Danush Darab Daryűš Darius Davud David 
+			Ebrahim Abraham Efrasiyab Afrasiyab Efšer Afshar Ehmed Ahmad Ehsan Ekber Akbar Elî Ali 
+			Enűširwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erdešîr Ardeshir Esfendiyar Esfandiar 
+			Eskander Alexander Ešot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad 
+			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Ferîd Farid Ferîdun Feridun Ferux Farroukh 
+			Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun Firdews Ferdows Ghobad Gholam Godarz 
+			Goštasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat Hesen Hasan Hisęn Hussein Hormoz Hosen 
+			Hossein Humayun Hurmiz Hormazd Îsmaîl Ismail Kambiz Kamran Keyghobad Keyxusrew Keykhosrau Kâvus 
+			Kavoos Kűrušę Cyrus Mamlan Muhammad Mashad Mehműd Mahmud Mehrab Mehrzad Mensűr Mansur Menűçihr 
+			Manuchihr Menűšihr Manushihr Merwan Marwan Merzuban Marzuban Mesűd Masud Mihemed Muhammad Mîrza 
+			Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid Nesir Nazir Nesr Nasr 
+			Nezam Nošîrwan Nawshirwan Nęçîrvan Nechirwan Parviz Pujman Pęšeng Pashang Pîroz Peroz Revend 
+			Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb Vahhab 
+			Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar Xašayar 
+			Khashayar Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar 
+			Yezîd Yazid Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia Šadî Shadhi Šahab Shahab Šahbaz 
+			Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar Shahryar Šahrux Shahrokh Šahruz 
+			Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan Šîrkűh Shirkuh
+		}
+		female_names = {
+			Adan Adar Ara Ardil Arezo Arezu Ariyan Aręz Arîman Arîn Asan Asteng Asę Avan Azadî Azrîn Aštî 
+			Badil Bahar Balnexšîn Banę Barîn Bawan Baziyan Bazę Befraw Befrîn Begîxan Belalűk Belqis 
+			Belîcan Benav Benaz Berbijîn Berdar Berdil Bersîn Berîcan Bexšîn Beyan Beybîn Beybűn Bezîn 
+			Bihar Bijîn Bilęse Binar Binav Binefš Binevš Biyan Biškoj Biškurîn Bohar Bęnaz Bęrîcan Bęrîvan 
+			Burandoxt Pourandokht Dengîn Derav Derzîn Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber 
+			Dilcan Dildar Dilgerm Dilistan Dilkanî Dilnaz Dilvîn Dilxoš Dilxweš Diyarî Doman Dęrsim Dîlan 
+			Dîristan Esmercan Esmerxan Estęre Evîn Ewrîn Eyšan Ezcan Felek Fener Ferašîn Firmęsk Fîdan 
+			Gazî Gelavęj Gerdengaz Gozel Gozę Grîvan Guhtem Gulbehar Golbahar Gulšen Gulnar Gulnaz Golnaz 
+			Gęlas Helez Heliz Helvîn Hemayîl Keję Keser Kevok Kevî Kewser Kezîzer Koçer Leylę Leymîn Lezîn 
+			Lolav Lorkę Lorî Lorîcan Lorîn Lęlav Lęvken Lîlyan Lîza Maša Mebest Mehrîban Mehrîcan Mehrîvan 
+			Mejbîr Mendal Mercam Merîvan Mirarîxan Miryem Mariam Mizgîn Muhabad Męmę Męrdîn Męxek Mîdya 
+			Mîran Narîman Narîncan Navbihar Nawxoš Naz Nazdar Nazenîn Nazgul Nazgol Nazik Naznaz Nazę Nermę 
+			Nermîn Nesrîn Newbohar Nexšîn Nešmîl Nešmîn Norcan Nęrgiz Nęrîn Nęzîk Nîdar Nîgar Nîroj Nîšan 
+			Nîštîman Perjîn Pervîn Perwane Parvaneh Perwîn Perçem Perî Perîgul Perînaz Perîxan Perîšan 
+			Pexšan Peyman Pirjîn Piršeng Piršing Pore Poršeng Pęlîn Pîroz Pîšeng Rana Rengîn Rewša Rewšen 
+			Rihan Rindę Rojhelat Roję Ronahî Ronak Rondik Ręjîn Ręzan Rîhan Rîken Rűciwan Rűgeš Rűken 
+			Rűzerîn Sarę Serbar Sercan Serferaz Serfiraz Sergul Serçinar Seyran Xatűn Xęlîcan Xonçe 
+			Ghoncheh Zernîšan Zerya Zerę Zerî Zerîxan Zeytîn Zeytűn Zilfę Zoya Zozan Zęrîn Zîlan Zînet Zînę 
+			Šana Šanaz Šayan Šehrîban Šelal Šemam Šengę Šepal Šepirze Šermîn Ševba Ševîn Šęlaz Šîlan Šînî 
+			Šîwen Atiya
+		}
+	}
+	azerbaijani = {
+		primary = ARL
+		dynasty_names = {
+			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
+			Talysh "Haji Chalabi"
+		}
+		male_names = {
+			Ibrahim Muhammad Ibrahim Farrukhsiyar Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi Eldar
+		}
+		female_names = {
+			Malahat Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand 
+			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha 
+			Adila Ikram            
+		}
+	}
+	khorasani = {
+		primary = KHO
+		male_names = {
+			Abű Sa'îd Bâbur Badî al-Zamân Husayn Bâyqarâ Abu al-Qasim Mahműd Shâh Rukh Ulugh Beg 'Abbas 'Abd 
+			'Abd al-Rahman 'Alî 'Abdallâh Anwar Bakr Fahd Faruq Fouad Hakim Harun Hisham Husayn Isma'il Jafar 
+			Karim Khalil Malîk Mirza Muhammad Qasim Rashîd Sulayman Tarîq 'Umar Usama Yasir Yusuf Zaid Zîyad 
+			Zulqifar al-Karim Jamaal
+		}
+		female_names = {
+			Abda Ahu Aiza Aliyah Butayna Daniyah Dima Fahra Fahriya Fatima Gamila Ghada Habiba Huda Ibtisam 
+			Isra Karima Kera Khadija Layla Maha Malika Mariam Maria Munya Munia Nadia Naila Nur Rafiqa Rahat 
+			Raisa Randa Safiya Salma Shakira Suraya Tahira Tarifa Thashim Umm Wahida Yasmin Zahida Zahra Haniyya 
+		}
+	}
+	baluchi = {
+		primary = BAL
+		dynasty_names = {
+			Rind Lashari Kambarani Mirwari Jamot Bugti Zikri Ghilzai Barakzay
+			Bozdar Mirrani Mihrabanid Khokhar Shar Lashari Lund Hooth Korai
+			Jatoi Nausherwani
+		}
+		male_names = {
+			Ahmad Mir Mehrab Samandar Mir Abdullah Mir Muhabbat Mir Muhammad Naseer Mir Mahmud Kumbar Mir 
+			Shahzad Hasan Chakar Mir
+			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
+			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
+			Cehanšah Jahanshah Cemšîd Jamshid Cevid Javeed Danűš Danush Darab Daryűš Darius Davud David 
+			Ebrahim Abraham Efrasiyab Afrasiyab Efšer Afshar Ehmed Ahmad Ehsan
+			Ekber Akbar Elî Ali Enűširwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erdešîr Ardeshir 
+			Esfendiyar Esfandiar
+			Eskander Alexander Ešot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad 
+			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Ferîd Farid
+			Ferîdun Feridun Ferux Farroukh Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun 
+			Firdews Ferdows Ghobad Gholam Godarz Goštasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat
+			Hesen Hasan Hisęn Hussein Hormoz Hosen Hossein Humayun Hurmiz Hormazd Îsmaîl Ismail Kambiz 
+			Kamran Keyghobad Keyxusrew Keykhosrau Kâvus Kavoos
+			Kűrušę Cyrus Mamlan Muhammad Mashad Mehműd Mahmud Mehrab Mehrzad Mensűr Mansur Menűçihr 
+			Manuchihr Menűšihr Manushihr Merwan Marwan Merzuban Marzuban Mesűd Masud
+			Mihemed Muhammad Mîrza Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid 
+			Nesir Nazir
+			Nesr Nasr Nezam Nošîrwan Nawshirwan Nęçîrvan Nechirwan Parviz Pujman Pęšeng Pashang Pîroz Peroz 
+			Revend Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb
+			Vahhab Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar 
+			Xašayar Khashayar 
+			Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar Yezîd Yazid 
+			Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia
+			Šadî Shadhi Šahab Shahab Šahbaz Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar 
+			Shahryar Šahrux Shahrokh Šahruz Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan 
+			Šîrkűh Shirkuh
+		}
+		female_names = {
+			Adan Adar Ara Ardil Arezo Arezu Ariyan Aręz Arîman Arîn Asan Asteng Asę Avan Azadî Azrîn Aštî 
+			Badil Bahar Balnexšîn Banę Barîn Bawan Baziyan Bazę Befraw Befrîn Begîxan Belalűk Belqis
+			Belîcan Benav Benaz Berbijîn Berdar Berdil Bersîn Berîcan Bexšîn Beyan Beybîn Beybűn Bezîn 
+			Bihar Bijîn Bilęse Binar Binav Binefš Binevš Biyan Biškoj Biškurîn Bohar Bęnaz Bęrîcan Bęrîvan 
+			Burandoxt Pourandokht
+			Dengîn Derav Derzîn Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber Dilcan Dildar Dilgerm 
+			Dilistan Dilkanî Dilnaz Dilvîn Dilxoš Dilxweš Diyarî Doman Dęrsim Dîlan Dîristan Esmercan 
+			Esmerxan Khonza Ashraf Khanam Nur Khair Bibi
+			Estęre Evîn Ewrîn Eyšan Ezcan Felek Fener Ferašîn Firmęsk Fîdan Gazî Gelavęj Gerdengaz Gozel 
+			Gozę Grîvan Guhtem Gulbehar Golbahar Gulšen Gulnar Gulnaz Golnaz Gęlas Helez Heliz Helvîn 
+			Hemayîl 
+			Keję Keser Kevok Kevî Kewser Kezîzer Koçer Leylę Leymîn Lezîn Lolav Lorkę Lorî Lorîcan Lorîn 
+			Lęlav Lęvken Lîlyan Lîza Maša Mebest Mehrîban Mehrîcan Mehrîvan
+			Mejbîr Mendal Mercam Merîvan Mirarîxan Miryem Mariam Mizgîn Muhabad Męmę Męrdîn Męxek Mîdya 
+			Mîran Narîman Narîncan Navbihar Nawxoš Naz Nazdar Nazenîn Nazgul Nazgol Nazik Naznaz Nazę Nermę 
+			Nermîn Nesrîn Newbohar Nexšîn
+			Nešmîl Nešmîn Norcan Nęrgiz Nęrîn Nęzîk Nîdar Nîgar Nîroj Nîšan Nîštîman Perjîn Pervîn Perwane 
+			Parvaneh Perwîn Perçem Perî Perîgul Perînaz Perîxan Perîšan Pexšan Peyman Pirjîn Piršeng 
+			Piršing Pore Poršeng Pęlîn Pîroz Pîšeng 
+			Rana Rengîn Rewša Rewšen Rihan Rindę Rojhelat Roję Ronahî Ronak Rondik Ręjîn Ręzan Rîhan Rîken 
+			Rűciwan Rűgeš Rűken Rűzerîn Sarę Serbar Sercan Serferaz Serfiraz Sergul Serçinar Seyran Xatűn 
+			Xęlîcan Xonçe Ghoncheh Zernîšan Zerya Zerę Zerî Zerîxan Zeytîn Zeytűn Zilfę Zoya Zozan Zęrîn 
+			Zîlan Zînet Zînę Šana Šanaz Šayan Šehrîban Šelal Šemam Šengę Šepal Šepirze Šermîn Ševba Ševîn 
+			Šęlaz Šîlan Šînî Šîwen
+		}
+	}
+	afghani= {
+		primary = AFG
+		male_names = {
+			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
+			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
+			Cehanšah Jahanshah Cemšîd Jamshid Cevid Javeed Danűš Danush Darab Daryűš Darius Davud David 
+			Ebrahim Abraham Efrasiyab Afrasiyab Efšer Afshar Ehmed Ahmad Ehsan Zaman
+			Ekber Akbar Elî Ali Enűširwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erdešîr Ardeshir 
+			Esfendiyar Esfandiar Mir Ways Humayun Ahmad Timur Shoja al-Mulk Muhammad Shoja Fath Jang Shahpur 
+			Eskander Alexander Ešot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad 
+			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Ferîd Farid
+			Ferîdun Feridun Ferux Farroukh Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun 
+			Firdews Ferdows Ghobad Gholam Godarz Goštasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat
+			Hesen Hasan Hisęn Hussein Hormoz Hosen Hossein Humayun Hurmiz Hormazd Îsmaîl Ismail Kambiz 
+			Kamran Keyghobad Keyxusrew Keykhosrau Kâvus Kavoos
+			Kűrušę Cyrus Mamlan Muhammad Mashad Mehműd Mahmud Mehrab Mehrzad Mensűr Mansur Menűçihr 
+			Manuchihr Menűšihr Manushihr Merwan Marwan Merzuban Marzuban Mesűd Masud
+			Mihemed Muhammad Mîrza Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid 
+			Nesir Nazir Mahmud Ayub
+			Nesr Nasr Nezam Nošîrwan Nawshirwan Nęçîrvan Nechirwan Parviz Pujman Pęšeng Pashang Pîroz Peroz 
+			Revend Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb
+			Vahhab Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar 
+			Xašayar Khashayar 
+			Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar Yezîd Yazid 
+			Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia
+			Šadî Shadhi Šahab Shahab Šahbaz Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar 
+			Shahryar Šahrux Shahrokh Šahruz Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan 
+			Šîrkűh Shirkuh
+		}
+		female_names = {
+			Adan Adar Ara Ardil Arezo Arezu Ariyan Aręz Arîman Arîn Asan Asteng Asę Avan Azadî Azrîn Aštî 
+			Badil Bahar Balnexšîn Banę Barîn Bawan Baziyan Bazę Befraw Befrîn Begîxan Belalűk Belqis
+			Belîcan Benav Benaz Berbijîn Berdar Berdil Bersîn Berîcan Bexšîn Beyan Beybîn Beybűn Bezîn 
+			Bihar Bijîn Bilęse Binar Binav Binefš Binevš Biyan Biškoj Biškurîn Bohar Bęnaz Bęrîcan Bęrîvan 
+			Burandoxt Pourandokht
+			Dengîn Derav Derzîn Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber Dilcan Dildar Dilgerm 
+			Dilistan Dilkanî Dilnaz Dilvîn Dilxoš Dilxweš Diyarî Doman Dęrsim Dîlan Dîristan Esmercan 
+			Esmerxan Nawal
+			Estęre Evîn Ewrîn Eyšan Ezcan Felek Fener Ferašîn Firmęsk Fîdan Gazî Gelavęj Gerdengaz Gozel 
+			Gozę Grîvan Guhtem Gulbehar Golbahar Gulšen Gulnar Gulnaz Golnaz Gęlas Helez Heliz Helvîn 
+			Hemayîl 
+			Keję Keser Kevok Kevî Kewser Kezîzer Koçer Leylę Leymîn Lezîn Lolav Lorkę Lorî Lorîcan Lorîn 
+			Lęlav Lęvken Lîlyan Lîza Maša Mebest Mehrîban Mehrîcan Mehrîvan
+			Mejbîr Mendal Mercam Merîvan Mirarîxan Miryem Mariam Mizgîn Muhabad Męmę Męrdîn Męxek Mîdya 
+			Mîran Narîman Narîncan Navbihar Nawxoš Naz Nazdar Nazenîn Nazgul Nazgol Nazik Naznaz Nazę Nermę 
+			Nermîn Nesrîn Newbohar Nexšîn
+			Nešmîl Nešmîn Norcan Nęrgiz Nęrîn Nęzîk Nîdar Nîgar Nîroj Nîšan Nîštîman Perjîn Pervîn Perwane 
+			Parvaneh Perwîn Perçem Perî Perîgul Perînaz Perîxan Perîšan Pexšan Peyman Pirjîn Piršeng 
+			Piršing Pore Poršeng Pęlîn Pîroz Pîšeng 
+			Rana Rengîn Rewša Rewšen Rihan Rindę Rojhelat Roję Ronahî Ronak Rondik Ręjîn Ręzan Rîhan Rîken 
+			Rűciwan Rűgeš Rűken Rűzerîn Sarę Serbar Sercan Serferaz Serfiraz Sergul Serçinar Seyran Xatűn 
+			Xęlîcan Xonçe Ghoncheh Zernîšan Zerya Zerę Zerî Zerîxan Zeytîn Zeytűn Zilfę Zoya Zozan Zęrîn 
+			Zîlan Zînet Zînę Šana Šanaz Šayan Šehrîban Šelal Šemam Šengę Šepal Šepirze Šermîn Ševba Ševîn 
+			Šęlaz Šîlan Šînî Šîwen
+		}
+	}
+	kurdish = {
+		primary = ARD
+		dynasty_names = { 
+			Hazaraspid "Soran" "Justanid" Bozorg Ardalan Bukhti Ferozkohi Feyli Gewirk Rekani
+			Hadhabani  "Ali Sherwan" Herki Jalilavand
+		}
+		male_names = {
+			Bawa Helo Timur Ahmad Soleiman Sobhanverdi Khosrow Bozorg Hosayn Aman-Allah Faqi Ahmad Mohammad 
+			Khalid Nawaub Salim Abdolla Mahmoud Ibrahim Abdurrahman Kulos Isa Mir Saifeddin Saidi Budak
+			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
+			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir 
+			Cehanšah Jahanshah Cemšîd Jamshid Cevid Javeed Danűš Danush Darab Daryűš Darius Davud David 
+			Ebrahim Abraham Efrasiyab Afrasiyab Efšer Afshar Ehmed Ahmad Ehsan Ekber Akbar Elî Ali 
+			Enűširwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erdešîr Ardeshir Esfendiyar Esfandiar 
+			Eskander Alexander Ešot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad 
+			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Ferîd Farid Ferîdun Feridun Ferux Farroukh 
+			Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun Firdews Ferdows Ghobad Gholam Godarz 
+			Goštasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat Hesen Hasan Hisęn Hussein Hormoz Hosen 
+			Hossein Humayun Hurmiz Hormazd Îsmaîl Ismail Kambiz Kamran Keyghobad Keyxusrew Keykhosrau Kâvus 
+			Kavoos Kűrušę Cyrus Mamlan Muhammad Mashad Mehműd Mahmud Mehrab Mehrzad Mensűr Mansur Menűçihr 
+			Manuchihr Menűšihr Manushihr Merwan Marwan Merzuban Marzuban Mesűd Masud Mihemed Muhammad Mîrza 
+			Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid Nesir Nazir Nesr Nasr 
+			Nezam Nošîrwan Nawshirwan Nęçîrvan Nechirwan Parviz Pujman Pęšeng Pashang Pîroz Peroz Revend 
+			Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb Vahhab 
+			Vahid Vahusdan Wahustan Vali Varšasp Varshasb Vîštap Vishtasb Xarmandar Kharmandar Xašayar 
+			Khashayar Xuršîd Khurshid Xusrew Khosrau Xušyar Hooshyar Xwedadad Khodadad Xwedayar Khudayar 
+			Yezîd Yazid Yousef Zahak Zakaria Zand Zerdešt Zartosht Zia Šadî Shadhi Šahab Shahab Šahbaz 
+			Shahbaz Šahenšah Shahanshah Šahin Shahin Šahram Shahram Šahryar Shahryar Šahrux Shahrokh Šahruz 
+			Shahruz Šapur Shapur Šarvin Sharwin Šawur Shavur Šayan Shayan Šîrkűh Shirkuh
+		}
+		female_names = {
+			Adan Adar Ara Ardil Arezo Arezu Ariyan Aręz Arîman Arîn Asan Asteng Asę Avan Azadî Azrîn Aštî 
+			Badil Bahar Balnexšîn Banę Barîn Bawan Baziyan Bazę Befraw Befrîn Begîxan Belalűk Belqis 
+			Belîcan Benav Benaz Berbijîn Berdar Berdil Bersîn Berîcan Bexšîn Beyan Beybîn Beybűn Bezîn 
+			Bihar Bijîn Bilęse Binar Binav Binefš Binevš Biyan Biškoj Biškurîn Bohar Bęnaz Bęrîcan Bęrîvan 
+			Burandoxt Pourandokht Dengîn Derav Derzîn Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber 
+			Dilcan Dildar Dilgerm Dilistan Dilkanî Dilnaz Dilvîn Dilxoš Dilxweš Diyarî Doman Dęrsim Dîlan 
+			Dîristan Esmercan Esmerxan Estęre Evîn Ewrîn Eyšan Ezcan Felek Fener Ferašîn Firmęsk Fîdan 
+			Gazî Gelavęj Gerdengaz Gozel Gozę Grîvan Guhtem Gulbehar Golbahar Gulšen Gulnar Gulnaz Golnaz 
+			Gęlas Helez Heliz Helvîn Hemayîl Keję Keser Kevok Kevî Kewser Kezîzer Koçer Leylę Leymîn Lezîn 
+			Lolav Lorkę Lorî Lorîcan Lorîn Lęlav Lęvken Lîlyan Lîza Maša Mebest Mehrîban Mehrîcan Mehrîvan 
+			Mejbîr Mendal Mercam Merîvan Mirarîxan Miryem Mariam Mizgîn Muhabad Męmę Męrdîn Męxek Mîdya 
+			Mîran Narîman Narîncan Navbihar Nawxoš Naz Nazdar Nazenîn Nazgul Nazgol Nazik Naznaz Nazę Nermę 
+			Nermîn Nesrîn Newbohar Nexšîn Nešmîl Nešmîn Norcan Nęrgiz Nęrîn Nęzîk Nîdar Nîgar Nîroj Nîšan 
+			Nîštîman Perjîn Pervîn Perwane Parvaneh Perwîn Perçem Perî Perîgul Perînaz Perîxan Perîšan 
+			Pexšan Peyman Pirjîn Piršeng Piršing Pore Poršeng Pęlîn Pîroz Pîšeng Rana Rengîn Rewša Rewšen 
+			Rihan Rindę Rojhelat Roję Ronahî Ronak Rondik Ręjîn Ręzan Rîhan Rîken Rűciwan Rűgeš Rűken 
+			Rűzerîn Sarę Serbar Sercan Serferaz Serfiraz Sergul Serçinar Seyran Xatűn Xęlîcan Xonçe 
+			Ghoncheh Zernîšan Zerya Zerę Zerî Zerîxan Zeytîn Zeytűn Zilfę Zoya Zozan Zęrîn Zîlan Zînet Zînę 
+			Šana Šanaz Šayan Šehrîban Šelal Šemam Šengę Šepal Šepirze Šermîn Ševba Ševîn Šęlaz Šîlan Šînî 
+			Šîwen Atiya
+		}
+	}
+	mazandarani = {
+		primary = TAB
+		male_names = {
+			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
+		}
+		female_names = {
+			Manli Mitchka Mila Vanoosheh Marjam Marzhan Milaana Nurbiika Nurishat Nuura Peet'mat Qoqa  
+		}
+		dynasty_names = {
+			Afrasiyab Paduspanid Alid "Banu Kawus" "Banu Iskandar" Marashi Kiya
+			Bavandid Eshaqvand
+		}
+	}
+	dynasty_names = {
+		Afsharid Zand Qajar Qoli Zahedi Talish Safavid Zulqadr Shamlu Sahandlu Zanganeh
+		Zaman Ustajlu Tekkelu Jaberi Khuzani Kujuji Ordubadi Khalifeh Karaki 
+	}
+}

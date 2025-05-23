@@ -1,0 +1,766 @@
+# Country modifiers
+
+gv_educating_heir = {
+	all_power_cost = 0.1
+}
+
+t_lan_development_boost = {
+	development_cost = -0.05
+}
+
+###
+
+t_kazasker_office = {
+	discipline = 0.05
+}
+
+t_eyalet_of_rumelia = {
+	global_unrest = -3
+}
+
+### Argentarii
+
+t_argentarii_1_modifier = {
+	interest = 0.5
+	global_tax_modifier = -0.1
+}
+
+t_argentarii_2_modifier = {
+	interest = 0.5
+}
+
+t_argentarii_3_modifier = {
+	global_tax_modifier = 0.1
+}
+
+t_argentarii_4_modifier = {
+	interest = -0.5
+	global_tax_modifier = 0.1
+}
+
+t_argentarii_5_modifier = {
+	interest = -0.5
+	global_tax_modifier = 0.1
+	build_cost = -0.05
+}
+
+t_argentarii_6_modifier = {
+	interest = -1
+	global_tax_modifier = 0.1
+	build_cost = -0.1
+}
+
+###
+
+### BYZ / ROM
+
+t_byz_army_reform = {
+	drill_decay_modifier = -0.15
+}
+
+t_byzantine_economic_reforms = {
+	global_tax_modifier = 0.1
+}
+
+t_byz_vengeance = {
+	global_unrest = -1
+}
+
+t_krakow_modifier = {
+	land_morale = 0.1
+	discipline = 0.1
+	development_cost = -0.1
+	production_efficiency = 0.15
+	global_prosperity_growth = 0.1
+	global_tax_income = 48
+}
+
+t_byz_triumph = {
+	picture = "t_triumph"
+	land_morale = 0.02
+}
+
+t_byz_new_world = {
+	may_explore = yes
+}
+
+t_byz_deus_sol_invictus = {
+	morale_damage_received = -0.075
+	global_missionary_strength = 0.02
+	global_unrest = 1
+}
+
+t_byz_deus_sol_invictus_2 = {
+	morale_damage_received = -0.1
+	global_missionary_strength = 0.03
+	warscore_cost_vs_other_religion = -0.1
+	global_unrest = 3
+}
+
+t_byz_orthodox_stronghold = {
+	global_monthly_devastation = -0.05
+	global_unrest = -1
+}
+
+t_byz_bulgarslayer = {
+	global_autonomy = -0.05
+}
+
+t_byz_ius_primae_relationis = {
+	global_unrest = -2
+}
+
+t_byz_the_empire_reborn = {
+	manpower_in_own_culture_provinces = 0.1
+}
+
+t_pro_imperium = {
+	manpower_in_own_culture_provinces = 0.2
+}
+
+t_byz_client_states = {
+	diplomatic_upkeep = 1
+	diplomats = 1
+	# allow_client_states = yes
+}
+
+t_return_to_our_roots = {
+	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.25
+	global_unrest = 3
+}
+
+t_byz_roads = {
+	movement_speed = 0.1
+	land_attrition = -0.1
+}
+
+t_rome_rules_the_waves = {
+	picture = "harbour_good"
+	heavy_ship_power = 0.2
+	naval_forcelimit_modifier = 0.25
+}
+
+t_india_trade_company = {
+	merchants = 1
+}
+
+t_indochina_trade_company = {
+	global_foreign_trade_power = 0.075
+}
+
+t_malaysia_trade_company = {
+	global_foreign_trade_power = 0.075
+}
+
+t_roman_foreign_trade_company = { # C.R.C.
+	picture = "crc_harbour"
+	merchants = 1
+	global_foreign_trade_power = 0.2
+}
+
+t_reiou = {
+	picture = "t_temple_icon"
+	global_unrest = -3
+	heavy_ship_power = 0.1
+	manpower_in_own_culture_provinces = 0.2
+	cb_on_overseas = yes
+}
+
+t_rome_conversion = {
+	global_missionary_strength = 0.05
+	global_unrest = 2
+}
+
+t_rome_imperial_ambitions = {
+	manpower_recovery_speed = 0.15
+	core_creation = -0.1
+}
+
+t_rome_arbiter_modifier = {
+	global_tax_modifier = -0.05
+	stability_cost_modifier = -0.1
+}
+
+t_rome_siege_of_time = {
+	picture = "trade_bad"
+	advisor_cost = 0.33
+	land_maintenance_modifier = 0.15
+}
+
+t_rome_tolerates_nestorians = {
+	tolerance_heretic = 2
+	stability_cost_modifier = -0.1
+}
+
+t_rome_hates_nestorians = {
+	tolerance_heretic = -2
+	global_missionary_strength = 0.02
+}
+
+t_roman_support = {
+	manpower_recovery_speed = 0.1
+}
+
+t_council_of_cairo = {
+	missionaries = 1
+}
+
+t_argentaria_flavia = {
+	inflation_reduction = 0.1
+}
+
+t_core_creation_buff = {
+	core_creation = -0.15
+}
+
+t_devs_adivta_romanis = {
+	land_morale = 0.1
+	manpower_recovery_speed = 0.1
+}
+
+t_reclaiming_provinces = {
+	core_creation = -0.1
+}
+
+t_rise_of_a_caesar = {
+	manpower_recovery_speed = 0.1
+	global_unrest = 4
+}
+
+t_in_defense_of_the_republic = {
+	republican_tradition = 1
+	global_unrest = 3
+}
+
+t_restoring_borders_modifier = {
+	siege_ability = 0.2
+}
+
+t_rome_our_place_in_the_sun = {
+	fire_damage = 0.1
+}
+
+t_roman_tradition = {
+	morale_damage_received = -0.1
+	culture_conversion_cost = -0.2
+}
+
+t_roman_admiralty = { # Imperial Admiralty
+	picture = "harbour_good"
+	global_ship_trade_power = 0.15
+	naval_forcelimit_modifier = 0.2
+}
+
+t_of_purple_and_gold = {
+	max_absolutism = 10
+	max_absolutism_effect = 0.1
+}
+
+gv_church_of_the_state = {
+	monthly_fervor_increase = 1
+}
+
+gv_sword_and_shield_of_jesus = {
+	discipline = 0.05
+}
+
+t_edu_economy_studies = {
+	global_tax_modifier = 0.05
+	production_efficiency = 0.05
+}
+
+t_edu_natural_studies = {
+	idea_cost = -0.05
+}
+
+t_edu_law_studies = {
+	reform_progress_growth = 0.1
+}
+
+gv_exarchate_of_crimea = {
+	picture = crown
+	governing_capacity_modifier = 0.1
+}
+
+gv_loyal_exarch = {
+	picture = crown
+	liberty_desire_from_subject_development = -0.25
+}
+
+### PER
+
+t_per_army_reform = {
+	discipline = 0.05
+}
+
+t_warhammer_modifier = {
+	is_marine_modifier = yes
+	infantry_power = 0.15
+}
+
+t_allow_marines = {
+	allowed_marine_fraction = 0.15
+}
+
+t_persia_universities = {
+	technology_cost = -0.05
+}
+
+t_per_tolerance_modifier = {
+	tolerance_own = 2
+	global_unrest = -2
+}
+
+t_grzegorz_colonists = {
+	colonists = 1
+	global_colonial_growth = 30
+	range = 0.3
+}
+
+t_per_colonial_nation = {
+	reduced_liberty_desire_on_other_continent = 25
+}
+
+t_per_many_colonial_nations = {
+	trade_steering = 0.25
+}
+
+t_sinogrzegorz_modifier = {
+	imperial_mandate = 0.1
+}
+
+t_per_core_creation_cost_modifier = {
+	core_creation = -0.25
+}
+
+t_zoroastrian_assembly = {
+	picture = "t_zoroastrian_icon"
+	global_unrest = -2
+	global_missionary_strength = 0.02
+}
+
+t_sacred_fires_lit = {
+	picture = "t_zoroastrian_icon"
+	ae_impact = -0.15
+}
+
+t_per_unrest_buff = {
+	global_unrest = -3
+}
+
+### GER
+
+t_ger_empire_modifier = {
+	core_creation = -0.075
+}
+
+t_die_grenzwacht = {
+	governing_capacity_modifier = 0.1
+	monthly_militarized_society = 0.02
+	monthly_prussian_militarized_society_1 = 0.02
+	monthly_prussian_militarized_society_2 = 0.05
+	monthly_prussian_militarized_society_3 = 0.05
+}
+
+### LAT
+
+t_lat_the_dark_menace = {
+	core_creation = -0.2
+	global_unrest = 4
+}
+
+t_lat_new_hope = {
+	land_morale = 0.075
+	development_cost = -0.05
+}
+
+t_lat_sword_of_justice = {
+	land_forcelimit_modifier = 0.1
+}
+
+t_lat_to_ensure_stability = {
+	culture_conversion_cost = -0.2
+	culture_conversion_time = -0.2
+}
+
+gv_lat_italian_renaissance = {
+	development_cost = -0.2
+}
+
+### KOJ
+
+t_deus_vult_modifier = {
+	land_morale = 0.1
+	global_tax_income = 64
+	land_forcelimit = 20
+	warscore_cost_vs_other_religion = -0.25
+	# core_creation = -0.2
+}
+
+t_jerusalem_intolerance = {
+	tolerance_heretic = -5
+	tolerance_heathen = -5
+}
+
+t_jerusalem_settlers = {
+	missionaries = 1
+	tolerance_heretic = -5
+	tolerance_heathen = -5
+}
+
+t_jerusalem_conversion = {
+	missionary_maintenance_cost = -0.25
+	tolerance_heretic = -5
+	tolerance_heathen = -5
+}
+
+t_jerusalem_true_faith = {
+	tolerance_heretic = -5
+	tolerance_heathen = -5
+}
+
+t_jerusalem_religious_freedom = {
+	tolerance_heretic = 3
+	tolerance_heathen = 4
+}
+
+t_jerusalem_production_boost = {
+	production_efficiency = 0.2
+}
+
+t_jerusalem_mass_production = {
+	global_unrest = -2
+	manpower_recovery_speed = 0.1
+}
+
+t_jerusalem_settlers_2 = {
+	missionaries = 1
+}
+
+t_koj_cairo_captured = {
+	warscore_cost_vs_other_religion = -0.1
+	manpower_recovery_speed = 0.1
+}
+
+t_koj_cairo_captured_2 = {
+	core_creation = -0.15
+}
+
+### OTHER
+
+t_invoke_devotio_modifier = {
+	infantry_power = 0.075
+}
+
+t_ibrahim_ibn_yaqub_works = {
+	innovativeness_gain = 0.1
+}
+
+t_brilliant_advisor = {
+	idea_cost = -0.05
+}
+
+t_political_turmoil = {
+	global_tax_modifier = -0.1
+	global_unrest = 2
+}
+
+t_old_dynasty_preserved = {
+	global_tax_modifier = 0.15
+	global_unrest = -2
+}
+
+t_austria_inflation_reduction = {
+	inflation_reduction = 0.05
+}
+
+t_chess = {
+	military_tactics = 0.1
+}
+
+eng_the_redcoat_2 = {
+	infantry_power = 0.1
+	discipline = 0.05
+}
+
+t_eng_global_empire_act = {
+	global_unrest = -2
+}
+
+gv_eng_decade_of_prosperity_improved = {
+	development_cost = -0.2
+	global_trade_goods_size_modifier = 0.15
+}
+
+gv_eng_decade_of_prosperity = {
+	development_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+}
+
+t_tax_increase_modifier = {
+	global_tax_modifier = 0.05
+	global_unrest = 1
+	state_maintenance_modifier = 0.15
+}
+
+t_civ_austerity = {
+	global_tax_modifier = 0.075
+	state_maintenance_modifier = -0.2
+	global_unrest = 2
+}
+
+t_judeoborea_buff = {
+	land_morale = 0.1
+	global_tax_modifier = 0.1
+	tax_income = 24
+}
+
+t_eco_census = {
+	manpower_recovery_speed = 0.05
+	state_maintenance_modifier = 0.1
+}
+
+t_judeoborea_boreal_forests = {
+	land_attrition = -0.1
+	hostile_attrition = 0.3
+	max_hostile_attrition = 3
+}
+
+t_judeoborea_our_place = {
+	missionaries = 1
+	global_missionary_strength = 0.02
+	tolerance_own = 1
+}
+
+t_judeoborea_dominating_baltic_trade = {
+	global_trade_power = 0.15
+}
+
+t_judeoborea_ascendant = {
+	infantry_power = 0.1
+	core_creation = -0.2
+}
+
+t_judean_alaska_modifier = {
+	global_colonial_growth = 20
+	trade_steering = 0.2
+}
+
+t_judean_central_asia = {
+	caravan_power = 0.15
+	trade_steering = 0.1
+}
+
+t_judeoborea_preparing_to_invade_poland = {
+	province_warscore_cost = -0.2
+}
+
+t_judeoborea_victorious_modifier = {
+	discipline = 0.05
+	province_warscore_cost = -0.1
+	stability_cost_modifier = -0.1
+}
+
+t_judeo_aryan_ideal = {
+	discipline = 0.05
+}
+
+t_judeoborea_cleansing_the_forests = {
+	culture_conversion_cost = -0.2
+	culture_conversion_time = -0.2
+	tolerance_heretic = -1
+	tolerance_heathen = -2
+}
+
+t_judeoborea_the_means = {
+	culture_conversion_cost = -0.1
+	culture_conversion_time = -0.1
+	tolerance_own = 1
+	tolerance_heretic = -1
+	tolerance_heathen = -1
+}
+
+t_child_of_grzegorz = {
+	global_unrest = -2
+	tolerance_own = 1
+}
+
+t_servant_of_ahura_mazda = {
+	manpower_in_own_culture_provinces = 0.1
+	stability_cost_modifier = -0.1
+}
+
+t_oman_trade_modifier = {
+	trade_steering = 0.15
+}
+
+t_oman_dominating_trade = {
+	merchants = 1
+	global_trade_power = 0.1
+}
+
+t_caliphate_beaten_but_not_defeated_modifier = {
+	province_warscore_cost = -0.2
+	tolerance_own = 1
+}
+
+t_sword_of_islam = {
+	land_morale = 0.1
+	cb_on_religious_enemies = yes
+}
+
+t_custodian_of_the_holy_cities = {
+	global_missionary_strength = 0.02
+}
+
+t_england_conversion_modifier = {
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+	global_missionary_strength = 0.03
+}
+
+t_theodland_crown_of_germany_modifier = {
+	max_absolutism = 10
+}
+
+t_fur_den_kaiser = {
+	land_morale = 0.05
+}
+
+t_kreditwerk = {
+	inflation_reduction = 0.1
+}
+
+t_theodland_timed_dev = {
+	development_cost = -0.2
+}
+
+t_theodland_place_in_the_sun_modifier = {
+	range = 0.2
+	colonists = 1
+	global_tariffs = 0.2
+}
+
+t_england_army_reform = {
+	fire_damage_received = -0.1
+}
+
+t_fra_quest_for_the_new_world = {
+	may_explore = yes
+	colonists = 1
+}
+
+t_fra_colonial_empire = {
+	colonist_placement_chance = 0.05
+	global_colonial_growth = 15
+	range = 0.2
+	colonists = 1
+}
+
+t_fra_colonial_empire_2 = {
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 30
+	range = 0.2
+	colonists = 1
+}
+
+t_fra_colonial_empire_3 = {
+	colonist_placement_chance = 0.1
+	global_colonial_growth = 30
+	range = 0.2
+	trade_efficiency = 0.05
+	global_tariffs = 0.15
+	trade_company_investment_cost = -0.2
+	colonists = 1
+}
+
+t_godmode = {
+	morale_damage_received = -1
+	discipline = 0.5
+}
+
+t_hyperborea_buff = {
+	land_morale = 0.1
+}
+
+t_lechia_muscovy_defeated = {
+	core_creation = -0.3
+	global_unrest = -2
+}
+
+t_lechia_cavalry_1 = {
+	cavalry_power = 0.1
+	cav_to_inf_ratio = 0.2
+}
+
+t_lechia_cavalry_2 = {
+	cavalry_power = 0.15
+	cav_to_inf_ratio = 0.3
+}
+
+t_lechia_cavalry_3 = {
+	cavalry_power = 0.2
+	cav_to_inf_ratio = 0.5
+	can_recruit_hussars = yes
+	amount_of_hussars = 10
+}
+
+t_lechia_cavalry_4 = {
+	cavalry_power = 0.25
+	cav_to_inf_ratio = 0.5
+	can_recruit_hussars = yes
+	amount_of_hussars = 20
+}
+
+t_lechia_consolidated_power = {
+	core_creation = -0.25
+	horde_unity = 1
+}
+
+t_lechia_culture_conversion_buff = {
+	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.25
+	global_unrest = -2
+}
+
+t_robust_coal_industry = {
+	picture = "goodcoal"
+	production_efficiency = 0.2
+}
+
+t_growth_of_iron_industry = {
+	global_trade_goods_size_modifier = 0.15
+}
+
+t_germany_imperialist_ruler = {
+	core_creation = -0.25
+]
+
+t_germany_kaiserliche_marine = {
+	picture = "harbour_good"
+	heavy_ship_power = 0.15
+}
+
+t_theodland_defeated_austria = {
+	imperial_authority_value = 0.1
+	land_morale = 0.10
+	prestige_decay = -0.02
+}
+
+t_austria_defeated_theodland = {
+	imperial_authority_value = 0.15
+	land_morale = 0.15
+	prestige_decay = -0.02
+}
+
+gv_famine_neglected = {
+	global_unrest = 1
+	global_tax_modifier = -0.15
+	trade_efficiency = -0.15
+}
+
+gv_wagner_buff = {
+	tax_income = 64
+	infantry_power = 0.1
+}

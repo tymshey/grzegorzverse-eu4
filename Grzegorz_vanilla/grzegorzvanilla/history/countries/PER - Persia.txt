@@ -1,0 +1,63 @@
+government = monarchy
+add_government_reform = t_grzegorz_reform
+government_rank = 3
+technology_group = muslim
+religion = zoroastrian
+primary_culture = assyrian
+capital = 410
+historical_rival = BYZ
+1444.10.1 = {
+	set_estate_privilege = estate_persian_sects_pax_gregorica
+	change_estate_land_share = {
+		estate = estate_jews
+		share = -10
+	}
+}
+1444.11.11= {
+	monarch = {
+		name = "Tolmai"
+		dynasty = "Gównogradus"
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 1367.4.4
+		religion = zoroastrian
+		culture = assyrian
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = righteous_personality
+	queen = {
+		name = "Tam"
+		dynasty = "Bukhtishu"
+		adm = 4
+		dip = 3
+		mil = 5
+		country_of_origin = PER
+		birth_date = 1399.1.10
+		death_date = 1459.1.10
+		female = yes
+		religion = zoroastrian
+		culture = assyrian
+	}
+	add_queen_personality = industrious_personality
+	add_queen_personality = obsessive_perfectionist_personality
+	heir = {
+		name = "Abris"
+		monarch_name = "Abris"
+		dynasty = "Gównogradus"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1428.12.22
+		death_date = 1493.12.22
+		claim = 89
+		religion = zoroastrian
+		culture = assyrian
+	}
+	add_heir_personality = kind_hearted_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 112
+	add_treasury = 0
+}

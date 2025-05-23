@@ -1,0 +1,105 @@
+romantheocracy = {
+	rank = {
+		1 = T_THEOCRACY
+		2 = T_THEOCRACY
+		3 = T_THEOCRATIC_EMPIRE
+	}
+	ruler_male = {
+		3 = PONTIFEX_MAXIMUS
+		2 = PONTIFEX_MAXIMUS
+		1 = PONTIFEX
+	}
+	ruler_female = {
+		3 = PONTIFEX_MAXIMUS
+		2 = PONTIFEX_MAXIMUS
+		1 = PONTIFEX
+	}
+	trigger = {
+		government = theocracy
+		religion = hellenic_pagan_reformed
+	}
+}
+
+romanempiregreek = {
+	rank = {
+		1 = T_DESPOTATE
+		2 = T_DESPOTATE
+		3 = T_EMPIRE
+	}
+	ruler_male = {
+		3 = AUTOKRATOR
+		2 = DESPOT
+		1 = DOUX
+	}
+	ruler_female = {
+		3 = AUTOKRATOR
+		2 = DESPOT
+		1 = DOUX
+	}
+	consort_male = {
+		1 = T_CONSORT
+		2 = T_CONSORT
+		3 = T_CONSORT
+	}
+	consort_female = {
+		1 = T_CONSORT
+		2 = T_CONSORT
+		3 = T_BASILISSA
+	}
+	heir_male = {
+		1 = T_HEIR
+		2 = T_HEIR
+		3 = T_SYMBASILEUS
+	}
+	heir_female = {
+		1 = T_HEIR
+		2 = T_HEIR
+		3 = SYMBASILISSA
+	}
+	trigger = {
+		government = monarchy
+		culture_group = byzantine
+	}
+}
+
+Russland_reform = {
+	rank = {
+		1 = T_DESPOTATE
+		2 = T_DESPOTATE
+		3 = T_EMPIRE
+	}
+	ruler_male = {
+		3 = AUTOKRATOR
+		2 = DESPOT
+		1 = DOUX
+	}
+	ruler_female = {
+		3 = AUTOKRATOR
+		2 = DESPOT
+		1 = DOUX
+	}
+	consort_male = {
+		1 = T_CONSORT
+		2 = T_CONSORT
+		3 = T_CONSORT
+	}
+	consort_female = {
+		1 = T_CONSORT
+		2 = T_CONSORT
+		3 = T_BASILISSA
+	}
+	heir_male = {
+		1 = T_HEIR
+		2 = T_HEIR
+		3 = T_SYMBASILEUS
+	}
+	heir_female = {
+		1 = T_HEIR
+		2 = T_HEIR
+		3 = SYMBASILISSA
+	}
+	trigger = {
+		government = monarchy
+		culture_group = byzantine
+	}
+}

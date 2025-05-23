@@ -1,0 +1,36 @@
+Caucasus_ideas = {
+	start = {
+		land_morale = 0.10
+		discipline = 0.05
+	}
+	trigger = {
+		tag = Z05
+	}
+	free = yes
+
+	idea_1 = {
+		global_missionary_strength = 0.03
+	}
+	idea_2 = {
+		global_tax_modifier = 0.15
+	}
+	idea_3 = {
+		military_tactics = 0.25
+	}
+	idea_4 = {
+		caravan_power = 0.2
+		merchants = 1
+	}
+	idea_5 = {
+		technology_cost = -0.1
+	}
+	idea_6 = {
+		cb_on_religious_enemies = yes
+	}
+	idea_7 = {
+		global_unrest = -1
+	}
+	bonus = {
+		trade_efficiency = 0.1
+	}
+}

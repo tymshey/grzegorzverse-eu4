@@ -1,0 +1,39 @@
+HEL_ideas = {
+	start = {
+		global_unrest = -1
+		global_missionary_strength = 0.02
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+		tag = HEL
+	}
+	free = yes
+	
+	Polish_army = {
+		land_maintenance_modifier = -0.1
+		can_recruit_hussars = yes
+	}
+	Strenghten_religion = {
+		tolerance_own = 1
+		missionaries = 1
+	}
+	Nation_development = {
+		development_cost = -0.1	
+	}
+	Baltic_trade = {
+		trade_efficiency = 0.1
+	}
+	Increase_army_morales = {
+		land_morale = 0.1
+	}
+	support_local_traders = {
+		merchants = 1
+	}
+	Polish_elite_army = {
+		discipline = 0.05
+	}
+}

@@ -1,0 +1,58 @@
+roman_court_strife_disaster = {
+	potential = {
+		has_reform = t_roman_empire_reform
+	}
+	
+	can_start = {
+		has_reform = t_roman_empire_reform
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		NOT = {
+			is_year = 1465
+		}
+	}
+	
+	can_stop = {
+		is_year = 1465
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		factor = 10
+	}
+	
+	can_end = {
+		OR = {
+			AND = {
+				stability = 2
+				legitimacy_equivalent = 80
+				is_year = 1465
+			}
+			is_year = 1490
+		}
+	}
+	
+	modifier = {
+		global_unrest = 10
+		manpower_recovery_speed = -0.1
+		global_trade_goods_size_modifier = -0.1
+	}
+	
+	on_start = flavor_rom.1
+	on_end = flavor_rom.2
+	on_monthly = {
+		events = {
+        }
+        random_events = {
+			1000 = 0
+			50 = rcs_rom.1
+			50 = rcs_rom.2
+			20 = rcs_rom.3
+        }
+	}
+}

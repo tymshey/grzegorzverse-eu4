@@ -1,0 +1,233 @@
+country_decisions = {
+
+	Start_the_process_to_prosperity = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = Start_the_process_to_prosperity}
+		}
+		allow = {
+		estate_loyalty = {
+        estate = estate_burghers
+        loyalty = 40
+		}
+		estate_loyalty = {
+        estate = estate_nobles
+        loyalty = 40
+		}
+		stability = 2
+			is_at_war = no
+		}
+		
+		effect = {
+			add_treasury = -100
+			add_country_modifier = {
+			name = Estate_economic_investments
+			duration = 7300
+			}
+			add_country_modifier = {
+			name = Estate_development_investments
+			duration = -1
+			}
+			set_country_flag = Start_the_process_to_prosperity
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Improve_taxation = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = Improve_taxation}
+			has_country_flag = Start_the_process_to_prosperity
+		}
+		allow = {
+		stability = 2
+		is_year = 1464
+			is_at_war = no
+		}
+		
+		effect = {
+			add_treasury = -100
+		add_country_modifier = {
+		name = Improve_taxation
+		duration = 10950
+		}
+			set_country_flag = Improve_taxation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Anty_Tax_evasion = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = Anty_Tax_evasion}
+			has_country_flag = Improve_taxation
+			has_country_flag = improve_center_of_trade
+		}
+		allow = {
+		stability = 2
+		is_year = 1584
+			is_at_war = no
+		}
+		
+		effect = {
+		add_treasury = -300
+		add_country_modifier = {
+		name = Tax_evasion_Act
+		duration = 25550
+		}
+			set_country_flag = Anty_Tax_evasion
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Improved_Trade = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = Improved_Trade}
+			has_country_flag = Start_the_process_to_prosperity
+		}
+		allow = {
+		stability = 2
+		is_year = 1464
+			is_at_war = no
+		}
+		
+		effect = {
+		add_treasury = -100
+		add_country_modifier = {
+		name = Improved_trade
+		duration = 10950
+		}
+			set_country_flag = Improved_Trade
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	invite_foreign_merchants = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = invite_foreign_merchants}
+			has_country_flag = Improved_Trade
+		}
+		allow = {
+		stability = 2
+		is_year = 1494
+			is_at_war = no
+		}
+		
+		effect = {
+		add_treasury = -200
+		add_country_modifier = {
+		name = invite_foreign_merchants
+		duration = -1
+		}
+			set_country_flag = invite_foreign_merchants
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	improve_center_of_trade = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = improve_center_of_trade}
+			has_country_flag = invite_foreign_merchants
+		}
+		allow = {
+		stability = 2
+		is_year = 1534
+			is_at_war = no
+		}
+		
+		effect = {
+		add_treasury = -300
+		280 = {
+		add_province_modifier = {
+		name = improve_center_of_trade
+		duration = -1
+		}
+		}
+			set_country_flag = improve_center_of_trade
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Improve_Production = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = Improve_Production}
+			has_country_flag = Start_the_process_to_prosperity
+		}
+		allow = {
+		stability = 2
+		is_year = 1464
+			is_at_war = no
+		}
+		
+		effect = {
+		add_treasury = -100
+		add_country_modifier = {
+		name = Improve_Production
+		duration = 10950
+		}
+			set_country_flag = Improve_Production
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	maximize_production = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = maximize_production}
+			has_country_flag = Improve_Production
+		}
+		allow = {
+		stability = 2
+		is_year = 1494
+			is_at_war = no
+		}
+		
+		effect = {
+		add_treasury = -100
+		add_country_modifier = {
+		name = maximize_production
+		duration = 14600
+		}
+			set_country_flag = maximize_production
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Improved_economy = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = Improved_economy}
+			has_country_flag = maximize_production
+		}
+		allow = {
+		stability = 2
+		is_year = 1520
+			is_at_war = no
+		}
+		
+		effect = {
+		add_treasury = -600
+		add_country_modifier = {
+		name = Improved_economy
+		duration = -1
+		}
+			set_country_flag = Improved_economy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

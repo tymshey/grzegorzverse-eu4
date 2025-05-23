@@ -1,0 +1,112 @@
+irish_ideas = {
+	trigger = {
+		OR = {
+			tag = IRE
+			primary_culture = irish
+		}
+	}
+}
+
+somali_ideas = {
+	trigger = {
+		OR = {
+			primary_culture = somali
+			primary_culture = harari
+			primary_culture = afar
+		}
+	}
+}
+
+greek_ideas = {
+	trigger = {
+		culture_group = byzantine
+	}
+}
+
+TIB_ideas = {
+	start = {
+		defensiveness = 0.5
+		global_missionary_strength = 0.01
+	}
+
+	bonus = {
+		advisor_cost = -0.10
+	}
+
+	trigger = {
+		OR = {
+			tag = TIB
+			AND = {
+				primary_culture = tibetan
+				OR = {
+					religion = vajrayana
+					religion = bon
+					religion = bon_reformed
+				}
+			}
+		}
+	}
+	free = yes       #will be added at load.
+
+	vajrayana_buddhism  = {
+		stability_cost_modifier = -0.10
+	}
+	bon_influence = {
+		leader_land_shock = 1
+	}
+	yaks = {
+		production_efficiency = 0.1
+	}
+	way_of_virtue= {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+	potala_palace = {
+		diplomatic_reputation = 1
+	}
+	way_of_ancients = {
+		discipline = 0.1
+	}
+	pale_earth = {
+		idea_cost = -0.1
+	}
+}
+
+ITA_ideas = { # fuck you paradox
+	start = {
+		global_trade_power = 0.20
+		improve_relation_modifier = 0.50
+	}
+	
+	bonus = {
+		defensiveness = 0.20
+	}
+	
+	trigger = {
+		tag = ITA
+	}
+	free = yes
+	
+	no_a_geographical_construct = {
+		stability_cost_modifier = -0.10
+	}
+	tradition_of_the_legion = {
+		infantry_power = 0.15
+	}
+	mare_nostrum = {
+		galley_cost = -0.15
+		galley_power = 0.20
+	}
+	office_of_censor = {
+		global_manpower_modifier = 0.33
+	}
+	italian_tax_reform = {
+		global_tax_modifier = 0.15
+	}
+	heir_to_the_empire = {
+		prestige = 1
+	}
+	path_to_citizenship = {
+		core_creation = -0.25
+	}
+}

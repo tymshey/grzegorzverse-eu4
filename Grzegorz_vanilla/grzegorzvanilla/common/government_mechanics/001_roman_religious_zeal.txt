@@ -1,0 +1,28 @@
+t_roman_religious_zeal_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 14
+	available = {
+		
+	}
+	
+	powers = {
+		t_roman_religious_zeal = {
+			gui = russian_modernization_gov_mech
+			max = 100
+			reset_on_new_ruler = yes
+			base_monthly_growth = 0.1
+			development_scaled_monthly_growth = 0
+			monarch_power = mil
+			scaled_modifier = {
+				modifier = {
+					morale_damage_received = -0.1
+					global_trade_goods_size_modifier = -0.1
+				}
+			}
+			is_good = yes
+			on_max_reached = {
+				country_event = { id = flavor_rom.27 }
+			}
+		}
+	}
+}

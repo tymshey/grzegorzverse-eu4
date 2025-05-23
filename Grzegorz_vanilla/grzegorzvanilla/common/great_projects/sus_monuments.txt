@@ -1,0 +1,111 @@
+amogus_statue  = {
+	start = 346
+	date = 413.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 200
+	can_be_moved = yes
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	
+	build_trigger = {
+	}
+
+	on_built = {
+	add_prestige = 20
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 24
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		add_prestige = 10
+		}
+	}
+
+	tier_1 = {
+
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+		local_development_cost = -0.05
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		land_morale = 0.025
+		}
+		on_upgraded = {
+		add_prestige = 10
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 300
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			local_development_cost = -0.1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		land_morale = 0.05
+		}
+		on_upgraded = {
+		add_prestige = 10
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 400
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_development_cost = -0.2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		prestige = 1
+		land_morale = 0.05
+		}
+		on_upgraded = {
+		add_prestige = 10
+		}
+	}
+}

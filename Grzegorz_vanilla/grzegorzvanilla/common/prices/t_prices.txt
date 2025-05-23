@@ -1,0 +1,9 @@
+# Prices
+
+vodka = { 
+	base_price = 3.5
+}
+
+honey = {
+	base_price = 5
+}

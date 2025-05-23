@@ -1,0 +1,53 @@
+﻿l_english:
+
+## Missions
+
+# Florentine Missions
+
+t_florence_the_city_of_god_title:0 "The City of God"
+t_florence_the_city_of_god_desc:0 ""
+t_florence_develop_capital_title:0 "Expand the Capital"
+t_florence_develop_capital_desc:0 ""
+
+# Great Britain
+
+gbr_the_cloth_act_title:0 "The Cloth Act"
+gbr_the_cloth_act_desc:0 "In pursuit of economic prosperity and the advancement of our nation, we have identified a critical opportunity to bolster our textile industry. The Cloth Act, a strategic initiative, aims to revolutionize the production and trade of cloth within our borders. By implementing comprehensive reforms and investing in key aspects of the textile sector, we seek to secure England's dominance in the global market for fine fabrics."
+gbr_develop_isles_title:0 "Develop The Isles"
+gbr_develop_isles_desc:0 "As stewards of the British Isles, it is our duty to foster prosperity and wield influence across our homelands. By investing in key areas and implementing targeted reforms, we will solidify our dominance and secure a prosperous future for England."
+gbr_london_stock_exchange_title:0 "London Stock Exchange"
+gbr_london_stock_exchange_desc:0 "As the economic heart of our mighty nation, London has the potential to become a global financial powerhouse."
+gbr_refine_the_redcoats_title:0 "A Professional Army"
+gbr_refine_the_redcoats_desc:0 "In the pursuit of global dominance and the expansion of the British Empire, it has become imperative to refine and strengthen the backbone of our military might – the legendary Redcoats. These distinguished soldiers have long been the symbol of British military prowess, and it is time to elevate their training and efficiency to unprecedented levels."
+gbr_a_true_empire_title:0 "A True Empire"
+gbr_a_true_empire_desc:0 "In pursuit of eternal glory and unchallenged dominion, our sovereign realm must ascend to the zenith of imperial authority. As the sun never sets on the British Empire, so too must our influence cast an unyielding radiance across the globe. To solidify our claim as the paramount power, we must crown a true Emperor, for a true Empire."
+eng_modernization_mission_title:0 "A Modern Realm"
+eng_modernization_mission_desc:0 "In the relentless march of time, our realm stands at the crossroads of tradition and progress. To secure our place among the foremost powers, we must embrace the winds of change."
+
+# France
+
+fra_cultural_union_title:0 "Cultural Unity"
+fra_cultural_union_desc:0 "The Kingdom of France has long been a tapestry of diverse peoples and cultures, from the Breton tribes of the west to the Occitans in the south and the Basques in the mountains. As those cultures often do not work with eachother, a new cultural landscape must be born under the French Crown. By either integrating or eradicating the Celtic and Latin cultures within our borders, we can create a powerful, unified nation that will survive the test of time."
+dom_fra_set_sail_title:0 "New Horizons"
+dom_fra_set_sail_desc:0 "France must seek new lands across the Atlantic to expand its influence and wealth. The time has come to explore uncharted territories."
+
+# Trebizond
+
+trebizond_gambit_title:0 "The Komnenoi Gambit"
+trebizond_gambit_desc:0 ""
+trebizond_takeover_title:0 "The Takeover"
+trebizond_takeover_desc:0 ""
+
+# Persia
+
+persia_missions_5_task_3_title:0 "Indian Ambitions"
+persia_missions_5_task_3_desc:0 ""
+persia_grzegorz_fleet_title:0 "Fleet of Grzegorz"
+persia_grzegorz_fleet_desc:0 ""
+persia_warhammer_title:0 "War Hammer"
+persia_warhammer_desc:0 ""
+
+# Germania
+
+germania_empire_mission_title:0 "A Germanic Empire"
+germania_empire_mission_desc:0 ""

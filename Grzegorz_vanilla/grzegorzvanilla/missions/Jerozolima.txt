@@ -1,0 +1,1189 @@
+Odzyskanie_Ziemi_Swietej = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	DEUS_VULT = {
+		icon = mission_teutonic_knights
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {
+			1854 = {
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { infantry = PREV } 
+				ROOT = { cavalry = PREV } 
+				ROOT = { cavalry = PREV } 
+				ROOT = { cavalry = PREV } 
+			}
+			add_country_modifier = {
+				name = "t_deus_vult_modifier"
+				duration = 9125
+			}
+			add_permanent_claim = 379
+			add_permanent_claim = 6002
+			add_permanent_claim = 6003
+			add_permanent_claim = 381
+			add_permanent_claim = 6004
+			add_permanent_claim = 364
+			add_treasury = 1000
+			add_manpower = 10
+		}
+	}
+
+	Odzyskanie_Jerozolimy = {
+		icon = jerusalem
+		position = 2
+		required_missions = { DEUS_VULT } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			379 = { owned_by = ROOT } 
+			6002 = { owned_by = ROOT } 
+			6003 = { owned_by = ROOT } 
+		}
+
+		effect = {
+			country_event = { id = knights_missions.2 } 
+			set_capital = 379
+			379 = {
+				remove_core = MAM
+				add_permanent_province_modifier = {
+					name = "t_jerusalem_unrest_modifier"
+					duration = -1
+				}
+			}
+			6002 = {
+				remove_core = MAM
+				add_permanent_province_modifier = {
+					name = "t_jerusalem_unrest_modifier"
+					duration = -1
+				}
+			}
+			6003 = {
+				remove_core = MAM
+				add_permanent_province_modifier = {
+					name = "t_jerusalem_unrest_modifier"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	Smierc_Niewiernym = {
+		icon = chivalry_is_not_dead
+		position = 3
+		required_missions = { Odzyskanie_Jerozolimy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			stability = 1
+			legitimacy_equivalent = 80
+		}
+
+		effect = {
+			379 = { change_religion = catholic } 
+			add_country_modifier = {
+				name = "t_jerusalem_intolerance"
+				duration = -1
+			}
+		}
+	}
+
+	Katolicy_Osadnicy = {
+		icon = mission_settlers_north_america
+		position = 4
+		required_missions = { Smierc_Niewiernym } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			361 = { owned_by = ROOT } 
+			is_year = 1450
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "t_jerusalem_settlers"
+				duration = -1
+			}
+			361 = {
+				change_religion = catholic
+				change_culture = italian
+			}
+		}
+	}
+
+	Nawrocenie_Kraju = {
+		icon = control_the_church
+		position = 5
+		required_missions = { Katolicy_Osadnicy } 
+		provinces_to_highlight = {  } 
+
+		trigger = { is_year = 1452 } 
+
+		effect = {
+			add_country_modifier = {
+				name = "t_jerusalem_conversion"
+				duration = -1
+			}
+		}
+	}
+
+	Prawdziwa_Wiara = {
+		icon = kingdom_of_heaven
+		position = 6
+		required_missions = { Nawrocenie_Kraju } 
+		provinces_to_highlight = {  } 
+
+		trigger = { dominant_religion = catholic } 
+
+		effect = {
+			add_papal_influence = 50
+			add_country_modifier = {
+				name = "t_jerusalem_true_faith"
+				duration = -1
+			}
+		}
+	}
+
+	Zmniejszenie_Opersji = {
+		icon = control_the_church
+		position = 7
+		required_missions = { Prawdziwa_Wiara } 
+		provinces_to_highlight = {  } 
+
+		trigger = { is_year = 1455 } 
+
+		effect = { remove_country_modifier = t_jerusalem_intolerance } 
+	}
+
+	Zmniejszenie_Opresji_2 = {
+		icon = mission_luther_theses
+		position = 8
+		required_missions = { Zmniejszenie_Opersji } 
+		provinces_to_highlight = {  } 
+
+		trigger = { is_year = 1457 } 
+
+		effect = {
+			remove_country_modifier = t_jerusalem_settlers
+			add_country_modifier = {
+				name = t_jerusalem_settlers_2
+				duration = -1
+			}
+		} 
+	}
+
+	Zmniejszenie_Opresji_3 = {
+		icon = mission_suppress_the_saophasa
+		position = 9
+		required_missions = { Zmniejszenie_Opresji_2 } 
+		provinces_to_highlight = {  } 
+
+		trigger = { is_year = 1459 } 
+
+		effect = { remove_country_modifier = t_jerusalem_conversion } 
+	}
+
+	Wolnosc_Religijna = {
+		icon = a_center_of_religion
+		position = 10
+		required_missions = { Zmniejszenie_Opresji_3 } 
+		provinces_to_highlight = {  } 
+
+		trigger = { is_year = 1461 } 
+
+		effect = {
+			remove_country_modifier = t_jerusalem_true_faith
+			add_country_modifier = {
+				name = "t_jerusalem_religious_freedom"
+				duration = -1
+			}
+		}
+	}
+}
+Przemysl_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Rozbudowa_Jerozolimy = {
+		icon = mission_early_game_buildings
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			monthly_income = 20
+			jerusalem_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			palestine_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+
+		effect = {
+			379 = {
+				add_base_tax = 1
+				add_base_production = 2
+				add_base_manpower = 1
+			}
+			6002 = {
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			6003 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 2
+			}
+		} 
+	}
+
+	Ulepszenie_Irrygacji_Gornego_Egiptu = {
+		icon = mission_se_along_the_river
+		position = 2
+		required_missions = { Rozbudowa_Jerozolimy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			bahari_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			delta_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			treasury = 300
+			manpower = 5
+		}
+
+		effect = {
+			358 = {
+				add_base_production = 2
+			}
+			363 = {
+				add_base_production = 2
+			}
+			4317 = {
+				add_base_production = 2
+			}
+			2316 = {
+				add_base_production = 2
+			}
+			361 = {
+				add_base_production = 2
+			}
+			4316 = {
+				add_base_production = 2
+			}
+			add_treasury = -300
+			add_manpower = -5
+		} 
+	}
+
+	Ulepszenie_Irrygacji_Dolnego_Egiptu = {
+		icon = mission_se_along_the_river
+		position = 3
+		required_missions = { Ulepszenie_Irrygacji_Gornego_Egiptu } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			vostani_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			said_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			treasury = 300
+			manpower = 5
+		} 
+
+		effect = {
+			359 = {
+				add_base_production = 2
+			}
+			4318 = {
+				add_base_production = 2
+			}
+			2317 = {
+				add_base_production = 2
+			}
+			2319 = {
+				add_base_production = 2
+			}
+			4320 = {
+				add_base_production = 2
+			}
+			360 = {
+				add_base_production = 2
+			}
+			add_treasury = -300
+			add_manpower = -5
+		} 
+	}
+
+	Rozbudowa_Panstwowych_Kopalnii = {
+		icon = mission_dalaskogen
+		position = 4
+		required_missions = { Ulepszenie_Irrygacji_Dolnego_Egiptu } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			382 = { # Damascus
+				owned_by = ROOT
+			}
+			365 = { # Sinai
+				owned_by = ROOT
+			}
+			364 = { # Ghazzah
+				owned_by = ROOT
+			}
+			4317 = { # Buhaira
+				owned_by = ROOT
+			}
+			treasury = 300
+			manpower = 7
+		} 
+
+		effect = {
+			382 = {
+				add_base_production = 2
+			}
+			365 = {
+				add_base_production = 2
+			}
+			364 = {
+				add_base_production = 2
+			}
+			4317 = {
+				add_base_production = 2
+			}
+			add_treasury = -300
+			add_manpower = -7
+		}
+	}
+
+	Rozbudowa_placowek_handlowych = {
+		icon = mission_seize_north_sea_trade
+		position = 5
+		required_missions = { Rozbudowa_Panstwowych_Kopalnii } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			358 = {
+				num_of_times_improved = 5
+			}
+			362 = {
+				num_of_times_improved = 5
+			}
+			363 = {
+				num_of_times_improved = 5
+			}
+			361 = {
+				num_of_times_improved = 5
+			}
+			382 = {
+				num_of_times_improved = 5
+			}
+			treasury = 200
+		} 
+
+		effect = {
+			add_treasury = -200
+			379 = {
+				add_permanent_province_modifier = {
+					name = t_jerusalem_trade_modifier
+					duration = -1
+				}
+				center_of_trade = 1
+			}
+			358 = {
+				add_center_of_trade_level = 1
+			}
+			362 = {
+				add_center_of_trade_level = 1
+			}
+			361 = {
+				add_center_of_trade_level = 1
+			}
+			382 = {
+				add_center_of_trade_level = 1
+			}
+		} 
+	}
+
+	Stabilnosc_Gospodarcza = {
+		icon = establish_oktoberfest
+		position = 6
+		required_missions = { Rozbudowa_placowek_handlowych } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			379 = {
+				num_of_times_improved = 5
+				center_of_trade_level = 2
+			}
+			6002 = {
+				num_of_times_improved = 5
+			}
+			6003 = {
+				num_of_times_improved = 5
+			}
+		}
+
+		effect = {
+			add_years_of_income = 0.5
+			add_country_modifier = {
+				name = t_jerusalem_production_boost
+				duration = 7300
+			}
+		}
+	}
+
+	Przybycie_Orderow = {
+		icon = mission_united_knight_order
+		position = 7
+		required_missions = { Stabilnosc_Gospodarcza } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			382 = {
+				num_of_times_improved = 6
+			}
+			379 = {
+				num_of_times_improved = 6
+			}
+			361 = {
+				num_of_times_improved = 6
+			}
+			358 = {
+				num_of_times_improved = 6
+			}
+			4268 = {
+				num_of_times_improved = 6
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			382 = {
+				add_permanent_province_modifier = {
+					name = t_jerusalem_order_modifier
+					duration = -1
+				}
+			}
+			379 = {
+				add_permanent_province_modifier = {
+					name = t_jerusalem_order_modifier
+					duration = -1
+				}
+			}
+			361 = {
+				add_permanent_province_modifier = {
+					name = t_jerusalem_order_modifier
+					duration = -1
+				}
+			}
+			358 = {
+				add_permanent_province_modifier = {
+					name = t_jerusalem_order_modifier
+					duration = -1
+				}
+			}
+			4268 = {
+				add_permanent_province_modifier = {
+					name = t_jerusalem_order_modifier
+					duration = -1
+				}
+			}
+		} 
+	}
+
+	Monastic_Breweries = {
+		icon = mission_have_manufactories
+		position = 8
+		required_missions = { Przybycie_Orderow } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_reform = monastic_breweries_reform
+			360 = {
+				owned_by = ROOT
+			}
+			4319 = {
+				owned_by = ROOT
+			}
+			1231 = {
+				owned_by = ROOT
+			}
+			1234 = {
+				owned_by = ROOT
+			}
+			2322 = {
+				owned_by = ROOT
+			}
+			2315 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			360 = {
+				change_trade_goods = grain
+				add_base_production = 1
+			}
+			4319 = {
+				change_trade_goods = grain
+				add_base_production = 1
+			}
+			1231 = {
+				change_trade_goods = grain
+				add_base_production = 1
+			}
+			1234 = {
+				change_trade_goods = grain
+				add_base_production = 1
+			}
+			2322 = {
+				change_trade_goods = grain
+				add_base_production = 1
+			}
+			2315 = {
+				change_trade_goods = grain
+				add_base_production = 1
+			}
+		} 
+	}
+
+	More_Grain = {
+		icon = prosperity_for_all
+		position = 9
+		required_missions = { Monastic_Breweries } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				trade_goods_produced_amount = {
+					trade_goods = grain
+					amount = 25
+				}
+				production_leader = {
+					trade_goods = grain
+				}
+			}
+		} 
+
+		effect = {
+			change_price = {
+				trade_goods = grain
+				key = JERUSALEMITE_GRAIN_PRICE
+				value = 0.15
+				duration = -1
+			}
+			add_years_of_income = 0.5
+		}
+	}
+
+	Massive_Food_Production = {
+		icon = mission_iroquois_food_surplus
+		position = 10
+		required_missions = { More_Grain } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				AND = {
+					num_of_owned_provinces_with = {
+						has_manufactory_trigger = yes 
+						value = 30
+					}
+					monthly_income = 100
+				}
+				AND = { 
+					in_golden_age = yes 
+					monthly_income = 100
+				}
+			}
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = t_jerusalem_mass_production
+				duration = -1
+			}
+		} 
+	}
+}
+Przemysl_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Budowa_Wielkiego_Muru = {
+		icon = mission_great_wall
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			381 = {
+				owned_by = ROOT
+			}
+			4270 = {
+				owned_by = ROOT
+			}
+			treasury = 250
+		} 
+
+		effect = {
+			381 = {
+				add_great_project_tier = {
+					type = t_great_wall_of_jerusalem
+					tier = 1 
+				}
+			}
+			add_treasury = -500
+		}
+	}
+
+	Secure_Coffie_Arabica = { # Coffee
+		icon = mission_advance_to_the_arabian_sea
+		position = 1
+		provinces_to_highlight = {  } 
+		required_missions = { Rozbudowa_Jerozolimy } 
+		trigger = {
+			387 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			yemen_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			hadramut_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			mahra_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			upper_yemen_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		} 
+	}
+
+	Secure_Gulf_Trade = {
+		icon = mission_trade_company_region_abroad
+		position = 1
+		provinces_to_highlight = {  } 
+		required_missions = { Secure_Coffie_Arabica } 
+		
+		trigger = {
+			1331 = { has_most_province_trade_power = ROOT }
+			388 = {
+				owned_by = ROOT
+			}
+			4279 = {
+				owned_by = ROOT
+			}
+			4283 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			1331 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 7300
+					power = 20
+					key = T_YEMEN_PRESENCE
+				}
+			}
+			388 = {
+				add_center_of_trade_level = 1
+			}
+			4279 = {
+				add_center_of_trade_level = 1
+			}
+			4283 = {
+				add_center_of_trade_level = 1
+			}
+		}
+	}
+
+	Secure_Ethiopia = {
+		icon = mission_envoy_to_ethiopia
+		position = 1
+		provinces_to_highlight = {  } 
+		required_missions = { Secure_Gulf_Trade } 
+		trigger = {
+			aussa_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			horn_of_africa_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		} 
+	}
+}
+Przemysl_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Rozbudowa_Swiatyni = {
+		icon = mission_sindh_campaign
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			379 = {
+				num_of_times_improved = 5
+				num_of_buildings_in_province = 1
+				num_of_times_expanded_infrastructure = 1
+			}
+		} 
+
+		effect = {
+			379 = {
+				add_great_project_tier = {
+					type = t_jerusalem_church 
+					tier = 1 
+				} 
+			}
+			add_prestige = 20
+		} 
+	}
+
+	C312 = {
+		icon = mission_livonian_knights
+		position = 2
+		required_missions = { Rozbudowa_Jerozolimy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			1231 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			tabuk_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			medina_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			trans_jordan_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			egypt_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		} 
+	}
+
+	Kill_Arabian_Heatens = {
+		icon = mission_united_knight_order
+		position = 3
+		required_missions = { C312 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			tabuk_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			medina_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			mecca_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			tihama_al_yemen_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		} 
+	}
+
+	Conquest_of_mecca_and_medyna = {
+		icon = mission_into_arabia
+		position = 4
+		required_missions = { Kill_Arabian_Heatens } 
+		provinces_to_highlight = { } 
+
+		trigger = {
+			mecca_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			385 = {
+				add_permanent_province_modifier = {
+					name = t_crusaders_control_mecca
+					duration = -1
+				}
+			}
+		} 
+	}
+}
+Kolonizacja = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Leonardo_Pepssi = {
+		icon = mission_lead_the_hakkapeliitta
+		position = 1
+		required_missions = {  } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_idea_group = exploration_ideas
+		} 
+
+		effect = {
+			define_explorer = {
+				name = "Leonardo Pepssi"
+				shock = 4
+				fire = 4
+				manuever = 5
+				siege = 2
+			}
+		}
+	}
+
+	Poszukiwanie_Nowego_Kontynentu = {
+		icon = mission_explore_the_world
+		position = 1
+		required_missions = { Leonardo_Pepssi } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				north_america = { has_discovered = ROOT }
+				south_america = { has_discovered = ROOT }
+				new_world = { has_discovered = ROOT }
+			}
+		} 
+
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = t_jerusalem_colonial
+				duration = 14600
+			}
+		} 
+	}
+
+	Zalozenie_Kolonii = {
+		icon = mission_ruler_of_north_america
+		position = 1
+		required_missions = { Poszukiwanie_Nowego_Kontynentu } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			778 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			2851 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			2848 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			778 = {
+				add_permanent_province_modifier = {
+					name = t_rybnik
+					duration = -1
+				}
+				change_province_name = "Rybnik"
+			}
+		} 
+	}
+
+	Poszukiwanie_Fontanny_Mlodosci = {
+		icon = the_fountain_of_youth
+		position = 1
+		required_missions = { Zalozenie_Kolonii } 
+		provinces_to_highlight = {
+			has_province_modifier = sce_life_water
+		}
+
+		trigger = {
+			OR = {
+				NOT = {
+					south_america = {
+						type = all
+						has_discovered = ROOT
+					}
+				}
+				AND = {
+					south_america = {
+						type = all
+						has_discovered = ROOT
+					}
+					any_province = {
+						has_province_modifier = sce_life_water
+					}
+				}
+			}
+			OR = {
+				any_province = {
+					has_province_modifier = sce_life_water
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				amazon_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = "guardians_of_the_fountain"
+				duration = -1
+			}
+		}
+	}
+}
+Swiete_Artefakty_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Swiety_Graal = {
+		icon = bohemian_crystal
+		position = 16
+		required_missions = { Swiete_Artefakty } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Jablko_Edenu_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Swiete_Artefakty = {
+		icon = spread_piety
+		position = 15
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	Jablko_Edenu = {
+		icon = mission_din_i_llahi
+		position = 16
+		required_missions = { Swiete_Artefakty } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	Poszukiwania_Jarrate = {
+		icon = mission_explore_the_world
+		position = 17
+		required_missions = {
+			Arka_Przymierza
+			Swiety_Graal
+			Jablko_Edenu
+			Ark_Noego
+			Wlocznia_Przeznaczenia
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	Wybraniec_Ludu = {
+		icon = kingdom_of_heaven
+		position = 18
+		required_missions = { Poszukiwania_Jarrate } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	Boski_Rytulal = {
+		icon = mission_hands_praying
+		position = 19
+		required_missions = { Wybraniec_Ludu } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	Boskie_Przeznaczenie = {
+		icon = show_piety
+		position = 20
+		required_missions = { Boski_Rytulal } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Arka_Przymierza_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Arka_Przymierza = {
+		icon = ark_of_the_covenant
+		position = 16
+		required_missions = { Swiete_Artefakty } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Ark_Noego_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Ark_Noego = {
+		icon = mission_grand_bengali_shipyards
+		position = 16
+		required_missions = { Swiete_Artefakty } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Wlocznia_Przeznaczenia_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Wlocznia_Przeznaczenia = {
+		icon = mission_teutonic_lancer
+		position = 16
+		required_missions = { Swiete_Artefakty } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+AntyChryst = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KOJ } 
+
+	Przywolanie_Antychrysta = {
+		icon = mission_rb_control_state_religion
+		position = 30
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+new_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = AAA } 
+
+}

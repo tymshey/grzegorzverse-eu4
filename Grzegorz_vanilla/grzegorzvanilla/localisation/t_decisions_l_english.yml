@@ -1,0 +1,69 @@
+﻿l_english:
+
+# Decisions
+
+t_develop_capital_title:0 "§YDevelop the Capital§!"
+t_develop_capital_desc:0 ""
+
+# Rome: has special loc file for standardization
+
+# Latin Republic
+
+t_form_latin_empire_title:0 "@LAE Form Latin Empire"
+t_form_latin_empire_desc:0 ""
+
+# Persia
+
+t_per_build_house_of_wisdom_title:0 "£major_harbour£ Build the House of Wisdom"
+t_per_build_house_of_wisdom_desc:0 ""
+t_per_build_forum_of_grzegorz_title:0 "£major_harbour£ Build the Memorial of Grzegorz"
+t_per_build_forum_of_grzegorz_desc:0 ""
+t_per_build_capital_irrigation_title:0 "£major_harbour£ Construct the Capital Irrigation System"
+t_per_build_capital_irrigation_desc:0 ""
+t_per_build_canals_title:0 "£major_harbour£ Construct the Euphrates-Tigris Canal"
+t_per_build_canals_desc:0 ""
+t_per_army_reform_decision_title:0 "Persian Army Reform"
+t_per_army_reform_decision_desc:0 ""
+t_per_retake_capital_decision_title:0 "Restore Gównograd"
+t_per_retake_capital_decision_desc:0 ""
+t_per_revoke_pax_gregorica_decision_title:0 "Address Pax Gregorica"
+t_per_revoke_pax_gregorica_decision_desc:0 ""
+t_per_build_fire_temple_of_constantinople_title:0 "£major_harbour£ A Temple in the Eternal City"
+t_per_build_fire_temple_of_constantinople_desc:0 ""
+
+# Other
+
+t_krakow_the_city_of_greatness_title:0 "The City of Greatness"
+t_krakow_the_city_of_greatness_desc:0 ""
+t_krakow_take_whats_ours:0 "Take Whats Ours"
+t_krakow_take_whats_ours_desc:0 ""
+
+t_z01_form_north_german_confederation_title:0 "Form North German Confederation"
+t_z01_form_north_german_confederation_desc:0 ""
+t_z01_build_amsterdam_port_title:0 "£major_harbour£ Construct The Port of Amsterdam"
+t_z01_build_amsterdam_port_desc:0 ""
+t_z01_build_berg_emporium_title:0 "£major_harbour£ Build Berg Emporium"
+t_z01_build_berg_emporium_desc:0 ""
+
+t_england_culture_decision_title:0 "Embrace The English Cultural Identity"
+t_england_culture_decision_desc:0 ""
+
+t_form_hyperborea_title:0 "Call of The Elden Gods"
+t_form_hyperborea_desc:0 "Form Hyperborea."
+
+t_rus_orthodox_decision_title:0 "Convert to Orthodox Christianity"
+t_rus_orthodox_decision_desc:0 ""
+
+gv_convert_to_russian_orthodox_title:0 "Convert to Russian Orthodoxy"
+gv_convert_to_russian_orthodox_desc:0 ""
+
+t_GOL_jewish_decision_title:0 "Convert to Jewish"
+t_GOL_jewish_decision_desc:0 ""
+
+t_invoke_devotio_title:0 "§TInvoke Devotio§!"
+t_invoke_devotio_desc:0 ""
+t_change_diety_title:0 "Change Primary Diety"
+t_change_diety_desc:0 ""
+
+t_reload_mission_tree_decision_title:0 "Reload Mission Tree"
+t_reload_mission_tree_decision_desc:0 "Debug decision in case the mission tree breaks mid-game."

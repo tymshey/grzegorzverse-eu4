@@ -1,0 +1,19 @@
+country_decisions = {
+
+	t_jap_choose_stance_towards_china = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = t_jap_chose_stance_towards_china }
+			tag = JAP
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+		}
+		effect = {
+			country_event = { id = t_japan_events.2 }
+			set_country_flag = t_jap_chose_stance_towards_china
+		}
+		ai_importance = 0
+	}
+}

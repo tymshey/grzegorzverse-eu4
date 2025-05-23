@@ -1,0 +1,70 @@
+estate_persian_sects = {
+	icon = 8
+	
+	trigger = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		max_absolutism_effect = 0.1
+		global_unrest = -2
+	}
+	country_modifier_neutral = {
+		global_unrest = -1
+	}	
+	country_modifier_angry = {
+		monarch_lifespan = -0.2
+		global_unrest = 5
+	}
+	
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {	
+		desc = EST_HIGH_DEVELOPMENT_PROVINCE
+		trigger = {
+			any_owned_province = {
+				development = 30
+			}
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	privileges = {
+		estate_burghers_land_rights
+		estate_persian_sects_pax_gregorica
+		estate_persian_sects_fire_compromise
+		estate_persian_sects_immortals
+		estate_persian_sects_kurd_exploitation
+		estate_persian_sects_tolerance
+		estate_persian_sects_fire_temple_endowments
+		estate_persian_sects_doctrine_of_imperial_light
+	}
+	
+	agendas = {
+		estate_burghers_develop_x
+		estate_burghers_build_trade_building_in_y
+		estate_burghers_build_port_building_in_y
+		estate_burghers_build_production_building_in_y
+		estate_burghers_build_university_in_y
+		estate_burghers_build_manufactory_in_y
+		estate_burghers_pay_off_loans
+	}
+	
+	influence_from_dev_modifier = 1.0
+}

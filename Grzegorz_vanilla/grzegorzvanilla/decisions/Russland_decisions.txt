@@ -1,0 +1,637 @@
+country_decisions = {
+
+	search_for_rare_minerals = {
+		potential = {
+			tag = KIE
+			NOT = { has_country_flag = Gold_mine}
+		}
+		allow = {
+			government_rank = 3 
+			is_at_war = no
+		}
+		
+		effect = {
+			add_treasury = -150
+			add_country_modifier = {
+				name = Gold_mine
+				duration = -1
+			}
+			1942 = {
+				change_trade_goods  =  gold
+			}
+			set_country_flag = Gold_mine
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    Army_reform = {
+	 potential = {
+	 tag = KIE
+	 NOT = { has_country_flag = Army_reform}
+	}
+	allow = {
+		is_at_war = no
+		army_size_percentage = 1
+		army_size = 20
+	}
+	effect = {
+		add_country_modifier = {
+		name = Army_reform
+		duration = -1
+			}
+			set_country_flag = Army_reform
+		}
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	Army_reform_2 = {
+	 potential = {
+	 tag = KIE
+	 NOT = { has_country_flag = Army_reform_2}
+	 has_country_flag = Army_reform
+	}
+	allow = {
+		is_at_war = no
+		army_size_percentage = 1
+		army_size = 30
+		is_year = 1464
+	}
+	effect = {
+		add_country_modifier = {
+		name = Army_reform_2
+		duration = -1
+			}
+			set_country_flag = Army_reform_2
+		}
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	Disciplnie_the_army_1 = {
+	 potential = {
+	 tag = KIE
+	 NOT = { has_country_flag = Disciplnie_the_army_1}
+	 has_country_flag = Army_reform_2
+	}
+	allow = {
+		is_at_war = no
+		army_size_percentage = 1
+		army_size = 60
+		is_year = 1600
+	}
+	effect = {
+		add_country_modifier = {
+		name = Army_discipline
+		duration = -1
+			}
+			set_country_flag = Disciplnie_the_army_1
+		}
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	Disciplnie_the_army_2 = {
+	 potential = {
+	 tag = KIE
+	 NOT = { has_country_flag = Disciplnie_the_army_2}
+	 has_country_flag = Disciplnie_the_army_1
+	}
+	allow = {
+		is_at_war = no
+		army_size_percentage = 1
+		army_size = 80
+		is_year = 1620
+	}
+	effect = {
+		add_country_modifier = {
+		name = Army_discipline_2
+		duration = -1
+			}
+			set_country_flag = Disciplnie_the_army_2
+		}
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	
+	Seek_investments_from_the_church = {
+	 potential = {
+	 tag = KIE
+	}
+	allow = {
+		estate_loyalty = {
+			estate = estate_church
+		loyalty = 50
+		}
+		estate_influence = {
+			estate = estate_church
+			influence = 50
+		}
+		is_at_war = no
+		had_country_flag = { flag = Seek_investments_from_the_church days = 4000 }
+		}
+	effect = {
+			add_estate_influence_modifier = {
+				estate = estate_church
+				influence = 5
+				duration = -1
+			}
+			random_owned_province = {
+				add_base_tax = 2
+				add_base_production = 2
+		
+			}
+			set_country_flag = Seek_investments_from_the_church
+		}
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	Integrate_Gepidia = {
+	 potential = {
+	 tag = KIE
+	 has_country_flag = Union_Gepidia
+	 NOT = { has_country_flag = Integrate_Gepidia}
+	 Z1F = {
+		exists = yes
+		}
+	}
+	allow = {
+	had_country_flag = { flag = Union_Gepidia days = 3000 }
+		Z1F = {
+		exists = yes
+		}
+		senior_union_with = Z1F
+		is_at_war = no
+		}
+	effect = {
+	inherit = Z1F
+	set_country_flag = Integrate_Gepidia
+	} 
+		ai_weight = {
+			factor = 1
+		}
+    }
+
+	Holy_moldavien_state = {
+	 potential = {
+	 has_country_flag = Proclaim_the_holy_ruthenien_empire
+	 tag = KIE
+	 NOT = { has_country_flag = holy_moldavien_state}
+	}
+	allow = {
+		MOL = {
+		exists = yes
+		}
+		MOL = {
+		vassal_of = ROOT 
+		}
+		is_at_war = no
+		}
+		effect = {
+		MOL = {
+		override_country_name = T_MOLDAVIEN
+		change_country_color = { 
+		color = { 39 40 41 }
+		}
+		}
+		set_country_flag = holy_moldavien_state
+		} 
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	Femboy_empire = {
+	 potential = {
+	 has_country_flag = Proclaim_the_holy_ruthenien_empire
+	 tag = KIE
+	}
+	allow = {
+	}
+		effect = {
+		change_country_color = { 
+		color = ( 255 105 180 )
+		}
+		override_country_name = T_FEMBOY
+		}
+    }
+	
+	Change_back_to_ruthenien = {
+	 potential = {
+	 has_country_flag = Proclaim_the_holy_ruthenien_empire
+	 tag = KIE
+	}
+	allow = {
+	}
+		effect = {
+		change_country_color = { 
+		color = { 39 40 41 }
+		}
+		override_country_name = T_RUTHENIEN
+		} 
+    }
+	
+	invite_german_setlers = {
+	 potential = {
+	 has_country_flag = allow_german_setlers
+	 tag = KIE
+	}
+	allow = {
+	had_country_flag = { flag = allow_german_setlers days = 3000 }
+	}
+		effect = {
+		random_owned_province = {
+			limit = { NOT = { culture = ROOT } }
+			change_culture = ROOT
+			add_base_manpower = 1
+			spawn_rebels = {
+			type = noble_rebels
+			size = 0.1
+			}
+			}
+		random_owned_province = {
+			limit = { NOT = { culture = ROOT } }
+			change_culture = ROOT
+			add_base_manpower = 1
+			spawn_rebels = {
+			type = noble_rebels
+			size = 0.1
+			}
+			}
+		set_country_flag = allow_german_setlers	
+        }
+    }
+	
+	Grant_concesion_to_the_clergy = {
+	 potential = {
+	 crown_land_share = 5
+	 tag = KIE
+	}
+	allow = {
+	had_country_flag = { flag = Grant_concesion_to_the_clergy days = 5000 }	
+	}
+	effect = {
+	add_treasury = 50
+	add_estate_loyalty = {
+    estate = estate_church
+    loyalty = 10
+	}
+	change_estate_land_share = {
+    estate = estate_church
+    share = 3
+	}
+	set_country_flag = Grant_concesion_to_the_clergy
+	} 
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	
+	destabilize_crimea = {
+        potential = {
+			has_country_flag = Fund_crimean_rebels
+			NOT = {
+			owns = 2410
+			owns = 285
+			owns = 284
+			}
+            tag = KIE
+        }
+        allow = {
+			had_country_flag = { flag = Fund_crimean_rebels days = 500 }
+            treasury = 200
+        }
+        effect = {
+			add_treasury = -200
+            random_list = {
+                60 = {
+					2410 = {
+						add_unrest = 3
+						spawn_rebels = {
+						type = noble_rebels
+						size = 20
+						}
+					}
+					285 = {
+						add_unrest = 3
+						spawn_rebels = {
+						type = noble_rebels
+						size = 20
+						}
+					}
+					284 = {
+						add_unrest = 3
+						spawn_rebels = {
+						type = noble_rebels
+						size = 20
+						}
+					}    
+                }
+                40 = {
+					2410 = {
+						add_local_autonomy = 25
+						add_province_modifier = {
+						name = crimean_embargo
+						duration = 500
+						}
+						add_local_autonomy = 15
+					}
+					285 = {
+					add_province_modifier = {
+						name = crimean_embargo
+						duration = 500
+						}
+					add_local_autonomy = 15
+					}
+					284 = {
+					add_province_modifier = {
+						name = crimean_embargo
+						duration = 500
+						}
+					add_local_autonomy = 15
+					}
+                }
+            }
+			set_country_flag = Fund_crimean_rebels
+        }
+    }
+	vodka_good = {
+		potential = {
+			has_country_flag = Vodka_production 
+			tag = KIE
+		}
+		allow = {
+			had_country_flag = { flag = Vodka_production days = 1825 } 
+				treasury = 100
+				grain = 1
+		}
+		effect = {
+				treasury = -100
+			random_owned_province = {
+				limit = { trade_goods = grain }
+				change_trade_goods = vodka
+			}
+			set_country_flag = Vodka_production
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TYMON_STOPA_GEJ = {
+		potential = {
+			core = 282
+			1756 = {controlled_by = BYZ}
+			NOT = {
+			owns = 1756
+			}
+			tag = KIE
+		}
+		allow = {
+				treasury = 100
+		}
+		effect = {
+			BYZ = { country_event = { id = flavor_russland.2 } }
+			add_treasury = -100
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	Karakanow_moment = {
+		potential = {
+			mission_completed =	Finish_of_the_caucasus
+			owns =	466
+			owns =	464 
+			owns =	2201
+			owns =	2417
+			owns =	468 
+			owns =	2416
+			owns =	2197 
+			owns =	2208
+			owns =	2198 
+			owns =	2199
+			4306 = {controlled_by = PER}
+			425 = {controlled_by = PER}
+			4299 = {controlled_by = PER}
+			NOT = {
+			owns = 4306
+			owns = 425
+			}
+			tag = KIE
+		}
+		allow = {
+			PER = {
+				has_opinion = {
+				who = KIE
+				value = 150
+				}
+			}
+		}
+		effect = {
+			PER = { country_event = { id = flavor_russland.4 } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Smolenk_state = {
+		potential = {
+			owns = 4116
+			owns = 297
+			owns = 296
+			owns = 4251
+			owns = 4245
+			owns = 293
+			owns = 4246
+			owns = 292
+			owns = 4243
+			tag = KIE
+		}
+		allow = {
+			SMO = { exists = no}
+		}
+		effect = {
+			294 = {
+			add_permanent_claim = SMO
+			}
+			4249 = {
+			add_permanent_claim = SMO
+			}
+			1752 = {
+			add_permanent_claim = SMO
+			}
+			297 = {
+			add_core = SMO
+			}
+			4116 = {
+			add_core = SMO
+			}
+			create_vassal = SMO
+			SMO = {
+			change_religion = converted_dynamic_faith_107
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Caucasian_state = {
+		potential = {
+			mission_completed = Finish_of_the_caucasus
+			owns = 466
+			owns = 464
+			owns = 2417
+			owns = 468
+			owns = 2416
+			owns = 2197
+			owns = 2201
+			owns = 2208
+			owns = 2199
+			owns = 2198
+			owns = 4306
+			owns = 425
+			tag = KIE
+		}
+		allow = {
+			CIR = { exists = no}
+		}
+		effect = {
+		2416 = {
+		add_core = CIR
+		}
+		468 = {
+		add_core = CIR
+		}
+		466 = {
+		add_core = CIR
+		}
+		2417 = {
+		add_core = CIR
+		}
+		464 = {
+		add_core = CIR
+		}
+		2208 = {
+		add_core = CIR
+		}
+		2199 = {
+		add_core = CIR
+		}
+		2198 = {
+		add_core = CIR
+		}
+		4306 = {
+		add_core = CIR
+		}
+		425 = {
+		add_core = CIR
+		}
+			463 = {
+			remove_core = CIR
+			}
+			2195 = {
+			remove_core = CIR
+			}
+			create_vassal = CIR
+			CIR = {
+			change_religion = converted_dynamic_faith_107
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Moldavian_state = {
+		potential = {
+		mission_completed = Subjugate_Moldavia
+		owns = 4529
+		owns = 2405
+		owns = 4530
+		owns = 268
+		tag = KIE
+		}
+		allow = {
+		MOL = {	exists = no}
+		}
+		effect = {
+			268 = {
+			add_core = MOL
+			}
+			create_vassal = MOL
+			MOL = {
+			change_religion = converted_dynamic_faith_107
+			}
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

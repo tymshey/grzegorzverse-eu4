@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = greek
+capital = 4313
+fixed_capital = 4313
+add_accepted_culture = greek
+historical_friend = BYZ
+
+1429.10.29= {
+	monarch = {
+		name = "Ioannes II"
+		dynasty = "Paulus"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

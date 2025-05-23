@@ -1,0 +1,392 @@
+﻿l_english:
+
+# Tags
+
+WRE:0 "Western Roman Empire"
+WRE_ADJ:0 "Western Roman"
+WRE_ADJ2:0 "Western Roman"
+AUE:0 "Austrian Empire"
+AUE_ADJ:0 "Austrian"
+AUE_ADJ2:0 "Austrian"
+DAC:0 "Danubian Confederation"
+DAC_ADJ:0 "Danubian"
+DAC_ADJ2:0 "Danubian"
+HIS:0 "Hispania"
+HIS_ADJ:0 "Hispanic"
+HIS_ADJ2:0 "Hispanic"
+HYP:0 "Hyperborea"
+HYP_ADJ:0 "Hyperborean"
+HYP_ADJ2:0 "Hyperborean"
+HEL:0 "Hel"
+HEL_ADJ:0 "Hel"
+HEL_ADJ2:0 "Hel"
+WAG:0 "Azov"
+WAG_ADJ:0 "Azov"
+WAG_ADJ2:0 "Azov"
+LAT:0 "Latin Empire"
+LAT_ADJ:0 "Latin"
+LAT_ADJ2:0 "Latin"
+CAP:0 "Cappadocia"
+CAP_ADJ:0 "Cappadocian"
+CAP_ADJ2:0 "Cappadocian"
+GBE:0 "The Empire"
+GBE_ADJ:0 "Imperial"
+GBE_ADJ2:0 "Imperial"
+NGC:0 "North German Confederation"
+NGC_ADJ:0 "German"
+NGC_ADJ2:0 "German"
+PTR:0 "Ecumenical Patriarchate"
+PTR_ADJ:0 "Patriarchal"
+PTR_ADJ2:0 "Patriarchal"
+ECC:0 "Ecclesiastical State"
+ECC_ADJ:0 "Ecclesiastical"
+ECC_ADJ2:0 "Ecclesiastical"
+
+# Ideas
+
+WRE_ideas_start:0 "Western Roman Traditions"
+WRE_ideas:0 "Western Roman Ideas"
+WRE_ideas_bouns:0 "Western Roman Ambition"
+t_wre_the_true_heir:0 "The True Heir"
+t_wre_roman_cities:0 "Roman Cities"
+t_wre_diocletian_reforms:0 "Reforms of Diocletian"
+t_wre_spqr:0 "S.P.Q.R."
+t_wre_roman_merchant_class:0 "Roman Merchant Class"
+t_wre_legacy_of_the_legions:0 "Legacy of the Roman Legions"
+t_wre_edict_of_milan:0 "Edict of Milan"
+
+AUE_ideas:0 "Austrian Imperial Ideas"
+
+Z1C_ideas:0 "Judeoborean Ideas"
+Z1C_ideas_start:0 "Judeoborean Traditions"
+Z1C_ideas_bonus:0 "Judeoborean Ambition"
+t_judeoaryanism_idea:0 "Judeoaryanism"
+t_judeoaryanism_idea_desc:0 ""
+t_hyperborean_promised_land_idea:0 "Hyperborea - The Promised Land"
+t_hyperborean_promised_land_idea_desc:0 ""
+t_judean_banking_idea:0 "Judean Banking"
+t_judean_banking_idea_desc:0 ""
+t_judean_spartanism_idea:0 "Judean Spartanism"
+t_judean_spartanism_idea_desc:0 ""
+t_defend_judean_land_idea:0 "Defend The Judean Land"
+t_defend_judean_land_idea_desc:0 ""
+t_judean_ingenuity_idea:0 "Israelite Ingenuity"
+t_judean_ingenuity_idea_desc:0 ""
+t_mitzvah_idea:0 "The Mitzvah"
+t_mitzvah_idea_desc:0 ""
+
+HIS_ideas:0 "Hispanic Ideas"
+HIS_ideas_start:0 "Hispanic Traditions"
+HIS_ideas_bonus:0 "Hispanic Ambition"
+HIS_armada_idea:0 "Roman Armada"
+HIS_armada_idea_desc:0 ""
+
+NGC_ideas:0 "North German Ideas"
+NGC_ideas_start:0 "North German Traditions"
+NGC_ideas_bonus:0 "North German Ambition"
+t_fruhlings_und_herbstmesse:0 "Fruhlings und Herbstmesse"
+t_fruhlings_und_herbstmesse_desc:0 ""
+t_zunft:0 "Zunft"
+t_zunft_desc:0 ""
+t_residenzstadt:0 "Residenzstadt"
+t_residenzstadt_desc:0 ""
+t_ordnung_muss_sein:0 "Ordnung Muss Sein"
+t_ordnung_muss_sein_desc:0 ""
+t_maintain_religious_stability:0 "Maintain Religious Stability"
+t_maintain_religious_stability_desc:0 ""
+t_german_diplomacy:0 "Masterful Diplomacy"
+t_german_diplomacy_desc:0 ""
+t_german_universities:0 "World-class Universities"
+t_german_universities_desc:0 ""
+
+# Religions
+
+russian_orthodox:0 "Russian Orthodox"
+russian_orthodox_religion_desc:0 "Russian Orthodox Church is in it's essence similar to the Roman Ecumenical Church, but, due to lengthy cultural separation and sheer distance the Russian church is fully autocephalous, and thus acts independently from the Roman church."
+
+# Cultures
+
+west_germanic:0 "Western Germanic"
+east_germanic:0 "Eastern Germanic"
+
+greek:0 "Rhomaioi"
+bulgarian:0 "Boulgaroi"
+judeoaryan:0 "Judeoaryan"
+espanoi:0 "Hispanoi"
+carthagoi:0 "Carthagoi"
+
+# Reforms
+
+t_grzegorz_reform:0 "Grzegorzian Monarchy"
+t_grzegorz_reform_desc:0 ""
+t_polish_dualism_reform:0 "Parliamentary Dualism"
+t_polish_dualism_reform_desc:0 ""
+t_modern_british_reform:0 "Modern Administration"
+t_modern_british_reform_desc:0 ""
+t_zionist_empire_reform:0 "Zionist Empire"
+t_zionist_empire_reform_desc:0 ""
+t_hyperborea_reform:0 "Hyperborean Administration"
+t_hyperborea_reform_desc:0 ""
+
+t_theodland_austria_rivalry_reform:0 "The Imperial Feud"
+t_theodland_austria_rivalry_reform_desc:0 "§gTheodland§! and §RAu§!§Wstr§!§Ria§! are locked in a rivalry for who becomes emperor of the §YHoly Roman Empire§!."
+
+# Tooltips
+
+t_persia_new_new_city_emperor_tt:0 "Completing this mission while being the §YEmperor of China§!, will give us the following rewards:"
+t_persia_new_new_city_no_emperor_tt:0 "Alternatively, we will gain:"
+t_latin_chooses_orthodox_tt:0 "§TWe will choose the path of the defender of Orthodox Christianity.§!"
+t_latin_chooses_paganism_tt:0 "§TWe will choose the path of Hellenic restoration and of our ancestors.§!"
+t_latin_byz_or_west_tt:0 "We can choose to either follow our current path as the defender of Orthodox Christianity, or embrace the Renaissance fully, and return to the polytheistic beliefs of our ancestors."
+t_hava_nagila_tooltip:0 "§THava Neranenah Venismeha!§!"
+mechanic_t_roman_empire_reform_tt_yes:0 "Spawns Pretender Rebels on Succession"
+mechanic_t_zionist_empire_reform_tt_yes:0 "Allows Hyperborean Settlement"
+t_gbr_develop_isles_tt:0 "§YBritish Rule§! is upgraded by another §G-5%§! Local Development Cost"
+t_gbr_refine_redcoats_tt:0 "§YThe Redcoats§! is upgraded by §G5%§! Discipline"
+unlock_t_modern_british_reform_tt:0 "Unlock the '§YModern Administration§!' government reform."
+unlock_t_zionist_empire_reform_tt:0 "Unlock the '§YZionist Empire§!' government reform."
+t_gateway_to_agartha_upgraded:0 "§VThe boundary between our world and Agartha becomes ever weaker. The Gateway opens further.§!"
+t_gateway_to_agartha_upgraded_full:0 "§VBoundaries of reality are blurring. The Gateway will soon slip out of control.§!"
+wildhunt_rebels_title:0 "§OThe Wild Hunt§!"
+wildhunt_rebels_name:0 "§OThe Wild Hunt§!"
+wildhunt_rebels_army:0 "Dearg Ruadhri"
+t_wildhunt_rebels_demand:0 "§OAbsolute Destruction§!"
+t_wildhunt_rebels_demand_desc:0 "§OThe Wild Hunt pursues only destruction, nothing more.§! §ROr does it?§!"
+t_wildhunt_demands_enforced_tt:0 "§VWe have no idea what§! §OThe Wild Hunt§! §Vis after, nor what will their victory bring.§!"
+
+t_fra_found_haiti_tt:0 "'§YFrench Colonial Empire§!' is upgraded by:\nSettler Chance: §G+5.0%§!\nGlobal Settler Increase: §G+15.00§!"
+t_fra_colonial_approach_tt:0 "'§YFrench Colonial Empire§!' is upgraded by:\nTrade Efficiency: §G+5.0%§!\nGlobal Tariffs: §G+15.0%§!\nTrade Company Investment Cost: §G-20.0%§!"
+
+t_lechia_northern_yoke_tt:0 "'§YLechite Horsemen§!' is upgraded by:\nCavalry Combat Ability: §G+5.0%§!\nCavalry to Infantry Ratio: §G+10.0%§!"
+t_lechia_raiders_of_the_storm_tt:0 "'§YLechite Horsemen§!' is upgraded by:\nCavalry Combat Ability: §G+5.0%§!\nCavalry to Infantry Ratio: §G+20.0%§!\nMay Recruit Winged Hussars: Yes\nPossible Winged Hussars: §G+10§!"
+t_lechia_horsemen_of_the_apocalypse_tt:0 "'§YLechite Horsemen§!' is upgraded by:\nCavalry Combat Ability: §G+5.0%§!\nPossible Winged Hussars: §G+10§!"
+
+t_shift_rivalry_by_20_theodland_tt:0 "The Imperial Feud shifts by §G20§! towards §gTheodland§!"
+t_shift_rivalry_by_20_austria_tt:0 "The Imperial Feud shifts by §G20§! towards §RAu§!§Wstr§!§Ria§!"
+
+t_germany_our_place_in_the_sun_tt:0 "§TCompleting this mission while having completed§! §YOur Place in The Sun§! §Tmission earlier as§! §YTheodland§! §Twill grant us the following instead:§!"
+
+t_empty_tt:0 ""
+
+# Great projects
+
+t_palatine_hill:0 "The Palatine Hill"
+t_vatican_hill:0 "The Vatican Hill"
+t_aurelian_walls:0 "Aurelian Walls"
+t_topkapi:0 "Topkapi Palace"
+t_theodosian_walls:0 "Theodosian Walls"
+t_hippodrome:0 "The Hippodrome"
+t_galata:0 "Galata Tower"
+t_sol_invictus:0 "Aedes Deus Sol Invictus"
+great_palace:0 "The Great Palace"
+western_wall:0 "Western Wall"
+t_dome_of_the_rock:0 "Dome of the Rock"
+t_great_wall_of_jerusalem:0 "Great Wall of Jerusalem"
+t_jerusalem_church:0 "Church of the Holy Sepulchre"
+t_gardens_of_grzegorz:0 "Gardens of Grzegorz"
+t_tower_of_cockobollo:0 "Tower of Cockobollo"
+t_tephrice_fortress:0 "Tephrice Fortress"
+t_golden_horn_palace:0 "Golden Horn Palace"
+t_paderborn:0 "Paderborn Mound"
+t_gate_to_agartha:0 "Gateway to Agartha"
+t_louvre:0 "The Louvre"
+t_berlin_palace:0 "Berliner Schloss"
+t_mountain_palace:0 "Imperial Mountain Palace"
+gv_mosque_of_cordoba:0 "Mosque of Cordoba"
+
+# Modifiers
+
+ t_rome_eternal_city_restored:0 "Eternal City Restored"
+ t_lan_development_boost:0 "Florentine City Planning"
+ t_rome_spanish_steps:0 "The Spanish Steps"
+ t_rome_trevi:0 "Fontanna di Trevi"
+ t_rome_capitoline_hill:0 "The Campidoglio"
+ t_lan_city_of_god:0 "The City of God"
+
+# Terrain
+
+constantinople_terrain:0 "Constantinople"
+constantinople_terrain_desc:0 "Constantinople is the largest and richest urban center in the Eastern Mediterranean Sea."
+
+# Countries
+
+T_OTTOMAN_EMPIRE:0 "Ottoman Empire"
+T_OTTOMAN_EMPIRE_ADJ:0 "Ottoman"
+
+# Keys
+
+GV_THE_GREAT_GAME_NAME:0 "The Great Game"
+GV_THE_GREAT_GAME_DESC:0 "As the empires of old modernize, the world enters the deciding phase of history. Soon it will be decided who shall stand victorious."
+
+T_YEMEN_PRESENCE:0 "Trade Domination in Yemen"
+JERUSALEMITE_GRAIN_PRICE:0 "Monastic Grain Farming"
+AYALU:0 "Eruption of Ayalu"
+
+# persian missions lmao
+
+persia_missions_5_task_1_title:0 "Conquer Afghanistan"
+persia_missions_5_task_1_desc:0 ""
+persia_missions_5_task_2_title:0 "The Gates of India"
+persia_missions_5_task_2_desc:0 ""
+
+# Music
+
+CHANNEL_music_t_roman_songs:0 "  Roman Music"
+
+nightwatch:0 "Nightwatch"
+thesiege:0 "The Siege"
+streetsofconstantinople:0 "The Streets of Constantinople"
+theforum:0 "The Forum"
+debellogallico:0 "De Bello Gallico"
+soundthecornu:0 "Sound The Cornu"
+queenofcities:0 "Queen of Cities"
+civilwar:0 "Civil War"
+triumph:0 "Triumph"
+augustus:0 "Augustus"
+siegeoftime:0 "Siege of Time"
+warcry:0 "War Cry"
+thefalleneagle:0 "The Fallen Eagle"
+constantinople2:0 "Constantinople 2"
+queenofcities2:0 "Queen of Cities pt 2"
+alesia:0 "Alesia"
+ave:0 "Ave"
+besieged:0 "Besieged"
+bronze:0 "Bronze"
+thecompanions:0 "The Companions"
+
+CHANNEL_music_easternbordermusic:0 " Eastern Border Music"
+
+theodosion_music:0 "Theodosion"
+redrawing_the_map2:0 "Redrawing the Map"
+walls_of_constantinople:0 "Walls of Constantinople"
+
+CHANNEL_music_t_orchestra:0 "  Orchestra/Classical"
+
+scythiansuite:0 "Scythian Suite"
+dvorakno9:0 "Dvorak Symphony No.9"
+masqueradesuite:0 "Masquerade Suite"
+
+CHANNEL_music_t_schizo:0 "  !!! SWIETE KURWA GÓWNO !!!"
+
+burgundianlullaby:0 "Bruhgundian Lullaby"
+hyperborea:0 "Hyperborea"
+verifyyourclock:0 "Verify Your Cock"
+barigadam:0 "Barigadam Dam Dam Dam"
+havanagila:0 "Hava Nagila"
+havanagila2:0 "Hava Nagila 2"
+havanagila3:0 "Hava Nagila 3"
+herrmannelig:0 "Herr Mannelig"
+havanagilasigmaversion:0 "Hava Nagila Sigma Version"
+
+le_retour_des_princes_francais_a_paris:0 "Le Retour Des Princes Francais a Paris"
+
+# Factions
+
+gv_argentarii:0 "Argentarii"
+gv_argentarii_FACTION_DESC:0 "The Argentarii are massive, overreaching banking companies belonging to old and influential families in Constantinople, and are present throughout most of the Roman world."
+gv_imperial_representatives:0 "Imperial Representatives"
+gv_imperial_representatives_FACTION_DESC:0 "Representatives of Constantinople's imperial institutions."
+gv_the_people:0 "The People"
+gv_the_people_FACTION_DESC:0 "The masses of our nation."
+
+pis_faction:0 "PiS"
+pis_faction_FACTION_DESC:0 "Prawo i Sprawiedliwosc"
+ko_faction:0 "KO"
+ko_faction_FACTION_DESC:0 "Koalicja Obywatelska"
+
+# Government Abilities
+
+ability_t_british_industrialization_mechanic:0 "Industrialization"
+t_british_industrialization_mechanic_desc:0 "Rapid advances in technology are creating possibilites never before dreamt of. People flock to the cities to work in new, highly efficient factories outfitted with astonishing modern machinery. We must be at the heart of this industrial revolution, as any nation that fails to modernize will be swept away by those that do."
+t_british_industrialization:0 "Industrialization"
+t_british_industrialization_desc:0 "Rapid advances in technology are creating possibilites never before dreamt of. People flock to the cities to work in new, highly efficient factories outfitted with astonishing modern machinery. We must be at the heart of this industrial revolution, as any nation that fails to modernize will be swept away by those that do."
+
+t_british_quality_of_life:0 "Quality of Life"
+t_british_quality_of_life_desc:0 ""
+
+ability_t_theodland_austria_rivalry_mechanic:0 "The Imperial Feud"
+t_theodland_austria_rivalry_mechanic:0 "The Imperial Feud"
+t_theodland_austria_rivalry_mechanic_desc:0 ""
+t_rivalry_score:0 "Influence"
+t_rivalry_score_desc:0 "§RAu§!§Wstr§!§Rian§! and §gTheodish§! Influence within the empire."
+t_theodland_austria_rivalry_mechanic_theodland_wins_tt:0 "§gTheodland§! becomes the §YEmperor§!, and the feud ends."
+t_theodland_austria_rivalry_mechanic_austria_wins_tt:0 "§RAu§!§Wstr§!§Ria§! becomes the §YEmperor§!, and the feud ends."
+
+# Flags
+
+t_increased_taxation_flag:0 "Increased Taxation"
+t_took_from_clergy:0 "Took Wealth from Clergy"
+t_enabled_civ_austerity:0 "Enacted Civilian Austerity"
+
+# Technology
+
+roman_group:0 "Roman"
+
+adm_tech_cs_33_name:0 "Electricity"
+adm_tech_cs_34_name:0 "Secularism"
+adm_tech_cs_35_name:0 "Replaceable Parts"
+
+dip_tech_cs_33_name:0 "Railroad"
+dip_tech_cs_34_name:0 "Ironclad"
+dip_tech_cs_35_name:0 "Telephone"
+
+mil_tech_cs_33_name:0 "Percussion Cap"
+mil_tech_cs_34_name:0 "Breech-Loading Rifled Guns"
+mil_tech_cs_35_name:0 "Chassepot"
+
+# Subject types
+
+t_satrapy_vassal:0 "Satrapy"
+t_satrapy_vassal_long_desc:0 "Persian puppet government."
+t_satrapy_vassal_is_our:0 "$NAME|Y$ is our Satrapy."
+t_satrapy_vassal_title:0 "Satrapy"
+t_satrapy_vassal_title_plural:0 "Satrapies"
+is_t_satrapy_vassal:0 "Is a Satrapy"
+
+patriarchate_vassal:0 "Patriarchate"
+patriarchate_vassal_long_desc:0 ""
+patriarchate_vassal_is_our:0 "$NAME|Y$ is a Patriarchate controlled by us."
+patriarchate_vassal_title:0 "Patriarchy"
+patriarchate_vassal_title_plural:0 "Patriarchates"
+is_patriarchate_vassal:0 "Is a Patriarchate"
+
+# Other
+
+string_start_title_rome:0 "Since the founding of §YRome§! by §GRomulus§!, the Senate and the People of Rome stood undefiant, as their empire seemed immune to an eventual eclipse. The Empire rose and seemingly fell numerous times, but the so-called "fall" was never absolute. The Romans however, stood on the brink of collapse for the last two hundered years. Now, as new age dawns on Europe and the world, §YConstantinople§! sees new opportunities. The biggest and oldest of Roman rivals, the empire of §YGrzegorz§!, §YGównogradus§! is weaker than ever, the §YBrekkling§! dynasty in §YTheodland§! has been falling from it's once prestigous status for the last two hundered and fifty years. As the empires of old had survived their own crises, they now once again rise to prominence. Will the §YRoman Empire§! finally emerge as the strongest of them all, after a thousand years of rivalry?"
+sol_invictus_deity:0 "Sol Invictus"
+sol_invictus_deity_desc:0 "Deus Sol Invictus is the Greco-Roman solar deity, associated with light, power and victory."
+jupiter_optimus_maximus:0 "Jupiter O. Max."
+jupiter_optimus_maximus_desc:0 "Jupiter Optimus Maximus is the Greco-Roman god of justice, lightning and other gods."
+constantinople_area:0 "Constantinople"
+jerusalem_area:0 "Jerusalem"
+ajlun_area:0 "Ajlun"
+basra:0 "Gownograd" # Trade node
+tRomeArtifacts:0 "Artifacts" # Variable
+merc_t_excubitors:0 "Cohortes Excubitoriae"
+merc_t_varangians:0 "Varangians"
+merc_t_immortals:0 "Immortals"
+T_THEOCRACY:0 "Theocracy"
+T_THEOCRATIC_EMPIRE:0 "Theocratic Empire"
+PONTIFEX_MAXIMUS:0 "Pontifex Maximus"
+PONTIFEX:0 "Pontifex"
+AUTOKRATOR:0 "Autokrator"
+DESPOT:0 "Despot"
+DOUX:0 "Doux"
+T_EMPIRE:0 "Empire"
+T_DESPOTATE:0 "Despotate"
+T_SYMBASILEUS:0 "Symbasileus"
+T_SYMBASILISSA:0 "Symbasilissa"
+T_HEIR:0 "Heir"
+T_CONSORT:0 "Consort"
+T_BASILISSA:0 "Basilissa"
+hellenic_pagan_reformed_center_of_reformation:0 "Hellenic Religious Centre"
+gv_catholic_center_of_reformation:0 "Catholic Religious Centre"
+t_war_with_archgoy:0 "Fighting the Archgoy"
+
+honey:0 "Honey"
+honeyDESC:0 "Honey is a sweet and viscous substance made by several species of bees, the best-known of which are honey bees. Honey for human consumption is collected from wild bee colonies, or from the hives of domesticated bees. This means that it can be produced almost anywhere, although some places have a very high concentration of honey production compared to others."
+
+t_pax_ulmica_decision_title:0 "PAX ULMICA"
+
+rome_tradenode:0 "Rome"
+trebizond_tradenode:0 "Trebizond"

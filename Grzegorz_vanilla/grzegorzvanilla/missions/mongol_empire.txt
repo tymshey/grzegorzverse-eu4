@@ -1,0 +1,631 @@
+mongol_missions_1 = {
+	
+	slot = 3
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+	
+	mge_consolidate_state = {
+	
+		icon = mission_restore_trade_superiority
+		
+		position = 8
+		
+		trigger = {
+			army_size_percentage = 0.80
+		}
+		
+		effect = {
+			4725 = {
+				add_permanent_claim = ROOT
+			}
+			4724 = {
+				add_permanent_claim = ROOT
+			}
+			4237 = {
+				add_permanent_claim = ROOT
+			}
+			265 = {
+				add_permanent_claim = ROOT
+			}
+			263 = {
+				add_permanent_claim = ROOT
+			}
+			264 = {
+				add_permanent_claim = ROOT
+			}
+			2966 = {
+				add_permanent_claim = ROOT
+			}
+			4238 = {
+				add_permanent_claim = ROOT
+			}
+			4723 = {
+				add_permanent_claim = ROOT
+			}
+		}
+		
+		ai_weight = {
+			factor = 75	#Default
+		}
+	}
+}
+	
+mongol_missions_2 = {
+	
+	slot = 3
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+	mge_conquest_bohemia = {
+	
+		icon = mission_restore_trade_superiority		#Conquest Bohemia
+		
+		required_missions = { 
+			mge_consolidate_state 
+			}
+			
+		position = 9
+		
+		trigger = {
+			owns = 4725
+			owns = 4724
+			owns = 4237
+			owns = 265
+			owns = 263
+			owns = 264
+			owns = 2966
+			owns = 4238
+			owns = 4723
+		}
+			
+		effect = {
+			262 = {
+				add_permanent_claim = ROOT
+			}
+			2960 = {
+				add_permanent_claim = ROOT
+			}
+			4527 = {
+				add_permanent_claim = ROOT
+			}
+			154 = {
+				add_permanent_claim = ROOT
+			}
+			162 = {
+				add_permanent_claim = ROOT
+			}
+			1318 = {
+				add_permanent_claim = ROOT
+			}
+			1772 = {
+				add_permanent_claim = ROOT
+			}
+			4236 = {
+				add_permanent_claim = ROOT
+			}
+			262 = {
+				add_permanent_claim = ROOT
+			}
+			2960 = {
+				add_permanent_claim = ROOT
+			}
+		}
+			
+		ai_weight = {
+			factor = 75	#Default
+		}
+	}
+}
+
+mongol_missions_3 = {
+	
+	slot = 2
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+
+	mge_sukiennice_krakowskie = {
+	
+		icon = mission_restore_trade_superiority		
+		
+		required_missions = { 
+			mge_conquest_bohemia 
+			}
+			
+		position = 10
+		
+		trigger = {
+		 owns = 262
+		 }
+		
+		effect = {
+		
+			poland_region = {
+                limit = {
+                    NOT = { is_permanent_claim = ROOT    }
+                    NOT = { is_core = ROOT    }
+                }
+                add_permanent_claim = ROOT
+            }
+			
+			add_great_project_tier = {
+				type = krakow_cloth_hall
+				tier = 1
+			}
+		
+		}
+	}
+
+	mge_rozwiazanie_kwestii_polskiej = {
+	
+		icon = mission_restore_trade_superiority
+		
+		required_missions = { 
+			mge_sukiennice_krakowskie 
+			}
+			
+		position = 11
+		
+		trigger = {
+			poland_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+
+		effect = {
+			poland_region = {
+			add_unrest = -100
+			set_local_autonomy = 0
+			}
+		}
+		
+	}
+	
+	mge_dew_dew_jew_wicher = {
+	
+		icon = mission_restore_trade_superiority
+		
+		required_missions = { 
+			mge_rozwiazanie_kwestii_polskiej
+			}
+			
+		position = 12
+		
+		trigger = {
+			poland_region= {
+				num_of_times_improved = 20
+			}
+		}
+		
+		effect = {
+			ruthenia_region = {
+                limit = {
+                    NOT = { is_permanent_claim = ROOT    }
+                    NOT = { is_core = ROOT    }
+				}
+                add_permanent_claim = ROOT
+			}
+		}	
+	}
+}
+
+mongol_missions_4 = {
+	
+	slot = 4
+	
+	has_country_shield = yes
+	generic = no
+		ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+	
+	mge_legacy_of_slowak_unrest = {
+	
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_conquest_bohemia
+		}
+		
+		position = 10
+		
+		trigger = {
+			slovakia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+
+		effect = {
+			slovakia_area = {
+				change_culture = dynamic-czech-culture-num1
+			}
+			carpathia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT    }
+					NOT = { is_core = ROOT    }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	mge_mogeyro-mongol = {
+		
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_legacy_of_slowak_unrest
+		}
+		
+		position = 11
+			
+		trigger = {
+			southern_transylvania_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			transylvania_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			alfold_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			transdanubia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mge_mogeyro-mongol_modifier
+				duration = 10925
+			}
+		}
+	}
+	
+	mge_dev_mohol = {
+		
+			icon = mission_restore_trade_superiority
+			
+			required_missions = {
+				mge_mogeyro-mongol
+			}
+		
+			position = 12
+			
+			trigger = {
+				carpathia_region = {
+					num_of_times_improved = 20
+				}
+			}
+			
+			effect = {
+				pontic_steppe_region = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT    }
+						NOT = { is_core = ROOT    }
+					}
+					add_permanent_claim = ROOT
+				}
+							
+				add_country_modifier = {
+					name = mge_dev_mogol_modifier
+					duration = -1
+				}
+			}
+		}
+}
+	
+
+mongol_missions_5 = {
+	
+	slot = 3
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+
+	mge_conquest_the_rus = {
+	
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_dev_mohol
+			mge_dew_dew_jew_wicher
+		}
+		
+		position = 13
+		
+		trigger = {
+			owns = 280
+			owns = 276
+			owns = 295
+			owns = 272
+			owns = 284
+		}
+		
+		effect = {
+			
+			russia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT    }
+					NOT = { is_core = ROOT    }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	mge_feed_the_horse = {
+		
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_conquest_the_rus
+		}
+	
+		position = 14
+		
+		trigger = {
+			num_of_cavalry = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mge_cavalry_power
+				duration = -1
+			}
+			
+			caucasia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT    }
+					NOT = { is_core = ROOT    }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	mge_caucasian_dual_god = {
+		
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_feed_the_horse
+		}
+		
+		position = 15
+		
+		trigger = {
+			caucasia_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mge_caucasian_god
+				duration = 73000
+			}
+			
+			ural_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT    }
+					NOT = { is_core = ROOT    }
+				}
+				add_permanent_claim = ROOT
+			}
+				
+			west_siberia_region = {
+				limit = {
+                NOT = { is_permanent_claim = ROOT    }
+                NOT = { is_core = ROOT    }
+					}
+					add_permanent_claim = ROOT
+			}
+				
+			finland_area = {
+				limit = {
+                NOT = { is_permanent_claim = ROOT    }
+                NOT = { is_core = ROOT    }
+					}
+				add_permanent_claim = ROOT
+			}
+			
+			laponia_area = {
+				limit = {
+                NOT = { is_permanent_claim = ROOT    }
+                NOT = { is_core = ROOT    }
+					}
+				add_permanent_claim = ROOT
+			}
+			
+			ostrobothnia_area = {
+				limit = {
+                NOT = { is_permanent_claim = ROOT    }
+                NOT = { is_core = ROOT    }
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+mongol_missions_6 = {
+	
+	slot = 2
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+	
+	mge_finnish_reih = {
+	
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_caucasian_dual_god
+		}
+		
+		position = 16
+		
+		trigger = {
+			finland_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			bothnia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			laponia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mge_finnish
+				duration = 10950
+			}
+			
+			scandinavia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT    }
+					NOT = { is_core = ROOT    }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+mongol_missions_7 = {
+	
+	slot = 4
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+	
+	mge_hyperborean_scorge = {
+	
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_caucasian_dual_god
+		}
+		
+		position = 16
+		
+		trigger = {
+			470 = {
+				owned_by = ROOT
+			}
+			2429 = {
+				owned_by = ROOT
+			}
+			4688 = {
+				owned_by = ROOT
+			}
+			4690 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			persia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT    }
+					NOT = { is_core = ROOT    }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+mongol_missions_8 = {
+	
+	slot = 3
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MGE
+	}
+	
+	mge_comeback_of_grzegorz_motherland = {
+		
+		icon = mission_restore_trade_superiority
+		
+		required_missions = {
+			mge_hyperborean_scorge
+			mge_finnish_reih
+		}
+		
+		position = 17
+		
+		trigger = {
+			mongolia_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = mge_comeback_of_horses
+				duration = 18250
+			}
+			
+			# perm claim na chiny północne
+			
+			north_china_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT    }
+					NOT = { is_core = ROOT    }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

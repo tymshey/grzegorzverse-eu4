@@ -1,0 +1,96 @@
+﻿l_english:
+
+ # Ideas
+ 
+ t_JAP_ideas:0 "Japanese Ideas"
+ t_JAP_ideas_start:0 "Japanese Traditions"
+ t_JAP_ideas_bonus:0 "Japanese Ambition"
+ 
+ # Decisions
+ 
+ t_jap_choose_stance_towards_china_title:0 "Choose Stance Towards China"
+ t_jap_choose_stance_towards_china_desc:0 ""
+ 
+ # Modifiers
+
+ t_jap_protectors_east_catholicism:0 "Protectors of Eastern Catholicism"
+ t_jap_protectors_east_catholicism_desc:0 ""
+ t_jap_vibrant_christian_communities:0 "Vibrant Christian Communities"
+ t_jap_vibrant_christian_communities_desc:0 ""
+
+ t_jap_et_bushido:0 "Bushido Code"
+ 
+ t_jap_imperial_capital_modifier:0 "Imperial Capital"
+ t_jap_fortified_coast:0 "Fortified Coast"
+ t_jap_urban_centre:0 "Developing Urban Centre"
+ t_jap_greater_kanto:0 "Greater Kanto"
+ t_jap_trade_guilds:0 "Trade Guilds"
+ 
+ # Events
+ 
+ t_japan_events.1.title:0 "Debug: Form Japan"
+ t_japan_events.1.desc:0 "parovozik"
+ t_japan_events.1.a:0 "dawaj to miesko"
+ t_japan_events.1.b:0 "nie dawaj tego mieska"
+ 
+ t_japan_events.2.title:0 "Our Stance Towards China"
+ t_japan_events.2.desc:0 "parovozik"
+ t_japan_events.2.a:0 "We will conquer them!"
+ t_japan_events.2.b:0 "Perhaps we shall cooperate with China."
+ t_japan_events.2.c:0 "They are our enemies!"
+ 
+ t_japan_events.3.title:0 "Textiles of Japan"
+ t_japan_events.3.desc:0 "parovozik"
+ t_japan_events.3.a:0 "Magnificent!"
+
+ # Extended Timeline Events
+
+ t_japan_et.1.title:0 "Growth of Urban Centers"
+ t_japan_et.1.desc:0 "parovozik"
+ t_japan_et.1.a:0 "Magnificent!"
+
+ t_japan_et.2.title:0 "Fertile Valleys of Kanto"
+ t_japan_et.2.desc:0 "parovozik"
+ t_japan_et.2.a:0 "Ok"
+
+ t_japan_et.3.title:0 "The Bushido Code"
+ t_japan_et.3.desc:0 "parovozik"
+ t_japan_et.3.a:0 "Ok"
+
+ t_japan_et.4.title:0 "Trade Guilds"
+ t_japan_et.4.desc:0 "parovozik"
+ t_japan_et.4.a:0 "Ok"
+ 
+ # Missions
+ 
+ jap_ally_china_title:0 "Ally the Emperor"
+ jap_ally_china_desc:0 ""
+ jap_maraka_kaikyou2_title:0 "Maraka Kaikyou"
+ jap_maraka_kaikyou2_desc:0 ""
+ jap_land_of_joseon_title:0 "Land of the Joseon"
+ jap_land_of_joseon_desc:0 ""
+ jap_fortify_coast_title:0 "Fortify the Coast"
+ jap_fortify_coast_desc:0 ""
+ jap_fortify_coast_tt:0 "We will gain Naval Combat Bonus off owned coast: §G+1§! on the seas around Japan."
+ jap_found_the_eastern_capital_title:0 "Found the Eastern Capital"
+ jap_found_the_eastern_capital_desc:0 ""
+ jap_surpass_the_west2_title:0 "Surpass the West"
+ jap_surpass_the_west2_desc:0 ""
+ jap_establish_daijo_daijin_title:0 "Establish Daijo-Daijin"
+ jap_establish_daijo_daijin_desc:0 ""
+ jap_establish_daijo_daijin_tt:0 "Every §YAdministrative advisor§! will grant §G-2%§! Development Cost per level."
+ 
+ jap_ally_china2_title:0 "Delegation to the Emperor"
+ jap_ally_china2_desc:0 ""
+ jap_maraka_kaikyou3_title:0 "Maraka Kaikyou"
+ jap_maraka_kaikyou3_desc:0 ""
+ jap_land_of_joseon2_title:0 "Land of the Joseon"
+ jap_land_of_joseon2_desc:0 ""
+ jap_fortify_coast2_title:0 "Fortify the Coast"
+ jap_fortify_coast2_desc:0 ""
+ jap_found_the_eastern_capital2_title:0 "Found the Eastern Capital"
+ jap_found_the_eastern_capital2_desc:0 ""
+ jap_surpass_the_west3_title:0 "Surpass the West"
+ jap_surpass_the_west3_desc:0 ""
+ jap_establish_daijo_daijin2_title:0 "Establish Daijo-Daijin"
+ jap_establish_daijo_daijin2_desc:0 ""

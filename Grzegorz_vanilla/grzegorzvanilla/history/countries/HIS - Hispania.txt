@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = t_roman_province_reform
+government_rank = 2
+technology_group = western
+religion = orthodox
+primary_culture = espanoi
+capital = 225
+add_historical_rival = Z00 # Valencia
+elector = yes
+1444.11.11= {
+	monarch = {
+		name = "Theodoros"
+		dynasty = "Wojtyla"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1422.10.12
+		religion = orthodox
+		culture = greek
+	}
+}

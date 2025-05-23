@@ -1,0 +1,31 @@
+Gold_reform = {
+	icon = "russian_principality"
+	allow_normal_conversion = no
+	potential = {
+		tag = SOS
+		has_country_flag = gold_reform
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = english_monarchy_legacy
+	nation_designer_trigger = {
+	tag = SOS
+	}
+	modifiers = {
+		monthly_gold_inflation_modifier = -0.1
+		gold_depletion_chance_modifier = -0.15
+		development_cost_in_primary_culture = -0.1
+	}
+	conditional = {
+		allow = { 
+		
+		}
+		government_abilities = {
+			
+		}
+		custom_attributes = {
+			
+		}
+	}
+}

@@ -1,0 +1,8 @@
+
+graphical_culture = muslimgfx
+color = { 69 66 60 }
+monarch_names = {
+	"Yevgeny #1" = 10
+	"Yevgeny #1" = 10
+	"Yevgeny #1" = 10
+}

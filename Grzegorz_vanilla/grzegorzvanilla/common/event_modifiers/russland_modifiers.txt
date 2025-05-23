@@ -1,0 +1,390 @@
+	Strenghten_Asatru_1 = {
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+	}
+	Union_with_gepidia = {
+	global_tax_modifier = 0.1
+	}
+
+	Stabilize_the_Nation = {
+	stability_cost_modifier = -0.1
+	diplomatic_upkeep = 1
+	}
+
+	germanisation = {
+	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.3
+	global_unrest = 2
+	}
+
+
+	Expanded_army = {
+	land_morale = 0.05
+	infantry_cost = -0.10
+	}
+
+	Estate_development_investments = {
+		production_efficiency = 0.05
+	}
+
+	Estate_economic_investments = {
+		global_tax_modifier = 0.05
+		production_efficiency = 0.05
+
+	}
+
+
+	Improve_taxation = {
+	global_tax_modifier = 0.1
+	}
+
+	Tax_evasion_Act = {
+	global_tax_modifier = 0.1
+	}
+
+
+	Improved_trade = {
+	global_trade_power = 0.1
+	}
+
+	pure_nation = {
+	diplomatic_reputation = -5
+	global_manpower_modifier = -0.05
+	}
+
+	invite_foreign_merchants = {
+	merchants = 1
+	}
+
+
+	improve_center_of_trade = {
+	local_development_cost = -0.1
+	}
+
+
+	Improve_Production = {
+		production_efficiency = 0.1
+	}
+
+	maximize_production = {
+	production_efficiency = 0.1
+	}
+
+
+	Improved_economy = {
+	local_development_cost = -0.05
+	global_tax_modifier = 0.1
+	production_efficiency = 0.1
+	}
+
+
+	Gold_mine = {
+	production_efficiency = 0.05
+	}
+
+	Army_reform = {
+	land_morale = 0.05
+	}
+
+	Army_reform_2 {
+	land_morale = 0.05
+	}
+
+
+
+
+	Army_discipline = {
+	discipline = 0.025
+	} 
+
+
+	Army_discipline_2 = {
+	discipline = 0.025
+	} 
+
+
+	The_holy_city = {
+	tax_income = 69
+	local_build_cost = -0.10
+	local_build_time = -0.10
+	local_manpower_modifier = 0.20
+	}
+
+	Southern_push = {
+	land_morale = 0.1
+	movement_speed = 0.15
+	}
+
+	National_expansion = {
+	core_creation = -0.05
+	governing_capacity = 100
+	}
+
+
+	New_trade_oportunitiss = {
+	mercantilism_cost = -0.1
+	trade_efficiency = 0.1
+	prestige = 1
+	}
+
+	Easter_border_secured = {
+	prestige = 1
+	prestige_decay = -0.2
+	}
+
+	Dniepr_is_ours = {
+	global_trade_power = 0.05
+	placed_merchant_power = 7
+	}
+
+	path_to_the_baltic = {
+	ae_impact = -0.1
+	army_tradition = 2
+	}
+
+	from_sea_to_sea = {
+	prestige = 1
+	prestige_decay = -0.2
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
+	}
+
+
+
+	True_faith_secured = {
+	global_unrest = -3
+	build_cost = -0.25
+	}
+
+
+	German_scholars = {
+	idea_cost = -0.05
+	technology_cost = -0.05
+	}
+
+	develop_the_south = {
+	development_cost = -0.1
+	}
+
+	Expand_the_slave_trade = {
+	trade_goods_size = 2
+	trade_value = 1
+	}
+
+	crimean_embargo = {
+	province_trade_power_value = -0.5
+	local_production_efficiency = -0.30
+	local_tax_modifier = -0.30
+	local_development_cost = 0.20
+	}
+
+
+	Wheat_production = {
+	production_efficiency = 0.06
+	}
+
+
+	Bread_busket = {
+	production_efficiency = 0.1
+	}
+
+	Vodka_1 = {
+	yearly_corruption = 0.02
+	land_morale = 0.05
+	movement_speed = 0.05
+	}
+
+	German_workers = {
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -1
+	}
+
+	Limited_trade_oportunitiss = {
+	trade_efficiency = 0.1
+	prestige = 0.5
+	}
+
+	Steppe_trade = {
+	caravan_power = 0.15
+	}
+
+	Ruthenien_diplomacy = {
+	diplomatic_upkeep = 1
+	}
+
+
+	Baltic_trade = {
+	global_trade_power = 0.1	
+	}
+
+	Holy_Russian_empire_1 = {
+	global_manpower_modifier = 0.1
+	global_unrest = -2
+	global_missionary_strength = 0.02
+	}
+
+	Finnish_Domain = {
+	global_trade_power = 0.1
+	trade_efficiency = 0.05
+	}
+	
+	Force_Germanisation = {
+	local_unrest = 2
+	local_manpower_modifier = 0.1
+	}
+	
+	Caucaus_tolerance = {
+	local_culture_conversion_cost = 0.2
+	local_production_efficiency = 0.1
+	local_tax_modifier = 0.05
+	}
+	
+	
+	
+	Develop_the_dniepr = {
+	development_cost = -0.05
+	}
+	
+	Black_Sea_Dominance = {
+	trade_efficiency = 0.1
+	trade_steering = 0.1
+	}
+	
+	Develop_Russia = {
+	development_cost = -0.05
+	}
+	
+	Rule_the_waves = {
+	light_ship_cost = -0.1
+	navy_tradition = 1
+	}
+	
+	Black_sea_jewl = {
+	prestige = 1
+	global_unrest = -1
+	}
+	
+	lost_crimea = {
+	prestige = -1
+	global_unrest = 1
+	}
+	
+	
+	Unity_with_the_slavs_1 = {
+	global_unrest = -2
+	development_cost_in_primary_culture = -0.05
+	}
+	
+	German_origins = {
+	culture_conversion_time = -0.1
+	development_cost_in_primary_culture = -0.05
+	}
+	
+	German_Merchants = {
+	global_trade_power = 0.10
+	}
+	
+	German_nation = {
+	prestige = 1
+	global_unrest = -3
+	}
+	
+	Unity_with_the_slavs = {
+	global_unrest = -3
+	global_autonomy = -0.05
+	culture_conversion_time = 0.2
+	}
+	
+	slavic_cooperation = {
+	production_efficiency = 0.1
+	prestige = 1
+	}
+	
+	Develop_Dniepr = {
+	local_development_cost = -0.1
+	}
+	
+	Develop_Black_Sea = {
+	local_development_cost = -0.05
+	province_trade_power_modifier = 0.2
+	}
+	
+	Russo_gepidia_union = {
+	global_manpower_modifier = 0.1
+	prestige = 1
+	}
+	
+	Develop_Novogrod = {
+	local_development_cost = -0.1
+	trade_value_modifier = 0.2
+	province_trade_power_modifier = 0.1
+	}
+	
+	
+	Expand_The_Southern_Trade = {
+	province_trade_power_modifier = 0.05
+	local_development_cost = -0.05
+	}
+	
+	Develop_Our_Nation = {
+	development_cost = -0.05
+	}
+	
+	
+	Big_building_in_kiev = {
+	local_development_cost = -0.15
+	}
+	
+	Gold_Rush = {
+	local_production_efficiency = 0.2
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	German_win = {
+	culture_conversion_time = -0.25
+	culture_conversion_cost = -0.25
+	}
+	
+	Against_The_empire = {
+	ae_impact = -0.1
+	}
+	
+	Vassals_Integrated = {
+	prestige = 1
+	diplomatic_reputation = 2
+	}
+	
+	Smolensk_Military_Tactic = {
+	mil_tech_cost_modifier = -0.1
+	}
+	
+	Military_Advancment = {
+	artillery_fire = 1
+	artillery_shock = 1
+	}
+	
+	Kiev_Vassal = {
+	global_tax_income = 48
+	land_forcelimit = 24
+	}
+	
+	Build_Buildings_Rus = {
+	build_cost = -0.25
+	build_time = -0.25
+	}
+	
+	Economic_Prosperity = {
+	local_prosperity_growth = 0.05
+	trade_goods_size_modifier = 0.1
+	local_institution_spread = 0.05
+	local_development_cost = -0.1
+	}

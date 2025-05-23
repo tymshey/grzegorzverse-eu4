@@ -1,0 +1,157 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+# Made by tymshey
+
+t_romanosphere = {
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	trigger = {
+		OR = {
+			client_vassal = 4
+			client_march = 4
+		}
+	}
+
+	max_absolutism = 10
+}
+
+t_war_with_archgoy = {
+	potential = {
+		OR = {
+			tag = Z1C
+		}
+	}
+
+	trigger = {
+		OR = {
+			war_with = PER
+			war_with = Z01
+			war_with = NGC
+			war_with = GER
+			war_with = RUS
+		}
+	}
+
+	land_morale = 0.1
+	local_defensiveness = 0.33
+	land_maintenance_modifier = -0.33
+}
+
+t_russian_antiragequit = {
+	potential = {
+		OR = {
+			capital_scope = {
+				OR = {
+					region = russia_region
+					region = ruthenia_region
+					region = ural_region
+				}
+			}
+			tag = Z1C
+		}
+	}
+
+	trigger = {
+		player = yes
+		current_age = age_of_discovery
+	}
+
+	global_unrest = -3
+}
+
+t_african_primitives = {
+	potential = {
+		OR = {
+			technology_group = central_african
+			technology_group = sub_saharan
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	technology_cost = 0.5
+	global_institution_spread = -0.75
+	embracement_cost = 0.25
+	fire_damage_received = 0.25
+}
+
+t_east_african_primitives = {
+	potential = {
+		technology_group = east_african
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	technology_cost = 0.25
+	global_institution_spread = -0.5
+	embracement_cost = 0.25
+	fire_damage_received = 0.25
+}
+
+t_indian_primitives = {
+	potential = {
+		technology_group = indian
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	technology_cost = 0.2
+	global_institution_spread = -0.25
+	embracement_cost = 0.25
+	fire_damage_received = 0.2
+}
+
+gv_asian_institution_debuff = {
+	potential = {
+		OR = {
+			technology_group = chinese
+			technology_group = nomadic
+		}
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	global_institution_spread = -0.2
+	embracement_cost = 0.25
+}
+
+gv_global_institution_debuff = {
+	# picture = "eye_of_providence"
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	global_institution_spread = -0.33
+	embracement_cost = 0.25
+}
+
+gv_interest_buff = {
+	potential = {
+		current_age = age_of_discovery
+	}
+
+	trigger = {
+		always = yes
+	}
+
+	interest = -1
+}

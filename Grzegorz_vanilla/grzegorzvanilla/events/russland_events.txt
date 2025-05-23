@@ -1,0 +1,333 @@
+namespace = flavor_russland
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.1
+    title = flavor_russland.1.t
+    desc = flavor_russland.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_russland.1.a
+       KIE = {
+		vassalize = MOL
+		}
+		MOL = {
+		inherit = Z0W
+		}
+    }
+	
+	option = {
+		name = flavor_russland.1.b
+		KIE = {
+			2405 = {
+			add_permanent_claim = KIE
+			}
+			268 = {
+			add_permanent_claim = KIE
+			}
+			4530 = {
+			add_permanent_claim = KIE
+			}
+			4529 = {
+			add_permanent_claim = KIE
+			}
+		}
+	}
+}
+
+
+
+namespace = flavor_russland_2
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.2
+    title = flavor_russland.2.t
+    desc = flavor_russland.2.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	name = flavor_russland.2.a
+		create_alliance = KIE
+		284	= {
+			cede_province = KIE
+		}
+		285 = {
+			cede_province = KIE
+		}
+		2410 = {
+			cede_province = KIE
+		}
+    }
+	
+	option = {
+		name = flavor_russland.2.b
+		284 = {
+			add_permanent_claim = KIE 
+		}
+		285 = {
+			add_permanent_claim = KIE
+		}
+		2410 = {
+			add_permanent_claim = KIE
+		}
+		KIE = {
+			set_country_flag = Fund_crimean_rebels
+		}	
+	}
+}
+	
+	
+namespace = flavor_russland_3
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.3
+    title = flavor_russland.3.t
+    desc = flavor_russland.3.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	name = flavor_russland.3.a
+		1756	= {
+			cede_province = KIE
+		}
+		BYZ = { add_treasury = 200 }  
+    }
+	
+	option = {
+	name = flavor_russland.3.b
+		1756 = {
+		add_unrest = 5
+		}
+	}
+}
+
+namespace = flavor_russland_4
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.4
+    title = flavor_russland.4.t
+    desc = flavor_russland.4.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	name = flavor_russland.4.a
+		4306 = {
+			cede_province = KIE
+		}
+		
+		425 = {
+			cede_province = KIE
+		}
+		4299 = {
+		change_trade_goods = iron
+		}
+		4299 = {
+			add_province_modifier = {
+			name = German_workers
+			duration = -1
+			}
+		}
+    }
+	
+	option = {
+	name = flavor_russland.4.b
+		PER = { add_prestige = -10 }
+	}
+}
+	
+namespace = flavor_russland_5
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.5
+    title = flavor_russland.5.t
+    desc = flavor_russland.5.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	name = flavor_russland.5.a
+		astrakhan_area = {
+		add_province_modifier = {
+		name = Force_Germanisation
+		duration = -1
+		}
+		change_culture = ROOT
+		}
+		dagestan_area = {
+		add_province_modifier = {
+		name = Force_Germanisation
+		duration = -1
+		}
+		change_culture = ROOT
+		}
+		circassia_area = {
+		add_province_modifier = {
+		name = Force_Germanisation
+		duration = -1
+		}
+		change_culture = ROOT
+		}
+    }
+	
+	option = {
+	name = flavor_russland.5.b
+	astrakhan_area = {
+		add_province_modifier = {
+		name = Caucaus_tolerance
+		duration = -1
+			}
+		change_culture = khazar
+		}
+		dagestan_area = {
+		add_province_modifier = {
+		name = Caucaus_tolerance
+		duration = -1
+			}
+		change_culture = khazar
+		}
+		circassia_area = {
+		add_province_modifier = {
+		name = Caucaus_tolerance
+		duration = -1
+			}
+		change_culture = khazar
+		}
+		KIE = {
+		add_accepted_culture = khazar
+		}
+	}
+}
+
+
+
+
+
+
+namespace = flavor_russland_6
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.6
+    title = flavor_russland.6.t
+    desc = flavor_russland.6.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	name = flavor_russland.6.a 
+	 set_country_flag = Destroy_Bizantium
+	 swap_non_generic_missions = yes
+    }
+	
+	option = {
+	name = flavor_russland.6.b
+		set_country_flag = Destroy_guwnograd
+		swap_non_generic_missions = yes
+	}
+}
+
+
+namespace = flavor_russland_7
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.7
+    title = flavor_russland.7.t
+    desc = flavor_russland.7.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_russland.7.a
+       KIE = {
+		change_primary_culture = germano_slavic
+		}
+		KIE = {
+		every_owned_province = {
+		change_culture = germano_slavic
+			}
+		}
+		KIE = {
+		add_country_modifier = {
+		name = Unity_with_the_slavs_1
+		duration = -1
+			}
+		}
+		Z01 = {
+		add_opinion = {
+		who = KIE
+		modifier = enemy
+			}
+		}
+		set_country_flag = germano_slavic
+		swap_non_generic_missions = yes
+    }
+	option = {
+		name = flavor_russland.7.b
+       KIE = {
+		every_owned_province = {
+		change_culture = holmgardrian
+			}
+		}
+		KIE = {
+		add_country_modifier = {
+		name = German_origins
+		duration = -1
+			}
+		}
+		Z01 = {
+		add_opinion = {
+		who = KIE
+		modifier = opinion_friendliness
+			}
+		}
+		set_country_flag = Holmgardian_culture
+		swap_non_generic_missions = yes
+    }
+}
+
+namespace = flavor_russland_8
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.8
+    title = flavor_russland.8.t
+    desc = flavor_russland.8.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		tag = KIE
+		is_year = 1464
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_russland.8.a
+		hidden_effect = {
+		every_owned_province = {
+		add_base_production = 1
+			}
+		}
+		add_country_modifier = {
+		name = German_Merchants 
+		duration = -1
+		}
+		
+	}
+}
+

@@ -1,0 +1,68 @@
+# Decisions for Hellenics
+
+country_decisions = {
+	
+	t_invoke_devotio = {
+		potential = {
+			religion = hellenic_pagan_reformed
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_invoke_devotio_flag }
+				had_country_flag = { flag = t_invoke_devotio_flag days = 730 }
+			}
+			adm_power = 50
+			treasury = 50
+		}
+		effect = {
+			set_country_flag = t_invoke_devotio_flag
+			add_adm_power = -50
+			add_treasury = -50
+			add_country_modifier = {
+				name = t_invoke_devotio_modifier
+				duration = 730
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 200 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { treasury = 500 }
+			}
+		}
+	}
+	
+	t_change_diety = {
+		potential = {
+			religion = hellenic_pagan_reformed
+			ai = no
+		}
+		allow = {
+			OR = {
+				has_personal_deity = jupiter
+				has_personal_deity = luno
+				has_personal_deity = neptunus
+				has_personal_deity = venus
+				has_personal_deity = mars
+				has_personal_deity = ceres
+				has_personal_deity = vulcan
+				has_personal_deity = minerva
+				has_personal_deity = diana
+				has_personal_deity = apollo
+				has_personal_deity = mercury
+				has_personal_deity = vesta
+				has_personal_deity = sol_invictus_deity
+			}
+			adm_power = 10
+		}
+		effect = {
+			add_adm_power = -10
+			country_event = { id = flavor_rom.26 }
+		}
+	}
+
+}

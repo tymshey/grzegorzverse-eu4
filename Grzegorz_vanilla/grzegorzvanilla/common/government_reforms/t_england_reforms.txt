@@ -1,0 +1,22 @@
+t_modern_british_reform = {
+	icon = "royal_court"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = t_modern_british_reform
+			have_had_reform = t_modern_british_reform
+			has_unlocked_government_reform = {
+				government_reform = t_modern_british_reform
+			}
+		}
+	}
+	government_abilities = {
+		t_british_industrialization_mechanic
+	}
+	modifiers = {
+		max_absolutism = 5
+	}
+	custom_attributes = {
+		centralize_state_half_refund = yes
+	}
+}

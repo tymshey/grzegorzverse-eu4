@@ -1,0 +1,18 @@
+version="1.0"
+tags={
+	"Gameplay"
+	"Alternative History"
+	"Missions And Decisions"
+	"National Ideas"
+	"New Nations"
+	"Map"
+	"Events"
+	"Expansion"
+	"Religion"
+	"Trade"
+}
+replace_path="common/technologies/"
+name="Grzegorz Vanilla"
+supported_version="v1.37.5.0"
+path="D:/Dokumenty/Paradox Interactive/Europa Universalis IV/mod/grzegorzvanilla"
+remote_file_id="3160681730"

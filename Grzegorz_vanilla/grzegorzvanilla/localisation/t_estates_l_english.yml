@@ -1,0 +1,81 @@
+﻿l_english:
+
+ # Modifiers
+
+ roman_bureaucrats_loyalty_modifier:0 "Senatorial Loyalty Equilibrium"
+ roman_bureaucrats_influence_modifier:0 "Senatorial Influence"
+ 
+ persian_sects_loyalty_modifier:0 "Sect Loyalty"
+ persian_sects_influence_modifier:0 "Sect Influence"
+ 
+ jews_loyalty_modifier:0 "Jews Loyalty"
+ jews_influence_modifier:0 "Jews Influence"
+ 
+ # Nobles
+ 
+ estate_nobles_social_elitism:0 "Social Elitism"
+ estate_nobles_social_elitism_desc:0 ""
+ 
+ # Burghers
+ 
+ estate_burghers_leagues_domination:0 "Dominance of the Leagues"
+ estate_burghers_leagues_domination_desc:0 "Powerful trade leagues dominate our nation's political and economic landscape."
+ estate_burghers_controlled_leagues:0 "Trade Leagues Under Control"
+ estate_burghers_controlled_leagues_desc:0 "Rich trade leagues and burgher guilds are under loose control of our government."
+
+ # Roman Bureaucrats/Senators
+
+ estate_roman_bureaucrats:0 "Senators"
+ estate_roman_bureaucrats_desc:0 "Roman Senators."
+
+ estate_roman_bureaucrats_advisor:0 "Hire Advisors"
+ estate_roman_bureaucrats_governance:0 "Bureaucratic Governance"
+ estate_roman_bureaucrats_economy:0 "Improve State Economy"
+ estate_roman_bureaucrats_buildings:0 "Support Construction"
+ estate_roman_bureaucrats_delegated_power:0 "Delegate Power Over Provinces"
+ estate_roman_bureaucrats_dev:0 "Support City Growth"
+ estate_roman_bureaucrats_themes:0 "The Theme System"
+ estate_roman_bureaucrats_prosperity:0 "Prosperous Rule"
+ 
+ t_rome_greek_stability_granted_tt:0 "All owned provinces in the §YBalkan§! Region and §YAnatolia§! Region will recieve the following modifier: Prosperous Rule: Local Unrest §G-1§!, Development Cost §G-5%§!"
+ t_rome_greek_stability_revoked_tt:0 "Prosperous Rule: Local Unrest §G-1§!, Development Cost §G-5%§! will be removed from the provinces."
+ 
+ # Qizilbash/Aswaran
+ 
+ estate_qizilbash_supremacy_over_the_aristocracy:0 "Supremacy over the Aristocracy"
+ 
+ # Persian Sects
+ 
+ estate_persian_sects:0 "Sects"
+ estate_persian_sects_desc:0 "The sects reflect the powerful role of Zoroastrian priesthoods, Fire Temple hierarchies, Magian scholarly circles, local theological sects and gnostic movements. While Zoroastrianism traditionally had less "sectarian" fragmentation compared to Abrahamic faiths, since it's revival in Gównogradus regional doctrinal factions, temple elites, and spiritual guilds arose, who may either support or challenge the imperial religious agenda."
+ 
+ estate_persian_sects_pax_gregorica:0 "Pax Gregorica"
+ estate_persian_sects_pax_gregorica_desc:0 ""
+ estate_persian_sects_fire_compromise:0 "Sect Fire Compromise"
+ estate_persian_sects_fire_compromise_desc:0 ""
+ estate_persian_sects_immortals:0 "Draft Immortals"
+ estate_persian_sects_immortals_desc:0 ""
+ estate_persian_sects_kurd_exploitation:0 "Kurd Exploitation Rights"
+ estate_persian_sects_kurd_exploitation_desc:0 ""
+ estate_persian_sects_tolerance:0 "Religious Tolerance"
+ estate_persian_sects_tolerance_desc:0 ""
+ estate_persian_sects_fire_temple_endowments:0 "Fire Temple Endowments"
+ estate_persian_sects_fire_temple_endowments_desc:0 "The empire grants land and wealth to regional Atash Behrams (fire temples) to maintain spiritual order and public faith."
+ estate_persian_sects_doctrine_of_imperial_light:0 "Doctrine of Imperial Light"
+ estate_persian_sects_doctrine_of_imperial_light_desc:0 "The empire promotes the idea that it is the earthly manifestation of divine light, destined to spread Asha across the world."
+ 
+ t_persian_sects_kurd_exploitation_granted_tt:0 "All provinces producing §YSlaves§! will get: Sect Exploitation Rights, giving the following bonuses: Local Goods Produced Modifier: §R-5%§!"
+ t_persian_sects_kurd_exploitation_revoked_tt:0 "Sect Exploitation Rights, giving the following bonuses: Local Goods Produced Modifier: §R-5%§! will be removed from our provinces."
+ 
+ # Jews
+ 
+ estate_jews:0 "Jews"
+ estate_jews_desc:0 ""
+ 
+ estate_jews_advisor:0 "Recruit Jewish Advisors"
+ estate_jews_dev:0 "Support Jewish Communities"
+ estate_jews_banking:0 "Encourage Jewish Banking"
+ estate_jews_trading:0 "Support Jewish Merchants"
+ estate_jews_shabbat:0 "Work-free Shabbat"
+ estate_jews_protection:0 "Protection of Jewish Minorities"
+ estate_jews_suppress:0 "Non Tolerandis Iudaeis"

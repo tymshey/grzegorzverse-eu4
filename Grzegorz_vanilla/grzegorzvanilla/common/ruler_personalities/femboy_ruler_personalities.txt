@@ -1,0 +1,49 @@
+femboy_personality = {
+	
+	ruler_allow = {
+		allow = {
+			is_female = no
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			has_female_heir = no
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			has_female_consort = no
+		}
+	}
+	
+	femboy_modifier = 1
+	all_estate_loyalty_equilibrium = 0.05
+	nation_designer_cost = 5
+}
+
+cute_girl_personality = {
+	
+	ruler_allow = {
+		allow = {
+			is_female = yes
+		}
+	}
+
+	heir_allow = {
+		allow = {
+			has_female_heir = yes
+		}
+	}
+	
+	consort_allow = {
+		allow = {
+			has_female_consort = yes
+		}
+	}
+	
+	cute_girl_modifier = 1
+	all_estate_loyalty_equilibrium = 0.05
+	nation_designer_cost = 5
+}

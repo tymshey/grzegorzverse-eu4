@@ -1,0 +1,41 @@
+BHU_ideas = {
+	start = {
+		production_efficiency = 0.10
+		development_cost = -0.05
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+	OR = {
+		tag = BHU
+		tag = TDE
+		}
+	}
+	free = yes
+	
+	internal_development = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	Efficient_Bureocracy = {
+		global_tax_modifier = 0.15
+	}
+	Warrior_Spirit = {
+		land_morale = 0.10
+		discipline = 0.05
+	}
+	National_scholars = {
+		advisor_cost = -0.15
+	}
+	Proud_nation = {
+		prestige = 1
+	}
+	Mountain_Traders = {
+		merchants = 1
+	}
+	Religious_state = {
+		global_missionary_strength = 0.03
+	}
+}

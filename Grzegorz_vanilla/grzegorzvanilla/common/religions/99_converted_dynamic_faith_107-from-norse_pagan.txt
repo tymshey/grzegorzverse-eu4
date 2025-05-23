@@ -1,0 +1,28 @@
+pagan = {
+	converted_dynamic_faith_107 = {
+		color = { 61 63 60 }
+		icon =  174
+		country = {
+			ae_impact = -0.15
+			infantry_power = 0.05
+			heir_chance = 1
+			tolerance_heathen = -1
+			tolerance_heretic = -1
+		}
+		country_as_secondary = {
+			raze_power_gain = 0.15
+			ae_impact = -0.1
+	
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		
+		holy_sites = { 2972 1 245 280 20 }
+		
+		personal_deity = yes
+		heretic = { OLD_NORSE }
+
+	}
+}
+

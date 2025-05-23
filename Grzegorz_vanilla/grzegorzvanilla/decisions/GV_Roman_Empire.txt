@@ -1,0 +1,666 @@
+# Roman Decisions
+
+country_decisions = {
+
+	t_rome_cultural_works_counter = {
+		major = yes
+		color = { 182 81 245 }
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			
+		}
+		ai_importance = 0
+	}
+	
+	t_embellish_the_capital = {
+		potential = {
+			always = no # Deprecated
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_byz_city_embellished_flag }
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+			years_of_income = 1.0
+			adm_power = 50
+			owns_core_province = 151
+		}
+		effect = {
+			151 = {
+				add_permanent_province_modifier = {
+					name = "t_byz_capital_embellished"
+					duration = -1
+				}
+			}
+			add_years_of_income = -1.0
+			add_adm_power = -50
+			set_country_flag = t_byz_city_embellished_flag
+		}
+		ai_importance = 400
+	}
+	
+	t_expand_the_imperial_port = {
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_byz_port_expanded_flag }
+		}
+		allow = {
+			stability = 1
+			years_of_income = 0.75
+			dip_power = 50
+			owns_core_province = 151
+		}
+		effect = {
+			151 = {
+				add_permanent_province_modifier = {
+					name = "t_expand_the_imperial_port"
+					duration = -1
+				}
+			}
+			add_years_of_income = -1.0
+			add_dip_power = -50
+			set_country_flag = t_byz_port_expanded_flag
+		}
+		ai_importance = 400
+	}
+
+	t_rome_fix_basilica_cistern = {
+		major = no
+		potential = {
+			always = no # Deprecated
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_basilica_cistern_fixed }
+		}
+		provinces_to_highlight = {
+			province_id = 151 # The Holy City of Saint Constantine
+		}
+		allow = {
+			owns = 151
+			treasury = 500
+		}
+		effect = {
+			151 = {
+				add_permanent_province_modifier = {
+					name = "t_basilica_cistern"
+					duration = -1
+				}
+				
+			}
+			add_treasury = -500
+			set_country_flag = t_basilica_cistern_fixed
+		}
+		ai_importance = 400
+	}
+
+	t_rome_reform_army = {
+		major = yes
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_byz_army_reformed }
+		}
+		allow = {
+			mil = 4
+			treasury = 5000
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+		effect = {
+			add_treasury = -5000
+			add_army_professionalism = 0.1
+			add_country_modifier = {
+				name = t_byz_army_reform
+				duration = -1
+			}
+			set_country_flag = t_byz_army_reformed
+		}
+		ai_importance = 400
+	}
+
+	t_rome_renovate_church_of_the_holy_apostles = {
+		major = no
+		potential = {
+			always = no # Deprecated
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_church_of_the_holy_apostles_renovated }
+		}
+		provinces_to_highlight = {
+			province_id = 151 # The Holy City of Saint Constantine
+		}
+		allow = {
+			owns = 151
+			treasury = 400
+		}
+		effect = {
+			151 = {
+				add_permanent_province_modifier = {
+					name = "t_church_of_the_holy_apostles"
+					duration = -1
+				}
+			}
+			add_treasury = -400
+			set_country_flag = t_church_of_the_holy_apostles_renovated
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_renovate_forum_of_constantine = {
+		major = no
+		potential = {
+			always = no # Deprecated
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_forum_of_constantine_renovated }
+		}
+		provinces_to_highlight = {
+			province_id = 151 # The Holy City of Saint Constantine
+		}
+		allow = {
+			owns = 151
+			treasury = 400
+		}
+		effect = {
+			151 = {
+				add_permanent_province_modifier = {
+					name = "t_forum_of_constantine"
+					duration = -1
+				}
+			}
+			add_treasury = -400
+			set_country_flag = t_forum_of_constantine_renovated
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_restore_phanarion = {
+		major = no
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_phanarion_restored }
+		}
+		provinces_to_highlight = {
+			province_id = 151 # The Holy City of Saint Constantine
+		}
+		allow = {
+			owns = 151
+			treasury = 550
+		}
+		effect = {
+			151 = {
+				add_permanent_province_modifier = {
+					name = "t_phanarion"
+					duration = -1
+				}
+			}
+			add_treasury = -550
+			custom_tooltip = t_education_interface_becomes_available_tt
+			set_country_flag = t_phanarion_restored
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_vengeance = {
+		major = yes
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_byz_vengeance_flag }
+		}
+		allow = {
+			controls = 2972
+		}
+		effect = {
+			add_country_modifier = {
+				name = t_byz_vengeance
+				duration = -1
+			}
+			add_prestige = 25
+			2972 = {
+				add_devastation = 100
+			}
+			set_country_flag = t_byz_vengeance_flag
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_new_world = {
+		major = yes
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_byz_new_world_flag }
+		}
+		allow = {
+			treasury = 1000
+			OR = {
+				owns = 1749
+				HIS = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = personal_union
+					}
+				}
+			}
+		}
+		effect = {
+			add_treasury = -1000
+			add_country_modifier = {
+				name = t_byz_new_world
+				duration = -1
+			}
+			set_country_flag = t_byz_new_world_flag
+		}
+		ai_importance = 0
+	}
+	
+	t_renaissance_of_chalcedon = {
+		major = no
+		potential = {
+			always = no # Deprecated
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_renaissance_of_chalcedon_flag }
+		}
+		allow = {
+			treasury = 750
+			owns_core_province = 316
+		}
+		effect = {
+			add_treasury = -750
+			316 = {
+				add_permanent_province_modifier = {
+					name = "t_renaissance_of_chalcedon_modifier"
+					duration = -1
+				}
+				add_base_tax = 3
+				add_base_production = 4
+				add_base_manpower = 4
+				change_province_name = "Chalcedon"
+			}
+			set_country_flag = t_renaissance_of_chalcedon_flag
+		}
+		ai_importance = 100
+	}
+	
+	t_ephesus_irrigation_system = {
+		major = no
+		potential = {
+			always = no # Deprecated
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_ephesus_irrigation_system_flag }
+		}
+		allow = {
+			treasury = 1000
+			owns_core_province = 6007
+		}
+		effect = {
+			add_treasury = -1000
+			6007 = {
+				add_permanent_province_modifier = {
+					name = "t_ephesus_irrigation_system_modifier"
+					duration = -1
+				}
+				add_base_tax = 3
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+			set_country_flag = t_ephesus_irrigation_system_flag
+		}
+		ai_importance = 100
+	}
+	
+	t_rome_form_empire = {
+		major = yes
+		color = { 235 64 52 }
+		potential = {
+			tag = BYZ
+			NOT = { exists = ROM }
+			NOT = { has_country_flag = t_byz_empire_formed }
+		}
+		provinces_to_highlight = {
+			province_id = 118
+			province_id = 121
+			province_id = 4732
+			province_id = 4733
+			province_id = 120
+			province_id = 114
+			province_id = 2985
+			province_id = 146
+		}
+		allow = {
+			OR = {
+				AND = {
+					owns_core_province = 118 # Rome
+					owns_core_province = 121 # Neapolis
+					owns_core_province = 4732 # Terracina
+					owns_core_province = 4733 # Molise
+					owns_core_province = 120 # Abruzzi
+					owns_core_province = 114 # Ravenna
+					owns_core_province = 2985 # Capitanata
+					owns_core_province = 146 # Athens
+				}
+				AND = {
+					118 = { # Rome
+						owner = {
+							OR = {
+								total_development = 800
+								tag = ITA
+								tag = LAT
+							}
+						}
+					}
+					OR = {
+						has_won_war_against = {
+							who = ITA
+							max_years_since = 50
+						}
+						has_won_war_against = {
+							who = LAT
+							max_years_since = 50
+						}
+						has_won_war_against = {
+							who = Z0B
+							max_years_since = 50
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = ROM
+			restore_country_name_effect = yes
+			set_government_rank = 3
+			add_prestige = 50
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_stability = -1
+			change_technology_group = western
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = t_byz_empire_formed
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_restore_college_of_pontiffs = {
+		major = no
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_college_of_pontiffs_restored }
+		}
+		provinces_to_highlight = {
+			province_id = 151 # The Holy City of Saint Constantine
+		}
+		allow = {
+			owns = 151
+			treasury = 400
+			religion = hellenic_pagan_reformed
+		}
+		effect = {
+			151 = {
+				add_permanent_province_modifier = {
+					name = "t_college_of_pontiffs"
+					duration = -1
+				}
+			}
+			add_treasury = -400
+			set_country_flag = t_college_of_pontiffs_restored
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_restore_republic = {
+		major = yes
+		color = { 235 64 52 }
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_reform = t_roman_republic_reform }
+		}
+		allow = {
+			government_reform_progress = 100
+			has_reform = states_general_reform
+			OR = {
+				faction_influence = {
+					faction = optimates
+					influence = 90
+				}
+				faction_influence = {
+					faction = populares
+					influence = 90
+				}
+				AND = {
+					faction_influence = {
+						faction = optimates
+						influence = 50
+					}
+					faction_influence = {
+						faction = populares
+						influence = 50
+					}
+				}
+			}
+			NOT = {
+				faction_influence = {
+					faction = roman_imperials
+					influence = 10
+				}
+			}
+			NOT = {
+				has_government_power = {
+					mechanic_type = t_roman_senate_mechanic
+					power_type = imperial_grasp
+					value = 1
+				}
+			}
+		}
+		effect = {
+			change_tag = ROM
+			restore_country_name_effect = yes
+			set_government_rank = 3
+			add_prestige = 50
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_stability = -1
+			change_technology_group = western
+			change_government = republic
+			add_government_reform = t_roman_republic_reform
+			# override_country_name = T_ROMAN_REPUBLIC
+			set_country_flag = t_rome_republic_restored
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_integrate_galata = {
+		major = no
+		color = { 250 228 32 }
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			NOT = { has_country_flag = t_galata_integrated }
+		}
+		allow = {
+			#custom_trigger_tooltip = {
+			#	tooltip = t_rome_integrate_galata_tt
+			#	has_country_flag = GV_GRAND_ECUMENICAL_COUNCIL_FLAG
+			#}
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			6000 = {
+				cede_province = ROOT
+				remove_core = GEN
+				change_province_name = "Pera"
+			}
+			set_country_flag = t_galata_integrated
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_administrative_reform = {
+		major = yes
+		color = { 235 64 52 }
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			has_country_modifier = t_rome_siege_of_time
+		}
+		allow = {
+			adm_power = 100
+			adm_tech = 10 # was 8
+		}
+		effect = {
+			add_adm_power = -100
+			remove_country_modifier = t_rome_siege_of_time
+			set_country_flag = t_siege_of_time_removed
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_convert_to_pagan = {
+		major = no
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			has_country_flag = t_rome_chose_paganism
+			NOT = {
+				religion = hellenic_pagan_reformed
+			}
+		}
+		allow = {
+			adm_power = 50
+		}
+		effect = {
+			add_adm_power = -50
+			change_religion = hellenic_pagan_reformed
+			set_country_flag = t_siege_of_time_removed
+		}
+		ai_importance = 400
+	}
+	
+	t_rome_lock_reform = {
+		major = no
+		potential = {
+			OR = {
+				has_reform = t_roman_republic_reform
+				has_reform = t_roman_dictatorship_reform
+				has_reform = t_roman_enlightened_empire_reform
+				has_reform = t_roman_absolute_monarchy_reform
+			}
+			ai = no
+		}
+		allow = {
+			NOT = { has_country_flag = t_roman_senate_locked }
+		}
+		effect = {
+			set_country_flag = t_roman_senate_locked
+		}
+		ai_importance = 0
+	}
+	
+	t_rome_unlock_reform = {
+		major = no
+		potential = {
+			OR = {
+				has_reform = t_roman_republic_reform
+				has_reform = t_roman_dictatorship_reform
+				has_reform = t_roman_enlightened_empire_reform
+				has_reform = t_roman_absolute_monarchy_reform
+			}
+			ai = no
+		}
+		allow = {
+			has_country_flag = t_roman_senate_locked
+		}
+		effect = {
+			clr_country_flag = t_roman_senate_locked
+		}
+		ai_importance = 0
+	}
+
+	t_rome_devs_adivta_romanis_test = {
+		major = no
+		potential = {
+			always = no # off
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+		}
+		allow = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			is_in_war = {
+				defenders = ROOT
+				# war_score =< 50
+			}
+			NOT = {
+				war_score = -50
+			}
+			war_exhaustion = 10
+			OR = {
+				NOT = { has_country_flag = recent_BYZ_devs_adivta_romanis }
+				had_country_flag = { flag = recent_BYZ_devs_adivta_romanis days = 3650 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = t_devs_adivta_romanis
+				duration = 3650
+			}
+		}
+		ai_importance = 0
+	}
+}

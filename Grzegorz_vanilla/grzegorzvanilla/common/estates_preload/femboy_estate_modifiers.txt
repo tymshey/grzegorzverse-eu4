@@ -1,0 +1,52 @@
+#Define estate loyalty and influence modifiers here
+
+estate_nobles = {
+	modifier_definition = {
+		type = loyalty
+		key = nobles_loyalty_modifier
+		trigger = {
+			has_estate = estate_nobles
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nobles_influence_modifier
+		trigger = {
+			has_estate = estate_nobles
+		}
+	}
+	
+	# No Other Nobility like estate
+	modifier_definition = {
+		type = loyalty
+		key = nobles_exclusive_loyalty_modifier
+		trigger = {
+			has_estate = estate_nobles
+			NOT = { has_estate = estate_maratha }
+			NOT = { has_estate = estate_rajput }
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = nobles_exclusive_influence_modifier
+		trigger = {
+			has_estate = estate_nobles
+			NOT = { has_estate = estate_maratha }
+			NOT = { has_estate = estate_rajput }
+		}
+	}
+	modifier_definition = {
+		key = femboy_modifier
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		key = cute_girl_modifier
+		trigger = {
+			always = yes
+		}
+	}
+}

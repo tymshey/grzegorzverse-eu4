@@ -1,0 +1,77 @@
+spriteTypes = {
+	# Roman Empire
+	spriteType = {
+		name = "GFX_faction_roman_imperials"
+		texturefile = "gfx//interface//faction_roman_imperials.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_roman_imperials"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_optimates"
+		texturefile = "gfx//interface//faction_optimates.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_optimates"
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_populares"
+		texturefile = "gfx//interface//faction_populares.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_populares"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}
+	# pis/po
+	spriteType = {
+		name = "GFX_faction_pis_faction"
+		texturefile = "gfx//interface//faction_pis_faction.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_pis_faction"
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_ko_faction"
+		texturefile = "gfx//interface//faction_ko_faction.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_ko_faction"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}
+	# Directorate
+	spriteType = {
+		name = "GFX_faction_gv_argentarii"
+		texturefile = "gfx//interface//guilds_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_gv_argentarii"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_gv_imperial_representatives"
+		texturefile = "gfx//interface//imperials_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_gv_imperial_representatives"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_gv_the_people"
+		texturefile = "gfx//interface//girondists_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_gv_the_people"
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}
+}

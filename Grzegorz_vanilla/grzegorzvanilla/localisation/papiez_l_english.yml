@@ -1,0 +1,13 @@
+﻿l_english:
+
+ # Ideas
+ 
+ t_PAP_ideas:0 "Papal Ideas"
+ t_PAP_ideas_start:0 "Papal Traditions"
+ t_PAP_ideas_bonus:0 "Papal Ambition"
+ 
+ # Events
+ 
+ t_pope.1.title:0 "The Papal State"
+ t_pope.1.desc:0 "do napisania !"
+ t_pope.1.a:0 "Ok"

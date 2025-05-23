@@ -1,0 +1,24 @@
+Wizards_company = {
+    regiments_per_development = 0.05 
+	home_province = 289     
+    cost_modifier = 0.80                  
+    mercenary_desc_key = WIZARDS_COMPANY_1
+    cavalry_weight = 0.2              
+    artillery_weight = 0.2                
+    cavalry_cap = 2                        
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+		has_estate_privilege = russland_mages_magic_warriors
+		}
+
+    }
+
+    modifier = {
+		manpower_recovery_speed = -0.2
+		morale_damage_received = 0.2
+		land_morale = 0.15
+		infantry_fire = 1
+    }
+	cost_modifier = 2
+}

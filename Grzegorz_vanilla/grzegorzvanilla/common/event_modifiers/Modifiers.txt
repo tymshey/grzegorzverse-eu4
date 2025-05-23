@@ -1,0 +1,76 @@
+Expand_the_state = {
+land_morale = 0.05
+ae_impact = -0.1
+manpower_recovery_speed = 0.1
+}
+Diplomatic_experts = {
+improve_relation_modifier = 0.2	
+diplomatic_reputation = 1
+}
+
+Diplomatic_masters = {
+spy_action_cost_modifier = -0.2
+diplomats = 1
+imperial_authority = 0.1
+}
+
+Begin_Our_economic_growth = {
+global_tax_modifier = 0.1
+advisor_cost = -0.1
+build_cost = -0.15
+build_time = -0.15
+}
+
+Develop_our_capital = {
+development_cost = -0.05
+local_production_efficiency = 0.1
+allowed_num_of_buildings = 1
+}
+
+The_industry_of_wien_modifier = {
+province_trade_power_value = 15
+local_tax_modifier = 0.1
+trade_goods_size_modifier = 0.3
+defensiveness = 0.2
+}
+
+Develop_Silesia = {
+local_development_cost = -0.1
+local_production_efficiency = 0.1
+local_unrest = -2
+}
+
+Hearts_of_iron = {
+local_production_efficiency = 0.1
+trade_goods_size_modifier = 0.1
+local_development_cost = -0.15
+}
+
+
+Gold_mines = {
+local_production_efficiency = 0.1
+local_development_cost = -0.1
+defensiveness = 0.2
+Local_gold_depletion_chance_modifier = -0.5
+trade_goods_size = 1
+}
+
+Meth_builders = {
+local_build_cost = -0.25
+local_build_time = -0.25	
+}
+
+Build_up_our_cities = {
+local_production_efficiency = 0.1
+local_tax_modifier = 0.1
+province_trade_power_modifier = 0.1
+}
+
+Industrialization_modifier = {
+trade_goods_size_modifier = 0.1
+}
+
+slovakian_cooper = {
+local_trade_goods_size = 3
+local_production_efficiency = 0.1
+}

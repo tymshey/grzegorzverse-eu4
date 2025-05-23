@@ -1,0 +1,187 @@
+﻿l_english:
+ DEUS_VULT_title:0 "DEUS VULT!!!"
+ DEUS_VULT_desc:0 "W prowincji jaffa pojawia sie 5 barque i 10 galley oraz 20k zolnierzy wargoal na mameluka"
+
+ Odzyskanie_Jerozolimy_title:0 "Odzyskanie Jerozolimy"
+ Odzyskanie_Jerozolimy_desc:0 "Daje event Successfull Crusade for Jerusalem oraz przenosi stolice do gerusalemme "
+
+ Smierc_Niewiernym_title:0 "Katolicyzm albo smierc"
+ Smierc_Niewiernym_desc:0 "Nawraca prowincje Gerusalemme na katolicyzm oraz -5 tolerancji dla hererykow i niewiernych"
+
+ Katolicy_Osadnicy_title:0 "Katolicy Osadnicy"
+ Katolicy_Osadnicy_desc:0 "Daje w prowincji Gerusalemme oraz prowincji Cairo włoską kulture i nawraca Cairo na Katolicyzm oraz -5 tolerancji dla hererykow i niewiernych"
+
+ Nawrocenie_Kraju_title:0 "Nawrócenie Kraju"
+ Nawrocenie_Kraju_desc:0 "-25 % missionary maintance oraz -5 tolerancji dla hererykow i niewiernych"
+
+ Prawdziwa_Wiara_title:0 "Prawdziwa Wiara"
+ Prawdziwa_Wiara_desc:0 "-5 tolerancji dla hererykow i niewiernych (wymagania kraj musi być nawrocony na katolicyzm)"
+
+ Zmniejszenie_Opersji_title:0 "Zmniejszenie Opresji"
+ Zmniejszenie_Opersji_desc:0 ""
+
+ Zmniejszenie_Opresji_2_title:0 "Zmniejszenie Opresji 2"
+ Zmniejszenie_Opresji_2_desc:0 ""
+
+ Zmniejszenie_Opresji_3_title:0 "Zmniejszenie Opresji 3"
+ Zmniejszenie_Opresji_3_desc:0 ""
+
+ Wolnosc_Religijna_title:0 "Wolność Religijna"
+ Wolnosc_Religijna_desc:0 "Daje +10% production efficency "
+
+ Rozbudowa_Jerozolimy_title:0 "Rozbudowa Jerozolimy"
+ Rozbudowa_Jerozolimy_desc:0 "Dodaje w stacie Jerozolima +2 adm prod mil deva (Wymagania cel Prawdziwa_Wiara)"
+
+ Ulepszenie_Irrygacji_Gornego_Egiptu_title:0 "Ulepszenie Irrygacji Górnego Egiptu"
+ Ulepszenie_Irrygacji_Gornego_Egiptu_desc:0 "daje +2 do produkcji farmlandach w statach bahari i delta (wymagania posiadanie statow bahari i delta zabiera 500 dukatow oraz zabiera 5000 manpowera)"
+
+ Ulepszenie_Irrygacji_Dolnego_Egiptu_title:0 "Ulepszenie Irrygacji DEgiptu"
+ Ulepszenie_Irrygacji_Dolnego_Egiptu_desc:0 "Daje +2 production w kazdej prowincji z farmlandem w Statach Vostani , Said (wymagania posiadanie statow vostani i said zabiera 500 dukatow i 5000 manpowera)"
+
+ Rozbudowa_Panstwowych_Kopalnii_title:0 "Rozbudowa Panstwowych Kopalnii"
+ Rozbudowa_Panstwowych_Kopalnii_desc:0 "daje +4 w prowincji damascus oraz sinai i + 2 w prowincji gaza i buhaira (wymagania posiadania tych prowincji zabiera 500 dukatow oraz 10k manpowera)"
+
+ Rozbudowa_placowek_handlowych_title:0 "Rozbudowa placowek handlowych"
+ Rozbudowa_placowek_handlowych_desc:0 "Ulepsza wszystkie placówki handlowe w stacie Delta , al wahat , bahari oraz pojawia się centrum handlowe w jerozolimie oraz daje boost do handlu za swiete miasto (wymagania potrzebujesz tych statow oraz 1k dukatow i 10k manpowera)"
+
+ Stabilnosc_Gospodarcza_title:0 "Stabilnosc Gospodarcza"
+ Stabilnosc_Gospodarcza_desc:0 "daje 1500 dukatow oraz daje 10 % good production modifier i +0.10 prosperity na 20 lat "
+
+ Przybycie_Orderow_title:0 "Przybycie Orderow"
+ Przybycie_Orderow_desc:0 "Daje w prowincji Aleksandria , Cairo , Damascus , Gerusalemme , Aqabah province modifire catolic order(daje -2  unrest oraz -5 dev cost oraz daje 5% local trade modifier) oraz +1 papal influence rocznie"
+
+ Monastic_Breweries_title:0 "Monastic Breweries"
+ Monastic_Breweries_desc:0 "Zmienia typ produktu w prowincji QUS z livestock na grain (wymaga monastic breweries)          "
+
+ More_Grain_title:0 "More Grain!"
+ More_Grain_desc:0 "Zwiększa cene swiatową zboza o 0.50 oraz krowy o 0.50 daje w kazdej prowincji z grainem przy rzece nil province modifier granary of the meditarean +2.00 local goods production                      "
+
+ Massive_Food_Production_title:0 "Massive Food Production"
+ Massive_Food_Production_desc:0 "daje -5 unrestu oraz +20% manpower recovery do endgamu"
+
+ Budowa_Wielkiego_Muru_title:0 "Budowa Wielkiego Muru"
+ Budowa_Wielkiego_Muru_desc:0 "Mur musi byc zbudowany zwieksza o 1 poziom mur jerozolimski odraz daje mozliwosc rekrutacji specjalnych jednostek o nazwie Jerusalemite Guards of Great Jerusalem Wall tylko w stacie ajlun oraz dodaje nowy estate o nazwie Crusaders "
+
+ Conquest_of_Egipt_title:0 "Conquest of Egipt"
+ Conquest_of_Egipt_desc:0 "Daje Wargoal na Aleksandrie i Syrie oraz pernamentne claimy na area bahari , delta , vostani , ajlun , syria oraz syria desert"
+
+ K_title:0 "K"
+ K_desc:0 "daje claimy na 40 lat na staty alwahat , said , read sea hills , lower nubia (daje 20 papal influence za misje crush border herectics)"
+
+ Ki_title:0 "Ki"
+ Ki_desc:0 "Daje na 40 lat claimy  na state transjorda , tabuk , an nafud"
+
+ Co_title:0 "Co"
+ Co_desc:0 "daje pernamentne claimy na state medyna i mecca"
+
+ Kill_Nestorian_Heatens_title:0 "Kill Nestorian Heatens"
+ Kill_Nestorian_Heatens_desc:0 "Daje claimy na 40 lat na state dongola , read sea coast , kurdufan , sennar , upper nubia "
+
+ Secure_Coffie_Arabica_title:0 "Secure Coffee Arabica"
+ Secure_Coffie_Arabica_desc:0 "daje claimy na 40 lat na state asir , al-yamamah , upper yemen , lower yemen , tihama al-yemen , hadramut , makhra "
+
+ Secure_Gulf_Trade_title:0 "Secure Gulf Trade"
+ Secure_Gulf_Trade_desc:0 "Ulepsza centra handlu w arabskiej czesci gulf of aden o 1 "
+
+ Secure_Ethiopia_title:0 "Secure Ethiopia"
+ Secure_Ethiopia_desc:0 "Daje claimy na 100 lat na wszystkie terytoria horn of africa"
+
+ new_mission12345_title:0 ""
+ new_mission12345_desc:0 ""
+
+ Rozbudowa_Swiatyni_title:0 "Rozbudowa Swiatyni"
+ Rozbudowa_Swiatyni_desc:0 ""
+
+ C312_title:0 "Conquest of Egipt"
+ C312_desc:0 "daje claimy na 40 lat na staty alwahat , said , read sea hills , lower nubia (daje 20 papal influence za misje crush border herectics)"
+
+ Kill_Arabian_Heatens_title:0 "Kill Arabian Heatens"
+ Kill_Arabian_Heatens_desc:0 "Daje na 40 lat claimy  na state transjorda , tabuk , an nafud"
+
+ Conquest_of_mecca_and_medyna_title:0 "Conquest of mecca and medyna"
+ Conquest_of_mecca_and_medyna_desc:0 ""
+
+ 3.3_title:0 "3.3"
+ 3.3_desc:0 ""
+
+ 3.4_title:0 "3.4"
+ 3.4_desc:0 ""
+
+ new_mission123423_title:0 ""
+ new_mission123423_desc:0 ""
+
+ new_mission3213_title:0 ""
+ new_mission3213_desc:0 ""
+
+ new_mission2354412_title:0 ""
+ new_mission2354412_desc:0 ""
+
+ new_mission45r35_title:0 ""
+ new_mission45r35_desc:0 ""
+
+ Marzenia_Kolonizacyjne_title:0 "Marzenia Kolonizacyjne"
+ Marzenia_Kolonizacyjne_desc:0 "Daje quest of the new world (wymagania misja prawdziwa wiara oraz musisz miec 100% naval limitu "
+
+ Leonardo_Pepssi_title:0 "Leonardo Pepssi"
+ Leonardo_Pepssi_desc:0 "Wymaga ideei eksploracyjnych"
+
+ Poszukiwanie_Nowego_Kontynentu_title:0 "Poszukiwanie nowego kontynentu"
+ Poszukiwanie_Nowego_Kontynentu_desc:0 "Daje Explorera "
+
+ Nowy_Kontynent_title:0 "Nowy Kontynent"
+ Nowy_Kontynent_desc:0 "Musisz odkryc ameryke daje prestiż "
+
+ Zalozenie_Kolonii_title:0 "Załozenie Kolonii"
+ Zalozenie_Kolonii_desc:0 "musisz zalozyc kolonie"
+
+ Poszukiwanie_Fontanny_Mlodosci_title:0 "Poszukiwania Fontannty Młodości"
+ Poszukiwanie_Fontanny_Mlodosci_desc:0 ""
+
+ Swiety_Graal_title:0 "Swięty_Graal"
+ Swiety_Graal_desc:0 ""
+
+ Swiete_Artefakty_title:0 "Swiete_Artefakty"
+ Swiete_Artefakty_desc:0 ""
+
+ Jablko_Edenu_title:0 "Jablko Edenu"
+ Jablko_Edenu_desc:0 ""
+
+ Poszukiwania_Jarrate_title:0 "Poszukiwania wybrańca"
+ Poszukiwania_Jarrate_desc:0 ""
+
+ Wybraniec_Ludu_title:0 "Wybraniec Ludu?"
+ Wybraniec_Ludu_desc:0 ""
+
+ Boski_Rytulal_title:0 "Boski Rytułał"
+ Boski_Rytulal_desc:0 ""
+
+ Boskie_Przeznaczenie_title:0 "Boskie Przeznaczenie"
+ Boskie_Przeznaczenie_desc:0 ""
+
+ Arka_Przymierza_title:0 "Arka Przymierza"
+ Arka_Przymierza_desc:0 ""
+
+ Ark_Noego_title:0 "Arka Noego"
+ Ark_Noego_desc:0 ""
+
+ Wlocznia_Przeznaczenia_title:0 "Włócznia Przeznaczenia"
+ Wlocznia_Przeznaczenia_desc:0 ""
+
+ Przywolanie_Antychrysta_title:0 "Przywolanie Antychrysta!"
+ Przywolanie_Antychrysta_desc:0 ""
+
+
+ Odzyskanie_Malty_title:0 "Odzyskanie Malty"
+ Odzyskanie_Malty_desc:0 "Daje event bizancjum "
+ Fortyfikacja_Malty_title:0 "Fortyfikacja Malty"
+ Fortyfikacja_Malty_desc:0 "Daje zamek poziom 2 na malcie daje pernamentne claimy na Tripoli , Djerba , Sfax , Tunis"
+ More_Grain!_title:0 "More Grain!"
+ More_Grain!_desc:0 "Zamienia wszystkie prowincje z Livestockiem w Statach Said , Lower Nubia , Dongola , Upper Nubia , Sennar w Grain oraz w prowincji Suez na grain oraz daje +2 produkcji w tych prowincjach"
+ Zmniejszenie_Opresji:0 "_title:0 "Zmniejszenie Opresji 2"
+ sraka:0 "_title:0 ""
+ Przywołanie_Antychrysta_title:0 "Przywołanie Antychrysta"
+ Przywołanie_Antychrysta_desc:0 "+ 100 dewastacji na calym swiecie"
+ Zmniejszenie_Opresji_title:0 "Zmniejszenie opresji"
+ Zmniejszenie_Opresji_desc:0 ""
+ Wolnysc_Religijna_title:0 "Wolność Religijna"
+ Wolnysc_Religijna_desc:0 ""

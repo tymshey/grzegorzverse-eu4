@@ -1,0 +1,51 @@
+estate_burghers_leagues_domination = {
+	icon = estate_burghers_fugger_family
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.2
+	is_valid = {
+		is_or_was_tag = { tag = Z01 }
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	penalties = {
+		trade_efficiency = -0.2
+	}
+	benefits = {
+		embargo_efficiency = 0.2
+		production_efficiency = 0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_burghers_controlled_leagues = {
+	icon = estate_burghers_fugger_family
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		OR = {
+			is_or_was_tag = { tag = HOL }
+			is_or_was_tag = { tag = NED }
+		}
+	}
+	can_select = {
+	}
+	can_revoke = {
+	}
+	penalties = {
+	}
+	benefits = {
+		trade_efficiency = 0.2
+		development_cost_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -1,0 +1,33 @@
+# SUS GOLD Interface
+
+custom_button = {
+    name = t_sus_gold
+    potential = {
+		trade_goods = gold
+		owned_by = FROM
+		FROM = {
+			has_reform = Gold_reform 
+		}
+    }
+    trigger = {
+		trade_goods = gold
+		owner = {
+			  treasury = 500
+			}
+		hidden_trigger = {
+		NOT = {
+			has_province_modifier = t_sus_gold_modifier
+				}
+			}
+		}
+    effect = {
+		add_province_modifier = {
+			name = t_sus_gold_modifier
+			duration = 3650
+		}
+		owner = {
+			add_treasury = -500
+		}
+	}
+	tooltip = tooltip_sus_gold
+}

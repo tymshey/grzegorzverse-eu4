@@ -1,0 +1,58 @@
+# Unique Clergy Privileges
+
+estate_judeoborean_forest_dev = { # Judeoaryan Homeland
+	icon = privilege_grant_autonomy
+	max_absolutism = 0
+	influence = 0
+	loyalty = 0
+	is_valid = {
+		OR = {
+			# tag = Z1C # Not used for now
+		}
+	}
+	penalties = {
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		custom_tooltip = t_rome_greek_stability_granted_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					region = balkan_region
+					region = anatolia_region
+				}
+			}
+			add_province_modifier = {
+				name = t_rome_greek_stability
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = t_rome_greek_stability_revoked_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = t_rome_greek_stability
+			}
+			remove_province_modifier = t_rome_greek_stability
+		}
+		if = {
+			limit = {
+				has_province_modifier = t_rome_greek_stability
+			}
+			remove_province_modifier = t_rome_greek_stability
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

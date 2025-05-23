@@ -1,0 +1,396 @@
+# Unique Roman reforms
+
+
+t_roman_empire_reform = {
+	icon = "roman_empire"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+			has_reform = t_roman_empire_reform 
+			have_had_reform = t_roman_empire_reform 
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 70
+	legacy_equivalent = english_monarchy_legacy
+	start_territory_to_estates = 0.1
+	government_abilities = {
+		# t_roman_senate_mechanic
+	}
+	modifiers = {
+		governing_capacity = 50
+		development_cost_in_primary_culture = -0.05
+		inflation_reduction = -0.1
+		has_tercio = yes
+		allowed_tercio_fraction = 0.1
+	}
+	fixed_rank = 3
+	factions = {
+		roman_imperials
+		optimates
+		populares
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_pronoias = yes
+		t_roman_empire_reform_tt = yes
+	}
+}
+
+# Res Publica
+t_roman_republic_reform = {
+	icon = "restoration_of_the_senate_reform"
+	allow_normal_conversion = no
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = roman
+			primary_culture = greek
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	potential = {
+		OR = {
+			primary_culture = roman
+			primary_culture = greek
+		}
+	}
+	government_abilities = {
+		t_roman_senate_mechanic
+	}
+	modifiers = {
+		governing_capacity = 50
+		administrative_efficiency = 0.05
+		development_cost_in_primary_culture = -0.05
+		num_of_parliament_issues = 1
+		has_tercio = yes
+		allowed_tercio_fraction = 0.1
+	}
+	factions = {
+		roman_imperials
+		optimates
+		populares
+	}
+	fixed_rank = 3
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			gain_rt_from_parliament = yes
+		}
+	}
+
+	custom_attributes = {
+		enables_pronoias = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 5
+}
+
+# Dictatorship
+t_roman_dictatorship_reform = {
+	icon = "roman_dictatorship"
+	allow_normal_conversion = no
+	dictatorship = yes
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = roman
+			primary_culture = greek
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	potential = {
+		OR = {
+			primary_culture = roman
+			primary_culture = greek
+		}
+	}
+	government_abilities = {
+		t_roman_senate_mechanic
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+		development_cost_in_primary_culture = -0.05
+		num_of_parliament_issues = 1
+		has_tercio = yes
+		allowed_tercio_fraction = 0.15
+	}
+	factions = {
+		roman_imperials
+		optimates
+		populares
+	}
+	fixed_rank = 3
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+		custom_attributes = {
+			gain_rt_from_parliament = yes
+		}
+	}
+
+	custom_attributes = {
+		enables_pronoias = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	has_term_election = no
+}
+
+# Hellenic Theocracy
+t_roman_theocracy_reform = {
+	icon = "roman_enlightened_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = t_roman_theocracy_reform
+			have_had_reform = t_roman_theocracy_reform
+			has_unlocked_government_reform = {
+				government_reform = t_roman_theocracy_reform
+			}
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = english_monarchy_legacy
+	start_territory_to_estates = 0.1
+	government_abilities = {
+		t_roman_religious_zeal_mechanic
+	}
+	modifiers = {
+		governing_capacity = 50
+		global_missionary_strength = 0.04
+		inflation_reduction = -0.1
+		has_tercio = yes
+		allowed_tercio_fraction = 0.15
+	}
+	fixed_rank = 3
+	factions = {
+		roman_imperials
+		optimates
+		populares
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_pronoias = yes
+	}
+}
+
+# Enlightened Monarchy
+t_roman_enlightened_empire_reform = {
+	icon = "roman_enlightened_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+			has_reform = t_roman_empire_reform 
+			have_had_reform = t_roman_empire_reform 
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = english_monarchy_legacy
+	start_territory_to_estates = 0.1
+	maintain_dynasty = yes
+	government_abilities = {
+		t_roman_senate_mechanic
+	}
+	modifiers = {
+		development_cost_in_primary_culture = -0.05
+		max_absolutism = 20
+		inflation_reduction = -0.1
+		governing_capacity_modifier = -0.1
+		has_tercio = yes
+		allowed_tercio_fraction = 0.15
+	}
+	fixed_rank = 3
+	factions = {
+		roman_imperials
+		optimates
+		populares
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_pronoias = yes
+	}
+}
+
+# Roman Provincial Administration
+t_roman_province_reform = {
+	icon = "roman_empire"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			culture_group = byzantine
+			culture_group = roman_group
+			has_reform = t_roman_province_reform 
+			have_had_reform = t_roman_province_reform 
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	legacy_equivalent = english_monarchy_legacy
+	start_territory_to_estates = 0.1
+	modifiers = {
+		development_cost_in_primary_culture = -0.1
+		max_absolutism = 5
+	}
+	# fixed_rank = 2
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+}
+
+# Absolute Monarchy
+t_roman_absolute_monarchy_reform = {
+	icon = "roman_absolute_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+			has_reform = t_roman_empire_reform 
+			have_had_reform = t_roman_empire_reform 
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 120
+	legacy_equivalent = english_monarchy_legacy
+	start_territory_to_estates = 0.1
+	maintain_dynasty = yes
+	government_abilities = {
+		t_roman_senate_mechanic
+	}
+	modifiers = {
+		development_cost_in_primary_culture = -0.05
+		max_absolutism = 30
+		has_tercio = yes
+		allowed_tercio_fraction = 0.15
+	}
+	fixed_rank = 3
+	factions = {
+		roman_imperials
+		optimates
+		populares
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_pronoias = yes
+	}
+}
+
+# Directorate
+t_roman_directorate_reform = {
+	icon = "parliament"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = Z0B
+			tag = LAE
+			has_reform = t_roman_directorate_reform
+			have_had_reform = t_roman_directorate_reform
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = english_monarchy_legacy
+	start_territory_to_estates = 0.2
+	government_abilities = {
+		
+	}
+	modifiers = {
+		development_cost_in_primary_culture = -0.1
+		all_estate_influence_modifier = 0.05
+		max_absolutism = -10
+		max_terms = 2
+	}
+	fixed_rank = 3
+	factions = {
+		gv_argentarii
+		gv_imperial_representatives
+		gv_the_people
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_limited_terms = yes
+		has_candidate_bonus = yes
+	}
+	effect = {
+		hidden_effect = {
+			set_variable = {
+				which = election_term
+				value = 1
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			set_variable = {
+				which = election_term
+				value = 1
+			}
+		}
+		clr_ruler_focus_modifiers = yes
+	}
+	post_removed_effect = {
+		clr_ruler_focus_modifiers = yes
+	}
+	duration = 5
+}

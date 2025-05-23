@@ -1,0 +1,73 @@
+# Decisions for either Byzantium, Ottomans or Rum
+
+country_decisions = {
+	
+	t_anatolia_coal_decision = {
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				tag = BYZ
+				tag = ROM
+				tag = WRE
+				tag = TUR
+				tag = RUM
+			}
+			NOT = { has_global_flag = t_anatolian_coal_opened_flag }
+		}
+		provinces_to_highlight = {
+			province_id = 2299
+			province_id = 1846
+			province_id = 2300
+			province_id = 4308
+		}
+		allow = {
+			has_institution = enlightenment
+			current_age = age_of_revolutions
+			adm_power = 200
+			treasury = 4000
+			AND = {
+				owns = 2299
+				owns = 1846
+				owns = 2300
+				owns = 4308
+			}
+		}
+		effect = {
+			add_adm_power = -200
+			add_treasury = -4000
+			2299 = {
+				add_permanent_province_modifier = {
+					name = t_bolu_industrial_area
+					duration = -1
+				}
+			}
+			1846 = {
+				add_permanent_province_modifier = {
+					name = t_bolu_industrial_area
+					duration = -1
+				}
+			}
+			2300 = {
+				add_permanent_province_modifier = {
+					name = t_bolu_industrial_area
+					duration = -1
+				}
+			}
+			4308 = {
+				add_permanent_province_modifier = {
+					name = t_bolu_industrial_area
+					duration = -1
+				}
+			}
+			set_global_flag = t_anatolian_coal_opened_flag
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 400 }
+			}
+		}
+	}
+
+}

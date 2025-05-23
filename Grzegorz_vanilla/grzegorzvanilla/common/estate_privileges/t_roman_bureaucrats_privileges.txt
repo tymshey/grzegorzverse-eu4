@@ -1,0 +1,331 @@
+estate_roman_bureaucrats_advisor = {
+	icon = privilege_empty_throne
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		technology_cost = 0.025
+	}
+	benefits = {
+		advisor_pool = 1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+estate_roman_bureaucrats_governance = {
+	icon = privilege_admin_power
+	land_share = 5
+	max_absolutism = -5
+	loyalty = -0.05
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+		technology_cost = 0.05
+	}
+	benefits = {
+		monthly_reform_progress_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 30 }
+				estate_influence = {
+					estate = estate_roman_bureaucrats
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_roman_bureaucrats_governance }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 35 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 55 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_roman_bureaucrats_governance }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+estate_roman_bureaucrats_economy = {
+	icon = privilege_build_jain_temple
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		technology_cost = 0.025
+	}
+	benefits = {
+		global_tax_modifier = 0.05
+		production_efficiency = 0.05
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			adm = 3
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+estate_roman_bureaucrats_buildings = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		technology_cost = 0.025
+	}
+	benefits = {
+		build_cost = -0.05
+		build_time = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			adm = 3
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+estate_roman_bureaucrats_delegated_power = {
+	icon = privilege_empty_throne
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		technology_cost = 0.025
+	}
+	benefits = {
+		governing_capacity_modifier = 0.1
+		global_unrest = -1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			adm = 3
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+estate_roman_bureaucrats_dev = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		technology_cost = 0.05
+	}
+	benefits = {
+		state_governing_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			adm = 3
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+estate_roman_bureaucrats_themes = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	loyalty = 0.1
+	penalties = {
+		min_autonomy = 15
+	}
+	benefits = {
+		global_unrest = -1
+		defensiveness = 0.15
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_roman_bureaucrats_prosperity = {
+	icon = privilege_grant_autonomy
+	max_absolutism = 0
+	influence = 0
+	loyalty = 0
+	is_valid = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	penalties = {
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		custom_tooltip = t_rome_greek_stability_granted_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					region = balkan_region
+					region = anatolia_region
+				}
+			}
+			add_province_modifier = {
+				name = t_rome_greek_stability
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = t_rome_greek_stability_revoked_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = t_rome_greek_stability
+			}
+			remove_province_modifier = t_rome_greek_stability
+		}
+		if = {
+			limit = {
+				has_province_modifier = t_rome_greek_stability
+			}
+			remove_province_modifier = t_rome_greek_stability
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

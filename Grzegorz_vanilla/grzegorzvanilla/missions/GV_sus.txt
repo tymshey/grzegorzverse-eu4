@@ -1,0 +1,552 @@
+slot_missions_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = SOS
+	}
+	has_country_shield = yes
+	mission_gold_reform = {
+		icon = mission_gold_reform
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		gold = 2
+		}
+		effect = {
+		add_government_reform = Gold_reform
+		hidden_effect = {
+		set_country_flag = gold_reform
+		change_government_reform_progress = 50
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_andalusian_diplomacy = {
+		icon = mission_gold_reform
+		required_missions = {}
+		position = 2
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			OR = {
+				GRA = { exists = no }
+				AND = {
+					SOS = {
+						marriage_with = GRA
+					}
+					GRA = {
+						has_opinion = {
+							who = ROOT 
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { exists = GRA }
+				SOS = { vassalize = GRA }
+				}
+			else = {
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+			}
+			add_country_modifier = {
+				name = professional_army
+				duration = 3650
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	missions_iberian_foothold = {
+		icon = mission_reclaim_andalucia
+		required_missions = { mission_andalusian_diplomacy }
+		position = 3
+		provinces_to_highlight = {
+		OR = {
+			area = upper_andalucia_area
+			area = lower_andalucia_area
+			}
+		}
+		
+		trigger = {
+			SOS = {
+				has_won_war_against = {
+					who = CAS
+					max_years_since = 20
+				}
+			}
+			lower_andalucia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_andalucia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = flavor_SUS.1 } 
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+}
+
+slot_missions_2 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = SOS
+	}
+	has_country_shield = yes
+	
+	    missions_reclaim_capital = {
+		icon = mission_african_gold
+		required_missions = { missions_northern_expansion }
+		position = 2
+		provinces_to_highlight = {
+		area = tafilalt_area
+		}
+		
+		trigger = {
+			tafilalt_area = {
+				type = all
+				owned_by = ROOT
+				}
+			346 = {	num_of_times_improved_by_owner = 10	}
+		}
+		effect = {
+		346 = {add_base_production = 4}
+			set_capital = 346
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_splendor = 100
+		346 = {
+		add_province_modifier = {
+				name = Expanded_Gold_mine
+				duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	missions_algerian_coastline = {
+		icon = mission_african_gold
+		required_missions = { missions_restoration_in_tafilat
+								missions_iberian_foothold}
+		position = 4
+		provinces_to_highlight = {
+		OR = {
+		area = hautes_plaines_area
+		area = barbary_coast_area
+		area = algiers_area
+			}
+		}
+		
+		trigger = {
+			hautes_plaines_area = {
+					type = all
+					owned_by = ROOT
+				}
+			barbary_coast_area = {
+					type = all
+					owned_by = ROOT
+				}
+			algiers_area = {
+					type = all
+					owned_by = ROOT
+				}
+		}
+		effect = {
+		ouled_nail_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		kabylia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		north_saharan_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		tunisia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		djerba_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		add_country_modifier = {
+		name = Algerian_Pirates
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	missions_sicilian_brothers = {
+		icon = mission_moroccan_ports
+		required_missions = { missions_algerian_coastline }
+		position = 5
+		
+		trigger = {
+		ouled_nail_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		kabylia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		north_saharan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		djerba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		if = {
+		limit = {
+		exists = SIC
+				}
+		create_subject = {
+		subject_type = sus_vassal
+		subject = SIC
+				}	
+			}
+		else = {
+		western_sicily_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		sicily_area = {
+				add_permanent_claim = ROOT
+				type = all
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+slot_missions_3 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = SOS
+	}
+	has_country_shield = yes
+	
+	missions_northern_expansion = {
+		icon = mission_moroccan_ports
+		position = 1
+		
+		trigger = {
+			all_subject_country = { NOT = { liberty_desire = 10 } }
+		}
+		effect = {
+			# SOS = {inherit = Z4O} # NIE MA TEGO TAGU W WERSJI GRZEGORZ VANILLA !
+			add_country_modifier = {
+				name = Centralization_Of_Power
+				duration = 18250
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_build_up_ports = {
+		icon = mission_moroccan_ports
+		required_missions = {missions_northern_expansion}
+		position = 2
+		provinces_to_highlight = {
+		province_id = 1110
+		}
+		
+		trigger = {
+		province_has_center_of_trade_of_level = 2
+		1110 = {development = 20}
+		1110 = {num_of_times_expanded_infrastructure = 1}
+		1110 = {has_building = marketplace}
+		}
+		effect = {
+		1110 = {add_center_of_trade_level = 1}
+		1110 = {
+		add_province_modifier = {
+		name = Port_of_Agadir
+		duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	 missions_restoration_in_tafilat = {
+		icon = mission_african_gold
+		required_missions = { mission_build_up_ports }
+		position = 3
+		provinces_to_highlight = {
+		OR = {
+		province_id = 2469
+		province_id = 4564
+		province_id = 2468
+		province_id = 344
+			}
+		}
+		
+		trigger = {
+			TFL = {trust = { who = SOS value = 90 }}
+			TFL = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+				}
+			}
+		}
+		effect = {
+		SOS = { inherit = TFL }
+		add_country_modifier = {
+		name = Honey_taxes 
+		duration = 3650
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	missions_integration_of_morroco = {
+		icon = mission_african_gold
+		required_missions = { missions_restoration_in_tafilat }
+		position = 4
+		provinces_to_highlight = {
+		OR = {
+		area = northern_morocco_area
+		area = western_morocco_area
+			}
+		}
+		
+		trigger = {
+			northern_morocco_area = {
+					type = all
+					owned_by = ROOT
+				}
+			western_morocco_area = {
+					type = all
+					owned_by = ROOT
+				}
+		}
+		effect = {
+		northern_morocco_area = {add_random_development = 5}
+		northern_morocco_area = { add_local_autonomy = -50 }
+		western_morocco_area = {add_random_development = 5}
+		western_morocco_area = { add_local_autonomy = -50 }
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+slot_missions_4 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = SOS
+	}
+	has_country_shield = yes
+		
+	    missions_bring_renesaunce = {
+		icon = bibliotheca_corviana
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			is_institution_enabled = renaissance
+			share_of_starting_income = 2
+			NOT = { num_of_loans = 1 }
+			NOT = { corruption = 1 }
+			is_bankrupt = no
+			is_in_deficit = no
+		}
+		effect = {
+		348 = {
+		add_institution_embracement = {
+				which = renaissance
+				value = 100
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	missions_Islamic_knowledge = {
+		icon = quran_mission
+		required_missions = { missions_bring_renesaunce }
+		position = 2
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		religious_unity = 0.9
+		is_defender_of_faith = yes
+		}
+		effect = {
+		add_country_modifier = {
+		name = Islamic_knowledge 
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_arguin_outpost = {
+		icon = mission_moroccan_ports
+		required_missions = {mission_build_up_ports}
+		position = 2
+		provinces_to_highlight = {
+		province_id = 1111
+		}
+		
+		trigger = {
+		owns = 1111
+		}
+		effect = {
+		1111 = {add_center_of_trade_level = 1}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	mission_discover_the_caraibean = {
+		icon = mission_moroccan_ports
+		required_missions = {mission_arguin_outpost}
+		position = 5
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		has_discovered = 492
+		}
+		effect = {
+		create_conquistador = { tradition = 100 }
+		add_country_modifier = {
+		name = Colonial_ambitions
+		duration = 14600
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	
+}
+
+
+slot_missions_5 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = SOS
+	}
+	has_country_shield = yes
+	
+	missions_iberian_trade = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { missions_bring_renesaunce }
+		position = 2
+		provinces_to_highlight = {
+		
+		}
+		
+		trigger = {
+		owns = 334
+		334 = {
+		province_has_center_of_trade_of_level = 3
+		}
+		334 = {
+		light_ships_in_province = 20
+			}
+		owns = 1749
+		1749 = {
+		province_has_center_of_trade_of_level = 3
+		}
+		1749 = {
+		light_ships_in_province = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+			name = iberian_trade
+			duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	mission_african_hub = {
+		icon = mission_moroccan_ports
+		required_missions = {mission_arguin_outpost}
+		position = 4
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		num_of_owned_provinces_with = {
+		value = 5
+		region = guinea_region
+			}
+		}
+		effect = {
+		add_country_modifier = {
+		name = African_Trade
+		duration = 10950
+				}
+			}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}

@@ -1,0 +1,341 @@
+# added by tymshey
+
+song = {
+	name = "nightwatch"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}		
+	}
+}
+
+song = {
+	name = "thesiege"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "streetsofconstantinople"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.25
+			owns = 151
+		}	
+	}
+}
+
+song = {
+	name = "theforum"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.25
+			owns = 151
+		}
+		modifier = {
+			factor = 1.25
+			owns = 118
+		}
+	}
+}
+
+song = {
+	name = "debellogallico"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+	modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "soundthecornu"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+	modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "queenofcities"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "civilwar"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+	modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "triumph"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+	modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "augustus"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "siegeoftime"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "warcry"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "thefalleneagle"
+	
+	chance = {
+		modifier = {
+			factor = 1.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "constantinople2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "queenofcities2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "alesia"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "ave"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "besieged"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "bronze"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}
+
+song = {
+	name = "thecompanions"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			tag = BYZ
+		}
+		modifier = {
+			factor = 1
+			tag = ROM
+		}	
+	}
+}

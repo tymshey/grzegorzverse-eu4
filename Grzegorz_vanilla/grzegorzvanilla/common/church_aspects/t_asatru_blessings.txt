@@ -1,0 +1,54 @@
+t_asatru_blessing_1 = {
+	is_blessing = yes
+
+	modifier = {
+		land_forcelimit_modifier = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+t_asatru_blessing_2 = {
+	is_blessing = yes
+
+	modifier = {
+		manpower_recovery_speed = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+t_asatru_blessing_3 = {
+	is_blessing = yes
+
+	modifier = {
+		production_efficiency = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+t_asatru_blessing_4 = {
+	is_blessing = yes
+
+	modifier = {
+		galley_power = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+t_asatru_blessing_5 = {
+	is_blessing = yes
+
+	modifier = {
+		leader_land_shock = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

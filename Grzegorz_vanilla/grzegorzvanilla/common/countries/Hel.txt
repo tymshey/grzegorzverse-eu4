@@ -1,0 +1,92 @@
+ck2_converter_generated = no
+graphical_culture = westerngfx
+color = { 41 164 217 }
+revolutionary_colors = { 8 1 8 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	trade_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Kieubasiarz #0" = 10
+	"Karakanow #0" = -1
+	"Wolk #0" = 15
+	"Undoneartist #0" = 0
+	"Tomekirys #0" = 10
+	"Czejs #0" = -1
+	"Stefan Prace #0" = 10
+	"Adolf Hitler #0" = 10
+	"Samuel #0" = 100
+	"xHyper #0" = 10
+	"EmeraldK #1" = 5
+	"Coftee #0" = 0
+	"Ahrii #0" = -1
+	"Zgredo #0" = 10
+	"Mikicreator #6" = 15
+	"Reinhard #3" = 10
+	"Grzegorz #0" = 0
+	"Pajti #0" = 0
+	"Bajzyl #0" = 15
+	"Egyda #0" = 10
+	"Bartazik #0" = 20
+	"Mlecz #0" = 20
+	"Tepdi #2" = 80
+	"Kutasior #0" = 15
+	"Nigger #0" = 15
+	"Grzegorz Floryd #0" = 10
+	"Siusiaczek #0" = 0
+	"Retard #0" = 10
+	"Perhunter #0" = 10
+	"Warandroid #0" = 20
+	"Tepda³ #0" = 20
+	"Sracus #0" = 20
+	"Zgredus #0" = 0
+	"Siuros #0" = 10
+	"Rozpierdalacz440 #2" = 20
+	"Tymekirys #0" = 0
+	"SUYR #1" = 10
+	"emenems #0" = 10
+}
+leader_names = {
+	"Ódzinvik"
+}
+ship_names = {
+	"Lapis bomba"
+	"Epstein"
+	"Puck"
+	"Trojmiasto"
+	"Siuras"
+	"Kutas"
+	"Osuszacz"
+	"Wengorz"
+	"Upadupa"
+	"Seks"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}
+fleet_names = {
+	"Stadtflotte"
+}

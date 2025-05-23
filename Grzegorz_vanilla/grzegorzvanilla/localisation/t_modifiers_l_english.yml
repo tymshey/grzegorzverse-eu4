@@ -1,0 +1,246 @@
+﻿l_english:
+
+ # Country Modifiers
+ 
+ gv_educating_heir:0 "Educating Heir"
+ 
+ t_edu_economy_studies:0 "Symposium: Economy Studies"
+ t_edu_natural_studies:0 "Symposium: Natural Sciences Studies"
+ t_edu_law_studies:0 "Symposium: Law Studies"
+ 
+ t_argentarii_1_modifier:0 "Argentarii Dominance"
+ t_argentarii_2_modifier:0 "No Control Over The Argentarii"
+ t_argentarii_3_modifier:0 "Loose Control Over The Argentarii"
+ t_argentarii_4_modifier:0 "Average Control Over The Argentarii"
+ t_argentarii_5_modifier:0 "Strong Control Over The Argentarii"
+ t_argentarii_6_modifier:0 "Unfathomable Control Over The Argentarii"
+ 
+ t_india_trade_company:0 "Coetus Romae Indea"
+ t_indochina_trade_company:0 "Coetus Romae Indosinae"
+ t_malaysia_trade_company:0 "Coetus Romae Indonesia"
+ t_roman_foreign_trade_company:0 "Coetus Romae Commerciae" # CRC !!!!
+ 
+ t_roman_support:0 "Roman Support"
+ 
+ t_krakow_modifier:0 "The City of Greatness"
+ 
+ t_per_army_reform:0 "Army Worthy of Grzegorz"
+ t_warhammer_modifier:0 "The Warhammer"
+ t_persia_universities:0 "Universities of Grzegorz"
+ t_grzegorz_colonists:0 "Grzegorzian Colonists"
+ t_per_colonial_nation:0 "New Gównograd"
+ t_per_many_colonial_nations:0 "A Colonial Empire"
+ t_sinogrzegorz_modifier:0 "Assyro-Chinese Empire"
+ t_per_core_creation_cost_modifier:0 "Grzegorzian Ambitions"
+ t_zoroastrian_assembly:0 "Religious Assembly Called"
+ t_sacred_fires_lit:0 "Sacred Fires Lit"
+ t_per_unrest_buff:0 "Grzegorzian Approach to Natives"
+ t_per_unrest_buff_desc:0 "turns out persia needs that unrest decrease"
+ 
+ t_ger_empire_modifier:0 "A Germanic Empire"
+ t_theodland_crown_of_germany_modifier:0 "Crown of Germany"
+ t_fur_den_kaiser:0 "Fur Den Kaiser, Gott, Und Vaterland!"
+ t_theodland_defeated_austria:0 "The Empire Secured"
+ t_austria_defeated_theodland:0 "A New Imperial Age"
+ 
+ t_lat_the_dark_menace:0 "The Dark Menace"
+ t_lat_new_hope:0 "New Hope"
+ t_lat_sword_of_justice:0 "The Sword of Justice"
+ 
+ t_allow_marines:0 "Marines"
+ t_invoke_devotio_modifier:0 "Devotio"
+ t_deus_vult_modifier:0 "Crusade for Survival"
+ t_jerusalem_intolerance:0 "Intolerance"
+ t_jerusalem_settlers:0 "Catholic Settlers"
+ t_jerusalem_conversion:0 "Subsidizing Missionaries"
+ t_jerusalem_true_faith:0 "True Faith"
+ t_jerusalem_religious_freedom:0 "Religious Freedom"
+ t_jerusalem_production_boost:0 "Production Increase"
+ t_jerusalem_mass_production:0 "Mass Monastic Production"
+ t_jerusalem_settlers_2:0 "Catholic Settlers: Missionaries"
+ t_koj_cairo_captured:0 "Onward, to Victory!"
+ t_koj_cairo_captured_2:0 "Cairo Captured!"
+ 
+ t_ibrahim_ibn_yaqub_works:0 "Lost Works of Ibrahim ibn Yaqub"
+ t_brilliant_advisor:0 "Brilliant Advisor"
+ t_political_turmoil:0 "Political Turmoil"
+ gv_wagner_buff:0 "A Private Army with a State"
+ gv_wagner_buff_desc:0 "Our army is private property of the Chief, inherited on succession. The ruling dynasty uses their fortune to fund the army's loyalty, but the origin of that wealth remains unknown. Possibly, they recieve their wealth from a foreign power who uses the Chief as a tool to keep the region divided."
+ t_godmode:0 "Godmode"
+ 
+ t_chess:0 "Chess Culture"
+ t_fra_quest_for_the_new_world:0 "Quest for the New World"
+ t_fra_colonial_empire:0 "French Colonial Empire"
+ t_fra_colonial_empire_2:0 "French Colonial Empire"
+ t_fra_colonial_empire_3:0 "French Colonial Empire"
+ 
+ t_london_stock_exchange:0 "London Stock Exchange"
+ eng_the_redcoat_2:0 "The Redcoats"
+ t_england_conversion_modifier:0 "Convert the Isles"
+ t_england_army_reform:0 "Lord Protector's Army Reform"
+ gv_eng_decade_of_prosperity_improved:0 "Decade of Magnificent Prosperity"
+ gv_eng_decade_of_prosperity:0 "Decade of Prosperity"
+ 
+ t_judeoborea_buff:0 "Jews of the North"
+ t_judeoborea_boreal_forests:0 "The Boreal Forests"
+ t_judeoborea_our_place:0 "Our Place"
+ t_judeoborea_dominating_baltic_trade:0 "Dominating Baltic Trade"
+ t_judeoborea_ascendant:0 "Judeoborea Ascendant"
+ 
+ t_tax_increase_modifier:0 "Tax Increase"
+ t_civ_austerity:0 "Civilian Austerity"
+ t_eco_census:0 "Population Census"
+ 
+ t_judean_alaska_modifier:0 "Judean Alaska"
+ t_judean_central_asia:0 "Judean Central Asia"
+ t_judeoborea_preparing_to_invade_poland:0 "Preparing to Invade Poland"
+ t_judeoborea_victorious_modifier:0 "Archgoy Trembles"
+ t_judeo_aryan_ideal:0 "Judeo-Aryan Ideal"
+ t_judeoborea_cleansing_the_forests:0 "Cleansing The Forests"
+ t_judeoborea_the_means:0 "The Means"
+ 
+ t_caliphate_beaten_but_not_defeated_modifier:0 "Beaten, But Not Defeated"
+ t_sword_of_islam:0 "Sword of Islam"
+ t_custodian_of_the_holy_cities:0 "Custodian of The Holy Cities"
+ 
+ t_hyperborea_buff:0 "The Northern Wind"
+ t_lechia_muscovy_defeated:0 "Muscovy Defeated"
+ t_lechia_cavalry_1:0 "Lechite Horsemen"
+ t_lechia_cavalry_2:0 "Lechite Horsemen"
+ t_lechia_cavalry_3:0 "Lechite Horsemen"
+ t_lechia_cavalry_4:0 "Lechite Horsemen"
+ t_lechia_consolidated_power:0 "Consolidated Power"
+ t_lechia_culture_conversion_buff:0 "With Sword and Fire"
+ 
+ gv_famine_neglected:0 "Famine Neglected"
+
+ # Province Modifiers
+ 
+ gbr_british_rule_2:0 "British Rule"
+ t_eng_global_empire_act:0 "Global Empire Act"
+ 
+ gv_krakow_capital:0 "The Old Capital"
+ gv_warszawa_capital:0 "The New Capital"
+ 
+ t_lat_plague:0 "The Plague"
+ t_lat_new_capital:0 "The New Capital"
+ t_lat_aftermath:0 "The Aftermath"
+ t_lat_not_returning_to_rome:0 "Not Returning to Rome"
+ t_florence_paper:0 "Florentine Paper Manufactory"
+ t_lat_to_ensure_stability:0 "To Ensure Stability"
+ t_jupiter_optimus_maximus:0 "Aedes Jupiter Optimus Maximus"
+ 
+ t_augsburg_modifier:0 "Roman Free City of Aounksmpournk"
+ t_augsburg_modifier_desc:0 "Aounksmpournk or Augsburg in German was a free city under the protection of the Roman Empire for more than 200 years."
+ 
+ t_z01_amsterdam_port:0 "The Port of Amsterdam"
+ t_z01_berg_emporium:0 "The Berg Emporium"
+ t_theodland_eisen_und_kohle_modifier:0 "Eisen Und Kohle"
+ t_humboldt:0 "Humboldt University"
+ 
+ t_per_house_of_wisdom:0 "The House of Wisdom"
+ t_per_forum_of_grzegorz:0 "The Memorial of Grzegorz"
+ t_per_capital_irrigation:0 "Gównograd Irrigation System"
+ t_per_capital_canals:0 "The Euphrates-Tigris Canal"
+ t_persia_capital_mission_boost:0 "Grzegorzian Capital"
+ t_per_afghan_forts:0 "Afghan Forts of Grzegorz"
+ t_per_production_boost:0 "Veins of Persia"
+ t_per_tikka_uygurica:0 "Tikka Uygurica"
+ t_persian_slave_industry:0 "Persian Slave Industry"
+ t_per_makkah_modifier:0 "Makkah Captured in the Name of Grzegorz"
+ t_per_tolerance_modifier:0 "Religious Homogeneity"
+ t_fire_temple_of_constantinople:0 "A Temple of Fire in the Eternal City"
+ t_slave_production_bonus:0 "Sect Exploitation Rights"
+ t_per_bengal_conquest_modifier:0 "Grzegorz in Bengal"
+ t_per_guangzhou_modifier:0 "Sea Entrance to China"
+ t_per_river_of_life:0 "The River of Life"
+ t_per_new_gownograd:0 "The New City"
+ t_per_development_of_tibet:0 "Development of Tibet"
+ gv_semnan_gems:0 "Semnan Gems"
+ gv_semnan_gems_desc:0 "Legends tell us that the magnificent gem mines in Semnan were founded by Grzegorz himself. Though the excavation site most likely preceedes Grzegorz by a few centuries, the story is good for marketing."
+ gv_persia_growth_of_gownograd:0 "Growth of Gównograd"
+ gv_persia_growth_of_gownograd_desc:0 "The Grzegorzian capital is recieving an influx of traders and businessmen from all across our newly acquired and reconquered lands."
+ gv_influx_of_traders:0 "Influx of Islamic Traders"
+ gv_persian_port_of_thatta:0 "Grzegorzian Port of Thatta"
+ gv_persian_port_of_thatta_desc:0 "Thatta is a major port and a hub for Persian commerce in India."
+ 
+ t_sacred_fire_modifier:0 "Zoroastrian Sacred Fire"
+ t_sacred_fire_modifier_desc:0 "This province houses a Zoroastrian Sacred Fire."
+ t_zoroastrian_sacred_fire_modifier:0 "Zoroastrian Sacred Fire"
+ t_zoroastrian_sacred_fire_modifier_desc:0 "This province houses a Zoroastrian Sacred Fire."
+ 
+ t_child_of_grzegorz:0 "Child of Grzegorz"
+ t_oman_sacred_fire:0 "The Sacred Fire"
+ t_servant_of_ahura_mazda:0 "Servant of Ahura Mazda"
+ t_qawasim_trade_hub:0 "Qawasim Trade Hub"
+ t_oman_dominating_trade:0 "Dominating Gulf Trade"
+ t_oman_fertile_desert_modifier:0 "The Fertile Desert"
+ t_omani_trade_post:0 "Omani Trade Post"
+ 
+ t_sack_of_jerusalem_modifier:0 "Sack of Jerusalem"
+ t_hel_iron_mines:0 "Hel Iron Mines"
+ t_noah_ark_modifier:0 "Noah's Ark"
+ t_jerusalem_unrest_modifier:0 "Crusader Rule"
+ t_jerusalem_trade_modifier:0 "Trade in the Holy City"
+ t_jerusalem_order_modifier:0 "Catholic Order"
+ t_crusaders_control_mecca:0 "Crusaders in Mecca"
+ t_rybnik:0 "Tower of Rybnik"
+ t_jerusalem_colonial:0 "Colonial Enthusiasm"
+ t_odessa_modifier:0 "City of Odessa"
+ t_odessa_modifier_desc:0 "We are coming."
+ t_inhospitable_wasteland:0 "Inhospitable Wasteland"
+ t_judeoborean_golden_mountain:0 "The Golden Mountain"
+ t_judean_krakow:0 "The Great Casimirus"
+ t_judean_pacific_port:0 "The Judean Pacific Port"
+ t_judea_new_zion:0 "New Zion"
+ t_judeoaryan_homeland:0 "Judeoaryan Homeland"
+ t_hyperborean_colony:0 "Hyperborean Settlement"
+ 
+ t_caliphal_coffee_plantations:0 "Caliphal Coffee Plantations"
+ 
+ t_good_iron:0 "High Quality Iron"
+ t_good_iron_desc:0 "This province contains iron ore deposits of exceptionally good quality."
+ 
+ t_major_hansa_city:0 "Major Hanseatic City"
+ t_major_hansa_city_desc:0 "This city is one of the founders of the Hanseatic League. It is absolutely crucial for the League to hold this city, to keep their business afloat."
+ t_important_hansa_city:0 "Important Hanseatic City"
+ t_important_hansa_city_desc:0 "This city is very important to the Hanseatic League."
+ t_minor_hansa_city:0 "Minor Hanseatic City"
+ t_minor_hansa_city_desc:0 "This city is a member of the Hanseatic League."
+ 
+ gv_mild_famine:0 "Mild Famine"
+ gv_mild_famine_desc:0 "This province is severely affected by a famine."
+ gv_mild_famine_marker:0 "Mild Famine (Map Marker)"
+ 
+ gv_severe_famine:0 "Severe Famine"
+ gv_severe_famine_desc:0 "This province is severely affected by a famine."
+ gv_severe_famine_marker:0 "Severe Famine (Map Marker)"
+ 
+ # Triggered modifiers
+ 
+ t_german_kiev:0 "The Old Capital"
+ t_german_kiev_desc:0 "Konugardr was the capital of Theodland for hundreds of years. Regaining it after centuries will certainly have a positive effect for the old dukes of Anhalt."
+ 
+ t_muscat_modifier:0 "City of Muscat"
+ t_muscat_modifier_desc:0 ""
+ 
+ t_russian_antiragequit:0 "The Land of Turmoil"
+ t_russian_antiragequit_desc:0 "We have to be viciously brutal when countering unrest in order to avoid excessive rebellions from our diverse subjects."
+ 
+ t_african_primitives:0 "African Primitives"
+ t_african_primitives_desc:0 ""
+ 
+ t_east_african_primitives:0 "East African Primitives"
+ t_east_african_primitives_desc:0 ""
+ 
+ t_indian_primitives:0 "Indian Primitives"
+ t_indian_primitives_desc:0 ""
+ 
+ gv_asian_institution_debuff:0 "Asian Institution Handicap"
+ gv_asian_institution_debuff_desc:0 "Institution spread is way too fast and unrealistic."
+ 
+ gv_global_institution_debuff:0 "Global Institution Handicap"
+ gv_global_institution_debuff_desc:0 "Institution spread is way too fast and unrealistic."
+ 
+ gv_interest_buff:0 "Early Interest"
+ gv_interest_buff_desc:0 "The Jews are more merciful for now."

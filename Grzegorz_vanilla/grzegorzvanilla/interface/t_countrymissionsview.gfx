@@ -1,0 +1,248 @@
+spriteTypes = {	
+	spriteType = {
+		name = "mission_t_byzantine_flag"
+		texturefile = "gfx//interface//missions//mission_t_byzantine_flag.dds"
+	}
+	spriteType = {
+		name = "mission_romuva"
+		texturefile = "gfx//interface//missions//mission_romuva.dds"
+	}
+	spriteType = {
+		name = "mission_cloth"
+		texturefile = "gfx//interface//missions//mission_cloth.dds"
+	}
+	spriteType = {
+		name = "Italian_Outposts"
+		texturefile = "gfx//interface//missions//Italian_Outposts.dds"
+	}
+	spriteType = {
+		name = "quran_mission"
+		texturefile = "gfx//interface//missions//quran_mission.dds"
+	}
+	spriteType = {
+		name = "mission_jewish_state"
+		texturefile = "gfx//interface//missions//mission_jewish_state.dds"
+	}
+	spriteType = {
+		name = "mission_gold_reform"
+		texturefile = "gfx//interface//missions//mission_gold_reform.dds"
+	}
+	spriteType = {
+		name = "mission_west_riches"
+		texturefile = "gfx//interface//missions//mission_west_riches.dds"
+	}
+	spriteType = {
+		name = "mission_t_chi_rho_flag"
+		texturefile = "gfx//interface//missions//mission_t_chi_rho_flag.dds"
+	}
+	spriteType = {
+		name = "mission_t_chi_ro_soldier"
+		texturefile = "gfx//interface//missions//mission_t_chi_ro_soldier.dds"
+	}
+	spriteType = {
+		name = "mission_t_forum"
+		texturefile = "gfx//interface//missions//mission_t_forum.dds"
+	}
+	spriteType = {
+		name = "mission_t_forum_2"
+		texturefile = "gfx//interface//missions//mission_t_forum_2.dds"
+	}
+	spriteType = {
+		name = "mission_t_imperator"
+		texturefile = "gfx//interface//missions//mission_t_imperator.dds"
+	}
+	spriteType = {
+		name = "mission_t_imperial_throne"
+		texturefile = "gfx//interface//missions//mission_t_imperial_throne.dds"
+	}
+	spriteType = {
+		name = "mission_t_pagan_religious_rite"
+		texturefile = "gfx//interface//missions//mission_t_pagan_religious_rite.dds"
+	}
+	spriteType = {
+		name = "mission_t_road_construction_ancient"
+		texturefile = "gfx//interface//missions//mission_t_road_construction_ancient.dds"
+	}
+	spriteType = {
+		name = "mission_t_roman_legions"
+		texturefile = "gfx//interface//missions//mission_t_roman_legions.dds"
+	}
+	spriteType = {
+		name = "mission_t_roman_market"
+		texturefile = "gfx//interface//missions//mission_t_roman_market.dds"
+	}
+	spriteType = {
+		name = "mission_t_roman_plunder"
+		texturefile = "gfx//interface//missions//mission_t_roman_plunder.dds"
+	}
+	spriteType = {
+		name = "mission_t_roman_ship_mosaic"
+		texturefile = "gfx//interface//missions//mission_t_roman_ship_mosaic.dds"
+	}
+	spriteType = {
+		name = "mission_t_senate"
+		texturefile = "gfx//interface//missions//mission_t_senate.dds"
+	}
+	spriteType = {
+		name = "mission_t_senate_2"
+		texturefile = "gfx//interface//missions//mission_t_senate_2.dds"
+	}
+	spriteType = {
+		name = "mission_t_spqr_flag"
+		texturefile = "gfx//interface//missions//mission_t_spqr_flag.dds"
+	}
+	spriteType = {
+		name = "mission_t_aegean_map"
+		texturefile = "gfx//interface//missions//mission_t_aegean_map.dds"
+	}
+	spriteType = {
+		name = "mission_t_hagia_sophia"
+		texturefile = "gfx//interface//missions//mission_t_hagia_sophia.dds"
+	}
+	spriteType = {
+		name = "mission_t_parthenon"
+		texturefile = "gfx//interface//missions//mission_t_parthenon.dds"
+	}
+	spriteType = {
+		name = "mission_t_der_judeoboreische_student"
+		texturefile = "gfx//interface//missions//mission_t_der_judeoboreische_student.dds"
+	}
+	spriteType = {
+		name = "mission_byzantium_rise_of_the_phoenix"
+		texturefile = "gfx//interface//missions//mission_byzantium_rise_of_the_phoenix.dds"
+	}
+	spriteType = {
+		name = "mission_t_roman_empire_coa"
+		texturefile = "gfx//interface//missions//mission_t_roman_empire_coa.dds"
+	}
+	spriteType = {
+		name = "coffee_cup"
+		texturefile = "gfx//interface//missions//coffee_cup.dds"
+	}
+	spriteType = {
+		name = "cradle_of_civilization"
+		texturefile = "gfx//interface//missions//cradle_of_civilization.dds"
+	}
+	spriteType = {
+		name = "hanging_gardens"
+		texturefile = "gfx//interface//missions//hanging_gardens.dds"
+	}
+	spriteType = {
+		name = "mediterranean_city"
+		texturefile = "gfx//interface//missions//mediterranean_city.dds"
+	}
+	spriteType = {
+		name = "northern_fighters"
+		texturefile = "gfx//interface//missions//northern_fighters.dds"
+	}
+	spriteType = {
+		name = "northern_forest"
+		texturefile = "gfx//interface//missions//northern_forest.dds"
+	}
+	spriteType = {
+		name = "northern_city"
+		texturefile = "gfx//interface//missions//northern_city.dds"
+	}
+	spriteType = {
+		name = "golden_horde_mission"
+		texturefile = "gfx//interface//missions//golden_horde_mission.dds"
+	}spriteType = {
+		name = "great_library_mission"
+		texturefile = "gfx//interface//missions//great_library_mission.dds"
+	}
+	spriteType = {
+		name = "mountain_terrain"
+		texturefile = "gfx//interface//missions//mountain_terrain.dds"
+	}
+	spriteType = {
+		name = "siberian_terrain"
+		texturefile = "gfx//interface//missions//siberian_terrain.dds"
+	}
+	spriteType = {
+		name = "star_of_david_mission"
+		texturefile = "gfx//interface//missions//star_of_david_mission.dds"
+	}
+	spriteType = {
+		name = "rome_city"
+		texturefile = "gfx//interface//missions//rome_city.dds"
+	}
+	spriteType = {
+		name = "northern_italia"
+		texturefile = "gfx//interface//missions//northern_italia.dds"
+	}
+	spriteType = {
+		name = "roman_calendar"
+		texturefile = "gfx//interface//missions//roman_calendar.dds"
+	}
+	spriteType = {
+		name = "mission_assyria"
+		texturefile = "gfx//interface//missions//mission_assyria.dds"
+	}
+	spriteType = {
+		name = "mission_forest"
+		texturefile = "gfx//interface//missions//mission_forest.dds"
+	}
+	spriteType = {
+		name = "mission_forum_3"
+		texturefile = "gfx//interface//missions//mission_forum_3.dds"
+	}
+	spriteType = {
+		name = "mission_greek_city"
+		texturefile = "gfx//interface//missions//mission_greek_city.dds"
+	}
+	spriteType = {
+		name = "mission_jerusalem"
+		texturefile = "gfx//interface//missions//mission_jerusalem.dds"
+	}
+	spriteType = {
+		name = "mission_latin"
+		texturefile = "gfx//interface//missions//mission_latin.dds"
+	}
+	spriteType = {
+		name = "mission_latin_writer"
+		texturefile = "gfx//interface//missions//mission_latin_writer.dds"
+	}
+	spriteType = {
+		name = "mission_legionaries"
+		texturefile = "gfx//interface//missions//mission_legionaries.dds"
+	}
+	spriteType = {
+		name = "mission_senator"
+		texturefile = "gfx//interface//missions//mission_senator.dds"
+	}
+	spriteType = {
+		name = "mission_sun"
+		texturefile = "gfx//interface//missions//mission_sun.dds"
+	}
+	spriteType = {
+		name = "mission_sunrise"
+		texturefile = "gfx//interface//missions//mission_sunrise.dds"
+	}
+	spriteType = {
+		name = "mission_sunset"
+		texturefile = "gfx//interface//missions//mission_sunset.dds"
+	}
+	spriteType = {
+		name = "mission_two_rivers"
+		texturefile = "gfx//interface//missions//mission_two_rivers.dds"
+	}
+	spriteType = {
+		name = "mission_venice"
+		texturefile = "gfx//interface//missions//mission_venice.dds"
+	}
+	spriteType = {
+		name = "mission_grzegorz"
+		texturefile = "gfx//interface//missions//mission_grzegorz.dds"
+	}
+	spriteType = {
+		name = "maghreb_expansion"
+		texturefile = "gfx//interface//missions//maghreb_expansion.dds"
+	}
+	spriteType = {
+		name = "path_to_india"
+		texturefile = "gfx//interface//missions//path_to_india.dds"
+	}
+	spriteType = {
+		name = "western_expansion"
+		texturefile = "gfx//interface//missions//Western_Expansion.dds"
+	}

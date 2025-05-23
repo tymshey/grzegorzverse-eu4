@@ -1,0 +1,64 @@
+estate_Jerusalem_Crusaders = {
+	icon = 16
+	color = { 235 235 235 }
+	
+	trigger = {
+		OR = {
+			tag = KOJ
+		}
+	}
+	
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		all_power_cost = -0.05
+		development_cost = -0.05
+	}
+	country_modifier_neutral = {
+		all_power_cost = -0.05
+	}	
+	country_modifier_angry = {
+		development_cost = 0.2
+		global_unrest = 5
+	}
+	
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {	
+		desc = EST_HIGH_DEVELOPMENT_PROVINCE
+		trigger = {
+			any_owned_province = {
+				development = 30
+			}
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	privileges = {
+		estate_burghers_land_rights
+		# gruby co ty odpierdalasz
+	}
+	
+	agendas = {
+		estate_burghers_develop_x
+		estate_burghers_build_trade_building_in_y
+		estate_burghers_build_port_building_in_y
+		estate_burghers_build_production_building_in_y
+		estate_burghers_build_university_in_y
+		estate_burghers_build_manufactory_in_y
+		estate_burghers_pay_off_loans
+	}
+	
+	influence_from_dev_modifier = 1.0
+}

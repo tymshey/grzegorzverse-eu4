@@ -1,0 +1,50 @@
+estate_roman_bureaucrats = {
+	modifier_definition = {
+		type = loyalty
+		key = roman_bureaucrats_loyalty_modifier
+		trigger = {
+			has_estate = estate_roman_bureaucrats
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = roman_bureaucrats_influence_modifier
+		trigger = {
+			has_estate = estate_roman_bureaucrats
+		}
+	}
+}
+
+estate_persian_sects = {
+	modifier_definition = {
+		type = loyalty
+		key = persian_sects_loyalty_modifier
+		trigger = {
+			has_estate = estate_persian_sects
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = persian_sects_influence_modifier
+		trigger = {
+			has_estate = estate_persian_sects
+		}
+	}
+}
+
+estate_jews = {
+	modifier_definition = {
+		type = loyalty
+		key = jews_loyalty_modifier
+		trigger = {
+			has_estate = estate_jews
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = jews_influence_modifier
+		trigger = {
+			has_estate = estate_jews
+		}
+	}
+}

@@ -1,0 +1,41 @@
+﻿l_english:
+
+ # Missions
+
+ mge_consolidate_state_title:0 "Consolidate The State"
+ mge_consolidate_state_desc:0 ""
+ mge_conquest_bohemia_title:0 "Bohemian Conquest"
+ mge_conquest_bohemia_desc:0 ""
+ mge_sukiennice_krakowskie_title:0 "The Krakow Cloth Hall"
+ mge_sukiennice_krakowskie_desc:0 ""
+ mge_rozwiazanie_kwestii_polskiej_title:0 "The Polish Question"
+ mge_rozwiazanie_kwestii_polskiej_desc:0 ""
+ mge_dew_dew_jew_wicher_title:0 "Dev Dev Jew"
+ mge_dew_dew_jew_wicher_desc:0 ""
+ mge_legacy_of_slowak_unrest_title:0 "Addressing the Slovak Unrest"
+ mge_legacy_of_slowak_unrest_desc:0 ""
+ mge_mogeyro-mongol_title:0 "Mogyero-Mongolia"
+ mge_mogeyro-mongol_desc:0 ""
+ mge_dev_mohol_title:0 "Develop the Countryside"
+ mge_dev_mohol_desc:0 ""
+ mge_conquest_the_rus_title:0 "Conquer The Rus"
+ mge_conquest_the_rus_desc:0 ""
+ mge_feed_the_horse_title:0 "Feed The Horse"
+ mge_feed_the_horse_desc:0 ""
+ mge_caucasian_dual_god_title:0 "The Dual God of Caucasia"
+ mge_caucasian_dual_god_desc:0 ""
+ mge_finnish_reih_title:0 "The Finnish Reich"
+ mge_finnish_reih_desc:0 ""
+ mge_hyperborean_scorge_title:0 "The Scourge of Hyperborea"
+ mge_hyperborean_scorge_desc:0 ""
+ mge_comeback_of_grzegorz_motherland_title:0 "Return to the Motherland"
+ mge_comeback_of_grzegorz_motherland_desc:0 ""
+ 
+ # Modifiers
+ 
+ mge_dev_mogol_modifier:0 "Development of the Countryside"
+ mge_cavalry_power:0 "The Finest of Horses"
+ mge_mogeyro-mongol_modifier:0 "Mogyero-Mongolia"
+ mge_caucasian_god:0 "Caucasian Dual God"
+ mge_finnish:0 "Conquest of Finland"
+ mge_comeback_of_horses:0 "Feed The Horse"

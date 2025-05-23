@@ -1,0 +1,9 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_gv_alerticons_roman_senate"
+		texturefile = "gfx//interface//gv_alerticons//gv_roman_senate.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+		alwaystransparent = yes
+	}
+}

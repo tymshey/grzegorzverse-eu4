@@ -1,0 +1,25 @@
+###########################################
+# Flavor Events for England/Great Britain/Angevin Empire
+#
+# Scripted by tymshey
+###########################################
+
+namespace = flavor_england
+normal_or_historical_nations = yes
+
+# British Empire Proclaimed
+
+country_event = {
+	id = flavor_england.1
+	title = flavor_england.1.title
+	desc = flavor_england.1.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_england.1.a
+		change_tag = GBE
+		add_prestige = 50
+	}
+}

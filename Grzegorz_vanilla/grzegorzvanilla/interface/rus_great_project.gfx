@@ -1,0 +1,19 @@
+spriteTypes = {
+	
+	
+	
+	spriteType = {
+		name = "GFX_great_project_amogus_statue"
+		texturefile = "gfx//interface//great_projects//great_project_amogus_statue.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_mage_school"
+		texturefile = "gfx//interface//great_projects//great_project_t_mage_school.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_kiev_palace"
+		texturefile = "gfx//interface//great_projects//great_project_t_kiev_palace.dds"
+	}
+}

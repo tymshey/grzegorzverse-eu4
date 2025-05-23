@@ -1,0 +1,35 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_diplomacy_lead_t_satrapy_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_lead_t_satrapy_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_am_t_satrapy_vassal"
+		texturefile = "gfx//interface//icon_t_satrapy_vassal.dds"
+	}
+	spriteType = {
+	  	name = "GFX_icon_t_satrapy_vassal"
+	 	texturefile = "gfx/interface/icon_t_satrapy_vassal.dds"
+	}
+	spriteType = {
+	  	name = "GFX_subject_t_satrapy_vassal"
+	 	texturefile = "gfx/interface/icon_t_satrapy_vassal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_diplomacy_lead_patriarchate_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_lead_patriarchate_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_am_patriarchate_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_am_patriarchate_vassal.dds"
+	}
+	spriteType = {
+	  	name = "GFX_icon_patriarchate_vassal"
+	 	texturefile = "gfx/interface/icon_diplomacy_patriarchate_vassal.dds"
+	}
+	spriteType = {
+	  	name = "GFX_subject_patriarchate_vassal"
+	 	texturefile = "gfx/interface/icon_diplomacy_patriarchate_vassal.dds"
+	}
+}

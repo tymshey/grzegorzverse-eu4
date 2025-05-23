@@ -1,0 +1,20 @@
+t_roman_central_planning_reform = {
+	icon = "royal_court"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = t_roman_central_planning_reform
+			have_had_reform = t_roman_central_planning_reform
+			has_unlocked_government_reform = {
+				government_reform = t_roman_central_planning_reform
+			}
+		}
+	}
+	government_abilities = {
+		table_of_ranks_mechanic
+	}
+	modifiers = {
+		governing_capacity = 200
+		reform_progress_growth = 0.1
+	}
+}

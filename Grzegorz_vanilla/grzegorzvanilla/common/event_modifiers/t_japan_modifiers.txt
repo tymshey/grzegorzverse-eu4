@@ -1,0 +1,39 @@
+### Country
+
+t_jap_protectors_east_catholicism = {
+	infantry_power = 0.1
+	# curia_powers_cost = -0.1
+}
+
+t_jap_vibrant_christian_communities = {
+	development_cost_modifier = -0.1
+}
+
+t_jap_et_bushido = {
+	discipline = 0.015
+}
+
+### Province
+
+t_jap_imperial_capital_modifier = {
+	local_institution_spread = 0.5
+	local_manpower_modifier = 0.25
+}
+
+t_jap_fortified_coast = {
+	local_own_coast_naval_combat_bonus = 1
+}
+
+t_jap_urban_centre = {
+	local_development_cost = -0.1
+}
+
+t_jap_greater_kanto = {
+	local_development_cost = -0.25
+	local_manpower_modifier = 0.5
+}
+
+t_jap_trade_guilds = {
+	local_development_cost = -0.05
+	trade_goods_size_modifier = 0.1
+}

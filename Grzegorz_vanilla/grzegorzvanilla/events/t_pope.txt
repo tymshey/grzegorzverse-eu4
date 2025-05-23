@@ -1,0 +1,29 @@
+namespace = t_pope
+normal_or_historical_nations = yes
+
+country_event = {
+	id = t_pope.1
+	title = t_pope.1.title
+	desc = t_pope.1.desc
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PAP
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = t_pope.1.a
+        set_estate_privilege = estate_church_religious_state
+        set_estate_privilege = estate_church_clerical_ministers
+        change_estate_land_share = {
+            estate = estate_church
+            share = -20
+        }
+	}
+}
