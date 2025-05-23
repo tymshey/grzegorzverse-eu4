@@ -1,0 +1,35 @@
+zmiany dla byz:
+
+================================================================
+
+>roman imperial diarchy: +50 base gov cap -> 0
+>mars: +10% morale, +5% dysc. -> +7,5% morale, +2,5% dysc.
+>sol invictus (ten do odblokowania za drzewko): +10% morale, +7,5% dysc. -> +10% morale, +5% dysc.
+>przywilej improve state economy: +10% tax, +10% prod. -> +10% tax, +5% prod.
+>restore the forum of constatnine: +2 yearly prestige -> decyzja usunięta
+>embellish capital: -10% LOCAL devcost, +1 yearly prestige -> zmieniam buffy, koszt i nazwę na bardziej ogólną, będzie obejmować wszystkie fora w konstantynopolu zamiast dzielić je na wiele decyzji
+>support city growth (przywilej): -10% devcost w glownej kulturze, +5% tech cost (czyli drozej) -> -10% devcost w glownej kulturze, +5% tech cost, governing cost +10% (czyli govcap zabiera), będzie dostępne z drzewka misji w sciezce greckiej, nie od startu
+>prosperous rule (przywilej): -1 local unrest, -5% local devcost (dostepny z drzewka misji sciezki greckiej) -> -1 local unrest, -5% local devcost, +5% governing cost (debuff)
+
+1 zrobione
+2 zrobione
+3 zrobione
+4 zrobione
+5 
+6 
+7 zrobione
+8 zrobione
+
+=================================
+jednak chuj bedzie co innego
+
+>mars: +10% morale, +5% dysc. -> +7,5% morale, +2,5% dysc.
+>sol invictus (ten do odblokowania za drzewko): +10% morale, +7,5% dysc. -> +10% morale, +5% dysc.
+>support city growth (przywilej): -10% devcost w glownej kulturze, +5% tech cost -> -10% state governing cost, +5% tech cost
+>augustan bureaucracy: -5% devcost w glownej kulturze -> wiecej govcapu (bez devcosta)
+
+juz zrobione spierdalac!!!!!!!!!!!!!!!!!!!!
+
+>prosperous rule (sciezka pod greco-roman, przywilej): -1 local unrest, -5% local devocst -> -1 local unrest, +0.1 prosperity growth
+
+kurwa już jest zbalansowane !!!!!!!

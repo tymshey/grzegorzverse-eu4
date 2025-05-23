@@ -1,0 +1,7 @@
+
+
+************ -= The Paradox Game Converters Group =- *****************
+* Converter version 0.13M "Melian"
+* Compatible with CK3 [v1.8-v1.9] and EU4 [v1.35]
+* Built on Sun Jul  9 18:12:01 2023
+*************************** + CK3 To EU4 + ***************************
