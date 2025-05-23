@@ -1,0 +1,53 @@
+namespace = flavor_new_russland
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_new_russland.1
+    title = flavor_new_russland.1.t
+    desc = flavor_new_russland.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		tag = KIE
+		is_year = 1448
+	}
+    
+    option = {
+		name = flavor_new_russland.1.a
+		every_owned_province = { 
+		add_unrest = 5
+		}
+		280 = {
+		add_unrest = -20
+		}
+		add_country_modifier = {
+		name = German_win
+		duration = -1
+		}
+		hidden_effect = {
+		set_country_flag = Slavic_Revolt
+		set_country_flag = German_winc
+		swap_non_generic_missions = yes
+		}
+		
+    }
+	
+	option = {
+		name = flavor_new_russland.1.b
+		change_primary_culture = ruthenian
+		every_owned_province = { 
+		add_unrest = -5
+		}
+		280 = {
+		add_unrest = 5
+		}
+		hidden_effect = {
+		set_country_flag = Slavic_Revolt
+		set_country_flag = slavs_win
+		swap_non_generic_missions = yes
+		}
+	}
+}

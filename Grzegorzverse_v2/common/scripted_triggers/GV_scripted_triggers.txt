@@ -1,0 +1,34 @@
+# GRZEGORZVERSE scripted triggers (niggers)
+
+GV_has_universities = {
+	OR = {
+		AND = { # Rome
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+			151 = {
+				has_province_modifier = t_phanarion
+			}
+		}
+		AND = { # Germany
+			OR = {
+				tag = Z01
+				tag = NGC
+				tag = GER
+			}
+			50 = {
+				has_province_modifier = t_humboldt
+			}
+		}
+		AND = { # England
+			OR = {
+				tag = ENG
+				tag = GBR
+				tag = GBE
+				tag = AVE
+			}
+			has_country_flag = gv_eng_universities_flag
+		}
+	}
+}

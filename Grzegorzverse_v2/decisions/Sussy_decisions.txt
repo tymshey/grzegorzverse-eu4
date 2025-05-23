@@ -1,0 +1,206 @@
+country_decisions = {
+
+	A_Unity_Regional_Islam = {
+	major = yes
+	color = { 63 87 129 }
+	provinces_to_highlight = {
+		OR = { 
+		area = southern_morocco_area
+		area = western_morocco_area
+		area = marrekesh_area
+		area = tafilalt_area
+		area = northern_morocco_area
+		area = hautes_plaines_area
+		area = algiers_area
+		area = barbary_coast_area
+		area = sus_area
+			}
+		}
+	potential = {
+	tag = SOS
+	NOT = { has_country_flag = Unity_Regional}
+		}
+	allow = {
+		sus_area = {
+				type = all
+				owned_by = ROOT
+			}
+		southern_morocco_area = {
+				type = all
+				owned_by = ROOT
+			}
+		western_morocco_area = {
+				type = all
+				owned_by = ROOT
+			}
+		marrekesh_area = {
+				type = all
+				owned_by = ROOT
+			}
+		tafilalt_area = {
+				type = all
+				owned_by = ROOT
+			}
+		northern_morocco_area = {
+				type = all
+				owned_by = ROOT
+			}
+		hautes_plaines_area = {
+				type = all
+				owned_by = ROOT
+			}
+		algiers_area = {
+				type = all
+				owned_by = ROOT
+			}
+		barbary_coast_area = {
+				type = all
+				owned_by = ROOT
+			}
+	}
+	effect = {
+	custom_tooltip = sus_tool_tip_1
+	add_country_modifier = {
+			name = Unity_Regional_Islam
+			duration = -1
+				}
+	every_owned_province = {
+    limit = {
+        any_core_country = {
+            NOT = { tag = ROOT }
+        }
+    }
+    while = {
+        limit = {
+            any_core_country = {
+                NOT = { tag = ROOT }
+            }
+        }
+        random_core_country = {
+            limit = {
+                NOT = { tag = ROOT }
+            }
+            PREV = { remove_core = PREV }
+				}
+			}
+		}
+		hidden_effect = {
+			swap_non_generic_missions = yes
+			set_country_flag = Unity_Regional
+			}	
+		}
+		ai_weight = {
+			factor = 1
+		}
+    }
+	Integrate_Andalus = {
+	major = yes
+	color = { 255 255 250 }
+	provinces_to_highlight = {
+	}
+	potential = {
+	tag = SOS
+	exists = ADU
+	}
+	allow = {
+		ADU = {
+	vassal_of  = SOS
+		}
+	}
+	effect = {
+	add_stability = -1
+	inherit = ADU
+		}
+		ai_weight = {
+			factor = 1
+		}
+    }
+	
+	Jihad_decision = {
+	major = yes
+	color = { 255 255 250 }
+	provinces_to_highlight = {
+	}
+	potential = {tag = SOS}
+	allow = {
+	Not = {has_country_flag = Jihad}
+	army_size_percentage = 1
+	at_war_with_religious_enemy = yes
+	}
+	effect = {
+	add_war_exhaustion = 5
+	add_army_tradition = -20
+	add_army_professionalism = -0.10
+	add_manpower = 20
+	add_country_modifier = {
+	name = Declared_Jihad
+	duration = 7300
+	}
+	hidden_effect = {
+	set_country_flag = Jihad
+		}
+	}
+		ai_weight = {
+			factor = 1
+		}
+    }
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

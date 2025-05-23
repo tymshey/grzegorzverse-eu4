@@ -1,0 +1,508 @@
+namespace = gv_ai
+normal_or_historical_nations = yes
+
+country_event = { # Rome gets excubitors since they wont recruit them on their own and thus wont start the tree (bruh)
+	id = gv_ai.1
+	title = gv_ai.1.title
+	desc = gv_ai.1.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 151
+		is_year = 1444
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.1.a
+		capital_scope = {
+    			tercio_infantry = BYZ
+		}
+		capital_scope = {
+    			tercio_infantry = BYZ
+		}
+		capital_scope = {
+    			tercio_infantry = BYZ
+		}
+		capital_scope = {
+    			tercio_infantry = BYZ
+		}
+	}
+}
+
+country_event = { # makes sure anatolian nations dont ally eachother
+	id = gv_ai.2
+	title = gv_ai.2.title
+	desc = gv_ai.2.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 151
+		is_year = 1444
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.2.a
+		remove_alliance = SYR
+		add_historical_rival = SYR
+		remove_alliance = GRM
+		add_historical_rival = GRM
+		remove_alliance = CAP
+		add_historical_rival = CAP
+		remove_alliance = KAR
+		add_historical_rival = KAR
+		SYR = {
+			remove_alliance = GRM
+			add_historical_rival = GRM
+			remove_alliance = CAP
+			add_historical_rival = CAP
+			remove_alliance = KAR
+			add_historical_rival = KAR
+		}
+		CAP = {
+			remove_alliance = GRM
+			add_historical_rival = GRM
+			remove_alliance = SYR
+			add_historical_rival = SYR
+			remove_alliance = KAR
+			add_historical_rival = KAR
+		}
+		KAR = {
+			remove_alliance = GRM
+			add_historical_rival = GRM
+			remove_alliance = SYR
+			add_historical_rival = SYR
+			remove_alliance = CAP
+			add_historical_rival = CAP
+		}
+	}
+}
+
+country_event = { # makes sure kurdistan doesnt ally neither rome nor persia
+	id = gv_ai.3
+	title = gv_ai.3.title
+	desc = gv_ai.3.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = Z09 # Kurdistan
+		is_year = 1444
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.3.a
+		remove_alliance = SYR
+		add_historical_rival = SYR
+		remove_alliance = BYZ
+		add_historical_rival = BYZ
+		remove_alliance = PER
+		add_historical_rival = PER
+		remove_alliance = ERS
+		add_historical_rival = ERS
+	}
+}
+
+country_event = { # makes sure persia doesnt ally mazandaran
+	id = gv_ai.4
+	title = gv_ai.4.title
+	desc = gv_ai.4.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = PER
+		is_year = 1444
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.4.a
+		remove_alliance = TAB
+		add_historical_rival = TAB
+	}
+}
+
+country_event = { # makes sure hispania doesnt ally castile
+	id = gv_ai.5
+	title = gv_ai.5.title
+	desc = gv_ai.5.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = HIS
+		is_year = 1444
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.5.a
+		remove_alliance = CAS
+		add_historical_rival = CAS
+	}
+}
+
+country_event = { # MAYBE will encourage persia to attack india MAYBE
+	id = gv_ai.6
+	title = gv_ai.6.title
+	desc = gv_ai.6.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = PER
+		mission_completed = persia_capital_mission
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.6.a
+		every_country = {
+			limit = {
+				capital_scope = {
+					superregion = india_superregion
+				}
+			}
+			remove_alliance = ROOT
+			add_historical_rival = ROOT
+		}
+	}
+}
+
+country_event = { # develop persian capital
+	id = gv_ai.7
+	title = gv_ai.7.title
+	desc = gv_ai.7.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+		owns = 410
+		mission_completed = persia_conquer_kurdistan
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.7.a
+		410 = {
+			add_base_tax = 4
+			add_base_production = 4
+			add_base_manpower = 4
+		}
+	}
+}
+
+country_event = { # attack kurdistan
+	id = gv_ai.8
+	title = gv_ai.8.title
+	desc = gv_ai.8.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		is_year = 1455
+		ai = yes
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+		owns = 410
+		NOT = { mission_completed = persia_conquer_kurdistan }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.8.a
+		every_country = {
+			limit = {
+				alliance_with = Z09 # Kurdistan
+			}
+			remove_alliance = Z09
+		}
+		every_country = {
+			limit = {
+				has_guaranteed = Z09 # Kurdistan
+			}
+			remove_guarantee = Z09
+		}
+		declare_war_with_cb = {
+			who = Z09
+			casus_belli = cb_annex
+		}
+		add_stability = 2
+		Z09 = {
+			add_treasury = -1000
+		}
+	}
+}
+
+country_event = { # attack athens
+	id = gv_ai.9
+	title = gv_ai.9.title
+	desc = gv_ai.9.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = BYZ
+		owns = 151
+		NOT = { owns = 146 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.9.a
+		every_country = {
+			limit = {
+				alliance_with = ATH # Athens
+			}
+			remove_alliance = ATH
+		}
+		every_country = {
+			limit = {
+				has_guaranteed = ATH # Athens
+			}
+			remove_guarantee = ATH
+		}
+		declare_war_with_cb = {
+			who = ATH
+			casus_belli = cb_annex
+		}
+		add_stability = 2
+		ATH = {
+			add_treasury = -1000
+		}
+	}
+}
+
+country_event = { # attack normandy
+	id = gv_ai.10
+	title = gv_ai.10.title
+	desc = gv_ai.10.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = FRA
+		NOT = { owns = 167 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.10.a
+		every_country = {
+			limit = {
+				alliance_with = NRM
+			}
+			remove_alliance = NRM
+		}
+		every_country = {
+			limit = {
+				has_guaranteed = NRM
+			}
+			remove_guarantee = NRM
+		}
+		declare_war_with_cb = {
+			who = NRM
+			casus_belli = cb_annex
+		}
+		add_stability = 2
+		NRM = {
+			add_treasury = -1000
+		}
+	}
+}
+
+country_event = { # attack gascony
+	id = gv_ai.11
+	title = gv_ai.11.title
+	desc = gv_ai.11.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = FRA
+		owns = 167
+		owns = 168
+		owns = 1879
+		owns = 4385
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.11.a
+		every_country = {
+			limit = {
+				alliance_with = GUY
+			}
+			remove_alliance = GUY
+		}
+		every_country = {
+			limit = {
+				has_guaranteed = GUY
+			}
+			remove_guarantee = GUY
+		}
+		declare_war_with_cb = {
+			who = GUY
+			casus_belli = cb_annex
+		}
+		add_stability = 2
+		GUY = {
+			add_treasury = -1000
+		}
+	}
+}
+
+country_event = { # makes sure england doesnt ally normandy or gascony
+	id = gv_ai.12
+	title = gv_ai.12.title
+	desc = gv_ai.12.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = yes	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = ENG
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.12.a
+		remove_alliance = NRM
+		add_historical_rival = NRM
+		NRM = {
+			add_historical_rival = ENG
+		}
+		remove_alliance = GUY
+		add_historical_rival = GUY
+		GUY = {
+			add_historical_rival = ENG
+		}
+	}
+}
+
+country_event = { # removes union of churches
+	id = gv_ai.13
+	title = gv_ai.13.title
+	desc = gv_ai.13.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	fire_only_once = no	
+	
+	major = no
+	
+	trigger = {
+		ai = yes
+		tag = BYZ
+		has_estate_privilege = estate_church_union_of_the_churches
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = gv_ai.13.a
+		remove_estate_privilege = estate_church_union_of_the_churches
+	}
+}

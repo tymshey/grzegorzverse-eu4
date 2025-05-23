@@ -1,0 +1,25 @@
+country_decisions = {
+
+	gv_convert_to_russian_orthodox = {
+		major = no
+		potential = {
+			NOT = { religion = russian_orthodox }
+			tag = RUS
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+		}
+		effect = {
+			change_religion = russian_orthodox
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

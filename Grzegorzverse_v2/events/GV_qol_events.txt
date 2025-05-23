@@ -1,0 +1,271 @@
+###########################################
+# Quality of Life mechanic events
+#
+# Scripted by tymshey
+###########################################
+
+namespace = qol_events
+normal_or_historical_nations = yes
+
+# Advancements in Public Welfare
+
+country_event = {
+	id = qol_events.1
+	title = qol_events.1.title
+	desc = qol_events.1.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+		OR = {
+			technology_group = western
+			tag = BYZ
+			tag = TUN
+			tag = FEO
+			tag = SYR
+			tag = KOJ
+			tag = Z00 # Valencia
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	option = {
+		name = qol_events.1.a
+		hidden_effect = {
+			improve_qol_by_5 = yes
+		}
+		custom_tooltip = improve_qol_by_5_tt
+	}
+}
+
+# Improvements in Urban Planning
+
+country_event = {
+	id = qol_events.2
+	title = qol_events.2.title
+	desc = qol_events.2.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+		OR = {
+			technology_group = western
+			technology_group = eastern
+			technology_group = chinese
+			technology_group = muslim
+		}
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = qol_events.2.a
+		hidden_effect = {
+			improve_qol_by_5 = yes
+		}
+		custom_tooltip = improve_qol_by_5_tt
+	}
+}
+
+# Policies for Prosperity
+
+country_event = {
+	id = qol_events.3
+	title = qol_events.3.title
+	desc = qol_events.3.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = qol_events.3.a
+		hidden_effect = {
+			improve_qol_by_2 = yes
+		}
+		custom_tooltip = improve_qol_by_2_tt
+	}
+}
+
+# Well-Being and Future
+
+country_event = {
+	id = qol_events.4
+	title = qol_events.4.title
+	desc = qol_events.4.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = qol_events.4.a
+		hidden_effect = {
+			improve_qol_by_2 = yes
+		}
+		custom_tooltip = improve_qol_by_2_tt
+	}
+}
+
+# Rising Standards of Living
+
+country_event = {
+	id = qol_events.5
+	title = qol_events.5.title
+	desc = qol_events.5.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = qol_events.5.a
+		hidden_effect = {
+			improve_qol_by_2 = yes
+		}
+		custom_tooltip = improve_qol_by_2_tt
+	}
+}
+
+# Improvements in Sanitation
+
+country_event = {
+	id = qol_events.6
+	title = qol_events.6.title
+	desc = qol_events.6.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = qol_events.6.a
+		hidden_effect = {
+			improve_qol_by_2 = yes
+		}
+		custom_tooltip = improve_qol_by_2_tt
+	}
+}
+
+# Urban Mismanagement
+
+country_event = {
+	id = qol_events.7
+	title = qol_events.7.title
+	desc = qol_events.7.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+		check_variable = { # Is at least 5 so no negative qol
+			which = tQolValue
+			value = 5
+		}
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = qol_events.7.a
+		hidden_effect = {
+			worsen_qol_by_5 = yes
+		}
+		custom_tooltip = worsen_qol_by_5_tt
+	}
+}
+
+# Overpopulation Strains Sanitation
+
+country_event = {
+	id = qol_events.8
+	title = qol_events.8.title
+	desc = qol_events.8.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_qol_event }
+			had_country_flag = { flag = recent_qol_event days = 365 }
+		}
+		check_variable = { # Is at least 5 so no negative qol
+			which = tQolValue
+			value = 5
+		}
+	}
+	
+	immediate = { set_country_flag = recent_qol_event }
+	
+	mean_time_to_happen = {
+		months = 300 # somehow happened too often
+	}
+	
+	option = {
+		name = qol_events.8.a
+		hidden_effect = {
+			worsen_qol_by_5 = yes
+		}
+		custom_tooltip = worsen_qol_by_5_tt
+	}
+}

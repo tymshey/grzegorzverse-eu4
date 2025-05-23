@@ -1,0 +1,56 @@
+###########################################
+# Flavor Events Bavaria
+#
+# Scripted by Urbi!!!!!!!!!!!!!!!!
+###########################################
+
+namespace = flavor_bav
+normal_or_historical_nations = yes
+
+
+country_event = {
+	id = flavor_bav.1
+	title = flavor_bav.1.title
+	desc = flavor_bav.1.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_bav.1.a
+			add_country_modifier = {
+			name = bav_rel_unity
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = flavor_bav.2
+	title = flavor_bav.2.title
+	desc = flavor_bav.2.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_bav.2.a
+		change_religion = lollard
+	}
+	option = {
+		name = flavor_bav.3.a
+		change_religion = bogomilist
+	}
+	option = {
+		name = flavor_bav.4.a
+		change_religion = jewish
+	}
+	option = {
+		name = flavor_bav.5.a
+		add_country_modifier = {
+		name = asatru_strenghten
+		duration = 5475
+		}
+	}
+}
+

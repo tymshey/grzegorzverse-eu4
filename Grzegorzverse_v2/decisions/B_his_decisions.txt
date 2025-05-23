@@ -1,0 +1,199 @@
+country_decisions = {
+	b_reinforce_culture = {
+		major = yes
+		potential = {
+			tag = HIS
+			NOT = { has_country_flag = his_reinforced_culture }
+			}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 35
+				region = iberia_region
+				}
+				dip_power = 200
+			}
+		effect = {
+			add_country_modifier = {
+				name = b_his_culture_debuff
+				duration = 7300
+			}
+			set_country_flag = his_reinforced_culture
+			222 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			223 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4546 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			226 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			226 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4548 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			230 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			229 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			218 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4150 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4787 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			227 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			228 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			1851 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4556 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			232 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			231 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			1747 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			219 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4788 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4551 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			217 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			2990 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			214 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4548 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4557 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			211 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			210 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			2755 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			2989 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			209 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			216 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			215 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4789 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			1746 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4552 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			1745 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4553 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			208 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			207 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4558 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4554 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			4555 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+			206 = {
+				change_culture = espanoi
+				add_devastation = 20
+			}
+		}
+	}
+}

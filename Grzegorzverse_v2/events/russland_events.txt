@@ -1,0 +1,90 @@
+namespace = flavor_russland
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.8
+    title = flavor_russland.8.t
+    desc = flavor_russland.8.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		tag = KIE
+		is_year = 1464
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_russland.8.a
+		hidden_effect = {
+		every_owned_province = {
+		add_base_production = 1
+			}
+		}
+		add_country_modifier = {
+		name = German_Merchants 
+		duration = -1
+		}
+		
+	}
+}
+
+country_event = {
+	id = flavor_russland.9
+    title = flavor_russland.9.t
+    desc = flavor_russland.9.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		tag = KIE
+		is_year = 1444
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		volhynia_area = {
+			limit = {
+					NOT = { is_core = ROOT	}
+				}
+			add_core = ROOT
+		}
+		red_ruthenia_area = {
+			limit = {
+					NOT = { is_core = ROOT	}
+				}
+			add_core = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = flavor_russland.10
+    title = flavor_russland.10.t
+    desc = flavor_russland.10.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+		is_triggered_only = yes
+	
+	option = {
+		name = flavor_russland.10.a
+		ruthenia_region = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+

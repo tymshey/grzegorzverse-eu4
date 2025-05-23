@@ -1,0 +1,30 @@
+namespace = flavor_SUS
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_SUS.1
+    title = flavor_SUS.1.t
+    desc = flavor_SUS.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+ 
+	option = {
+		name = flavor_SUS.1.a
+		iberia_region = {
+		add_permanent_claim = ROOT
+		}
+		add_power_projection = { 
+		type = 25_permanent_power_projection
+		amount = 25 
+		}
+		add_country_modifier = {
+		name = Dominate_Iberia
+		duration = -1
+		}
+	}
+}
+
+
+
+

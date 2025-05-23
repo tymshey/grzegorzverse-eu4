@@ -1,0 +1,276 @@
+namespace = flavor_Jerusalem
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_Jerusalem.1
+    title = flavor_Jerusalem.1.t
+    desc = flavor_Jerusalem.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_russland.1.a
+       KIE = {
+		vassalize = MOL
+		}
+		MOL = {
+		inherit = Z0W
+		}
+    }
+	
+	option = {
+		name = flavor_Jerusalem.1.b
+		KOJ = {
+			2405 = {
+			add_permanent_claim = KOJ
+			}
+			268 = {
+			add_permanent_claim = KOJ
+			}
+			4530 = {
+			add_permanent_claim = KOJ
+			}
+			4529 = {
+			add_permanent_claim = KOJ
+			}
+		}
+	}
+}
+
+namespace = Jerusalem_Gold_Mine
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Gold_Mine.1
+    title = Jerusalem_Gold_Mine.1.t
+    desc = Jerusalem_Gold_Mine.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = Jerusalem_Gold_Mine.1.a
+		2321 = {
+			add_province_modifier = {
+			name = Gold_Rush
+			duration = 18250
+			}
+		}
+    }
+}
+
+namespace = Jerusalem_Stronghold
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Stronghold.1
+    title = Jerusalem_Stronghold.1.t
+    desc = Jerusalem_Stronghold.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = Jerusalem_Stronghold.1.a
+		2321 = {
+			add_province_modifier = {
+			name = Jerusalem_Stronghold.2
+			duration = -1
+			}
+		}
+    }
+	option = {
+		name = Jerusalem_Stronghold.1.b
+		6003 = {
+			add_province_modifier = {
+			name = Jerusalem_Stronghold
+			duration = -1
+			}
+		}
+    }
+}
+
+namespace = Jerusalem_Egipt_Claims
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Egipt_Claims.1
+	title = Jerusalem_Egipt_Claims.1.t
+	desc = Jerusalem_Egipt_Claims.1.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = Jerusalem_Egipt_Claim.1.a
+			custom_tooltip = Jerusalem_Claims
+			hidden_effect = { 
+			379 = { add_permanent_claim = ROOT }
+			382 = { add_permanent_claim = ROOT }
+			4268 = { add_permanent_claim = ROOT }
+			2327 = { add_permanent_claim = ROOT }
+			380 = { add_permanent_claim = ROOT }
+			4270 = { add_permanent_claim = ROOT } 
+			6002 = { add_permanent_claim = ROOT } 
+			6003 = { add_permanent_claim = ROOT } 
+			381 = { add_permanent_claim = ROOT } 
+			6004 = { add_permanent_claim = ROOT } 
+			364 = { add_permanent_claim = ROOT } 
+			358 = { add_permanent_claim = ROOT } 
+			362 = { add_permanent_claim = ROOT } 
+			363 = { add_permanent_claim = ROOT } 
+			4317 = { add_permanent_claim = ROOT } 
+			2316 = { add_permanent_claim = ROOT } 
+			4316 = { add_permanent_claim = ROOT } 
+			361 = { add_permanent_claim = ROOT } 
+			6005 = { add_permanent_claim = ROOT } 
+			359 = { add_permanent_claim = ROOT } 
+			4318 = { add_permanent_claim = ROOT } 
+			2317 = { add_permanent_claim = ROOT } 
+			2318 = { add_permanent_claim = ROOT } 
+			4323 = { add_permanent_claim = ROOT } 
+			2319 = { add_permanent_claim = ROOT } 
+			1233 = { add_permanent_claim = ROOT } 
+			4320 = { add_permanent_claim = ROOT } 
+			360 = { add_permanent_claim = ROOT } 
+			4319 = { add_permanent_claim = ROOT } 
+			1231 = { add_permanent_claim = ROOT }
+			1234 = { add_permanent_claim = ROOT }
+			2322 = { add_permanent_claim = ROOT }
+			2323 = { add_permanent_claim = ROOT }
+			2321 = { add_permanent_claim = ROOT }
+			2320 = { add_permanent_claim = ROOT }
+			2315 = { add_permanent_claim = ROOT }
+			365 = { add_permanent_claim = ROOT }	
+		}
+	}
+}
+
+
+namespace = Jerusalem_Bomb_Black
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Bomb_Black.1
+    title = Jerusalem_Bomb_Black.1.t
+    desc = Jerusalem_Bomb_Black.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = Jerusalem_Bomb_Black.1.a
+		1232 = {
+			add_province_modifier = {
+			name = Slave_Market
+			duration = -1
+			}
+		}
+		2324 = {
+			add_province_modifier = {
+			name = Slave_Market
+			duration = -1
+			}
+		}
+		2323 = {
+			add_province_modifier = {
+			name = Slave_Market
+			duration = -1
+			}
+		}
+    }
+	option = {
+		name = Jerusalem_Bomb_Black.1.b
+		1232 = {
+			change_trade_goods = naval_supplies	
+			add_base_production = 5
+		}
+		2324 = {
+			change_trade_goods = naval_supplies	
+			add_base_production = 5
+		}
+		2323 = {
+			change_trade_goods = naval_supplies	
+			add_base_production = 5
+		}
+    }
+}
+
+namespace = Jerusalem_Army_Reform
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Army_Reform.1
+    	title = Jerusalem_Army_Reform.1.t
+    	desc = Jerusalem_Army_Reform.1.d
+    	picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	name = Jerusalem_Army_Reform.1.a
+	set_country_flag = naval_army
+	swap_non_generic_missions = yes
+    }
+	option = {
+	name = Jerusalem_Army_Reform.1.b
+	set_country_flag = mixed_army
+	swap_non_generic_missions = yes
+    }
+	option = {
+	name = Jerusalem_Army_Reform.1.c
+	set_country_flag = land_army
+	swap_non_generic_missions = yes
+    }
+}
+
+namespace = Jerusalem_Army_or_Forts
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Army_or_Forts.1
+    title = Jerusalem_Army_or_Forts.1.t
+    desc = Jerusalem_Army_or_Forts.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	}
+}
+
+    namespace = Jerusalem_Army_or_Forts2
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Army_or_Forts2.1
+    title = Jerusalem_Army_or_Forts2.1.t
+    desc = Jerusalem_Army_or_Forts2.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	}
+}
+
+namespace = Jerusalem_Army_or_Forts3
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Army_or_Forts3.1
+    title = Jerusalem_Army_or_Forts3.1.t
+    desc = Jerusalem_Army_or_Forts3.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	}
+}
+
+namespace = Jerusalem_Army_or_Forts4
+normal_or_historical_nations = yes
+country_event = {
+	id = Jerusalem_Army_or_Forts4.1
+    title = Jerusalem_Army_or_Forts4.1.t
+    desc = Jerusalem_Army_or_Forts4.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	}
+}

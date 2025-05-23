@@ -1,0 +1,27 @@
+country_decisions = {
+
+	Debug_decision = {
+		potential = {
+			tag = HEL
+				owns = 1841
+				owns = 43
+			NOT = {
+				dominant_culture = polish
+			}
+		}
+		allow = {
+		}
+		
+		effect = {
+				1841 = {
+					change_culture = polish
+				}
+				43 = {
+					change_culture = polish
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

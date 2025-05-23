@@ -1,0 +1,96 @@
+###########################################
+# Flavor Events for France
+#
+# Scripted by tymshey
+###########################################
+
+namespace = flavor_france
+normal_or_historical_nations = yes
+
+# Flanders leave HRE
+
+country_event = {
+	id = flavor_france.1
+	title = flavor_france.1.title
+	desc = flavor_france.1.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_france.1.a
+		add_casus_belli = {
+			target = FLA
+			type = cb_restore_personal_union
+			months = 240
+		}
+	}
+	
+	option = {
+		name = flavor_france.1.b
+		add_adm_power = 100
+	}
+}
+
+# King converts to Christianity
+
+country_event = {
+	id = flavor_france.2
+	title = flavor_france.2.title
+	desc = flavor_france.2.desc
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		always = no # deprecated event
+		tag = FRA
+		NOT = { has_country_flag = france_king_converted_to_christianity }
+		is_year = 1449
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_france.2.a
+		set_ruler_religion = catholic
+		set_heir_religion = catholic
+		set_country_flag = france_king_converted_to_christianity
+	}
+}
+
+# Chess culture in France
+
+country_event = {
+	id = flavor_france.3
+	title = flavor_france.3.title
+	desc = flavor_france.3.desc
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		tag = FRA
+		NOT = { has_country_flag = france_had_chess }
+		is_year = 1501
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_france.3.a
+		add_country_modifier = {
+			name = t_chess
+			duration = -1
+		}
+		set_country_flag = france_had_chess
+	}
+}

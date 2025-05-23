@@ -1,0 +1,40 @@
+Romuva = {
+	defender_of_faith = yes
+	can_form_personal_unions = yes
+	
+	baltic_pagan = {
+		icon = 126
+		color = { 0.8 0.4 0.15 } #204 102 38.25
+		country = {
+			land_morale = 0.05
+			tolerance_own = 2
+		}
+		province = {
+			trade_goods_size_modifier = 0.33
+		}
+		country_as_secondary = {
+		}
+		heretic = { DIEVANS }
+		declare_war_in_regency = yes
+		personal_deity = yes
+	}
+	baltic_pagan_reformed = {
+		icon = 53
+		color = { 0.75 0.5 0.35 } #191.25 127.5 89.25
+		country = {
+			land_morale = 0.05
+			tolerance_own = 2
+		}
+		province = {
+			trade_goods_size_modifier = 0.33
+		}
+		allowed_center_conversion = {
+			catholic
+		}
+		country_as_secondary = {
+		}
+		heretic = { OLD_ROMUVA }	
+		declare_war_in_regency = yes
+		personal_deity = yes
+	}
+}

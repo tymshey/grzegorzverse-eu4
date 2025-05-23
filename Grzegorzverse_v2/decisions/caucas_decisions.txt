@@ -1,0 +1,73 @@
+country_decisions = {
+
+	caucas_formable = {
+		major = yes
+		potential = {
+			always = no
+			tag = Z05
+			NOT = { has_country_flag = formed_russia_flag }
+
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			NOT = { exists = RUS }
+			adm_tech = 10		
+		}
+		effect = {
+			change_tag = RUS
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			RUS = { set_government_rank = 3 }
+			russia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			crimea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			ural_region = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+					is_empty = no
+				}
+				add_permanent_claim = RUS
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			set_country_flag = formed_russia_flag
+			add_prestige = 25
+		}
+		ai_importance = 400
+	}
+	
+	Custom_ideas = {
+	major = yes 
+	potential = {
+			NOT = { has_country_flag = Custom_ideas }
+		was_tag = Z05
+		tag = RUS
+		}
+	allow = {
+	religion = zoroastrian
+	}
+	effect = {
+		swap_free_idea_group = yes
+		hidden_effect = {
+		set_country_flag = Custom_ideas
+		override_country_name = Caucasus
+			}
+		}
+	}
+}

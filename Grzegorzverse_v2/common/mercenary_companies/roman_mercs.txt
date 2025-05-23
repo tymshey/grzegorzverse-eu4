@@ -1,0 +1,43 @@
+# Excubitors
+merc_t_excubitors = {
+	regiments_per_development = 0.03
+	home_province = 151
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	cavalry_cap = 2
+    	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	modifier = {
+		discipline = 0.15
+		land_morale = 0.1
+	}
+	cost_modifier = 2
+}
+
+# Varangians
+merc_t_varangians = {
+	regiments_per_development = 0.05
+	home_province = 151
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	cavalry_weight = 0
+	artillery_weight = 0.2
+	cavalry_cap = 0
+    	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	modifier = {
+		discipline = 0.05
+		land_morale = 0.05
+	}
+	cost_modifier = 1
+}

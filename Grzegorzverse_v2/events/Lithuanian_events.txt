@@ -1,0 +1,98 @@
+namespace = flavor_GV_lithuania
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_GV_lithuania.1
+    title = flavor_GV_lithuania.1.t
+    desc = flavor_GV_lithuania.1.d
+    picture = BURGHER_ESTATE_eventPicture+
+    
+    fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		tag = LIT
+			LIT = {
+			NOT = {num_of_loans = 2}
+		}
+		LIT = {
+			treasury = 200
+		}
+		LIT = {
+			is_at_war = no
+		}
+		PRU = {
+			owns = 40
+		}
+	}
+    
+    option = {
+		name = flavor_GV_lithuania.1.a
+		LIT = {
+			add_treasury = -200
+		}
+		40 = {
+			cede_province = LIT
+		}
+		40 = {
+		remove_core = PRU
+		}
+    }
+	
+	option = {
+		name = flavor_GV_lithuania.1.b
+		add_prestige = 20
+    }
+}
+
+
+
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_GV_lithuania.2
+    title = flavor_GV_lithuania.2.t
+    desc = flavor_GV_lithuania.2.d
+    picture = BURGHER_ESTATE_eventPicture+
+
+	is_triggered_only = yes
+    
+    option = {
+		name = flavor_GV_lithuania.2.a
+		LIT = {
+		create_union = PRU
+		}
+		LIT = {
+		west_prussia_area = {
+		add_permament_claim = LIT
+			}
+		}
+		PRU = {
+		add_historical_friend = LIT
+		}
+		ai_chance = {
+			factor = 1
+		}
+    }
+	
+	option = {
+		name = flavor_GV_lithuania.2.b
+		LIT = {
+		add_casus_belli = {
+		 target = PRU
+		 type = cb_annex
+		 months = 12
+			}
+		LIT = {
+		west_prussia_area = {
+		add_permament_claim = LIT
+			}
+		}
+		}
+		ai_chance = {
+			factor = 0
+		}
+    }
+}
+
+
+

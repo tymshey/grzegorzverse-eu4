@@ -1,0 +1,288 @@
+namespace = flavor_HIS
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_his.10
+	title = flavor_his.10.title
+	desc = flavor_his.10.desc
+	picture = MAKESHIFT_PORT_EVENT_PICTURE
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_his.10.a
+			add_country_modifier = {
+				name = "t_his_makeshift_port"
+				duration = 3650
+			}
+			add_prestige = 15
+			add_manpower = 0.05
+		}
+	}
+
+country_event = {
+	id = flavor_his.11
+	title = flavor_his.11.title
+	desc = flavor_his.11.desc
+	picture = HIS_MEDD_EXPANSION
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_his.11.a
+			add_country_modifier = {
+				name = "t_his_expansion_on_medd"
+				duration = 1825
+			}
+			add_manpower = 10
+			add_prestige = 20
+			add_stability = 1
+			diplomatic_reputation = -2
+		}
+	option = {
+		name = flavor_his.11.b
+			add_country_modifier = {
+				name = "t_his_no_expansion_on_medd"
+				duration = 1825
+			}
+			add_manpower = -10
+			diplomatic_reputation = 5
+			add_prestige = -20
+			add_stability = -1
+		}
+	}
+
+country_event = {
+	id = flavor_his.12
+	title = flavor_his.12.title
+	desc = flavor_his.12.desc
+	picture = pax_romana_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_his.12.a
+		}
+	}
+
+country_event = {
+	id = flavor_his.13
+	title = flavor_his.13.title
+	desc = flavor_his.13.desc
+	picture = JUSTINIANS_AMBITION_EVENT_PICTURE
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_his.13.a
+			add_country_modifier = {
+			name = "t_his_real_roman_empire"
+			duration = 7300
+			}
+		}
+	}
+
+country_event = {
+	id = flavor_his.14
+	title = flavor_his.14.title
+	desc = flavor_his.14.desc
+	picture = REAL_ROMAN_EMPIRE
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		ROOT = {
+		tag = HIS
+		OR = {
+			BYZ = { 
+				is_subject_of = ROOT
+			}
+			ROM = { 
+				is_subject_of = ROOT
+			}
+		}
+		mission_completed = t_his_the_real_rome
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_his.14.a
+			ROOT = {
+			set_country_flag = his_rome
+			inherit = BYZ
+			inherit = ROM
+			inherit = Z0B
+			change_tag = ROM
+			}
+		}
+	}
+
+country_event = {
+	id = flavor_his.15
+	title = flavor_his.15.title
+	desc = flavor_his.15.desc
+	picture = ROMANCOA_EVENT_PICTURE
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_his.15.a
+			ROOT = {
+			add_country_modifier = {
+			name = "t_his_new_emperor"
+			duration = 7300
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_his.16
+	title = flavor_his.16.title
+	desc = flavor_his.16.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = flavor_his.16.a 
+			335 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			4561 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			334 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			226 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			224 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			4548 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			4546 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			223 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			222 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			1748 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			225 = {
+			add_province_modifier = {
+			name = "b_his_taxation_of_gib_strait"
+			duration = -1
+				}
+			}
+			add_prestige = 15
+			}
+		}
+
+country_event = {
+	id = flavor_his.17
+	title = flavor_his.17.title
+	desc = flavor_his.17.desc
+	picture = VILLAGE_BURNING_eventPicture
+
+	is_triggered_only = yes
+		option = {
+			name = flavor_his.17.a
+				add_country_modifier = {
+				name = "b_his_seize_incan_treasures"
+				duration = 3650
+				}
+				ROOT = {	
+				add_years_of_income = 10
+				}
+				colonial_peru = {
+				type = all
+				add_devastation = 25
+				}
+			}
+		}
+
+country_event = {
+	id = flavor_his.18
+	title = flavor_his.18.title
+	desc = flavor_his.18.desc
+	picture = PAXROMANA
+
+	is_triggered_only = yes
+		option = {
+			name = flavor_his.18.a
+			}	
+		}
+country_event = {
+	id = flavor_his.19
+	title = flavor_his.19.title
+	desc = flavor_his.19.desc
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = HIS
+			tag = IBE
+		}
+		ROOT = {
+			custom_trigger_tooltip = {
+                tooltip = obj_discover_america_tooltip
+                OR = {
+                    north_america = { has_discovered = ROOT }
+                    south_america = { has_discovered = ROOT }
+                    new_world = { has_discovered = ROOT }
+                }
+            }
+		}
+	}
+	option = {
+		name = flavor_his.19.a 
+		add_country_modifier = {
+		name = "his_discover_america"
+		duration = 7300
+			}
+		}
+	}

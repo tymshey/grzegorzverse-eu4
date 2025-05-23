@@ -1,0 +1,88 @@
+t_conquest_of_constantinople = {
+	potential = {
+	}
+	trigger = {
+		owner = {
+			NOT = {
+				religion = orthodox
+			}
+		}
+	}
+	missionaries = 1
+	prestige = 1
+	tolerance_own = 1
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}
+
+t_theodosiopolis_modifier = {
+	picture = "fortress"
+	potential = {
+	}
+	trigger = {
+		current_age = age_of_discovery
+	}
+	local_defensiveness = 0.25
+	local_garrison_size = 0.15
+	local_unrest = -100
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}
+
+t_german_kiev = {
+	potential = {
+	}
+	trigger = {
+		owner = {
+			OR = {
+				tag = Z01
+				tag = GER
+			}
+		}
+	}
+	land_morale = 0.05
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}
+
+t_muscat_modifier = {
+	potential = {
+	}
+	trigger = {
+		religion = zoroastrian
+	}
+	global_trade_power = 0.1
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}
+
+t_sacred_fire_modifier = {
+	picture = "t_sacred_fire_icon"
+	potential = {
+	}
+	trigger = {
+		religion = zoroastrian
+	}
+	local_development_cost = -0.05
+	
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	}
+}

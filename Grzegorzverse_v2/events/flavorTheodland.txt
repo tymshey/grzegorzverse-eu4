@@ -1,0 +1,115 @@
+namespace = flavor_theodland
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_theodland.1
+    title = flavor_theodland.1.t
+    desc = flavor_theodland.1.d
+    picture = HRE_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_theodland.1.a
+        add_country_modifier = {
+			name = HRE_Emperor
+			duration = -1
+		}
+    }
+}
+
+country_event = {
+	id = flavor_theodland.2
+    title = flavor_theodland.2.t
+    desc = flavor_theodland.2.d
+    picture = HRE_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_theodland.2.a
+        every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			add_opinion = {
+				modifier = North_sea_empire
+				who = ROOT
+			}
+		}
+    }
+}
+
+country_event = {
+	id = flavor_theodland.3
+	title = flavor_theodland.3.title
+	desc = flavor_theodland.3.desc
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_theodland.3.a
+		add_treasury = 500
+    }
+}
+
+# Founding of the Humboldt University
+country_event = {
+	id = flavor_theodland.4
+	title = flavor_theodland.4.title
+	desc = flavor_theodland.4.desc
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = Z01
+			tag = NGC
+			tag = GER
+		}
+		owns = 50
+		NOT = {
+			has_country_flag = t_humboldt_university_flag
+		}
+		is_year = 1542
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_theodland.4.a
+		50 = {
+			add_permanent_province_modifier = {
+				name = t_humboldt
+				duration = -1
+			}
+		}
+		add_stability = 1
+		set_country_flag = t_humboldt_university_flag
+		custom_tooltip = t_education_interface_becomes_available_tt
+	}
+}
+
+# Humboldt Symposium
+
+country_event = {
+	id = flavor_theodland.5
+	title = flavor_theodland.5.title
+	desc = flavor_theodland.5.desc
+	picture = UNIVERSITY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_rom.5.a"
+		add_country_modifier = {
+			name = t_edu_natural_studies
+			duration = 3650
+		}
+	}
+}

@@ -1,0 +1,45 @@
+namespace = flavor_oman
+normal_or_historical_nations = yes
+
+country_event = { # The Fire Burns On
+	id = flavor_oman.1
+   	title = flavor_oman.1.t
+    desc = flavor_oman.1.d
+    picture = PRAYING_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_oman.1.a
+		400 = {
+			add_permanent_province_modifier = {
+				name = t_oman_sacred_fire
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { # Requesting Hormuz
+	id = flavor_oman.2
+   	title = flavor_oman.2.t
+    desc = flavor_oman.2.d
+    picture = MERCHANTS_TALKING_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_oman.2.a
+		2999 = {
+			cede_province = OMA
+		}
+		ai_chance = { # Will always agree
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = flavor_oman.2.b
+		add_prestige = 10
+	}
+}

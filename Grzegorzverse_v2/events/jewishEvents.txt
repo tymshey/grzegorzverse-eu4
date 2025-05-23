@@ -1,0 +1,57 @@
+###########################################
+# Jewish Estate events
+#
+# Scripted by tymshey
+###########################################
+
+namespace = jewish_events
+normal_or_historical_nations = yes
+
+# Jewish Influence
+
+country_event = {
+	id = jewish_events.1
+	title = jewish_events.1.title
+	desc = jewish_events.1.desc
+	picture = PLATIJEWISH
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_estate_privilege = estate_jews_advisor
+		has_estate_privilege = estate_jews_dev
+		has_estate_privilege = estate_jews_banking
+		has_estate_privilege = estate_jews_trading
+		NOT = {
+			OR = {
+				has_country_flag = t_jewish_refused_flag
+				religion = jewish
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = jewish_events.1.a
+		change_religion = jewish
+		add_stability = -3
+		custom_tooltip = t_hava_nagila_tooltip
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = jewish_events.1.b
+		add_prestige = 10
+		set_country_flag = t_jewish_refused_flag
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

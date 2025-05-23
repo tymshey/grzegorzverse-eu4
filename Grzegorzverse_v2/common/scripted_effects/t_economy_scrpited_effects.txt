@@ -1,0 +1,260 @@
+### QoL
+
+# improving
+
+improve_qol_by_1 = {
+	change_variable = {
+		which = tQolValue
+		value = 1
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = 1
+	}
+}
+
+improve_qol_by_2 = {
+	change_variable = {
+		which = tQolValue
+		value = 2
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = 2
+	}
+}
+
+improve_qol_by_5 = {
+	change_variable = {
+		which = tQolValue
+		value = 5
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = 5
+	}
+}
+
+improve_qol_by_10 = {
+	change_variable = {
+		which = tQolValue
+		value = 10
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = 10
+	}
+}
+
+# worsening
+
+worsen_qol_by_1 = {
+	subtract_variable = {
+		which = tQolValue
+		value = 1
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = -1
+	}
+}
+
+worsen_qol_by_2 = {
+	subtract_variable = {
+		which = tQolValue
+		value = 2
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = -2
+	}
+}
+
+worsen_qol_by_5 = {
+	subtract_variable = {
+		which = tQolValue
+		value = 5
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = -5
+	}
+}
+
+worsen_qol_by_10 = {
+	subtract_variable = {
+		which = tQolValue
+		value = 10
+	}
+	add_government_power = {
+		mechanic_type = t_qol_mechanic
+		power_type = t_qol_power
+		value = -10
+	}
+}
+
+### Argentarii
+
+improve_argentarii = {
+	if = {
+		limit = {
+			has_country_flag = t_argentarii_dominance_flag
+		}
+		clr_country_flag = t_argentarii_dominance_flag
+		set_country_flag = t_no_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_2_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_1_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_no_argentarii_control_flag
+		}
+		clr_country_flag = t_no_argentarii_control_flag
+		set_country_flag = t_loose_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_3_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_2_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_loose_argentarii_control_flag
+		}
+		clr_country_flag = t_loose_argentarii_control_flag
+		set_country_flag = t_average_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_4_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_3_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_average_argentarii_control_flag
+		}
+		clr_country_flag = t_average_argentarii_control_flag
+		set_country_flag = t_strong_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_5_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_4_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_strong_argentarii_control_flag
+		}
+		clr_country_flag = t_strong_argentarii_control_flag
+		set_country_flag = t_unfathomable_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_6_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_5_modifier
+	}
+}
+
+worsen_argentarii = {
+	if = {
+		limit = {
+			has_country_flag = t_unfathomable_argentarii_control_flag
+		}
+		clr_country_flag = t_unfathomable_argentarii_control_flag
+		set_country_flag = t_strong_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_5_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_6_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_strong_argentarii_control_flag
+		}
+		clr_country_flag = t_strong_argentarii_control_flag
+		set_country_flag = t_average_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_4_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_5_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_average_argentarii_control_flag
+		}
+		clr_country_flag = t_average_argentarii_control_flag
+		set_country_flag = t_loose_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_3_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_4_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_loose_argentarii_control_flag
+		}
+		clr_country_flag = t_loose_argentarii_control_flag
+		set_country_flag = t_no_argentarii_control_flag
+		add_country_modifier = {
+			name = t_argentarii_2_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_3_modifier
+	}
+	else_if = {
+		limit = {
+			has_country_flag = t_no_argentarii_control_flag
+		}
+		clr_country_flag = t_no_argentarii_control_flag
+		set_country_flag = t_argentarii_dominance_flag
+		add_country_modifier = {
+			name = t_argentarii_1_modifier
+			duration = -1
+			hidden = yes
+		}
+		remove_country_modifier = t_argentarii_2_modifier
+	}
+}
+
+reset_argentarii = {
+	clr_country_flag = t_unfathomable_argentarii_control_flag
+	clr_country_flag = t_strong_argentarii_control_flag
+	clr_country_flag = t_average_argentarii_control_flag
+	clr_country_flag = t_loose_argentarii_control_flag
+	clr_country_flag = t_no_argentarii_control_flag
+	clr_country_flag = t_argentarii_dominance_flag
+	set_country_flag = t_argentarii_dominance_flag
+	remove_country_modifier = t_argentarii_6_modifier
+	remove_country_modifier = t_argentarii_5_modifier
+	remove_country_modifier = t_argentarii_4_modifier
+	remove_country_modifier = t_argentarii_3_modifier
+	remove_country_modifier = t_argentarii_2_modifier
+	remove_country_modifier = t_argentarii_1_modifier
+	add_country_modifier = {
+		name = t_argentarii_1_modifier
+		duration = -1
+		hidden = yes
+	}
+}

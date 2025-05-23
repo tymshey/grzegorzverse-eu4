@@ -1,0 +1,59 @@
+country_decisions = {
+
+	t_form_hyperborea = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_hyperborea_flag }
+			tag = KAZ
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = HYP }
+			OR = {
+				religion = slavic_pagan_reformed
+				religion = slavic_pagan
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = ural_region
+				region = west_siberia_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			ural_region = {
+				type = all
+				owned_by = ROOT
+			}
+			west_siberia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+		}
+		effect = {
+			change_tag = HYP
+			restore_country_name_effect = yes
+			set_government_rank = 3
+			add_prestige = 50
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_hyperborea_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

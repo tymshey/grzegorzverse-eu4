@@ -1,0 +1,22 @@
+country_decisions = {
+
+	t_pax_ulmica_decision = {
+		potential = {
+			tag = ULM
+		}
+		allow = {
+			total_development = 100
+			always = no
+		}
+		
+		effect = {
+			inherit = Z01
+			inherit = BOH
+			inherit = HAB
+			inherit = FRA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

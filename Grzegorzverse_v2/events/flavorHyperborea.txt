@@ -1,0 +1,46 @@
+###########################################
+# Flavor events for Hyperborea
+#
+# Scripted by tymshey
+###########################################
+
+namespace = flavor_hyperborea
+normal_or_historical_nations = yes
+
+# Call of the Elden Gods
+
+country_event = {
+	id = flavor_hyperborea.1
+	title = flavor_hyperborea.1.title
+	desc = flavor_hyperborea.1.desc
+	picture = PLATINORSE
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = KAZ
+	}
+	
+	option = {
+		name = flavor_hyperborea.1.a
+		change_tag = HYP
+		restore_country_name_effect = yes
+		set_government_rank = 3
+		change_government = monarchy
+		unlock_government_reform = {
+			government_reform = t_hyperborea_reform
+		}
+		add_prestige = 50
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		set_country_flag = formed_hyperborea_flag
+	}
+}

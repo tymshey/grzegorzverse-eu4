@@ -1,0 +1,104 @@
+namespace = flavor_hel
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_hel.1
+    title = flavor_hel.1.t
+    desc = flavor_hel.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_hel.1.a
+       HEL = {
+		change_religion = Treeism
+		}
+		43 = {
+		change_religion = Treeism
+		}
+		1841 = {
+		change_religion = Treeism
+		}
+		43 = {
+		add_reform_center = Treeism
+		}
+    }
+	
+	option = {
+		name = flavor_hel.1.b
+		HEL = {
+			add_prestige = 20
+		}
+	}
+}
+
+country_event = {
+	id = flavor_hel.2
+    	title = flavor_hel.2.title
+    	desc = flavor_hel.2.desc
+    	picture = WOUNDED_SOLDIERS_eventPicture
+    
+	fire_only_once = yes
+	
+    	trigger = {
+		tag = HEL
+		is_year = 1501
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+    
+	option = {
+		name = flavor_hel.2.a
+		add_stability = -1
+	}
+}
+
+# The Governor of Dreistadt
+
+country_event = {
+	id = flavor_hel.3
+    title = flavor_hel.3.title
+    desc = flavor_hel.3.desc
+    picture = CITY_DEVELOPMENT_eventPicture
+    
+	fire_only_once = yes
+	
+    trigger = {
+		tag = HEL
+		is_year = 1520
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+    
+	option = {
+        name = flavor_hel.3.a
+        define_heir = {
+			name = "Tepdi"
+			dynasty = ROOT
+			age = 15
+			adm = 5
+            dip = 5
+            mil = 5
+        }
+    }
+	
+	option = {
+        name = flavor_hel.3.b
+		add_adm_power = 100
+		add_mil_power = 100
+		add_dip_power = 100
+        hire_advisor = {
+            type = trader
+            religion = root
+            culture = root
+            min_age = 20
+            max_age = 21
+            skill = 5
+            cost_multiplier = 0.2
+        }
+	}
+}

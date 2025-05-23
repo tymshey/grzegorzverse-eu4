@@ -1,0 +1,96 @@
+# Germanic Decisions
+
+country_decisions = {
+	
+	t_z01_build_amsterdam_port = {
+		potential = {
+			tag = Z01
+			NOT = { has_country_flag = t_z01_amsterdam_port_built }
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+			years_of_income = 0.5
+			adm_power = 50
+			owns_core_province = 97
+		}
+		effect = {
+			97 = {
+				add_permanent_province_modifier = {
+					name = "t_z01_amsterdam_port"
+					duration = -1
+				}
+			}
+			add_years_of_income = -0.5
+			add_adm_power = -50
+			set_country_flag = t_z01_amsterdam_port_built
+		}
+		ai_importance = 400
+	}
+	
+	t_z01_build_berg_emporium = {
+		potential = {
+			tag = Z01
+			NOT = { has_country_flag = t_z01_berg_emporium_built }
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+			years_of_income = 0.5
+			adm_power = 50
+			owns_core_province = 84
+		}
+		effect = {
+			84 = {
+				add_permanent_province_modifier = {
+					name = "t_z01_berg_emporium"
+					duration = -1
+				}
+				center_of_trade = 1
+			}
+			add_years_of_income = -0.5
+			add_adm_power = -50
+			set_country_flag = t_z01_berg_emporium_built
+		}
+		ai_importance = 400
+	}
+
+	t_z01_form_north_german_confederation = {
+		major = yes
+		potential = {
+			tag = Z01
+		}
+		allow = {
+			NOT = {
+				has_reform = t_theodland_austria_rivalry_reform
+			}
+			owns_core_province = 50
+			owns_core_province = 85
+			owns_core_province = 1858
+			owns_core_province = 62
+			owns_core_province = 78
+			owns_core_province = 61
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 60
+				region = north_german_region
+			}
+		}
+		effect = {
+			change_tag = NGC
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_prestige = 25
+		}
+		ai_importance = 400
+	}
+}

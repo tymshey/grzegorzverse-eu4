@@ -1,0 +1,82 @@
+namespace = gv_superevents
+normal_or_historical_nations = yes
+
+country_event = { # Fall of the League
+	id = gv_superevents.1
+	title = gv_superevents.1.title
+	desc = gv_superevents.1.desc
+	picture = HRE_eventPicture
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gv_superevents.1.a
+		
+	}
+}
+
+country_event = { # REIOU
+	id = gv_superevents.2
+	title = gv_superevents.2.title
+	desc = gv_superevents.2.desc
+	picture = JUSTINIANS_AMBITION_EVENT_PICTURE
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gv_superevents.2.a
+		
+	}
+}
+
+country_event = { # Gate to Agartha Open
+	id = gv_superevents.3
+	title = gv_superevents.3.title
+	desc = gv_superevents.3.desc
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gv_superevents.3.a
+		
+	}
+}
+
+country_event = { # Grzegorz Returns
+	id = gv_superevents.4
+	title = gv_superevents.4.title
+	desc = gv_superevents.4.desc
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gv_superevents.4.a
+		
+	}
+}
+
+country_event = { # Hellenic Revival
+	id = gv_superevents.5
+	title = gv_superevents.5.title
+	desc = gv_superevents.5.desc
+	picture = RELIGION_eventPicture
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gv_superevents.5.a
+		
+	}
+}

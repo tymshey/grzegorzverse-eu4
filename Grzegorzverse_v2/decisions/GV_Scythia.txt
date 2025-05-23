@@ -1,0 +1,21 @@
+# Scythian decisions
+
+country_decisions = {
+	
+	t_GOL_jewish_decision = {
+		potential = {
+			OR = {
+				tag = GOL
+			}
+			NOT = { religion = jewish }
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+		}
+		effect = {
+			change_religion = jewish
+		}
+		ai_importance = 0
+	}
+}

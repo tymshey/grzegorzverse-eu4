@@ -1,0 +1,379 @@
+namespace = holygermanempire
+normal_or_historical_nations = yes
+
+country_event = { # Collapse of the Eastern Frontier
+	id = holygermanempire.1
+	title = holygermanempire.1.title
+	desc = holygermanempire.1.desc
+	picture = HRE_eventPicture
+	
+	trigger = {
+		is_emperor = yes
+		is_year = 1450
+		NOT = {
+			has_global_flag = t_eastern_frontier_collapsed
+		}
+	}
+	
+	option = {
+		name = holygermanempire.1.a
+		PLT = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		Z1F = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		MAZ = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		set_global_flag = t_eastern_frontier_collapsed
+	}
+}
+
+country_event = { # Duke of Flanders
+	id = holygermanempire.2
+	title = holygermanempire.2.title
+	desc = holygermanempire.2.desc
+	picture = HRE_eventPicture
+	
+	trigger = {
+		is_emperor = yes
+		is_year = 1445
+		NOT = {
+			has_global_flag = t_flanders_left_hre
+		}
+	}
+	
+	option = {
+		name = holygermanempire.2.a
+		FLA = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		LUX = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		FRA = {
+			country_event = { id = flavor_france.1 }
+		}
+		set_global_flag = t_flanders_left_hre
+	}
+}
+
+country_event = { # Southern Princes Secession From the Empire
+	id = holygermanempire.3
+	title = holygermanempire.3.t
+	desc = holygermanempire.3.d
+	picture = HRE_eventPicture
+	
+	trigger = {
+		# num_of_missionaries = 10
+		always = no
+	}
+	
+	option = {
+		name = holygermanempire.3.a
+		HAB = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		SLO = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		SWI = {
+			every_owned_province = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+	}
+}
+
+# THEODLAND GETS THOSE EVENTS
+
+country_event = { # Theodland wins the Imperial Feud (winner version)
+	id = holygermanempire.4
+	title = holygermanempire.4.title
+	desc = holygermanempire.4.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = holygermanempire.4.a
+		set_global_flag = t_theodland_austria_rivalry_mechanic_theodland_won
+		add_prestige = 100
+		add_imperial_influence = 25
+		add_country_modifier = {
+			name = t_theodland_defeated_austria
+			duration = 7300
+		}
+		Z01 = {
+			remove_government_reform = t_theodland_austria_rivalry_reform
+		}
+		hidden_effect = {
+			HAB = {
+				country_event = {
+					id = holygermanempire.7 # austria loses event
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Austria wins the Imperial Feud (loser version) / theodland loses event
+	id = holygermanempire.5
+	title = holygermanempire.5.title
+	desc = holygermanempire.5.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = holygermanempire.5.a
+		add_prestige = -100
+		Z01 = {
+			remove_government_reform = t_theodland_austria_rivalry_reform
+		}
+	}
+}
+
+# AUSTRIA GETS THOSE EVENTS
+
+country_event = { # Austria wins the Imperial Feud (winner version)
+	id = holygermanempire.6
+	title = holygermanempire.6.title
+	desc = holygermanempire.6.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = holygermanempire.6.a
+		set_global_flag = t_theodland_austria_rivalry_mechanic_austria_won
+		add_prestige = 100
+		add_country_modifier = {
+			name = t_austria_defeated_theodland
+			duration = 7300
+		}
+		HAB = {
+			remove_government_reform = t_theodland_austria_rivalry_reform
+			set_emperor = yes
+		}
+		add_imperial_influence = 50
+		hidden_effect = {
+			Z01 = {
+				country_event = {
+					id = holygermanempire.5 # theodland loses event
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Theodland wins the Imperial Feud (loser version) / austria loses event
+	id = holygermanempire.7
+	title = holygermanempire.7.title
+	desc = holygermanempire.7.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = holygermanempire.7.a
+		add_prestige = -100
+		HAB = {
+			remove_government_reform = t_theodland_austria_rivalry_reform
+		}
+	}
+}
+
+country_event = { # The Imperial Feud shifts by 20 towards Theodland
+	id = holygermanempire.8
+	title = holygermanempire.8.title
+	desc = holygermanempire.8.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = holygermanempire.8.a
+		add_government_power = {
+			mechanic_type = t_theodland_austria_rivalry_mechanic
+			power_type = t_rivalry_score
+			value = 20
+		}
+	}
+}
+
+country_event = { # The Imperial Feud shifts by 20 towards Austria
+	id = holygermanempire.9
+	title = holygermanempire.9.title
+	desc = holygermanempire.9.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = holygermanempire.9.a
+		add_government_power = {
+			mechanic_type = t_theodland_austria_rivalry_mechanic
+			power_type = t_rivalry_score
+			value = -20
+		}
+	}
+}
+
+country_event = { # The Imperial Feud shifts by 40 towards Theodland
+	id = holygermanempire.10
+	title = holygermanempire.10.title
+	desc = holygermanempire.10.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = holygermanempire.10.a
+		add_government_power = {
+			mechanic_type = t_theodland_austria_rivalry_mechanic
+			power_type = t_rivalry_score
+			value = 40
+		}
+	}
+}
+
+country_event = { # The Imperial Feud shifts by 40 towards Austria
+	id = holygermanempire.11
+	title = holygermanempire.11.title
+	desc = holygermanempire.11.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = holygermanempire.11.a
+		add_government_power = {
+			mechanic_type = t_theodland_austria_rivalry_mechanic
+			power_type = t_rivalry_score
+			value = -40
+		}
+	}
+}
+
+###
+
+country_event = { # Fate of the Lowlands
+	id = holygermanempire.12
+	title = holygermanempire.12.title
+	desc = holygermanempire.12.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = holygermanempire.12.a
+		HOL = {
+			inherit = FRI
+			inherit = GEL
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = holygermanempire.12.b
+		add_adm_power = 200
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = { # Fall of the League
+	id = holygermanempire.13
+	title = holygermanempire.13.title
+	desc = holygermanempire.13.desc
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = Z01
+			tag = NGC
+			tag = GER
+		}
+		NOT = { has_global_flag = gv_the_league_fell }
+		is_year = 1550
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = holygermanempire.13.a
+		set_global_flag = gv_the_league_fell
+		every_province = {
+			limit = {
+				OR = {
+					has_province_modifier = t_major_hansa_city
+					has_province_modifier = t_important_hansa_city
+					has_province_modifier = t_minor_hansa_city
+				}
+			}
+			remove_province_modifier = t_major_hansa_city
+			remove_province_modifier = t_important_hansa_city
+			remove_province_modifier = t_minor_hansa_city
+		}
+		country_event = { id = gv_superevents.1 }
+		all_country = {
+			country_event = { id = gv_superevents.1 }
+		}
+	}
+}

@@ -1,0 +1,55 @@
+on_monthly_pulse = {
+
+	set_variable = {
+		which = t_gdp_value_dev
+		value = 0
+	}
+	set_variable = {
+		which = t_gdp_value_province_ports
+		value = 0
+	}
+	set_variable = {
+    	which = t_gdp_value_final
+   		value = 0
+	}
+	
+	export_to_variable = {
+    	which = t_gdp_value_dev
+    	value = total_development
+   	 	who = ROOT
+	}
+	export_to_variable = {
+    	which = t_gdp_value_province_ports
+    	value = num_of_ports
+   	 	who = ROOT
+	}
+	multiply_variable = {
+   		which = t_gdp_value_dev
+    	value = 16
+	}
+	multiply_variable = {
+   		which = t_gdp_value_province_ports
+    	value = 20
+	}
+	
+	##################
+	
+	change_variable = {
+    	which = t_gdp_value_final
+   		which = t_gdp_value_dev
+	}
+	
+	##################
+		
+	# QoL MODIFIERS are set here, not QoL display itself
+	
+	set_variable = {
+		which = tQolValueModifier
+		which = tQolValue
+	}
+
+	divide_variable = {
+		which = tQolValueModifier
+		value = 5
+	}
+}

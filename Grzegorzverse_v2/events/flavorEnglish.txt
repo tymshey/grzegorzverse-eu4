@@ -1,0 +1,207 @@
+###########################################
+# Flavor Events for England/Great Britain/Angevin Empire
+#
+# Scripted by tymshey
+###########################################
+
+namespace = flavor_england
+normal_or_historical_nations = yes
+
+# British Empire Proclaimed
+
+country_event = {
+	id = flavor_england.1
+	title = flavor_england.1.title
+	desc = flavor_england.1.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_england.1.a
+		change_tag = GBE
+		add_prestige = 50
+	}
+}
+
+# Asatru or Catholic
+
+country_event = {
+	id = flavor_england.2
+	title = flavor_england.2.title
+	desc = flavor_england.2.desc
+	picture = HRE_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ENG
+		owns = 236
+		is_year = 1455
+		always = no # they start evangelic rn
+	}
+	
+	option = {
+		name = flavor_england.2.a
+		add_prestige = 25
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = flavor_england.2.b
+		change_religion = catholic
+		capital_scope = {
+			change_religion = catholic
+			add_reform_center = gv_catholic
+		}
+		add_country_modifier = {
+			name = t_england_conversion_modifier
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Army Reform
+
+country_event = {
+	id = flavor_england.3
+	title = flavor_england.3.title
+	desc = flavor_england.3.desc
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		owns = 236
+		is_year = 1620
+	}
+	
+	option = {
+		name = flavor_england.3.a
+		add_country_modifier = {
+			name = t_england_army_reform
+			duration = -1
+		}
+	}
+}
+
+# Global Empire Act
+
+country_event = {
+	id = flavor_england.4
+	title = flavor_england.4.title
+	desc = flavor_england.4.desc
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		OR = {
+			exploration_ideas = 7
+			expansion_ideas = 7
+		}
+	}
+	
+	option = {
+		name = flavor_england.4.a
+		add_country_modifier = {
+			name = t_eng_global_empire_act
+			duration = -1
+		}
+	}
+}
+
+# Oxford Symposium
+
+country_event = {
+	id = flavor_england.5
+	title = flavor_england.5.title
+	desc = flavor_england.5.desc
+	picture = UNIVERSITY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_england.5.a"
+		add_country_modifier = {
+			name = t_edu_economy_studies
+			duration = 3650
+		}
+	}
+}
+
+# Cambridge Symposium
+
+country_event = {
+	id = flavor_england.6
+	title = flavor_england.6.title
+	desc = flavor_england.6.desc
+	picture = UNIVERSITY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_england.6.a"
+		add_country_modifier = {
+			name = t_edu_law_studies
+			duration = 3650
+		}
+	}
+}
+
+# A Decade of Prosperity
+
+country_event = {
+	id = flavor_england.7
+	title = flavor_england.7.title
+	desc = flavor_england.7.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+			tag = GBE
+		}
+		owns = 236
+		is_year = 1570
+		is_at_war = no
+		stability = 2
+	}
+	
+	option = {
+		name = flavor_england.7.a
+		add_country_modifier = {
+			name = gv_eng_decade_of_prosperity_improved
+			duration = 7300
+		}
+		add_years_of_income = -0.5
+	}
+	
+	option = {
+		name = flavor_england.7.b
+		add_country_modifier = {
+			name = gv_eng_decade_of_prosperity
+			duration = 7300
+		}
+	}
+}

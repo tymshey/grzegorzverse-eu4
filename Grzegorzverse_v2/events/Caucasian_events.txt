@@ -1,0 +1,33 @@
+namespace = flavor_Z05
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_Z05.1
+    title = flavor_flavor_Z05.1.t
+    desc = flavor_flavor_Z05.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+ 
+	option = {
+		name = flavor_Z05.1.a
+		PER = {create_march = Z05}
+		PER = {add_historical_friend = Z05}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = flavor_Z05.1.b
+		add_prestige = 100
+		add_legitimacy = 100
+		PER = {add_historical_rival = Z05}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+

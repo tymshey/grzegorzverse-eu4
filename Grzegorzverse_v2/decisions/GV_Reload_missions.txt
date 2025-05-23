@@ -1,0 +1,18 @@
+# Reload mission tree
+
+country_decisions = {
+	
+	t_reload_mission_tree_decision = {
+		potential = {
+			ai = no
+			always = no # deprecated
+		}
+		allow = {
+			treasury = 1
+		}
+		effect = {
+			add_treasury = -1
+			country_event = { id = t_debug.6 }
+		}
+	}
+}

@@ -1,0 +1,18 @@
+# Immortals
+merc_t_immortals = {
+	regiments_per_development = 0.05
+	home_province = 410
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	cavalry_cap = 2
+    	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		culture_group = chaldean
+	}
+	modifier = {
+		discipline = 0.05
+		land_morale = 0.1
+	}
+	cost_modifier = 1.5
+}

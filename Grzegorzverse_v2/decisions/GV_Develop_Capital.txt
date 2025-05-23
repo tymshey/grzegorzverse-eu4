@@ -1,0 +1,30 @@
+# Develop Capital
+
+country_decisions = {
+	
+	t_develop_capital = {
+		potential = {
+			# government_rank = 3
+			always = no
+		}
+		allow = {
+			ai = no
+			stability = 1
+			years_of_income = 0.2
+			OR = {
+				NOT = { has_country_flag = t_recently_improved_capital }
+				had_country_flag = { flag = t_recently_improved_capital days = 730 }
+			}
+		}
+		effect = {
+			set_country_flag = t_recently_improved_capital
+			add_years_of_income = -0.2
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		ai_importance = 0
+	}
+}

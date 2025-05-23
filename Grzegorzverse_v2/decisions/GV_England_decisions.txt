@@ -1,0 +1,55 @@
+country_decisions = {
+
+	t_england_culture_decision = {
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = t_england_culture_flag }
+		}
+		allow = {
+			home_counties_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			east_anglia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			wessex_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			east_midlands_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			west_midlands_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			yorkshire_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			is_at_war = no
+		}
+		
+		effect = {
+			custom_tooltip = t_england_culture_decision_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture_group = ROOT
+					}
+					change_culture = english
+				}
+			}
+			set_country_flag = t_england_culture_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
+
+

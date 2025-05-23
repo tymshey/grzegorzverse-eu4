@@ -1,0 +1,84 @@
+country_decisions = {
+
+ZZZ_enhanced_reform_baltic_pagan = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = ZZZ_enhanced_baltic_pagan_reformed }
+			NOT = { has_global_flag = ZZZ_enhanced_random_world }
+			religion = baltic_pagan
+		}
+
+		provinces_to_highlight = {
+		OR = {
+		province_id = 38
+		province_id = 40
+		province_id = 272
+			}
+		}
+
+		allow = {
+			adm_tech = 5
+			government_rank = 2
+			owns = 272
+			owns = 40
+			owns = 38
+		}
+
+		effect = {
+			hidden_effect = {
+				set_global_flag = ZZZ_enhanced_baltic_pagan_reformed
+				every_country = {
+					country_event = { id = ZZZ_enhanced_religion.2 }
+				}
+			}
+			
+			add_prestige = 100
+			change_religion = baltic_pagan_reformed
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+				}
+			lithuania_area = {
+				change_religion = baltic_pagan_reformed
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 3
+				}	
+			custom_tooltip = LIT_TOOLTIP_2
+			hidden_effect = {
+				every_province = {
+				limit = { religion = baltic_pagan }
+				random_list = {
+					80 = {
+						change_religion = baltic_pagan_reformed
+					}
+					20 = {
+						add_province_modifier = {
+							name = "heresy"
+							duration = 3650
+							}
+						}
+					}
+				}
+				every_country = {
+				limit = {
+					religion = baltic_pagan
+					is_great_power = no
+					NOT = {total_development = 100}
+					has_opinion = {
+					who = LIT
+					value = 100
+						}
+					}
+					LIT = {
+					create_union = PREV
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

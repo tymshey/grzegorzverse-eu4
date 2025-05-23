@@ -1,0 +1,29 @@
+country_decisions = {
+	
+	Thunder_dragon_empire = {
+		color = { 63 87 129 }
+		potential = {
+			OR = {
+				tag = BHU
+			}
+			NOT = { has_country_flag = Proclaimed_The_Empire }
+		}
+		provinces_to_highlight = {
+			OR = {
+			region = tibet_region
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				region = tibet_region
+				value = 20
+			}
+		}
+		effect = {
+		change_tag = TDE
+			set_country_flag = Proclaimed_The_Empire
+		}
+		ai_importance = 400
+	}
+	
+}

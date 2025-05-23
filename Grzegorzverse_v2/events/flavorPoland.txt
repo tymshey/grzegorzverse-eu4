@@ -1,0 +1,42 @@
+namespace = flavor_poland
+normal_or_historical_nations = yes
+
+country_event = { # Question of Capital
+	id = flavor_poland.1
+	title = flavor_poland.1.title
+	desc = flavor_poland.1.desc
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_poland.1.a
+		add_prestige = 20
+		262 = {
+			add_province_modifier = {
+				name = gv_krakow_capital
+				duration = -1
+			}
+		 	add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+	
+	option = {
+		name = flavor_poland.1.b
+		257 = {
+			move_capital_effect = yes
+		}
+		add_prestige = 20
+		257 = {
+			add_province_modifier = {
+				name = gv_warszawa_capital
+				duration = -1
+			}
+		 	add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}

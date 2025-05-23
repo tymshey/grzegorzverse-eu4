@@ -1,0 +1,769 @@
+###########################################
+# Debug events for Grzegorzverse
+#
+# Scripted by tymshey
+###########################################
+
+namespace = t_debug
+normal_or_historical_nations = yes
+
+# Roman Republic
+country_event = {
+	id = t_debug.1
+	title = t_debug.1.title
+	desc = t_debug.1.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.1.a
+		change_tag = ROM
+		restore_country_name_effect = yes
+		set_government_rank = 3
+		add_prestige = 50
+		country_event = { id = ideagroups.1 } #Swap Ideas
+		add_stability = -1
+		change_technology_group = western
+		change_government = republic
+		add_government_reform = t_roman_republic_reform
+		override_country_name = T_ROMAN_REPUBLIC
+		set_country_flag = t_rome_republic_restored
+	}
+}
+
+# Convert provinces to hellenism
+country_event = {
+	id = t_debug.2
+	title = t_debug.2.title
+	desc = t_debug.2.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.2.a
+		151 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		6000 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		1764 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		149 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4779 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4705 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		148 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4702 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		3001 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		147 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		3003 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		146 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4699 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		144 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		1853 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		2296 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		317 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		316 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		2299 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		325 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		328 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		2297 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		318 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4309 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		319 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		322 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4308 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4311 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		1848 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		4312 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		326 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		2298 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		323 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		324 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		2302 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		6006 = {
+			change_religion = hellenic_pagan_reformed
+		}
+		6007 = {
+			change_religion = hellenic_pagan_reformed
+		}
+	}
+}
+
+# slave production in persia
+country_event = {
+	id = t_debug.3
+	title = t_debug.3.title
+	desc = t_debug.3.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.3.a
+		2209 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+		413 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+		411 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+		4294 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+		2218 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+		4329 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+		4330 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+		2223 = {
+			change_trade_goods = slaves
+			add_permanent_province_modifier = {
+				name = t_persian_slave_industry
+				duration = -1
+			}
+		}
+	}
+}
+
+# choose stance towards jerusalem (roman mission tree)
+country_event = {
+	id = t_debug.4
+	title = t_debug.4.title
+	desc = t_debug.4.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.4.a
+		set_country_flag = t_rome_chose_jersualem_alliance
+		clr_country_flag = t_rome_chose_jersualem_hostility
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = t_debug.4.b
+		set_country_flag = t_rome_chose_jersualem_hostility
+		clr_country_flag = t_rome_chose_jersualem_alliance
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = t_debug.4.c
+		add_treasury = 1
+	}
+}
+
+# prosperous rule (roman mission reward)
+country_event = {
+	id = t_debug.5
+	title = t_debug.5.title
+	desc = t_debug.5.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.5.a
+		set_estate_privilege = estate_roman_bureaucrats_prosperity
+	}
+	
+	option = {
+		name = t_debug.5.b
+		add_treasury = 1
+	}
+}
+
+# Refresh Missions
+
+country_event = {
+	id = t_debug.6
+	title = t_debug.6.title
+	desc = t_debug.6.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.6.a
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = t_debug.6.b
+		add_treasury = 1
+	}
+}
+
+# Refresh GDP
+
+country_event = {
+	id = t_debug.7
+	title = t_debug.7.title
+	desc = t_debug.7.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.7.a
+		set_variable = {
+			which = t_gdp_value
+			value = 0
+		}
+		export_to_variable = {
+			which = t_gdp_value_dev
+			value = total_development
+			who = ROOT
+		}
+		multiply_variable = {
+			which = t_gdp_value_dev
+			value = 12
+		}
+		set_variable = {
+			which = t_gdp_value
+			which = t_gdp_value_dev
+		}
+	}
+	
+	option = {
+		name = t_debug.7.b
+		add_treasury = 1
+	}
+}
+
+# Unlock Industrialization
+
+country_event = {
+	id = t_debug.8
+	title = t_debug.8.title
+	desc = t_debug.8.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.8.a
+		unlock_government_reform = {
+			government_reform = t_modern_british_reform
+		}
+	}
+	
+	option = {
+		name = t_debug.8.b
+		add_treasury = 1
+	}
+}
+
+# Economic Startup
+
+country_event = {
+	id = t_debug.9
+	title = t_debug.9.title
+	desc = t_debug.9.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		set_global_flag = economic_startup_flag
+		set_variable = {
+			which = tQolValue
+			value = 0
+		}
+		change_variable = {
+			which = tQolValue
+			value = 1
+		}
+		set_variable = {
+			which = tQolValueModifier
+			which = tQolValue
+		}
+		divide_variable = {
+			which = tQolValueModifier
+			value = 5
+		}
+	}
+}
+
+# The Based Empire
+
+country_event = {
+	id = t_debug.10
+	title = t_debug.10.title
+	desc = t_debug.10.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.10.a
+		change_government = monarchy
+		unlock_government_reform = {
+			government_reform = t_zionist_empire_reform
+		}
+		add_government_reform = t_zionist_empire_reform
+	}
+	
+	option = {
+		name = t_debug.10.b
+		add_treasury = 1
+	}
+}
+
+# Country name
+
+country_event = {
+	id = t_debug.11
+	title = t_debug.11.title
+	desc = t_debug.11.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.11.a
+		restore_country_name = yes
+	}
+	
+	option = {
+		name = t_debug.11.b
+		override_country_name = T_ROMAN_REPUBLIC
+	}
+
+	option = {
+		name = t_debug.11.c
+		override_country_name = T_EMPIRE_OF_SOL_INVICTUS
+	}
+}
+
+# Godmode
+
+country_event = {
+	id = t_debug.12
+	title = t_debug.12.title
+	desc = t_debug.12.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.12.a
+		add_country_modifier = {
+			name = t_godmode
+			duration = -1
+			# hidden = yes
+		}
+	}
+	
+	option = {
+		name = t_debug.12.b
+		remove_country_modifier = t_godmode
+	}
+}
+
+# Unify Arabia
+
+country_event = {
+	id = t_debug.13
+	title = t_debug.13.title
+	desc = t_debug.13.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.13.a
+		inherit = Z0l
+		inherit = OMA
+		inherit = MHR
+		inherit = Z3l
+		inherit = HDR
+		inherit = Z31
+		inherit = ANZ
+		inherit = Z35
+		inherit = SHM
+		inherit = Z4P
+		inherit = Z0o
+		inherit = ALH
+		inherit = NAJ
+		inherit = MDA
+	}
+	
+	option = {
+		name = t_debug.13.b
+		add_treasury = 1
+	}
+}
+
+# Adjust Argentarii Control
+
+country_event = {
+	id = t_debug.14
+	title = t_debug.14.title
+	desc = t_debug.14.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.14.a
+		improve_argentarii = yes
+	}
+	
+	option = {
+		name = t_debug.14.b
+		worsen_argentarii = yes
+	}
+	
+	option = {
+		name = t_debug.14.c
+		reset_argentarii = yes
+	}
+	
+	option = {
+		name = t_debug.14.d
+		add_treasury = 1
+	}
+}
+
+# Form North German Confederation
+
+country_event = {
+	id = t_debug.15
+	title = t_debug.15.title
+	desc = t_debug.15.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.15.a
+		change_tag = NGC
+		on_change_tag_effect = yes
+		restore_country_name = yes
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_prestige = 25
+	}
+	
+	option = {
+		name = t_debug.15.b
+		add_treasury = 1
+	}
+}
+
+# Activate English Universities
+
+country_event = {
+	id = t_debug.16
+	title = t_debug.16.title
+	desc = t_debug.16.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.16.a
+		set_country_flag = gv_eng_universities_flag
+	}
+	
+	option = {
+		name = t_debug.16.b
+		add_treasury = 1
+	}
+}
+
+# Form Germany
+
+country_event = {
+	id = t_debug.17
+	title = t_debug.17.title
+	desc = t_debug.17.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.17.a
+		change_tag = GER
+		on_change_tag_effect = yes
+		restore_country_name_effect = yes
+		if = {
+			limit = {
+				is_emperor = yes
+			}
+			dismantle_hre = yes
+		}
+		else = {
+			emperor = {
+				add_opinion = {
+					who = root
+					modifier = opinion_left_empire
+				}
+			}
+			set_in_empire = no
+			emperor = {
+				country_event = { id = hre_event.5 }
+			}
+		}
+		custom_tooltip = become_an_empire_tt
+		hidden_effect = { set_government_rank = 3 }
+		north_german_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = GER
+		}
+		south_german_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = GER
+		}			
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = formed_germany_flag
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		swap_non_generic_missions = yes
+		if = {
+			limit = { has_dlc = "Winds of Change" }
+			set_country_flag = GER_stuck_disunited
+			add_government_reform = german_cultural_disunity_reform
+			freeze_government_power = {
+				mechanic_type = cultural_unity_mechanic
+				power_type = cultural_unity
+			}
+		}
+		add_country_modifier = [
+			name = t_fur_den_kaiser
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = t_debug.17.b
+		add_treasury = 1
+	}
+}
+
+# Culture shift to Roman
+
+country_event = {
+	id = t_debug.18
+	title = t_debug.18.title
+	desc = t_debug.18.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.18.a
+		change_primary_culture = roman
+		set_ruler_culture = roman
+		set_consort_culture = roman
+		set_heir_culture = roman
+		151 = { change_culture = roman } 
+		6000 = { change_culture = roman } 
+		6006 = { change_culture = roman } 
+		4779 = { change_culture = roman } 
+		149 = { change_culture = roman } 
+		316 = { change_culture = roman } 
+		add_country_modifier = {
+			name = "t_return_to_our_roots"
+			duration = 7300
+		}
+		balkan_region = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT } 
+			add_province_modifier = {
+				name = "t_rome_culture_conversion_modifier"
+				duration = 7300
+			}
+		}
+		anatolia_region = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT } 
+			add_province_modifier = {
+				name = "t_rome_culture_conversion_modifier"
+				duration = 7300
+			}
+		}
+	}
+	
+	option = {
+		name = t_debug.18.b
+		add_treasury = 1
+	}
+}
+
+# remove hre
+
+country_event = {
+	id = t_debug.19
+	title = t_debug.19.title
+	desc = t_debug.19.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.19.a
+		dismantle_hre = yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = t_debug.19.b
+		add_treasury = 1
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Cyberpunk moment
+
+country_event = {
+	id = t_debug.20
+	title = t_debug.20.title
+	desc = t_debug.20.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_debug.20.a
+		change_government = republic
+		unlock_government_reform = {
+			government_reform = t_roman_directorate_reform
+		}
+		add_government_reform = t_roman_directorate_reform
+	}
+	
+	option = {
+		name = t_debug.20.b
+		add_treasury = 1
+	}
+}
