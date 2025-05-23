@@ -1,0 +1,16 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 10 10 90 }
+monarch_names = {
+	"Bijás #0" = 0
+	"Buohttá #0" = -1
+	"Jeygi #0" = 0
+	"Leammá #0" = 0
+	"Maura #0" = -1
+	"Orddot #0" = 0
+	"Paraskeva #0" = -1
+	"Poavila #0" = 0
+	"Seará #0" = -1
+	"Suonjar #0" = -1
+	"Áigesárri #0" = 0
+}

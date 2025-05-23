@@ -1,0 +1,23 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 205 45 45 }
+monarch_names = {
+	"Adebamgbe #0" = 0
+	"Aul #0" = 0
+	"Awoshie #0" = 0
+	"Bintou #0" = -1
+	"Da'ud #1" = 10
+	"Ewunio #1" = 10
+	"Gaji #0" = 0
+	"Gilding #0" = 0
+	"Hasti #0" = -1
+	"Kalabi #0" = 0
+	"Koy #0" = 0
+	"K´fantang #1" = 10
+	"Longesai #1" = 10
+	"Maaman #1" = 10
+	"Magajiva #0" = -1
+	"Majan #0" = 0
+	"Owusu #1" = 10
+	"Samsou-Keïna #1" = 10
+}

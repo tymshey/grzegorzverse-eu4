@@ -1,0 +1,117 @@
+# Zoroastrian Interface
+
+custom_button = { # Call Religious Assembly
+    name = t_call_zoroastrian_assembly
+    potential = {
+        OR = {
+			religion = zoroastrian
+			religion = zurvanism
+			religion = mazdaki
+		}
+    }
+    trigger = {
+		# hidden_trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = t_called_zoroastrian_assembly
+				}
+				had_country_flag = {
+					flag = t_called_zoroastrian_assembly
+					days = 7300
+				}
+			}
+		# }
+	}
+    effect = {
+		add_adm_power = -50
+		add_treasury = -50
+		add_country_modifier = {
+			name = t_zoroastrian_assembly
+			duration = 3650
+		}
+		hidden_effect = {
+			clr_country_flag = t_called_zoroastrian_assembly
+			set_country_flag = t_called_zoroastrian_assembly
+		}
+	}
+    tooltip = t_call_zoroastrian_assembly_tt
+}
+
+custom_button = { # Light Sacred Fires
+    name = t_light_fires
+    potential = {
+        OR = {
+			religion = zoroastrian
+			religion = zurvanism
+			religion = mazdaki
+		}
+    }
+    trigger = {
+		# hidden_trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = t_sacred_fires_lit_flag
+				}
+				had_country_flag = {
+					flag = t_sacred_fires_lit_flag
+					days = 7300
+				}
+			}
+		# }
+	}
+    effect = {
+		add_dip_power = -50
+		add_treasury = -50
+		add_country_modifier = {
+			name = t_sacred_fires_lit
+			duration = 3650
+		}
+		every_neighbor_country = {
+			add_aggressive_expansion = {
+				who = ROOT
+				value = -10
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = t_sacred_fires_lit_flag
+			set_country_flag = t_sacred_fires_lit_flag
+		}
+	}
+    tooltip = t_light_fires_tt
+}
+
+custom_button = { # Call Religious Fanatics
+    name = t_call_zoroastrian_fanatics
+    potential = {
+		OR = {
+			religion = zoroastrian
+			religion = zurvanism
+			religion = mazdaki
+		}
+    }
+    trigger = {
+		# hidden_trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = t_zoroastrian_fanatics_called
+				}
+				had_country_flag = {
+					flag = t_zoroastrian_fanatics_called
+					days = 7300
+				}
+			}
+		# }
+	}
+    effect = {
+		add_mil_power = -50
+		add_treasury = -100
+		add_years_of_owned_provinces_manpower = {
+			years = 0.25
+		}
+		hidden_effect = {
+			clr_country_flag = t_zoroastrian_fanatics_called
+			set_country_flag = t_zoroastrian_fanatics_called
+		}
+	}
+    tooltip = t_call_zoroastrian_fanatics_tt
+}

@@ -1,0 +1,39 @@
+decline_of_tafilat = { # quality of life disaster for sus its unplayable since they take billion of allies 
+	potential = {
+		tag = TFL
+	}
+	
+	can_start = {
+		tag = TFL
+		is_year = 1444
+	}
+	
+	can_stop = {
+		is_year = 1460
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		factor = 10
+	}
+	
+	can_end = {
+		is_year = 1460
+	}
+	
+	modifier = {
+		diplomatic_reputation = -30
+	}
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			#1000 = 0
+			# None
+		}
+	}
+}

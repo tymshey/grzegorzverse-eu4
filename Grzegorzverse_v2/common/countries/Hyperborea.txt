@@ -1,0 +1,75 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 15 79 30 }
+revolutionary_colors = { 10 0 5 }
+historical_idea_groups = {
+	administrative_ideas
+	trade_ideas
+	quantity_ideas
+	expansion_ideas
+	offensive_ideas
+	economic_ideas
+	defensive_ideas
+	religious_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Adelajda #0" = -1
+	"Anka #0" = -1
+	"Evika #0" = -1
+	"Gierolt #0" = 0
+	"Kaili #1" = -1
+	"Kanyuva #0" = -1
+	"Kystynchi #0" = 0
+	"Oshama #1" = -1
+	"Prendota #0" = 0
+	"Purysho #1" = 10
+	"Ryksa #0" = -1
+	"Serzhay #1" = -1
+	"Uzhara #1" = 10
+	"Wislawa #0" = -1
+	"Yefimia #0" = -1
+}
+leader_names = {
+	"Cälil"
+	"Göbäydullina"
+	"Isxaqi"
+	"Märcani"
+	"Nasiri"
+	"Nigmät"
+	"Nurgäli"
+	"Näcmetdin"
+	"Qamay"
+	"Qol-Gäli"
+	"Qursawi"
+	"Tuqay"
+	"Yusupow"
+}
+ship_names = {
+	"Alat"
+	"Arca"
+	"Cöri"
+	"Ghiasetdin"
+	"Gärec"
+	"Nugay"
+	"Qazan"
+	"Qazansu"
+	"Qazgan"
+	"Qazi"
+	"Säyet"
+	"Säyex"
+	"Söyembikä"
+	"Tas Ayaq"
+}

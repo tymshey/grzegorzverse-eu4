@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 180 120 21 }
+monarch_names = {
+	"Anup #1" = -1
+	"Begum #0" = -1
+	"Daghfal #0" = 0
+	"Devidas #0" = 0
+	"Dugarendra #1" = 10
+	"Lafiza #0" = -1
+	"Mahipala #1" = 10
+	"Rabbi #1" = 10
+	"Rajpal #1" = 10
+	"Sad #0" = -1
+	"Sher #1" = 10
+	"Suraj Dev #1" = 10
+	"Tribhuvanapida #1" = 10
+	"Uhud #0" = -1
+}

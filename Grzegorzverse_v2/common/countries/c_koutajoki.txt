@@ -1,0 +1,25 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 20 5 150 }
+monarch_names = {
+	"Aasa #0" = -1
+	"Alur #0" = 0
+	"Arttju #1" = 10
+	"Grigo #1" = 10
+	"Ihala #1" = 10
+	"Jeuloi #1" = 10
+	"Kahrulemb #0" = 0
+	"Kalli #0" = -1
+	"Kettu #1" = 10
+	"Kudres #0" = 0
+	"Lemetti #2" = 10
+	"Liis #0" = -1
+	"Ngënoh #0" = 0
+	"Ofimja #1" = -1
+	"Onu #1" = 10
+	"Parmoi #1" = 10
+	"Tuure #1" = 10
+	"Väinö #1" = 10
+	"Yavlad #1" = 10
+	"Õnne #0" = -1
+}

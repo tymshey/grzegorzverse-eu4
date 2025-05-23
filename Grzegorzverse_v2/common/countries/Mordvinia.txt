@@ -1,0 +1,69 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 38 66 71 }
+revolutionary_colors = { 5 0 13 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Anna #0" = -1
+	"Boris #0" = 0
+	"Guðmundr #0" = 0
+	"Ivan #0" = 0
+	"Kristian #0" = 0
+	"Prebrana #0" = -1
+	"Trifon #0" = 0
+	"Viacheslava #0" = -1
+	"Vladimir #0" = 0
+	"Vyshata #0" = 0
+	"Yefrosinia #0" = -1
+	"Yeremey #0" = 0
+}
+leader_names = {
+	"Azegid"
+	"Gachegid"
+	"Irtegid"
+	"Lunegid"
+	"Moshegid"
+	"Rategid"
+	"Syktyvkar"
+	"Yugra"
+	"Zhebegid"
+	"Zhunegid"
+}
+ship_names = {
+	"Noroava"
+	"Olota"
+	"Ordava"
+	"Pemka"
+	"Poshayka"
+	"Tekay"
+	"Tetyava"
+	"Tundya"
+	"Unzhutka"
+	"Yalgava"
+}

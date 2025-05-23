@@ -1,0 +1,30 @@
+# Unique Hyperborean reforms
+
+
+t_hyperborea_reform = { # Hyperborea
+	icon = "roman_empire"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = HYP
+			has_reform = t_hyperborea_reform
+			have_had_reform = t_hyperborea_reform
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 150
+	legacy_equivalent = english_monarchy_legacy
+	start_territory_to_estates = 0.1
+	modifiers = {
+		may_establish_frontier = yes
+		governing_capacity = 200
+		global_manpower_modifier = 0.25
+		max_absolutism = 10
+		development_cost_in_primary_culture = -0.1
+	}
+	custom_attributes = {
+		t_zionist_empire_reform_tt = yes
+	}
+	fixed_rank = 3
+}

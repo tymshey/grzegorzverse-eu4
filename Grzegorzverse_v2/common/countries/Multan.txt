@@ -1,0 +1,97 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 95 139 214 }
+revolutionary_colors = { 4 0 4 }
+historical_idea_groups = {
+	offensive_ideas
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	reformed_mughal_mansabdar
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Abdul Mueid #0" = 0
+	"Abdur Rauf #0" = 0
+	"Asi #1" = 10
+	"Chanduni #0" = -1
+	"Eira #0" = -1
+	"Gulika #0" = -1
+	"Haidaracandra #1" = 10
+	"Himu #0" = -1
+	"Jawad #0" = 0
+	"Junaid #1" = 10
+	"Kanvarpala #0" = 0
+	"Laeeq #0" = 0
+	"Muhammad #1" = 10
+	"Nadhir #0" = 0
+	"Ubayd #1" = 10
+	"Udayanadeva #1" = 10
+	"Šadî #0" = 0
+}
+leader_names = {
+	"Bahadur"
+	"Bhalla"
+	"Bhatia"
+	"Das"
+	"Dev"
+	"Gahunia"
+	"Gobind"
+	"Granth"
+	"Hoora"
+	"Jhol"
+	"Jhotti"
+	"Krishan"
+	"Lohaar"
+	"Munshi"
+	"Parikh"
+	"Parmanand"
+	"Patel"
+	"Patidar"
+	"Rai"
+	"Sayid"
+	"Shah"
+	"Shergill"
+	"Singh"
+	"Sodhi"
+	"Sohal"
+	"Udasi"
+	"Zamindar"
+}
+ship_names = {
+	"Beas"
+	"Chenab"
+	"Devi"
+	"Gayatri"
+	"Guru"
+	"Indus"
+	"Jalsena"
+	"Jhelum"
+	"Lakshmi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Parvati"
+	"Radha"
+	"Ratri"
+	"Ravi"
+	"Sagar"
+	"Sarasvati"
+	"Sita"
+	"Sutlej"
+}

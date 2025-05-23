@@ -1,0 +1,18 @@
+### NOT USED FOR NOW. THIS FILE MAY BE OF USE LATER.
+
+# Religious Assembly Interface
+
+# converted_dynamic_faith_107 - Asatru ID
+# Asatru Member Country Shield
+
+custom_shield = {
+	name = t_asatru_assembly_member
+	potential = {
+		religion = converted_dynamic_faith_107
+	}
+	trigger = { } #Determines when the shield is clickable
+	effect = { } #Effect for clicking
+	tooltip = t_asatru_assembly_member_tt
+	global_event_target = <string> # Global event target name
+	open_country = yes
+}

@@ -1,0 +1,72 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 68 110 35 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	administrative_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Amr #1" = 10
+	"Barha #1" = 10
+	"Benaz #0" = -1
+	"Bijîn #0" = -1
+	"Bozorg #1" = 10
+	"Davud #0" = 0
+	"Estêre #0" = -1
+	"Farrukhzad #1" = 10
+	"Gulbehar #0" = -1
+	"Hossein #1" = 10
+	"Jimofuta #1" = 10
+	"Kabak #1" = 10
+	"Kevî #0" = -1
+	"Keyghobad #1" = 10
+	"Lezîn #0" = -1
+	"Rumofuda #2" = 10
+	"Rutbil #2" = 10
+	"Seyran #0" = -1
+	"Shihyu #1" = 10
+	"Ya'qub #1" = 10
+}
+leader_names = {
+	"Ali"
+	"Bali"
+	"Karawi"
+	"Khan"
+	"Mirza"
+	"Nawaz"
+	"Quli"
+	"Tadj"
+	"Wali"
+	"Zaman"
+}
+ship_names = {
+	"Badam"
+	"Bardeskan"
+	"Dasht"
+	"Deyhuk"
+	"Germi"
+	"Jandaq"
+	"Khvor"
+	"Kondor"
+	"Tabas"
+	"Torud"
+}

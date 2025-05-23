@@ -1,0 +1,67 @@
+Resurgence_of_polish_culture = {
+global_unrest = -3
+}
+
+Baltic_trade_hub = {
+trade_efficiency = 0.1
+merchants = 1
+}
+
+Prussian_feud_ended = {
+trade_steering = 0.1
+}
+
+Develop_konigsberg = {
+development_cost = -0.15
+}
+
+canal_expansion = {
+great_project_upgrade_cost = -0.5
+}
+
+Develop_pommerania = {
+development_cost = -0.10
+}
+
+Pomeranian_trade = {
+global_trade_power = 0.15
+}
+
+Królewien_trade = {
+global_trade_power = 0.15
+}
+
+
+Expanded_constricption = {
+global_manpower_modifier = 0.1
+}
+
+Greater_hel = {
+global_unrest = -2
+}
+
+ciapciokan_army = {
+infantry_power = 0.10
+land_morale = 0.05
+}
+
+krakow_power = {
+province_trade_power_modifier = 0.2
+province_trade_power_value = 0.5	
+}
+
+United_poland = {
+global_tax_modifier = 0.1
+production_efficiency = 0.1
+}
+
+European_trade_hub = {
+trade_efficiency = 0.2
+trade_steering = 0.2
+}
+
+hel_empire = {
+discipline = 0.05
+movement_speed = 0.10
+morale_damage_received = -0.05
+}

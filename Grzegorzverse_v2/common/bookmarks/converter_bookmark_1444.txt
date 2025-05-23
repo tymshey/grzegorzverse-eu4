@@ -1,0 +1,31 @@
+bookmark =
+{
+	name = CK3A_NAME
+	desc = CK3A_DESC
+	date = "1444.11.11"
+
+	center = 151
+
+	country = BYZ
+	country = PER
+	country = Z01
+	country = ENG
+	country = FRA
+	country = Z0B
+	country = HIS
+	country = KOJ
+	country = HAB
+	country = KIE
+	country = Z1C
+	country = KAZ
+	country = OMA
+	country = HEL
+	country = SOS
+	country = LIT
+	country = BHU
+	country = Z2Z
+
+	easy_country = BYZ
+	easy_country = PER
+	easy_country = Z01
+}

@@ -1,0 +1,74 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 60 123 65 }
+revolutionary_colors = { 9 6 4 }
+historical_idea_groups = {
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	economic_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+	administrative_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	reformed_mughal_musketeer
+	sikh_rifle
+	south_indian_musketeer
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Abdul-Haq #0" = 0
+	"Aggabodhi #1" = 10
+	"Anthinos #0" = 0
+	"Asenet #0" = -1
+	"Bersi #0" = 0
+	"Grim #0" = 0
+	"Hafríðr #0" = -1
+	"Hisham #0" = 0
+	"Hrólfr #1" = 10
+	"Izzaddin #0" = 0
+	"Kimashana #0" = 0
+	"Magnús #0" = 0
+	"Radiya #0" = -1
+	"Rakasala #1" = 10
+	"Sena #1" = 10
+	"Sven \"Dickbeard\" #3" = 10
+	"Áki #1" = 10
+}
+leader_names = {
+	"Atapattu"
+	"Chandana"
+	"Jayaratne"
+	"Jayawardene"
+	"Kalpage"
+	"Pushpakumara"
+	"Ranga"
+	"Ratnayake"
+	"Thilakaratne"
+	"Tillekaratne"
+}
+ship_names = {
+	"Anaradhapura"
+	"Anula"
+	"Jaffna"
+	"Kandy"
+	"Mahaweli"
+	"Mannar"
+	"Nil Manel"
+	"Palk"
+	"Pidurutalagala"
+	"Siddhartha"
+	"Sigiriya"
+	"Sinharaja"
+	"Sirimavo"
+	"Sri Maha Bodhi"
+	"Sri Pada"
+}

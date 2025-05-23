@@ -1,0 +1,165 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 46 128 188 }
+revolutionary_colors = { 12 15 13 }
+historical_idea_groups = {
+	trade_ideas
+	plutocracy_ideas
+	humanist_ideas
+	exploration_ideas
+	defensive_ideas
+	economic_ideas
+	quality_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	italian_condotta
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Agiprand #1" = 10
+	"Aldihoc #1" = 10
+	"Amphilochios #2" = 10
+	"Appa #1" = -1
+	"Arnau #0" = 0
+	"Cededa #0" = -1
+	"Doroteja #0" = -1
+	"Dragana #0" = -1
+	"Euphrosyne #0" = -1
+	"Eusebios #1" = 10
+	"Ignatios #0" = 0
+	"Igor #0" = 0
+	"Ingoald #0" = 0
+	"Ivanis #0" = 0
+	"Jelka #0" = -1
+	"Kera #0" = -1
+	"Kyriake #1" = -1
+	"Manso #1" = 10
+	"Milman #1" = 10
+	"Mislav #1" = 10
+	"Sergios #1" = 10
+	"Siemomysl #0" = 0
+	"Sigisbert #0" = 0
+	"Sophia #0" = -1
+}
+leader_names = {
+	"Alapic"
+	"Alvise"
+	"Babonic"
+	"Barbarigo"
+	"Bardolino"
+	"Barilla"
+	"Bassano"
+	"Bembo"
+	"Blagaj"
+	"Casanova"
+	"Cassandro"
+	"Cesnegic"
+	"Chiogga"
+	"Commachio"
+	"Contarini"
+	"Cornaro"
+	"Crnkovic"
+	"Dolfin"
+	"Donato"
+	"Drashkovic"
+	"Emo"
+	"Erizzo"
+	"Ermelli"
+	"Flangini"
+	"Foscarini"
+	"Foscolo"
+	"Frankapan"
+	"Garda"
+	"Giustinani"
+	"Gorjanski"
+	"Grimani"
+	"Gritti"
+	"Horvat"
+	"Hrvatinic"
+	"Ilocki"
+	"Jelacic"
+	"Kacic"
+	"Kaniski"
+	"Keglevic"
+	"Knezevic"
+	"Krbavski"
+	"Kruzic"
+	"Kurjakovic"
+	"Labia"
+	"Lackovic"
+	"Lando"
+	"Lomellini"
+	"Loredan"
+	"Magno"
+	"Marcello"
+	"Memmo"
+	"Mestre"
+	"Mihalovic"
+	"Moceningo"
+	"Modigliano"
+	"Molin"
+	"Moro"
+	"Morosini"
+	"Nelipcic"
+	"Ozegovic"
+	"Pejacevic"
+	"Pesaro"
+	"Pezzini"
+	"Pisani"
+	"Polani"
+	"Pordenone"
+	"Priuli"
+	"Quirini"
+	"Radic"
+	"Riva"
+	"Rovereto"
+	"Rovigo"
+	"Rukavina"
+	"Ruzzini"
+	"San Paulo"
+	"Schio"
+	"Subic"
+	"Sugaina"
+	"Talovac"
+	"Toscani"
+	"Trevisano"
+	"Valieri"
+	"Veniero"
+	"Vittorio"
+	"Vrancic"
+	"Zeno"
+	"Zrinski"
+	"Zustiniani"
+	"d'Alviano"
+	"de Blazio"
+}
+ship_names = {
+	"Cres"
+	"Dugi Otok"
+	"Goli"
+	"Krl"
+	"Pag"
+	"Plavnik"
+	"Susak"
+	"Sveti Grgur"
+	"Tijat"
+	"Unije"
+	"Vele Srankane"
+	"Zlarin"
+	"Zmajan"
+}
+army_names = {
+	"Vojska $PROVINCE$"
+}

@@ -1,0 +1,54 @@
+# patriarchate
+
+gv_ecumenical_patriarchate_reform = {
+	icon = "patriarch"
+	allow_normal_conversion = yes
+	papacy = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+	fixed_rank = 2
+	heir = no
+	
+	potential = {
+		tag = PTR
+		religion = orthodox
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion = orthodox
+	}
+	nation_designer_cost = 10
+	modifiers = {
+		church_privilege_slots = 1
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.2
+		tolerance_own = 1 
+	}
+}
+
+gv_ecclesiastical_state_reform = {
+	icon = "patriarch"
+	allow_normal_conversion = yes
+	papacy = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+	fixed_rank = 3
+	heir = no
+	
+	potential = {
+		tag = ECC
+		religion = orthodox
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion = orthodox
+	}
+	nation_designer_cost = 30
+	modifiers = {
+		land_morale = 0.1
+		manpower_in_true_faith_provinces = 0.15
+		church_privilege_slots = 1
+		church_influence_modifier = 0.2
+		legitimacy_equivalent = 1
+	}
+}

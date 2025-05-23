@@ -1,0 +1,20 @@
+HRE_Emperor = {
+province_warscore_cost = 0.25
+}
+
+Channel_dominations = {
+trade_efficiency = 0.1
+trade_steering = 0.1
+light_ship_cost = -0.2
+}
+
+Crossed_the_straits = {
+prestige = 1
+center_of_trade_upgrade_cost = -0.2
+}
+
+Go_West = {
+colonists = 1
+global_colonial_growth = 0.1
+may_explore = yes
+}

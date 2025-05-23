@@ -1,0 +1,311 @@
+# Roman Empire Interface
+
+custom_button = { # Interaction - Draft
+    name = t_roman_empire_draft_from_faction
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_drafted_from_faction
+			}
+			had_country_flag = {
+				flag = t_rome_drafted_from_faction
+				days = 3650
+			}
+		}
+	}
+    effect = {
+		add_yearly_manpower = 0.1
+		clr_country_flag = t_rome_drafted_from_faction
+		set_country_flag = t_rome_drafted_from_faction
+	}
+    tooltip = t_draft_from_faction_tt
+}
+
+custom_button = { # Interaction - Tax
+    name = t_roman_empire_tax_from_faction
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_collected_tax_from_faction
+			}
+			had_country_flag = {
+				flag = t_rome_collected_tax_from_faction
+				days = 3650
+			}
+		}
+	}
+    effect = {
+		add_years_of_income = 0.1
+		clr_country_flag = t_rome_collected_tax_from_faction
+		set_country_flag = t_rome_collected_tax_from_faction
+	}
+    tooltip = t_tax_from_faction_tt
+}
+
+custom_button = { # Interaction - Increase Senatorial Liberties
+    name = t_roman_empire_increase_liberties
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_increased_liberties
+			}
+			had_country_flag = {
+				flag = t_rome_increased_liberties
+				days = 3650
+			}
+		}
+	}
+    effect = {
+		add_estate_influence_modifier = {
+			estate = estate_roman_bureaucrats
+			desc = EST_VAL_INCREASED_SENATORIAL_LIBERTIES
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_roman_bureaucrats
+			loyalty = 10
+		}
+		add_absolutism = -5
+		clr_country_flag = t_rome_increased_liberties
+		set_country_flag = t_rome_increased_liberties
+	}
+    tooltip = t_roman_empire_increase_liberties_tt
+}
+
+custom_button = { # Interaction - Restrict Senatorial Operations
+    name = t_roman_empire_restrict_operations
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_restricted_operations
+			}
+			had_country_flag = {
+				flag = t_rome_restricted_operations
+				days = 3650
+			}
+		}
+	}
+    effect = {
+		add_estate_influence_modifier = {
+			estate = estate_roman_bureaucrats
+			desc = EST_VAL_RESTRICTED_SENATORIAL_OPERATIONS
+			influence = -10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_roman_bureaucrats
+			loyalty = -15
+		}
+		add_absolutism = 5
+		clr_country_flag = t_rome_restricted_operations
+		set_country_flag = t_rome_restricted_operations
+	}
+    tooltip = t_roman_empire_restrict_operations_tt
+}
+
+custom_button = { # Interaction - Dismiss
+    name = t_roman_empire_dismiss_imperiales
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_dismissed_imperiales
+			}
+			had_country_flag = {
+				flag = t_rome_dismissed_imperiales
+				days = 3650
+			}
+		}
+	}
+    effect = {
+		add_estate_influence_modifier = {
+			estate = estate_roman_bureaucrats
+			desc = EST_VAL_DISMISSED_IMPERIALES
+			influence = -5
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_roman_bureaucrats
+			loyalty = -5
+		}
+		add_faction_influence = {
+			faction = roman_imperials
+			influence = -10
+		}
+		clr_country_flag = t_rome_dismissed_imperiales
+		set_country_flag = t_rome_dismissed_imperiales
+	}
+    tooltip = t_roman_empire_dismiss_imperiales_tt
+}
+
+custom_button = { # Interaction - Dismiss
+    name = t_roman_empire_dismiss_optimates
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_dismissed_optimates
+			}
+			had_country_flag = {
+				flag = t_rome_dismissed_optimates
+				days = 3650
+			}
+		}
+	}
+    effect = {
+		add_estate_influence_modifier = {
+			estate = estate_roman_bureaucrats
+			desc = EST_VAL_DISMISSED_OPTIMATES
+			influence = -5
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_roman_bureaucrats
+			loyalty = -5
+		}
+		add_faction_influence = {
+			faction = optimates
+			influence = -10
+		}
+		clr_country_flag = t_rome_dismissed_optimates
+		set_country_flag = t_rome_dismissed_optimates
+	}
+    tooltip = t_roman_empire_dismiss_optimates_tt
+}
+
+custom_button = { # Interaction - Dismiss
+    name = t_roman_empire_dismiss_populares
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_dismissed_populares
+			}
+			had_country_flag = {
+				flag = t_rome_dismissed_populares
+				days = 3650
+			}
+		}
+	}
+    effect = {
+		add_estate_influence_modifier = {
+			estate = estate_roman_bureaucrats
+			desc = EST_VAL_DISMISSED_IMPERIALES
+			influence = -5
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_roman_bureaucrats
+			loyalty = -5
+		}
+		add_faction_influence = {
+			faction = populares
+			influence = -10
+		}
+		clr_country_flag = t_rome_dismissed_populares
+		set_country_flag = t_rome_dismissed_populares
+	}
+    tooltip = t_roman_empire_dismiss_populares_tt
+}
+
+custom_button = { # Interaction - Purge
+    name = t_roman_empire_purge_senate
+    potential = {
+        owns = 151
+		OR = {
+			tag = BYZ
+			tag = ROM
+			tag = LAE
+		}
+    }
+    trigger = {
+		owns = 151
+		OR = {
+			NOT = {
+				has_country_flag = t_rome_senate_purged
+			}
+			had_country_flag = {
+				flag = t_rome_senate_purged
+				days = 7300
+			}
+		}
+	}
+    effect = {
+		add_corruption = -5
+		add_absolutism = 10
+		add_estate_influence_modifier = {
+			estate = estate_roman_bureaucrats
+			desc = EST_VAL_SENATE_PURGED
+			influence = -20
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_roman_bureaucrats
+			loyalty = -20
+		}
+		clr_country_flag = t_rome_senate_purged
+		set_country_flag = t_rome_senate_purged
+	}
+    tooltip = t_roman_empire_purge_senate_tt
+}

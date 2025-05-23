@@ -1,0 +1,125 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 219 206 94 }
+revolutionary_colors = { 8 0 8 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Buzurb #1" = 10
+	"Böra #0" = 0
+	"Ehmetjan #0" = 0
+	"Haotian #1" = 10
+	"Hong #0" = 0
+	"Ipekel #0" = -1
+	"Ishana #1" = 10
+	"Jakhangir #0" = 0
+	"Jiawei #1" = 10
+	"Kunduz #0" = -1
+	"Liang #1" = 10
+	"Ninguo #0" = -1
+	"Tay #0" = 0
+	"Tong'e #0" = -1
+	"Xiaojin #1" = -1
+	"Yeldem #0" = -1
+	"Zhen'er #1" = -1
+}
+leader_names = {
+	"Baga-khotgoid"
+	"Barga"
+	"Bashgid"
+	"Besud"
+	"Bicheech"
+	"Borjigin"
+	"Burged"
+	"Choros"
+	"Chuluun"
+	"Dairtan"
+	"Darkhad"
+	"Doloon"
+	"Doloon-suvai"
+	"Dotno"
+	"Duutan"
+	"Ikh-khotgoid"
+	"Khaliuchin"
+	"Khariad"
+	"Khavkhchin"
+	"Khemchigiinkhen"
+	"Kherdeg"
+	"Khirgis"
+	"Khonin-khotgoid"
+	"Khorkhoinkhon"
+	"Khukh-nokhoinkhon"
+	"Khukh-nuur"
+	"Khukhnuud"
+	"Khurniad"
+	"Khuushan"
+	"Mudar"
+	"Myangad"
+	"Ogniud"
+	"Oimuud"
+	"Okhid"
+	"Onkhod"
+	"Orchid"
+	"Sharnuud"
+	"Tangud"
+	"Todno"
+	"Togoruutan"
+	"Toos"
+	"Tsognuud"
+	"Tsookhor"
+	"Tsuvdag"
+	"Tugchin"
+	"Tumt"
+	"Ukher-onkhod"
+	"Ukher-tsagaanikhan"
+	"Unduriinkhen"
+	"Uuld"
+	"Uushgiinkhan"
+	"Uushin"
+	"Uvur-togoruutan"
+	"Zelmen"
+	"ar-togoruutan"
+	"avkhainkhan"
+	"ayagachin"
+}
+ship_names = {
+	"Altan Khan"
+	"Amdo"
+	"Bargut"
+	"Buzav"
+	"Dorbot"
+	"Dzungar"
+	"Dörvn Öörd"
+	"Güshi"
+	"Kerait"
+	"Khoshot"
+	"Khoshut"
+	"Naiman"
+	"Olo"
+	"Olöts"
+	"Torgut"
+}
+army_names = {
+	"$PROVINCE$ Tumen"
+}

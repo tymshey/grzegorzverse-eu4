@@ -1,0 +1,84 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 233 88 88 }
+revolutionary_colors = { 1 0 1 }
+historical_idea_groups = {
+	quantity_ideas
+	defensive_ideas
+	trade_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+	spy_ideas
+	economic_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	rajput_hill_fighters
+	reformed_mughal_musketeer
+	sikh_rifle
+	south_indian_musketeer
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Abdul-Haq #0" = 0
+	"Ananda #2" = 10
+	"Anthinos #0" = 0
+	"Asenet #0" = -1
+	"Bersi #0" = 0
+	"Grim #0" = 0
+	"Hadana #1" = 10
+	"Hafríðr #0" = -1
+	"Hisham #0" = 0
+	"Hrólfr #1" = 10
+	"Izzaddin #0" = 0
+	"Kimashana #0" = 0
+	"Magnús #0" = 0
+	"Peruñcintevar #1" = 10
+	"Radiya #0" = -1
+	"Sven \"Dickbeard\" #1" = 10
+	"Áki #1" = 10
+}
+leader_names = {
+	"Chetty"
+	"Dalawa"
+	"Mudaliar"
+	"Nayak"
+	"Rajapopalachari"
+	"Saluva"
+	"Saraf"
+	"Sastri"
+	"Senji"
+	"Thondaiman"
+}
+ship_names = {
+	"Amirtha"
+	"Amman"
+	"Arul"
+	"Chellam"
+	"Devi"
+	"Durga"
+	"Gayatri"
+	"Iniya"
+	"Kaveri"
+	"Lakshmi"
+	"Madhu"
+	"Meenakshi"
+	"Nalini"
+	"Palar"
+	"Parvati"
+	"Pennar"
+	"Ponnaiyar"
+	"Ponni"
+	"Radha"
+	"Ratri"
+	"Sarasvati"
+	"Sita"
+	"Tamarai"
+	"Vaigai"
+}

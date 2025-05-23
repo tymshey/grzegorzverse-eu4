@@ -1,0 +1,94 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 116 107 140 }
+revolutionary_colors = { 0 10 5 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	spy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Ajjar #1" = 10
+	"Asparukh #1" = 10
+	"Batbayan #1" = 10
+	"Bilyana #0" = -1
+	"Boris #2" = 10
+	"Dragshan #0" = 0
+	"Dusica #0" = -1
+	"Jaglaqar #1" = 10
+	"Kardam #1" = 10
+	"Kocelj #0" = 0
+	"Kormesiy #1" = 10
+	"Kormisosh #1" = 10
+	"Krum #1" = 10
+	"Kubasar #1" = 10
+	"Kubrat #1" = 10
+	"Lazar #0" = 0
+	"Malamir #1" = 10
+	"Omortag #1" = 10
+	"Pagan #1" = 10
+	"Presian #1" = 10
+	"Radu #0" = 0
+	"Raya #1" = -1
+	"Sabin #1" = 10
+	"Sevar #1" = 10
+	"Telerig #1" = 10
+	"Telets #1" = 10
+	"Tereza #0" = -1
+	"Tervel #1" = 10
+	"Toktu #1" = 10
+	"Tomislav #0" = 0
+	"Umor #1" = 10
+	"Vinekh #1" = 10
+	"Vladimir-Rasate #1" = 10
+}
+leader_names = {
+	"Balina"
+	"Djordjic"
+	"Dobrovski"
+	"Frujin"
+	"Karposh"
+	"Konstantin"
+	"Marinov"
+	"Peyachevich"
+	"Radic"
+	"Rali"
+	"Shishman"
+	"Sorkochovich"
+	"Strahil"
+	"Stratimirovich"
+}
+ship_names = {
+	"Alhtpolo"
+	"Kiten"
+	"Kraymorie"
+	"Lozenets"
+	"Promorsko"
+	"Rezovo"
+	"Sarafovo"
+	"Sinemorets"
+	"Sozopol"
+	"Varara"
+}

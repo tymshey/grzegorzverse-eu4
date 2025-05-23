@@ -1,0 +1,17 @@
+russland_mages = {
+	modifier_definition = {
+		type = loyalty
+		key = russland_mages_loyalty_modifier
+		trigger = {
+			has_estate = russland_mages
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = russland_mages_influence_modifier
+		trigger = {
+			has_estate = russland_mages
+		}
+	}
+}
+

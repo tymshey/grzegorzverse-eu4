@@ -1,0 +1,23 @@
+bookmark =
+{
+	name = GV_THE_GREAT_GAME_NAME
+	desc = GV_THE_GREAT_GAME_DESC
+	date = "1600.1.1"
+
+	center = 151
+
+	country = BYZ
+	country = PER
+	country = Z01
+	country = ENG
+	country = FRA
+	country = Z0B
+	country = HIS
+	country = KOJ
+	country = KIE
+	country = SOS
+
+	easy_country = BYZ
+	easy_country = PER
+	easy_country = Z01
+}

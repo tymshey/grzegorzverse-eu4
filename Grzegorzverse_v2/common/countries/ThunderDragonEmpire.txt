@@ -1,0 +1,77 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 63 87 129 }
+revolutionary_colors = { 8 0 6 }
+historical_idea_groups = {
+	religious_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Abotani #0" = 0
+	"Ammakkanâr #0" = -1
+	"Bac'og #0" = 0
+	"Balavarman #0" = 0
+	"Choeden #0" = -1
+	"Chukpo #0" = -1
+	"Devavati #0" = -1
+	"Donyi #0" = -1
+	"Durlabha #0" = -1
+	"Gyatso #0" = 0
+	"Hadana #0" = 0
+	"Harjjaravarman #0" = 0
+	"Jayamala #1" = 10
+	"Kanwar #0" = -1
+	"Karma #0" = -1
+	"Kuladevi #0" = -1
+	"Kyi #0" = -1
+	"Lobsang Tsewang #2" = 10
+	"Minjur #0" = 0
+	"Namalladevi #0" = -1
+	"Phuntsho #2" = 10
+	"Tashi #0" = -1
+	"Tsundue #0" = -1
+	"Vijnanavati #0" = -1
+	"Wangdzongpa #0" = 0
+}
+leader_names = {
+	"Chomphel"
+	"Gyaltshen"
+	"Gyamtsho"
+	"Lhopi"
+	"Peljor"
+	"Phuntsho"
+	"Rabgye"
+	"Tshering"
+	"Wangchuk"
+	"Wangpo"
+}
+ship_names = {
+	"Chhu"
+	"Dng Chu"
+	"Manas Chu"
+	"Mangde Chu"
+	"Mo Chu"
+	"Pa Chu"
+	"Pho Chu"
+	"Punaka"
+	"Sangkosh"
+	"Thimbu"
+	"Tongsa Chu"
+	"Towang Chu"
+}

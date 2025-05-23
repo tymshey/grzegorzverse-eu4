@@ -1,0 +1,662 @@
+Russland_sigma = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE 
+	}
+Vassals_Integrated = {
+		icon = mission_integrate_perm
+		position = 1
+		provinces_to_highlight = {
+		OR = {
+		is_core = Z0V
+		is_core = Z1F
+		is_core = Z1P
+			}
+		}
+		trigger = {
+		NOT = { exists = Z0V }
+		NOT = { exists = Z1F }
+		NOT = { exists = Z1P }
+		}
+		effect = {
+		add_country_modifier = {
+		name = Vassals_Integrated
+		duration = 9125
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Military_Advancment = {
+		icon = mission_guns_of_urban
+		position = 3
+		required_missions = { Subjugate_Smolensk  }
+		provinces_to_highlight = {
+		OR = {
+			}
+		}
+		trigger = {
+		num_of_artillery = 50
+		mil_tech = 10
+		}
+
+		effect = {
+		add_country_modifier = {
+		name = Military_Advancment
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+	
+Russland_slot_branch_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+		NOT = { has_country_flag = slavs_win } 
+		NOT = { has_country_flag = German_winc } 
+	}
+	has_country_shield = yes
+	
+	    Hre_question = {
+		icon = mission_unknown_mission
+		position = 4
+		required_missions = { Center_of_east }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = { custom_tooltip = t_russland_1 }
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Hre_question_first = {
+		icon = mission_unknown_mission
+		position = 5
+		required_missions = { Hre_question }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = { custom_tooltip = t_russland_1 }
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
+Russland_slot_branch_2 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+		NOT = { has_country_flag = slavs_win } 
+		has_country_flag = German_winc
+	}
+	Hre_question_1 = {
+		icon = switzerland_and_the_empire
+		position = 4
+		required_missions = { Center_of_east }
+		
+		trigger = {
+		Z01 = {
+				has_opinion = {
+				who = KIE
+				value = 150
+				}
+			}
+		}
+		effect = {
+		280 = {
+		set_in_empire = yes
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Russland_slot_branch_3 = {	
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+		NOT = { has_country_flag = German_winc } 
+		has_country_flag = slavs_win
+	}
+	Hre_question_2 = {
+		icon = mission_dismantle_hre
+		position = 4
+		required_missions = { Center_of_east }
+		
+		trigger = {
+		NOT = {
+		Z01 = {
+				has_opinion = {
+				who = KIE
+				value = -150
+					}
+				}
+			}
+		}
+
+		effect = {
+		add_country_modifier = {
+		name = Against_The_empire
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
+Russland_slot_42 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	Vodka_Production = {
+		icon = mission_vodka_monopoly
+		position = 4
+		required_missions = {Center_of_east}
+		
+		trigger = {
+		grain = 15
+		}
+		effect = {
+		custom_tooltip = t_vodka_production
+		hidden_effect = {
+		set_country_flag = Vodka_production
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Subjugate_Moldavia = {
+		icon = mission_pol_moldavia
+		position = 5
+		required_missions = {Southern_tribes}
+		provinces_to_highlight = {
+		OR = {
+		area = moldavia_area
+			}
+		}
+		
+		trigger = {
+		moldavia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+		}
+		effect = {
+		MOL = {
+		add_country_modifier = {
+		name = Kiev_Vassal
+		duration = -1
+			}
+		}
+		create_vassal = MOL
+		
+		MOL = {
+		change_country_color = { 
+				color = { 81 123 190 }
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
+Russland_slot_4 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    After_revolt = {
+		icon = mission_fire_of_london
+		position = 1
+		
+		trigger = {
+		has_country_flag = Slavic_Revolt
+		}
+		effect = {
+		add_stability = 1
+		hidden_effect = {
+			may_return_manpower_on_disband = yes
+			set_country_flag = Grant_concesion_to_the_clergy
+			set_country_flag = Union_Gepidia
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Center_of_east = {
+		icon = mission_develop_kiev
+		position = 3
+		required_missions = { After_revolt
+							Subjugate_Smolensk}
+		
+		trigger = {
+		capital = 280
+		280 = {
+		development = 30
+			}
+		280 = {
+		province_has_center_of_trade_of_level = 2
+			}
+		}
+		effect = {
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Eastern_Production_Center = {
+		icon = balance_the_estates
+		position = 4
+		required_missions = {Center_of_east}
+		
+		trigger = {
+		share_of_starting_income = 2
+			NOT = { num_of_loans = 1 }
+			NOT = { corruption = 1 }
+			is_bankrupt = no
+			is_in_deficit = no
+		}
+		effect = {
+		add_country_modifier = {
+		name = Build_Buildings_Rus
+		duration = 9125
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	Manufactory_Hub = {
+		icon = mission_iron_and_copper
+		position = 5
+		required_missions = {Eastern_Production_Center}
+		
+		trigger = {
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+				region = ruthenia_region
+				}
+				add_province_modifier = {
+				name = Economic_Prosperity
+				duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Russland_slot_4 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	Subjugate_Smolensk = {
+		icon = mission_guns_of_urban
+		position = 2
+		provinces_to_highlight = {
+		OR = {
+		is_core = SMO
+			}
+		}
+		trigger = {
+			NOT = { exists = SMO }
+			num_of_owned_provinces_with = {
+			value = 7
+			is_core = SMO
+			}
+		}
+
+		effect = {
+		capital_scope = {
+					large_cast_bronze_mortar = ROOT
+					large_cast_bronze_mortar = ROOT
+					large_cast_bronze_mortar = ROOT
+					large_cast_bronze_mortar = ROOT
+				}
+		add_country_modifier = {
+		name = Smolensk_Military_Tactic
+		duration = 9125
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Conquer_Hre_Members = {
+		icon = mission_dismantle_hre
+		position = 4
+		required_missions = { Center_of_east }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			is_year = 1450
+		}
+
+		effect = {
+		white_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		minsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		pripyat_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		podlasie_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		275 = {
+		add_claim = KIE
+			}
+		4538 = {
+		add_claim = KIE
+			}
+		260 = {
+		add_claim = KIE
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Conquer_Lithuania = {
+		icon = mission_lit_great_power_politics
+		position = 5
+		required_missions = { Conquer_Hre_Members }
+		provinces_to_highlight = {
+		OR = {
+		area = white_ruthenia_area
+		area = minsk_area
+		area = pripyat_area
+		area = podlasie_area
+		province_id = 275
+		province_id = 4538
+		province_id = 260
+		province_id	= 1941
+		province_id	= 279
+			}
+		}
+		trigger = {
+		white_ruthenia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+		minsk_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+		pripyat_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+		podlasie_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+		owns = 275
+		owns = 4538
+		owns = 260
+		owns = 1941
+		owns = 279
+		}
+
+		effect = {
+		if = {
+		limit = {
+			exists = LIT
+		}
+		add_casus_belli = {
+		target = LIT
+		type = cb_ottoman_subjugation_war
+		months = 12
+				}
+			}
+		else = {
+		lithuania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		samogitia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				}
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Russland_slot_4 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+
+	Religious_Unity = {
+		icon = per_our_religious_direction
+		position = 1
+		required_missions = { }
+		
+		trigger = {
+		religious_unity = 0.8
+		}
+		effect = {
+		add_prestige = 20
+		every_owned_province = {
+				limit = {
+				religion  = ROOT
+				}
+				add_unrest = -5
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+
+Southern_tribes = {
+		icon = mission_destroy_the_horde
+		position = 4
+		required_missions = { Center_of_east }
+		
+		trigger = {
+		army_professionalism = 0.15
+		army_size_percentage = 0.9
+		}
+		effect = {
+		moldavia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		zaporizhia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		lower_don_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		azov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		crimea_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		yedisan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		sloboda_ukraine_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Conquer_the_stepps = {
+		icon = mission_lit_harness_steppes
+		position = 4
+		required_missions = { Southern_tribes }
+		provinces_to_highlight = {
+		OR = {
+		area = azov_area
+		area = lower_don_area
+			}
+		}
+		trigger = {
+		azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		lower_don_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		astrakhan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		circassia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		dagestan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+

@@ -1,0 +1,27 @@
+ corrupted_administration = {
+ yearly_corruption = 0.15
+ all_estate_loyalty_equilibrium = -0.1
+ advisor_cost = 0.10
+ }
+ 
+ aftermath_of_rel_war = {
+ global_tax_modifier = 0.15
+ global_unrest = -2
+ }
+ 
+ Hinduism_strenghten = {
+ religious_unity = 0.2
+ tolerance_own = 3
+ }
+ 
+ Plateu_Development = {
+ local_development_cost = -0.5
+ trade_goods_size_modifier = 0.1
+ }
+ 
+ Gate_Unleashed = {
+ prestige = 1
+ land_morale = 0.1
+ discipline = 0.05
+ global_unrest = -3
+ }

@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 42 104 135 }
+monarch_names = {
+	"Jetsun #0" = -1
+	"Kiriti #0" = 0
+	"Kumuk #0" = -1
+	"Lhundup #0" = -1
+	"Mingso #0" = 0
+	"Nambin #0" = -1
+	"Papo #0" = 0
+	"Poba #1" = 10
+	"Sabat #0" = -1
+	"San #0" = 0
+	"Shanli #0" = -1
+	"Tappeso #1" = 10
+	"Taramo #0" = -1
+	"Thekchen #0" = 0
+	"Yaketet #0" = 0
+	"Yueguang #0" = -1
+	"Zhonnu #0" = 0
+}

@@ -1,0 +1,7 @@
+femboy_effects_1 = {
+	diplomatic_reputation = 1
+}
+
+ultimate_femboyism = {
+	ae_impact = -0.1
+}

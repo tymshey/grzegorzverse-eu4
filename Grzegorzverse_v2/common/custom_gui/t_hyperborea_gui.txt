@@ -1,0 +1,64 @@
+# Hyperborean/Judeoborean Interface
+
+# Establish Hyperborean Colony
+custom_button = {
+    name = t_hyperborea_establish_colony
+    potential = {
+		owned_by = FROM
+		FROM = {
+			OR = {
+				has_reform = t_zionist_empire_reform
+				has_reform = t_hyperborea_reform
+			}
+		}
+    }
+    trigger = {
+		has_terrain = forest
+		NOT = {
+			OR = {
+				has_province_modifier = t_hyperborean_colony
+				has_province_modifier = t_judea_new_zion
+			}
+		}
+		owner = {
+			# adm_power = 100
+			# hidden_trigger = {
+				# OR = {
+					# NOT = {
+						# has_country_flag = t_hyperborea_established_colony
+					# }
+					# had_country_flag = {
+						# flag = t_hyperborea_established_colony
+						# days = 3650
+					# }
+				# }
+			# }
+			OR = {
+				NOT = {
+					has_country_flag = t_hyperborea_established_colony
+				}
+				had_country_flag = {
+					flag = t_hyperborea_established_colony
+					days = 3650
+				}
+			}
+		}
+	}
+    effect = {
+		add_devastation = 50
+		change_religion = FROM
+		change_culture = FROM
+		add_permanent_province_modifier = {
+			name = t_hyperborean_colony
+			duration = -1
+		}
+		owner = {
+			add_adm_power = -100
+			hidden_effect = {
+				clr_country_flag = t_hyperborea_established_colony
+				set_country_flag = t_hyperborea_established_colony
+			}
+		}
+	}
+    tooltip = t_hyperborea_establish_colony_tt
+}

@@ -1,0 +1,45 @@
+# Custom Alerts
+
+custom_button = { # War Taxes Alert
+    name = gv_war_taxes_alert
+    potential = {
+		AND = {
+			has_wartaxes = yes
+			NOT = {
+				current_age = age_of_discovery
+			}
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = gv_war_taxes_alert_tt
+}
+
+custom_button = { # Symposium Available Alert
+    name = gv_can_hold_symposium_alert
+    potential = {
+		AND = {
+			OR = {
+				NOT = {
+					has_country_flag = t_edu_symposium_held
+				}
+				had_country_flag = {
+					flag = t_edu_symposium_held
+					days = 7300
+				}
+			}
+			GV_has_universities = yes
+		}
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = gv_can_hold_symposium_alert_tt
+}

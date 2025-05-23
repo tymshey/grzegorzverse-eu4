@@ -1,0 +1,14 @@
+vassal =  {
+	first = KIE
+	second = Z0V
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}
+
+
+vassal =  {
+	first = KIE
+	second = Z1P
+	start_date = 1444.1.1
+	end_date = 1800.1.20
+}

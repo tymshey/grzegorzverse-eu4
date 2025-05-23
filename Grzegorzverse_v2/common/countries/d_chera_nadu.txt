@@ -1,0 +1,25 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 140 75 75 }
+monarch_names = {
+	"Anurada #0" = -1
+	"Anuradi #0" = -1
+	"Damarajha #0" = -1
+	"Danamitta #0" = 0
+	"Dharmapala #0" = 0
+	"Etuttapâtam #0" = -1
+	"Irâcâcekara #1" = 10
+	"Kalyanavati #0" = -1
+	"Kanadasika #0" = -1
+	"Kulacêkara #1" = 10
+	"Nagadina #0" = -1
+	"Paramêsvaravarman #0" = 0
+	"Periyapillai #1" = 10
+	"Tantivarman #0" = 0
+	"Upatissa #1" = 10
+	"Uttama #0" = 0
+	"Vicayâraka #1" = 10
+	"Vicayâtitta #0" = 0
+	"Vijayabahu #0" = 0
+	"Áki #0" = 0
+}

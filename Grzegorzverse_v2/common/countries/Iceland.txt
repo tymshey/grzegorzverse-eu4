@@ -1,0 +1,81 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 43 60 117 }
+revolutionary_colors = { 15 16 15 }
+historical_idea_groups = {
+	aristocracy_ideas
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Alfríðr #0" = -1
+	"Bergþóra #0" = -1
+	"Cecilie #1" = -1
+	"Emundr #1" = 10
+	"Freja #0" = -1
+	"Freyr #0" = 0
+	"Grýla #0" = -1
+	"Gunnhildr #0" = -1
+	"Iliana #0" = -1
+	"Ragnhildr #0" = -1
+	"Sigurðr #0" = 0
+	"Skúli #1" = 10
+	"Snorri #0" = 0
+	"Teh #0" = 0
+	"Valdemar #1" = 10
+	"Vigfús #0" = 0
+}
+leader_names = {
+	"Amundsen"
+	"Arason"
+	"Arnesson"
+	"Bjelke"
+	"Bolt"
+	"Egilsson"
+	"Eriksson"
+	"Haraldsson"
+	"Larsson"
+	"Leifsson"
+	"Magnusson"
+	"Nansen"
+	"Nikulásson"
+	"Norheim"
+	"Olavsson"
+	"Pálsson"
+	"Sverresson"
+	"Torgeirsson"
+}
+ship_names = {
+	"Drangajökull"
+	"Eiríksjökull"
+	"Eyjafjallajökull"
+	"Hofsjökull"
+	"Langjökull"
+	"Snæfellsjökull"
+	"Tindfjallajökull"
+	"Torfajökull"
+	"Tungnafellsjökull"
+	"Vattnajökul"
+}
+preferred_religion = protestant

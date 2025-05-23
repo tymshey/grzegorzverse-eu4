@@ -1,0 +1,42 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 45 112 100 }
+revolutionary_colors = { 8 0 14 }
+historical_idea_groups = {
+	horde_ideas
+	economic_ideas
+	quantity_ideas
+	spy_ideas
+	offensive_ideas
+	administrative_ideas
+	quality_ideas
+	trade_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Ak-kis #0" = -1
+	"Altan #0" = 0
+	"Anundr #0" = 0
+	"Arugtai #0" = 0
+	"Bodi #0" = 0
+	"Botokhui #0" = -1
+	"Chayan #0" = 0
+	"Fariborz #0" = 0
+	"Kaadyr-ool #1" = 10
+	"Nasraddin #0" = 0
+	"Omak #1" = 10
+	"Sary-ool #3" = 10
+	"Söökhlö #0" = -1
+}

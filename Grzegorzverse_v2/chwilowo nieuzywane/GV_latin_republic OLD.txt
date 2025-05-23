@@ -1,0 +1,513 @@
+latin_missions_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z0B
+			tag = LAE
+			tag = WRE
+		}
+	}
+
+	latin_the_dark_menace = {
+		icon = mission_pf_map_table
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = { stability = 1 } 
+
+		effect = {
+			add_country_modifier = {
+				name = "t_lat_the_dark_menace"
+				duration = 1825
+			}
+		}
+	}
+
+	latin_the_city_has_fallen = {
+		icon = mission_city_of_the_world's_desire
+		position = 1
+		required_missions = { latin_the_dark_menace } 
+		provinces_to_highlight = {
+			province_id = 116
+			province_id = 115
+			province_id = 2980
+		}
+
+		trigger = {
+			116 = { owned_by = ROOT } 
+			115 = { owned_by = ROOT } 
+			2980 = { owned_by = ROOT } 
+			stability = 1
+		}
+
+		effect = {
+			6001 = {
+				cede_province = ROOT
+				add_devastation = 50
+			}
+			118 = { add_devastation = 50 } 
+			country_event = { id = flavor_lat.2 } 
+		}
+	}
+
+	latin_fire_and_ashes = {
+		icon = mission_fire_of_london
+		position = 1
+		required_missions = { latin_the_city_has_fallen } 
+		provinces_to_highlight = {
+			province_id = 121
+			province_id = 114
+			province_id = 101
+			province_id = 105
+			province_id = 108
+			province_id = 118
+		}
+
+		trigger = {
+			118 = { NOT = { devastation = 10 }  } 
+			121 = { owned_by = ROOT } 
+			114 = { owned_by = ROOT } 
+			101 = { owned_by = ROOT } 
+			105 = { owned_by = ROOT } 
+			108 = { owned_by = ROOT } 
+		}
+
+		effect = {
+			118 = {
+				add_province_modifier = {
+					name = "t_lat_aftermath"
+					duration = -1
+				}
+			}
+			6001 = {
+				add_province_modifier = {
+					name = "t_lat_aftermath"
+					duration = -1
+				}
+			}
+			country_event = { id = flavor_lat.3 } 
+		}
+	}
+
+	latin_new_hope = {
+		icon = complete_the_risorgimento
+		position = 1
+		required_missions = { latin_fire_and_ashes } 
+		provinces_to_highlight = {
+			province_id = 104
+			province_id = 4738
+			province_id = 109
+		}
+
+		trigger = {
+			104 = { owned_by = ROOT } 
+			4738 = { owned_by = ROOT } 
+			109 = { owned_by = ROOT } 
+			num_of_allies = 2
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "t_lat_new_hope"
+				duration = -1
+			}
+			add_manpower = 10
+		}
+	}
+}
+latin_branch_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z0B
+			tag = LAE
+			tag = WRE
+		}
+		NOT = { has_country_flag = t_latin_chose_paganism } 
+		NOT = { has_country_flag = t_latin_chose_orthodox } 
+	}
+
+	t_latin_branch_mission_1 = {
+		icon = mission_unknown_mission
+		position = 5
+		required_missions = { latin_new_hope } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = { custom_tooltip = t_latin_byz_or_west_tt } 
+	}
+
+	t_latin_branch_mission_2 = {
+		icon = mission_unknown_mission
+		position = 1
+		required_missions = { t_latin_branch_mission_1 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = { custom_tooltip = t_latin_byz_or_west_tt } 
+	}
+
+	t_latin_branch_mission_3 = {
+		icon = mission_unknown_mission
+		position = 1
+		required_missions = { t_latin_branch_mission_2 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = { custom_tooltip = t_latin_byz_or_west_tt } 
+	}
+
+	t_latin_branch_mission_4 = {
+		icon = mission_unknown_mission
+		position = 1
+		required_missions = { t_latin_branch_mission_3 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = { custom_tooltip = t_latin_byz_or_west_tt } 
+	}
+
+	t_latin_branch_mission_5 = {
+		icon = mission_unknown_mission
+		position = 1
+		required_missions = { t_latin_branch_mission_4 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = { custom_tooltip = t_latin_byz_or_west_tt } 
+	}
+}
+latin_branch_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z0B
+			tag = WRE
+			tag = LAT
+		}
+		NOT = { has_country_flag = t_latin_chose_paganism } 
+		has_country_flag = t_latin_chose_orthodox
+	}
+
+	latin_revenge_of_the_latins = {
+		icon = revenge_for_nicopolis
+		position = 5
+		required_missions = { latin_new_hope } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			stability = 3
+			legitimacy_equivalent = 80
+		}
+
+		effect = {
+			121 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			2983 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			2984 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			1934 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			1933 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			2977 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			114 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			4730 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			113 = { change_culture = dynamic-greek-italian-culture-num2 } 
+			add_manpower = 40
+		}
+	}
+
+	latin_the_river_of_blood = {
+		icon = consolidate_the_stadholders
+		position = 1
+		required_missions = { latin_revenge_of_the_latins } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			italy_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+
+		effect = {
+			2980 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			101 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			106 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			105 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			109 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			4729 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			108 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			1774 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			1862 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			107 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			104 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			4728 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			2981 = {
+				add_devastation = 75
+				change_culture = dynamic-greek-italian-culture-num2
+				change_religion = orthodox
+			}
+			tunisia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			east_adriatic_coast_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		}
+	}
+
+	latin_sword_of_justice = {
+		icon = mission_sword_of_the_reformation
+		position = 1
+		required_missions = { latin_the_river_of_blood } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			italy_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+				# NOT = { province_is_on_an_island = yes } 
+			}
+			tunisia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			army_size_percentage = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "t_lat_sword_of_justice"
+				duration = -1
+			}
+		}
+	}
+
+	latin_to_ensure_stability = {
+		icon = balance_the_estates
+		position = 1
+		required_missions = { latin_sword_of_justice } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			stability = 3
+			is_great_power = yes
+			prestige = 20
+		}
+
+		effect = {
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_country_modifier = {
+				name = "t_lat_to_ensure_stability"
+				duration = -1
+			}
+		}
+	}
+
+	latin_golden_age_of_science = {
+		icon = pontifical_universities
+		position = 1
+		required_missions = { latin_to_ensure_stability } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			adm_tech = 8
+			dip_tech = 8
+			mil_tech = 8
+			has_institution = renaissance
+		}
+
+		effect = {
+			change_innovativeness = 5
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			define_advisor = {
+				type = natural_scientist
+				name = "Leonardo da Vinci"
+				skill = 3
+				cost_multiplier = 0.25
+				culture = ROOT
+				religion = orthodox
+			}
+		}
+	}
+}
+
+latin_branch_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z0B
+			tag = WRE
+			tag = LAT
+		}
+		NOT = { has_country_flag = t_latin_chose_orthodox } 
+		has_country_flag = t_latin_chose_paganism
+	}
+
+	latin_the_renaissance = {
+		icon = revenge_for_nicopolis
+		position = 5
+		required_missions = { latin_new_hope } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			is_year = 1450
+			religion = hellenic_pagan_reformed
+		}
+
+		effect = {
+			capital_scope = {
+				change_religion = hellenic_pagan_reformed
+				add_reform_center = hellenic_pagan_reformed
+			}
+		}
+	}
+
+	latin_the_gods_of_old = {
+		icon = consolidate_the_stadholders
+		position = 1
+		required_missions = { latin_the_renaissance } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			italy_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+
+		effect = {
+			# idk
+			tunisia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			east_adriatic_coast_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		}
+	}
+	
+	latin_temple_of_jupiter = {
+		icon = mission_t_forum
+		position = 1
+		required_missions = { latin_the_gods_of_old } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			religion = hellenic_pagan_reformed
+			dominant_religion = hellenic_pagan_reformed
+		}
+
+		effect = {
+			118 = {
+				add_province_modifier = {
+					name = t_jupiter_optimus_maximus
+					duration = -1
+				}
+				add_building = cathedral
+				remove_building = temple
+			}
+			add_stability_or_adm_power = yes
+			# custom_tooltip = t_rome_jupiter_unlock_tt
+			custom_tooltip = t_rome_jupiter_unlock_diety_tt
+		}
+	}
+}

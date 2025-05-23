@@ -1,0 +1,71 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 248 125 125 }
+revolutionary_colors = { 15 1 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Aho #1" = 10
+	"Arvo #0" = 0
+	"Hákon #0" = 0
+	"Hörðaknútr #1" = 10
+	"Hüvatõiv #0" = 0
+	"Kare #0" = -1
+	"Kiur #1" = 10
+	"Sha'Ul #0" = 0
+	"Vidyava #0" = -1
+}
+leader_names = {
+	"Aminoff"
+	"Armfelt"
+	"Bielke"
+	"Bonde"
+	"Carpelan"
+	"Fleming"
+	"Furuhjelm"
+	"Horn"
+	"Mannerheim"
+	"Paijkull"
+	"Rehbinder"
+	"Schulman"
+	"Soop"
+	"Tott"
+	"Wrede"
+}
+ship_names = {
+	"Arensburg"
+	"Hapsal"
+	"Maria"
+	"Narva"
+	"Pernau"
+	"Reval"
+	"Toompea"
+	"Weissenstein"
+	"Wesenberg"
+	"Ösel"
+}

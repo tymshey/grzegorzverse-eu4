@@ -1,0 +1,36 @@
+Russland_reform = {
+	icon = "russian_principality"
+	allow_normal_conversion = no
+	potential = {
+		tag = KIE
+	}
+	fixed_rank = 3
+	legacy_equivalent = tsardom_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	nation_designer_trigger = {
+	tag = KIE
+	}
+	modifiers = {
+		global_manpower_modifier = 0.20
+		yearly_absolutism = 0.5
+		global_autonomy = -0.05
+		governing_capacity = 400
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.2
+	}
+	conditional = {
+		allow = { 
+			OR = {
+				has_dlc = "Third Rome" 
+				has_dlc = "Domination"
+			}
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+		custom_attributes = {
+			weaker_russian_ability = yes
+		}
+	}
+}

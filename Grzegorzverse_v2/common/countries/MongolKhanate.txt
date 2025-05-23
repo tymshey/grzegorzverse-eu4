@@ -1,0 +1,79 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 108 153 65 }
+revolutionary_colors = { 4 15 4 }
+historical_idea_groups = {
+	horde_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	expansion_ideas
+	economic_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Abagha #0" = 0
+	"Buyimur #0" = 0
+	"Buyuruk #0" = 0
+	"Jakha #0" = 0
+	"Jamuqa #0" = 0
+	"Khutulan #0" = -1
+	"Kuchluk #0" = 0
+	"Töregene #0" = -1
+	"Yesugun #0" = -1
+	"al-Alta #0" = -1
+	"Grzegorz #0" = -1
+}
+leader_names = {
+	"Borjigin"
+	"Gównogradus"
+}
+ship_names = {
+	"Adai"
+	"Batu"
+	"Bo'orchu"
+	"Borokhula"
+	"Böke"
+	"Chagaan"
+	"Chilaun"
+	"Dharmapala"
+	"Dörben Külü'üd"
+	"Dörben Noyas"
+	"Elbeg"
+	"Ghengis Khan"
+	"Hohhot"
+	"Hülegü"
+	"Jebe"
+	"Jelme"
+	"Jinggim"
+	"Jöchi"
+	"Kamala"
+	"Karakorum"
+	"Khar Khiruge"
+	"Khubilai"
+	"Mugali"
+	"Möngke"
+	"Qubilai"
+	"Shikhikhutug"
+	"Sorqan Shira"
+	"Subutai"
+	"Tolui"
+	"Yelü Chucai"
+	"Yingchang"
+	"Ögödei"
+	"Örüg Temür"
+}

@@ -1,0 +1,43 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 188 238 234 }
+revolutionary_colors = { 7 0 7 }
+historical_idea_groups = {
+	trade_ideas
+	economic_ideas
+	quality_ideas
+	spy_ideas
+	defensive_ideas
+	administrative_ideas
+	diplomatic_ideas
+	quantity_ideas
+}
+monarch_names = {
+	"Agafana #0" = 0
+	"Antonia #0" = -1
+	"Arhippa #0" = 0
+	"Auli #0" = -1
+	"Eudokia #0" = -1
+	"Fedotta #1" = 10
+	"Heroi #0" = 0
+	"Ilme #0" = -1
+	"Jemi #0" = 0
+	"Jougi #0" = -1
+	"Kharuchi #0" = 0
+	"Khatyako #0" = -1
+	"Mandak #0" = 0
+	"Nasti #0" = -1
+	"Num #0" = 0
+	"Ofonja #0" = 0
+	"Olga #0" = -1
+	"Oudokka #1" = 10
+	"Potoi #0" = 0
+	"Serafima #0" = -1
+	"Sirtya #0" = 0
+	"Symeon #0" = 0
+	"Ulljoi #1" = 10
+	"Wayngachi #0" = 0
+	"Yar #0" = -1
+	"Yavlad #1" = 10
+	"Zakki #1" = 10
+}

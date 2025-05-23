@@ -1,0 +1,91 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 106 160 43 }
+revolutionary_colors = { 5 5 8 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quality_ideas
+	administrative_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Afanasiy #0" = 0
+	"Andrei #0" = 0
+	"Feodor #1" = 10
+	"Grigoriy #1" = 10
+	"Iliya #1" = 10
+	"Ingvar #1" = 10
+	"Liubava #0" = -1
+	"Praskovya #0" = -1
+	"Roman #0" = 0
+	"Rurik #0" = 0
+	"Siegfried #1" = 10
+	"Sviatoslav #0" = 0
+	"Terentiy #1" = 10
+	"Ulita #1" = -1
+}
+leader_names = {
+	"Aladyin"
+	"Beznosov"
+	"Bokeev"
+	"Borovsky"
+	"Burukhin"
+	"Dalmatov"
+	"Dursky"
+	"Galisky"
+	"Galitsky"
+	"Izyaslavsky"
+	"Kisleevsky"
+	"Korobyin"
+	"Mozhaisky"
+	"Satin"
+	"Shemyakin"
+	"Shukalovsky"
+	"Travin"
+	"Tsyplyatev"
+	"Uglisky"
+	"Vereisky"
+	"Vitebsky"
+	"Vnukov"
+	"Volotsky"
+	"Zabolotsky"
+}
+ship_names = {
+	"Bolotovo"
+	"Bryansk"
+	"Chudskoye"
+	"Izborsk"
+	"Kulikovo"
+	"Ostrov"
+	"Pechory"
+	"Polotsk"
+	"Porhov"
+	"Pskovskoye"
+	"Rakovor"
+	"Sebezh"
+	"Smolensk"
+	"Velikaya"
+	"Velikiye Luki"
+}

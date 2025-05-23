@@ -1,0 +1,93 @@
+t_roman_senate_mechanic = {
+	alert_icon_gfx = GFX_gv_alerticons_roman_senate
+	alert_icon_index = 1
+	available = {
+		
+	}
+	
+	powers = {
+		imperial_grasp = {
+			gui = russian_modernization_gov_mech
+			min = 0
+			max = 100
+			default = 50
+			scaled_modifier = {
+				modifier = {
+					max_absolutism_effect = 0.1
+					global_unrest = -2
+					all_estate_influence_modifier = -0.1
+				}
+			}
+			is_good = yes
+		}
+	}
+	
+	interactions = {
+		t_strengthen_emperor = {
+			icon = GFX_t_roman_senate_adm
+			#cost_type = table_of_ranks_adm_power
+			#cost = 100
+			trigger = {
+				adm_power_cost = 50
+				NOT = { has_country_flag = t_roman_senate_locked }
+			}
+			effect = {
+				adm_power_cost = 50
+				country_event = { id = flavor_rom.19 }
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 100
+			}
+		}
+		t_strengthen_senate = {
+			icon = GFX_t_roman_senate_dip
+			#cost_type = table_of_ranks_dip_power
+			#cost = 100
+			trigger = {
+				dip_power_cost = 50
+			}
+			effect = {
+				dip_power_cost = 50
+				country_event = { id = flavor_rom.20 }
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 0
+			}
+		}
+		t_capital_development = {
+			icon = GFX_t_roman_senate_mil
+			#cost_type = table_of_ranks_mil_power
+			#cost = 100
+			trigger = {
+				adm_power_cost = 25
+				dip_power_cost = 25
+				mil_power_cost = 25
+			}
+			effect = {
+				adm_power_cost = 25
+				dip_power_cost = 25
+				mil_power_cost = 25
+				capital_scope = {
+					area = {
+						limit = {
+							owner = {
+								tag = ROOT
+							}
+						}
+						add_province_modifier = {
+							name = t_capital_development_modifier
+							duration = 3650
+						}
+						add_random_development = 1
+					}
+				}
+			}
+			cooldown_years = 15
+			ai_chance = {
+				factor = 100
+			}
+		}
+	}
+}

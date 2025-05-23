@@ -1,0 +1,16 @@
+# Reload Missions
+
+custom_button = {
+	name = gv_reload_missions
+	potential = {
+		ai = no
+    }
+	trigger = {
+		treasury = 1
+	}
+	effect = {
+		add_treasury = -1
+		country_event = { id = t_debug.6 }
+	}
+	tooltip = gv_reload_missions_tt
+}

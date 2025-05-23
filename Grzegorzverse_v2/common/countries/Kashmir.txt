@@ -1,0 +1,135 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 63 150 30 }
+revolutionary_colors = { 4 0 4 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	administrative_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	reformed_mughal_mansabdar
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Adikavi #1" = 10
+	"Ajitapida #1" = 10
+	"Akkadevi #0" = -1
+	"Amritlekha #0" = -1
+	"Anangapida #1" = 10
+	"Asaga #0" = 0
+	"Avantivarma #1" = 10
+	"Avinita #0" = 0
+	"Ayanna #1" = 10
+	"Bhogavati #0" = -1
+	"Butuga #0" = 0
+	"Chandrabbalabbe #0" = -1
+	"Chandrapida #1" = 10
+	"Chandri #0" = -1
+	"Chinnambike #0" = -1
+	"Cippatajayapida #1" = 10
+	"Dashavarman #0" = 0
+	"Durlabhavardhana #2" = 10
+	"Gangambika #0" = -1
+	"Govinda #0" = 0
+	"Jagaraya #0" = 0
+	"Jayapida #1" = 10
+	"Kannama #0" = 0
+	"Kundakadevi #0" = -1
+	"Kuvalayapida #1" = 10
+	"Lalitadiyta-Muktapida #1" = 10
+	"Lalitapida #1" = 10
+	"Mahadevi #0" = -1
+	"Mallikarjuna #0" = 0
+	"Mallugi #0" = 0
+	"Marulaganga #0" = 0
+	"Mida #1" = -1
+	"Narasimha #0" = 0
+	"Obayamma #0" = -1
+	"Permanadi #0" = 0
+	"Prithvyapida #1" = 10
+	"Revakanimmadi #0" = -1
+	"Rudaladevi #0" = -1
+	"Samgramapida #1" = 10
+	"Samkaravarman #1" = 10
+	"Sangappai #0" = -1
+	"Satyasraya #0" = 0
+	"Shradha #0" = -1
+	"Sussala #1" = 10
+	"Tarapida #1" = 10
+	"Thirumalambike #0" = -1
+	"Utpalapida #1" = 10
+	"Vajraditya #1" = 10
+	"Zangtsa #1" = 10
+}
+leader_names = {
+	"Afridi"
+	"Bahadur"
+	"Bakhsh"
+	"Bhangalia"
+	"Bhatta"
+	"Chandral"
+	"Das"
+	"Dev"
+	"Gahunia"
+	"Gami"
+	"Hamadani"
+	"Jamwal"
+	"Jivan"
+	"Kashmiri"
+	"Katoch"
+	"Kisthwaria"
+	"Kralawari"
+	"Lal"
+	"Makhdum"
+	"Malik"
+	"Mehsud"
+	"Mir"
+	"Naga"
+	"Pahore"
+	"Pakhral"
+	"Parmanand"
+	"Pundir"
+	"Rai"
+	"Shergill"
+	"Singh"
+	"Sodhi"
+	"Sohal"
+}
+ship_names = {
+	"Alia"
+	"Alisha"
+	"Aziza"
+	"Beas"
+	"Chenab"
+	"Fatimah"
+	"Guru"
+	"Indus"
+	"Jalsena"
+	"Jhelum"
+	"Khan"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Niloufa"
+	"Ravi"
+	"Sagar"
+	"Sutlej"
+	"Yasmine"
+	"Zahira"
+}

@@ -1,0 +1,29 @@
+t_bav_religious_fragmentation = {
+	icon = estate_burghers_fugger_family
+	max_absolutism = -10
+	loyalty = -0.15
+	influence = 0.1
+	is_valid = {
+		is_or_was_tag = { tag = BAV }
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted_province = {
+		add_province_modifier = {
+		name = Rel_fra
+		duration = -1
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		global_tax_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

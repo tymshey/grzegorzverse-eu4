@@ -1,0 +1,43 @@
+Austrian_Nobility = { # Disaster related to austria
+	potential = {
+		tag = BAV
+		NOT = {has_country_flag = balls}
+	}
+	
+	can_start = {
+		tag = BAV
+		HAB = {vassal_of = BAV}
+	}
+	
+	can_stop = {
+	NOT = { HAB = {vassal_of = BAV}}
+	}
+	
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		factor = 10
+	}
+	
+	can_end = {
+		mission_completed = bav_missions_7
+	}
+	
+	modifier = {
+	diplomatic_reputation = -2
+	yearly_corruption = 0.2
+	global_unrest = 3
+	}
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			#1000 = 0
+			# None
+		}
+	}
+}

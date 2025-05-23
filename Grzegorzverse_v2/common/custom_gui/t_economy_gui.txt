@@ -1,0 +1,278 @@
+# Economy Interface
+
+custom_text_box = {
+	name = t_economy_gdp_text
+	potential = { }
+}
+
+custom_text_box = {
+	name = t_economy_qol_value
+	potential = { }
+}
+
+custom_text_box = {
+	name = t_economy_qol_modifier
+	potential = { }
+}
+
+custom_button = { # Increase Taxation
+    name = t_eco_increase_taxation
+    potential = {
+        
+    }
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = t_increased_taxation_flag
+				}
+				had_country_flag = {
+					flag = t_increased_taxation_flag
+					days = 3650
+				}
+			}
+		}
+	}
+    effect = {
+		add_adm_power = -10
+		add_country_modifier = {
+			name = t_tax_increase_modifier
+			duration = 3650
+		}
+		hidden_effect = {
+			clr_country_flag = t_increased_taxation_flag
+			set_country_flag = t_increased_taxation_flag
+		}
+	}
+    tooltip = t_increase_taxation_tt
+}
+
+custom_button = { # Appriopriate Clergy
+    name = t_eco_take_from_clergy
+    potential = {
+        
+    }
+    trigger = {
+		hidden_trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = t_took_from_clergy
+				}
+				had_country_flag = {
+					flag = t_took_from_clergy
+					days = 3650
+				}
+			}
+		}
+	}
+    effect = {
+		add_adm_power = -10
+		add_years_of_income = 0.1
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		hidden_effect = {
+			clr_country_flag = t_took_from_clergy
+			set_country_flag = t_took_from_clergy
+		}
+	}
+    tooltip = t_eco_take_from_clergy_tt
+}
+
+custom_button = { # Civilian Austerity
+    name = t_eco_civilian_austerity
+    potential = {
+        
+    }
+    trigger = {
+		adm_tech = 10
+		is_at_war = yes
+		hidden_trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = t_enabled_civ_austerity
+				}
+				had_country_flag = {
+					flag = t_enabled_civ_austerity
+					days = 3650
+				}
+			}
+		}
+	}
+    effect = {
+		add_adm_power = -10
+		add_country_modifier = {
+			name = t_civ_austerity
+			duration = 3650
+		}
+		hidden_effect = {
+			clr_country_flag = t_enabled_civ_austerity
+			set_country_flag = t_enabled_civ_austerity
+		}
+	}
+    tooltip = t_eco_civilian_austerity_tt
+}
+
+custom_button = { # Conduct Census
+    name = t_eco_conduct_census
+    potential = {
+        
+    }
+    trigger = {
+		adm_tech = 10
+		hidden_trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = t_census_conducted
+				}
+				had_country_flag = {
+					flag = t_census_conducted
+					days = 3650
+				}
+			}
+		}
+	}
+    effect = {
+		add_adm_power = -10
+		add_country_modifier = {
+			name = t_eco_census
+			duration = 3650
+		}
+		hidden_effect = {
+			clr_country_flag = t_census_conducted
+			set_country_flag = t_census_conducted
+		}
+	}
+    tooltip = t_eco_conduct_census_tt
+}
+
+###
+
+# Unfathomable Argentarii Control
+custom_button = {
+    name = t_eco_argentarii_6
+    potential = {
+        OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_country_flag = t_unfathomable_argentarii_control_flag
+    }
+    trigger = {
+		# adm_tech = 10
+		# OR = {
+			# NOT = {
+				# has_country_flag = t_argentarii_addressed
+			# }
+			# had_country_flag = {
+				# flag = t_argentarii_addressed
+				# days = 3650
+			# }
+		# }
+	}
+    effect = {
+		# add_adm_power = -25
+		
+		# hidden_effect = {
+			# clr_country_flag = t_argentarii_addressed
+			# set_country_flag = t_argentarii_addressed
+		# }
+	}
+    tooltip = t_eco_argentarii_6_tt
+}
+
+# Strong Argentarii Control
+custom_button = {
+    name = t_eco_argentarii_5
+    potential = {
+        OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_country_flag = t_strong_argentarii_control_flag
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_eco_argentarii_5_tt
+}
+
+# Average Argentarii Control
+custom_button = {
+    name = t_eco_argentarii_4
+    potential = {
+        OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_country_flag = t_average_argentarii_control_flag
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_eco_argentarii_4_tt
+}
+
+# Loose Argentarii Control
+custom_button = {
+    name = t_eco_argentarii_3
+    potential = {
+        OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_country_flag = t_loose_argentarii_control_flag
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_eco_argentarii_3_tt
+}
+
+# No Argentarii Control
+custom_button = {
+    name = t_eco_argentarii_2
+    potential = {
+        OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_country_flag = t_no_argentarii_control_flag
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_eco_argentarii_2_tt
+}
+
+# Argentarii Dominance
+custom_button = {
+    name = t_eco_argentarii_1
+    potential = {
+        OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_country_flag = t_argentarii_dominance_flag
+    }
+    trigger = {
+		
+	}
+    effect = {
+		
+	}
+    tooltip = t_eco_argentarii_1_tt
+}

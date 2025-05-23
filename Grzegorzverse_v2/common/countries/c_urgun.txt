@@ -1,0 +1,25 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 0 155 55 }
+monarch_names = {
+	"Asbagh #1" = 10
+	"Azraq #1" = 10
+	"Banhbina #2" = 10
+	"Barha #1" = 10
+	"Daliyah #0" = -1
+	"Dhiya #0" = 0
+	"Efšer #1" = 10
+	"Jimofuta #1" = 10
+	"Kabak #1" = 10
+	"Kallar #1" = 10
+	"Mah Jabin #0" = -1
+	"Owais #0" = 0
+	"Ronahî #0" = -1
+	"Rumofuda #2" = 10
+	"Rutbil #2" = 10
+	"Sad #0" = -1
+	"Sanjar #0" = 0
+	"Sarê #0" = -1
+	"Shahabuddin #1" = 10
+	"Shihyu #1" = 10
+}

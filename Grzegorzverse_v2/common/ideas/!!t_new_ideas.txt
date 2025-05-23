@@ -1,0 +1,249 @@
+# Western Roman ideas
+
+WRE_ideas = {
+	start = {
+		advisor_cost = -0.1
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		global_unrest = -3
+	}
+	
+	trigger = {
+		tag = WRE
+	}
+	free = yes
+	
+	t_wre_the_true_heir = {
+		prestige = 1
+	}
+	t_wre_roman_cities = {
+		development_cost = -0.15
+		production_efficiency = 0.1
+	}
+	t_wre_diocletian_reforms = {
+		global_manpower_modifier = 0.2
+	}
+	t_wre_spqr = {
+		core_creation = -0.1
+	}
+	t_wre_roman_merchant_class = {
+		global_trade_power = 0.1
+	}
+	t_wre_legacy_of_the_legions = {
+		infantry_power = 0.10
+		discipline = 0.05
+	}
+	t_wre_edict_of_milan = {
+		tolerance_own = 2
+		global_unrest = -2
+	}
+}
+
+# Austrian Imperial ideas
+
+AUE_ideas = {
+	start = {
+		land_morale = 0.1
+		land_forcelimit_modifier = 0.2
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+
+	trigger = {
+		tag = AUE
+	}
+	free = yes
+	
+	t_aue_1 = {
+		culture_conversion_cost = -0.5
+		culture_conversion_time = -0.2
+	}
+	military_border = {
+		global_garrison_growth = 0.15
+		fort_maintenance_modifier = -0.10
+	}
+	fugger_banks = {
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	t_aue_4 = {
+		infantry_power = 0.1
+	}
+	t_aue_5 = {
+		global_missionary_strength = 0.03
+	}
+	t_aue_6 = {
+		manpower_in_true_faith_provinces = 0.15
+	}
+	hofkriegsrat = {
+		reinforce_speed = 0.3
+		discipline = 0.05
+	}
+}
+
+# Judeoborean ideas
+
+Z1C_ideas = {
+	start = {
+		land_morale = 0.1
+		land_maintenance_modifier = -0.2
+	}
+	
+	bonus = {
+		artillery_fire = 1
+	}
+
+	trigger = {
+		tag = Z1C
+	}
+	free = yes
+	
+	t_judeoaryanism_idea = {
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.25
+	}
+	t_hyperborean_promised_land_idea = {
+		development_cost_in_primary_culture = -0.2
+	}
+	t_judean_banking_idea = {
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	t_judean_spartanism_idea = {
+		infantry_power = 0.1
+	}
+	t_defend_judean_land_idea = {
+		manpower_in_true_faith_provinces = 0.2
+	}
+	t_judean_ingenuity_idea = {
+		trade_efficiency = 0.15
+	}
+	t_mitzvah_idea = {
+		global_missionary_strength = 0.03
+	}
+}
+
+# HISPANIA IDEAS
+
+HIS_ideas = {
+	start = {
+		 missionaries = 1
+		 land_morale = 0.1
+	}
+	trigger = {
+		tag = HIS
+	}
+	free = yes
+
+	tradition_hit_and_run = {
+		movement_speed = 0.10
+		cavalry_power = 0.1
+	}
+	tradition_xenophilic = {
+		num_accepted_cultures = 1
+		colonists = 1
+		effect = { remove_temporary_colonist = yes }
+	}
+	HIS_armada_idea = {
+		heavy_ship_power = 0.15
+	}
+	tradition_charitable = {
+		global_unrest = -2
+	}
+	tradition_fp2_strategy_gamers = {
+		core_creation = -0.1
+		province_warscore_cost = -0.1
+	}
+	tradition_fp2_ritualised_friendship = {
+		improve_relation_modifier = 0.25
+	}
+	increase_discipline = {
+		discipline = 0.05
+	}
+	bonus = {
+		global_colonial_growth = 20
+	}
+}
+
+#iberia idee
+
+IBE_ideas = {
+	start = {
+		 missionaries = 1
+		 land_morale = 0.15
+	}
+	trigger = {
+		tag = IBE
+	}
+	free = yes
+
+	tradition_hit_and_run = {
+		movement_speed = 0.10
+		cavalry_power = 0.15
+	}
+	tradition_xenophilic = {
+		num_accepted_cultures = 2
+		colonists = 1
+	}
+	HIS_armada_idea = {
+		heavy_ship_power = 0.15
+	}
+	tradition_charitable = {
+		global_unrest = -2
+	}
+	tradition_fp2_strategy_gamers = {
+		trade_efficiency = 0.1
+	}
+	tradition_his_firepower = {
+		fire_damage = 0.10
+	}
+	increase_discipline = {
+		discipline = 0.05
+	}
+	bonus = {
+		global_colonial_growth = 25
+	}
+}
+
+# North German Confederation Ideas
+
+NGC_ideas = {
+	start = {
+		 infantry_power = 0.1
+		 land_morale = 0.1
+	}
+	trigger = {
+		tag = NGC
+	}
+	free = yes
+
+	t_fruhlings_und_herbstmesse = {
+		trade_efficiency = 0.1
+		global_own_trade_power = 0.1
+	}
+	t_zunft = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	t_residenzstadt = {
+		development_cost = -0.05
+	}
+	t_ordnung_muss_sein = {
+		global_unrest = -2
+	}
+	t_maintain_religious_stability = {
+		global_missionary_strength = 0.02
+	}
+	t_german_diplomacy = {
+		improve_relation_modifier = 0.25
+	}
+	t_german_universities = {
+		technology_cost = -0.1
+	}
+	bonus = {
+		diplomatic_reputation = 1
+	}
+}

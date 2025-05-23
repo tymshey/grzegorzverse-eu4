@@ -1,0 +1,25 @@
+	mge_dev_mogol_modifier = {
+		global_tax_modifier = 0.20
+	}
+
+	mge_cavalry_power = {
+		cavalry_power = 0.12
+	}
+	
+	mge_mogeyro-mongol_modifier = {
+		global_autonomy = -0.20
+		global_unrest = -5
+	}
+	
+	mge_caucasian_god = {
+		global_unrest = -3
+		tolerance_heretic = 5
+	}
+	
+	mge_finnish = {
+		infantry_power = 0.10
+	}
+	
+	mge_comeback_of_horses = {
+		cavalry_power = 0.20
+	}

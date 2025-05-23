@@ -1,0 +1,668 @@
+# Province modifiers
+
+# General
+
+t_jewish_quarter = {
+	picture = "t_jewish_quarter_icon"
+	trade_value_modifier = 0.1
+	local_unrest = 1
+}
+
+t_nestorian_quarter = {
+	picture = "t_nestorian_quarter_icon"
+	local_production_efficiency = 0.1
+	local_unrest = 1
+}
+
+# Rome
+
+t_rome_spanish_steps = {
+	prestige = 0.5
+	diplomats = 1
+	advisor_pool = 1
+}
+
+t_rome_trevi = {
+	devotion = 1
+	prestige_decay = -0.01
+	monthly_splendor = 1
+	local_tax_modifier = 0.25
+}
+
+t_rome_capitoline_hill = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.2
+}
+
+t_rome_eternal_city_restored = {
+	local_development_cost = -0.05
+	local_tax_modifier = 0.2
+	prestige = 1
+	local_build_time = -0.25
+}
+
+# Constantinople
+
+t_caput_mundi = { # BASED
+	picture = "t_augustus"
+	local_tax_modifier = 0.3
+	local_manpower_modifier = 0.5
+	local_governing_cost = 1
+	local_development_cost = -0.25
+}
+
+t_constantinople_dev = {
+	picture = "t_augustus"
+	local_tax_modifier = 0.2
+	local_manpower_modifier = 0.25
+	local_governing_cost = 0.5
+	local_development_cost = -0.25
+}
+
+t_byz_capital_embellished = { # unused
+	prestige = 0.2
+	local_development_cost = -0.1
+}
+
+t_expand_the_imperial_port = { # Harbour of Theodosius
+	picture = "major_harbour"
+	ship_recruit_speed = -0.5
+	province_trade_power_modifier = 0.1
+}
+
+t_basilica_cistern = { # unused
+	local_defensiveness = 0.25
+	max_absolutism = 10
+}
+
+t_church_of_the_holy_apostles = { # unused
+	local_tax_modifier = 0.25
+	local_missionary_strength = -0.05
+}
+
+t_genoese_quarter = {
+	trade_goods_size_modifier = 0.15
+	trade_value_modifier = 0.1
+}
+
+t_forum_of_constantine = { # unused
+	prestige = 0.2
+}
+
+t_phanarion = { # Phanarion
+	picture = "t_calendar"
+	embracement_cost = -0.1
+	# tooltip = t_phanarion_tt
+}
+
+t_uskudar = { # unused
+	local_tax_modifier = 0.5
+	local_development_cost = -0.1
+}
+
+t_grand_bazaar = { # unused
+	trade_goods_size_modifier = 0.25
+	province_trade_power_modifier = 0.15
+}
+
+t_cosmopolitan_society = {
+	picture = "t_temple_icon"
+	local_manpower_modifier = 0.5
+	local_governing_cost = 0.25
+}
+
+t_college_of_pontiffs = {
+	prestige = 1
+	embracement_cost = -0.05
+}
+
+t_theodosian_university_modifier = {
+	idea_cost = -0.05
+}
+
+t_theodosian_university_modifier_2 = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+
+t_theodosian_university_modifier_3 = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+	embracement_cost = -0.05
+}
+
+t_the_imperial_society = {
+	institution_growth = 6
+}
+
+t_capital_development_modifier = {
+	local_tax_modifier = 0.1
+	local_institution_spread = 0.2
+}
+
+t_ecumenical_patriarch = {
+	local_tax_modifier = 0.2
+	tolerance_own = 2
+}
+
+t_imperial_trade_port = {
+	picture = "major_harbour"
+	trade_value_modifier = 0.1
+	trade_goods_size_modifier = 0.1
+}
+
+t_imperial_crc_trade_port = {
+	picture = "crc_harbour"
+	trade_value_modifier = 0.1
+	trade_goods_size_modifier = 0.2
+	local_defensiveness = 0.25
+}
+
+t_crc_headquarters = {
+	picture = "crc_harbour"
+	ship_recruit_speed = -0.5
+	local_ship_repair = 0.25
+}
+
+t_siderokausia = {
+	picture = "goodgold"
+	trade_goods_size = 1
+}
+
+gv_imperial_naval_industry = {
+	picture = "harbour_good"
+	naval_forcelimit = 1
+	ship_recruit_speed = -0.25
+	local_sailors_modifier = 0.25
+}
+
+gv_tralles_tea = {
+	trade_goods_size = 1
+}
+
+gv_ecumenical_patriarchate_allowed = {
+	local_tax_modifier = 0.1
+}
+
+gv_roman_crimea = {
+	trade_steering = 0.1
+	trade_value_modifier = 0.25
+}
+
+# Germany
+
+t_augsburg_modifier = {
+	province_trade_power_value = 0.25
+	local_culture_conversion_cost = 0.5
+	local_culture_conversion_time = 0.25
+}
+
+t_z01_amsterdam_port = {
+	local_development_cost = -0.1
+	province_trade_power_modifier = 0.5
+	ship_recruit_speed = -0.5
+}
+
+t_z01_berg_emporium = {
+	local_development_cost = -0.1
+	province_trade_power_modifier = 0.2
+}
+
+t_theodland_eisen_und_kohle_modifier = {
+	trade_goods_size_modifier = 0.25
+	local_development_cost = -0.2
+}
+
+t_humboldt = {
+	idea_cost = -0.05
+	embracement_cost = -0.05
+}
+
+# Paris
+
+t_france_louvre = {
+	prestige = 1
+	local_tax_modifier = 0.5
+	local_institution_spread = 0.2
+}
+
+# Florence
+
+t_lan_city_of_god = {
+	prestige = 1
+	local_tax_modifier = 0.25
+	local_development_cost = -0.2
+}
+
+# Other
+
+t_bolu_industrial_area = {
+	picture = "goodcoal"
+	trade_goods_size = 1
+	local_development_cost = -0.1
+}
+
+t_renaissance_of_chalcedon_modifier = {
+	local_production_efficiency = 0.1
+	province_trade_power_modifier = 0.2
+}
+
+t_ephesus_irrigation_system_modifier = {
+	local_production_efficiency = 0.1
+	province_trade_power_modifier = 0.1
+}
+
+t_per_house_of_wisdom = {
+	local_development_cost = -0.05
+	local_institution_spread = 0.25
+	technology_cost = -0.05
+}
+
+t_per_forum_of_grzegorz = {
+	local_development_cost = -0.05
+	province_trade_power_modifier = 0.25
+	local_production_efficiency = 0.25
+}
+
+t_per_capital_irrigation = {
+	local_development_cost = -0.05
+	local_institution_spread = 0.25
+	province_trade_power_modifier = 0.25
+}
+
+t_per_capital_canals = {
+	local_development_cost = -0.05
+	local_production_efficiency = 0.25
+	local_tax_modifier = 0.35
+}
+
+t_antioch_modifier = {
+	province_trade_power_modifier = 0.25
+	local_missionary_strength = -0.05
+}
+
+t_hel_iron_mines = {
+	picture = "goodiron"
+	trade_goods_size = 2
+}
+
+t_rome_conversion_modifier = {
+	local_missionary_strength = 0.03
+	local_unrest = 1
+}
+
+t_rome_culture_conversion_modifier = {
+	local_culture_conversion_cost = -0.25
+	local_culture_conversion_time = -0.25
+	local_unrest = 5
+}
+
+t_rome_greek_stability = {
+	local_unrest = -1
+	local_development_cost = -0.05
+	# local_prosperity_growth = 0.1
+}
+
+t_rome_classical_culture = {
+	trade_goods_size = 1
+	prestige = 0.5
+	local_unrest = -2
+	local_missionary_strength = -0.02
+}
+
+t_industrial_revolution = {
+	trade_goods_size_modifier = 0.25
+	local_development_cost = -0.05
+}
+
+t_rome_crusader_rule_modifier = {
+	local_unrest = -2
+	local_missionary_strength = 0.02
+}
+
+t_illuminati = {
+	governing_cost = -0.05
+}
+
+t_rome_unrest_buff = {
+	local_unrest = -3
+}
+
+gbr_british_rule_2 = {
+	local_unrest = -1
+	local_development_cost = -0.1
+}
+
+t_london_stock_exchange = {
+	global_trade_power = 0.1
+	province_trade_power_modifier = 0.1
+}
+
+gv_semnan_gems = {
+	trade_goods_size = 1
+}
+
+gv_persia_growth_of_gownograd = {
+	picture = "trade_good"
+	local_development_cost = -0.15
+}
+
+gv_influx_of_traders = {
+	picture = "trade_good"
+	local_development_cost = -0.15
+	trade_value_modifier = 0.25
+}
+
+gv_persian_port_of_thatta = {
+	picture = "major_harbour"
+	local_development_cost = -0.15
+	trade_value_modifier = 0.1
+}
+
+###
+
+gv_krakow_capital = {
+	local_development_cost = -0.2
+	local_manpower_modifier = 0.2
+}
+
+gv_warszawa_capital = {
+	local_development_cost = -0.2
+	local_build_time = -0.2
+	local_tax_modifier = 0.2
+}
+
+###
+
+t_lat_plague = {
+	local_development_cost = 0.2
+	local_tax_modifier = -0.5
+}
+
+t_lat_new_capital = {
+	local_development_cost = -0.15
+	local_tax_modifier = 0.15
+}
+
+t_lat_aftermath = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+
+t_lat_not_returning_to_rome = {
+	local_development_cost = 0.1
+}
+
+t_florence_paper = {
+	trade_goods_size_modifier = 0.2
+}
+
+t_jupiter_optimus_maximus = {
+	local_trade_goods_size_modifier = 0.25
+	global_unrest = -1
+}
+
+gv_lat_fertile_valleys_of_italy = {
+	local_development_cost = -0.15
+	local_production_efficiency = 0.1
+}
+
+gv_lat_rich_trading_guilds = {
+	picture = "trade_good"
+	trade_goods_size_modifier = 0.1
+}
+
+###
+
+t_persia_capital_mission_boost = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+
+t_per_afghan_forts = {
+	local_defensiveness = 0.3
+}
+
+t_per_production_boost = {
+	local_production_efficiency = 0.15
+}
+
+t_per_tikka_uygurica = {
+	prestige = 1
+}
+
+t_rome_court_strife_capital = {
+	monthly_council_consensus = -0.25
+}
+
+t_persian_slave_industry = {
+	trade_goods_size_modifier = 0.2
+}
+
+t_per_makkah_modifier = {
+	local_culture_conversion_cost = -0.5
+	local_culture_conversion_time = -0.25
+}
+
+t_sack_of_jerusalem_modifier = {
+	trade_goods_size_modifier = -0.25
+	local_development_cost = 0.5
+}
+
+t_fire_temple_of_constantinople = {
+	picture = "t_sacred_fire_icon"
+	tolerance_own = 2
+	missionaries = 1
+	local_development_cost = 0.1
+}
+
+t_slave_production_bonus = {
+	trade_goods_size_modifier = -0.05
+}
+
+t_per_bengal_conquest_modifier = {
+	local_tax_modifier = 0.2
+}
+
+t_per_guangzhou_modifier = {
+	trade_value_modifier = 0.2
+	trade_goods_size_modifier = 0.2
+}
+
+t_per_river_of_life = {
+	local_development_cost = -0.1
+	trade_goods_size_modifier = 0.1
+}
+
+t_per_new_gownograd = {
+	prestige = 1
+	local_tax_modifier = 0.2
+	local_development_cost = -0.2
+}
+
+t_per_development_of_tibet = {
+	local_development_cost = -0.2
+}
+
+t_zoroastrian_sacred_fire_modifier = {
+	picture = "t_sacred_fire_icon"
+	local_development_cost = -0.05
+	trade_value_modifier = 0.05
+}
+
+###
+
+t_noah_ark_modifier = {
+	prestige = 1
+}
+
+t_jerusalem_unrest_modifier = {
+	local_unrest = -10
+}
+
+t_jerusalem_trade_modifier = {
+	trade_goods_size_modifier = 0.1
+	trade_value_modifier = 0.15
+}
+
+t_jerusalem_order_modifier = {
+	local_development_cost = -0.05
+	local_unrest = -2
+}
+
+t_crusaders_control_mecca = {
+	local_missionary_strength = 0.03
+	local_development_cost = 0.05
+	local_unrest = -1
+}
+
+t_rybnik = {
+	local_development_cost = -0.2
+	trade_goods_size = 2
+}
+
+t_jerusalem_colonial = {
+	global_colonial_growth = 10
+	range = 0.2
+}
+
+###
+
+t_odessa_modifier = {
+	movement_speed = 0.01
+}
+
+t_oman_sacred_fire = {
+	picture = "t_sacred_fire_icon"
+	prestige = 1
+	trade_value_modifier = 0.25
+}
+
+t_qawasim_trade_hub = {
+	trade_value_modifier = 0.3
+}
+
+t_oman_fertile_desert_modifier = {
+	local_development_cost = -0.1
+}
+
+t_omani_trade_post = {
+	picture = "major_harbour"
+	local_development_cost = -0.1
+	trade_goods_size = 1
+}
+
+t_judeoborean_golden_mountain = {
+	trade_goods_size_modifier = 0.25
+	trade_goods_size = 1 # zrobilem to czarnuchy
+	local_gold_depletion_chance_modifier = -0.5
+}
+
+t_judean_krakow = {
+	trade_value_modifier = 0.2
+	local_development_cost = -0.1
+}
+
+t_judean_pacific_port = {
+	ship_recruit_speed = -0.5
+	local_ship_repair = 0.5
+	local_ship_cost = -0.5
+}
+
+t_judea_new_zion = {
+	local_development_cost = -0.5
+	trade_value_modifier = 0.2
+	trade_goods_size_modifier = 0.2
+}
+
+t_judeoaryan_homeland = {
+	local_development_cost = -0.25
+	trade_value_modifier = 0.1
+	trade_goods_size_modifier = 0.1
+}
+
+t_hyperborean_colony = {
+	picture = "t_hyperborean_colony_icon"
+	local_development_cost = -0.25
+	trade_goods_size_modifier = 0.2
+}
+
+t_caliphal_coffee_plantations = {
+	trade_value_modifier = 0.1
+	trade_goods_size_modifier = 0.25
+}
+
+t_inhospitable_wasteland = {
+	local_development_cost = 0.5
+}
+
+t_berlin_expansion = {
+	local_manpower_modifier = 0.25
+	local_production_efficiency = 0.25
+	local_development_cost = -0.1
+}
+
+# RESOURCES
+
+t_good_iron = { # High Quality Iron
+	picture = "goodiron"
+	trade_goods_size_modifier = 0.15
+}
+
+# HANSA
+
+t_major_hansa_city = {
+	picture = "harbour_3"
+	province_trade_power_value = 25
+	local_development_cost = -0.15
+}
+
+t_important_hansa_city = {
+	picture = "harbour_2"
+	province_trade_power_value = 10
+	local_development_cost = -0.1
+}
+
+t_minor_hansa_city = {
+	picture = "harbour_1"
+	province_trade_power_value = 5
+	local_development_cost = -0.1
+}
+
+# Disasters
+
+gv_mild_famine = {
+	picture = "famine_mild"
+	local_tax_modifier = -0.25
+	trade_goods_size_modifier = -0.25
+	local_manpower_modifier = -0.25
+}
+
+gv_mild_famine_marker = {
+	picture = "famine_mild"
+	trade_goods_size_modifier = 0.01
+}
+
+gv_severe_famine = {
+	picture = "famine_severe"
+	local_tax_modifier = -0.5
+	trade_goods_size_modifier = -0.5
+	local_manpower_modifier = -0.5
+}
+
+gv_severe_famine_marker = {
+	picture = "famine_severe"
+	trade_goods_size_modifier = 0.01
+}
+
+gv_devastating_famine = {
+	picture = "famine_devastating"
+	local_tax_modifier = -0.75
+	trade_goods_size_modifier = -0.75
+	local_manpower_modifier = -0.75
+}
+
+gv_devastating_famine_marker = {
+	picture = "famine_devastating"
+	trade_goods_size_modifier = 0.01
+}

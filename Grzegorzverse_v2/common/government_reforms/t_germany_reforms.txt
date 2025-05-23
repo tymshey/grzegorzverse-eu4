@@ -1,0 +1,84 @@
+t_prussian_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = Z01
+			tag = PRU
+			tag = GER
+			has_unlocked_government_reform = {
+				government_reform = t_prussian_monarchy
+			}
+			has_reform = t_prussian_monarchy
+			have_had_reform = t_prussian_monarchy
+		}
+	}
+	trigger = {
+		OR = {
+			tag = Z01
+			tag = PRU
+			tag = GER
+		}
+	}
+	legacy_equivalent = prussian_monarchy_legacy
+
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 3
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.25
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_1
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_2
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+}
+
+t_theodland_austria_rivalry_reform = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = Z01
+			tag = HAB
+			has_unlocked_government_reform = {
+				government_reform = t_theodland_austria_rivalry_reform
+			}
+			has_reform = t_theodland_austria_rivalry_reform
+		}
+	}
+	trigger = {
+		OR = {
+			tag = Z01
+			tag = HAB
+		}
+	}
+
+	modifiers = {
+		global_tax_modifier = 0.1
+		global_manpower_modifier = 0.1
+		nobles_influence_modifier = 0.1
+	}
+
+	government_abilities = {
+		t_theodland_austria_rivalry_mechanic
+	}
+}

@@ -1,0 +1,118 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 67 124 181 }
+revolutionary_colors = { 6 8 6 }
+historical_idea_groups = {
+	offensive_ideas
+	administrative_ideas
+	defensive_ideas
+	quality_ideas
+	trade_ideas
+	economic_ideas
+	spy_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_cavalry
+	maharathan_guerilla_warfare
+	mughal_musketeer
+	rajput_hill_fighters
+	reformed_mughal_musketeer
+	sikh_rifle
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Albero #0" = 0
+	"Bhavanaga #1" = -1
+	"Emma #0" = -1
+	"Ezzo #1" = 10
+	"Ferdinand #0" = 0
+	"Gerold #0" = 0
+	"Gisela #0" = -1
+	"Heilwich #0" = 0
+	"Hemma #0" = -1
+	"Hugo #0" = 0
+	"Jutta #0" = -1
+	"Mailaladevi #0" = -1
+	"Matthias #0" = 0
+	"Merada #1" = 10
+	"Mummuniraja #0" = 0
+	"Rothard #2" = 10
+	"Sanaphulla #0" = 0
+	"Theodorata #0" = -1
+	"Willibirg #0" = -1
+}
+leader_names = {
+	"Aher"
+	"Bhat"
+	"Bhoit"
+	"Bhonsle"
+	"Chavan"
+	"Dabhad"
+	"Gaikwad"
+	"Gujar"
+	"Holkar"
+	"Jadhav"
+	"Jagtap"
+	"Kadam"
+	"Kate"
+	"Kaushal"
+	"Khursh"
+	"Krishnamma"
+	"Lolaksi"
+	"Malusare"
+	"Maruthi"
+	"Moit"
+	"Moray"
+	"Nagaraj"
+	"Narsala"
+	"Nikam"
+	"Nimbalk"
+	"Palkar"
+	"Pawar"
+	"Ramiah"
+	"Rane"
+	"Satavahana"
+	"Sawant"
+	"Shinde"
+	"Shirke"
+	"Yadava"
+}
+ship_names = {
+	"Agni"
+	"Bhim"
+	"Brahma"
+	"Devi"
+	"Durga"
+	"Ganesh"
+	"Gayatri"
+	"Hanumaun"
+	"Indra"
+	"Jalsena"
+	"Kala Jahazi"
+	"Kali"
+	"Krishna"
+	"Kubera"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Ratri"
+	"Sagar"
+	"Sarasvati"
+	"Shiva"
+	"Sita"
+	"Soma"
+	"Surya"
+	"Varuna"
+	"Vayu"
+	"Vishnu"
+	"Yama"
+}

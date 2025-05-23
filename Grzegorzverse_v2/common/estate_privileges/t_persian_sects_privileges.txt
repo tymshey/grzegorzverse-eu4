@@ -1,0 +1,264 @@
+estate_persian_sects_pax_gregorica = {
+	icon = privilege_empty_throne
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	loyalty = 0.1
+	penalties = {
+		yearly_corruption = 0.02
+		advisor_cost = 0.1
+	}
+	benefits = {
+		tolerance_own = 1
+		global_missionary_strength = 0.01
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_persian_sects_fire_compromise = {
+	icon = privilege_build_jain_temple
+	land_share = 0
+	max_absolutism = -5
+	loyalty = 0.05
+	is_valid = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+		church_loyalty_modifier = -0.05
+		church_influence_modifier = 0.05
+		legitimacy = -0.5
+	}
+	benefits = {
+		development_cost_in_primary_culture = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+estate_persian_sects_immortals = {
+	icon = privilege_build_jain_temple
+	land_share = 10
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	loyalty = -0.1
+	penalties = {
+		
+	}
+	benefits = {
+		manpower_recovery_speed = 0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			mil = 3
+		}
+		modifier = {
+			factor = 0.8
+			mil = 5
+		}
+	}
+}
+
+estate_persian_sects_kurd_exploitation = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = 5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	loyalty = 0.1
+	
+	on_granted = {
+		custom_tooltip = t_persian_sects_kurd_exploitation_granted_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = slaves
+				region = persia_region
+			}
+			add_province_modifier = {
+				name = t_slave_production_bonus
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = t_persian_sects_kurd_exploitation_revoked_tt
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = t_slave_production_bonus
+			}
+			remove_province_modifier = t_slave_production_bonus
+		}
+		if = {
+			limit = {
+				has_province_modifier = t_slave_production_bonus
+			}
+			remove_province_modifier = t_slave_production_bonus
+		}
+	}
+	penalties = {
+
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_persian_sects_tolerance = {
+	icon = privilege_build_jain_temple
+	land_share = 2
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		
+	}
+	benefits = {
+		tolerance_heretic = 2
+		tolerance_heathen = 3
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			factor = 0.5
+			mil = 3
+		}
+		modifier = {
+			factor = 0.8
+			mil = 5
+		}
+	}
+}
+
+estate_persian_sects_fire_temple_endowments = {
+	icon = estate_church_fund_madrasas
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		
+	}
+	benefits = {
+		global_tax_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+	}
+}
+
+estate_persian_sects_doctrine_of_imperial_light = {
+	icon = privilege_unifying
+	land_share = 0
+	max_absolutism = 5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = PER
+			tag = ASY
+		}
+	}
+	can_select = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		
+	}
+	benefits = {
+		diplomatic_reputation = 1
+		ae_impact = -0.1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}

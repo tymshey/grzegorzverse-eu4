@@ -1,0 +1,90 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 150 39 67 }
+revolutionary_colors = { 12 14 0 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	maritime_ideas
+	administrative_ideas
+	offensive_ideas
+	economic_ideas
+	expansion_ideas
+}
+historical_units = {
+	ali_bey_reformed_infantry
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_dragoon
+	muslim_mass_infantry
+}
+monarch_names = {
+	"Abdul-Aziz #1" = 10
+	"Abu Iqal #1" = 10
+	"Adballah #1" = 10
+	"Ahmad #1" = 10
+	"Ayt'ere #0" = 0
+	"Bardas #0" = 0
+	"Chrysogone #0" = -1
+	"Cináed #0" = 0
+	"Dawud #1" = 10
+	"Dorotheos #0" = 0
+	"Eirenaios #0" = 0
+	"Eudoxios #0" = 0
+	"Eulalia #0" = -1
+	"Evanthia #0" = -1
+	"Habib #1" = 10
+	"Hossein #1" = 10
+	"Ibrahim #1" = 10
+	"Ioanna #0" = -1
+	"Ioannikios #0" = 0
+	"Isaakios #0" = 0
+	"Kyrillos #0" = 0
+	"Martha #0" = -1
+	"Maurikios #0" = 0
+	"Medjan #0" = 0
+	"Methodios #0" = 0
+	"Muhammad #2" = 10
+	"Nasr #1" = 10
+	"Nikarete #0" = -1
+	"Petronia #0" = -1
+	"Photios #0" = 0
+	"Rawh #1" = 10
+	"Thomais #0" = -1
+	"Umar #2" = 10
+	"Yazid #1" = 10
+	"Ziyadat Allah #1" = 10
+	"Ziydat Allah #1" = 10
+	"al-Fadl #1" = 10
+}
+leader_names = {
+	"Barqa"
+	"Hamilcar"
+	"Hannibal"
+	"Hasdrubal"
+	"Mago"
+}
+ship_names = {
+	"Alim"
+	"Aziz"
+	"Bari"
+	"Fattah"
+	"Ghaffar"
+	"Jabbar"
+	"Khaliq"
+	"Malik"
+	"Mu'min"
+	"Muhaymin"
+	"Musawwir"
+	"Mutakabbir"
+	"Qahhar"
+	"Quddus"
+	"Rahim"
+	"Rahman"
+	"Razzaq"
+	"Salam"
+	"Wahhab"
+}

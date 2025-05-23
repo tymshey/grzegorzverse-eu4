@@ -1,0 +1,39 @@
+Sus_ideas = {
+	start = {
+	colony_cost_modifier = -0.4
+	heavy_ship_power = 0.1
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+		tag = SOS
+	}
+	free = yes
+	
+	Production_Center = {
+		production_efficiency = 0.1
+	}
+	New_World_Migration = {
+		global_colonial_growth = 15
+		colonists = 1
+	}
+	Colonial_Army = {
+		land_morale = 0.1
+		may_perform_slave_raid = yes
+	}
+	Steer_Colonial_trade = {
+		trade_steering = 0.2
+	}
+	Trading_Nation = {
+		trade_efficiency = 0.1
+	}
+	African_Fortunes = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	Elite_Conquisadors = {
+		discipline = 0.05
+	}
+}

@@ -1,0 +1,621 @@
+## Made by tymshey
+
+# Jerusalem
+
+western_wall = {
+	start = 6003
+	date = -516.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	
+	build_trigger = {
+		OR = {
+			religion = jewish
+			religion = samaritan_faith
+		}
+		has_owner_religion = yes
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		
+	}
+
+	can_upgrade_trigger = {
+		OR = {
+			religion = jewish
+			religion = samaritan_faith
+		}
+		has_owner_religion = yes
+	}
+
+	keep_trigger = {
+		always = yes
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 100
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.05
+			global_missionary_strength = 0.01
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.15
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.075
+			global_missionary_strength = 0.03
+		}
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.1
+			global_missionary_strength = 0.03
+			missionaries = 1
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+t_dome_of_the_rock = {
+	start = 6002
+	date = 688.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	
+	build_trigger = {
+		OR = {
+			religion = sunni
+			religion = shia
+			religion = ibadi
+			religion = druze
+			religion = masmudi
+			religion = qarmatian
+		}
+		has_owner_religion = yes
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		
+	}
+
+	can_upgrade_trigger = {
+		OR = {
+			religion = sunni
+			religion = shia
+			religion = ibadi
+			religion = druze
+			religion = masmudi
+			religion = qarmatian
+		}
+		has_owner_religion = yes
+	}
+
+	keep_trigger = {
+		always = yes
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 100
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.05
+			global_missionary_strength = 0.01
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.15
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.075
+			global_missionary_strength = 0.03
+		}
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.1
+			global_missionary_strength = 0.03
+			missionaries = 1
+		}
+		on_upgraded = {
+		}
+	}
+}
+	
+t_great_wall_of_jerusalem = {
+	start = 381
+	date = 688.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	
+	build_trigger = {
+		owner = {
+			tag = KOJ
+		}
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		owner = {
+			tag = KOJ
+		}
+	}
+
+	can_upgrade_trigger = {
+		owner = {
+			tag = KOJ
+		}
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.25
+			local_garrison_size = 0.1
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.35
+			local_garrison_size = 0.15
+			local_hostile_attrition = 0.5
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 10000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.5
+			local_garrison_size = 0.25
+			local_hostile_attrition = 2
+			# local_defender_dice_roll_bonus = 1
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+t_jerusalem_church = {
+	start = 379
+	date = 335.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	
+	build_trigger = {
+		OR = {
+			religion = orthodox
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = anglican
+			religion = hussite
+		}
+		has_owner_religion = yes
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		
+	}
+
+	can_upgrade_trigger = {
+		OR = {
+			religion = orthodox
+			religion = catholic
+			religion = protestant
+			religion = reformed
+			religion = anglican
+			religion = hussite
+		}
+		has_owner_religion = yes
+	}
+
+	keep_trigger = {
+		always = yes
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 100
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.05
+			global_missionary_strength = 0.01
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.15
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.075
+			global_missionary_strength = 0.03
+		}
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			local_tax_modifier = 0.2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			church_loyalty_modifier = 0.1
+			global_missionary_strength = 0.03
+			missionaries = 1
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+t_great_stronghold_of_jerusalem = {
+	start = 2327
+	date = 688.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	
+	build_trigger = {
+		owner = {
+			tag = KOJ
+		}
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		owner = {
+			tag = KOJ
+		}
+	}
+
+	can_upgrade_trigger = {
+		owner = {
+			tag = KOJ
+		}
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.20
+			local_garrison_size = 0.20
+			local_hostile_attrition = 0.5
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.30
+			local_garrison_size = 0.25
+			local_hostile_attrition = 1
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 10000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_defensiveness = 0.50
+			local_garrison_size = 0.30
+			local_hostile_attrition = 2
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+}

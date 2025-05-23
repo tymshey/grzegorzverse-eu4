@@ -1,0 +1,124 @@
+t_louvre = {
+	start = 183
+	date = 1200.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 50
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 1
+	type = monument
+	
+	build_trigger = {
+		OR = {
+			culture = cosmopolitan_french
+		}
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+		OR = {
+			culture = cosmopolitan_french
+		}
+	}
+
+	can_upgrade_trigger = {
+		OR = {
+			culture = cosmopolitan_french
+		}
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 24
+		}
+		cost_to_upgrade = {
+			factor = 100
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			local_production_efficiency = 0.1
+			local_development_cost = -0.1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.25
+			imperial_authority_value = 0.05
+		}
+		on_upgraded = {
+			add_prestige = 10
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_production_efficiency = 0.15
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			prestige = 0.5
+			monthly_splendor = 1
+			imperial_authority_value = 0.1
+		}
+		on_upgraded = {
+			add_prestige = 10
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 300
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_production_efficiency = 0.15
+			local_development_cost = -0.15
+		}
+		country_modifiers = {
+			prestige = 1
+			monthly_splendor = 1
+			imperial_authority_value = 0.15
+		}
+		on_upgraded = {
+			add_prestige = 10
+		}
+	}
+}

@@ -1,0 +1,36 @@
+estate_nobles_social_elitism = {
+	icon = gv_privilege_eye_of_providence
+	max_absolutism = 5
+	loyalty = 0.15
+	influence = 0.2
+	is_valid = {
+		
+	}
+	can_select = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+	}
+	can_revoke = {
+		
+	}
+	penalties = {
+		global_unrest = 2
+	}
+	benefits = {
+		# global_tax_modifier = 0.1 # nah
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = BYZ
+					tag = ROM
+				}
+			}
+		}
+	}
+}

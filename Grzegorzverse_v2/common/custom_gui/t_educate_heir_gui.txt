@@ -1,0 +1,37 @@
+# Educate Heir
+
+custom_button = { # do it
+	name = gv_educate_heir
+	potential = {
+
+    }
+	trigger = {
+		AND = {
+			treasury = 100
+			has_heir = yes
+			NOT = {
+				OR = {
+					heir_adm = 6
+					heir_dip = 6
+					heir_mil = 6
+				}
+			}
+			NOT = {
+				has_country_modifier = gv_educating_heir
+				has_heir_flag = gv_educating_heir_flag
+			}
+		}
+	}
+	effect = {
+		add_treasury = -100
+		add_country_modifier = {
+			name = gv_educating_heir
+			duration = 3650
+		}
+		change_heir_adm = 1
+		change_heir_dip = 1
+		change_heir_mil = 1
+		set_heir_flag = gv_educating_heir_flag
+	}
+	tooltip = gv_educate_heir_tt
+}

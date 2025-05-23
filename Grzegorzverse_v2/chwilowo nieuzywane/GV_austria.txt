@@ -1,0 +1,1278 @@
+Hab_mission_1 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	first_mission = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {  }
+		position = 1
+		
+		trigger = {
+		army_size_percentage = 1
+		num_of_generals = 1
+		has_advisor = yes
+		}
+		effect = {
+		add_casus_belli = {
+		target = BOH
+		type = cb_restore_personal_union
+		months = 7300
+			}
+		add_country_modifier = {
+		name = Expand_the_state
+		duration = 7300
+			}
+		bohemia_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		erzgebirge_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		moravia_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_2 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	first_mission_1 = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {first_mission}
+		position = 2
+		
+		trigger = {
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzgebirge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			BOH = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+			BOH = {
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		
+		effect = {
+			silesia_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			BOH = {
+				add_historical_friend = HAB
+			}
+			hidden_effect = {
+				bohemia_area = {
+					add_unrest = -2
+				}
+				erzgebirge_area = {
+					add_unrest = -2
+				}
+				moravia_area = {
+					add_unrest = -2
+				}
+			}
+        }
+		
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_3 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    first_mission_2 = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {first_mission}
+		position = 2
+		
+		trigger = {
+			grown_by_development = 30
+			73 = {
+				num_of_times_improved_by_owner = 5
+			}
+			army_size_percentage = 1
+		}
+		
+		effect = {
+			add_casus_belli = {
+				target = HUN
+				type = cb_restore_personal_union
+				months = 7300
+			}
+			transdanubia_area   = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			slovakia_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			alfold_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			transylvania_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_transylvania_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+		
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_4 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Influence_the_balkans = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {first_mission_2 }
+		position = 3
+		
+		trigger = {
+		senior_union_with = HUN
+		}
+		effect = {
+		1767 = {
+		add_permanent_claim = ROOT
+		}
+		4756 = {
+		add_permanent_claim = ROOT
+		}
+		152 = {
+		add_permanent_claim = ROOT
+		}
+		131 = {
+		add_permanent_claim = ROOT
+		}
+		1826 = {
+		add_permanent_claim = ROOT
+		}
+		4752 = {
+		add_permanent_claim = ROOT
+		}
+		130 = {
+		add_permanent_claim = ROOT
+		}
+			}
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_5 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Stablize_Mogiyera = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {first_mission_2 }
+		position = 3
+		
+		trigger = {
+		senior_union_with = HUN
+		HUN = {
+		has_opinion = {
+		who = ROOT
+		value = 100
+				}
+			}
+		HUN = {
+		NOT = { liberty_desire = 50 }
+			}
+		
+		}
+		effect = {
+			add_country_modifier = {
+				name = Diplomatic_experts
+				duration = 7300
+			}
+			add_historical_friend = HUN
+			HUN = {
+				add_historical_friend = ROOT
+			}
+			transdanubia_area = {
+				add_unrest = -2
+			}
+			slovakia_area = {
+				add_unrest = -2
+			}
+			alfold_area = {
+				add_unrest = -2
+			}
+			transylvania_area = {
+				add_unrest = -2
+			}
+			southern_transylvania_area = {
+				add_unrest = -2
+			}
+        }
+		
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_5 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Control_bavaria = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {first_mission_1 }
+		position = 3
+		
+		trigger = {
+		moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		erzgebirge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				BOH = {
+					exists = yes
+				}
+			}
+		}
+		effect = {
+		east_bavaria_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		lower_bavaria_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		upper_bavaria_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_6 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Reach_to_the_east = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {first_mission_2 }
+		position = 3
+		
+		trigger = {
+		transdanubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		slovakia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		alfold_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		southern_transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		red_ruthenia_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		sandomierz_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		malopolska_area  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_7 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	Choose_our_path = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Influence_the_balkans Stablize_Mogiyera }
+		position = 4
+		
+		trigger = {
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzgebirge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				BOH = {
+					exists = no
+				}
+			}
+			senior_union_with = HUN
+			owns = 152
+			owns = 4756
+			owns = 1767
+			owns = 131
+			owns = 1826
+			owns = 4752
+			adm_tech = 10
+			monthly_income = 30
+			grown_by_development = 100
+		}
+		
+		effect = {
+			inherit = HUN
+			country_event = { id = flavor_austria.1 }
+        }
+		
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Balance_of_europe = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Choose_our_path}
+		position = 5
+		
+		trigger = {
+			has_any_disaster = no
+			inflation = -1
+		}
+		effect = {
+		add_country_modifier = {
+		name = Diplomatic_masters
+		duration = -1
+			}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Brothers_war = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Balance_of_europe}
+		position = 6
+		
+		trigger = {
+		mission_completed = Control_bavaria
+			OR = {
+				NOT = {
+					has_opinion = {
+						who = Z01
+						value = -100
+					}
+				}
+				Z01 = {
+					is_enemy = ROOT
+				}
+			}
+		}
+		effect = {
+			south_german_region  = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Crush_the_byzantines = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Balance_of_europe}
+		position = 6
+		
+		trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						has_opinion = {
+							who = BYZ
+							value = -100
+						}
+						has_opinion = {
+							who = ROM
+							value = -100
+						}
+					}
+				}
+				OR  = {
+					BYZ = {
+						is_enemy = ROOT
+					}
+					ROM = {
+						is_enemy = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			balkan_region = {
+				limit = {
+					NOT = {
+					area = northern_greece_area 
+					}
+					NOT = {
+					area = macedonia_area 
+					}
+					NOT = {
+					area = thrace_area 
+					}
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Our_little_italy = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Balance_of_europe}
+		position = 6
+		
+		trigger = {
+			OR = {
+			has_opinion = {
+			who = Z0B
+			value = -100
+				}
+			is_enemy = Z0B
+			}
+		}
+		effect = {
+		lombardy_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			venetia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			po_valley_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Defeat_the_eastern_barbarians = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Balance_of_europe}
+		position = 6
+		
+		trigger = {
+			OR = {
+			has_opinion = {
+			who = KIE
+			value = -100
+				}
+			is_enemy = KIE
+			}
+		}
+		effect = {
+		ruthenia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	Begin_Our_economic_growth = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {}
+		position = 8
+		
+		trigger = {
+			monthly_income = 30
+		}
+		effect = {
+		add_treasury = 200
+		add_country_modifier = {
+		name = Begin_Our_economic_growth
+		duration = 5475
+			}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Develop_our_capital = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Our_economic_growth}
+		position = 9
+		
+		trigger = {
+			134 = {
+				num_of_times_improved_by_owner = 10
+				temple = 1
+				marketplace = 1
+				workshop = 1
+				province_has_center_of_trade_of_level = 2
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+		effect = {
+			134 = {
+				add_province_modifier = {
+					name = Develop_our_capital
+					duration = -1
+				}
+			}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	The_industry_of_wien = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Develop_our_capital}
+		position = 10
+		
+		trigger = {
+			134 = {
+				num_of_times_improved_by_owner = 20
+				courthouse = 1
+				province_has_center_of_trade_of_level = 3
+				num_of_times_expanded_infrastructure = 2
+			}
+		}
+		
+		effect = {
+			134 = {
+				change_trade_goods = paper
+			}
+			134 = {
+				add_province_modifier = {
+					name = The_industry_of_wien_modifier
+					duration = -1
+				}
+			}
+		
+        }
+		
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	Develop_Silesia = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Our_economic_growth}
+		position = 9
+		
+		trigger = {
+			silesia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			263 = {
+			num_of_times_improved_by_owner = 3
+			workshop = 1
+			}
+			4723 = {
+			num_of_times_improved_by_owner = 3
+			workshop = 1
+			}
+			264 = {
+			num_of_times_improved_by_owner = 3
+			workshop = 1
+			}
+			4238 = {
+			num_of_times_improved_by_owner = 3
+			workshop = 1
+			}
+			2966 = {
+			num_of_times_improved_by_owner = 3
+			workshop = 1
+			}
+			
+			
+			
+		}
+		effect = {
+		263 = {
+		add_province_modifier = {
+		name = Develop_Silesia
+		duration = 5475
+			}
+		}
+		4723 = {
+		add_province_modifier = {
+		name = Develop_Silesia
+		duration = 5475
+			}
+		}
+		264 = {
+		add_province_modifier = {
+		name = Develop_Silesia
+		duration = 5475
+			}
+		}
+		4238 = {
+		add_province_modifier = {
+		name = Develop_Silesia
+		duration = 5475
+			}
+		}
+		2966 = {
+		add_province_modifier = {
+		name = Develop_Silesia
+		duration = 5475
+			}
+		}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_8 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	Hearts_of_iron = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Develop_Silesia Develop_our_capital }
+		position = 10
+		
+		trigger = {
+			all_owned_province = {
+				AND = {
+					trade_goods = iron
+					num_of_times_improved_by_owner = 5
+					has_building = workshop
+				}
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = { trade_goods = iron }
+					add_province_modifier = {
+						name = Hearts_of_iron
+						duration = -1
+					}
+				}
+			}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+
+
+Hab_mission_1 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	Build_up_the_country_side = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Our_economic_growth  }
+		position = 9
+		
+		trigger = {
+			total_development = 400
+			monthly_income = 60
+			num_of_owned_provinces_with = {
+				has_building = workshop 
+				value = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = Meth_builders
+				duration = -1
+			}
+        }
+		
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_1 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Expand_our_gold_mines = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Our_economic_growth  }
+		position = 9
+		
+		trigger = {
+			owns = 73
+			owns = 2967
+			owns = 154
+			73 = {
+				num_of_times_improved_by_owner = 10
+				num_of_times_expanded_infrastructure = 1
+				workshop = 1
+				temple = 1
+			}
+			2967 = {
+				num_of_times_improved_by_owner = 10
+				num_of_times_expanded_infrastructure = 1
+				workshop = 1
+				temple = 1
+			}
+			154 = {
+				num_of_times_improved_by_owner = 10
+				num_of_times_expanded_infrastructure = 1
+				workshop = 1
+				temple = 1
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = t_austria_inflation_reduction
+				duration = -1
+			}
+			73 = {
+				add_province_modifier = {
+					name = Gold_mines 
+					duration = -1
+				}
+			}
+			2967 = {
+				add_province_modifier = {
+					name = Gold_mines 
+					duration = -1
+				}
+			}
+			154 = {
+				add_province_modifier = {
+					name = Gold_mines 
+					duration = -1
+				}
+			}
+        }
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_1 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Copper_of_slovakia = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Expand_our_gold_mines  }
+		position = 10
+		
+		trigger = {
+		1318 = {
+		workshop = 1
+		marketplace = 1
+		num_of_times_improved_by_owner = 20
+		num_of_times_expanded_infrastructure = 1
+		}
+		}
+		effect = {
+			1318 = {
+			add_province_modifier = {
+			name = slovakian_cooper
+			duration = -1
+				}
+			}
+			add_treasury = -4000
+			}
+		ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_1 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Build_up_our_cities = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Expand_our_gold_mines
+								Build_up_the_country_side}
+		position = 10
+		
+		trigger = {
+		266 = {
+		num_of_times_improved_by_owner = 15
+		workshop = 1
+		temple = 1
+		}
+		153 = {
+		num_of_times_improved_by_owner = 15
+		workshop = 1
+		temple = 1
+		}
+		264 = {
+		num_of_times_improved_by_owner = 15
+		workshop = 1
+		temple = 1
+		}
+		4752 = {
+		num_of_times_improved_by_owner = 15
+		workshop = 1
+		temple = 1
+		}
+		}
+		effect = {
+		153 = {
+		change_trade_goods = silk
+		}
+		266 = {
+		add_province_modifier = {
+		name = Build_up_our_cities
+		duration = -1
+			}
+		}
+		153 = {
+		add_province_modifier = {
+		name = Build_up_our_cities
+		duration = -1
+			}
+		}
+		264 = {
+		add_province_modifier = {
+		name = Build_up_our_cities
+		duration = -1
+			}
+		}
+		4752 = {
+		add_province_modifier = {
+		name = Build_up_our_cities
+		duration = -1
+			}
+		}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}
+
+Hab_mission_1 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = DAC
+		}
+	}
+	has_country_shield = yes
+	
+	    Industrialization = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Hearts_of_iron
+							Build_up_our_cities}
+		position = 11
+		
+		trigger = {
+		stability = 3
+		monthly_income = 150
+		}
+		effect = {
+		add_country_modifier = {
+		name = Industrialization_modifier
+		duration = -1
+		}
+        }
+	  ai_weight = {
+			factor = 500
+		}
+	}	
+}

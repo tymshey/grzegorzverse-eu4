@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 175 140 40 }
+monarch_names = {
+	"Aepak #0" = 0
+	"Asalup #0" = 0
+	"Ayasun #1" = 10
+	"Ayten #1" = -1
+	"Bachman #0" = 0
+	"Bonyak #1" = 10
+	"Eldeçyuk #0" = 0
+	"Etrek #1" = 10
+	"Halfdán #0" = 0
+	"Husun #1" = 10
+	"Kubasar #2" = 10
+	"Sal #0" = -1
+	"Tökarma #0" = -1
+	"Uzur #0" = 0
+}

@@ -1,0 +1,60 @@
+t_british_industrialization_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 14
+	available = {
+		
+	}
+	
+	#powers = {
+	#	table_of_ranks_adm_power = {
+	#		max = 150
+	#		monarch_power = ADM
+	#		base_monthly_growth = 0.25
+	#	}
+	#	table_of_ranks_dip_power = {
+	#		max = 150
+	#		monarch_power = DIP
+	#		base_monthly_growth = 0.25
+	#	}
+	#	table_of_ranks_mil_power = {
+	#		max = 150
+	#		monarch_power = MIL
+	#		base_monthly_growth = 0.25
+	#	}
+	#}
+	
+	powers = {
+		t_british_industrialization = {
+			gui = russian_modernization_gov_mech
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0.1
+			development_scaled_monthly_growth = 0
+			monarch_power = adm
+			scaled_modifier = {
+				modifier = {
+					global_trade_goods_size_modifier = 0.2
+					development_cost = -0.1
+				}
+			}
+			is_good = yes
+		}
+	}
+	
+	# powers = {
+		# t_british_quality_of_life = {
+			# gui = russian_modernization_gov_mech
+			# max = 100
+			# reset_on_new_ruler = no
+			# base_monthly_growth = 0.1
+			# development_scaled_monthly_growth = 0
+			# monarch_power = dip
+			# scaled_modifier = {
+				# modifier = {
+					# global_unrest = -5
+				# }
+			# }
+			# is_good = yes
+		# }
+	# }
+}

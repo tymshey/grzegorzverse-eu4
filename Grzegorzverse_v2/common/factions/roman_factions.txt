@@ -1,0 +1,32 @@
+roman_imperials = {
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+		global_own_trade_power = 0.1
+		yearly_corruption = -0.1
+		reform_progress_growth = -0.1
+	}
+}
+
+optimates = {
+	monarch_power = DIP
+	always = yes
+
+	modifier = {
+		discipline = 0.025
+		global_tax_modifier = -0.10
+		yearly_corruption = 0.1
+	}
+}
+
+populares = {
+	monarch_power = MIL
+	always = yes
+
+	modifier = {
+		manpower_recovery_speed = 0.1
+		global_tax_modifier = -0.10
+		yearly_corruption = 0.1
+	}
+}
