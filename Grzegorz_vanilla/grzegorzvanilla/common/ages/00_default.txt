@@ -601,6 +601,7 @@ age_of_absolutism = {
 				OR = {
 					tag = FRA
 					tag = ROM
+					tag = BYZ
 				}
 			}
 			modifier = {

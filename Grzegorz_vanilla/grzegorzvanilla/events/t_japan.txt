@@ -87,6 +87,9 @@ country_event = {
 	option = {
 		name = t_japan_events.2.a
 		set_country_flag = vanilla_japan_flag
+		ai_chance = {
+			factor = 100
+		}
 	}
 	
 	option = {
