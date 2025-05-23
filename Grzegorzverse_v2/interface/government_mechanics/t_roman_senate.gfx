@@ -1,0 +1,29 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_t_roman_senate_bg"
+		texturefile = "gfx/interface/government_mechanics/t_roman_senate/roman_senate_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_t_roman_senate_adm"
+		texturefile = "gfx//interface//government_mechanics/t_roman_senate/roman_senate_adm.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_t_roman_senate_dip"
+		texturefile = "gfx//interface//government_mechanics/t_roman_senate/roman_senate_dip.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_t_roman_senate_mil"
+		texturefile = "gfx//interface//government_mechanics/t_roman_senate/roman_senate_mil.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

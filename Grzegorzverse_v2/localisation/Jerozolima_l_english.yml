@@ -1,0 +1,282 @@
+﻿l_english:
+ DEUS_VULT_title:0 "DEUS VULT!!"
+ DEUS_VULT_desc:0 ""
+ 
+ Reconquest_of_Jerusalem_title:0 "Reconquest of Jerusalem"
+ Reconquest_of_Jerusalem_desc:0 ""
+
+ Catholicism_or_death_title:0 "Catholicism or death"
+ Catholicism_or_death_desc:0 ""
+
+ True_Faith_title:0 "True Faith"
+ True_Faith_desc:0 ""
+
+ Expansion_of_Jerusalem_title:0 "Expansion of Jerusalem"
+ Expansion_of_Jerusalem_desc:0 ""
+
+ Expansion_of_Egyptian_Trading_Posts_title:0 "Expansion of Egyptian Trading Posts"
+ Expansion_of_Egyptian_Trading_Posts_desc:0 ""
+
+ Economic_Stability_title:0 "Economic Stability"
+ Economic_Stability_desc:0 ""
+
+ Conquering_African_gold_title:0 "Conquering African gold"
+ Conquering_African_gold_desc:0 ""
+
+ Catholic_settlers_title:0 "Catholic settlers"
+ Catholic_settlers_desc:0 ""
+
+ Reducing_Religious_Oppression_title:0 "Reducing Religious Oppression"
+ Reducing_Religious_Oppression_desc:0 ""
+
+ The_arrival_of_the_Orders_title:0 "The arrival of the Orders"
+ The_arrival_of_the_Orders_desc:0 ""
+
+ Religious_Freedom_title:0 "Religious Freedom"
+ Religious_Freedom_desc:0 ""
+ 
+ New_Religion_title:0"New Religion"
+ New_Religion_desc:0""
+ 
+ Army_Reform_title:0"Army Reform"
+ Army_Reform_desc:0""
+ 
+ Army_Reform2_title:0"Army Reform 2"
+ Army_Reform2_desc:0""
+
+ Army_Reform3_title:0"Army Reform 3"
+ Army_Reform3_desc:0""
+
+ Army_Reform4_title:0"Army Reform 4"
+ Army_Reform4_desc:0""
+ 
+ Secure_Trade_in_Nigeria_title:0 "Secure trade in Nigeria"
+ Secure_Trade_in_Nigeria_desc:0 ""
+
+ Secure_Ivory_Coast_title:0 "Secure Ivory Coast"
+ Secure_Ivory_Coast_desc:0 ""
+
+ Damascus_Settlers_title:0 "Damascus Settlers"
+ Damascus_Settlers_desc:0 ""
+
+ Conversion_of_the_Country_title:0 "Conversion of the Country "
+ Conversion_of_the_Country_desc:0 ""
+
+ The_search_for_the_Golden_City_title:0 "The search for the Golden City"
+ The_search_for_the_Golden_City_desc:0 ""
+
+ The_Great_Expansion_Project_of_Egypt_title:0 "The Great Expansion Project of Egypt"
+ The_Great_Expansion_Project_of_Egypt_desc:0 ""
+
+ Improvement_of_Egypt_irrigation_title:0 "Improvement of Egypt irrigation"
+ Improvement_of_Egypt_irrigation_desc:0 ""
+
+ Improvement_of_Egypt_irrigation_2_title:0 "Improvement of Egypt irrigation 2"
+ Improvement_of_Egypt_irrigation_2_desc:0 ""
+
+ Securing_the_steppes_of_Sudan_title:0 "Securing the steppes of Sudan"
+ Securing_the_steppes_of_Sudan_desc:0 ""
+
+ Conquering_the_Horn_of_Africa_title:0 "Conquering the Horn of Africa"
+ Conquering_the_Horn_of_Africa_desc:0 ""
+
+ Cloves_in_Zanzibar_title:0 "Cloves in Zanzibar"
+ Cloves_in_Zanzibar_desc:0 ""
+
+ Securing_Sri_Lanka_title:0 "Securing Sri Lanka"
+ Securing_Sri_Lanka_desc:0 ""
+
+ Trade_in_Malaysia_title:0 "Trade in Malaysia"
+ Trade_in_Malaysia_desc:0 ""
+
+ Securing_Clove_Islands_title:0 "Securing Clove Islands"
+ Securing_Clove_Islands_desc:0 ""
+
+ Monastic_Breweries_title:0 "Monastic Breweries"
+ Monastic_Breweries_desc:0 ""
+
+ more_grain_title:0 "More grain!!!"
+ more_grain_desc:0 ""
+
+ Mass_Food_Production_title:0 "Mass Food Production"
+ Mass_Food_Production_desc:0 ""
+
+ Colonial_Expedition_title:0 "Colonial Expedition"
+ Colonial_Expedition_desc:0 ""
+
+ New_continent_found_title:0 "New continent found!"
+ New_continent_found_desc:0 ""
+
+ Rybnik_Eiffel_Tower_title:0 "Rybnik Eiffel Tower"
+ Rybnik_Eiffel_Tower_desc:0 ""
+
+ Searching_for_the_Fountain_of_Youth_title:0 "Searching for the Fountain of Youth"
+ Searching_for_the_Fountain_of_Youth_desc:0 ""
+
+ Restoration_of_the_maan_copper_mine_title:0 "Restoration of the Maan copper mine"
+ Restoration_of_the_maan_copper_mine_desc:0 ""
+
+ Searching_for_Gold_in_the_Quesser_Province_title:0 "Searching for Gold in the Quesser Province"
+ Searching_for_Gold_in_the_Quesser_Province_desc:0 ""
+
+ The_capture_of_Mecca_and_Medina_title:0 "The capture of Mecca"
+ The_capture_of_Mecca_and_Medina_desc:0 ""
+
+ Expansion_of_Mecca_and_Medina_title:0 "Expansion of Mecca and Medina"
+ Expansion_of_Mecca_and_Medina_desc:0 ""
+
+ Securing_trade_in_the_Gulf_of_Aden_title:0 "Securing trade in the Gulf of Aden"
+ Securing_trade_in_the_Gulf_of_Aden_desc:0 ""
+
+ Silk_production_in_the_province_Gerusalemme_and_Hebron_title:0 "Silk production in the province Gerusalemme and Hebron"
+ Silk_production_in_the_province_Gerusalemme_and_Hebron_desc:0 ""
+ 
+ Secure_Egipt_title:0 "Secure Egipt"
+ Secure_Egipt_desc:0 ""
+
+#TOOLTIP
+
+ t_Jerusalem_The_Great_Expansion_Project_of_Egypt_tt:0 "Gives bonuses in the Delta and Bahari areas §T-25% development cost for 30 years§"
+ 
+ Reducing_Religious_Oppression:0 "Removes modifier §YIntolerance§"
+ 
+ Development_of_Egypt_2:0 "Gives §O-30%§! §Ylocal development cost§! in §Tareas Vostani, Said for 20 years§!"
+ 
+ Egyptian_Improvements:0 "Gives §O15%§! §Ylocal production efficiency§! until the end of the game in §Tareas Delta , Bahari §!"
+ 
+ Egyptian_Improvements2:0 "Gives §O15%§! §Ylocal production efficiency§! until the end of the game in §Tareas Vostani, Said §!"
+ 
+ Jerusalem_Settlers_tt:0 "Removes modifier §YCatholic Settlers§! and §Tunlocks the Holy Orders§!"
+ 
+ Jerusalem_Settlers2:0 "§TGive 1 missionary§!"
+ 
+ Jerusalem_conversion:0 "Removes country modifier §YSubsidizing Missionaries§! and §YTrue Faith§!"
+ 
+ Secure_Egipt_Area:0 "Gives permanent claims to the  §YEgyptian Region§! excluding the  §YCyraneica Area§!"
+ 
+ Jerusalem_Claims:0 "Give permanent claims on §TEgipt and Outskirts of Jerusalem§!"
+ 
+ #MODIFIERY BEZ PODŁOGI 
+ Missionary_strength:0 "Missionary Strength"
+ Missionary_strength_desc:0 ""
+ 
+ Development_of_Jerusalem:0 "Development of Jerusalem"
+ Development_of_Jerusalem_desc:0 ""
+ 
+ Perm_development_of_Jerusalem:0 "Development of Jerusalem"
+ Perm_development_of_Jerusalem_desc:0 ""
+ 
+ Papal_Influence:0 "Papal Influence"
+ Papal_Influence_desc:0 ""
+ 
+ Development_of_Egypt:0 "Development of Egypt"
+ Development_of_Egypt_desc:0 ""
+ 
+ global_prosperity:0 "Global Prosperity"
+ global_prosperity_desc:0 ""
+ 
+ Secure_Egipt_Area:0 "Secure Egipt Area"
+ Secure_Egipt_Area_desc:0 ""
+ 
+ Granary_of_the_Mediterranean_2:0 "Granary of the Mediterranean 2"
+ Granary_of_the_Mediterranean_2_desc:0 ""
+
+ Gold_Rush:0 "Gold Rush"
+ Gold_Rush_desc:0 ""
+ 
+ Increased_population_growth:0 "Increased population growth"
+ Increased_population_growth_desc:0 ""
+ 
+ Massive_food_production:0 "Massive food production"
+ Massive_food_production_desc:0 ""
+ 
+ t_jerusalem_mass_production:0 "Mass Food Distribution"
+ t_jerusalem_mass_production_desc:0 ""
+ 
+ mecca_missionary_strength:0 "Mecca Missionary Strength"
+ mecca_missionary_strength_desc:0 ""
+ 
+ Sudan_trade_modifier:0 "Jerusalem Trading Outposts"
+ Sudan_trade_modifier_desc:0 ""
+ 
+ Deus_Vult:0 "Deus Vult!!!"
+ Deus_Vult_desc:0 ""
+ 
+ Jerusalem_Unrest_Modifier:0 "Order in Jerusalem "
+ Jerusalem_Unrest_Modifier_desc:0 ""
+ 
+ Local_Tolarnce_in_Jerusalem:0 "Tolerance in Jerusalem"
+ Local_Tolarnce_in_Jerusalem_desc:0 ""
+ 
+ Jerusalem_Settlers:0 "Jerusalem Settlers"
+ Jerusalem_Settlers_desc:0 ""
+ 
+ Jerusalem_Intolerance:0 "Intolerance in Jerusalem"
+ Jerusalem_Intolerance_desc:0 ""
+ 
+ Jerusalem_Conversion:0 "Jerusalem Conversion"
+ Jerusalem_Conversion_desc:0 ""
+ 
+ Darfur_Hills:0 "Darfur Hills"
+ Darfur_Hills_desc:0 ""
+ 
+ Culture_Freedom:0 "Culture Freedom"
+ Culture_Freedom_desc:0 "" 
+ 
+ Alexandria_trade_modifier:0 "Jerusalem Trading Outposts in Alexandria"
+ Alexandria_trade_modifier_desc:0 ""
+ 
+ Slave_Market:0 "Bomba Black Slave Market"
+ Slave_Market_desc:0 ""
+ 
+ Jerusalem_Stronghold:0 "Jerusalem Stronghold"
+ Jerusalem_Stronghold_desc:0 ""
+ 
+ Local_Tolarnce_in_Jerusalem:0 "Local Tolarnce In Jerusalem"
+ Local_Tolarnce_in_Jerusalem_desc:0 ""
+ 
+ t_koj_cairo_captured:0 "Onward, to Victory!"
+ t_koj_cairo_captured_2:0 "Cairo Captured!"
+ 
+ #Music
+ 
+ My_Blood_is_Palestinian:0 "My Blood is Palestinian"
+ 
+ #Great Projects
+ 
+ t_great_stronghold_of_jerusalem:0 "The Great Stronghold of Jerusalem"
+ 
+ #Estate 
+ 
+ estate_Jerusalem_Crusaders:0 "Jerusalem Crusaders"
+ estate_Jerusalem_Crusaders_desc:0 " "
+ 
+ #events
+ 
+ Jerusalem_Army_Reform.1.t:0 "We must strengthen the Military!"
+ Jerusalem_Army_Reform.1.d:0 "The country needs military reform! We must choose between a strong army or a strong navy, or strengthen both."
+ Jerusalem_Army_Reform.1.a:0 "We need a strong Fleet!"
+ Jerusalem_Army_Reform.1.b:0 "Let's strengthen both!"
+ Jerusalem_Army_Reform.1.c:0 "We need a strong Army!"
+ 
+ Jerusalem_Stronghold.1.t:0 "Improving the Jerusalem Fortress???"
+ Jerusalem_Stronghold.1.d:0 "We need to improve the fortress that defends the Holy Land to make it very difficult to conquer. Do we have enough money to improve the fortresses?"
+ Jerusalem_Stronghold.1.a:0 "We don't have the money for this"
+ Jerusalem_Stronghold.1.b:0 "Improve the fortresses immediately!!!"
+
+ Jerusalem_Gold_Mine.1.t:0 "Gold Rush"
+ Jerusalem_Gold_Mine.1.d:0 "DELICIOUS GOLD"
+ Jerusalem_Gold_Mine.1.a:0 "Search every hole and dig every hill for delicious gold!!!!"
+ 
+ Jerusalem_Bomb_Black.1.t:0 "Bomb Black Slave Market"
+ Jerusalem_Bomb_Black.1.d:0 "The Personal Scribe of the Grand Master during the Grand Council proposed a plan to introduce the Magnificent Bomb Black program it will help us to maximize the profit of black slaves. After the Grand Council, an argument ensued between the Grand Master's Right Hand and his personal scribe . The Right Hand said that it was better to free these people and employ them as workers in the naval supply factory in the provinces of Halaib , Suakin , Sahra an Nubyah , Darfur . How will you proceed my Lord?"
+ Jerusalem_Bomb_Black.1.a:0 "I like Bomb Black"
+ Jerusalem_Bomb_Black.1.b:0 "We need a strong navy!"
+ 
+ Jerusalem_Egipt_Claims.1.t:0 "The Question of Egypt"
+ Jerusalem_Egipt_Claims.1.d:0 "After recapturing Jerusalem from the hands of the infidels, it was time for the next step of conquering the fertile soils of Egypt!"
+ Jerusalem_Egipt_Claims.1.a:0 "Deus Vult!!!"
+
+
+
+

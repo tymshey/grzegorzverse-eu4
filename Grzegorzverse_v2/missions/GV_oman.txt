@@ -1,0 +1,907 @@
+oman_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OMA }
+	
+	OMA_mahra = {
+		icon = mission_spoils_of_war
+		position = 2
+		required_missions = { t_oman_children_of_grzegorz } 
+		provinces_to_highlight = {  
+			OR = {
+				area = dhofar_area
+				area = mahra_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					area = dhofar_area
+					area = mahra_area
+				}
+			}
+		} 
+
+		effect = {  
+			custom_tooltip = ORM_REMOVE_AUTONOMY_IN_OWNED_PROVINCES
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = dhofar_area
+							area = mahra_area
+						}
+					}
+					add_local_autonomy = -25
+					add_nationalism = -5
+				}
+			}
+			custom_tooltip = " "
+			complex_dynamic_effect = {
+				first_custom_tooltip = ORM_IF_1099_IS_OWNED_BY_US
+				first_limit = "
+					1099 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				"
+				first_effect = "
+					1099 = {
+						center_of_trade = 1
+						add_or_upgrade_shipyard_building = yes
+						change_religion = ROOT
+					}
+				"
+			}
+		} 
+	}
+	
+	OMA_holy_cities = {
+		icon = kok_mam_holy_cities
+		position = 3
+		required_missions = { OMA_mahra } 
+		provinces_to_highlight = {  
+			OR = {
+				area = medina_area
+				area = mecca_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6
+				OR = {
+					area = medina_area
+					area = mecca_area
+				}
+			}
+		} 
+
+		effect = {  
+			custom_tooltip = ORM_BUFF_RELIGIOUS_DIPLOMATS
+			set_country_flag = orm_religious_diplomats_buff_flag
+			custom_tooltip = " "
+			give_claims = { region = egypt_region }
+		} 
+	}
+}
+
+oman_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OMA } 
+
+	t_oman_the_sacred_fire = {
+		icon = per_build_the_fire_temples
+		position = 2
+		required_missions = { t_oman_children_of_grzegorz } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			religion = zoroastrian
+			religious_unity = 0.9
+			prestige = 50
+			num_of_active_blessings = 4
+		}
+
+		effect = {
+			country_event_with_effect_insight = {
+				id = flavor_oman.1
+				effect = "
+					tooltip = {
+						400 = {
+							add_permanent_province_modifier = {
+								name = t_oman_sacred_fire
+								duration = -1
+							}
+						}
+					}
+				"
+			}
+		}
+	}
+
+	t_oman_zoroastrian_virtue = {
+		icon = per_reborn_in_fire
+		position = 3
+		required_missions = { t_oman_the_sacred_fire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_active_blessings = 5
+			stability = 3
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "t_servant_of_ahura_mazda"
+				duration = -1
+			}
+		}
+	}
+
+	t_oman_india_mission = {
+		icon = mission_indian_trade_company
+		position = 4
+		required_missions = { t_oman_mission_zanzibar } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			2030 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			2030 = {
+				add_permanent_province_modifier = {
+					name = "t_omani_trade_post"
+					duration = -1
+				}
+			}
+			deccan_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		} 
+	}
+}
+oman_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OMA } 
+
+	t_oman_children_of_grzegorz = {
+		icon = mission_dharma_mission_arabian_trade
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			reverse_has_opinion = {
+				who = PER
+				value = 100
+			}
+		}
+
+		effect = {
+			add_mercantilism = 5
+			add_country_modifier = {
+				name = "t_child_of_grzegorz"
+				duration = -1
+			}
+		}
+	}
+
+	t_oman_fertile_desert_mission = {
+		icon = prosper_in_piedmont
+		position = 2
+		required_missions = { t_oman_children_of_grzegorz } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			stability = 2
+			grown_by_development = 50
+		} 
+
+		effect = {
+			398 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+			399 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+			4285 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+			400 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+			403 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+			4287 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+			4286 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+			2341 = {
+				add_permanent_province_modifier = {
+					name = t_oman_fertile_desert_modifier
+					duration = -1
+				}
+			}
+		} 
+	}
+
+	t_a_city_of_grzegorz = {
+		icon = per_establish_eastern_defenses
+		position = 3
+		required_missions = { t_oman_fertile_desert_mission } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			400 = { development = 15 } 
+			398 = { development = 15 } 
+		}
+
+		effect = {
+			add_mercantilism = 5
+			398 = {
+				add_permanent_province_modifier = {
+					name = "t_qawasim_trade_hub"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	t_oman_mogadishu_mission = {
+		icon = invest_in_the_rich_trades
+		position = 4
+		required_missions = { t_oman_mission_zanzibar } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			1205 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			1205 = {
+				add_permanent_province_modifier = {
+					name = "t_omani_trade_post"
+					duration = -1
+				}
+			}
+		} 
+	}
+	
+	OMA_finest_arabic_seafarers = {
+		icon = mission_explore_the_world
+		position = 1
+		required_missions = {
+			t_oman_india_mission
+			t_oman_mogadishu_mission
+			t_oman_gold_and_ivory
+		}
+		trigger = {  
+			has_government_power = {
+				mechanic_type = arabic_trade_influence
+				power_type = arabic_trade_influence_power
+				value = 50
+			}
+			trader = 3
+			navy_size = 125
+		} 
+
+		effect = {
+			custom_tooltip = ORM_UNLOCK_ARABIC_MERCHANTS_BURGHERS_PRIVILEGE
+			set_country_flag = orm_arabic_merchants_flag
+			custom_tooltip = " "
+			if = {
+				limit = {
+					has_dlc = "Wealth of Nations"
+				}
+				country_event_with_option_insight = {
+					id = flavor_ormoma.2
+					option_1 = "
+						custom_tooltip = ORM_BUFF_ARABIC_MERCHANTS_PRIVILEGE_MERCHANT_BUFF
+					"
+					option_2 = "
+						custom_tooltip = ORM_BUFF_ARABIC_MERCHANTS_PRIVILEGE_LIGHT_SHIPS_BUFF
+					"
+					option_3 = "
+						custom_tooltip = ORM_BUFF_ARABIC_MERCHANTS_PRIVILEGE_DIPLOMATIC_BUFF
+					"
+				}
+			}
+			else = {
+				country_event_with_option_insight = {
+					id = flavor_ormoma.2
+					option_1 = "
+						custom_tooltip = ORM_BUFF_ARABIC_MERCHANTS_PRIVILEGE_MERCHANT_BUFF
+					"
+					option_2 = "
+						custom_tooltip = ORM_BUFF_ARABIC_MERCHANTS_PRIVILEGE_LIGHT_SHIPS_BUFF
+					"
+				}
+			}
+		}  
+	}
+	
+	OMA_thalassocracy = {
+		icon = mission_arabian_thalassocracy
+		position = 1
+		required_missions = {
+			OMA_finest_arabic_seafarers
+		}
+		provinces_to_highlight = {  
+			OR = {
+				province_id = 541
+				province_id = 596
+				province_id = 564
+			}
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		} 
+
+		trigger = {  
+			monthly_income = 250
+			capital_scope = {
+				highest_value_trade_node = yes
+				is_strongest_trade_power = ROOT
+			}
+			541 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			596 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			564 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		} 
+
+		effect = {
+			custom_tooltip = ORM_BUFF_ARABIC_TRADE_INFLUENCE_TO_GIVE_EXTRA_TRADE_EFFICIENCY
+			set_country_flag = orm_arabic_influence_trade_eff_buff_flag
+			custom_tooltip = " "
+			add_country_modifier = {
+				name = "thalassocracy"
+				duration = -1
+			}
+			unlock_government_reform = {
+				government_reform = thalassocracy_reform
+			}
+		} 
+	}
+}
+oman_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OMA } 
+
+	t_request_hormuz = {
+		icon = mam_hormuz_straits
+		position = 2
+		required_missions = { t_oman_children_of_grzegorz } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				AND = {
+					reverse_has_opinion = {
+						who = PER
+						value = 150
+					}
+					monthly_income = 20
+				}
+				monthly_income = 30
+			}
+		}
+
+		effect = { PER = { country_event = { id = flavor_oman.2 }  }  } 
+	}
+
+	t_dominate_gulf_trade = {
+		icon = qara_qoyunlu_dominate_the_gulf
+		position = 3
+		required_missions = { t_request_hormuz } 
+		provinces_to_highlight = {  } 
+
+		trigger = { 1334 = { has_most_province_trade_power = ROOT }  } 
+
+		effect = {
+			add_country_modifier = {
+				name = "t_oman_dominating_trade"
+				duration = -1
+			}
+		}
+	}
+
+	t_oman_ethiopia_mission = {
+		icon = mission_envoy_to_ethiopia
+		position = 4
+		required_missions = { t_oman_mission_zanzibar } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			388 = {
+				owned_by = ROOT
+			}
+			387 = {
+				owned_by = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = horn_of_africa_region
+				value = 30
+			}
+		} 
+
+		effect = {
+			add_years_of_income = 0.5
+			388 = {
+				add_permanent_province_modifier = {
+					name = "t_omani_trade_post"
+					duration = -1
+				}
+			}
+			1212 = {
+				add_permanent_province_modifier = {
+					name = "t_omani_trade_post"
+					duration = -1
+				}
+			}
+			387 = {
+				add_permanent_province_modifier = {
+					name = "t_omani_trade_post"
+					duration = -1
+				}
+			}
+		} 
+	}
+	
+	OMA_arabian_naval_bases = {
+		icon = mission_arabian_ports
+		position = 1
+		provinces_to_highlight = {
+			region = arabia_region
+			NOT = { has_shipyard_building_trigger = yes }
+			has_port = yes
+		} 
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = arabia_region
+				has_shipyard_building_trigger = yes
+				value = 3
+			}
+		} 
+
+		effect = {  
+			distribute_development = {
+				type = production
+				amount = 5
+				limit = "
+					region = arabia_region
+					has_shipyard_building_trigger = yes
+				"
+				tooltip = OMA_DISTRIBUTE_ONLY_IN_REQUIRED_PROVINCES
+			}
+			add_country_modifier = {
+				name = oma_constructing_omani_fleet
+				duration = 5475
+			}
+		} 
+	}
+
+	OMA_shipbuilding_masters = {
+		icon = mission_galleys_in_port
+		position = 2
+		required_missions = { OMA_arabian_naval_bases }
+
+		trigger = {  
+			navy_size = 40
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 65
+				}
+			}
+			sailors_percentage = 0.75
+		} 
+
+		effect = {  
+			east_africa_region = {
+				discover_country = ROOT
+			}
+			give_claims = { area = northern_swahili_coast_area }
+			give_claims = { area = mombasa_area }
+			give_claims = { area = central_swahili_coast_area }
+			give_claims = { area = mozambique_area }
+			give_claims = { area = sakalava_area }
+			give_claims = { area = southern_madagascar }
+			give_claims = { area = madagascar_highlands_area }
+			give_claims = { area = betsimasaraka_area }
+			custom_tooltip = " "
+			custom_tooltip = OMA_BUFF_PRIVATE_TRADING_FLEETS
+			set_country_flag = oma_private_trading_fleets_buff_flag
+		} 
+	}
+
+	OMA_madagascar = {
+		icon = mission_invade_island
+		position = 3
+		required_missions = { OMA_shipbuilding_masters } 
+		provinces_to_highlight = {  
+			OR = {
+				area = madagascar_highlands_area
+				area = sakalava_area
+				area = southern_madagascar
+				area = betsimasaraka_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = madagascar_highlands_area
+					area = sakalava_area
+					area = southern_madagascar
+					area = betsimasaraka_area
+				}
+				value = 7
+			}
+		} 
+
+		effect = {  
+			custom_tooltip = OMA_GAIN_MERCANTILISM_PER_SLAVE_PROVINCE_IN_MADAGASCAR
+			custom_tooltip = " "
+			if = {
+				limit = {
+					1103 = {
+						is_empty = yes
+					}
+				}
+				1103 = {
+					add_siberian_construction = 10
+				}
+			}
+			if = {
+				limit = {
+					1102 = {
+						is_empty = yes
+					}
+				}
+				1102 = {
+					add_siberian_construction = 10
+				}
+			}
+			if = {
+				limit = {
+					4020 = {
+						is_empty = yes
+					}
+				}
+				4020 = {
+					add_siberian_construction = 10
+				}
+			}
+			if = {
+				limit = {
+					1100 = {
+						is_empty = yes
+					}
+				}
+				1100 = {
+					add_siberian_construction = 10
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = madagascar_highlands_area
+							area = sakalava_area
+							area = southern_madagascar
+							area = betsimasaraka_area
+						}
+						trade_goods = slaves
+					}
+					owner = {
+						add_mercantilism = 1
+					}
+				}
+			}
+		} 
+	}
+
+	OMA_zanzibar_trade_dominance = {
+		icon = mission_zanzibari_trade
+		position = 4
+		required_missions = {
+			OMA_madagascar
+			OMA_zanzibar
+		}
+		
+		provinces_to_highlight = {
+			province_id = 1448
+			NOT = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+		}
+	
+		trigger = {  
+			1448 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			trade_goods_produced_amount = {
+				trade_goods = ivory
+				amount = 30
+			}
+		} 
+
+		effect = {
+			custom_tooltip = OMA_TRADER_GRANTS_EXTRA_ARABIC_TRADE_INFLUENCE
+			set_country_flag = oma_trader_advisor_trade_influence_buff_flag
+			custom_tooltip = " "
+			custom_tooltip = OMA_GRANT_FOLLOWING_BONUS_TO_ALL_IVORY_PROVINCES
+			tooltip = {
+				add_base_production = 1
+				add_province_modifier = {
+					name = oma_zanzibar_ivory_trade
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = east_africa_region
+						trade_goods = ivory
+					}
+					add_base_production = 1
+					add_province_modifier = {
+						name = oma_zanzibar_ivory_trade
+						duration = -1
+					}
+				}
+			}
+		} 
+	}
+}
+oman_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OMA } 
+
+	t_oman_mission_set_sail = {
+		icon = mission_aragonese_navy
+		position = 2
+		required_missions = { t_oman_children_of_grzegorz } 
+		provinces_to_highlight = {  } 
+
+		trigger = { 400 = { light_ships_in_province = 10 }  } 
+
+		effect = {
+			change_innovativeness = 5
+			add_mercantilism = 5
+			define_explorer = {
+				shock = 2
+				fire = 2
+				manuever = 4
+				siege = 2
+				name = "Affan Abbas"
+			}
+			1099 = { add_permanent_claim = ROOT } 
+		}
+	}
+
+	t_oman_mission_zanzibar = {
+		icon = mission_zanzibari_trade
+		position = 3
+		required_missions = { t_oman_mission_set_sail } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_discovered = 1201
+			1099 = { owned_by = ROOT } 
+		}
+
+		effect = {
+			add_mercantilism = 5
+			1201 = { add_permanent_claim = ROOT } 
+			2030 = { add_permanent_claim = ROOT } 
+			horn_of_africa_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			1099 = {
+				add_permanent_province_modifier = {
+					name = "t_omani_trade_post"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	t_oman_gold_and_ivory = {
+		icon = mission_zambezi_gold
+		position = 4
+		required_missions = { t_oman_mission_zanzibar } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			1201 = {
+				owned_by = ROOT
+			}
+			1197 = {
+				owned_by = ROOT
+			}
+			1202 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			1201 = {
+				add_permanent_province_modifier = {
+					name = "t_omani_trade_post"
+					duration = -1
+				}
+			}
+		} 
+	}
+	
+	OMA_omani_marines = {
+		icon = mission_omani_marines
+		position = 6
+		required_missions = { OMA_arabian_naval_bases }
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				has_dock_building_trigger = yes
+				development = 10
+				value = 15
+			}
+			navy_tradition = 35
+		} 
+
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Rule Britannia"
+						has_dlc = "Golden Century"
+						has_dlc = "Lions of the North"
+						has_dlc = "Domination"
+					}
+				}
+				add_country_modifier = {
+					name = oma_omani_marines
+					duration = -1
+				}
+				custom_tooltip = OMA_UNLOCK_MERCHANT_PRIVILEGE_OF_OMANI_MARINES
+				set_country_flag = oma_omani_marines_privilege_flag
+			}
+			else = {
+				capital_scope = {
+					add_or_upgrade_shipyard_building = yes
+					add_or_upgrade_dock_building = yes
+					add_base_production = 3
+				}
+			}
+		}  
+	}
+
+	OMA_zanzibar = {
+		icon = mission_african_trade_post
+		position = 3
+		required_missions = { OMA_shipbuilding_masters } 
+		provinces_to_highlight = {
+			OR = {
+				area = northern_swahili_coast_area
+				area = mombasa_area
+				area = central_swahili_coast_area
+				area = mozambique_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
+
+		trigger = {  
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = northern_swahili_coast_area
+					area = mombasa_area
+					area = central_swahili_coast_area
+					area = mozambique_area
+				}
+				value = 10
+			}
+			1196 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				custom_tooltip = OMA_UPGRADE_KILWA_MONUMENT
+				set_country_flag = oma_kilwa_buff_flag
+			}
+			else = {
+				1196 = {
+					add_base_production = 2
+					add_base_tax = 2
+					add_base_manpower = 2
+				}
+			}
+			country_event_with_effect_insight = {
+				id = flavor_ormoma.3
+				effect = "
+					override_country_name = OMAN_ZANZIBAR
+					add_prestige_or_monarch_power = { amount = 20 }
+				"
+			}
+		}
+	}
+}

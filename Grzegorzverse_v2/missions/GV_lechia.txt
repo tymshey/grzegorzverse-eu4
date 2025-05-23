@@ -1,0 +1,420 @@
+t_lechia_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KAZ } 
+
+	t_lechia_strengthen_raids = {
+		icon = mission_non-western_cavalry_raid
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_cavalry = 10
+		} 
+
+		effect = {
+			custom_tooltip = HORDES_UNLOCK_REAVER_RULER_PERSONALITY
+			set_country_flag = unlocked_reaver_personality_flag
+			add_country_modifier = {
+				name = t_lechia_cavalry_1
+				duration = -1
+			}
+		}
+	}
+
+	t_lechia_northern_yoke = {
+		icon = mission_break_the_tatar_yoke
+		position = 1
+		required_missions = { t_lechia_strengthen_raids } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = {
+					has_government_attribute = raze_province
+				}
+				custom_trigger_tooltip = {
+					tooltip = TATARS_RAIZED_20_PROVINCES
+					check_variable = {
+						which = HordeProvincesRazed
+						value = 20
+					}
+				}
+			}
+			else = {
+				army_size = 30
+			}
+		} 
+
+		effect = {
+			hidden_effect = {
+				remove_country_modifier = t_lechia_cavalry_1
+				add_country_modifier = {
+					name = t_lechia_cavalry_2
+					duration = -1
+				}
+			}
+			custom_tooltip = t_lechia_northern_yoke_tt
+		}
+	}
+
+	t_lechia_raiders_of_the_storm = {
+		icon = mission_cossack_cavalry
+		position = 1
+		required_missions = { t_lechia_northern_yoke } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_cavalry = 30
+		} 
+
+		effect = {
+			hidden_effect = {
+				remove_country_modifier = t_lechia_cavalry_2
+				add_country_modifier = {
+					name = t_lechia_cavalry_3
+					duration = -1
+				}
+			}
+			custom_tooltip = t_lechia_raiders_of_the_storm_tt
+		}
+	}
+
+	t_lechia_horsemen_of_the_apocalypse = {
+		icon = mission_raid_hosts
+		position = 1
+		required_missions = { t_lechia_raiders_of_the_storm } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_cavalry = 50
+			num_of_hussars = 10
+		} 
+
+		effect = {
+			hidden_effect = {
+				remove_country_modifier = t_lechia_cavalry_3
+				add_country_modifier = {
+					name = t_lechia_cavalry_4
+					duration = -1
+				}
+			}
+			custom_tooltip = t_lechia_horsemen_of_the_apocalypse_tt
+		}
+	}
+}
+t_lechia_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KAZ } 
+
+	t_lechia_conquer_bjarmia = {
+		icon = mission_conquer_kannauj
+		position = 2
+		required_missions = { t_lechia_start } 
+		provinces_to_highlight = {
+			OR = {
+				area = pomor_area
+				area = arkhangelsk_area
+			}
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = {
+			pomor_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			arkhangelsk_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+
+		effect = {
+			karelia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			novgorod_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			add_manpower = 10
+		} 
+	}
+
+	t_lechia_conquer_novgorod = {
+		icon = mission_conquer_novgorod
+		position = 1
+		required_missions = { t_lechia_conquer_bjarmia } 
+		provinces_to_highlight = {
+			OR = {
+				area = karelia_area
+				area = novgorod_area
+			}
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = {
+			karelia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			novgorod_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			ryazan_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			add_manpower = 10
+			add_adm_power = 100
+		} 
+	}
+
+	t_lechia_take_ryazan = {
+		icon = mission_early_russian_army
+		position = 1
+		required_missions = {
+			t_lechia_conquer_novgorod
+			t_lechia_golden_mountain
+		}
+		provinces_to_highlight = {
+			area = ryazan_area
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = {
+			ryazan_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			change_adm = 1
+			change_mil = 1
+		} 
+	}
+}
+t_lechia_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KAZ } 
+
+	t_lechia_start = {
+		icon = mission_expand_into_the_forest
+		position = 1
+		provinces_to_highlight = {  }
+
+		trigger = {
+			army_size_percentage = 1
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = t_hyperborea_buff
+				duration = -1
+			}
+			pomor_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			arkhangelsk_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			vologda_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			moscow_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			suzdal_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			vladimir_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			add_manpower = 5
+		}
+	}
+
+	t_lechia_conquer_muscovy = {
+		icon = mission_defeat_muscovy
+		position = 1
+		required_missions = { t_lechia_start } 
+		provinces_to_highlight = {
+			area = moscow_area
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = {
+			moscow_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			change_mil = 1
+			add_country_modifier = {
+				name = t_lechia_muscovy_defeated
+				duration = 7300 # 20 years
+			}
+			russia_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			add_adm_power = 100
+			add_manpower = 10
+		} 
+	}
+
+	t_lechia_golden_mountain = {
+		icon = mission_zambezi_gold
+		position = 1
+		required_missions = { t_lechia_conquer_muscovy } 
+		provinces_to_highlight = {
+			province_id = 2444
+		} 
+
+		trigger = {
+			2444 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			2444 = {
+				add_province_modifier = {
+					name = t_judeoborean_golden_mountain
+					duration = -1
+				}
+				add_base_production = 5
+				add_base_manpower = 3
+				change_province_name = "Zlota Gora"
+				rename_capital = "Zlota Gora"
+			}
+		}
+	}
+
+	t_lechia_conquer_sibir = {
+		icon = mission_collect_yasak
+		position = 1
+		required_missions = {
+			t_lechia_golden_mountain
+			t_lechia_the_urals
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = west_siberia_region
+				value = 20
+			}
+		} 
+
+		effect = {
+			add_adm_power = 100
+			add_manpower = 10
+			add_country_modifier = {
+				name = t_lechia_culture_conversion_buff
+				duration = -1
+			}
+		} 
+	}
+
+	t_lechia_the_north_awakens = {
+		icon = mission_norse_faith
+		position = 1
+		required_missions = {
+			t_lechia_conquer_sibir
+			t_lechia_take_ryazan
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			stability = 1
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = russia_region
+				value = 20
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = west_siberia_region
+				value = 30
+			}
+		} 
+
+		effect = {
+			country_event = {
+				id = flavor_hyperborea.1
+			}
+			add_country_modifier = {
+				name = t_judeoborea_boreal_forests
+				duration = -1
+			}
+		} 
+	}
+}
+t_lechia_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KAZ } 
+
+	t_lechia_consolidate_power = {
+		icon = consolidate_the_stadholders
+		position = 2
+		required_missions = { t_lechia_start } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			stability = 1
+			legitimacy_equivalent = 80
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = t_lechia_consolidated_power
+				duration = -1
+			}
+		} 
+	}
+
+	t_lechia_the_urals = {
+		icon = mission_beyond_the_urals
+		position = 1
+		required_missions = { t_lechia_consolidate_power } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			ural_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+			west_siberia_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		} 
+	}
+}

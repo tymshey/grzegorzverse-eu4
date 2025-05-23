@@ -1,0 +1,604 @@
+GV_BAV_MISSIONS = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		tag = BAV
+	}
+	
+	has_country_shield = yes
+	bav_missions_1 = {
+		icon = mission_spoils_of_war
+		position = 1
+		required_missions = {  } 
+		provinces_to_highlight = {  
+			OR = {}
+		} 
+
+		trigger = {  
+			army_size_percentage = 1
+		} 
+
+		effect = {  
+			lower_bavaria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			east_bavaria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+			name = unite_home_region
+			duration = 9125
+			}
+		} 
+	}
+	
+	bav_missions_2 = {
+		icon = mission_spoils_of_war
+		position = 3
+		required_missions = {bav_missions_1} 
+		provinces_to_highlight = {  
+			OR = {
+			province_id = 2957
+			}
+		} 
+
+		trigger = {
+			exists = REG
+			treasury = 250
+			is_in_deficit = no
+		} 
+
+		effect = { 
+			add_treasury = -250
+			2957 = {cede_province = BAV}
+			custom_tooltip = bav_tooltip13
+			hidden_effect = {
+			2957 = {add_core = BAV}
+			}
+		} 
+	}
+	bav_missions_9 = {
+		icon = mission_spoils_of_war
+		position = 4
+		required_missions = {bav_missions_2} 
+		provinces_to_highlight = {  
+			OR = {}
+		} 
+
+		trigger = {
+			employed_advisor = {category = MIL}
+			national_focus = MIL
+			manpower_percentage = 0.5
+		} 
+
+		effect = {
+			palatinate_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_swabia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_swabia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				}
+			} 
+		}
+}
+GV_BAV_MISSIONS_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { 
+		tag = BAV
+	}
+	
+	has_country_shield = yes
+	bav_missions_4 = {
+		icon = mission_spoils_of_war
+		position = 1
+		required_missions = {  } 
+		provinces_to_highlight = {  
+			OR = {}
+		} 
+
+		trigger = {  
+			offensive_war_with = HAB
+			Not = { owns = 73 }
+		} 
+
+		effect = {  
+			add_country_modifier = {
+			name = austro_bavarian_war
+			duration = 9125
+			}
+		} 
+	}
+	
+	bav_missions_3 = {
+		icon = mission_spoils_of_war
+		position = 2
+		required_missions = { bav_missions_1} 
+		provinces_to_highlight = {  
+			OR = {
+			province_id = 73
+			}
+		} 
+
+		trigger = {  
+			owns = 73
+			73 = { base_production = 10 }
+		} 
+
+		effect = {  
+			73 = {
+			add_permanent_province_modifier = {
+			name = mines_of_inntal
+			duration = -1
+				}
+			}
+		} 
+	}
+	bav_missions_5 = {
+		icon = mission_spoils_of_war
+		position = 3
+		required_missions = { bav_missions_3} 
+		provinces_to_highlight = {  
+			OR = {
+			area = lower_bavaria_area
+			area = east_bavaria_area
+			area = upper_bavaria_area
+			}
+		} 
+
+		trigger = {
+			
+			calc_true_if = {
+				all_owned_province = {
+					culture = bavarian
+					base_production = 6
+				}
+				amount = 10
+			}
+			calc_true_if = {
+				all_owned_province = {
+					culture = bavarian
+					has_production_building_trigger = yes
+				}
+				amount = 10
+			}
+		} 
+
+		effect = { 
+			custom_tooltip = bav_tooltip12
+			tooltip = {
+			add_province_modifier = {
+				name = Develop_the_heartland
+				duration = 18250
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+				limit = {
+					culture = bavarian
+				}
+				add_province_modifier = {
+					name = Develop_the_heartland
+					duration = 18250
+					}
+				}
+			}
+		} 
+	}
+	bav_missions_15 = {
+		icon = mission_spoils_of_war
+		position = 4
+		required_missions = { bav_missions_2} 
+		provinces_to_highlight = {  
+			OR = {
+			area = lower_bavaria_area
+			area = upper_bavaria_area
+			}
+		} 
+
+		trigger = {
+			lower_bavaria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_bavaria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_swabia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		} 
+
+		effect = { 
+			upper_franconia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			franconia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+			name = Bavarian_Glory
+			duration = -1
+			}
+		} 
+	}
+	
+}
+
+GV_BAV_MISSIONS_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+		tag = BAV
+	}
+	
+	has_country_shield = yes
+	bav_missions_6 = {
+		icon = mission_spoils_of_war
+		position = 1
+		required_missions = {  } 
+		provinces_to_highlight = {  
+			OR = {
+			province_id = 134
+			province_id = 4762
+			province_id = 4761
+			province_id = 4760
+			}
+		} 
+
+		trigger = {  
+			has_won_war_against = {
+			who = HAB
+			max_years_since = 100
+			}
+			owns = 134
+			owns = 4762
+			owns = 4761
+			owns = 4760
+		} 
+
+		effect = {  
+			134 = {cede_province = HAB}
+			4762 = {cede_province = HAB}
+			4761 = {cede_province = HAB}
+			BAV = {vassalize = HAB}
+			HAB = {change_country_color = {color = { 21 153 235 }}}
+			add_country_modifier = {
+			name = Austrian_nobility
+			duration = -1
+			}
+			hidden_effect = {
+			add_aggressive_expansion = {
+				who = BAV
+				value = -40
+				apply_calc = no
+					}
+				}
+			} 
+		}
+		
+	bav_missions_7 = {
+		icon = mission_spoils_of_war
+		position = 2
+		required_missions = { bav_missions_6 } 
+		provinces_to_highlight = {  
+			OR = {
+			}
+		} 
+
+		trigger = {
+			has_disaster = Austrian_Nobility
+			NOT = { HAB = {liberty_desire = 20}}
+			HAB = {
+			years_in_vassalage_under = {
+			who = BAV
+			years = 25
+				}
+			}
+		} 
+
+		effect = {
+			remove_country_modifier = Austrian_nobility
+			add_prestige = 50
+			add_power_projection = { 
+			type = 25_permanent_power_projection
+			amount = 25 
+				}
+			hidden_effect = {
+				set_country_flag = balls
+				}
+			} 
+		}
+	bav_missions_8 = {
+		icon = mission_spoils_of_war
+		position = 4
+		required_missions = {bav_missions_7} 
+		provinces_to_highlight = {  
+			OR = {
+			area = austria_proper_area
+			area = inner_austria_area
+			}
+		} 
+
+		trigger = {  
+				austria_proper_area = {
+				type = all
+				owned_by = ROOT
+			}
+				inner_austria_area = {
+				type = all
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {  
+			134 = {add_base_tax = 4}
+			134 = {add_base_production = 4}
+			134 = {add_base_manpower = 4}
+			bohemia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			} 
+		}
+	}
+	
+	GV_BAV_MISSIONS_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		tag = BAV
+	}
+	
+	has_country_shield = yes
+	bav_missions_12 = {
+		icon = mission_spoils_of_war
+		position = 3
+		required_missions = { bav_missions_7 } 
+		provinces_to_highlight = {  
+			OR = {
+			province_id = 110
+			}
+		} 
+
+		trigger = { 
+			owns = 110
+			advisor = trader
+			
+		} 
+
+		effect = {  
+			venetia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_accepted_culture = dynamic-mizrahi-culture-num1
+		} 
+	}
+	bav_missions_13 = {
+		icon = mission_spoils_of_war
+		position = 4
+		required_missions = { bav_missions_12 } 
+		provinces_to_highlight = {  
+			OR = {
+			province_id = 112
+			}
+		} 
+
+		trigger = { 
+			owns = 112
+			112 = { province_has_center_of_trade_of_level = 3}
+			light_ship_fraction = 0.3
+			
+		} 
+
+		effect = {  
+			po_valley_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4738 = { 
+			add_permanent_claim = ROOT
+			}
+			130 = { 
+			add_permanent_claim = ROOT
+			}
+			4752  = { 
+			add_permanent_claim = ROOT
+			}
+			1826 = { 
+			add_permanent_claim = ROOT
+			}
+			112 = {
+			add_permanent_province_modifier = {
+			name = italian_trade
+			duration = -1
+				}
+			}
+		} 
+	}
+}
+GV_BAV_MISSIONS_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		tag = BAV
+	}
+	
+	has_country_shield = yes
+	bav_missions_10 = {
+		icon = mission_spoils_of_war
+		position = 1
+		required_missions = {  } 
+		provinces_to_highlight = {  
+			OR = {}
+		} 
+
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			stability = 1
+			all_owned_province = {
+			num_of_times_improved_by_owner = 4
+			}
+		} 
+
+		effect = {  
+			country_event = { id = flavor_bav.1 }
+		} 
+	}
+	bav_missions_11 = {
+		icon = mission_spoils_of_war
+		position = 2
+		required_missions = { bav_missions_10 } 
+		provinces_to_highlight = {  
+			OR = {}
+		} 
+
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 80
+			}
+			num_of_estate_privileges = {
+			estate = estate_church
+			value = 6 
+			}
+			crown_land_share = 50
+			
+		} 
+
+		effect = {  
+			remove_estate_privilege = t_bav_religious_fragmentation
+			remove_country_modifier = bav_rel_unity
+			every_owned_province = {
+			remove_province_modifier = Rel_fra
+			}
+			country_event = { id = flavor_bav.2 }
+		} 
+	}
+	bav_missions_14 = {
+		icon = mission_spoils_of_war
+		position = 4
+		required_missions = { bav_missions_12 } 
+		provinces_to_highlight = {  
+			OR = {
+			}
+		} 
+
+		trigger = {
+		num_of_mercenaries = 30
+		NOT = {
+			SWI = {
+			has_opinion = {
+			who = ROOT
+			value = -200
+					}
+				}
+			}
+		} 
+
+		effect = {  
+		BAV = {add_historical_rival = SWI}
+		switzerland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		romandie_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

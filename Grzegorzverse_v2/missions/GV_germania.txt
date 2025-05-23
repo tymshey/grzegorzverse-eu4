@@ -1,0 +1,45 @@
+germania_missions_1 = {
+
+	slot = 1
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		OR = {
+			tag = Z01
+			tag = GER
+		}
+	}
+	
+	germania_empire_mission = {
+	
+		icon = mission_empire
+		
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 0.8
+			stability = 3
+			num_of_owned_provinces_with = {
+				value = 50
+				region = north_german_region
+				is_core = root
+			}
+			num_of_owned_provinces_with = {
+				value = 50
+				region = south_german_region
+				is_core = root
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = t_ger_empire_modifier
+				duration = -1
+			}
+		}
+	}
+	
+}

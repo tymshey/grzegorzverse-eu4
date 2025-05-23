@@ -1,0 +1,27 @@
+t_koj_sprite_pack = {
+    # Tests against every tag in game
+    country_trigger = {
+        tag = KOJ
+    }
+
+    sprite_infantry = {
+        0 = KNI_INFANTRY_1
+        1 = KNI_INFANTRY_2
+        2 = KNI_INFANTRY_3
+        3 = KNI_INFANTRY_4
+    }
+
+    sprite_cavalry = {
+        0 = KNI_CAVALRY_1
+        1 = KNI_CAVALRY_2
+        2 = KNI_CAVALRY_3
+        3 = KNI_CAVALRY_4
+    }
+
+    sprite_artillery = {
+        0 = KNI_ARTILLERY_1
+        1 = KNI_ARTILLERY_2
+        2 = KNI_ARTILLERY_3
+        3 = KNI_ARTILLERY_4
+    }
+}

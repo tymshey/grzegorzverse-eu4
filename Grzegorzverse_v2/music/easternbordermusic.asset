@@ -1,0 +1,14 @@
+music = {
+	name = theodosion_music
+	file = theodosion_music.ogg
+}
+
+music = {
+	name = redrawing_the_map2
+	file = redrawing_the_map2.ogg
+}
+
+music = {
+	name = walls_of_constantinople
+	file = walls_of_constantinople.ogg
+}

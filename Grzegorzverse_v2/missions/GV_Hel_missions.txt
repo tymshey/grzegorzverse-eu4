@@ -1,0 +1,931 @@
+Hel_mission_1 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    The_last_bastion_of_poland = {
+		icon = Legacy_of_Kievan_Rus
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 0.8
+		}
+		effect = {
+			4747 = {
+				add_permanent_claim = ROOT
+			}
+			48 = {
+				add_permanent_claim = ROOT
+			}
+			4746 = {
+				add_permanent_claim = ROOT
+			}
+			1858 = {
+				add_permanent_claim = ROOT
+			}
+			2994 = {
+				add_permanent_claim = ROOT
+			}
+			47 = {
+				add_permanent_claim = ROOT
+			}
+			1859 = {
+				add_permanent_claim = ROOT
+			}
+			4524 = {
+				add_permanent_claim = ROOT
+			}
+			256 = {
+				add_permanent_claim = ROOT
+			}
+			1938 = {
+				add_permanent_claim = ROOT
+			}
+			2997 = {
+				add_permanent_claim = ROOT
+			}
+			2995 = {
+				add_permanent_claim = ROOT
+			}
+			2958 = {
+				add_permanent_claim = ROOT
+			}
+			42 = {
+				add_permanent_claim = ROOT
+			}
+			41 = {
+				add_permanent_claim = ROOT
+			}
+			767 = {
+				add_permanent_claim = ROOT
+			}
+			40 = {
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+Hel_mission_2 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Holy_tree_society = {
+		icon = Legacy_of_Kievan_Rus
+		position = 1
+		
+		trigger = {
+			2997 = {
+				culture = polish
+			}
+			2995 = {
+				culture = polish
+			}
+			2958 = {
+				culture = polish
+			}
+			42 = {
+				culture = polish
+			}
+			41 = {
+				culture = polish
+			}
+			767 = {
+				culture = polish
+			}
+			40 = {
+				culture = polish
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = Resurgence_of_polish_culture
+				duration = -1
+			}
+			country_event = { id = flavor_hel.1 }
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+Hel_mission_3 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Expand_baltic_trade = {
+		icon = Legacy_of_Kievan_Rus
+		position = 1
+		
+		trigger = {
+			43 = {
+				development = 10
+			}
+			1841 = {
+				development = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = Baltic_trade_hub
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_4 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    End_the_prussian_feud = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { The_last_bastion_of_poland }
+		position = 2
+		
+		trigger = {
+		owns = 1859
+		owns = 4524
+		owns = 256
+		owns = 1938
+		owns = 2958
+		owns = 767
+		owns = 42
+		owns = 41
+		owns = 40
+		}
+		effect = {
+		
+			add_country_modifier = {
+				name = Prussian_feud_ended
+			duration = -1
+			}
+			41 = {
+				add_province_modifier = {
+					name = Develop_konigsberg
+				duration = -1
+			}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_5 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Hel_canal_expansion = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { The_last_bastion_of_poland }
+		position = 2
+		
+		trigger = {
+			43 = {
+				development = 30
+			}
+		}
+		effect = {
+			add_great_project_tier = {
+			type = t_Hel_canals 
+			tier = 1
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_6 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Gracol_polearm = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { The_last_bastion_of_poland }
+		position = 2
+		
+		trigger = {
+			owns = 2997
+			owns = 2995
+		}
+		effect = {
+			2997 = {
+				add_province_modifier = {
+					name = Develop_pommerania
+					duration = -1
+				}
+			}
+			2995 = {
+				add_province_modifier = {
+					name = Develop_pommerania
+				duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_7 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Gracolite_culture = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Gracol_polearm }
+		position = 3
+		
+		trigger = {
+			2995 = {
+				num_of_times_improved = 2
+			}
+			2997 = {
+				num_of_times_improved = 2
+			}
+		}
+		effect = {
+			2997 = {
+				change_culture = polish
+			}
+			2995 = {
+				change_culture = polish
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_8 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Iron_march = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Hel_canal_expansion }
+		position = 3
+		
+		trigger = {
+			
+		}
+		effect = {
+			2963 = {
+				add_permanent_claim = ROOT
+			}
+			254 = {
+				add_permanent_claim = ROOT
+			}
+			4526 = {
+				add_permanent_claim = ROOT
+			}
+			4523 = {
+				add_permanent_claim = ROOT
+			}
+			4528 = {
+				add_permanent_claim = ROOT
+			}
+			255 = {
+				add_permanent_claim = ROOT
+			}
+			4533 = {
+				add_permanent_claim = ROOT
+			}
+			258 = {
+				add_permanent_claim = ROOT
+			}
+			1939 = {
+				add_permanent_claim = ROOT
+			}
+			4525 = {
+				add_permanent_claim = ROOT
+			}
+			257 = {
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_9 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Colonize_Empty_prussia = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { End_the_prussian_feud }
+		position = 3
+		
+		trigger = {
+			42 = {
+				num_of_times_improved = 2
+			}
+			41 = {
+				num_of_times_improved = 2
+			}
+			40 = {
+				num_of_times_improved = 2
+			}
+			767 = {
+				num_of_times_improved = 2
+			}
+			2958 = {
+				num_of_times_improved = 2
+			}
+		}
+		effect = {
+		42 = {
+			change_culture = polish
+		}
+		41 = {
+			change_culture = polish
+		}
+		40 = {
+			change_culture = polish
+		}
+		767 = {
+			change_culture = polish
+		}
+		2958 = {
+			change_culture = polish
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_10 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Pomeranian_trade = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Gracolite_culture }
+		position = 4
+		
+		trigger = {
+			47 = {
+			province_has_center_of_trade_of_level = 2
+			}
+			owns = 47 
+			47 = {
+			development = 15
+			}
+		}
+		effect = {
+			47 = {
+				add_province_modifier = {
+					name = Pomeranian_trade
+					duration = -1 
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_11 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Krolewcan_expansion = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Colonize_Empty_prussia }
+		position = 4
+		
+		trigger = {
+			41 = {
+			num_of_times_improved = 20
+			}
+		}
+		effect = {
+			41 = {
+				add_province_modifier = {
+					name = Królewien_trade
+					duration = -1 
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_12 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Liberate_mikis_realm = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Iron_march }
+		position = 4
+		
+		trigger = {
+			owns = 2963
+			owns = 254
+			owns = 4526
+			owns = 4523
+			owns = 255
+			owns = 4528
+		}
+		effect = {
+			2963 = {
+			change_culture = ROOT
+			}
+			254 = {
+			change_culture = ROOT			
+			}
+			4526 = {
+			change_culture = ROOT
+			}
+			4523 = {
+			change_culture = ROOT
+			}
+			255 = {
+			change_culture = ROOT
+			}
+			4528 = {
+			change_culture = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_13 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Brave_mazow = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Pomeranian_trade }
+		position = 5
+		
+		trigger = {
+			1938 = {
+				base_manpower = 5
+			}
+			257 = {
+				base_manpower = 5
+			}
+			4525 = {
+				base_manpower = 5
+			}
+ 			256 = {
+				base_manpower = 5
+			}
+		}
+		effect = {
+		add_country_modifier = {
+		name = Expanded_constricption
+		duration = -1
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_14 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Mazovian_tribes = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Liberate_mikis_realm }
+		position = 5
+		
+		trigger = {
+			owns = 1938
+			owns = 256
+			owns = 4525
+			owns = 257
+			owns = 1939
+			owns = 258
+			owns = 4533 
+			owns = 4527
+		}
+		effect = {
+		262 = {
+			add_permanent_claim = ROOT
+		}
+			2960 = {
+			add_permanent_claim = ROOT
+		}
+		259 = {
+			add_permanent_claim = ROOT
+		}
+		2959 = {
+			add_permanent_claim = ROOT
+		}
+		260 = {
+			add_permanent_claim = ROOT
+		}
+		add_country_modifier = {
+		name = Greater_hel
+		duration = -1
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_15 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Reorganise_mazovian_tribes  = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Krolewcan_expansion }
+		position = 5
+		
+		trigger = {
+			1938 = {
+				num_of_times_improved = 3
+			}
+			257 = {
+				num_of_times_improved = 3
+			}
+			4525 = {
+				num_of_times_improved = 3
+			}
+			256 = {
+				num_of_times_improved = 3
+			}
+			1939 = {
+				num_of_times_improved = 3
+			}
+			258 = {
+				num_of_times_improved = 3
+			}
+			4533 = {
+				num_of_times_improved = 3
+			}
+		}
+		effect = {
+		1938 = {
+			change_culture = polish
+		}
+		257 = {
+			change_culture = polish
+		}
+		4525 = {
+			change_culture = polish
+		}
+		256 = {
+			change_culture = polish
+		}
+		1939 = {
+			change_culture = polish
+		}
+		258 = {
+		change_culture = polish
+			}
+		4533 = {
+			change_culture = polish
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_16 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    ciapciokan_quality = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Brave_mazow }
+		position = 6
+		
+		trigger = {
+			owns = 2966
+			owns = 4538
+			owns = 264
+			owns = 4723
+			
+		}
+		effect = {
+		2966 = {
+		change_culture = polish
+		}
+		4538 = {
+		change_culture = polish
+		}
+		264 = {
+		change_culture = polish
+		}
+		4723 = {
+		change_culture = polish
+		}
+		add_country_modifier = {
+		name = ciapciokan_army
+		duration = -1
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_17 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Reinstate_faraonate = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Mazovian_tribes }
+		position = 6
+		
+		trigger = {
+			owns = 262
+			owns = 2960
+			owns = 259
+			
+		}
+		effect = {
+		4723 = {
+		add_permanent_claim = ROOT
+		}
+		264 = {
+		add_permanent_claim = ROOT
+		}
+		4238 = {
+		add_permanent_claim = ROOT
+		}
+		2966 = {
+		add_permanent_claim = ROOT
+		}
+		262 = {
+		change_culture = polish
+		}
+		2960 = {
+		change_culture = polish
+		}
+		259 = {
+		change_culture = polish
+		}
+		262 = {
+		add_province_modifier = {
+		name = krakow_power
+		duration = -1
+		}
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_18 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Podlasian_res_publika = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Reorganise_mazovian_tribes }
+		position = 6
+		
+		trigger = {
+			owns = 269
+			owns = 1937
+			owns = 277
+			owns = 260
+			
+		}
+		effect = {
+		269 = {
+		change_culture = polish
+		}
+		1937 = {
+		change_culture = polish
+		}
+		277 = {
+		change_culture = polish
+		}
+		260 = {
+		change_culture = polish
+		}
+		277 = {
+		change_trade_goods = gold
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_19 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    Polonite_reqonquista = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { ciapciokan_quality
+							Reinstate_faraonate	}
+		position = 7
+		
+		trigger = {
+			HEL = {
+				owns_all_provinces = {
+				Region = poland_region
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+			name = United_poland
+			duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_20 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    European_trade_hub = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Podlasian_res_publika
+							Reinstate_faraonate	}
+		position = 7
+		
+		trigger = {
+			num_of_merchants = 3
+			trade_income_percentage = 0.25
+		}
+		effect = {
+			add_country_modifier = {
+			name = European_trade_hub
+			duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Hel_mission_21 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = HEL
+	}
+	has_country_shield = yes
+	
+	    hel_empire = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = { Polonite_reqonquista
+							European_trade_hub	}
+		position = 8
+		
+		trigger = {
+			army = 50
+			army_size_percentage = 0.8
+		}
+		effect = {
+		override_country_name = T_HEL
+			add_country_modifier = {
+			name = hel_empire
+			duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}

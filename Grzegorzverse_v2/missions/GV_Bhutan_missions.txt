@@ -1,0 +1,219 @@
+Bhutannes_missions_GV_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BHU
+			tag = TDE
+		}
+	}
+	has_country_shield = yes
+	
+	Mongar_mines = {
+		icon = mission_war_chest
+		position = 2
+		required_missions = {Reform_the_goverment}
+		provinces_to_highlight = {
+		province_id = 6011
+		}
+		trigger = {
+			has_institution = renaissance
+			6011 = { development = 30}
+		}
+		effect = { 6011 = { change_trade_goods = gold } }
+		ai_weight = {
+			factor = 500
+		}
+	}
+	Internal_mines = {
+		icon = mission_iron_and_copper
+		position = 3
+		required_missions = {Mongar_mines}
+		provinces_to_highlight = {
+		OR = {
+				province_id = 6010
+				province_id = 4481
+			}
+		}
+		trigger = {
+			6010 = { base_production = 20}
+			4481 = { base_production = 20}
+		}
+		effect = { 6010 = { change_trade_goods = iron } 
+				   4481 ={ change_trade_goods = copper }}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+Bhutannes_missions_GV_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BHU
+			tag = TDE
+		}
+	}
+	has_country_shield = yes
+	
+	Reform_the_goverment = {
+		icon = mission_metropolis_of_the_deccan
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+		}
+		trigger = {
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 60
+			}
+		estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 60
+			}
+		estate_loyalty = {
+			estate = estate_church
+			loyalty = 60
+			}
+		stability = 3
+		NOT = {corruption = 1}
+		}
+		effect = {
+		remove_country_modifier = corrupted_administration
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		hidden_effect = {
+		country_event = { id = flavor_GV_Bhutan.1}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	Question_of_religion = {
+		icon = per_our_religious_direction
+		position = 2
+		required_missions = {Reform_the_goverment }
+		provinces_to_highlight = {
+		}
+		trigger = {
+		religious_unity = 1
+		legitimacy_equivalent = 100
+		NOT = { average_unrest = 2 }
+		}
+		effect = {
+		add_country_modifier = {
+		name = aftermath_of_rel_war
+		duration = 9125
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+Bhutannes_missions_GV_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BHU
+			tag = TDE
+		}
+	}
+	has_country_shield = yes
+	
+	Retake_The_North = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {}
+		provinces_to_highlight = {
+		OR = {
+		area = utsang_area
+		area = tsang_area
+			}
+		}
+		trigger = {
+			utsang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tsang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		tibet_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	Tibetian_Development = {
+		icon = mission_rb_settle_the_north
+		position = 2
+		required_missions = {Retake_The_North Reform_the_goverment}
+		provinces_to_highlight = {
+		region = tibet_region
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 300
+				region = tibet_region
+			}
+		}
+		effect = {
+		tibet_region = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+				name = Plateu_Development
+				duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	Rebuild_the_gate = {
+		icon = mission_crown_of_sweden
+		position = 3
+		required_missions = {Tibetian_Development}
+		provinces_to_highlight = {
+		OR = {
+		provinces_id = 2128
+			}
+		}
+		trigger = {
+			OR = {
+				is_emperor_of_china = yes
+				NOT = {great_power_rank = 3}
+			}
+			2128 = { owned_by = BHU }
+			2128 = {
+			has_great_project = {
+				type = t_gate_to_agartha
+				tier = 3
+				}
+			}
+		}
+		effect = {
+		country_event = { id = flavor_GV_Bhutan.2}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}

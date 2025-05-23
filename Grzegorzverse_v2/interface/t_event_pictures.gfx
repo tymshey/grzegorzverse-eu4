@@ -1,0 +1,42 @@
+spriteTypes = {	
+	spriteType = {
+		name = "PAXROMANA"
+		texturefile = "gfx//event_pictures//roman//pax_romana_event.dds"
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "ROMANCOA_EVENT_PICTURE"
+		texturefile = "gfx//event_pictures//roman//roman_coa_event.dds"
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "TRIUMPH_EVENT_PICTURE"
+		texturefile = "gfx//event_pictures//roman//triumph_event.dds"
+	}
+}
+spriteTypes = {	
+	spriteType = {
+		name = "JUSTINIANS_AMBITION_EVENT_PICTURE"
+		texturefile = "gfx//event_pictures//roman//justinians_ambition_event.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "MAKESHIFT_PORT_EVENT_PICTURE"
+		texturefile = "gfx//event_pictures//makeshift_port_his.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "HIS_MEDD_EXPANSION"
+		texutrefile = "gfx//event_pictures//mediterranean_expansion_his.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "REAL_ROMAN_EMPIRE"
+		texturefile = "gfx//event_pictures//roman_empire.dds"
+	}
+}

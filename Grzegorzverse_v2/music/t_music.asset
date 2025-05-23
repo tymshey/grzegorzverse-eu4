@@ -1,0 +1,164 @@
+music = {
+	name = "nightwatch"
+	file = "nightwatch.ogg"
+}
+
+music = {
+	name = "thesiege"
+	file = "thesiege.ogg"
+}
+
+music = {
+	name = "streetsofconstantinople"
+	file = "streetsofconstantinople.ogg"
+}
+
+music = {
+	name = "theforum"
+	file = "theforum.ogg"
+}
+
+music = {
+	name = "debellogallico"
+	file = "debellogallico.ogg"
+}
+
+music = {
+	name = "soundthecornu"
+	file = "soundthecornu.ogg"
+}
+
+music = {
+	name = "queenofcities"
+	file = "queenofcities.ogg"
+}
+
+music = {
+	name = "civilwar"
+	file = "civilwar.ogg"
+}
+
+music = {
+	name = "triumph"
+	file = "triumph.ogg"
+}
+
+music = {
+	name = "scythiansuite"
+	file = "scythiansuite.ogg"
+}
+
+music = {
+	name = "dvorakno9"
+	file = "dvorakno9.ogg"
+}
+
+music = {
+	name = "masqueradesuite"
+	file = "masqueradesuite.ogg"
+}
+
+music = {
+	name = "burgundianlullaby"
+	file = "burgundianlullaby.ogg"
+}
+
+music = {
+	name = "hyperborea"
+	file = "hyperborea.ogg"
+}
+
+music = {
+	name = "verifyyourclock"
+	file = "verifyyourclock.ogg"
+}
+
+music = {
+	name = "augustus"
+	file = "augustus.ogg"
+}
+
+music = {
+	name = "siegeoftime"
+	file = "siegeoftime.ogg"
+}
+
+music = {
+	name = "warcry"
+	file = "warcry.ogg"
+}
+
+music = {
+	name = "thefalleneagle"
+	file = "thefalleneagle.ogg"
+}
+
+music = {
+	name = "constantinople2"
+	file = "constantinople2.ogg"
+}
+
+music = {
+	name = "queenofcities2"
+	file = "queenofcities2.ogg"
+}
+
+music = {
+	name = "havanagila"
+	file = "havanagila.ogg"
+}
+
+music = {
+	name = "havanagila2"
+	file = "havanagila2.ogg"
+}
+
+music = {
+	name = "havanagila3"
+	file = "havanagila3.ogg"
+}
+
+music = {
+	name = "alesia"
+	file = "alesia.ogg"
+}
+
+music = {
+	name = "ave"
+	file = "ave.ogg"
+}
+
+music = {
+	name = "besieged"
+	file = "besieged.ogg"
+}
+
+music = {
+	name = "bronze"
+	file = "bronze.ogg"
+}
+
+music = {
+	name = "thecompanions"
+	file = "thecompanions.ogg"
+}
+
+music = {
+	name = "herrmannelig"
+	file = "herrmannelig.ogg"
+}
+
+music = {
+	name = "havanagilasigmaversion"
+	file = "havanagilasigmaversion.ogg"
+}
+
+music = {
+	name = "le_retour_des_princes_francais_a_paris"
+	file = "le_retour_des_princes_francais_a_paris.ogg"
+}
+
+music = {
+	name = "barigadam"
+	file = "barigadam.ogg"
+}

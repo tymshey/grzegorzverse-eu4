@@ -1,0 +1,155 @@
+﻿l_english:
+ Sus_ideas:0 "Sussy Ideas"
+ Sus_ideas_start:0 "Sus Ideas Start "
+ Sus_ideas_bonus:0 "Sus Ideas Bonus "
+ Production_Center:0 "Production Center"
+ Production_Center_desc:0 " "
+ New_World_Migration:0 "New World Migration "
+ New_World_Migration_desc:0 " "
+ Colonial_Army:0 "Colonial Army "
+ Colonial_Army_desc:0 " "
+ Steer_Colonial_trade:0 "Steer Colonial Trade "
+ Steer_Colonial_trade_desc:0 " "
+ Trading_Nation:0 "Trading Nation "
+ Trading_Nation_desc:0 " "
+ African_Fortunes:0 "African Fortunes"
+ African_Fortunes_desc:0 " "
+ Elite_Conquisadors:0 "Elite Conquisadors "
+ Elite_Conquisadors_desc:0 " "
+ 
+ missions_northern_expansion_title:0 "Centralization of Sus"
+ missions_northern_expansion_desc:0 " "
+ 
+ missions_reclaim_capital_title:0 "Reintegrate Saoura"
+ missions_reclaim_capital_desc:0 " "
+ Expanded_Gold_mine:0 "Reopen old mines"
+ 
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ missions_sussy_statue_title:0 "Sussy Statue"
+ missions_sussy_statue_desc:0 " "
+ 
+ amogus_statue:0 "Amongus Statue"
+ amogus_statue_tile:0 "Amongus Statue"
+ 
+ missions_iberian_trade_title:0 "Control Iberian Trade"
+ missions_iberian_trade_desc:0 " "
+ 
+ iberian_trade:0 "Iberian Trade"
+ 
+ missions_iberian_foothold_title:0 "Iberian Expansion"
+ missions_iberian_foothold_desc:0 " "
+ 
+ 
+ 
+
+ 
+ missions_Islamic_knowledge_title:0 "Islamic Knowledge"
+ missions_Islamic_knowledge_desc:0 " "
+ 
+ missions_bring_renesaunce_title:0 "African Renaissance"
+ missions_bring_renesaunce_desc:0 " "
+ 
+ Islamic_knowledge:0 "Islamic Knowledge"
+ 
+ 
+ A_Unity_Regional_Islam_title:0 "Unite Regional Islam"
+ A_Unity_Regional_Islam_desc:0 " "
+ 
+ Unity_Regional_Islam:0 "Unite Regional Islam"
+ 
+ Establish_Andalus:0 "Establish Andalus"
+ Dominate_Iberia:0 "Dominate Iberia"
+ 
+ 
+ flavor_SUS.1.t:0 "Iberian Conquest"
+ flavor_SUS.1.d:0 "With our recent conquest of southern parts of iberia we now stand between at the gates of conquering the entire peninsula"
+ flavor_SUS.1.a:0 "Glory to sus"
+ 
+ sus_tool_tip_1:0 "This decision will integrate the regional sunni nations thus removing the cores from these nations"
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+ 
+ 
+ mission_gold_reform_title:0 "Gold Reform"
+ mission_gold_reform_desc:0 " "
+ 
+ Gold_reform:0 "Golden Monarchy"
+ 
+ t_sus_gold_modifier:0 "Increased Gold Production"
+ 
+ tooltip_sus_gold:0 "Increase Gold Production\n\n§GAvailable once per§! §Y10§! §Gyears.§!"
+ 
+ Admnistrative_Autonomy:0 "Admnistrative Autonomy"
+ Grant_Autonomy_title:0 "Grant Autonomy to macaronesia"
+ Grant_Autonomy_desc:0 " "
+ decline_of_tafilat:0 "Decline Of Tafilat"
+ desc_decline_of_tafilat:0 " "
+
+
+
+ Integrate_Andalus_title:0 "Integrate Andalus"
+ Integrate_Andalus_desc:0 " "
+
+ 
+ professional_army:0 "Army of Africa"
+
+ mission_andalusian_diplomacy_title:0 "Andalusian Diplomacy"
+ mission_andalusian_diplomacy_desc:0 " "
+ 
+ plus_ultraa:0 "Plus Ultra"
+
+
+
+
+ Asian_Trade:0 "Asian Trade"
+ caribbean_desc:0 " "
+ Declared_Jihad:0 "Declared Jihad "
+ Jihad_decision_title:0 "Declare Jihad"
+ sus_vassal_title:0 "Emirate"
+ Centralization_Of_Power:0 "Centralization Of Power"
+ mission_build_up_ports_title:0 "Port Of Agadir"
+ mission_build_up_ports_desc:0 " "
+ Port_of_Agadir:0 "Port Of Agadir"
+ missions_restoration_in_tafilat_title:0 "Restoration In Tafilat"
+ missions_restoration_in_tafilat_desc:0 " "
+ Honey_taxes:0 "Honey Taxes"
+ mission_arguin_outpost_title:0 "Arguian Outpost"
+ mission_arguin_outpost_desc:0 " "
+ missions_integration_of_morroco_title:0 "Reintegration Of Morroco"
+ missions_integration_of_morroco_desc:0 " "
+ missions_algerian_coastline_title:0 "Algerian Coastline"
+ Algerian_Pirates:0 "Algerian Pirates"
+ missions_algerian_coastline_desc:0 " "
+ mission_discover_the_caraibean_title:0 "Discover The Caribbean"
+ mission_discover_the_caraibean_desc:0 " "
+ Colonial_ambitions:0 "Colonial Ambitions"
+ mission_african_hub_title:0 "African Trade Hub"
+ mission_african_hub_desc:0 " "
+ African_Trade:0 "African Trade"
+ missions_sicilian_brothers_title:0 "Sicilian Brothers"
+ missions_sicilian_brothers_desc:0 " "
+
+

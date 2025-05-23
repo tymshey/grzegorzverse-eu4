@@ -1,0 +1,324 @@
+Russland_slot_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE 
+	}
+	mission_establish_baltic_protectorats = {
+		icon = Legacy_of_Kievan_Rus
+		position = 4
+		required_missions = { mission_exterminate_the_romuvas } 
+		provinces_to_highlight = { 
+			OR = {
+				area = curonia_area
+				area = livonia_area
+				area = estonia_ingria_area
+			}
+		} 
+		trigger = {
+			curonia_area = {
+				owned_by = ROOT
+				type = all
+				} 
+			livonia_area = {
+				owned_by = ROOT
+				type = all
+				}
+			estonia_ingria_area = {
+				owned_by = ROOT
+				type = all
+				}
+			}
+		effect = {
+		39  = {add_core = RIG}
+		38 = {add_core = RIG}
+		1935 = {add_core = RIG}
+		create_vassal = RIG
+		38 = {
+			add_permanent_province_modifier = {
+				name = rig_trade_stuff
+				duration = -1
+				}
+			}
+			
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+Russland_slot_2 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE 
+	}
+	mission_exterminate_the_romuvas = {
+		icon = Legacy_of_Kievan_Rus
+		position = 3
+		required_missions = { mission_Consolidate_Ruthenia } 
+		provinces_to_highlight = { 
+			OR = {
+				area = lithuania_area
+				area = samogitia_area
+			}
+		} 
+		trigger = {
+			lithuania_area = {
+				owned_by = ROOT
+				type = all
+				} 
+			samogitia_area = {
+				owned_by = ROOT
+				type = all
+				}
+			}
+		effect = {
+		curonia_area = {add_permanent_claim = ROOT}
+		livonia_area = {add_permanent_claim = ROOT}
+		estonia_ingria_area = {add_permanent_claim = ROOT}
+		east_prussia_area = {add_permanent_claim = ROOT}
+		west_prussia_area = {add_permanent_claim = ROOT}
+		add_mil_power = 100
+		define_advisor = {
+			type = treasurer
+			skill = 3
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_city_of_hel = {
+		icon = Legacy_of_Kievan_Rus
+		position = 4
+		required_missions = { mission_exterminate_the_romuvas } 
+		provinces_to_highlight = { 
+			OR = {
+				area = east_prussia_area
+				area = west_prussia_area
+			}
+		} 
+		trigger = {
+			west_prussia_area = {
+				owned_by = ROOT
+				type = all
+				} 
+			east_prussia_area = {
+				owned_by = ROOT
+				type = all
+				}
+			}
+		effect = {
+		add_great_project_tier = {
+			type = t_Hel_canals
+			tier = 1
+			}
+			add_country_modifier = {
+			name = Danzig_Port
+			duration = 9125
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+Russland_slot_3 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE 
+	}
+	mission_reaunite_our_realms = {
+		icon = Legacy_of_Kievan_Rus
+		position = 1
+		provinces_to_highlight = { 
+			OR = {
+				area = volhynia_area
+				area = red_ruthenia_area
+				province_id = 281
+			}
+		}
+		trigger = {
+			volhynia_area = {
+				owned_by = ROOT
+				type = all
+				}
+			red_ruthenia_area = {
+				owned_by = ROOT
+				type = all
+				}
+			281 = {owned_by = ROOT}
+		}
+		effect = {
+			add_country_modifier = {
+				name = Reunification_of_Russland
+				duration = 3650
+			}
+			country_event = { id = flavor_russland.10 }
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_Consolidate_Ruthenia = {
+		icon = Legacy_of_Kievan_Rus
+		position = 2
+		required_missions = { mission_reaunite_our_realms } 
+		provinces_to_highlight = { 
+			OR = {
+				region = ruthenia_region
+			}
+		}
+		trigger = {
+			ruthenia_region = {
+			type = all
+			owned_by = ROOT
+			}
+		}
+		effect = {
+			lithuania_area = {add_permanent_claim = ROOT }
+			samogitia_area = {add_permanent_claim = ROOT }
+			add_country_modifier = {
+				name = Baltic_Campaigne
+				duration = 3650
+			}
+		}
+		ai_weight = {
+			factor = 500
+			}
+		}
+		mission_dream_of_wotan = {
+		icon = Legacy_of_Kievan_Rus
+		position = 4
+		required_missions = { mission_Consolidate_Ruthenia } 
+		provinces_to_highlight = { 
+			OR = {
+				region = ruthenia_region
+			}
+		} 
+		trigger = {
+		all_owned_province = {
+				region = ruthenia_region
+					culture = ROOT
+					religion = ROOT
+				}
+			}
+		effect = {
+		add_country_modifier = {
+		name = Dream_of_Wotan
+		duration = -1
+		}
+			}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+Russland_slot_4 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE 
+	}
+}
+Russland_slot_5 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE 
+	}
+	mission_brother_alliance = {
+		icon = Legacy_of_Kievan_Rus
+		position = 1
+		provinces_to_highlight = { 
+		}
+		trigger = {
+			alliance_with = Z01
+		}
+		effect = {
+				KIE = {add_historical_friend = Z01}
+				Z01 = {add_historical_friend = KIE}
+				add_country_modifier = {
+					name = Theodoish_Economic_Help
+					duration = -1
+				}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	
+	mission_mines_of_Wotan = {
+		icon = Legacy_of_Kievan_Rus
+		position = 2
+		required_missions = { mission_reaunite_our_realms } 
+		provinces_to_highlight = { 
+			province_id = 1942
+		} 
+		trigger = {
+		1942 = {num_of_times_improved_by_owner = 10}
+		1942 = {num_of_times_expanded_infrastructure = 1}
+			}
+		effect = {
+		1942 = {
+		add_province_modifier = {
+			name = Mines_of_Wotan
+			duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_monopoly_over_dnieper = {
+		icon = Legacy_of_Kievan_Rus
+		position = 3
+		required_missions = { mission_mines_of_Wotan } 
+		provinces_to_highlight = { 
+			OR = {
+				area = west_dniepr_area
+				area = east_dniepr_area
+			}
+		} 
+		trigger = {
+		all_owned_province = {
+				area = east_dniepr_area
+					culture = ROOT
+					num_of_times_improved_by_owner = 3
+			}
+		all_owned_province = {
+				area = west_dniepr_area
+					culture = ROOT
+					num_of_times_improved_by_owner = 3
+				}
+			}
+		effect = {
+		every_owned_province = {
+			limit = { area = east_dniepr_area }
+				add_province_modifier = {
+					name = Economic_Prosperity
+					duration = -1
+					}
+				}
+		every_owned_province = {
+			limit = { area = east_dniepr_area }
+				add_province_modifier = {
+					name = Economic_Prosperity
+					duration = -1
+					}
+				}
+			}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}

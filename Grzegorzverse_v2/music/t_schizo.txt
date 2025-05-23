@@ -1,0 +1,115 @@
+# added by tymshey
+
+song = {
+	name = "burgundianlullaby"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "hyperborea"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "verifyyourclock"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "barigadam"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+
+song = {
+	name = "havanagila"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 1000
+			tag = KOJ
+		}		
+	}
+}
+
+song = {
+	name = "havanagila2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 1000
+			tag = KOJ
+		}		
+	}
+}
+
+song = {
+	name = "havanagila3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 1000
+			tag = KOJ
+		}		
+	}
+}
+
+song = {
+	name = "herrmannelig"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = Z01
+				tag = GER
+			}
+		}		
+	}
+}
+
+song = {
+	name = "havanagilasigmaversion"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 1000
+			tag = KOJ
+		}		
+	}
+}

@@ -1,0 +1,1171 @@
+### THEODLAND REWORKED MISSION TREE
+
+## THE IMPERIAL FEUD
+
+# holygermanempire.8 TO CHANGE BY 20 FOR THEODLAND
+# holygermanempire.9 TO CHANGE BY 20 FOR AUSTRIA
+# holygermanempire.10 TO CHANGE BY 40 FOR THEODLAND
+# holygermanempire.11 TO CHANGE BY 40 FOR AUSTRIA
+
+# HAS TO BE USED FOR BOTH THEODLAND AND AUSTRIA TO WORK PROPERLY !
+
+###
+
+Theodland_mission_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z01
+			tag = NGC
+		}
+	}
+	has_country_shield = yes
+	
+	t_theodland_fate_of_the_lowlands = {
+		icon = interest_of_holland
+		required_missions = { t_theodland_starting_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = holland_area
+				province_id = 99 # Gelre
+				province_id = 4770 # Hertogenbosch
+				province_id = 4381 # Oerisel
+				province_id = 100 # Friesland
+				province_id = 4382 # Grins
+			}
+		}
+		trigger = {
+			97 = {
+				num_of_times_improved = 4
+			}
+			4383 = {
+				num_of_times_improved = 4
+			}
+			100 = {
+				num_of_times_improved = 4
+			}
+			99 = {
+				num_of_times_improved = 4
+			}
+		}
+		
+		effect = {
+			country_event = { id = holygermanempire.12 }
+			low_countries_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Dominate_the_channel = {
+		icon = mission_control_the_channel
+		required_missions = { t_theodland_fate_of_the_lowlands }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				region = low_countries_region
+			}
+		}
+		trigger = {
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			} 
+		}
+		effect = {
+			97 = {
+				add_center_of_trade_level = 1
+			}
+			add_country_modifier = {
+				name = Channel_dominations
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Cross_the_channel = {
+		icon = mission_invade_england
+		required_missions = { Dominate_the_channel }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = wessex_area
+				area = home_counties_area
+				area = east_anglia_area
+			}
+		}
+		trigger = {
+			east_anglia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			} 
+			home_counties_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wessex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			# country_event = { id = holygermanempire.3 }
+			add_country_modifier = {
+				name = Crossed_the_straits
+				duration = 9125
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Secure_The_Coast = {
+		icon = mission_northumberland_coast
+		required_missions = { Cross_the_channel }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+			area = east_midlands_area
+			area = yorkshire_area
+			}
+		}
+		trigger = {
+			east_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			} 
+			yorkshire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			scottish_marches_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			} 	
+			west_midlands_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			} 
+			wales_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+}
+
+Theodland_mission_2 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z01
+			tag = NGC
+		}
+	}
+	has_country_shield = yes
+	
+	t_theodland_secure_the_princes = { # Secure Hessen
+		icon = mission_alliances
+		required_missions = { t_theodland_starting_mission }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = hesse_area
+			}
+		}
+
+		trigger = {
+			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = t_shift_rivalry_by_20_theodland_tt
+			custom_tooltip = SEPERATOR_TOOLTIP
+			country_event = { id = holygermanempire.8 }
+			HAB = {
+				country_event = { id = holygermanempire.8 }
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_country_modifier = {
+				name = "succesful_bid_for_imperial_crown"
+				duration = 5475 #15 years
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_das_kreditwerk = {
+		icon = reform_the_state
+		required_missions = { t_theodland_secure_the_princes }
+		position = 1
+		trigger = {
+			OR = {
+				master_of_mint = 2
+				treasurer = 2
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+		}
+		effect = {
+			custom_tooltip = t_shift_rivalry_by_20_theodland_tt
+			custom_tooltip = SEPERATOR_TOOLTIP
+			country_event = { id = holygermanempire.8 }
+			HAB = {
+				country_event = { id = holygermanempire.8 }
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_country_modifier = {
+				name = t_kreditwerk
+				duration = -1
+			}
+			50 = {
+				add_base_production = 2
+			}
+			1874 = {
+				add_base_production = 2
+			}
+			85 = {
+				add_base_production = 2
+			}
+			84 = {
+				add_base_production = 2
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	Go_West = {
+		icon = mission_settlers_north_america
+		required_missions = { Secure_the_straits }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = subarctic_islands_area
+			}
+		}
+		trigger = {
+			dip_tech = 8
+			subarctic_islands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = Go_West
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_our_place_in_the_sun = {
+		icon = mission_sun
+		required_missions = { Go_West }
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			colony = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = t_theodland_place_in_the_sun_modifier
+				duration = -1
+			}
+			set_country_flag = t_theodland_has_place_in_the_sun
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_eisen_und_kohle = {
+		icon = mission_rb_build_furnaces
+		required_missions = { t_theodland_centralization }
+		position = 7
+		provinces_to_highlight = {
+			province_id = 2975 # Cleve
+			province_id = 84 # Berg
+			province_id = 83 # Nassau
+			province_id = 1760 # Coblenz
+			province_id = 82 # Westfalen
+		}
+		trigger = {
+			2975 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+			84 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+			83 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+			1760 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+			82 = {
+				owned_by = ROOT
+				base_production = 15
+			}
+		}
+		effect = {
+			2975 = {
+				add_province_modifier = {
+					name = t_theodland_eisen_und_kohle_modifier
+					duration = -1
+				}
+			}
+			84 = {
+				add_province_modifier = {
+					name = t_theodland_eisen_und_kohle_modifier
+					duration = -1
+				}
+			}
+			83 = {
+				add_province_modifier = {
+					name = t_theodland_eisen_und_kohle_modifier
+					duration = -1
+				}
+			}
+			1760 = {
+				add_province_modifier = {
+					name = t_theodland_eisen_und_kohle_modifier
+					duration = -1
+				}
+			}
+			82 = {
+				add_province_modifier = {
+					name = t_theodland_eisen_und_kohle_modifier
+					duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Theodland_mission_3 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z01
+			tag = NGC
+		}
+	}
+	has_country_shield = yes
+	
+	t_theodland_starting_mission = { # The Lost Empire
+		icon = spread_the_von_wettins
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			army_size_percentage = 0.8
+		}
+		effect = {
+			add_imperial_influence = 10
+			add_prestige = 20
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+		ai_weight = {
+			factor = 1
+		}
+	}
+	
+	Pacify_the_Leagues = {
+		icon = mission_bane_of_the_hansa
+		required_missions = { t_theodland_starting_mission t_theodland_secure_the_princes t_theodland_conquer_saxony }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 45
+				province_id = 44
+			}
+		}
+		trigger = {
+			45 = {
+				owned_by = ROOT
+			}
+			44 = {
+				owned_by = ROOT
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_burghers
+					influence = 60
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = t_shift_rivalry_by_20_theodland_tt
+			custom_tooltip = SEPERATOR_TOOLTIP
+			country_event = { id = holygermanempire.8 }
+			HAB = {
+				country_event = { id = holygermanempire.8 }
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			remove_estate_privilege = estate_burghers_leagues_domination # removes dominance of the leagues yay!!
+			country_event = { id = flavor_theodland.3 }
+			holstein_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+
+	Secure_the_straits = {
+		icon = mission_crown_of_denmark
+		required_missions = {Pacify_the_Leagues}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+			area = jutland_area
+			area = holstein_area
+			area = denmark_area
+			area = skaneland_area
+			}
+		}
+		trigger = {
+			jutland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			holstein_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			denmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = t_shift_rivalry_by_20_theodland_tt
+			custom_tooltip = SEPERATOR_TOOLTIP
+			country_event = { id = holygermanempire.8 }
+			HAB = {
+				country_event = { id = holygermanempire.8 }
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			balticislands_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			subarctic_islands_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_centralization = {
+		icon = mission_empire
+		required_missions = { Secure_the_straits }
+		position = 6
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			absolutism = 30
+			NOT = {
+				average_home_autonomy = 5
+			}
+			NOT = {
+				has_reform = t_theodland_austria_rivalry_reform
+			}
+		}
+		effect = {
+			custom_tooltip = t_shift_rivalry_by_20_theodland_tt
+			custom_tooltip = SEPERATOR_TOOLTIP
+			country_event = { id = holygermanempire.8 }
+			HAB = {
+				country_event = { id = holygermanempire.8 }
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_prestige = 20
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_crown_of_germany = {
+		icon = mission_crown_of_denmark
+		required_missions = { t_theodland_centralization }
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			stability = 2
+			legitimacy = 90
+			absolutism = 60
+		}
+		effect = {
+			add_country_modifier = [
+				name = t_theodland_crown_of_germany_modifier
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_fur_den_kaiser = {
+		icon = Blood_Iron
+		required_missions = { t_theodland_crown_of_germany t_theodland_eisen_und_kohle }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						region = north_german_region
+						region = south_german_region
+					}
+					NOT = { area = erzgebirge_area }
+					NOT = { area = bohemia_area }
+					NOT = { area = moravia_area }
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								is_core = ROOT
+								OR = {
+									region = north_german_region
+									region = south_german_region
+								}
+								NOT = { area = erzgebirge_area }
+								NOT = { area = bohemia_area }
+								NOT = { area = moravia_area }
+								value = 50
+							}
+						}
+					}
+				}
+				province_id = 50
+				province_id = 57
+				province_id = 65
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 75 }
+						NOT = { owns_core_province = 41 }
+					}
+					OR = {
+						province_id = 75
+						province_id = 41
+					}
+				}
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 1868 }
+						NOT = { owns_core_province = 70 }
+					}
+					OR = {
+						province_id = 1868
+						province_id = 70
+					}
+				}
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 1876 }
+						NOT = { owns_core_province = 67 }
+					}
+					OR = {
+						province_id = 1876
+						province_id = 67
+					}
+				}
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 1762 }
+						NOT = { owns_core_province = 85 }
+					}
+					OR = {
+						province_id = 1762
+						province_id = 85
+					}
+				}
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 41 }
+						NOT = { owns_core_province = 75 }
+					}
+					OR = {
+						province_id = 41
+						province_id = 75
+					}
+				}
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 44 }
+						NOT = { owns_core_province = 45 }
+					}
+					OR = {
+						province_id = 44
+						province_id = 45
+					}
+				}
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 61 }
+						NOT = { owns_core_province = 63 }
+					}
+					OR = {
+						province_id = 61
+						province_id = 63
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			OR = {
+				government = monarchy
+				government = republic
+				government = theocracy
+			}
+			is_at_war = no
+			owns_core_province = 50	# Berlin
+			owns_core_province = 57	# Brunswick
+			owns_core_province = 65	# Munchen
+			OR = {
+				owns_core_province = 1868 # Augsburg
+				owns_core_province = 70 # Wurttemberg
+			}
+			OR = {
+				owns_core_province = 67	# Nurnberg
+				owns_core_province = 1876 # Frankfurt
+			}
+			OR = {
+				owns_core_province = 1762 # Niederhessen
+				owns_core_province = 85	# Koln
+			}
+			OR = {
+				owns_core_province = 41	# Konigsberg
+				owns_core_province = 75	# Strassburg
+			}
+			OR = {
+				owns_core_province = 44	# Hamburg
+				owns_core_province = 45	# Lubeck
+			}
+			OR = {
+				owns_core_province = 61	# Dresden
+				owns_core_province = 63	# Thuringen
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+				NOT = { area = erzgebirge_area }
+				NOT = { area = bohemia_area }
+				NOT = { area = moravia_area }
+				value = 50
+			}
+		}
+		effect = {
+			change_tag = GER
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				dismantle_hre = yes
+			}
+			else = {
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
+				}
+			}
+			custom_tooltip = become_an_empire_tt
+			hidden_effect = { set_government_rank = 3 }
+			north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = formed_germany_flag
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			if = {
+				limit = { has_dlc = "Winds of Change" }
+				set_country_flag = GER_stuck_disunited
+				add_government_reform = german_cultural_disunity_reform
+				freeze_government_power = {
+					mechanic_type = cultural_unity_mechanic
+					power_type = cultural_unity
+				}
+			}
+			add_country_modifier = [
+				name = t_fur_den_kaiser
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Theodland_mission_4 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z01
+			tag = NGC
+		}
+	}
+	has_country_shield = yes
+	
+	t_theodland_conquer_saxony = { # Reconquer Saxony
+		icon = the_crown_of_lothair
+		required_missions = { t_theodland_starting_mission }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = northern_saxony_area
+				area = south_saxony_area
+			}
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = { 
+			northern_saxony_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			south_saxony_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			custom_tooltip = t_shift_rivalry_by_20_theodland_tt
+			custom_tooltip = SEPERATOR_TOOLTIP
+			country_event = { id = holygermanempire.8 }
+			HAB = {
+				country_event = { id = holygermanempire.8 }
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			thuringia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			hesse_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			lower_rhineland_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_conquer_pomerania = { # Strengthen Eastern Border
+		icon = the_crown_of_lothair
+		required_missions = { t_theodland_conquer_saxony }
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = hinter_pommern_area
+				area = neumark_area
+			}
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = {
+			hinter_pommern_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			neumark_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			west_prussia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			east_prussia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			wielkopolska_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			kuyavia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_german_roads = { # Infrastructure Network
+		icon = mission_royal_roads
+		required_missions = { t_theodland_conquer_pomerania }
+		position = 1
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			if = {
+				limit = {
+					owner = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 10
+								num_of_times_expanded_infrastructure = 1
+							}
+						}
+					}
+				}
+				NOT = {
+					num_of_times_expanded_infrastructure = 1
+				}
+			}
+		} 
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			add_country_modifier = {
+				name = t_theodland_timed_dev
+				duration = 7300
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_renovate_berlin = {
+		icon = renovate_berlin
+		required_missions = { t_theodland_german_roads }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 50
+		} 
+
+		trigger = { 
+			50 = {
+				development = 30
+				num_of_times_expanded_infrastructure = 2
+			}
+		}
+		
+		effect = {
+			50 = {
+				add_province_modifier = {
+					name = t_berlin_expansion
+					duration = -1
+				}
+			}
+			add_great_project_tier = {
+				type = t_berlin_palace
+				tier = 1
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Theodland_mission_4 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		OR = {
+			tag = Z01
+			tag = NGC
+		}
+	}
+	has_country_shield = yes
+	
+	t_theodland_secure_mecklenburg = {
+		icon = mission_conquer_50_development
+		required_missions = { t_theodland_starting_mission }
+		position = 2
+		
+		provinces_to_highlight = {
+			area = mecklenburg_area
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = { 
+			mecklenburg_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			mecklenburg_area = {
+				add_base_production = 1
+				add_base_manpower = 1
+				add_prosperity = 25
+				type = all
+			}
+			neumark_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			hinter_pommern_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			silesia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			lusatia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_recover_silesia = {
+		icon = take_silesia
+		required_missions = { t_theodland_secure_mecklenburg }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = silesia_area
+				area = lusatia_area
+			}
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = { 
+			silesia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			lusatia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			silesia_area = {
+				add_base_production = 1
+				add_base_manpower = 1
+				add_prosperity = 25
+				type = all
+			}
+			lusatia_area = {
+				add_base_production = 1
+				add_base_manpower = 1
+				add_prosperity = 25
+				type = all
+			}
+			west_prussia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			east_prussia_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	t_theodland_die_grenzwacht = { # Die Grenzwacht
+		icon = the_crown_of_lothair
+		required_missions = { t_theodland_conquer_pomerania t_theodland_recover_silesia }
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = west_prussia_area
+				area = east_prussia_area
+				area = wielkopolska_area
+				area = kuyavia_area
+			}
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = {
+			west_prussia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			east_prussia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			wielkopolska_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			kuyavia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			custom_tooltip = t_shift_rivalry_by_20_theodland_tt
+			custom_tooltip = SEPERATOR_TOOLTIP
+			country_event = { id = holygermanempire.8 }
+			HAB = {
+				country_event = { id = holygermanempire.8 }
+			}
+			custom_tooltip = SEPERATOR_TOOLTIP
+			add_country_modifier = {
+				name = t_die_grenzwacht
+				duration = -1
+			}
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+}

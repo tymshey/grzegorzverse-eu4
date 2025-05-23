@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "gv_privilege_eye_of_providence"
+		texturefile = "gfx/interface/privileges/gv_privilege_eye_of_providence.dds"
+	}
+}

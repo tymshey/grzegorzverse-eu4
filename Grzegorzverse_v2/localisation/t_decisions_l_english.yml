@@ -1,0 +1,135 @@
+﻿l_english:
+
+# Decisions
+
+t_develop_capital_title:0 "§YDevelop the Capital§!"
+t_develop_capital_desc:0 ""
+
+# Rome/Anatolia
+
+t_embellish_the_capital_title:0 "£major_harbour£ Embellish the Imperial Capital"
+t_embellish_the_capital_desc:0 ""
+t_expand_the_imperial_port_title:0 "£major_harbour£ Expand the Imperial Harbor"
+t_expand_the_imperial_port_desc:0 ""
+t_build_the_spanish_steps_title:0 "£major_harbour£ Build the Spanish Steps"
+t_build_the_spanish_steps_desc:0 ""
+t_build_the_trevi_fountain_title:0 "£major_harbour£ Build the Trevi Fountain"
+t_build_the_trevi_fountain_desc:0 ""
+t_renovate_the_capitoline_hill_title:0 "£major_harbour£ Renovate the Capitoline Hill"
+t_renovate_the_capitoline_hill_desc:0 ""
+t_restore_western_roman_empire_title:0 "@WRE Restore the Western Roman Empire"
+t_restore_western_roman_empire_desc:0 ""
+t_kazasker_decision_title:0 "Create the Kazasker Office"
+t_kazasker_decision_desc:0 ""
+t_rome_fix_basilica_cistern_title:0 "£major_harbour£ Repair Basilica Cistern"
+t_rome_fix_basilica_cistern_desc:0 "Repairing such an important part of our defences will improve defensive capabilities of our capital."
+t_rome_reform_army_title:0 "Reform the Roman Army"
+t_rome_reform_army_desc:0 "Our army is a shadow of its former self. A competent Emperor could reform this mess and make it into a powerful army that will obliterate our enemies."
+t_rome_renovate_church_of_the_holy_apostles_title:0 "£major_harbour£ Renovate the Church of The Holy Apostles"
+t_rome_renovate_church_of_the_holy_apostles_desc:0 "Renovate the resting place of the Roman Emperors."
+t_rome_renovate_forum_of_constantine_title:0 "£major_harbour£ Renovate the Forum of Constantine"
+t_rome_renovate_forum_of_constantine_desc:0 "The Forum of Constantine, the founder of the city, has laid in disrepair for centuries. It is an insult to Constantine the Great, to keep his forum in ruins."
+t_rome_restore_phanarion_title:0 "£major_harbour£ Restore the Phanarion District"
+t_rome_restore_phanarion_desc:0 ""
+t_uskudar_decision_title:0 "Establish Üsküdar District"
+t_uskudar_decision_desc:0 ""
+t_france_reconstruct_louvre_title:0 "Reconstruct the Louvre Palace"
+t_france_reconstruct_louvre_desc:0 ""
+t_grand_bazaar_decision_title:0 "Build the Grand Bazaar of Constantinople"
+t_grand_bazaar_decision_desc:0 ""
+t_anatolia_coal_decision_title:0 "Open Anatolian Coal Industry"
+t_anatolia_coal_decision_desc:0 ""
+t_eyalet_of_rumelia_decision_title:0 "Create the Eyalet of Rumelia"
+t_eyalet_of_rumelia_decision_desc:0 ""
+t_rome_vengeance_title:0 "§RVengeance§!"
+t_rome_vengeance_desc:0 ""
+t_rome_new_world_title:0 "Quest for the New World"
+t_rome_new_world_desc:0 ""
+t_renaissance_of_chalcedon_title:0 "£major_harbour£ Renaissance of Chalcedon"
+t_renaissance_of_chalcedon_desc:0 ""
+t_ephesus_irrigation_system_title:0 "£major_harbour£ Construct the Ephesus Irrigation"
+t_ephesus_irrigation_system_desc:0 ""
+t_rome_form_empire_title:0 "@ROM Solidify Our Legacy"
+t_rome_form_empire_desc:0 ""
+t_rome_restore_college_of_pontiffs_title:0 "£major_harbour£ Restore the College of Pontiffs"
+t_rome_restore_college_of_pontiffs_desc:0 ""
+t_rome_restore_republic_title:0 "@ROM Restore the Roman Republic"
+t_rome_restore_republic_desc:0 ""
+t_rome_integrate_galata_title:0 "Integrate Galata"
+t_rome_integrate_galata_desc:0 ""
+t_rome_administrative_reform_title:0 "Reform Imperial Administration"
+t_rome_administrative_reform_desc:0 ""
+t_rome_convert_to_pagan_title:0 "Convert to Hellenism"
+t_rome_convert_to_pagan_desc:0 "In case the event didn't work."
+
+t_rome_lock_reform_title:0 " £classical_architecture£ Lock "Influence the Senate""
+t_rome_lock_reform_desc:0 ""
+t_rome_unlock_reform_title:0 " £classical_architecture£ Unlock "Influence the Senate""
+t_rome_unlock_reform_desc:0 ""
+
+t_hold_a_triumph_title:0 "§THold a Triumph§!"
+t_hold_a_triumph_desc:0 ""
+
+t_rome_cultural_works_counter_title:0 " £calendar£ §TCultural Works Stored (hover)§!"
+t_rome_cultural_works_counter_desc:0 "§TCultural Works Stored:§! §Y[Root.tRomeArtifacts.GetValue]§!"
+
+# Latin Republic
+
+t_form_latin_empire_title:0 "@LAE Form Latin Empire"
+t_form_latin_empire_desc:0 ""
+
+# Persia
+
+t_per_build_house_of_wisdom_title:0 "£major_harbour£ Build the House of Wisdom"
+t_per_build_house_of_wisdom_desc:0 ""
+t_per_build_forum_of_grzegorz_title:0 "£major_harbour£ Build the Memorial of Grzegorz"
+t_per_build_forum_of_grzegorz_desc:0 ""
+t_per_build_capital_irrigation_title:0 "£major_harbour£ Construct the Capital Irrigation System"
+t_per_build_capital_irrigation_desc:0 ""
+t_per_build_canals_title:0 "£major_harbour£ Construct the Euphrates-Tigris Canal"
+t_per_build_canals_desc:0 ""
+t_per_army_reform_decision_title:0 "Persian Army Reform"
+t_per_army_reform_decision_desc:0 ""
+t_per_retake_capital_decision_title:0 "Restore Gównograd"
+t_per_retake_capital_decision_desc:0 ""
+t_per_revoke_pax_gregorica_decision_title:0 "Address Pax Gregorica"
+t_per_revoke_pax_gregorica_decision_desc:0 ""
+t_per_build_fire_temple_of_constantinople_title:0 "£major_harbour£ A Temple in the Eternal City"
+t_per_build_fire_temple_of_constantinople_desc:0 ""
+
+# Other
+
+t_krakow_the_city_of_greatness_title:0 "The City of Greatness"
+t_krakow_the_city_of_greatness_desc:0 ""
+t_krakow_take_whats_ours:0 "Take Whats Ours"
+t_krakow_take_whats_ours_desc:0 ""
+
+t_z01_form_north_german_confederation_title:0 "Form North German Confederation"
+t_z01_form_north_german_confederation_desc:0 ""
+t_z01_build_amsterdam_port_title:0 "£major_harbour£ Construct The Port of Amsterdam"
+t_z01_build_amsterdam_port_desc:0 ""
+t_z01_build_berg_emporium_title:0 "£major_harbour£ Build Berg Emporium"
+t_z01_build_berg_emporium_desc:0 ""
+
+t_england_culture_decision_title:0 "Embrace The English Cultural Identity"
+t_england_culture_decision_desc:0 ""
+
+t_form_hyperborea_title:0 "Call of The Elden Gods"
+t_form_hyperborea_desc:0 "Form Hyperborea."
+
+t_rus_orthodox_decision_title:0 "Convert to Orthodox Christianity"
+t_rus_orthodox_decision_desc:0 ""
+
+gv_convert_to_russian_orthodox_title:0 "Convert to Russian Orthodoxy"
+gv_convert_to_russian_orthodox_desc:0 ""
+
+t_GOL_jewish_decision_title:0 "Convert to Jewish"
+t_GOL_jewish_decision_desc:0 ""
+
+t_invoke_devotio_title:0 "§TInvoke Devotio§!"
+t_invoke_devotio_desc:0 ""
+t_change_diety_title:0 "Change Primary Diety"
+t_change_diety_desc:0 ""
+
+t_reload_mission_tree_decision_title:0 "Reload Mission Tree"
+t_reload_mission_tree_decision_desc:0 "Debug decision in case the mission tree breaks mid-game."

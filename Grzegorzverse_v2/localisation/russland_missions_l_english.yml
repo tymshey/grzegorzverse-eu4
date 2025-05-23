@@ -1,0 +1,763 @@
+﻿l_english:
+
+ T_RUSSIA:0 "Russland Empire"
+ T_RUSSIA_ADJ:0 "Russland Empire"
+ T_RUTHENIEN:0 "Russland Empire"
+ T_RUTHENIEN_ADJ:0 "Russland Empire"
+ T_MOLDAVIEN:0 "Moldavien Kingdom"
+ T_MOLDAVIEN_ADJ:0 "Moldavien Kingdom"
+ Stabilize_the_Nation_title:0 "Stabilize The Nation"
+ Stabilize_the_Nation_desc:0  "The german empire has collapsed we need to act fast and secure control over our new nation"
+ Start_the_process_to_prosperity_title:0 "Begin Reforms"
+ Start_the_process_to_prosperity_desc:0 "Our economy in it current state will not be able to sustain a growing nation luckly with the help of our two estates we can start to improve our economy"
+ Improve_taxation_title:0 "Improve taxation"
+ Improve_taxation_desc:0 "Currently our taxation policies are not effective we need to start paying our tax collectors so they will actually start doing their job"
+ Anty_Tax_evasion_title:0 "Destroy tax evasion"
+ Anty_Tax_evasion_desc:0 "With our success in improving all aspects of our economy it is time to destroy the whole concept of tax evasion"
+ Improved_Trade_title:0 "Improve Trade"
+ Improved_Trade_desc:0 "Even though we control the center of trade in our region we still are experiencing problems with trade we will invest money to fix it"
+ invite_foreign_merchants_title:0 "Invite foreign merchants"
+ invite_foreign_merchants_desc:0 "Currently we lack skilled merchants but we can fix that by buying merchants from other nations"
+ improve_center_of_trade_title:0 "Improve our center of trade"
+ improve_center_of_trade_desc:0 "The great city of Kiev is under developted we need to fix that fast if we want to ever become a rich nation"
+ Improve_Production_title:0 "Improve Production"
+ Improve_Production_desc:0 "Our production center just like other parts of our economy is underfunded we have to fix it"
+ maximize_production_title:0 "Maximize production"
+ maximize_production_desc:0 "With our production having recovered we can start the process of maximazing it to so it will produce everything it can to the maximum"
+ Improved_economy_title:0 "Improved economy"
+ Improved_economy_desc:0 "With every part of our economy strenghten we can finnaly say that we have improved our economy"
+ Ruthenian_nation:0 "Ruthenian Nation"
+ Expanded_army:0 "Expanded Army"
+ ruthenian_idea:0 "Ruthenian idea"
+ Estate_development_investments:0 "Estate Investments"
+ Estate_economic_investments:0 "Estate Economic Investments"
+ Improve_taxation:0 "Improved Taxation"
+ Tax_evasion_Act:0 "Anti-Tax Evasion Act"
+ Improved_trade:0 "Improved Domestic Trade"
+ invite_foreign_merchants:0 "Foreign Merchants"
+ improve_center_of_trade:0 "Develop The Capital"
+ Improve_Production:0 "Improved Production"
+ maximize_production:0 "Maximized Production"
+ Improved_economy:0 "Developed Economy"
+ search_for_rare_minerals_title:0 "Develop gold mine"
+ search_for_rare_minerals_desc:0 "Develop gold mine"
+ Gold_mine:0 "Gold mine"
+ Army_reform:0 "Army Reform"
+ Army_reform_2:0 "Final Army Reform"
+ Army_discipline:0 "Discipline the Army"
+ Army_discipline_2:0 "Proper Army Discipline"
+ Army_reform_title:0 "Army Reform"
+ Army_reform_desc:0 "In order to survive in this rapiddly hostile world we must reform our army so we wont be crushed by any country"
+ Army_reform_2_title:0 "Second Army Reform"
+ Army_reform_2_desc:0 "With the success of the first army Reform we are ready for a second one witch will push our army into one of the best in our region"
+ Army_discipline:0 "Discipline The Army"
+ Army_discipline_2:0 "Proper Army Discipline"
+ Disciplnie_the_army_1_title:0 "Discipline The Army"
+ Disciplnie_the_army_1_desc:0 "Currently our army is nothing more than a band of merceneries that are more loyal to the goverment we have to change that"
+ Disciplnie_the_army_2_title:0 "Expand The Last Reform"
+ Disciplnie_the_army_2_desc:0 "With some time passed we see that our refom worked now if we make some improvments to it we will have a truly disciplined army"
+ Strenghten_Asatru_1:0 "True faith strenghten"
+ Secure_the_truth_faith_title:0 "Secure the true faith"
+ Secure_the_truth_faith_desc:0 "We must not forget about our old traditions this includes our religion"
+ Expand_our_borders_title:0 "Expansion of our realm"
+ Expand_our_borders_desc:0 "In our current state we are too small to achieve anything important in the world"
+ Start_germanization_title:0 "Begin Germanisation"
+ Start_germanization_desc:0 "We must begin the proccess of removing slavic tribes from our nation we should start with provinces closest to our capital"
+ Union_with_gepidia_title:0 "Union with gepidia"
+ Union_with_gepidia_desc:0 "With the strenghtening of german culture as well as german religion in our nation the relation with our germanic neighbour gepidia have incressed substantionaly with that a creation of a union between our nations is becoming more popular each day if we expand our army the leaders of gepidia would have no other option then to accept it "
+ Bugeac_trade_title:0 "Bugeac trade"
+ Bugeac_trade_desc:0 "We currently have no access to a large body of water claiming the provinces of Yedisan and Bessarabia is the easiest way for us to get it"
+ Expand_the_power_of_Clergy_title:0 "Ally The Clergy"
+ Expand_the_power_of_Clergy_desc:0 "The Clergy is one of our closest ally in the war against the unpure we have to improve relations with them as much as possible"
+ Southern_expansion_title:0 "Southern expansion"
+ Southern_expansion_desc:0 "We must stirke into our weak neighbour down south and secure our influence in the region" 
+ western_expansion_title:0 "Western expansion"
+ western_expansion_desc:0 "While we have no intrest in expanding into the german sphere we do have small amounts of territories that would be beneficial to annex"
+ pure_nation:0 "Pure Nation"
+ Pure_nation_title:0 "Pure nation"
+ Pure_nation_desc:0 "We must eliminate the unpure cultures of our nation as well as our military"
+ Stabilize_the_Nation:0 "Stabilize the Nation"
+ Reconquer_the_dniepr_title:0 "Reconquer the dniepr"
+ Reconquer_the_dniepr_desc:0 "The dniepr is a vital part of our nation we need to secure it as fast as possible"
+ Claim_western_cacasus_title:0 "Develop the eastern steppe"
+ Claim_western_cacasus_desc:0 " "
+ Proclaim_the_holy_ruthenien_empire_title:0 "Holy Russian empire"
+ Proclaim_the_holy_ruthenien_empire_desc:0 "We are finally ready to proclaim the Holy Ruthenien Empire a nation rulled by God"
+ Union_with_gepidia:0 "Union with Gepidia"
+ Integrate_Gepidia_2_title:0 "Integrate Gepidia"
+ The_holy_city:0 "The holy city"
+ Develop_the_south_title:0 "Develop the south"
+ Develop_the_south_desc:0 " "
+ 
+ 
+ 
+ 
+ 
+ 
+ Expand_Consription_title:0 "Expand Consription"
+ Expand_Consription_desc:0 "We must expand the number of people in our army"
+ 
+ Build_barracks_title:0 "Build barracks"
+ Build_barracks_desc:0 "In order to house our growing manpower we need to build some barracks luckly with the help of some nobels it wont cost us a ducat"
+ Seek_investments_from_the_church_title:0 "Seek Investments from the church"
+ Integrate_Gepidia_title:0 "Annex Gepidia"
+ 
+ Geman_army:0 "German Army"
+ Geman_army_desc:0 "In order to expand rapiddly we have to expand our army but also manage to pay them less if possible"
+ 
+ Strenghten_religion:0 "Reward true faith believers"
+ Strenghten_religion_desc:0 "In order to speed up the procces of converting our people to the one true faith we will grant concessions to true faith believers"
+ 
+ Develop_the_nation:0 "Develop the nation"
+ Develop_the_nation_desc:0 "Our nation is horribly underdeveloped we must focus on developing it"
+ 
+ Increase_army_morale:0 "Increase army morale"
+ Increase_army_morale_desc:0 "In order to enact our plans of pan germanism we must have a loyal army that is willing to die for the glory of our nation"
+ 
+ Elite_army:0 "Elite army"
+ Elite_army_desc:0 "Our army has proven time and time again that its once of the best in the world we can even say we have an elite army"
+ 
+ German_scholars_title:0 "German scholars"
+ German_scholars_desc:0 " "
+ 
+ Our_sphere_of_influence_title:0 "Our sphere of influence"
+ Our_sphere_of_influence_desc:0 "We are finnaly ready to expand our sphere of influence outside our borders by demanding subjugation or making deals with other great powers"
+ 
+ 
+ Holy_moldavien_state:0 "Create the Holy Moldavien Kingdom"
+ 
+ Holy_moldavien_state_title:0 "Create the Holy Moldavien Kingdom"
+ 
+ flavor_russland.1.a:0 "Accept the demands"
+ flavor_russland.1.b:0 "We will never agree to this"
+ flavor_russland.1.t:0 "Ruthenien Demands Subjugation"
+ flavor_russland.1.d:0 "Diplomats from the Ruthenien Empire have come to us in order to propose that in exchange for protection our nation will become a vassal of Ruthenien what will be our response?"
+ 
+ Finish_of_the_caucasus_title:0 " Finish of the caucasus"
+ Finish_of_the_caucasus_desc:0 "During our last expansion into the region we only grabbed the western part of it now we will take it all"
+ T_CAUCASIEN:0 "Caucasien Kingdom"
+ T_CAUCASIEN_ADJ:0 " Caucasien Kingdom"
+ 
+ T_FEMBOY:0 "Femboy Empire"
+ T_FEMBOY_ADJ:0 "Femboy Empire"
+ Femboy_empire_title:0 "Femboy Empire"
+ Change_back_to_ruthenien_title:0 "Change back to Russland Empire"
+ 
+ National_expansion:0 "National expansion"
+ Southern_push:0 "Southern push"
+ 
+ 
+ Grant_concesion_to_the_clergy_title:0 "Grant concessions to the Clergy"
+ Red_impostor_1:0 "Red"
+ Red_impostor_1_desc:0 "When red impostor was alive he was the best soldier that ever lived chosing him would increase our army potential"
+ 
+ white_1:0 "Blue"
+ white_1_desc:0 "White is our god of technology if we chose him our nation will be able to advance faster"
+ 
+ pink_1:0 "Pink"
+ pink_1_desc:0 "Pink is our good of fertility if we are ever in a demographic crisis we can always turn to her for help"
+ 
+ yellow_1:0 "Yellow"
+ yellow_1_desc:0 "Yellow is a god of wealth if we embrace him he will send some of his riches to us"
+ 
+ black_1:0 "Black"
+ black_1_desc:0 "Black is an explorer he once travelled around the entire world if we ever decide to explore the world we can turn to him for assistance"
+ 
+ purple_1:0 "Purple"
+ purple_1_desc:0 "Purple is often called the creator since he used his own hands to build many of the great structures that survive to this day if we ever need help with construction he would gladly help us
+ 
+ Destroy_the_norse_tribes_title:0 "Destroy the norse tribes"
+ Destroy_the_norse_tribes_desc:0 " "
+ 
+ East_secured_title:0 "Eastern Border Secured"
+ East_secured_desc:0 " "
+ 
+ Path_to_the_baltic_title:0 "Path to the baltic"
+ Path_to_the_baltic_desc:0 " "
+ 
+ From_sea_to_sea_title:0 "From sea to sea"
+ From_sea_to_sea_desc:0 " "
+ 
+ Germanise_azov_title:0 "Germanise azov"
+ Germanise_azov_desc:0 " "
+ 
+ Expand_the_slave_trade_title:0 "Expand the slave trade"
+ Expand_the_slave_trade_desc:0 " "
+ 
+ Develop_the_west_caucas_title:0 "Develop the west caucasus"
+ Develop_the_west_caucas_desc:0 " "
+ 
+ The_crimean_question_title:0 "The crimean question"
+ The_crimean_question_desc:0 " "
+
+
+ Mages_Arcane_Research:0 "Mages Arcane Research"
+ Mages_Arcane_Research_title:0 " "
+ Mages_Improve_economy:0 "Improve State Economy"
+ Mages_Improve_economy_desc:0 " "
+ russland_mages_support_consprption:0 "Consript the masses"
+ russland_mages_support_consprption_desc:0 " "
+ russland_mages_grant_land:0 "Grant land to the mages"
+ russland_mages_grant_land_desc:0 " "
+ 
+ russland_mages_old_knowledge:0 "Old knowledge"
+ russland_mages_old_knowledge_desc:0 " "
+ 
+ russland_mages_magic_tactics:0 "Magic tactics"
+ russland_mages_magic_tactics_desc:0 " "
+ 
+ russland_mages_investmenst:0 "Mage Investments"
+ russland_mages_investmenst_desc:0 " "
+ 
+ russland_mages_magic_warriors:0 "Magic warriors"
+ russland_mages_magic_warriors_desc:0 " "
+ 
+ russland_mages_allow_magic_advisors:0 "Mage advisors"
+ russland_mages_allow_magic_advisors_desc:0 " "
+ 
+ russland_mages:0 "Mages"
+ russland_mages_desc:0 " " 
+ 
+ 
+ Wizards_company:0 "Mage warriors"
+ 
+ invite_german_setlers:0 "Invite german setlers
+ 
+ True_faith_secured:0 "True faith secured"
+ 
+ German_scholars:0 "German scholars"
+ 
+ Dniepr_is_ours:0 "Dniepr is ours"
+ 
+ New_trade_oportunitiss:0 "New trade oportunitiess"
+ 
+ develop_the_south:0 "Develop the south"
+ 
+ path_to_the_baltic:0 "Path to the baltic"
+ 
+ Easter_border_secured:0 "Eastern border secured"
+ 
+ from_sea_to_sea:0 "From sea to sea"
+ 
+ russland_mages_influence_modifier:0 "Mage influence"
+ 
+ russland_mages_loyalty_modifier:0 "Mage loyalty" 
+ 
+ invite_german_setlers_title:0 "Invite German setlers"
+ 
+ destabilize_crimea_title:0 "Destabilize crimea"
+ 
+ flavor_russland.2.t:0 "Crimean Question"
+ 
+ flavor_russland.2.d:0 "Our neighbour to the north have come to us and proposed the trade of our crimean lands in exchange for an alliance what will be our response?"
+ 
+ flavor_russland.2.a:0 "We could use an ally in the region"
+ 
+ flavor_russland.2.b:0 "We will not make deals with heretics"
+ 
+ crimean_riots:0 "Crimean riots"
+ 
+ crimean_embargo:0 "Crimean embargo"
+ 
+ Utilize_our_wheat_title:0 "Utilize our wheat"
+ 
+ Wheat_production:0 "Wheat production"
+ 
+ Bread_busket:0 "Bread busket"
+ 
+ Bread_buckets_title:0 "Bread buckets"
+   
+ Vodka_1:0 "Vodka"
+ 
+ 
+ 
+ vodka:0 "Vodka"
+ vodka_desc:0 "Vodka is the traditional distilled alchohol of much of eastern Europe. It was originally made from grains until the arrival of the potato."
+ 
+ vodka_good_title:0 "Produce Vodka"
+ vodka_good_desc:0 " "
+ 
+ t_mage_school:0 "Mage school"
+ 
+ 
+ 
+ flavor_russland.3.t:0 "The Bessarabian question"
+ flavor_russland.3.d:0 "The goverment in kiev have came to us and propose that in exchange for money we would cede Bessarabia to them"
+ flavor_russland.3.a:0 "We could use some more money"
+ flavor_russland.3.b:0 "The region is to strategic to sell"
+ TYMON_STOPA_GEJ_title:0 "Bessarabian question"
+ TYMON_STOPA_GEJ_desc:0 " "
+ 
+ 
+ 
+ Denied_our_offer:0 "Denied our offer"
+ German_workers:0 "German workers"
+ 
+ flavor_russland.4.t:0 "Offer from the north"
+ flavor_russland.4.d:0 "The Holy Ruthenien has come to us with a proposition to sell our 2 provinces of dagestan and lakia in exchange of building a iron mine deeper in our territory"
+ flavor_russland.4.a:0 "This beneficts both of us"
+ flavor_russland.4.b:0 "Its our land"
+ Karakanow_moment_title:0 "Southern border"
+ Karakanow_moment_desc:0 " "
+ Limited_trade_oportunitiss:0 "Limited trade oportunitiss"
+ amogus_statue_title:0 "Amogus statue"
+ 
+ Steppe_trade:0 "Steppe trade"
+ 
+ Smolenk_state_title:0 "Smolenk State"
+ Smolenk_state_desc:0 " "
+ 
+ Caucasian_state_title:0 "Caucasian State"
+ Caucasian_state_desc:0 " "
+ 
+ Moldavian_state_title:0 "Moldavian State"
+ Moldavian_state_desc:0 " "
+ 
+ Ruthenien_diplomacy:0 "Ruthenien diplomacy"
+ 
+ Towards_the_baltic_title:0 "Towards the baltic"
+ Towards_the_baltic_desc:0 " "
+ 
+ 
+ German_baltic_title:0 "German baltic"
+ German_baltic_desc:0 " "
+ 
+ Baltic_trade:0 "Baltic trade"
+ 
+ 
+ Unite_Russia_title:0 "Unite Russia"
+ Unite_Russia_desc:0 " "
+ 
+ Finish_Expansion_title:0 "Finish Expansion"
+ Finish_Expansion_desc:0 " "
+ 
+ Siberian_Expansion_title:0 "Siberian Expansion"
+ Siberian_Expansion_desc:0 " "
+ 
+ Central_Asian_Plato_title:0 "Central Asian Plato"
+ Central_Asian_Plato_desc:0 " "
+ 
+ Scandynavian_Peninsula_title:0 "Scandynavian Peninsula"
+ Scandynavian_Peninsula_desc:0 " "
+ 
+ Baltic_lake_title:0 "Baltic lake"
+ Baltic_lake_desc:0 " "
+ 
+ Finnish_Domain:0 "Finnish Domain "
+ 
+ Holy_Russian_empire_title:0 "Holy Russian Empire"
+ Holy_Russian_empire_desc:0 " "
+ 
+ 
+ 
+ 
+ 
+ Holy_Russian_empire_1:0 "Holy Russian empire"
+ 
+ Caucaus_tolerance:0 "Caucaus tolerance"
+ Force_Germanisation:0 "Force Germanisation"
+ 
+ 
+ flavor_russland.5.t:0 "Fate of the caucasus"
+ flavor_russland.5.d:0 "Now that we control the entire caucasus we must decide on its future"
+ flavor_russland.5.a:0 "Force germanisation on the region"
+ flavor_russland.5.b:0 "Cooperation with the locals is prefferable"
+ 
+ Fate_of_the_caucas_title:0 "Fate of the caucasus"
+ Fate_of_the_caucas_desc:0 " "
+ 
+ t_russland_1:0 "If we complete this mission before owning both states we will get lower rewards for it"
+ 
+ Rus_branch:0 "We can choose our stance on the slavic tribes"
+ 
+ 
+ T_RUS_branch_1_title:0 "Branching Mission"
+ T_RUS_branch_1_desc:0 " " 
+ 
+ T_RUS_branch_title:0 "Branching Mission"
+ T_RUS_branch_desc:0 " "
+ 
+ 
+ T_rus_branch_ger_1_title:0 "Force Germanisation"
+ T_rus_branch_ger_1_desc:0 " "
+ 
+ T_rus_branch_ger_title:0 "Germanic Origins"
+ T_rus_branch_ger_desc:0 " "
+ 
+ 
+ T_RUS_branch_slav_1_title:0 "Cooperation With the slavs"
+ T_RUS_branch_slav_1_desc:0 " "
+ 
+ T_RUS_branch_slav_title:0 "Germano Slavic Future"
+ T_RUS_branch_slav_desc:0 " "
+ 
+ 
+ 
+ Dev_mission:0 "We will use some of our treasury and manpower to expand the development of the dniepr river"
+ Dev_mission_1:0 "Controling half of the black sea will surely bring us beneficts"
+ 
+ Settle_west_siberia_title:0 "Settle west siberia"
+ Settle_west_siberia_desc:0 " "
+ 
+ Develop_Russia:0 "Develop Russia"
+ 
+ Develop_russia_title:0 "Unified Russia"
+ Develop_russia_Desc:0 " "
+ 
+ Secure_The_Black_sea_title:0 "Secure The Black sea"
+ Secure_The_Black_sea_desc:0 " "
+ 
+ Dominate_Black_Sea_trade_title:0 "Black sea trade"
+ Dominate_Black_Sea_trade_desc:0 " "
+ 
+ Rule_the_waves:0 "Rule the waves"
+ 
+ germano_slavic:0 "Germano Slavic"
+ 
+ lost_crimea:0 "Lost Crimea"
+ 
+ Black_sea_jewl:0 "Black Sea Jewl"
+ 
+ flavor_russland.7.t:0 "Cultural future of our nation"
+ flavor_russland.7.d:0 "Although our initial mission was to Germanize the Slavic people, with the collapse of Theodland into a confederation, we are independent enough to choose our future."
+ flavor_russland.7.a:0 "We should try to cooperate with the Slavs"
+ flavor_russland.7.b:0 "Embrace our German origins"
+ 
+ German_origins:0 "German Origins"
+ 
+ Unity_with_the_slavs_1:0 "Unity With The Slavs"
+ 
+ 
+ 
+ German_Merchants:0 "German Merchants"
+ 
+ 
+
+ flavor_russland.8.t:0 "German Merchants"
+ flavor_russland.8.d:0 "The German merchants are beginning to expand the range of their operations."
+ flavor_russland.8.a:0 "It will defenitly benefit us"
+ 
+ German_nation:0 "German nation"
+ 
+ Unity_with_the_slavs:0 "Unity with the slavs"
+ 
+ slavic_cooperation:0 "Slavic Cooperation"
+ 
+ Chossing_our_aliegences_title:0 "Choosing our allegiances"
+ Chossing_our_aliegences_desc:0 " "
+ 
+ aliegences:0 "Depending on our relations we will convert to the religon of a more friendly great power" 
+ 
+ t_kiev_palace:0 "Kiev Palace"
+ 
+ Develop_the_Dniepr_title:0 "Develop the Dniepr"
+ Develop_the_Dniepr_desc:0 " "
+ 
+ Develop_Black_Sea_ports_title:0 "Develop Black Sea Ports"
+ Develop_Black_Sea_ports_desc:0 " "
+ 
+ Develop_Novogrod_Port_title:0 "Develop Novogrod Port"
+ Develop_Novogrod_Port_desc:0 " "
+ 
+ Baltic_Sea_Ports_title:0 "Baltic Sea Ports"
+ Baltic_Sea_Ports_desc:0 " "
+ 
+ Develop_Dniepr:0 "Develop Dniepr"
+ 
+ Develop_Black_Sea:0 "Develop Black Sea"
+ 
+ Russo_gepidia_union:0 "Russo Gepidian Union"
+ 
+ Develop_Novogrod:0 "Develop Novogrod"
+ 
+ Begin_Economic_growth_title:0 "Begin Economic Growth"
+ Begin_Economic_growth_desc:0 " "
+ Resource_Mines_title:0 "Resource Mines"
+ Resource_Mines_desc:0 " "
+ Search_for_rare_ores_title:0 "Search For Rare Ores"
+ Search_for_rare_ores_desc:0 " "
+ Develop_the_capital_title:0 "Develop The Capital"
+ Develop_the_capital_desc:0 " "
+ 
+ Expand_The_Southern_Trade_title:0 "Expand The Southern Trade"
+ Expand_The_Southern_Trade_desc:0 " "
+ 
+ Steal_from_Persia_title:0 "Steal from Persia"
+ Steal_from_Persia_desc:0 " '
+ Develop_Our_Nation_title:0 "Develop Our Nation"
+ Develop_Our_Nation_desc:0 " "
+ 
+ Expand_The_Southern_Trade:0 "Expand The Southern Trade"
+ Develop_Our_Nation:0 "Develop Our Nation"
+ 
+ Big_building_in_kiev:0 "Big Building In Kiev"
+ 
+ Gold_Rush:0 "Gold Rush"
+ 
+ AVE_ISRAEL_title:0 "AVE ISRAEL"
+ AVE_ISRAEL_desc:0 " "
+ 
+ The_industry_of_wien_modifier:0 "The Industry of Wien"
+ Industrialization_modifier:0 "Industrialization"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ After_revolt_title:0 "Aftermath of the Revolt"
+ After_revolt_desc:0 " "
+
+
+ flavor_new_russland.1.t:0 "Slavic Revolt"
+ flavor_new_russland.1.d:0 "Tensions have been brewing between the Slavic peasantry and the german nobility now it turned into a massive revolt"
+ flavor_new_russland.1.a:0 "Crush them we will not listen to peasants"
+ flavor_new_russland.1.b:0 "We need to give up some power to survive"
+ 
+ German_win:0 "Forcefull Converction"
+ 
+ t_russland_1:0 "Depending if we became slavic or stayed german we will either join the empire or work to its destruction"
+ t_russland_2:0 "There are two diffrent paths one for the Germanic and the Slavic play throught"
+ Hre_question_title:0 "Branching Mission"
+ Hre_question_desc:0 " "
+ Hre_question_1_title:0 "Join The Empire"
+ Hre_question_1_desc:0 " "
+ Hre_question_2_title:0 "Against The Empire"
+ 
+ Against_The_empire:0 "Against The Empire"
+ 
+ Branch_mission_main_title:0 "Branching Mission"
+ Branch_mission_main_desc:0 " "
+ 
+ 
+ Vassals_Integrated_title:0 "Integrate Vassals"
+ Vassals_Integrated_desc:0 " "
+ Vassals_Integrated:0 "Vassals Integrated"
+ 
+ Subjugate_Smolensk_title:0 "Guns of Smolensk"
+ Subjugate_Smolensk_desc:0 " "
+ 
+ Smolensk_Military_Tactic:0 "Smolensk Military Tactic"
+ 
+ Southern_tribes_title:0 "Subjugate Southern States"
+ Southern_tribes_desc:0 " "
+ 
+ Center_of_east_title:0 "Center of Eastern Trade"
+ Center_of_east_desc:0 " "
+ 
+ Conquer_Hre_Members_title:0 "Post Frontier Collapse"
+ Conquer_Hre_Members_desc:0 " "
+ 
+ Conquer_Lithuania_title:0 "Conquer Lithuania"
+ Conquer_Lithuania_desc:0 " "
+ 
+ Hre_question_first_title:0 "Branching Mission"
+ Hre_question_first_desc:0 " "
+ 
+ Religious_Unity_title:0 "Enforce Religious Unity"
+ Religious_Unity_desc:0 " "
+ 
+ Military_Advancment_title:0 "Military Advancments" 
+ Military_Advancment_desc:0 " "
+ Military_Advancment:0 "Military Advancments"
+ 
+ Conquer_the_stepps_title:0 "Conquer The Stepps"
+ Conquer_the_stepps_desc:0 " "
+ 
+ t_vodka_production:0 "With the amount of wheat provinces we own we will be able to turn these provinces into Vodka Provinces"
+ 
+ Vodka_Production_title:0 "Vodka Production"
+ Vodka_Production_desc:0 " "
+ 
+ Subjugate_Moldavia_title:0 "Fate of Moldavia"
+ Subjugate_Moldavia_desc:0 " "
+ 
+ Kiev_Vassal:0 "Kiev Vassal"
+ 
+ Build_Buildings_Rus:0 "Build Buildings"
+ 
+ Eastern_Production_Center_title:0 "Eastern Production Center"
+ Eastern_Production_Center_desc:0 " "
+ 
+ Manufactory_Hub_title:0 "Manufactory Hub"
+ Manufactory_Hub_desc:0 " "
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Economic_Prosperity:0 "Economic Prosperity"
+ 
+ The_mission:0 "The Mission"
+ 
+ mission_reaunite_our_realms_title:0 "Reunite our Realms"
+ 
+ mission_reaunite_our_realms_desc:0 " "
+ 
+ Reunification_of_Russland:0 "Reunification of Russland"
+ 
+ mission_monopoly_over_dnieper_title:0 "Monopoly over the dnieper"
+ 
+ mission_monopoly_over_dnieper_desc:0 " "
+ 
+ Mines_of_Wotan:0 "Mines of Wotan"
+ 
+ mission_mines_of_Wotan_title:0 "Mines of Wotan"
+ mission_mines_of_Wotan_desc:0 " "
+ 
+ holy_horde_reform_russland:0 "Will do later"
+ 
+ mission_reach_the_black_sea_title:0 "Reach The Black Sea"
+ mission_reach_the_black_sea_desc:0 " "
+ 
+ mission_unite_ruthenia_title:0 "Unite Ruthenia"
+ mission_unite_ruthenia_desc:0 " "
+ 
+ mission_brother_alliance_title:0 "Brother Alliance"
+ mission_brother_alliance_desc:0 " "
+ 
+ mission_Theodoish_Economic_Help_title:0 "Theodoish Economic Help"
+ mission_Theodoish_Economic_Help_desc:0 " "
+ 
+ mission_subjugate_lithuania_title:0 "Subjugate Lithuania"
+ mission_subjugate_lithuania_desc:0 " "
+ 
+ mission_destroy_the_muscovites_title:0 "Destroy the muscovites"
+ mission_destroy_the_muscovites_desc:0 " "
+ 
+ mission_rebuild_riga_title:0 "Rebuild Riga"
+ mission_rebuild_riga_desc:0 " "
+ 
+ mission_control_the_stepes_title:0 "Control the stepes"
+ mission_control_the_stepes_desc:0 " "
+ 
+ mission_place_holder_title:0 "Place Holder"
+ mission_place_holder_desc:0 " "
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ mission_dream_of_wotan_title:0 "Dream of Wotan"
+ mission_dream_of_wotan_desc:0 " "
+ Dream_of_Wotan:0 "Dream of Wotan"
+ 
+ flavor_russland.10.t:0 "Continue Our Mission"
+ flavor_russland.10.d:0 "huj huj huj"
+ flavor_russland.10.a:0 "As Wotan would have wanted"
+ Theodoish_Economic_Help:0 "Theodoish Economic Support"
+ 
+ mission_Consolidate_Ruthenia_title:0 "Consolidate Ruthenia"
+ mission_Consolidate_Ruthenia_desc:0 " "
+ 
+ Baltic_Campaigne:0 "Baltic Campaign"
+ 
+ mission_exterminate_the_romuvas_title:0 "Exterminate The Romuvas"
+ mission_exterminate_the_romuvas_desc:0 " "
+ 
+ mission_establish_baltic_protectorats_title:0 "Baltic Protectorate"
+ mission_establish_baltic_protectorats_desc:0 " "
+ 
+ rig_trade_stuff:0 "Rigan Trading City"
+ 
+ mission_city_of_hel_title:0 "Great Baltic City"
+ mission_city_of_hel_desc:0 " "
+ Danzig_Port:0 "Danzig Port"

@@ -1,0 +1,163 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_gv_paying_war_taxes"
+		texturefile = "gfx/interface/gv_alerticons/gv_paying_war_taxes.dds"
+	}
+	spriteType = {
+		name = "GFX_gv_symposium_available"
+		texturefile = "gfx/interface/gv_alerticons/gv_symposium_available.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_calendar"
+		texturefile = "gfx/interface/ideas_EU4/t_calendar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_text_temple"
+		texturefile = "gfx/interface/ideas_EU4/t_temple_icon_small.dds"
+	}
+	spriteType = {
+		name = "GFX_text_classical_architecture"
+		texturefile = "gfx/interface/ideas_EU4/classical_architecture.dds"
+	}
+	spriteType = {
+		name = "GFX_text_major_harbour"
+		texturefile = "gfx/interface/ideas_EU4/major_harbour_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_roman_empire_button"
+		texturefile = "gfx/interface/button_roman_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_roman_empire_button_2"
+		texturefile = "gfx/interface/button_roman_empire_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_faction_interaction"
+		texturefile = "gfx/interface/button_faction_interaction.dds"
+	}
+	spriteType = {
+		name = "GFX_button_argentarii_6"
+		texturefile = "gfx/interface/ideas_EU4/argentarii_6.dds"
+	}
+	spriteType = {
+		name = "GFX_button_argentarii_5"
+		texturefile = "gfx/interface/ideas_EU4/argentarii_5.dds"
+	}
+	spriteType = {
+		name = "GFX_button_argentarii_4"
+		texturefile = "gfx/interface/ideas_EU4/argentarii_4.dds"
+	}
+	spriteType = {
+		name = "GFX_button_argentarii_3"
+		texturefile = "gfx/interface/ideas_EU4/argentarii_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_argentarii_2"
+		texturefile = "gfx/interface/ideas_EU4/argentarii_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_argentarii_1"
+		texturefile = "gfx/interface/ideas_EU4/argentarii_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_t_invoke_devotio"
+		texturefile = "gfx/interface/gv_religion_gui/t_invoke_devotio.dds"
+	}
+	spriteType = {
+		name = "GFX_button_t_change_deity"
+		texturefile = "gfx/interface/gv_religion_gui/t_change_deity.dds"
+	}
+	spriteType = {
+		name = "GFX_button_t_call_zoroastrian_assembly"
+		texturefile = "gfx/interface/gv_religion_gui/t_zoroastrian_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_button_t_light_fires"
+		texturefile = "gfx/interface/gv_religion_gui/t_light_fires.dds"
+	}
+	spriteType = {
+		name = "GFX_button_t_call_zoroastrian_fanatics"
+		texturefile = "gfx/interface/gv_religion_gui/t_call_zoroastrian_fanatics.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_button_t_open_education_interface"
+		texturefile = "gfx/interface/gv_education_gui/t_open_education_interface.dds"
+	}
+	spriteType = {
+		name = "GFX_button_t_close_education_interface"
+		texturefile = "gfx/interface/gv_education_gui/t_close_education_interface.dds"
+	}
+	spriteType = {
+		name = "GFX_t_education_background"
+		texturefile = "gfx/interface/gv_education_gui/t_education_background.dds"
+	}
+	spriteType = {
+		name = "GFX_button_t_hold_symposium"
+		texturefile = "gfx/interface/gv_education_gui/t_hold_symposium.dds"
+	}
+	spriteType = {
+		name = "GFX_t_edu_theodosian_university"
+		texturefile = "gfx/interface/gv_education_gui/t_edu_theodosian_university.dds"
+	}
+	spriteType = {
+		name = "GFX_t_edu_university_of_callistus"
+		texturefile = "gfx/interface/gv_education_gui/t_edu_university_of_callistus.dds"
+	}
+	spriteType = {
+		name = "GFX_t_edu_university_of_justinian"
+		texturefile = "gfx/interface/gv_education_gui/t_edu_university_of_justinian.dds"
+	}
+	spriteType = {
+		name = "GFX_t_edu_humboldt_university"
+		texturefile = "gfx/interface/gv_education_gui/t_edu_humboldt_university.dds"
+	}
+	spriteType = {
+		name = "GFX_t_edu_oxford_university"
+		texturefile = "gfx/interface/gv_education_gui/t_edu_oxford_university.dds"
+	}
+	spriteType = {
+		name = "GFX_t_edu_cambridge_university"
+		texturefile = "gfx/interface/gv_education_gui/t_edu_cambridge_university.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_qol_icon"
+		texturefile = "gfx/interface/ideas_EU4/qol_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gv_educate_heir"
+		texturefile = "gfx/interface/gv_educate_heir.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gv_reload_button"
+		texturefile = "gfx/interface/gv_reload.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_t_hyperborean_colony_button"
+		texturefile = "gfx/interface/t_hyperborean_colony_button.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_roman_dictatorship"
+		texturefile = "gfx/interface/government_reform_icons/roman_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_roman_enlightened_monarchy"
+		texturefile = "gfx/interface/government_reform_icons/roman_enlightened_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_roman_absolute_monarchy"
+		texturefile = "gfx/interface/government_reform_icons/roman_absolute_monarchy.dds"
+	}
+}

@@ -1,0 +1,150 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_great_project_t_palatine_hill"
+		texturefile = "gfx//interface//great_projects//great_project_t_palatine_hill.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_t_great_stronghold_of_jerusalem"
+		texturefile = "gfx//interface//great_projects//great_project_fortress_jerusalum_shalom.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_t_vatican_hill"
+		texturefile = "gfx//interface//great_projects//great_project_t_vatican_hill.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_aurelian_walls"
+		texturefile = "gfx//interface//great_projects//great_project_t_aurelian_walls.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_topkapi"
+		texturefile = "gfx//interface//great_projects//great_project_t_topkapi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_theodosian_walls"
+		texturefile = "gfx//interface//great_projects//great_project_t_theodosian_walls.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_hippodrome"
+		texturefile = "gfx//interface//great_projects//great_project_t_hippodrome.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_galata"
+		texturefile = "gfx//interface//great_projects//great_project_t_galata.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_sol_invictus"
+		texturefile = "gfx//interface//great_projects//great_project_t_sol_invictus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_great_palace"
+		texturefile = "gfx//interface//great_projects//great_project_great_palace.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_western_wall"
+		texturefile = "gfx//interface//great_projects//great_project_western_wall.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_dome_of_the_rock"
+		texturefile = "gfx//interface//great_projects//great_project_t_dome_of_the_rock.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_great_wall_of_jerusalem"
+		texturefile = "gfx//interface//great_projects//great_project_t_great_wall_of_jerusalem.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_jerusalem_church"
+		texturefile = "gfx//interface//great_projects//great_project_t_jerusalem_church.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_gardens_of_grzegorz"
+		texturefile = "gfx//interface//great_projects//great_project_t_gardens_of_grzegorz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_tower_of_cockobollo"
+		texturefile = "gfx//interface//great_projects//great_project_t_tower_of_cockobollo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_tephrice_fortress"
+		texturefile = "gfx//interface//great_projects//great_project_t_tephrice_fortress.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_golden_horn_palace"
+		texturefile = "gfx//interface//great_projects//great_project_t_golden_horn_palace.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_paderborn"
+		texturefile = "gfx//interface//great_projects//great_project_t_paderborn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_gate_to_agartha"
+		texturefile = "gfx//interface//great_projects//great_project_t_gate_to_agartha.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_louvre"
+		texturefile = "gfx//interface//great_projects//great_project_t_louvre.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_Hel_canals"
+		texturefile = "gfx//interface//great_projects//great_project_t_Hel_canals.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_berlin_palace"
+		texturefile = "gfx//interface//great_projects//great_project_t_berlin_palace.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_t_mountain_palace"
+		texturefile = "gfx//interface//great_projects//great_project_t_mountain_palace.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_gv_mosque_of_cordoba"
+		texturefile = "gfx//interface//great_projects//great_project_gv_mosque_of_cordoba.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_b_alcazar_of_seville"
+		texturefile = "gfx//interface//great_projects//great_project_b_alcazar_of_seville.dds.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_b_alcazar_of_seville"
+		texturefile = "gfx//interface//great_projects//great_project_b_alcazar_of_seville.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_b_plaza_de_cibeles"
+		texturefile = "gfx//interface//great_projects//great_project_b_plaza_de_cibeles.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_b_teatro_romano_de_merida"
+		texturefile = "gfx//interface//great_projects//great_project_b_teatro_romano_de_merida.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_b_santiago_de_compostela_cathedral"
+		texturefile = "gfx//interface//great_projects//great_project_b_santiago_de_compostela_cathedral.dds"
+	}
+}

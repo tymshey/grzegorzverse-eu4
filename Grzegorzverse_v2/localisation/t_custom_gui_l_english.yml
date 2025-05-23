@@ -1,0 +1,125 @@
+﻿l_english:
+
+# Economy GUI
+
+T_ECO_INTERACTIONS:0 "Interactions"
+T_ECO_TAXATION:0 "Increase Tax"
+t_increase_taxation_tt:0 "Increase taxation rate at a cost of increased unrest and governing expenses. §GAvailable once per§! §Y10§! §Gyears.§!"
+T_ECO_TAKE_FROM_CLERGY_KEY:0 "Claim Clergy Wealth"
+t_eco_take_from_clergy_tt:0 "Appriopriate Wealth from Clergy §GAvailable once per§! §Y10§! §Gyears.§!"
+T_ECO_CIV_AUSTERITY_KEY:0 "Civilian Austerity"
+t_eco_civilian_austerity_tt:0 "Enact Civilian Austerity §GAvailable once per§! §Y10§! §Gyears.§!"
+T_ECO_CONDUCT_CENSUS_KEY:0 "Conduct Census"
+t_eco_conduct_census_tt:0 "Conduct Population Census §GAvailable once per§! §Y10§! §Gyears.§!"
+T_ECO_GDP_TITLE:0 "Domestic Product"
+T_ECO_GDP:0 "Gross Domestic Product: §Y[Root.t_gdp_value_final.GetValue]§! ¤"
+t_economy_gdp_text:0 "Gross Domestic Product: §Y[Root.t_gdp_value_final.GetValue]§! ¤"
+
+# QoL GUI
+
+T_ECO_QOL:0 "Quality of Life"
+t_economy_qol_value:0 "§Y[Root.tQolValue.GetValue]§!"
+T_ECO_QOL_VALUE:0 "§Y[Root.tQolValue.GetValue]§!"
+T_ECO_QOL_CHANGE:0 "§YStagnant§!"
+t_economy_qol_modifier:0 "£icon_production_in_text£ Production Efficiency §G+[Root.tQolValueModifier.GetValue]%§! £icon_manpower£ Manpower Recovery Speed §G+[Root.tQolValueModifier.GetValue]%§!"
+t_qol_power:0 "Quality of Life"
+estate_qol:0 "QUALITY OF LIFE SCALED MODIFIER"
+estate_qol_desc:0 "Quality of Life uses a scaled modifier which is defined in this estate's privilege, due to the game limitations."
+tQolValue:0 "Quality of Life"
+
+improve_qol_by_1_tt:0 "§YQuality of Life§! §Gimproves§! by §Y1§!"
+improve_qol_by_2_tt:0 "§YQuality of Life§! §Gimproves§! by §Y2§!"
+improve_qol_by_5_tt:0 "§YQuality of Life§! §Gimproves§! by §Y5§!"
+improve_qol_by_10_tt:0 "§YQuality of Life§! §Gimproves§! by §Y10§!"
+
+worsen_qol_by_1_tt:0 "§YQuality of Life§! §Rworsens§! by §Y1§!"
+worsen_qol_by_2_tt:0 "§YQuality of Life§! §Rworsens§! by §Y2§!"
+worsen_qol_by_5_tt:0 "§YQuality of Life§! §Rworsens§! by §Y5§!"
+worsen_qol_by_10_tt:0 "§YQuality of Life§! §Rworsens§! by §Y10§!"
+
+# Religion Gui
+
+t_hellenic_invoke_devotio_tt:0 "Invoke Devotio"
+t_hellenic_change_deity_tt:0 "Change Deity"
+t_invoke_devotio_flag:0 "Invoked Devotio"
+
+t_call_zoroastrian_assembly_tt:0 "Call Religious Assembly §G20 Years Cooldown§!"
+t_called_zoroastrian_assembly:0 "Religious Assembly Called"
+t_light_fires_tt:0 "Light Sacred Fires §G20 Years Cooldown§!"
+t_sacred_fires_lit_flag:0 "Sacred Fires Lit"
+t_call_zoroastrian_fanatics_tt:0 "Call Religious Fanatics §G20 Years Cooldown§!"
+t_zoroastrian_fanatics_called:0 "Religious Fanatics Called"
+
+converted_dynamic_faith_107_blessings:0 "Asatru Blessings"
+T_RELIGION_ASSEMBLY_TEXT:0 "$COUNTRY_RELIGION$ Assembly"
+
+# Court GUI
+
+gv_educate_heir_tt:0 "Educate Heir"
+gv_educating_heir_flag:0 "Educating Heir"
+
+# Mission GUI
+
+gv_reload_missions_tt:0 "Reload Missions"
+
+# Education GUI
+
+t_open_education_interface_tt:0 "Assess National Education"
+t_close_education_interface_tt:0 "Close"
+t_hold_symposium_tt:0 "Hold Symposium"
+t_edu_theodosian_university_tt:0 "§YCivil Service Specialization University§!\n\nUniversitas Theodosianae - The University of Theodosius was founded in Constantinople by Emperor Theodosius II in 425 AD. Since then, the university partially fell into obscurity in the 12th century. With the restorations of the 15th century however, the University is once again a proud vanguard of Roman innovation, well reflected in it's famous motto: §VHomines Veritas Serviunt§!."
+t_edu_university_of_callistus_tt:0 "§YNatural Sciences Specialization University§!\n\nUniversitas Callistanae - The University of Callistus was founded in Constantinople by Emperor Callistus in 1107 AD. This was the first university to specialize in applied natural sciences which is accurately represented in the motto: §VKosmos Einai Arithmoi§!."
+t_edu_humboldt_university_tt:0 "§YNatural Sciences Specialization University§!\n\nKoniglichen-Universitat zu Berlin - The Royal University of Berlin was founded in Berlin on the initiative of Wilhelm von Humboldt. This is the first major university in Germania, and the first university in our part of Europe to specialize in applied natural sciences. The universities soul as the vanguard of Germanic science is represented within it's motto: §VUniversitas Litterarum§!."
+t_edu_university_of_justinian_tt:0 "§YLaw Specialization University§!\n\nStudium Justinianae was founded in Constantinople by Emperor Tiberius II in honour of his grandfather in 579 AD. This university was from it's very beginning focused on studying law and history of the Empire and the world as it's most important subject, just as the institution's motto says: §VDura Lex, Sed Lex§!."
+t_edu_oxford_university_tt:0 "§YCivil Service Specialization University§!\n\nUniversity of Oxford §VDominus Illuminatio Mea§!"
+t_edu_cambridge_university_tt:0 "§YLaw Specialization University§!\n\nUniversity of Cambridge §VHinc Lucem Et Pocula Sacra§!"
+t_edu_symposium_held:0 "Symposium Held"
+t_education_interface_availability:0 "Has advanced education institutions."
+t_education_interface_becomes_available_tt:0 "§TThe Education Interface becomes available.§!"
+
+# Roman Empire GUI
+
+T_DRAFT:0 "Draft"
+T_COLLECT_TAX:0 "Collect Tax"
+t_draft_from_faction_tt:0 "Draft additional manpower from the faction."
+t_tax_from_faction_tt:0 "Collect additional tax from the faction."
+T_INCREASE_LIBERTIES:0 "Increase Liberties"
+t_roman_empire_increase_liberties_tt:0 "Increase Senatorial Liberties"
+T_RESTRICT_OPERATIONS:0 "Restrict Operations"
+t_roman_empire_restrict_operations_tt:0 "Restrict Senatorial Operations"
+T_DISMISS_FACTION:0 "Dismiss"
+t_roman_empire_dismiss_imperiales_tt:0 "Dismiss §YImperiales§! Faction Members"
+t_roman_empire_dismiss_optimates_tt:0 "Dismiss §JOptimates§! Faction Members"
+t_roman_empire_dismiss_populares_tt:0 "Dismiss §RPopulares§! Faction Members"
+T_PURGE_SENATE:0 "§OPurge§!"
+t_roman_empire_purge_senate_tt:0 "§RPurge the Senate.§!"
+
+t_rome_drafted_from_faction:0 "Drafted From Faction"
+t_rome_collected_tax_from_faction:0 "Collected Tax From Senate"
+t_rome_increased_liberties:0 "Senatorial Liberties Increased"
+t_rome_restricted_operations:0 "Senatorial Operations Restricted"
+t_rome_dismissed_imperiales:0 "Dismissed Imperiales"
+t_rome_dismissed_optimates:0 "Dismissed Optimates"
+t_rome_dismissed_populares:0 "Dismissed Populares"
+t_rome_senate_purged:0 "Senate Purged"
+
+t_eco_argentarii_tt:0 "Massive, overreaching banking companies belonging to old and influential families dominate many aspects of life for the upper classes."
+t_eco_argentarii_6_tt:0 "Unfathomable Control Over The Argentarii\n\nMassive, overreaching banking companies belonging to old and influential families have been firmly put under indirect control of the Emperor.\n\nThis gives us:\nInterest Per Annum: §G-1§!\nNational Tax Modifier: §G+10.0%§!\nConstruction Cost: §G-10.0%§!"
+t_eco_argentarii_5_tt:0 "Strong Control Over The Argentarii\n\nMassive, overreaching banking companies belonging to old and influential families have been firmly put under indirect control of the Emperor.\n\nThis gives us:\nInterest Per Annum: §G-0.5§!\nNational Tax Modifier: §G+10.0%§!\nConstruction Cost: §G-5.0%§!"
+t_eco_argentarii_4_tt:0 "Average Control Over The Argentarii\n\nMassive, overreaching banking companies belonging to old and influential families are somewhat favorable for the Imperial institutions.\n\nThis gives us:\nInterest Per Annum: §G-0.5§!\nNational Tax Modifier: §G+10.0%§!"
+t_eco_argentarii_3_tt:0 "Loose Control Over The Argentarii\n\nMassive, overreaching banking companies belonging to old and influential families are somewhat favorable for the Imperial institutions.\n\nThis gives us:\nNational Tax Modifier: §G+10.0%§!"
+t_eco_argentarii_2_tt:0 "No Control Over The Argentarii\n\nMassive, overreaching banking companies belonging to old and influential families dominate many aspects of life for the upper classes.\n\nThis gives us:\nInterest Per Annum: §R+0.5§!"
+t_eco_argentarii_1_tt:0 "Argentarii Dominance\n\nMassive, overreaching banking companies belonging to old and influential families dominate many aspects of life for the upper classes.\n\nThis gives us:\nInterest Per Annum: §R+0.5§!\nNational Tax Modifier: §R-10.0%§!"
+t_argentarii_addressed:0 "Argentarii Addressed"
+improve_argentarii_tt:0 "Our control over the Argentarii §Gstrengthens§!."
+worsen_argentarii_tt:0 "Our control over the Argentarii §Rweakens§!."
+
+# Hyperborean GUI
+
+t_hyperborea_establish_colony_tt:0 "Establish Hyperborean Settlement\n\n§GAvailable once per§! §Y10§! §Gyears.§!"
+t_hyperborea_established_colony:0 "Established Hyperborean Settlement"
+
+# Custom Alerts
+
+gv_war_taxes_alert_tt:0 "War Taxes are on"
+gv_can_hold_symposium_alert_tt:0 "Can Hold Symposium"

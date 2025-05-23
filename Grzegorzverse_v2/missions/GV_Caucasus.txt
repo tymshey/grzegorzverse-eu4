@@ -1,0 +1,520 @@
+slot_missions_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = Z05
+	}
+	has_country_shield = yes
+	mission_retake_circassia = {
+		icon = mission_blood_for_the_gods
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+		area = circassia_area
+		}
+		
+		trigger = {
+		circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		imereti_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		kartli_kakheti_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4306 = {add_permanent_claim = ROOT}
+			425 = {add_permanent_claim = ROOT}
+			circassia_area = { add_local_autonomy = -50 }
+			circassia_area = { change_culture = ROOT }
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_cross_mountains = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_retake_circassia}
+		position = 2
+		provinces_to_highlight = {
+		OR = {
+		area = dagestan_area
+		area = kartli_kakheti_area
+		area = imereti_area
+			}
+		}
+		
+		trigger = {
+		kartli_kakheti_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		imereti_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		samtskhe_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		armenia_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		shirvan_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		add_country_modifier = {
+		name = Diplomacy_With_Giants
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_unite_caucasia = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_cross_mountains}
+		position = 3
+		provinces_to_highlight = {
+		OR = {
+		region = caucasia_region
+			}
+		}
+		
+		trigger = {
+		caucasia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		add_country_modifier = {
+		name = United_Caucasia
+		duration = -1
+			}
+		caucasia_region = {
+		add_province_modifier = {
+		name = Caucasian_dream
+		duration = -1
+				}
+			}
+		add_country_modifier = {
+		name = Integrate_Caucasia
+		duration = 5475
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+slot_missions_2 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = Z05
+	}
+	has_country_shield = yes
+	mission_port_of_matrika = {
+		icon = mission_blood_for_the_gods
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+		province_id = 2447
+		}
+		
+		trigger = {
+		2447 = {development = 25}
+		2447 = {has_building = marketplace}
+		num_of_light_ship = 20
+		}
+		effect = {
+		2447 = { center_of_trade = 2 }
+		2447 = { change_culture = ROOT }
+		crimea_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			} 
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_conquer_levedia = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_retake_circassia
+							 mission_port_of_matrika}
+		position = 2
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		army_size_percentage = 1
+		}
+		effect = {
+		lower_don_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			} 
+		azov_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			} 
+		zaporizhia_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			} 
+		yedisan_area = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			} 
+		284 = { add_permanent_claim = ROOT }
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_purge_the_nordics = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_conquer_levedia}
+		position = 3
+		provinces_to_highlight = {
+		OR = {
+		area = yedisan_area
+		area = azov_area
+		area = zaporizhia_area
+			}
+		}
+		
+		trigger = {
+		yedisan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			} 
+		azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		zaporizhia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		yedisan_area =  {change_culture = ROOT }
+		azov_area =  {change_culture = ROOT }
+		zaporizhia_area = {change_culture = ROOT }
+		add_power_projection = { 
+			type = 25_permanent_power_projection
+			amount = 25 
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+slot_missions_3 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = Z05
+	}
+	has_country_shield = yes
+	
+	mission_unite_the_tatars = {
+		icon = mission_blood_for_the_gods
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+		OR = {
+		province_id = 2365
+		province_id = 469
+		province_id = 466
+			}
+		}
+		
+		trigger = {
+		owns = 469
+		owns = 2365
+		owns = 466
+		}
+		effect = {
+		add_prestige = 50
+		2365 = { add_local_autonomy = -50 }
+		469 = { add_local_autonomy = -50 }
+		466 = { add_local_autonomy = -50 }
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_central_asian_trade = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_unite_the_tatars }
+		position = 2
+		provinces_to_highlight = {
+		OR = {
+		area = lower_yik_area
+		area = nogai_area
+			}
+		}
+		
+		trigger = {
+		nogai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			} 
+		lower_yik_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			} 
+		}
+		effect = {
+		471 = { center_of_trade = 1 }
+		474 = { center_of_trade = 1 }
+		add_country_modifier = {
+		name = Central_Asian_Trade
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_deal_with_the_horde = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_central_asian_trade }
+		position = 3
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		NOT = { exists = GOL }
+		}
+		effect = {
+		add_stability = 1
+		add_country_modifier = {
+		name = Gol_destroyed
+		duration = 10950
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_future_of_caucasus = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_unite_tatars
+							mission_purge_the_nordics
+							mission_deal_with_the_horde	}
+		position = 4
+
+		
+		trigger = {
+		
+		}
+		effect = {
+		
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+slot_missions_4 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = Z05
+	}
+	has_country_shield = yes
+	
+	mission_pan_tatar_ideas = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_unite_the_tatars}
+		position = 2
+		provinces_to_highlight = {
+		culture = dynamic-khazar-culture-num1
+		}
+		
+		trigger = {
+		all_owned_province = {
+		base_manpower = 5
+			}
+		}
+		effect = {
+		every_province = {
+			limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+					NOT = { culture = dynamic-avar-culture-num2 }
+					NOT = { culture = dynamic-slovak-culture-num1 }
+					NOT = { culture = dynamic-avar-culture-num1}
+					culture_group = tartar
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_unite_tatars = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_pan_tatar_ideas }
+		position = 3
+		provinces_to_highlight = {
+		culture_group = ROOT
+		}
+		
+		trigger = {
+		owns_all_provinces = {
+		culture_group = ROOT
+			}
+		}
+		effect = {
+		change_country_color = { color = {0 139 139 } }
+		override_country_name = T_Avestan 
+		add_country_modifier = {
+		name = Tatar_Unity
+		duration = 18259
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+slot_missions_5 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = Z05
+	}
+	has_country_shield = yes
+	
+	mission_per_diplomacy = {
+		icon = mission_blood_for_the_gods
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		is_year = 1455
+		}
+		effect = {
+		country_event = { id = flavor_Z05.1 }
+		}
+		
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_expand_capital = {
+		icon = mission_blood_for_the_gods
+		required_missions = { }
+		position = 2
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		468 = {development = 30}
+		}
+		effect = {
+		468 = { center_of_trade = 1 }
+		468 = { change_trade_goods = cloth }
+		468 = {
+		add_permanent_province_modifier = {
+		name = Second_gownograd
+		duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_develop_region = {
+		icon = mission_blood_for_the_gods
+		required_missions = {mission_expand_capital }
+		position = 3
+		provinces_to_highlight = {
+		region = caucasia_region
+		}
+		
+		trigger = {
+		num_of_provinces_owned_or_owned_by_subjects_with = {
+		base_production = 6
+		value = 8
+		region = caucasia_region
+			}
+		}
+		effect = {
+		caucasia_region = {
+			limit = {
+				owned_by = ROOT
+				base_production = 6
+			}
+			add_province_modifier = {
+				name = ferile_lansd
+				duration = 3650
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}

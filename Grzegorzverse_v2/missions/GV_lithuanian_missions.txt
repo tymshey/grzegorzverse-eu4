@@ -1,0 +1,605 @@
+lithuanian_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+	
+	mission_port_riga = {
+		icon = mission_conquer_riga
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+		OR = {
+		province_id = 38
+			}
+		}
+		trigger = {
+		owns = 38
+		38 = {
+		province_has_center_of_trade_of_level = 2
+		}
+		38 = {
+				num_of_times_improved_by_owner = 10
+			}
+		}
+		effect = {
+		add_treasury = 400
+		38 = {
+		add_province_modifier = {
+		name = Port_Riga
+		duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_renesance_thought = {
+		icon = bibliotheca_corviana
+		position = 2
+		required_missions = { mission_port_riga }
+		provinces_to_highlight = {
+		}
+		trigger = {
+		is_institution_enabled = renaissance
+		employed_advisor = {
+		category = ADM
+			}
+		employed_advisor = {
+		category = DIP
+			}
+		employed_advisor = {
+		category = MIl
+			}
+		}
+		effect = {
+		add_country_modifier = {
+		name = Renaissance_Ideas
+		duration = 18250
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_second_golden_age = {
+		icon = mission_university_of_copenhagen
+		position = 3
+		required_missions = { mission_renesance_thought }
+		provinces_to_highlight = {
+		}
+		trigger = {
+		has_had_golden_age = yes
+		}
+		effect = {
+		reset_golden_age = yes
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_northern_outpost = {
+		icon = mission_iron_and_copper
+		position = 5
+		required_missions = {mission_territorial_ambitions}
+		provinces_to_highlight = {
+		OR = {
+		area = pskov_area
+		area = karelia_area
+		province_id = 28
+			}
+		}
+		trigger = {
+		add_mil_power = 50
+		pskov_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		karelia_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		28 = {
+		owned_by = ROOT
+			}
+		}
+		effect = {
+		
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+lithuanian_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+	
+	mission_develop_interior = {
+		icon = mission_develop_kiev
+		position = 2
+		required_missions = { mission_livonian_war }
+		provinces_to_highlight = {
+		OR = {
+		region = baltic_region
+			}
+		}
+		trigger = {
+		calc_true_if = {
+				amount = 15
+				baltic_region = { type = all
+				has_building = marketplace
+				owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+		baltic_region = {
+				limit = { owned_by = ROOT
+						has_building = marketplace}
+				add_province_modifier = {
+				name = Trade_Investments
+				duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_Universitet_of_Vilnus = {
+		icon = wittenberg_university
+		position = 3
+		required_missions = { mission_develop_interior
+							 mission_renesance_thought}
+		provinces_to_highlight = {
+		OR = {
+		province_id = 272
+			}
+		}
+		trigger = {
+		272 = {
+		is_capital_of = ROOT
+			}
+		272 = {
+		num_of_buildings_in_province = 5
+			}
+		272 = {
+		num_of_times_improved_by_owner = 30
+			}
+		}
+		effect = {
+		272 = {
+		add_building = university
+			}
+		272 ={
+		add_province_modifier = {
+		name = University_of_Vilnus
+		duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_southern_outpost = {
+		icon = mission_iron_and_copper
+		position = 5
+		required_missions = {mission_territorial_ambitions}
+		provinces_to_highlight = {
+		OR = {
+		area = podlasie_area
+		area = minsk_area
+		area = pripyat_area
+			}
+		}
+		trigger = {
+		add_mil_power = 50
+		podlasie_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		minsk_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		pripyat_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+lithuanian_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+	
+	mission_livonian_war = {
+		icon = mission_plc_lifetime_of_war
+		position = 1
+		provinces_to_highlight = {
+		OR = {
+			}
+		}
+		trigger = {
+		
+		}
+		effect = {
+		add_country_modifier = {
+		name = final_livonian_war
+		duration = 3650
+			}
+		capital_scope = {
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+				infantry  = ROOT
+			}
+		hidden_effect = {
+		estonia_ingria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		livonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				}
+				35 = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_reclaim_the_north = {
+		icon = mission_the_livonians
+		position = 2
+		required_missions = {mission_livonian_war}
+		provinces_to_highlight = {
+		OR = {
+		area = livonia_area
+		area = curonia_area
+		area = estonia_ingria_area
+		province_id = 35
+			}
+		}
+		trigger = {
+		livonia_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		curonia_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		estonia_ingria_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		owns = 35
+		}
+		effect = {
+				custom_tooltip = lith_cultures
+			hidden_effect = {
+				if = {
+				limit = {
+				OR = {
+				NOT = { accepted_culture = estonian }
+				NOT = { accepted_culture = baltic_german }
+				}
+					}
+				add_accepted_culture = estonian
+				add_accepted_culture = baltic_german
+				}
+				else = { add_dip_power = 200 }
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_national_reintegration = {
+		icon = mission_lit_stabilize_interior
+		position = 3
+		required_missions = {mission_reclaim_the_north}
+		provinces_to_highlight = {
+		}
+		trigger = {
+		stability = 3
+		NOT = {average_autonomy = 10}
+		}
+		effect = {
+			add_country_modifier = {
+			name = national_reintegration
+			duration = 3650
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_territorial_ambitions = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {mission_national_reintegration}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			NOT = {has_country_modifier = national_reintegration}
+			legitimacy = 80
+			army_size_percentage = 0.8
+			manpower_percentage = 0.7
+		}
+		effect = {
+			add_country_modifier = {
+			name = territorial_ambitions
+			duration = 36500
+			}
+			podlasie_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			pripyat_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			minsk_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			pskov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			karelia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			28 = {
+			add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_influence_gotland = {
+		icon = mission_norwegian_ship
+		position = 5
+		required_missions = {mission_territorial_ambitions}
+		provinces_to_highlight = {
+		}
+		trigger = {
+		stability = 1
+		num_of_heavy_ship = 20
+		}
+		effect = {
+		if = {
+		limit = {
+			exists = got
+		}
+		LIT = {
+		vassalize = GOT
+				}
+			}
+		else = {
+		25 = {
+		add_permanent_claim = ROOT
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+lithuanian_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+	
+	mission_capital_cloth = {
+		icon = mission_cloth
+		position = 2
+		required_missions = {mission_livonian_war}
+		provinces_to_highlight = {
+		OR = {
+		province_id = 4535
+			}
+		}
+		trigger = {
+		4535 = {
+		development = 20
+			}
+		}
+		effect = {
+		4535 = {
+		change_trade_goods = cloth
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_southern_mines = {
+		icon = mission_iron_and_copper
+		position = 3
+		required_missions = {mission_capital_cloth}
+		provinces_to_highlight = {
+		OR = {
+		province_id = 770
+		province_id = 272
+			}
+		}
+		trigger = {
+		770 = {
+		base_production = 10
+		}
+		272 = {
+		base_production = 10
+			} 
+		}
+		effect = {
+		770 = {
+		change_trade_goods = iron
+			}
+		272 = {
+		change_trade_goods = copper
+		 }
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_elite_horsmen = {
+		icon = mission_conquer_5_states
+		position = 5
+		required_missions = {mission_territorial_ambitions}
+		provinces_to_highlight = {
+		}
+		trigger = {
+		num_of_hussars = 30
+		}
+		effect = {
+		add_country_modifier = {
+		name = elite_horsemen
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+lithuanian_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+	
+	mission_reform_romuva = {
+		icon = mission_romuva
+		position = 1
+		required_missions = {}
+		provinces_to_highlight = {
+		}
+		trigger = {
+		religion = baltic_pagan_reformed 
+		}
+		effect = {
+		4535 = {
+			add_reform_center = baltic_pagan_reformed
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	
+	mission_western_diplomacy = {
+		icon = mission_diplomatic_relation
+		position = 2
+		required_missions = { mission_reform_romuva }
+		provinces_to_highlight = {
+		}
+		trigger = {
+		exists = PRU
+		PRU = {
+			dominant_religion = baltic_pagan_reformed
+			}
+		}
+		effect = { PRU = { country_event = { id = flavor_GV_lithuania.2 }  }  } 
+		ai_weight = {
+			factor = 500
+		}
+	}
+	mission_masters_of_baltic = {
+		icon = mission_conquer_baltic_region
+		position = 5
+		required_missions = {mission_western_diplomacy
+							mission_territorial_ambitions}
+		provinces_to_highlight = {
+		region = baltic_region
+		}
+		trigger = {
+			baltic_region = {
+					type = all
+					owned_by = ROOT
+				}
+		}
+		effect = {
+			add_country_modifier = {
+			name = 1ithuania_rules_waves
+			duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+

@@ -1,0 +1,659 @@
+﻿l_english:
+
+# QoL Events
+
+qol_events.1.title:0 "Advancements in Public Welfare"
+qol_events.1.desc:0 "The government has allocated significant resources to modernize and expand public infrastructure. Roads are being paved, bridges are constructed, and canals are dredged, connecting even the remotest corners of the realm. This investment not only facilitates faster transportation of goods but also enhances the overall quality of life for citizens."
+qol_events.1.a:0 "Good"
+
+qol_events.2.title:0 "Improvements in Urban Planning"
+qol_events.2.desc:0 "As our realm continues to evolve, there is a growing awareness of the need to enhance the quality of life for our subjects. A wave of enlightenment has swept through our administration, prompting discussions on urban planning and civic improvements. As the ruler, you are faced with a pivotal decision on how to shape the future of our cities."
+qol_events.2.a:0 "Nice"
+
+qol_events.3.title:0 "Policies for Prosperity"
+qol_events.3.desc:0 "Amidst the changing tides of public sentiment, the court finds itself contemplating a groundbreaking era of societal improvement and heightened quality of life for our subjects. "
+qol_events.3.a:0 "Ok"
+
+qol_events.4.title:0 "Well-being and Future"
+qol_events.4.desc:0 "In the quiet halls of our court, whispers of discontent have reached the ears of our rulers. The people yearn for more than just the basics of existence; they crave a life adorned with prosperity and contentment. It is time for us to embark on a journey to improve the quality of life for our subjects."
+qol_events.4.a:0 "Ok"
+
+qol_events.5.title:0 "Rising Standards of Living"
+qol_events.5.desc:0 "Thanks to recent advancements in public works, healthcare, and agricultural innovation, the standard of living across our nation has improved significantly. Many peasants and townsfolk now enjoy comforts once reserved for the nobility. However, these changes also bring new expectations, and maintaining this newfound prosperity may require continuous investment."
+qol_events.5.a:0 "Ok"
+
+qol_events.6.title:0 "Improvements in Sanitation"
+qol_events.6.desc:0 "New methods of waste management and public cleanliness are spreading through our cities, thanks to the tireless work of medical personnel and engineers. Clean water is now more accessible, and diseases such as dysentery and plague have become less frequent. These advancements in sanitation have greatly improved the health of our population."
+qol_events.6.a:0 "Great news"
+
+qol_events.7.title:0 "Urban Mismanagement"
+qol_events.7.desc:0 "The rapid growth of our cities has brought both prosperity and challenges. Unfortunately, poor planning and corruption among local officials have led to serious problems with overcrowding, inadequate infrastructure, and a rise in crime. The people are beginning to voice their discontent, and the disorder threatens to disrupt our economy if left unchecked."
+qol_events.7.a:0 "Not great"
+
+qol_events.8.title:0 "Overpopulation Strains Sanitation"
+qol_events.8.desc:0 "The rapid growth of our cities has exceeded the capacity of our sanitation systems. Waste management and water supplies are stretched thin, leading to unsanitary conditions. Outbreaks of disease are becoming more frequent, and the health of the populace is deteriorating. Without intervention, the growing population may face devastating consequences."
+qol_events.8.a:0 "Not good"
+
+# Natural Disasters
+
+gv_natural_disasters.1.title:0 "The Mesopotamian Famine"
+gv_natural_disasters.1.desc:0 "The fertile lands of Mesopotamia, long known as the breadbasket of our realm, have been struck by a series of poor harvests. Drought and disease have ravaged the crops, leaving the people hungry and desperate. Starvation is spreading, and unrest is growing as the region faces one of its worst famines in recent history."
+gv_natural_disasters.1.a:0 "There is nothing we can do."
+gv_natural_disasters.1.b:0 "We have to organize a relief effort."
+
+gv_natural_disasters.2.title:0 "The Mesopotamian Famine"
+gv_natural_disasters.2.desc:0 "The fertile lands of Mesopotamia, long known as the breadbasket of our realm, have been struck by a series of poor harvests. Drought and disease have ravaged the crops, leaving the people hungry and desperate. Starvation is spreading, and unrest is growing as the region faces one of its worst famines in recent history."
+gv_natural_disasters.2.a:0 "There is nothing we can do."
+gv_natural_disasters.2.b:0 "We have to organize a relief effort."
+
+gv_natural_disasters.3.title:0 "The Hungarian Famine"
+gv_natural_disasters.3.desc:0 "The lands of Hungary and the Danubian plains have been struck by disastrous harvests. Droughts and untimely frosts have ruined much of the crops, leading to a severe shortage of food. Starvation looms over the region, and reports of unrest among the peasantry are rising."
+gv_natural_disasters.3.a:0 "There is nothing we can do."
+gv_natural_disasters.3.b:0 "We have to organize a relief effort."
+
+gv_natural_disasters.4.title:0 "The Hungarian Famine"
+gv_natural_disasters.4.desc:0 "The lands of Hungary and the Danubian plains have been struck by disastrous harvests. Droughts and untimely frosts have ruined much of the crops, leading to a severe shortage of food. Starvation looms over the region, and reports of unrest among the peasantry are rising."
+gv_natural_disasters.4.a:0 "There is nothing we can do."
+gv_natural_disasters.4.b:0 "We have to organize a relief effort."
+
+gv_natural_disasters.5.title:0 "Eruption of Ayalu"
+gv_natural_disasters.5.desc:0 "In February the Ethiopian volcano known as Ayalu erupted in a massive explosion. The effects of the eruption were felt all across the world, where famine killed millions and trade collapsed. The eruption will be probably followed by a series of extremely harsh volcanic winters."
+gv_natural_disasters.5.a:0 "The fire rises..."
+
+gv_natural_disasters.6.title:0 "The Hispanic Famine"
+gv_natural_disasters.6.desc:0 "Iberia is now gripped by a severe famine. A combination of drought, poor harvests, and mismanagement has led to widespread hunger and desperation among the people. Fields lay barren, and the granaries are empty. The peasants cry out for relief, while local lords are increasingly unable to maintain order. Without swift action, the stability of the entire region could be at risk."
+gv_natural_disasters.6.a:0 "There is nothing we can do."
+gv_natural_disasters.6.b:0 "We have to organize a relief effort."
+
+gv_natural_disasters.7.title:0 "The English Famine"
+gv_natural_disasters.7.desc:0 "A catastrophic failure of crops across England has left much of the population starving, with food supplies dwindling and prices soaring. Unusually harsh weather, blight, and poor harvests have compounded the crisis, leading to widespread famine."
+gv_natural_disasters.7.a:0 "There is nothing we can do."
+gv_natural_disasters.7.b:0 "We have to organize a relief effort."
+
+gv_natural_disasters.8.title:0 "The Greco-Macedonian Famine"
+gv_natural_disasters.8.desc:0 "Unfavorable weather and poor harvests have led to a mild famine across Greece and Macedonia. While the scarcity has not yet reached a critical level, there are rising concerns over food shortages and the potential for unrest as supplies run low. The people are growing anxious, and tensions simmer in the markets as prices increase."
+gv_natural_disasters.8.a:0 "There is nothing we can do."
+gv_natural_disasters.8.b:0 "We have to organize a relief effort."
+
+gv_natural_disasters.9.title:0 "The Moesian Famine"
+gv_natural_disasters.9.desc:0 "A catastrophic failure of crops across Moesia and parts of Dacia has left much of the population starving, with food supplies dwindling and prices soaring. Unusually harsh weather, blight, and poor harvests have compounded the crisis, leading to widespread famine."
+gv_natural_disasters.9.a:0 "There is nothing we can do."
+gv_natural_disasters.9.b:0 "We have to organize a relief effort."
+
+#  Roman Events
+
+byzantine_events.1.name:0 "Roman Trade agreements with Venice and Genoa"
+byzantine_events.1.desc:0 "Prior to the reconquest of Anatolia and the Balkans, Roman emperors signed several generous agreements with the mercantile empires of Venice and Genoa to ensure their neutrality, but when our control was reinstated we were not late in breaking the western merchants' strangle-hold on the Black Sea trade. We should strive to maintain state control over the merchants, yet our protectionist measures had the intended effect and the Roman economy thrived."
+byzantine_events.1.a:0 "Break the agreements"
+byzantine_events.1.b:0 "Honor the agreements"
+
+flavor_rom.22.t:0 "Factions Influence Ruler"
+flavor_rom.22.d:0 "Factions in the Imperial court have recently come out strongly in favor of supporting construction projects across the Empire, and insist upon a greater Imperial focus on developing the Empire's possesions."
+flavor_rom.22.a:0 "Gather the builders!"
+
+flavor_rom.23.t:0 "Factions Influence Ruler"
+flavor_rom.23.d:0 "Factions in the Imperial court have recently come out strongly in favor of the Imperial army, and insist upon a greater focus from our Emperor on military matters."
+flavor_rom.23.a:0 "We could use more military funding!"
+
+flavor_rom.24.t:0 "Factions Influence Ruler"
+flavor_rom.24.d:0 "Factions in the Imperial court have recently come out strongly in favor of developing the capital, and insist on increased support of the government to start new construction in the heart of the Empire."
+flavor_rom.24.a:0 "Bread and Circuses!"
+flavor_rom.24.b:0 "Redirect them somewhere else"
+
+flavor_rom.25.t:0 "The Revelation"
+flavor_rom.25.d:0 "In the dead of night, $MONARCH$, His Majesty the Emperor, was awoken by a vision - a revelation sent by the gods themselves. The emperor stood before the pantheon of deities, who revealed to him a path forward for the empire, offering wisdom and guidance in these uncertain times."
+flavor_rom.25.a:0 "We are favored by the Gods indeed."
+flavor_rom.25.b:0 "DEVS · SOL · INVICTVS · VVLT"
+flavor_rom.25.c:0 "Perhaps the true form of Sol is Zun..."
+
+flavor_rom.26.title:0 "Changing Our Primary Cult"
+flavor_rom.26.desc:0 "We can select our new primary cult."
+flavor_rom.26.a:0 "Jupiter"
+flavor_rom.26.b:0 "Juno"
+flavor_rom.26.c:0 "Neptunus"
+flavor_rom.26.d:0 "Venus"
+flavor_rom.26.e:0 "Mars"
+flavor_rom.26.f:0 "Ceres"
+flavor_rom.26.g:0 "Vulcan"
+flavor_rom.26.h:0 "Minerva"
+flavor_rom.26.i:0 "Diana"
+flavor_rom.26.j:0 "Apollo"
+flavor_rom.26.k:0 "Mercury"
+flavor_rom.26.m:0 "Vesta"
+flavor_rom.26.n:0 "Sol Invictus"
+
+flavor_rom.1.title:0 "The Roman Court Strife"
+flavor_rom.1.desc:0 "Disagreements and internal turmoil among the upper classes of the Roman society in the Holy City of Saint Constantine have caused general unrest among our population and even more problems to deal with. If we are to free ourselves from this crisis, we have to carefully maneuver between the Imperial and Senatorial factions that inhabit the Capital of the World."
+flavor_rom.1.a:0 "So it begins."
+
+flavor_rom.2.title:0 "The Emperor Consolidates Power"
+flavor_rom.2.desc:0 "After years of the so-called Court Strife, the Emperor [Root.Monarch.GetName] consolidated his power and placed the rebellious Imperial factions under his control, ending the political rivalry between them. The following years will be probably spent recovering from the crisis, but we will probably never see such a situation evolve again in the future."
+flavor_rom.2.a:0 "The ends justify the means."
+
+flavor_rom.3.title:0 "Growing Popularity of Coffee in Constantinople"
+flavor_rom.3.desc:0 "Originally a drink largely associated with the Zoroastrian and Muslim world, coffee has become more and more commonplace among the merchants of the Roman Empire. In an increasingly interconnected capital attracting traders from around the world acquiring anything, including coffee is no longer quite as hard as it once was. As a result, coffeehouses are increasingly being established in Constantinople and the exotic beans are in increasing demand."
+flavor_rom.3.a:0 "Praeclarum nuntium!"
+flavor_rom.3.b:0 "Coffee and Circuses!"
+
+flavor_rom.4.title:0 "Scriptores Originum"
+flavor_rom.4.desc:0 "With literacy on the rise, more and more historians are appearing and writing down stuff that would otherwise be lost to time. More and more books are being printed, the spread and dissemination of books has become an objective both for economical and, ideological reasons. Historians have become a much more common sight in many libraries in general, and in large ones such as Constantinople, universities are dominated by enlightened people from all over the world. A golden age surely is incoming."
+flavor_rom.4.a:0 "Magnificent!"
+flavor_rom.4.b:0 "Books and Circuses!"
+
+flavor_rom.5.title:0 "Theodosian University Rises to Prominence"
+flavor_rom.5.desc:0 "In the heart of the illustrious Roman Empire, the University of Theodosius is flourishing. This venerable institution stands from the 5th century as a beacon of knowledge, scholarship, and intellectual pursuit. Its halls echo with the voices of scholars, philosophers, and students, all seeking to uncover the secrets of the world and preserve the rich tapestry of Roman culture."
+flavor_rom.5.a:0 "Veritas et Fortitudo!"
+flavor_rom.5.b:0 "Expand the Curriculum"
+flavor_rom.5.c:0 "Innovate and Adapt"
+
+flavor_rom.6.title:0 "Major Diplomatic Success"
+flavor_rom.6.desc:0 "In the Roman Empire diplomacy has always played a crucial role in maintaining stability and expanding influence. The recent diplomatic efforts of our government have born a fruit, resulting in a significant success on the international stage."
+flavor_rom.6.a:0 "Sign a treaty."
+flavor_rom.6.b:0 "Thank them for cooperation."
+flavor_rom.6.c:0 "Arrange a celebratory banquet."
+
+flavor_rom.7.title:0 "The Imperial Society"
+flavor_rom.7.desc:0 "In the heart of Rome, a wave of intellectual fervor has swept through the Imperial elites, leading to a renaissance of knowledge and academic pursuits. The pursuit of wisdom and understanding has become an important aspect for the elite of the Roman society, attracting scholars and rich aristocrats from across the empire to contribute to this new flourishing intellectual environment."
+flavor_rom.7.a:0 "Praeclarum nuntium!"
+
+flavor_rom.8.title:0 "Optica Maior"
+flavor_rom.8.desc:0 "In the quiet corners of our scholarly libraries in Phanarion, amidst the dusty tomes of antiquity, a remarkable discovery has been made. Hidden beneath layers of forgotten scrolls and manuscripts, a long-lost work by the brilliant thinker Herminus of Pera, the Optica Maior has been unearthed. This ancient text, a treatise on optics from the Classical Age, promises to shed new light on our understanding of light itself. The rediscovery of Herminus' work is nothing short of a scientific marvel. Embracing this newfound knowledge, we can delve into the wisdom of the past, gaining fresh insights into the mysteries of optics. Our scholars and scientists are eager to study and decipher this ancient text, hoping to unlock the secrets it holds."
+flavor_rom.8.a:0 "Magnificent news!"
+
+flavor_rom.9.title:0 "The Eastern Roman Empire"
+flavor_rom.9.desc:0 "Since the founding of §MRome§! by §GRomulus§!, the Senate and the People of Rome stood undefiant, as their empire seemed immune to an eventual eclipse. The Empire rose and seemingly fell numerous times, but the so-called "fall" was never absolute. The Romans however, stood on the brink of collapse for the last two hundered years. Now, as new age dawns on Europe and the world, §MConstantinople§! sees new opportunities. The biggest and oldest of Roman rivals, the empire of §MGrzegorz§!, §MGównogradus§! is weaker than ever, the §MBrekkling§! dynasty in §MTheodland§! has been falling from it's once prestigous status for the last two hundered and fifty years. As the empires of old had survived their own crises, they now once again rise to prominence. Will the §MRoman Empire§! finally emerge as the strongest of them all, after a thousand years of rivalry?"
+flavor_rom.9.a:0 "AVDENTES · FORTVNA · IVVAT!"
+
+flavor_rom.10.title:0 "Arbiter Elegantiarum"
+flavor_rom.10.desc:0 "As the glittering courts of Europe grow ever more refined, the need for a discerning eye to guide the elite in matters of etiquette and style becomes increasingly apparent. It is in this pursuit of elegance and sophistication that the Arbiter Elegantiarum is favored and supported by the Imperator."
+flavor_rom.10.a:0 "Salve, meus amicus!"
+
+flavor_rom.11.title:0 "Long Lost Works of Ibrahim Ibn Yaqub"
+flavor_rom.11.desc:0 "In the searing drylands of Mosul, near the ancient city of Nineveh, a momentous discovery has been made. Long-forgotten adventure descriptions, penned by the legendary scholar and explorer, Ibrahim ibn Yaqub, have resurfaced after centuries of obscurity. These vibrant accounts narrate his daring journeys to far-off lands, offering a treasure trove of knowledge and the allure of uncharted territories"
+flavor_rom.11.a:0 "Splendid!"
+
+flavor_rom.12.title:0 "Coronation of A New Roman Emperor"
+flavor_rom.12.desc:0 "The Roman Empire, continuing its legacy as a mighty and enduring power, stands at a pivotal moment as $MONARCH$ ascends to the throne. The coronation of a new ruler is a magnificent and exquisite grand event that carries significant implications for the future of the empire."
+flavor_rom.12.a:0 "Felicior Augusto, Melior Traiano"
+
+flavor_rom.13.title:0 "The Renaissance"
+flavor_rom.13.desc:0 "As the winds of change sweep through the Roman Empire, a cultural and intellectual awakening is taking place. The spirit of the Renaissance, which has already touched the Italian city-states, has now found its way to the heart of the ancient world. Scholars, artists, and thinkers are flocking to Constantinople, eager to be a part of this remarkable revival of knowledge and creativity."
+flavor_rom.13.a:0 "Polichronion Ton Rhomaion"
+flavor_rom.13.b:0 "Ave!"
+
+flavor_rom.14.title:0 "The Council of Alexandria"
+flavor_rom.14.desc:0 "The ancient city of Alexandria has been chosen as the host of a grand Ecumenical Council, where the faithful from all corners of the Orthodox world will convene to address pressing theological and ecclesiastical matters. The Council of Alexandria is a momentous event that will discuss the issues of the Nestorian Diaspora in the Empire."
+flavor_rom.14.a:0 "They may be useful to the Empire."
+flavor_rom.14.b:0 "Exile them."
+
+flavor_rom.15.title:0 "The Restoration of Justinian's Silk Manufactory"
+flavor_rom.15.desc:0 "In the heart of Constantinople, whispers of an ambitious project have been circulating among the city's artisans and merchants. The memory of Emperor Justinian's magnificent Silk Manufactory, a testament to Byzantine ingenuity, has lingered in the minds of the people for centuries. Now, a fervent desire to revive this ancient institution has taken root, as Constantinople seeks to regain its former glory as the silk capital of the world."
+flavor_rom.15.a:0 "Good."
+
+flavor_rom.16.title:0 "The Order of Illuminati"
+flavor_rom.16.desc:0 "In the heart of the Empire, a clandestine organization known as the "Illuminati" has emerged, with a mission to reshape the world order and advance enlightenment ideals. Led by a doctor at the University of Theodosius, the Illuminati have set out to infiltrate the political and social fabric of Europe, seeking to unravel the tightly woven threads of tradition and superstition. Today marks the establishment of the Order of Illuminati, a secret society committed to the ideals of reason, freedom, and the pursuit of knowledge."
+flavor_rom.16.a:0 "Interesting."
+
+flavor_rom.17.title:0 "Sempronius Flavius Vindex"
+flavor_rom.17.desc:0 "In the magnificent halls of Constantinople, a brilliant scientific mind has emerged, capturing the attention of the imperial court. As the empire faces an uncertain future, the rise of this exceptional advisor promises hope and a brighter path to Rome's destiny."
+flavor_rom.17.a:0 "Salve!"
+
+flavor_rom.18.title:0 "Flavian Coup"
+flavor_rom.18.desc:0 "Whispers of a conspiracy have grown into a storm, and the Byzantine Empire now stands at the precipice of a dramatic upheaval. The influential aristocratic family of Flavius has plotted a coup, aiming to seize the throne and reshape the course of the empire's history."
+flavor_rom.18.a:0 "All according to plan."
+flavor_rom.18.b:0 "Enemies of the state!"
+
+flavor_rom.19.title:0 "Influencing the Senate"
+flavor_rom.19.desc:0 "Rumors swirl through the marble halls of the Senate, whispers of secret allegiances and covert maneuvers. The question of loyalty hangs heavily in the air. As the leaders of the Empire, we now face a critical decision regarding the Senate's allegiance."
+flavor_rom.19.a:0 "Strengthen the Imperial office."
+flavor_rom.19.b:0 "Support the Senators."
+
+flavor_rom.20.title:0 "Calling the Imperial Council"
+flavor_rom.20.desc:0 "Rumors swirl through the marble halls of the Senate, whispers of secret allegiances and covert maneuvers. The question of loyalty hangs heavily in the air. As the leaders of the Empire, we now face a critical decision regarding the Senate's allegiance."
+flavor_rom.20.a:0 "Call the Council of the Chamber"
+flavor_rom.20.b:0 "Call the Council of the Sea"
+flavor_rom.20.c:0 "Call the Council of the Army"
+
+flavor_rom.21.title:0 "Growth of Population in Constantinople"
+flavor_rom.21.desc:0 "In the heart of the Byzantine Empire, Constantinople stands as a beacon of prosperity and cultural diversity. However, the city's growing population has brought with it a mounting need for sustenance, particularly the staple of life - grain. The Imperial Council recognizes the urgency of the situation and believes that the best course of action is to invest in expanding the agricultural production in the surrounding provinces. This will require substantial funds and may take some time, but it promises long-term benefits for the city's food security."
+flavor_rom.21.a:0 "Great News!"
+
+flavor_rom.27.title:0 "A Vision"
+flavor_rom.27.desc:0 "As the eternal city of Constantinople stood under the watchful eyes of its citizens, the Pontifex Maximus, a fervent and zealous advocate for the Roman pantheon and the sacred cult of DEVS · SOL · INVICTVS, secluded himself in the sacred chambers of the Temple of the Invincible Sun. His uncompromising dedication to DEVS · SOL · INVICTVS had earned him both praise and suspicion among the Senate and the people.\n\nOne fateful night, as our Pontifex Maximus offered fervent prayers and sacrifices to DEVS · SOL · INVICTVS, he was suddenly overtaken by a profound and unearthly vision. A radiant figure, draped in divine vestments, manifested before him, delivering a message that seemed to echo through the very fabric of the Roman spiritual realm.\n\nIn this instant he finally understood: §Rall this, it was not enough.§!\n\n§RAshes to ashes, and dust to dust.§!"
+flavor_rom.27.a:0 "What mystery did he unveil?"
+
+flavor_rom.28.title:0 "Devs Adivta Romanis"
+flavor_rom.28.desc:0 "It is of no mystery to all, the war has been going badly. The spirit and resolve of the Roman people however still stand strong. Various church posessions had been donated and melted into coins for the sake of survival. As the situation develops, more and more people come into conclusion: Rome either wins this war, or it is the last war Rome ever fights."
+flavor_rom.28.a:0 "Adivta Indeed..."
+
+flavor_rom.29.title:0 "Civis Romanus Sum"
+flavor_rom.29.desc:0 "I am a Roman citizen - these being the words of Marcus Tullius Cicero, said in the final century of the republic, combining Roman sense of law, order, patriotism and other virtous values. One and a half thousand years later we still find those words important, as they gained a new meaning: endurance. After enduring a period of turmoil and uncertainty, the Empire emerges from the shadows of crisis, resolute and rejuvenated. Through the resilience of our people and the astute leadership, the empire stands ready to reclaim its former glory and assert its dominance on the world stage once more."
+flavor_rom.29.a:0 "Onwards!"
+
+flavor_rom.30.title:0 "Rise of a Caesar"
+flavor_rom.30.desc:0 "Just like the days of Gaius Julius Caesar, a prominent senator, known for his commanding presence and unwavering resolve, has seized control of the Senate, promising to restore order and unity to the Republic. Could this be a new era for the Republic, or just a mockery for the dictators of the classical age?"
+flavor_rom.30.a:0 "Avt Caesar Avt Nihil..."
+flavor_rom.30.b:0 "For The Republic!"
+
+flavor_rom.31.title:0 "Of Purple and Gold"
+flavor_rom.31.desc:0 "As the Empire thrives, the need for a more centralized and absolute form of governance becomes apparent. The Imperial Court consolidated power, diminishing the influence of the nobility. This move had strengthened the empire's unity beyond any other nation of the world. With the Emperor's authority now absolute, the machinery of state moves with newfound efficiency and no whispers of dissent can be heard through the halls of power."
+flavor_rom.31.a:0 "We are both the pawns and the kings on the chessboard of the world."
+
+flavor_rom.32.title:0 "Ferrum et Carbon"
+flavor_rom.32.desc:0 "The Empire has embraced the possibilities of modern industrial production. With access to rich deposits of coal and iron, our workshops and foundries are producing materials critical to the advancement of the empire’s infrastructure, economy, and military might. This surge in production has not only empowered the empire but also drawn the attention of ambitious merchants and skilled workers. The future looks bright as Rome marches further into the industrial age."
+flavor_rom.32.a:0 "Magnificent!"
+
+flavor_rom.33.title:0 "Founding of the Imperial Admiralty"
+flavor_rom.33.desc:0 "The Empire's naval forces have been critical to securing our trade routes and maintaining control of the seas, yet the current structure of our naval administration is outdated and inefficient. The establishment of a dedicated Imperial Admiralty Office would centralize naval command and streamline our efforts in building a mighty fleet. With such an office, we could better protect our shores, coordinate trade, and project our imperial power across the Mediterranean. The time has come to reorganize the naval affairs of the Empire, bringing prestige to the Roman Navy and securing our power on the Mare Nostrum once more."
+flavor_rom.33.a:0 "Innovate, adapt, improve."
+
+flavor_rom.34.title:0 "Theodosian Symposium"
+flavor_rom.34.desc:0 "The Symposium featured a wide-ranging debate on matters of national importance. This year, the much anticipated subject was economy. A great deal of pertinent information was collated by scholars from all universities, and the findings are, as usual, most noteworthy."
+flavor_rom.34.a:0 "Pro Veritas!"
+
+flavor_rom.35.title:0 "Callistan Symposium"
+flavor_rom.35.desc:0 "The Symposium featured a wide-ranging debate on matters of national importance. This year, the much anticipated subject were natural sciences. A great deal of pertinent information was collated by scholars from all universities, and the findings are, as usual, most noteworthy."
+flavor_rom.35.a:0 "Pro Veritas!"
+
+flavor_rom.36.title:0 "Justinianic Symposium"
+flavor_rom.36.desc:0 "The Symposium featured a wide-ranging debate on matters of national importance. This year, the much anticipated subject was law. A great deal of pertinent information was collated by scholars from all universities, and the findings are, as usual, most noteworthy."
+flavor_rom.36.a:0 "Pro Veritas!"
+
+flavor_rom.37.title:0 "Revolt Against Imperial Rule in Ethiopia"
+flavor_rom.37.desc:0 "The untamed negroes of Ethiopia, long brought to heel under the glory of Roman civilization, have fallen into revolt. Unwilling to embrace the benefits of Roman governance, these rebellious tribes have returned to their primitive ways, rejecting the order and prosperity we have bestowed upon them. Driven by their ignorance and barbarism, they have raised arms against the Empire, threatening the stability of our frontier. The time has come to remind these savages of Rome's might"
+flavor_rom.37.a:0 "Get back to work, nigger."
+
+flavor_rom.38.title:0 "Founding of The C.R.C."
+flavor_rom.38.desc:0 "In the ever-shifting world, our Empire has extended its influence far beyond its traditional borders. In response to the growing demand for luxury goods from the distant East, a group of ambitious merchants, senators, and military leaders have proposed the creation of a new trade company: Coetus Romae Commerciae - the Roman Imperial East India Trade Company. This organization will be tasked with controlling trade routes to India and beyond, securing vast wealth for the Empire."
+flavor_rom.38.a:0 "Splendid!"
+
+flavor_rom.39.title:0 "Grand Ecumenical Council of [GetYear]"
+flavor_rom.39.desc:0 "potem napisze"
+flavor_rom.39.a:0 "Ok"
+
+flavor_rom.40.title:0 "Terminus Est"
+flavor_rom.40.desc:0 "With the resurgence of Hellenic identity and imperial ambition in the Roman state, the centuries-old balance between the Orthodox Church and the Emperor has been upended. Once the seat of Christian spiritual authority in the East, the Ecumenical Patriarchate now finds itself at a crossroads as the Roman government moves to formally annex it into the imperial administration."
+flavor_rom.40.a:0 "Allow the Patriarchate to coexist."
+flavor_rom.40.b:0 "There is no place for the Patriarchate."
+
+flavor_rom.41.title:0 "Terminus Est"
+flavor_rom.41.desc:0 "With the rise of the reformation and imperial ambition in the Roman state, the centuries-old balance between the Orthodox Church and the Emperor has been upended. Once the seat of Christian spiritual authority in the East, the Ecumenical Patriarchate now finds itself at a crossroads as the Roman government moves to formally annex it into the imperial administration."
+flavor_rom.41.a:0 "Allow the Patriarchate to coexist."
+flavor_rom.41.b:0 "There is no place for the Patriarchate."
+
+flavor_rom.42.title:0 "Reformation in the Empire"
+flavor_rom.42.desc:0 "For centuries, the Ecumenical Patriarch has been the spiritual leader of Orthodox Christianity, guiding the faithful and preserving sacred tradition. However, with the empire’s ongoing reformation, this balance of power has been upended. The Emperor, as God’s chosen ruler, has declared that the authority of the Church must be fully aligned with the interests of the state.\n\nThe Ecumenical Patriarch has denounced this act as heretical, claiming that the Emperor has overstepped his divine role. Yet, many within the court and military see this as a necessary step to strengthen imperial rule and unify faith and governance. Across the empire, clergy loyal to the Patriarch stir unrest, while reformists celebrate the dawn of a new era."
+flavor_rom.42.a:0 "Audentes fortuna iuvat!"
+flavor_rom_42_tt:0 "§TThe Emperor is both Sovereign and Shepherd.§!"
+
+flavor_rom.43.title:0 "Exarchate of Crimea"
+flavor_rom.43.desc:0 "a"
+flavor_rom.43.a:0 "Establish the Exarchate."
+flavor_rom.43.b:0 "Consolidate control over the peninsula instead."
+
+flavor_rom.44.title:0 "The Walls of Theophany"
+flavor_rom.44.desc:0 "Centuries after the fall of the West, the Empire still stands firm — battered but unbroken, its people bound together by the unshakable faith of the Orthodox Church. With threats pressing from all sides, from astray Christian denominations and Germanic powers in the West to rising Zoroastrian forces in the East, the spirit of defense has become second nature to the Romans. Many within the Senate and the clergy proclaim that to preserve the faith is to guard the walls, that every bastion of stone is a pillar of Christianity."
+flavor_rom.44.a:0 "Audentes Fortuna Iuvat!"
+
+# English/British Events
+
+flavor_england.1.title:0 "A True Empire Ruled by A True Emperor"
+flavor_england.1.desc:0 "In a momentous celebration that will echo through the ages, the time has come for the coronation of our esteemed monarch as the true Emperor of the British Empire. As the realm converges upon the sacred grounds, a palpable air of anticipation envelops the court, and the world watches in awe as history unfolds."
+flavor_england.1.a:0 "Audentes Fortuna Iuvat!"
+
+flavor_england.2.title:0 "Under One God?"
+flavor_england.2.desc:0 "The ancient gods have guided the English people through centuries of war and conquest. However, a growing number of Christian whispers fill the halls of the court and streets of our cities. The king stands at a crossroads. Some of his closest advisors suggest converting to Christianity, arguing that it will bring peace, stability, and closer ties with other Christian kingdoms. Others, especially the pagan priests, fear this as a betrayal of the old ways that have long protected England. The king now must make a choice that will shape the fate of the realm for generations to come."
+flavor_england.2.a:0 "We cannot abandon our roots."
+flavor_england.2.b:0 "Ave Christus Rex!"
+
+flavor_england.3.title:0 "Lord Protector's Army Reform"
+flavor_england.3.desc:0 "In a time of great upheaval and change, the Lord Protector of Great Britain has initiated sweeping reforms within the army. Recognizing the need for a more professional and disciplined force to maintain order and protect the empire and its interests across the world, the reform aims to modernize the military structure, improve training, and ensure loyalty to the empire."
+flavor_england.3.a:0 "Let us implement the reform."
+
+flavor_england.4.title:0 "Global Empire Act"
+flavor_england.4.desc:0 "The sun never sets on the British Empire, a testament to the might and ambition of our nation. From the jungles of India to the shores of the Americas, our influence and control extend across the globe. The time has come to formalize our dominance and secure our legacy for centuries to come. By enacting the Global Empire Act, we shall officially recognize our role as the preeminent world power, cementing our rule over the farthest reaches of the Earth."
+flavor_england.4.a:0 "Let us proceed."
+
+flavor_england.5.title:0 "Oxford Symposium"
+flavor_england.5.desc:0 "The Symposium featured a wide-ranging debate on matters of national importance. This year, the much anticipated subject was economy. A great deal of pertinent information was collated by scholars from all universities, and the findings are, as usual, most noteworthy."
+flavor_england.5.a:0 "Pro Veritas!"
+
+flavor_england.6.title:0 "Cambridge Symposium"
+flavor_england.6.desc:0 "The Symposium featured a wide-ranging debate on matters of national importance. This year, the much anticipated subject was law. A great deal of pertinent information was collated by scholars from all universities, and the findings are, as usual, most noteworthy."
+flavor_england.6.a:0 "Pro Veritas!"
+
+flavor_england.7.title:0 "Decade of Prosperity"
+flavor_england.7.desc:0 "The past decade has seen England flourish like never before. The wool trade, long the backbone of our economy, has thrived due to increased demand from the Low Countries. Merchant guilds in London, Bristol, and York have expanded their influence, filling royal coffers with newfound wealth. The improvements in infrastructure and administration have further fueled this golden era, with bustling marketplaces, growing towns, and well-maintained roads allowing commerce to flow freely across the realm.\n\nWith this unprecedented economic growth, we must decide how best to utilize this prosperity. Should we reinvest in our cities, strengthen our military, or lower taxes to ensure continued wealth for all?"
+flavor_england.7.a:0 "We have to invest."
+flavor_england.7.b:0 "Lets limit ourselves to consuming the fruits of success."
+
+# French Events
+
+flavor_france.1.title:0 "Our Claim on Flanders"
+flavor_france.1.desc:0 "As the sun sets over the Holy Roman Empire, and more nations leave, whispers of diplomatic intrigue sweep through the royal court in Paris. The claim on Flanders, a longstanding point of contention, has resurfaced, casting a shadow over the diplomatic landscape."
+flavor_france.1.a:0 "Audentes Fortuna Iuvat!"
+flavor_france.1.b:0 "We shall back down."
+
+flavor_france.2.title:0 "King Converts to Christianity"
+flavor_france.2.desc:0 "As the French court revels in the intrigues of the royal court, a shocking development unfolds. The King, once a staunch adherent of pagan beliefs, has undergone a profound spiritual transformation. Whispers of conversion to Christianity echo through the corridors of power, leaving courtiers and clergy alike in a state of bewilderment."
+flavor_france.2.a:0 "Ok"
+
+flavor_france.3.title:0 "Chess Culture"
+flavor_france.3.desc:0 "In the salons and courts of France the nobility and intellectuals have become enamored with a strategic and cerebral pastime that has captivated minds across the realm - chess. As the game gains popularity, a vibrant chess culture begins to emerge, drawing players from all walks of life."
+flavor_france.3.a:0 "Splendid!"
+
+# Theodland events
+
+flavor_theodland.2.t:0 "Outrage in the Empire"
+flavor_theodland.2.d:0 "With our recent change in foreign policy many of the princes started wondering if this means that the emperor is abandoning the empire"
+flavor_theodland.2.a:0 "This will surely affect the relation with the princes"
+
+flavor_theodland.3.title:0 "The Leagues Pacified"
+flavor_theodland.3.desc:0 "After years of conflict, intrigue, and covert dealings, $MONARCH$ had finally overcome the opposition of the wealthy banking families that held sway over trade and wealth in the empire. Their influence, which rivaled that of the crown, has been broken, and the emperor now controls the vast resources of the trade leagues. Merchants and bankers alike have been forced to recognize the royal authority, and the wealth of the empire is now firmly under the emperor's hand. Theodish influence over imperial trade is now unparalleled, and the realm stands poised to become the preeminent force in global commerce."
+flavor_theodland.3.a:0 "So true!"
+
+flavor_theodland.4.title:0 "The Humboldt University"
+flavor_theodland.4.desc:0 "Inspired by the burgeoning thirst for knowledge and the ever-growing humanist ideals of the Renaissance, a visionary institution has been proposed in the capital. The Humboldt University, named after its esteemed founder, is set to be a beacon of learning and progress. With its halls open to students of all backgrounds, it will foster a generation of scholars, philosophers, and scientists who will help drive the advancement of the German science. The founding of a major university will be a symbol of our commitment to progress, reason, and enlightenment."
+flavor_theodland.4.a:0 "A Magnificent Initiative!"
+
+flavor_theodland.5.title:0 "Humboldt University Symposium"
+flavor_theodland.5.desc:0 "The Symposium featured a wide-ranging debate on matters of national importance. This year, the much anticipated subject were natural sciences. A great deal of pertinent information was collated by scholars from all universities, and the findings are, as usual, most noteworthy."
+flavor_theodland.5.a:0 "Pro Veritas!"
+
+# Debug Events
+
+t_debug.1.title:0 "Debug: Restore the Roman Republic"
+t_debug.1.desc:0 "this is a debug event"
+t_debug.1.a:0 "kutas"
+
+t_debug.2.title:0 "Debug: Convert Provinces to Hellenism"
+t_debug.2.desc:0 "uwuwuwuuwuwuwuw :33333333"
+t_debug.2.a:0 "kutas"
+
+t_debug.3.title:0 "Debug: Change Trade Goods to Slaves in Kurdish Provinces"
+t_debug.3.desc:0 "uwuwuwuw kuwdyjscy niewolwnicy :33333"
+t_debug.3.a:0 "bizancjum nie jest greckie kurwo to jest PRAWDZIWY RZYM"
+
+t_debug.4.title:0 "Debug: Choose Stance Towards Jerusalem"
+t_debug.4.desc:0 "chuj"
+t_debug.4.a:0 "alliance"
+t_debug.4.b:0 "hostility"
+t_debug.4.c:0 "nothing"
+
+t_debug.5.title:0 "Debug: Add Prosperous Rule Privilege"
+t_debug.5.desc:0 "aaaaaaaaaaaa"
+t_debug.5.a:0 "nigger"
+t_debug.5.b:0 "nothing"
+
+t_debug.6.title:0 "Debug: Refresh Mission Tree"
+t_debug.6.desc:0 "Chuj, chuj, chuj kurwa i chuj Chuj, chuj kurwa i chuj Chuj kurwa, chuj kurwa i chuj Chuj kurwa i chuj Raz, dwa, trzy, kurwa, chuj Jazda! Chuj, najebałem się i chuj Piję czystą, robię gnój, kurwa w chuj Szmata robi chuj, szmata robi chuj, kurwa w chuj, kurwa w chuj, aaa Raz Dym z bletek, gówno z dupy Krew z nosa, krew z nosa, krew z nosa Krew z nosa, walę kurwa w nosa sztosa Raz kurwa, wóda! Wóda, wóda, wóda, wóda, wóda, no i szczur Wóda, wóda, wóda, wóda, wóda, no i szczur Wóda, wóda, wóda, wóda i kolejny szczur Wóda, wóda, wóda, wóda, kurwa i chuj"
+t_debug.6.a:0 "okej"
+t_debug.6.b:0 "nothing"
+
+t_debug.7.title:0 "Debug: Reload GDP Variable"
+t_debug.7.desc:0 "nienawidze niggeruw"
+t_debug.7.a:0 ":3"
+t_debug.7.b:0 "nothing"
+
+t_debug.8.title:0 "Debug: Unlock Industrialization"
+t_debug.8.desc:0 "kutas"
+t_debug.8.a:0 ":3"
+t_debug.8.b:0 "nothing"
+
+t_debug.10.title:0 "Debug: Unlock The Based Empire"
+t_debug.10.desc:0 "it is based"
+t_debug.10.a:0 "do it"
+t_debug.10.b:0 "dont do it"
+
+t_debug.11.title:0 "Debug: Cosmetic Name"
+t_debug.11.desc:0 "nigger nigger pierdolic czarnuchow"
+t_debug.11.a:0 "Restore to Default"
+t_debug.11.b:0 "Roman Republic"
+t_debug.11.c:0 "Empire of Sol Invictus"
+
+t_debug.12.title:0 "Debug: Godmode"
+t_debug.12.desc:0 "barigadam dam dam dam dam dam di dam dam"
+t_debug.12.a:0 "dawaj to miesko"
+t_debug.12.b:0 "nie dawaj tego mieska"
+
+t_debug.13.title:0 "Debug: Unify Arabia"
+t_debug.13.desc:0 "pierdolic murzynow"
+t_debug.13.a:0 "okej"
+t_debug.13.b:0 "nothing"
+
+t_debug.14.title:0 "Debug: Adjust Argentarii Control"
+t_debug.14.desc:0 "JAPIERDOLE KOCHAM SCRIPTED EFFECTS"
+t_debug.14.a:0 "improve"
+t_debug.14.b:0 "worsen"
+t_debug.14.c:0 "reset"
+t_debug.14.d:0 "nothing"
+
+t_debug.15.title:0 "Debug: Form North German Confederation"
+t_debug.15.desc:0 "kutas"
+t_debug.15.a:0 "do it"
+t_debug.15.b:0 "nothing"
+
+t_debug.16.title:0 "Debug: Activate English Universities"
+t_debug.16.desc:0 "scripted triggers tez jest ok"
+t_debug.16.a:0 "yes"
+t_debug.16.b:0 "nothing"
+
+t_debug.17.title:0 "Debug: Form Germany"
+t_debug.17.desc:0 "niemcy prosze pana"
+t_debug.17.a:0 "yes"
+t_debug.17.b:0 "nothing"
+
+t_debug.18.title:0 "Debug: Culture Shift to Roman"
+t_debug.18.desc:0 "TRVE ROMAN"
+t_debug.18.a:0 "AVE"
+t_debug.18.b:0 "nothing"
+
+t_debug.19.title:0 "Debug: Dismantling the HRE"
+t_debug.19.desc:0 "The Holy Roman Empire is not yet finished. For now, Grzegorzverse will operate without the HRE."
+t_debug.19.a:0 "dismantle (ai will do)"
+t_debug.19.b:0 "nothing"
+
+t_debug.20.title:0 "Debug: Unlock the Corporate Directorate reform"
+t_debug.20.desc:0 "vvvv"
+t_debug.20.a:0 "do it"
+t_debug.20.b:0 "nothing"
+
+# Persian Events
+
+grzegorz_events.1.t:0 "The Trollogradian Debate"
+grzegorz_events.1.d:0 "In the heart of Persia, a new city has emerged - Trollograd. Its strategic location, nestled among lush landscapes and promising trade routes, has caught the attention of the Persian court. As the city flourishes, a debate arises about the possibility of moving the capital to this burgeoning metropolis."
+grzegorz_events.1.a:0 "Gównograd, the ancient capital suit us."
+grzegorz_events.1.b:0 "Trollograd is way better protected."
+
+grzegorz_events.2.t:0 "Grzegorz Reborn"
+grzegorz_events.2.d:0 "The shaman has drawn 7 circles, in these seven circles there are seven crosses, connecting these seven circles are 14 pillars with 7 waves and 7 angel hairpieces, the circle is drawn with 7 different alchemical dusts obtained through 7 years of fasting and 7 years of seclusion during which 7 purple stones are held, consecrated by the high Tengri priest. 12 virgins were placed in 7 circles, 4 of them in perpendicular circles on the sides and 1 in a circle in the middle. The ritual began with the priest desecrating, killing and placing in cruciform positions the virgins at these four joints, placing four purple stones into their mouths, 3 more stones are placed into the mouths of the virgins in perpendicular circles. Then each circle is lit and the virgins untouched by the fire sing the appropriate incantations. Suddenly, the Gateway to Agartha opens at our command, and one rider comes out, the one who united the Mongol peoples, the one rider who conquered the world. Grzegorz the Great immediately decapitated the current ruler and declared himself eternal ruler of the universe."
+grzegorz_events.2.a:0 ""We, by the power of the eternal heaven, Khan of the great Ulus, Our command.""
+
+grzegorz_events.3.title:0 "Influx of Islamic Traders"
+grzegorz_events.3.desc:0 "Recent years had seen a renewed influx of Islamic traders from the heartlands of Central Asia into Persia, bringing with them a wealth of goods, knowledge, and prosperity. From the vibrant markets of Samarkand and Bukhara, these merchants have revitalized trade routes, introducing new textiles, spices, and luxury goods that bolster local economies. Beyond mere commerce, these travelers have also carried scientific advancements, architectural styles, and administrative techniques, enriching Persian society."
+grzegorz_events.3.a:0 "Magnificent!"
+
+grzegorz_events.4.title:0 "The Commercial Gateway to India"
+grzegorz_events.4.desc:0 "With our growing ambitions in the Indian subcontinent, the strategic city of Thatta has emerged as a vital center for trade and influence. Situated near the Indus River and the Arabian Sea, Thatta offers access to the thriving markets of Gujarat, the Deccan, and beyond. Recognizing the city's importance, our merchants and administrators have begun developing its port infrastructure, attracting traders from across the Indian Ocean and Central Asia.\n\nThe influx of Persian and Assyrian settlers, scholars, and artisans has introduced new architectural styles, cultural exchanges, and administrative practices, solidifying our presence in the region. If properly managed, the city could become a jewel of Grzegorzian trade, bringing the empire to the riches of Hindustan."
+grzegorz_events.4.a:0 "Only good can come out of this."
+
+# Omani Events
+
+flavor_oman.1.t:0 "The Fire Burns On"
+flavor_oman.1.d:0 "There is a legend, that The Sacred Fire of Muscat was, among many others, lit by the command of Grzegorz himself.\n\nYazdegerd entered the chamber of the fire to check on it's strength. The Fire looked the same as when Yazdegerd checked it out yesterday. And two days ago. And every other day he did on his duty. A foolish man may think: what is the point of that? If the fire's the same every day, it may as well burn out and nothing would change. But a wise man knows, that as the sacred fires burn on, history is written around them. Generations come into life around the Fire, and leave for the heavens around the Fire. Wars are fought, soldiers die, cities rise to prominence and fall into obscurity. But the Fire burns. As long as the fires are lit, the legacy of Grzegorz cannot die. A foolish man will see only light and heat in the fire. But a wise man will see eternity."
+flavor_oman.1.a:0 "The glory of Grzegorz is eternal."
+
+flavor_oman.2.t:0 "The Island Inbetween"
+flavor_oman.2.d:0 "The Omani diplomats have approached us with an extraordinary request: handing over control of Hormuz. The Hormuz island is a strategically important island, but on the other hand Omani diplomats assure us that such an agreement will be beneficial to the Heirs of Grzegorz, as well as the Traders of Grzegorz."
+flavor_oman.2.a:0 "Very well."
+flavor_oman.2.b:0 "We cannot agree to that."
+
+# Latin Events
+
+flavor_lat.1.title:0 "The Plague"
+flavor_lat.1.desc:0 "The plague has once again descended upon Italy, bringing death and despair to the cities and countryside alike. This virulent outbreak is devastating the population, crippling the economy, and creating widespread fear and panic. The rulers must act decisively to mitigate the impact of the plague, but the choices are grim and resources are limited."
+flavor_lat.1.a:0 "Tragic."
+
+flavor_lat.2.title:0 "Moving Out"
+flavor_lat.2.desc:0 "The plague has struck Rome with unprecedented ferocity, overwhelming the city's medical facilities. As the death toll rises and the streets become deserted, the government faces a dire decision. With the heart of Italy in chaos and the risk of contagion ever-present, the ruling authorities must consider relocating the seat of power to ensure the continuity of governance. This move, while necessary, will have significant consequences for both the government and the populace. Where should we reloacte to?"
+flavor_lat.2.a:0 "Florence"
+flavor_lat.2.b:0 "Pisa"
+flavor_lat.2.c:0 "Lucca"
+
+flavor_lat.3.title:0 "Returning to Rome"
+flavor_lat.3.desc:0 "Years have passed since the plague forced the government to flee Rome. The once vibrant city has been slowly recovering from the devastation. Now, with the plague no longer a threat and stability gradually returning, the question arises whether to move the seat of power back to Rome. Returning to the Eternal City could restore Rome's historical prestige and centrality, but the scars of the plague still linger. The decision must be carefully considered to ensure the city's and the government's future stability."
+flavor_lat.3.a:0 "Let us Return."
+flavor_lat.3.b:0 "No."
+
+flavor_lat.4.title:0 "Florentine Paper Industry"
+flavor_lat.4.desc:0 "Since the early 14th century, Florence has been renowned for its cultural and economic prowess. The Florentine paper industry has recently experienced significant growth, driven by increasing demand for high-quality paper across Europe. This boom has provided a substantial boost to the local economy, fostering the growth of trade, commerce, and literacy. As the industry expands, the republic sees an opportunity to further enhance Florence's prestige and wealth."
+flavor_lat.4.a:0 "Ok"
+
+flavor_lat.5.title:0 "At The Gates of Mare Nostrum"
+flavor_lat.5.desc:0 "One of our traders, who sails to the new world and explore unknown continents, arrived at a port in Morocco to replenish supplies, and there he sees a cosmonaut as their flag. Wondering, he approaches a local to ask about the flag, and the local explains to him the industrial revolution and its consequences. After hearing this, the traveler dies of cancer and falls into the sea."
+flavor_lat.5.a:0 "What the fuck?"
+
+# Polish events
+
+flavor_poland.1.title:0 "The Question of Capital"
+flavor_poland.1.desc:0 "As our realm modernizes and its political structure evolves, voices have begun to question whether Kraków, our old royal city, remains the most suitable seat of power. A symbol of Polish heritage and pride, Kraków is revered for its history and culture. Yet Warsaw, lying at the heart of the country and closer to many centers of commerce and trade, offers a more practical location for centralized rule."
+flavor_poland.1.a:0 "We shall stay in Krakow"
+flavor_poland.1.b:0 "We shall move to Warsaw."
+
+# Jerusalemite Events
+
+flavor_koj.1.title:0 "@ISR AVE MEDINAT YISRA'EL @ISR"
+flavor_koj.1.desc:0 "ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine   ISRAEL >>>> p*lestine"
+flavor_koj.1.a:0 "SHALOM SHALOM SHALOM SHALOM"
+
+flavor_koj.2.title:0 "The Fall of Cairo"
+flavor_koj.2.desc:0 "The fervor of the Crusaders reached its zenith as the forces of Jerusalem, inspired by religious zeal and a sense of divine purpose, successfully captured the illustrious city of Cairo. The clash between the Islamic defenders and the Christian Crusaders was a spectacle that echoed across the annals of history. The residents of Cairo found themselves caught between the relentless assault of the Crusaders and the determination of their own defenders. The once vibrant city streets now echoed with the sounds of battle, as both sides fought fiercely for control over this strategically crucial location."
+flavor_koj.2.a:0 "Onwards! Deus Vult!"
+flavor_koj.2.b:0 "Let us make peace."
+
+# HRE Events
+
+holygermanempire.1.title:0 "Collapse of the Eastern Frontier"
+holygermanempire.1.desc:0 "The mighty Holy Roman Empire, the political and territorial mosaic of Central Europe, finds itself grappling with the harrowing specter of an unraveling collapse in the east. Centuries of conflicts, shifting alliances, and internal strife have taken their toll on this crucial borderland. The Eastern Frontier, a bulwark against external threats, has finally collapsed after centuries of weakening imperial authority."
+holygermanempire.1.a:0 "There is nothing we can do."
+
+holygermanempire.2.title:0 "Duke of Flanders"
+holygermanempire.2.desc:0 "The fragile balance of power within the Holy Roman Empire is being tested as the prosperous and culturally distinct region of Flanders and Luxembourg contemplates its future within the imperial fold. Recent tensions have pushed Flanders to the brink of secession, and the outcome may reshape the political landscape of the empire."
+holygermanempire.2.a:0 "Unfortunate"
+
+holygermanempire.4.title:0 "Theodland Wins the Imperial Feud"
+holygermanempire.4.desc:0 "The Austrian challenge to the imperial throne has been crushed. Despite their claims to the imperial throne, Theodland has decisively defeated the Austrian pretenders who sought to become the new emperors, after our partial downfall during the last century. Theodland stands triumphant, securing its place as the rightful guardian of the Holy Roman Empire. The electors and princes of the Empire will think twice before aligning with Austria again."
+holygermanempire.4.a:0 "Magnificent!"
+
+holygermanempire.5.title:0 "Austria Wins the Imperial Feud"
+holygermanempire.5.desc:0 "The Austrian Habsburgs, long displaced from their claim to the imperial throne, have finally rallied enough support among the electors and launched a bold offensive. The tides of war and diplomacy have turned against us, and, after centuries of rule, we have been defeated. Austria has claimed the title of Holy Roman Emperor, marking the end of an era and the beginning of a new, uncertain future for the Empire."
+holygermanempire.5.a:0 "A Tragedy..."
+
+holygermanempire.6.title:0 "Austria Wins the Imperial Feud"
+holygermanempire.6.desc:0 "For centuries, Theodland has held the reins of the Holy Roman Empire, maintaining peace, unity, and power. Yet, all empires must eventually fall. The electors, swayed by our careful diplomatic manouvering, have turned away from Theodland. The imperial crown now rests upon the head of a Habsburg, marking the end of an era and the beginning of a new imperial age."
+holygermanempire.6.a:0 "Magnificent!"
+
+holygermanempire.7.title:0 "Theodland Wins the Imperial Feud"
+holygermanempire.7.desc:0 "After years of political maneuvering and intrigue, the electors have once again sided with Theodish emperors, dealing a humiliating blow to our aspirations. The electors have unfortunately chosen continuity over change. Theodland retains the imperial crown, securing its place as the rightful ruler of the Empire for another era."
+holygermanempire.7.a:0 "A Tragedy..."
+
+holygermanempire.8.title:0 "The Imperial Feud Shifts by §G20§! Towards Theodland"
+holygermanempire.8.desc:0 "Political intrigues and diplomatic manouvering in the imperial court caused the balance of power to shift towards Theodland."
+holygermanempire.8.a:0 "Ok"
+
+holygermanempire.9.title:0 "The Imperial Feud Shifts by §G20§! Towards Austria"
+holygermanempire.9.desc:0 "Political intrigues and diplomatic manouvering in the imperial court caused the balance of power to shift towards Austria."
+holygermanempire.9.a:0 "Ok"
+
+holygermanempire.10.title:0 "The Imperial Feud Shifts by §G40§! Towards Theodland"
+holygermanempire.10.desc:0 "Political intrigues and diplomatic manouvering in the imperial court caused the balance of power to shift towards Theodland."
+holygermanempire.10.a:0 "Ok"
+
+holygermanempire.11.title:0 "The Imperial Feud Shifts by §G40§! Towards Austria"
+holygermanempire.11.desc:0 "Political intrigues and diplomatic manouvering in the imperial court caused the balance of power to shift towards Austria."
+holygermanempire.11.a:0 "Ok"
+
+holygermanempire.12.title:0 "Fate of the Lowlands"
+holygermanempire.12.desc:0 "jeszcze nie napisalem bo mi sie nie chcialo"
+holygermanempire.12.a:0 "Integrate the princes."
+holygermanempire.12.b:0 "Keep the status quo."
+
+holygermanempire.13.title:0 "Fall of the League"
+holygermanempire.13.desc:0 "Chuj"
+holygermanempire.13.a:0 "Merchant's Nightmare"
+
+# Austrian Events
+
+flavor_austria.1.title:0 "Choosing our Destiny"
+flavor_austria.1.desc:0 "nie chce mi sie wymyslac"
+flavor_austria.1.a:0 "We shall forge an empire to stand the test of time."
+flavor_austria.1.b:0 "We shall unite the people of the Danube."
+
+# Jewish Flavour Events
+
+jewish_events.1.title:0 "Jewish Influence"
+jewish_events.1.desc:0 "In recent years, a subtle shift has been occurring within the court, as a group of influential Jewish intellectuals and advisors has gained prominence. Known for their wisdom and financial acumen, these individuals have captured the attention of the ruling elite, sparking a debate within the government about the extent of their influence. In a surprising turn of events, the ruling elite considers embracing Judaism, opening the possibility for conversion. This move could foster stronger ties with the influential Jewish advisors."
+jewish_events.1.a:0 "Hava Nagila Venismeha...!"
+jewish_events.1.b:0 "We cannot allow that."
+
+# Judeoborean Flavor Events
+
+flavor_judeoborea.1.title:0 "The Mighty Forests"
+flavor_judeoborea.1.desc:0 "In the shadow of tumultuous times and the beckoning call of new frontiers, we seek home in the distant lands of Hyperborea. The winds of change carry whispers of opportunity and hardship alike, as our intrepid settlers traverse vast distances in search of a sanctuary and a chance to thrive amidst the icy embrace of the mightiest of forests."
+flavor_judeoborea.1.a:0 "It's both the journey and the destination."
+flavor_judeoborea_1_tt:0 "§VThe Heavens Beckon.§!"
+
+flavor_judeoborea.2.title:0 "The Means"
+flavor_judeoborea.2.desc:0 "Despite their aspirations, our migrants face ferocious resistance from the native population of Siberia. Accustomed to their own ways and wary of outsiders, many locals view the newcomers with suspicion, fearing the dilution of their cultural identity and the strain on their resources. We shall navigate these challenges with resilience and determination, showing nothing but pure disdain and vicious brutality to all that reject our divine mission."
+flavor_judeoborea.2.a:0 "Who saves one life, saves the world entire."
+flavor_judeoborea_2_tt:0 "§VJust not a goyim one.§!"
+
+# Hel Flavor Events
+
+flavor_hel.2.title:0 "A Very Silly Plague"
+flavor_hel.2.desc:0 "Plague has struck our nation, but rather than from the outside it started from the inside, let me explain my lord. The plague of tomfoolery and silly jokes struck our nation as half of our citizens, led by nobleman in name of "Wolk" is being goofy in day-to-day lives in the annoyance of everyone else, how should we deal with it?"
+flavor_hel.2.a:0 "Whip those silly ideas out!"
+
+flavor_hel.3.title:0 "The Governor of Dreistadt"
+flavor_hel.3.desc:0 "A man named Tepdi has recently become the governor of Gdansk, and thanks to his meticulous management of the treasury, large fountains have been created, more road connections have been built from Gdansk to other provinces, and the standard of living in the province has generally improved. He has even recently repelled a raid by Ruthenian Goths on our lands, driving out Pajti and his three-thousand-strong marauding army. Additionally, this man is directly related to our dynasty through his grandmother's side. What should we do to reward this man's endeavors?"
+flavor_hel.3.a:0 "A competent relative? I welcome you as my heir!"
+flavor_hel.3.b:0 "We shall give him a seat suited for his skills."
+
+# Agarthan Events
+
+agartha_events.1.title:0 "A Mysterious Man"
+agartha_events.1.desc:0 "In the heart of the mountains near Tsaparang, a mysterious event has occurred. A man, dressed in strange and ancient garments, has emerged from the fabled gates of Agartha. He speaks of an underground realm filled with wonders and advanced knowledge long lost to the surface world. His presence has caused a stir among our scholars and government, each faction vying to uncover the secrets he might hold. How shall we deal with this enigmatic visitor?"
+agartha_events.1.a:0 "Make him an advisor."
+agartha_events.1.b:0 "Send him back."
+
+agartha_events.2.title:0 "The Wild Hunt"
+agartha_events.2.desc:0 "From deep within Agartha, the fabled Wild Hunt has emerged, a terrifying host of otherworldly riders led by spectral lords. The skies darken, and the air crackles with ominous energy as the Hunt rides forth, seeking destruction across the land. Legends tell of this moment—a time when the boundaries between our world and the hidden realm weaken, allowing these ancient spirits to wreak havoc upon the surface. We must prepare, for the Hunt spares none who stand in its path."
+agartha_events.2.a:0 "Oh fuck"
+
+# Hyperborean Events
+
+flavor_hyperborea.1.title:0 "Call of the Elden Gods"
+flavor_hyperborea.1.desc:0 "Long have the scattered tribes and kingdoms of the frozen north dreamed of uniting under a single banner. From the mist-shrouded peaks to the icy shores, our people have secured domination over those tribes. Now, the time has come to unify these lands under our proud banner. With the support of our people and the blessings of the gods, we have brought together the diverse realms of the north into a single, glorious kingdom that will stand eternal, shining as a beacon of unity and strength in this harsh world."
+flavor_hyperborea.1.a:0 "The Wheel Turns"
+
+# SUPEREVENTS
+
+gv_superevents.1.title:0 "FALL OF THE LEAGUE"
+gv_superevents.1.desc:0 "\n\n\n\nThe universe is change; our life is what our thoughts make it. - Marcus Aurelius"
+gv_superevents.1.a:0 "Merchant's Nightmare"
+
+gv_superevents.2.title:0 "RISE OF ROME"
+gv_superevents.2.desc:0 "\n\n\n\nEn Romanos, rerum dominos, gentemque togatam! - Augustus"
+gv_superevents.2.a:0 "Veni, Vidi, Vici."
+
+gv_superevents.3.title:0 "GATE TO AGARTHA OPEN"
+gv_superevents.3.desc:0 "\n\n\n\nThe beginning is the most important part of any work. - Plato"
+gv_superevents.3.a:0 "A New Beginning"
+
+gv_superevents.4.title:0 "GRZEGORZ RETURNS"
+gv_superevents.4.desc:0 "\n\n\n\nI am the punishment of God. If you had not committed great sins, God would not have sent a punishment like me upon you. - Genghis Khan"
+gv_superevents.4.a:0 "The Fifth Horseman"
+
+gv_superevents.5.title:0 "HELLENIC REVIVAL"
+gv_superevents.5.desc:0 "\n\n\n\nMen should be taught and won over by reason, not by blows, insults, and corporal punishments. - Flavius Claudius Julianus "Apostate""
+gv_superevents.5.a:0 "Vicisti, Apostatae."

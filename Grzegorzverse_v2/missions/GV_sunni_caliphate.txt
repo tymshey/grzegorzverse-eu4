@@ -1,0 +1,193 @@
+t_caliphate_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = Z2Z } 
+
+	t_caliphate_conquer_yemen = {
+		icon = mam_yemen
+		position = 3
+		required_missions = { t_caliphate_the_sword_of_islam } 
+		provinces_to_highlight = {
+			OR = {
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+			}
+			NOT = { owned_by = ROOT }
+		} 
+
+		trigger = {
+			tihama_al_yemen_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			upper_yemen_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			yemen_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		} 
+
+		effect = {
+			arabia_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		} 
+	}
+
+	t_caliphate_coffea_arabica = {
+		icon = yem_coffee
+		position = 1
+		required_missions = { t_caliphate_conquer_yemen } 
+		provinces_to_highlight = {
+			province_id = 387
+		} 
+
+		trigger = {
+			387 = {
+				base_production = 10
+			}
+		} 
+
+		effect = {
+			387 = {
+				add_province_modifier = {
+					name = t_caliphal_coffee_plantations
+					duration = -1
+				}
+			}
+		} 
+	}
+}
+t_caliphate_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = Z2Z } 
+
+	t_caliphate_beaten_but_not_defeated = {
+		icon = mission_the_caliph
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			army_size_percentage = 1
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = "t_caliphate_beaten_but_not_defeated_modifier"
+				duration = 7300
+			}
+			define_general = {
+				shock = 4
+				fire = 4
+				manuever = 2
+				siege = 2
+				name = "Nasr Allah"
+			}
+			tihama_al_yemen_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			upper_yemen_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			yemen_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			mecca_area = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+			add_manpower = 5
+		} 
+	}
+
+	t_caliphate_the_sword_of_islam = {
+		icon = per_sword_of_our_faith
+		position = 1
+		required_missions = { t_caliphate_beaten_but_not_defeated } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				has_won_war_against = {
+					who = MDA
+					max_years_since = 20
+				}
+				has_won_war_against = {
+					who = Z31
+					max_years_since = 20
+				}
+				has_won_war_against = {
+					who = HDR
+					max_years_since = 20
+				}
+			}
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = t_sword_of_islam
+				duration = -1
+			}
+		} 
+	}
+
+	t_caliphate_the_holy_city = {
+		icon = kok_mam_holy_cities
+		position = 1
+		required_missions = { t_caliphate_the_sword_of_islam } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			385 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			385 = {
+				add_base_tax = 2
+				add_base_production = 3
+				add_base_manpower = 3
+				center_of_trade = 1
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+		} 
+	}
+
+	t_caliphate_the_custodians = {
+		icon = per_reform_our_defenses
+		position = 1
+		required_missions = { t_caliphate_the_holy_city } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			385 = {
+				owned_by = ROOT
+			}
+			384 = {
+				owned_by = ROOT
+			}
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = t_custodian_of_the_holy_cities
+				duration = -1
+			}
+		} 
+	}
+}

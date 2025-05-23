@@ -1,0 +1,31 @@
+# added by tymshey
+
+song = {
+	name = "scythiansuite"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "dvorakno9"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+song = {
+	name = "masqueradesuite"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}

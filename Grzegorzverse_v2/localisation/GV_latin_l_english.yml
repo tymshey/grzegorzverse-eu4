@@ -1,0 +1,85 @@
+﻿l_english:
+ 
+ # Modifiers
+ 
+ gv_lat_italian_renaissance:0 "The Italian Renaissance"
+ 
+ gv_lat_fertile_valleys_of_italy:0 "Fertile Valleys of Northern Italy"
+ gv_lat_rich_trading_guilds:0 "Rich Trading Guilds"
+ 
+ # Missions
+
+ latin_the_dark_menace_title:0 "The Dark Menace"
+ latin_the_dark_menace_desc:0 ""
+
+ latin_the_city_has_fallen_title:0 "The City Has Fallen!"
+ latin_the_city_has_fallen_desc:0 ""
+
+ latin_fire_and_ashes_title:0 "Fire and Ashes"
+ latin_fire_and_ashes_desc:0 ""
+
+ latin_new_hope_title:0 "A New Hope"
+ latin_new_hope_desc:0 ""
+
+ t_latin_branch_mission_1_title:0 "Branching Mission"
+ t_latin_branch_mission_1_desc:0 ""
+
+ t_latin_branch_mission_2_title:0 "Branching Mission"
+ t_latin_branch_mission_2_desc:0 ""
+
+ t_latin_branch_mission_3_title:0 "Branching Mission"
+ t_latin_branch_mission_3_desc:0 ""
+
+ t_latin_branch_mission_4_title:0 "Branching Mission"
+ t_latin_branch_mission_4_desc:0 ""
+
+ t_latin_branch_mission_5_title:0 "Branching Mission"
+ t_latin_branch_mission_5_desc:0 ""
+
+ t_latin_branch_mission_6_title:0 "Branching Mission"
+ t_latin_branch_mission_6_desc:0 ""
+
+ t_latin_branch_mission_7_title:0 "Branching Mission"
+ t_latin_branch_mission_7_desc:0 ""
+
+ t_latin_branch_mission_8_title:0 "Branching Mission"
+ t_latin_branch_mission_8_desc:0 ""
+
+ latin_revenge_of_the_latins_title:0 "Revenge of the Latins"
+ latin_revenge_of_the_latins_desc:0 ""
+
+ latin_the_river_of_blood_title:0 "The River of Blood"
+ latin_the_river_of_blood_desc:0 ""
+
+ latin_sword_of_justice_title:0 "Sword of Justice"
+ latin_sword_of_justice_desc:0 ""
+
+ latin_to_ensure_stability_title:0 "To Ensure Stability"
+ latin_to_ensure_stability_desc:0 ""
+
+ latin_golden_age_of_science_title:0 "Golden Age of Science"
+ latin_golden_age_of_science_desc:0 ""
+ 
+ latin_the_renaissance_title:0 "The True Renaissance"
+ latin_the_renaissance_desc:0 ""
+
+ latin_the_gods_of_old_title:0 "The Gods of Old"
+ latin_the_gods_of_old_desc:0 ""
+
+ latin_temple_of_jupiter_title:0 "Jupiter Optimus Maximus"
+ latin_temple_of_jupiter_desc:0 ""
+ 
+ latin_conquer_the_republics_title:0 "The Traitorous Republics"
+ latin_conquer_the_republics_desc:0 ""
+ 
+ latin_conquer_northern_italy_title:0 "Secure Northern Italy"
+ latin_conquer_northern_italy_desc:0 ""
+ 
+ latin_rebuild_central_italy_title:0 "Rebuild Central Italy"
+ latin_rebuild_central_italy_desc:0 ""
+ 
+ latin_develop_northern_italy_title:0 "Develop Northern Italy"
+ latin_develop_northern_italy_desc:0 ""
+ 
+ latin_a_thriving_republic_title:0 "A Thriving Republic"
+ latin_a_thriving_republic_desc:0 ""
