@@ -53,6 +53,8 @@ roman_court_strife_disaster = {
 			50 = rcs_rom.1
 			50 = rcs_rom.2
 			20 = rcs_rom.3
+			20 = rcs_rom.4
+			50 = rcs_rom.5
         }
 	}
 }

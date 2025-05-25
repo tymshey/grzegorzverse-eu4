@@ -1910,6 +1910,7 @@ country_event = { # Pretender Rises
 	major = no
 
 	trigger = {
+		is_at_war = no
 		151 = {
 			owned_by = ROOT
 		}
@@ -1929,5 +1930,60 @@ country_event = { # Pretender Rises
 				size = 1
 			}
 		}
+	}
+}
+
+country_event = { # Show of Loyalty
+	id = rcs_rom.4
+	title = rcs_rom.4.title
+	desc = rcs_rom.4.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	major = no
+	
+	trigger = {
+		151 = {
+			owned_by = ROOT
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = rcs_rom.4.a
+		add_country_modifier = {
+			name = gv_rcs_show_of_loyalty
+			duration = 365
+		}
+	}
+}
+
+country_event = { # Strategos Declares Support for a Pretender
+	id = rcs_rom.5
+	title = rcs_rom.5.title
+	desc = rcs_rom.5.desc
+	picture = BYZANTINE_EAGLE_eventPicture
+	
+	major = no
+	
+	trigger = {
+		151 = {
+			owned_by = ROOT
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = rcs_rom.4.a
+		add_years_of_income = -0.1
 	}
 }

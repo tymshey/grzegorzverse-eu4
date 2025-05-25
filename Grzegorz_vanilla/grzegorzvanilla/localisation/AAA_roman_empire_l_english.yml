@@ -105,6 +105,8 @@
  gv_exarchate_of_crimea:0 "Exarchate of Crimea"
  gv_loyal_exarch:0 "Loyal Exarch"
  gv_sword_and_shield_of_jesus:0 "Sword and Shield of Jesus Christ"
+ gv_rcs_show_of_loyalty:0 "Show of Loyalty"
+
  
  t_robust_coal_industry:0 "Robust Coal Industry"
  t_growth_of_iron_industry:0 "Growth of Iron Industry"
@@ -733,3 +735,11 @@ rcs_rom.2.a:0 "Ok"
 rcs_rom.3.title:0 "Pretender Rises!"
 rcs_rom.3.desc:0 "parovozik"
 rcs_rom.3.a:0 "Crush them!"
+
+rcs_rom.4.title:0 "Show of Loyalty"
+rcs_rom.4.desc:0 "parovozik"
+rcs_rom.4.a:0 "Ok"
+
+rcs_rom.5.title:0 "Strategos Declares Support for a Pretender"
+rcs_rom.5.desc:0 "parovozik"
+rcs_rom.5.a:0 "Ok"

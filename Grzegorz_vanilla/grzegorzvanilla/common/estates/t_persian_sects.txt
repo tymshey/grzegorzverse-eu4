@@ -5,6 +5,7 @@ estate_persian_sects = {
 		OR = {
 			tag = PER
 			tag = ASY
+			tag = ERS
 		}
 	}
 	

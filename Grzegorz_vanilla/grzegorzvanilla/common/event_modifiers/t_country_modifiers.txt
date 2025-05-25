@@ -288,6 +288,11 @@ gv_loyal_exarch = {
 	liberty_desire_from_subject_development = -0.25
 }
 
+gv_rcs_show_of_loyalty = {
+	picture = crown
+	global_unrest = -1
+}
+
 ### PER
 
 t_per_army_reform = {
